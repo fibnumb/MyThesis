@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  4 FEB 2019 16:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  5 FEB 2019 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -944,7 +944,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <figures/pdf/ProtoIBFEres.png, id=745, 573.14125pt x 491.8375pt>
 File: figures/pdf/ProtoIBFEres.png Graphic file (type png)
 <use figures/pdf/ProtoIBFEres.png>
-Package pdftex.def Info: figures/pdf/ProtoIBFEres.png  used on input line 124.
+Package pdftex.def Info: figures/pdf/ProtoIBFEres.png  used on input line 125.
 (pdftex.def)             Requested size: 170.71652pt x 146.50171pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -953,7 +953,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <figures/pdf/GEMShowerSim.png, id=758, 571.13374pt x 394.47375pt>
 File: figures/pdf/GEMShowerSim.png Graphic file (type png)
 <use figures/pdf/GEMShowerSim.png>
-Package pdftex.def Info: figures/pdf/GEMShowerSim.png  used on input line 134.
+Package pdftex.def Info: figures/pdf/GEMShowerSim.png  used on input line 135.
 (pdftex.def)             Requested size: 227.62204pt x 157.21487pt.
 
 
@@ -963,7 +963,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: figures/pdf/IROCproductionflow.png Graphic file (type png)
 <use figures/pdf/IROCproductionflow.png>
 Package pdftex.def Info: figures/pdf/IROCproductionflow.png  used on input line
- 148.
+ 149.
 (pdftex.def)             Requested size: 284.52756pt x 220.04774pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -973,7 +973,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: figures/pdf/IROCAssemblyUTK.png Graphic file (type png)
 <use figures/pdf/IROCAssemblyUTK.png>
 Package pdftex.def Info: figures/pdf/IROCAssemblyUTK.png  used on input line 15
-8.
+9.
 (pdftex.def)             Requested size: 469.75502pt x 198.90768pt.
 
 
@@ -984,26 +984,26 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figures/pdf/PicoSetup.png, id=788, 800.9925pt x 316.18124pt>
 File: figures/pdf/PicoSetup.png Graphic file (type png)
 <use figures/pdf/PicoSetup.png>
-Package pdftex.def Info: figures/pdf/PicoSetup.png  used on input line 176.
+Package pdftex.def Info: figures/pdf/PicoSetup.png  used on input line 177.
 (pdftex.def)             Requested size: 469.75502pt x 185.43085pt.
  [32 <./figures/pdf/PicoSetup.png>]
 <figures/pdf/LeakSetupUTK.png, id=798, 1015.795pt x 310.15875pt>
 File: figures/pdf/LeakSetupUTK.png Graphic file (type png)
 <use figures/pdf/LeakSetupUTK.png>
-Package pdftex.def Info: figures/pdf/LeakSetupUTK.png  used on input line 190.
+Package pdftex.def Info: figures/pdf/LeakSetupUTK.png  used on input line 191.
 (pdftex.def)             Requested size: 469.75502pt x 143.43198pt.
 <figures/pdf/AcceptanceCriteria.png, id=799, 1038.88126pt x 569.12625pt>
 File: figures/pdf/AcceptanceCriteria.png Graphic file (type png)
 <use figures/pdf/AcceptanceCriteria.png>
 Package pdftex.def Info: figures/pdf/AcceptanceCriteria.png  used on input line
- 207.
+ 208.
 (pdftex.def)             Requested size: 227.62204pt x 124.69579pt.
 
 [33 <./figures/pdf/LeakSetupUTK.png>]
 <figures/pdf/LHCSparkTest.png, id=809, 714.67pt x 462.72874pt>
 File: figures/pdf/LHCSparkTest.png Graphic file (type png)
 <use figures/pdf/LHCSparkTest.png>
-Package pdftex.def Info: figures/pdf/LHCSparkTest.png  used on input line 222.
+Package pdftex.def Info: figures/pdf/LHCSparkTest.png  used on input line 223.
 (pdftex.def)             Requested size: 398.33858pt x 257.9119pt.
 
 
@@ -1098,9 +1098,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: 5ED412D62EE5747169BEC8066C93BA44;3024.
-Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
-(rerunfilecheck)             Checksum: 70FD73C52177320BC8D05517475D3127;5429.
 
+
+Package rerunfilecheck Warning: File `my-dissertation.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `my-dissertation.brf':
+(rerunfilecheck)             Before: 397C3A23E32D5D02D4EDF8C640219656;5368
+(rerunfilecheck)             After:  70FD73C52177320BC8D05517475D3127;5429.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.98pt have occurred.
@@ -1116,7 +1121,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
 Here is how much of TeX's memory you used:
  10617 strings out of 492649
  162144 string characters out of 6129622
- 262100 words of memory out of 5000000
+ 261100 words of memory out of 5000000
  14016 multiletter control sequences out of 15000+600000
  18334 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1133,7 +1138,7 @@ al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
 texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on my-dissertation.pdf (55 pages, 6239819 bytes).
+Output written on my-dissertation.pdf (55 pages, 6239839 bytes).
 PDF statistics:
  1073 PDF objects out of 1200 (max. 8388607)
  915 compressed objects within 10 object streams
