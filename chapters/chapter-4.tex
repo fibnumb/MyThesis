@@ -52,7 +52,7 @@ Gaseous Electron Multiplier (GEM) Foils were first proposed by CERN physicist Fa
 \noindent
 GEM foils are a Kapton sheet, typically 50 $\mu m$ thick, with a thin copper coat on both sides of the surface.  A weak acid and stencil are used to chemically etch holes throughout the foil.  Typically, the holes are between 10 $\mu m$ - 100 $\mu m$ in diameter and between 100 $\mu m$ - 300 $\mu m$ in pitch as seen in Figure \ref{fig:GEMpic}.  A few hundred volts is applied to each of the copper surfaces of the GEM foil causing a strong electric field to be induced in the GEM holes\footnote{The electric field is on the order of 10 kV/cm}.  
 
-When a ionization electron from a track enters a GEM hole it will cause an avalanche of amplification electrons and ions to be produced similar to MWPCs.  Due to the high voltage and strong electric fields around the GEM foil, any back flow ions created from the avalanche will get absorbed by the copper surfaces on the GEM foil, as seen in Figure \ref{fig:GEMefield}.
+When a ionization electron from a charged track enters a GEM hole it will cause an avalanche of electrons and ions to be produced, amplifying the signal, to MWPCs.  Due to the high voltage and strong electric fields around the GEM foil, any back flow ions created from the avalanche will get absorbed by the copper surfaces on the GEM foil, as seen in Figure \ref{fig:GEMefield}.
 \begin{figure}[h]
 \includegraphics[width=14.0cm]{ALICEGEMSIMULATION}
 \centering
@@ -63,12 +63,12 @@ When a ionization electron from a track enters a GEM hole it will cause an avala
 \noindent
 The configuration of the pitch and size holes ion a GEM foil is directly correlated to the amplification properties and ability to capture back flow ions.  GEMS with larger holes or shorter pitch between the holes will have more amplification but will also be more ineffective at capturing ions.  Likewise, GEMs with shorter holes or larger pitch will have better ion capture abilities yet worse amplification properties.  By stacking multiple GEMs on top of one another it is possible to maximize the amplification properties and minimize the backflow. 
 
-Creating GEMs with a uniform hole distribution and stacking them in a consistent manner in order to minimize the overlap of holes from one layer to another restricted them to small prototypes and impeded their use on large experiments.  Around 2010 two methods were developed, the single-mask technique\cite{0960-1317-17-8-021} and the NS2 assembly\cite{1748-0221-12-06-C06036}, which allowed for a systematic way of etching holes and stretching GEMs so they could be properly aligned.  These methods allowed for GEMs to become a viable amplification device for large experiments.  As of 2018 the TOTEM, COMPASS, ATLAS, and LHCb experiments have all incorporated GEMs in their trackers and future colliders, such as the Electron-Ion Collider (EIC), plan on using them\cite{SAULI20162}.
+Creating GEMs with a uniform hole distribution and stacking them in a consistent manner in order to minimize the overlap of holes from one layer to another restricted them to small prototypes and impeded their use on large experiments.  Around 2010 two methods were developed, the single-mask technique\cite{0960-1317-17-8-021} and the NS2 assembly\cite{1748-0221-12-06-C06036}, which allowed for a systematic way of etching holes and stretching GEMs so they could be properly aligned.  These methods allowed for GEMs to become a viable amplification device for large experiments.  As of 2018 the TOTEM, COMPASS, ATLAS, and LHCb experiments have all incorporated GEMs in their trackers.  Future colliders, such as the Electron-Ion Collider (EIC), plan on using them\cite{SAULI20162}.
 
 
 \subsection{Research and Development}
 
-Initially, it was decided that the new ROCs would incorporate a stack of three GEMs with a hole geometry similar to the one incorporated on the LHCb experiments\cite{Santimaria:1690550} tracking detector.  This gave the ALICE TPC upgrade a starting point to bench mark performance for the upgrade as well as the opportunity to use experts in GEM technology already present at CERN.  The first phase of the R\&D involved simulating the performance of the LHCb 3-GEM stack in the high event rate environment expected  after the Hi-Lumi LHC upgrade using a the software package called Garfield++, which is a GEANT4 add-on package built to simulate MPGDs.  It was quickly observed from the simulations that a 3-GEM stack would be insufficient in maintaining the performance needed for the TPC while minimizing the ion back flow.  An additional layer of GEM was added to the 3-GEM stack in simulation and it was observed that this configuration would preserve the TPC performance.
+Initially, it was decided that the new ROCs would incorporate a stack of three GEMs with a hole geometry similar to the one incorporated on the LHCb experiments\cite{Santimaria:1690550} tracking detector.  This was a starting point to bench mark performance for the ALICE TPC upgrade as well as an opportunity to use experts in GEM technology already present at CERN.  The first phase of the R\&D involved simulating the performance of the LHCb 3-GEM stack in the high event rate environment expected  after the Hi-Lumi LHC upgrade using a the software package called Garfield++\cite{Pfeiffer:2628608}, which is a GEANT4\cite{Agostinelli:2002hh} add-on package built to simulate MPGDs.  It was quickly observed from the simulations that a 3-GEM stack would be insufficient in maintaining the performance needed for the TPC while minimizing the ion back flow.  An additional layer of GEM was added to the 3-GEM stack in simulation and it was observed that this configuration would preserve the TPC performance.
 
 \begin{figure}[h]
 \includegraphics[width=\linewidth]{ResoSim}
@@ -78,7 +78,7 @@ Initially, it was decided that the new ROCs would incorporate a stack of three G
 \end{figure}
 
 \noindent
-Figure \ref{fig:ResoSim} shows simulations of the track matching efficiency from the ITS to the TPC and the inverse momentum resolution for a 4-GEM stack as a function of the collision rate.  The efficiency and resolution only start to diminish at an event rate above 100 kHz, which is double the expected rate after the LHC upgrade, and are well within the range of the current TPC operating at 3.5 kHz.
+Figure \ref{fig:ResoSim} shows simulations of the track matching efficiency from the ITS to the TPC and the inverse momentum resolution for a 4-GEM stack as a function of several collisions.  The efficiency and resolution only start to diminish at an event rate above 100 kHz, which is double the expected rate after the LHC upgrade, and are well within the range of the current TPC operating at 3.5 kHz.
  
 \begin{figure}[h]
 \includegraphics[width=10.0cm]{4GEMROC}
@@ -87,11 +87,18 @@ Figure \ref{fig:ResoSim} shows simulations of the track matching efficiency from
 \label{fig:4GEM}
 \end{figure}
 
-The optimal hole configuration was also explored with simulations.  Having a first and forth layer with a pitch of 140 $\mu m$ and the second and third layer with a pitch of 280 $\mu m$, allowed for the the ROCs to maintain minimal ion backflow while amplifying the signal from tracks.  Figure \ref{fig:4GEM} shows the design of the ROCs with a 4-GEM stack, the copper pad plane is glued to a reinforced fiberglass sheet , known as the strongback, to add material strength.
+The optimal hole configuration was also explored with simulations.  Having a first and forth layer with a pitch of 140 $\mu m$ and the second and third layer with a pitch of 280 $\mu m$, allowed for the the ROCs to maintain minimal ion backflow while amplifying the signal from tracks.  Figure \ref{fig:4GEM} shows the design of the ROCs with a 4-GEM stack.  The copper pad plane is glued to a reinforced fiberglass sheet, known as the strongback, to add material strength.
 
 \subsubsection{2014 Test Beam}
 
-The 2014 test beam served as my first task at CERN and introduced me to the TPC, GEMs, and ROCs.  I helped with setting up the prototypes on the beam line, recording data from the test beam, and monitoring the performance in real time.  To quantify the performances of the prototype it is useful to define the ionic backflow (IBF\%) as
+During the 2014 test beam, I mounted the prototypes on the beam line, recorded data from the test beam, and monitored the performance in real time.  To quantify the performances of the prototype, it is useful to define the effective gain ($G_{eff}$) and ionic backflow (IBF\%)
+
+\begin{equation}
+G_{eff}=\frac{I_{anode}}{\textit{e} \,  N_{ion} \ R}
+\label{eq:gain}
+\end{equation}
+\noindent
+where $\textit{e}$ is the fundamental electric charge of an electron, $N_{ion}$ is the numbered of captured ions, and R is the illumination rate from an active source.
 
 \begin{equation}
 IBF \% = \frac{ I_{cathode} }{ I_{anode} } = \frac{1 + \epsilon }{ G_{eff} }
@@ -101,12 +108,7 @@ IBF \% = \frac{ I_{cathode} }{ I_{anode} } = \frac{1 + \epsilon }{ G_{eff} }
 \noindent
 where $ I_{cathode} / I_{anode}$ is the ratio of the currents measured in the cathode and anode portion of a readout as seen in Figure \ref{fig:TPCreadout}.  The IBF\% can also be defined in terms of the number of backflowing ions ($\epsilon$) created at an effective gain ($G_{eff}$).  The effective gain is a measure of the amplification properties and in a gaseous detector is defined as
 
-\begin{equation}
-G_{eff}=\frac{I_{anode}}{\textit{e} \,  N_{ion} \ R}
-\label{eq:gain}
-\end{equation}
-\noindent
-where $\textit{e}$ is the fundamental electric charge of an electron, $N_{ion}$ is the numbered of captured ions, and R is the illumination rate from an active source.  The test involved using the beam from both the SPS and PS\footnote{See Section \ref{sec:LHCop}.} at the LHC cast onto an iron target.  This iron target created secondary showers and tracks were measured by the prototype for both energy resolution and PID performance.  The nominal TPC gas of $CO_{2}-N_{2}\,$(90-10) was used during the test beam.  
+The test involved using the beam from both the SPS and PS\footnote{See Section \ref{sec:LHCop}.} at the LHC cast onto an iron target.  This iron target created secondary showers and tracks were measured by the prototype for both energy resolution and PID performance.  The nominal TPC gas of $CO_{2}-N_{2}\,$(90-10) was used during the test beam.  
 
 \begin{figure}[h]
 \includegraphics[width=10.0cm]{GemProtoPID}
@@ -116,7 +118,7 @@ where $\textit{e}$ is the fundamental electric charge of an electron, $N_{ion}$ 
 \label{fig:GemProtoPID}
 \end{figure}
 
-Figure \ref{fig:GemProtoPID} shows the PID performance for separating electron and pion tracks created by the iron target, the separation power between the two Gaussian peaks trivially increases above a gain of 2000 and this was chosen as the target effective gain for the new ROCs.
+Figure \ref{fig:GemProtoPID} shows the PID performance for separating electron and pion tracks created by the iron target.  The separation power between the two Gaussian peaks increases until a gain of 2000 so this was chosen as the target effective gain for the new ROCs.
 
 % TALK ABOUT IROC DESIGN
 
@@ -129,7 +131,7 @@ Figure \ref{fig:GemProtoPID} shows the PID performance for separating electron a
 \end{figure}
 
 \noindent
-Figure \ref{fig:ProtoIBFEres} shows the energy resolution of the iron peak as a function of the relative voltages between GEM 2 ($U_{GEM2}$) and the ratio of voltages between GEM 3 ($U_{GEM3}$) and GEM 4 ($U_{GEM4}$) and shows that the IBF\% remains below 1\% at a energy resolution of $\approx 10\%$ which is consistent with the currant TPC performance.  The voltages were chosen such that GEM 1 and GEM2, which are closest to the drift volume, would focus mostly on capturing amplification ions while GEM 3 and GEM 4, which are closest to the copper pad readout, would primarily perform the amplification as shown in Figure \ref{fig:showersim}.
+Figure \ref{fig:ProtoIBFEres} shows the energy resolution of the iron peak as a function of the relative voltages between GEM 2 ($U_{GEM2}$) and the ratio of voltages between GEM 3 ($U_{GEM3}$) and GEM 4 ($U_{GEM4}$).  This shows that the IBF\% remains below 1\% at a energy resolution of approximately 10\% which is consistent with the current TPC performance.  The voltages were chosen such that GEM 1 and GEM2, which are closest to the drift volume, would focus mostly on capturing amplification ions while GEM 3 and GEM 4, which are closest to the copper pad readout, would primarily perform the amplification as shown in Figure \ref{fig:showersim}.
 
 \begin{figure}[h]
 \includegraphics[width=8.0cm]{GEMShowerSim}
@@ -141,7 +143,7 @@ Figure \ref{fig:ProtoIBFEres} shows the energy resolution of the iron peak as a 
 
 
 \subsection{Production of the Inner Readout Chambers in the U.S.}
-Once a final design was settled on from the simulation and prototype portion of the G\&D we entered the production phase.  A minimum of 36 new ROCs would need to be built with the 4-GEM stack to replace the old ROCs in the TPC while 4 additional ROCs would be constructed as backups.  Due to the size and weight of the ROCs, production of the IROCs would take place in the United States and the OROC production mainly in Germany. 
+Once a final design was settled on from the simulation and prototype R\&D, the project entered the production phase.  A minimum of 36 new ROCs would need to be built with the 4-GEM stack to replace the old ROCs in the TPC while 4 additional ROCs would be constructed as spares.  Due to the size and weight of the ROCs, production of the IROCs would take place in the United States and the OROC production mainly in Germany. 
 
 
 
@@ -153,21 +155,20 @@ Once a final design was settled on from the simulation and prototype portion of 
 \end{figure}
 
 \noindent
-Figure \ref{fig:IROCprod} shows the production flow for the construction of the 4-GEM ROCs.  After GEMs are received from the manufacturer they go through a number of quality assurance tests before they are shipped to the institute responsible for framing and stretching them.  Wayne State University is responsible for the GEM stretching and mounting for the IROCs.   The aluminum bodies at the University of Texas Austin and shipped to Tennessee.  At Tennessee we glue the pad plane, aluminum body and strong back together before it is shipped to Yale where the chambers are fit with the GEMs from Wayne State.  The production steps for the OROC mirror those performed by the IROC except that it was performed by mainly German institutes.
+Figure \ref{fig:IROCprod} shows the production flow for the construction of the 4-GEM ROCs.  After GEMs are received from the manufacturer, they go through a number of quality assurance tests before they are shipped to Wayne State University, where they are stretched and mounted for the IROCs.   The aluminum bodies are manufactured at the University of Texas Austin and shipped to Tennessee.  At Tennessee we glue the pad plane, aluminum body and strong back together before it is shipped to Yale, where the chambers are fit with the GEMs from Wayne State.  The production steps for the OROC mirror those performed by the IROC except that it was performed mainly German institutes.
 
 \begin{figure}[h!]
 \includegraphics[width=\linewidth]{IROCAssemblyUTK}
 \centering
-\caption{The author assemblying an Inner Readout Chamber at the University of Tennessee \textit{(Courtesy of Andrew Castro)}. }
+\caption{The author assemblying an Inner Readout Chamber at the University of Tennessee. }
 \label{fig:IROCassm}
 \end{figure}
 
-Figure \ref{fig:IROCassm} shows the procedure followed at Tennessee in order to build an IROC.  Furthest on the left is a picture of gluing a copper pipe into the aluminum body.  This copper pipe is flushed with a colant that maintains the temperature of the Front End Electronics (FEE).  The next two photos of Figure \ref{fig:IROCassm} show the pad plane mounted on a vacuum table while glue is applied to it and the aluminum body.  Once the two are aligned the glued IROC lead bricks are placed on the ROC and the epoxy is allowed to cure for 24 hours.  The right most picture shows the final step of mounting and gluing the HV feedthroughs for the GEM foils.  Before a completed IROC leaves Tennessee we performed a gas tightness test that will be discussed more in the next section.
-Full production of the IROCs ended in November of 2018 with a total of 47 chambers being built at Tennessee.  A surplus of chambers was built due to excess materials we had.
+Figure \ref{fig:IROCassm} shows the procedure followed at Tennessee in order to build an IROC.  Furthest on the left is a picture of a copper pipe glued into the aluminum body.  This copper pipe is flushed with a coolant that maintains the temperature of the Front End Electronics (FEE).  The next two photos show the pad plane being mounted on a vacuum table while glue is applied to it and the aluminum body.  Once all the components are placed glued and mounted on the table the IROC is loaded with lead bricks and allowed to cure for 24 hours.  The right most picture shows the final step of the HV feedthroughs mounted and glued for the GEM foils.  Before a completed IROC leaves Tennessee we performed a gas tightness test that will be discussed more in the next section.  Full production of the IROCs ended in November of 2018 with a total of 47 chambers being built at Tennessee.  A surplus of chambers were built with excess materials to provide spares.
 
 
 \subsection{GEM and Chamber Quality Assurance}
-Due to the large amount of work outsourced to numerous universities, international labs, and private contracts for the TPC upgrade, a stringent set of quality assurance (QA)\cite{Brucken:2018rej}\cite{Brucken:2017qjy} protocols were implemented to monitor any damaged sustained during transport and to quickly identify any flaws in the production procedures.  The QA can be broken into two major categories: QA performed on the GEM foils as received from the manufacturer and QA performed on complete/semi-complete chambers as they were going through the different production steps.  I will discuss only the QA tasks that I was directly involved with.
+A stringent set of quality assurance (QA)\cite{Brucken:2018rej}\cite{Brucken:2017qjy} protocols were implemented to monitor any damaged sustained during transport and to quickly identify any flaws in the production procedures.  The QA can be broken into two major categories: QA performed on the GEM foils as received from the manufacturer and QA performed on complete/semi-complete chambers as they were going through the different production steps.  I will discuss only the QA tasks that I was directly involved with.
 
 \subsubsection{GEM QA}
 

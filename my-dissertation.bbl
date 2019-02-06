@@ -1,13 +1,9 @@
 \begin{thebibliography}{10}
 
-\bibitem{Patrignani:2016xqp}
-C.~Patrignani et~al.
-\newblock {Review of Particle Physics}.
-\newblock {\em Chin. Phys.}, C40(10):100001, 2016.
-
 \bibitem{Mobs:2197559}
 Esma Mobs.
-\newblock {The CERN accelerator complex. Complexe des accélérateurs du CERN}.
+\newblock {The CERN accelerator complex. Complexe des acc{\'e}l{\'e}rateurs du
+  CERN}.
 \newblock Jul 2016.
 \newblock General Photo.
 
@@ -66,7 +62,7 @@ B~Abelev et~al.
   Geneva, Aug 2012.
 
 \bibitem{Brucken:2017qjy}
-Erik Brücken and Timo Hildén.
+Erik Br{\"u}cken and Timo Hild{\'e}n.
 \newblock {GEM Foil Quality Assurance For The ALICE TPC Upgrade}.
 \newblock {\em EPJ Web Conf.}, 174:03004, 2018.
 
@@ -92,10 +88,15 @@ Dick Majka.
 \newblock Technical Report CERN-LHCC-2015-002. ALICE-TDR-016-ADD-1, Feb 2015.
 
 \bibitem{Brucken:2018rej}
-Jens~Erik Brücken and Timo~Eero Hildén.
+Jens~Erik Br{\"u}cken and Timo~Eero Hild{\'e}n.
 \newblock {The GEM QA Protocol of the ALICE TPC Upgrade Project}.
 \newblock In {\em {5th International Conference on Micro Pattern Gas Detectors
   (MPGD2017) Temple University, Philadelphia, USA, May 22-26, 2017}}, 2018.
+
+\bibitem{Patrignani:2016xqp}
+C.~Patrignani et~al.
+\newblock {Review of Particle Physics}.
+\newblock {\em Chin. Phys.}, C40(10):100001, 2016.
 
 \bibitem{Noferini:2016lcw}
 Francesco Noferini.
@@ -105,23 +106,9 @@ Francesco Noferini.
   (LHCP 2015): St. Petersburg, Russia, August 31-September 5, 2015}}, pages
   523--528, Gatchina, 2016. Kurchatov Institute, Kurchatov Institute.
 
-\bibitem{Langacker:2009my}
-Paul Langacker.
-\newblock {Introduction to the Standard Model and Electroweak Physics}.
-\newblock In {\em {Proceedings of Theoretical Advanced Study Institute in
-  Elementary Particle Physics on The dawn of the LHC era (TASI 2008): Boulder,
-  USA, June 2-27, 2008}}, pages 3--48, 2010.
-
-\bibitem{Aoyama:2014sxa}
-Tatsumi Aoyama, M.~Hayakawa, Toichiro Kinoshita, and Makiko Nio.
-\newblock {Tenth-Order Electron Anomalous Magnetic Moment --- Contribution of
-  Diagrams without Closed Lepton Loops}.
-\newblock {\em Phys. Rev.}, D91(3):033006, 2015.
-\newblock [Erratum: Phys. Rev.D96,no.1,019901(2017)].
-
 \bibitem{doi:10.1142/S0217751X13300354}
 STEPHEN MYERS.
-\newblock The large hadron collider 2008–2013.
+\newblock The large hadron collider 2008--2013.
 \newblock {\em International Journal of Modern Physics A}, 28(25):1330035,
   2013.
 
@@ -198,7 +185,7 @@ Constantin Loizides.
 \newblock {\em Phys. Rev.}, C94(2):024914, 2016.
 
 \bibitem{BEOLE20121062}
-S.~Beolè.
+S.~Beol{\`e}.
 \newblock The alice inner tracking system: Performance with proton and lead
   beams.
 \newblock {\em Physics Procedia}, 37:1062 -- 1069, 2012.
@@ -242,7 +229,7 @@ Jiri Kral, Terry Awes, Hans Muller, Jan Rak, and Joachim Schambach.
   267, 2012.
 
 \bibitem{Apollinari:2015bam}
-G~Apollinari, I~Béjar~Alonso, O~Brüning, M~Lamont, and L~Rossi.
+G~Apollinari, I~B{\'e}jar~Alonso, O~Br{\"u}ning, M~Lamont, and L~Rossi.
 \newblock {High-Luminosity Large Hadron Collider (HL-LHC) : Preliminary Design
   Report}.
 \newblock 2015.
@@ -294,7 +281,7 @@ Maxim Titov.
 \newblock {Perspectives of Micro-Pattern Gaseous Detector Technologies for
   Future Physics Projects}.
 \newblock In {\em {Proceedings, CMS Workshop: Perspectives on Physics and on
-  CMS at Very High Luminosity, HL-LHC: Alushta, Crimea, Ukraine, May 28–31,
+  CMS at Very High Luminosity, HL-LHC: Alushta, Crimea, Ukraine, May 28--31,
   2012}}, pages 241--258, 2013.
 
 \bibitem{0960-1317-17-8-021}
@@ -325,10 +312,15 @@ Marco Santimaria and Davide Pinci.
   2013.
 \newblock Presented 19 Dec 2013.
 
+\bibitem{Agostinelli:2002hh}
+S.~Agostinelli et~al.
+\newblock {GEANT4: A Simulation toolkit}.
+\newblock {\em Nucl. Instrum. Meth.}, A506:250--303, 2003.
+
 \bibitem{Abelev:2014laa}
 Betty~Bezverkhny Abelev et~al.
 \newblock {Production of charged pions, kaons and protons at large transverse
-  momenta in pp and Pb–Pb collisions at $\sqrt{s_{\rm NN}}$ =2.76 TeV}.
+  momenta in pp and Pb--Pb collisions at $\sqrt{s_{\rm NN}}$ =2.76 TeV}.
 \newblock {\em Phys. Lett.}, B736:196--207, 2014.
 
 \end{thebibliography}
