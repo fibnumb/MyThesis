@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{Patrignani:2016xqp}
+C.~Patrignani et~al.
+\newblock {Review of Particle Physics}.
+\newblock {\em Chin. Phys.}, C40(10):100001, 2016.
+
 \bibitem{Mobs:2197559}
 Esma Mobs.
 \newblock {The CERN accelerator complex. Complexe des acc{\'e}l{\'e}rateurs du
@@ -93,11 +98,6 @@ Jens~Erik Br{\"u}cken and Timo~Eero Hild{\'e}n.
 \newblock In {\em {5th International Conference on Micro Pattern Gas Detectors
   (MPGD2017) Temple University, Philadelphia, USA, May 22-26, 2017}}, 2018.
 
-\bibitem{Patrignani:2016xqp}
-C.~Patrignani et~al.
-\newblock {Review of Particle Physics}.
-\newblock {\em Chin. Phys.}, C40(10):100001, 2016.
-
 \bibitem{Noferini:2016lcw}
 Francesco Noferini.
 \newblock {The ALICE PID performance in Run 1 and perspectives in view of Run
@@ -105,6 +105,42 @@ Francesco Noferini.
 \newblock In {\em {Proceedings, 3rd Large Hadron Collider Physics Conference
   (LHCP 2015): St. Petersburg, Russia, August 31-September 5, 2015}}, pages
   523--528, Gatchina, 2016. Kurchatov Institute, Kurchatov Institute.
+
+\bibitem{Langacker:2009my}
+Paul Langacker.
+\newblock {Introduction to the Standard Model and Electroweak Physics}.
+\newblock In {\em {Proceedings of Theoretical Advanced Study Institute in
+  Elementary Particle Physics on The dawn of the LHC era (TASI 2008): Boulder,
+  USA, June 2-27, 2008}}, pages 3--48, 2010.
+
+\bibitem{Aoyama:2014sxa}
+Tatsumi Aoyama, M.~Hayakawa, Toichiro Kinoshita, and Makiko Nio.
+\newblock {Tenth-Order Electron Anomalous Magnetic Moment --- Contribution of
+  Diagrams without Closed Lepton Loops}.
+\newblock {\em Phys. Rev.}, D91(3):033006, 2015.
+\newblock [Erratum: Phys. Rev.D96,no.1,019901(2017)].
+
+\bibitem{Riordan1287}
+Michael Riordan.
+\newblock The discovery of quarks.
+\newblock {\em Science}, 256(5061):1287--1293, 1992.
+
+\bibitem{Loizides:2016djv}
+Constantin Loizides.
+\newblock {Glauber modeling of high-energy nuclear collisions at the subnucleon
+  level}.
+\newblock {\em Phys. Rev.}, C94(2):024914, 2016.
+
+\bibitem{Miller:2007ri}
+Michael~L. Miller, Klaus Reygers, Stephen~J. Sanders, and Peter Steinberg.
+\newblock {Glauber modeling in high energy nuclear collisions}.
+\newblock {\em Ann. Rev. Nucl. Part. Sci.}, 57:205--243, 2007.
+
+\bibitem{Huth:217490}
+J~E Huth, N~Wainer, K~Meier, N~J Hadley, F~Aversa, Mario Greco, P~Chiappetta,
+  J~P Guillet, S~Ellis, Zolt{\'a}n Kunszt, and Davison~Eugene Soper.
+\newblock {Toward a standardization of jet definitions}.
+\newblock (FERMILAB-CONF-90-249-E):7 p, Dec 1990.
 
 \bibitem{doi:10.1142/S0217751X13300354}
 STEPHEN MYERS.
@@ -177,12 +213,6 @@ E.~Abbas et~al.
 Rick Field.
 \newblock {Min-Bias and the Underlying Event at the LHC}.
 \newblock {\em Acta Phys. Polon.}, B42:2631--2656, 2011.
-
-\bibitem{Loizides:2016djv}
-Constantin Loizides.
-\newblock {Glauber modeling of high-energy nuclear collisions at the subnucleon
-  level}.
-\newblock {\em Phys. Rev.}, C94(2):024914, 2016.
 
 \bibitem{BEOLE20121062}
 S.~Beol{\`e}.

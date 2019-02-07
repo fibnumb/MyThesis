@@ -1,21 +1,30 @@
 %Fucking left quote symbol ` and not '    
 
 \chapter{Quantum Chromodynamics} \label{ch:qcd}
-In 1968 deep inelastic scatterings performed at the Stanford Linear Accelerator Center showed that the proton had internal structure\cite{Riordan1287} called partons at the time.  Within a decade of this discovery the partons were broken into two categories: the mass carrying fermions were known as the quarks and the gauge boson force carriers were called gluons.  The interactions of these two types of particles were described by the quantum field theory known as quantum chromodynamics (QCD).  QCD is the strongest of the known fundamental forces.  It is a gauge field theory described by the Lagrangian density
-
-\section{Introduction to Quantum Chromodynamics}
+In 1968 deep inelastic scatterings performed at the Stanford Linear Accelerator Center showed that the proton had internal structure\cite{Riordan1287} called partons at the time.  Within a decade of this discovery the partons were broken into two categories: the mass carrying fermions were known as the quarks and the gauge boson force carriers were called gluons.  The interactions of these two types of particles were described by the quantum field theory known as quantum chromodynamics (QCD) and by the SU(3) symmetry group.  SU(3) guarantees that color charge is conserved and this results in quarks grouping together into `colorless' hadrons.
 
 \subsection{The QCD Lagrangian}
+QCD is the strongest of the known fundamental forces.  It is a gauge field theory described by the Lagrangian density
 
 \begin{equation}
-{\cal L}=-\frac{1}{4}F^{A}_{\alpha\beta}F^{\alpha\beta}_{A}
-+\sum_{q}
-\bar{\psi}_{q,a}(i\gamma^{\mu}D_{\mu}-m)_{AB}
-\psi_{q,b}
+{\cal L}=-\frac{1}{4}F^{\alpha}_{\mu\nu}F^{\mu\nu}_{\alpha}
+- \alpha_{s} (\bar{q}_{j}\gamma^{\mu}T_{\alpha}q_{j})G_{\alpha}^{\mu}
++ \bar{q}_{j}(i\gamma^{\mu} \partial_{\mu} - m)q_{j}
 \label{eq:lagrangian}
 \end{equation}
 
-where $q$ represents the summation over the three quark flavors
+\noindent
+where $q$ and $\bar{q}$ represent the color anti-color fields summed over color $j$, $\alpha_{s}$ is the strong coupling strength,$\gamma^{\mu}$ is the Dirac gamma matrix, $G_{\alpha}^{\mu}$ is the gauge field for color \textit{$\alpha$}, is similar in analogy to the \textbf{W} matrix from the electroweak theory.  $F^{\alpha}_{\mu\nu}$ is the field strength tensor and it describes the gluon interactions. The first term of the Lagrangian is the contribution due to gluons and carries no mass term, 
+\subsection{Scattering and Hard Processes}
+
+
+
+
+\subsection{Factorization}
+
+\subsubsection{Hadronization and Fragmentation}
+
+\subsubsection{Partonic Distribution}
 
 
 \subsection{Kinematics}\label{sec:kinematics};
@@ -69,17 +78,6 @@ c(b) =\frac{ \int_{0}^{b} \frac{d \sigma}{db} db}{ \int_{0}^{\infty} \frac{d \si
 \label{eq:centrality}
 \end{equation}
 
-
-\subsection{Scattering and Hard Processes}
-
-
-
-
-\subsection{Factorization}
-
-\subsubsection{Hadronization and Fragmentation}
-
-\subsubsection{Partonic Distribution}
 
 
 
