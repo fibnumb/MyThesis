@@ -1,9 +1,9 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Quantum Chromodynamics}{4}{chapter.2}
 \contentsline {subsection}{\numberline {2.0.1}The QCD Lagrangian}{4}{subsection.2.0.1}
-\contentsline {subsection}{\numberline {2.0.2}Scattering and Hard Processes}{6}{subsection.2.0.2}
+\contentsline {subsection}{\numberline {2.0.2}Scattering and Hard Processes}{5}{subsection.2.0.2}
 \contentsline {subsection}{\numberline {2.0.3}Factorization}{6}{subsection.2.0.3}
-\contentsline {subsubsection}{Hadronization and Fragmentation}{6}{section*.11}
+\contentsline {subsubsection}{Hadronization}{6}{section*.11}
 \contentsline {subsubsection}{Partonic Distribution}{6}{section*.12}
 \contentsline {subsection}{\numberline {2.0.4}Kinematics}{6}{subsection.2.0.4}
 \contentsline {section}{\numberline {2.1}Jets}{7}{section.2.1}
