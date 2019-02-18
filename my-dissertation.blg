@@ -5,13 +5,14 @@ A level-1 auxiliary file: chapters/chapter-1.aux
 A level-1 auxiliary file: chapters/chapter-2.aux
 A level-1 auxiliary file: chapters/chapter-3.aux
 A level-1 auxiliary file: chapters/chapter-4.aux
+A level-1 auxiliary file: chapters/chapter-5.aux
+A level-1 auxiliary file: chapters/chapter-6.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-dissertation.bib
 Warning--entry type for "Santimaria:1690550" isn't style-file defined
---line 701 of file references-dissertation.bib
-Warning--I didn't find a database entry for "CMS:2014mna"
+--line 719 of file references-dissertation.bib
 Warning--I didn't find a database entry for "Tangwancharoen:2016dq"
 Warning--I didn't find a database entry for "Pfeiffer:2628608"
 Warning--empty journal in Mobs:2197559
@@ -29,45 +30,45 @@ Warning--empty institution in Abelev:1625842
 Warning--empty author in CERN-LHCC-2015-001
 Warning--empty institution in CERN-LHCC-2015-001
 Warning--empty institution in Buncic:2011297
-You've used 61 entries,
+You've used 62 entries,
             1791 wiz_defined-function locations,
-            850 strings with 14573 characters,
-and the built_in function-call counts, 12993 in all, are:
-= -- 1099
-> -- 555
+            856 strings with 14832 characters,
+and the built_in function-call counts, 13183 in all, are:
+= -- 1115
+> -- 563
 < -- 9
-+ -- 212
-- -- 151
-* -- 889
-:= -- 2115
-add.period$ -- 186
-call.type$ -- 61
-change.case$ -- 61
++ -- 215
+- -- 153
+* -- 902
+:= -- 2147
+add.period$ -- 189
+call.type$ -- 62
+change.case$ -- 62
 chr.to.int$ -- 0
-cite$ -- 76
-duplicate$ -- 568
-empty$ -- 1324
-format.name$ -- 151
-if$ -- 2877
+cite$ -- 77
+duplicate$ -- 577
+empty$ -- 1344
+format.name$ -- 153
+if$ -- 2919
 int.to.chr$ -- 0
-int.to.str$ -- 61
-missing$ -- 53
-newline$ -- 310
-num.names$ -- 58
-pop$ -- 134
+int.to.str$ -- 62
+missing$ -- 54
+newline$ -- 315
+num.names$ -- 59
+pop$ -- 135
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 234
+skip$ -- 238
 stack$ -- 0
-substring$ -- 870
-swap$ -- 84
+substring$ -- 879
+swap$ -- 85
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 15
-while$ -- 107
-width$ -- 63
-write$ -- 660
-(There were 19 warnings)
+while$ -- 109
+width$ -- 64
+write$ -- 671
+(There were 18 warnings)
