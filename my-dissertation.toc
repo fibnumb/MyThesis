@@ -1,63 +1,22 @@
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Quantum Chromodynamics}{4}{chapter.2}
-\contentsline {subsection}{\numberline {2.0.1}The QCD Lagrangian}{4}{subsection.2.0.1}
-\contentsline {subsection}{\numberline {2.0.2}Scattering and Hard Processes}{5}{subsection.2.0.2}
-\contentsline {subsection}{\numberline {2.0.3}Factorization}{6}{subsection.2.0.3}
-\contentsline {subsubsection}{Hadronization}{6}{section*.11}
-\contentsline {subsubsection}{Partonic Distribution}{6}{section*.12}
-\contentsline {subsection}{\numberline {2.0.4}Kinematics}{6}{subsection.2.0.4}
-\contentsline {section}{\numberline {2.1}Jets}{7}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Jet Finding Algorithms}{8}{subsection.2.1.1}
-\contentsline {section}{\numberline {2.2}The Quark-Gluon Plasma}{8}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Asymptotic Freedom and the Perfect Fluid}{8}{subsection.2.2.1}
-\contentsline {subsubsection}{Hydrodynamics}{8}{section*.14}
-\contentsline {subsection}{\numberline {2.2.2}Energy Loss in a Colored Medium}{9}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}The Nuclear Modification Factor}{9}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Nuclear Collisions}{9}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}QGP in Proton-Proton Collisions?}{9}{section.2.3}
-\contentsline {chapter}{\numberline {3}The LHC and ALICE}{10}{chapter.3}
-\contentsline {section}{\numberline {3.1}Overview of the LHC}{10}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}LHC Operations}{11}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}LHC Accelerator Complex}{12}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}The ALICE Experiment}{13}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}TZERO}{14}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}VZERO}{14}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Inner Tracking System}{15}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Time Projection Chamber}{16}{subsection.3.2.4}
-\contentsline {subsubsection}{The TPC readout}{16}{section*.20}
-\contentsline {subsubsection}{TPC Performance}{18}{section*.22}
-\contentsline {subsection}{\numberline {3.2.5}Electromagnetic Calorimeter}{19}{subsection.3.2.5}
-\contentsline {subsubsection}{EMCal Performance}{20}{section*.25}
-\contentsline {subsubsection}{EMCal Trigger}{20}{section*.27}
-\contentsline {chapter}{\numberline {4}The ALICE TPC Upgrade}{23}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.1}Physics Motivation}{23}{subsection.4.0.1}
-\contentsline {subsection}{\numberline {4.0.2}Gaseous Electron Multiplier Foils}{25}{subsection.4.0.2}
-\contentsline {subsection}{\numberline {4.0.3}Research and Development}{27}{subsection.4.0.3}
-\contentsline {subsubsection}{2014 Test Beam}{29}{section*.34}
-\contentsline {subsection}{\numberline {4.0.4}Production of the Inner Readout Chambers in the U.S.}{30}{subsection.4.0.4}
-\contentsline {subsection}{\numberline {4.0.5}GEM and Chamber Quality Assurance}{32}{subsection.4.0.5}
-\contentsline {subsubsection}{GEM QA}{33}{section*.40}
-\contentsline {subsubsection}{Chamber QA}{34}{section*.42}
-\contentsline {subsection}{\numberline {4.0.6}Outlook}{35}{subsection.4.0.6}
-\contentsline {chapter}{\numberline {5}Jet Results and Discussion}{37}{chapter.5}
-\contentsline {section}{\numberline {5.1}Data Quality}{38}{section.5.1}
-\contentsline {section}{\numberline {5.2}Event Selection}{38}{section.5.2}
-\contentsline {section}{\numberline {5.3}Raw measurements}{39}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Raw Jet Momentum Spectra in pp Collisions}{40}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}Unfolding}{40}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Corrections to particle Level}{40}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Unfolding Matrix}{40}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Unfolded Spectra}{40}{subsection.5.4.3}
-\contentsline {section}{\numberline {5.5}Trigger Efficiency}{40}{section.5.5}
-\contentsline {section}{\numberline {5.6}Systematic Uncertainties}{40}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Systematic Uncertainty to Jet Yield}{40}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}Systematic Uncertainty to Jet Energy Scale}{40}{subsection.5.6.2}
-\contentsline {subsection}{\numberline {5.6.3}Total Uncertainty}{40}{subsection.5.6.3}
-\contentsline {section}{\numberline {5.7}Corrected pp jet cross section}{40}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}Comparisons to pQCD predictions}{40}{subsection.5.7.1}
-\contentsline {subsection}{\numberline {5.7.2}Jet Cross Section and Ratios}{40}{subsection.5.7.2}
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{41}{chapter.6}
-\contentsline {chapter}{Bibliography}{42}{section*.47}
-\contentsline {chapter}{Appendices}{49}{section*.48}
-\contentsline {section}{\numberline {A}Particle Identification via Bethe-Bloch}{50}{section.Alph0.1}
-\contentsline {chapter}{Vita}{52}{section*.51}
+\contentsline {chapter}{\numberline {1}Jet Results and Discussion}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Data Quality}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Event Selection}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Raw measurements}{3}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Raw Jet Momentum Spectra in pp Collisions}{4}{subsection.1.3.1}
+\contentsline {section}{\numberline {1.4}Unfolding}{4}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Corrections to particle Level}{4}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Unfolding Matrix}{4}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Unfolded Spectra}{4}{subsection.1.4.3}
+\contentsline {section}{\numberline {1.5}Trigger Efficiency}{4}{section.1.5}
+\contentsline {section}{\numberline {1.6}Systematic Uncertainties}{4}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Systematic Uncertainty to Jet Yield}{4}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Systematic Uncertainty to Jet Energy Scale}{4}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}Total Uncertainty}{4}{subsection.1.6.3}
+\contentsline {section}{\numberline {1.7}Corrected pp jet cross section}{4}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Comparisons to pQCD predictions}{4}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}Jet Cross Section and Ratios}{4}{subsection.1.7.2}
+\contentsline {chapter}{\numberline {2}Conclusion and Outlook}{5}{chapter.2}
+\contentsline {chapter}{Bibliography}{6}{section*.11}
+\contentsline {chapter}{Appendices}{13}{section*.12}
+\contentsline {section}{\numberline {A}Particle Identification via Bethe-Bloch}{14}{section.Alph0.1}
+\contentsline {chapter}{Vita}{16}{section*.15}
