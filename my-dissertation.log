@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  20 FEB 2019 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  21 FEB 2019 15:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -449,24 +449,28 @@ Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks32
 \inpenc@posthook=\toks33
 )
-(./my-dissertation.aux (./chapters/chapter-5.aux) (./chapters/chapter-6.aux)
-(./back-matter/appendix-1.aux) (./back-matter/vita.aux))
+(./my-dissertation.aux (./chapters/chapter-5.aux
+
+LaTeX Warning: Label `eq:xsecdef' multiply defined.
+
+) (./chapters/chapter-6.aux) (./back-matter/appendix-1.aux)
+(./back-matter/vita.aux))
 \openout1 = `my-dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
 
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
@@ -503,8 +507,8 @@ LaTeX Font Info:    ... okay on input line 77.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box31
-Package backref Info: ** backref set up for natbib ** on input line 77.
-Package hyperref Info: Link coloring ON on input line 77.
+Package backref Info: ** backref set up for natbib ** on input line 76.
+Package hyperref Info: Link coloring ON on input line 76.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -513,9 +517,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count140
 )
-LaTeX Info: Redefining \ref on input line 77.
-LaTeX Info: Redefining \pageref on input line 77.
-LaTeX Info: Redefining \nameref on input line 77.
+LaTeX Info: Redefining \ref on input line 76.
+LaTeX Info: Redefining \pageref on input line 76.
+LaTeX Info: Redefining \nameref on input line 76.
 
 (./my-dissertation.out) (./my-dissertation.out)
 \@outlinefile=\write3
@@ -555,17 +559,17 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 82.
+LaTeX Font Info:    Try loading font information for U+msa on input line 81.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 82.
+LaTeX Font Info:    Try loading font information for U+msb on input line 81.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 82.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 81.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -578,13 +582,13 @@ Non-PDF special ignored!
 
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 87.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 86.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 87.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
  [2
 
 
@@ -623,7 +627,7 @@ Chapter 1.
 
 LaTeX Warning: Reference `ch:alice' on page 2 undefined on input line 26.
 
-<figures/pdf/8TeVRunefficency.png, id=192, 2260.445pt x 939.51pt>
+<figures/pdf/8TeVRunefficency.png, id=193, 2260.445pt x 939.51pt>
 File: figures/pdf/8TeVRunefficency.png Graphic file (type png)
 <use figures/pdf/8TeVRunefficency.png>
 Package pdftex.def Info: figures/pdf/8TeVRunefficency.png  used on input line 3
@@ -645,21 +649,31 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `tab:RunSummary' on page 2 undefined on input line 38.
 
 
-[2] [3 <./figures/pdf/8TeVRunefficency.png>]) [4]
+[2]
+
+Package natbib Warning: Citation `Bourrion:2010js' on page 3 undefined on input
+ line 79.
+
+[3 <./figures/pdf/8TeVRunefficency.png>]
+
+Package natbib Warning: Citation `ALICE-PUBLIC-2017-002' on page 4 undefined on
+ input line 103.
+
+[4]) [5]
 :<-
 :<+ chapters/chapter-6.tex
 \openout2 = `chapters/chapter-6.aux'.
 
 (./chapters/chapter-6.tex
 Chapter 2.
-) [5
+) [6
 
 
 
 
 ]
 :<-
-[6
+[7
 
 
 
@@ -669,7 +683,7 @@ Chapter 2.
 \tf@brf=\write6
 \openout6 = `my-dissertation.brf'.
 
- [7]
+ [8]
 Underfull \hbox (badness 4001) in paragraph at lines 87--87
 []\OT1/cmr/m/n/12 Purba Bhat-tacharya, Be-dan-gadas Mo-hanty, Supratik Mukhopad
 -hyay, Nayana
@@ -681,7 +695,7 @@ Underfull \hbox (badness 1859) in paragraph at lines 129--129
 12 , D91(3):033006, 2015.  [Er-ra-tum: Phys.
  []
 
-[8] [9] [10] [11]
+[9] [10] [11] [12]
 Underfull \hbox (badness 1406) in paragraph at lines 351--351
 \OT1/cmr/m/it/12 Nu-clear In-stru-ments and Meth-ods in Physics Re-search Sec-t
 ion A: Ac-cel-er-a-tors,
@@ -689,7 +703,7 @@ ion A: Ac-cel-er-a-tors,
 
 )
 :<-
-[12] [13
+[13] [14
 
 
 ]
@@ -697,37 +711,37 @@ ion A: Ac-cel-er-a-tors,
 \openout2 = `back-matter/appendix-1.aux'.
 
 (./back-matter/appendix-1.tex
-<figures/pdf/bethe.png, id=320, 1168.365pt x 735.74875pt>
+<figures/pdf/bethe.png, id=329, 1168.365pt x 735.74875pt>
 File: figures/pdf/bethe.png Graphic file (type png)
 <use figures/pdf/bethe.png>
 Package pdftex.def Info: figures/pdf/bethe.png  used on input line 13.
 (pdftex.def)             Requested size: 469.75502pt x 295.8211pt.
- [14
+ [15
 
 
  <./figures/pdf/bethe.png (PNG copy)>]
 
-LaTeX Warning: Reference `sec:its' on page 15 undefined on input line 21.
+LaTeX Warning: Reference `sec:its' on page 16 undefined on input line 21.
 
 
-LaTeX Warning: Reference `sec:tpc' on page 15 undefined on input line 21.
+LaTeX Warning: Reference `sec:tpc' on page 16 undefined on input line 21.
 
-<figures/pdf/ALICEITSPID.png, id=332, 342.27875pt x 232.87pt>
+<figures/pdf/ALICEITSPID.png, id=340, 342.27875pt x 232.87pt>
 File: figures/pdf/ALICEITSPID.png Graphic file (type png)
 <use figures/pdf/ALICEITSPID.png>
 Package pdftex.def Info: figures/pdf/ALICEITSPID.png  used on input line 26.
 (pdftex.def)             Requested size: 216.81pt x 147.5119pt.
-<figures/pdf/TPC_PID2.png, id=333, 343.2825pt x 247.92625pt>
+<figures/pdf/TPC_PID2.png, id=341, 343.2825pt x 247.92625pt>
 File: figures/pdf/TPC_PID2.png Graphic file (type png)
 <use figures/pdf/TPC_PID2.png>
 Package pdftex.def Info: figures/pdf/TPC_PID2.png  used on input line 28.
 (pdftex.def)             Requested size: 216.81pt x 156.58401pt.
-) [15 <./figures/pdf/ALICEITSPID.png> <./figures/pdf/TPC_PID2.png>]
+) [16 <./figures/pdf/ALICEITSPID.png> <./figures/pdf/TPC_PID2.png>]
 :<-
 :<+ back-matter/vita.tex
 \openout2 = `back-matter/vita.aux'.
 
-(./back-matter/vita.tex) [16
+(./back-matter/vita.tex) [17
 
 
 
@@ -736,30 +750,36 @@ Package pdftex.def Info: figures/pdf/TPC_PID2.png  used on input line 28.
 
 ]
 :<-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
 (./my-dissertation.aux (./chapters/chapter-5.aux) (./chapters/chapter-6.aux)
 (./back-matter/appendix-1.aux) (./back-matter/vita.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
 Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: F842628A0994AC048AF62EACA9A094AB;1919.
+(rerunfilecheck)             Checksum: 856FCFBC64C4C5C541B04355B010A7DC;1921.
 Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
-(rerunfilecheck)             Checksum: AF7745DCF955EE764091A9338FB6B68A;287.
+(rerunfilecheck)             Checksum: BA21D13494B27D1EC769B8923F31EB73;287.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 9687 strings out of 492649
- 146673 string characters out of 6129622
- 243050 words of memory out of 5000000
- 13245 multiletter control sequences out of 15000+600000
+ 9692 strings out of 492649
+ 146731 string characters out of 6129622
+ 243136 words of memory out of 5000000
+ 13246 multiletter control sequences out of 15000+600000
  18287 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,53p,751b,645s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,53p,751b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -776,11 +796,12 @@ e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
 018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on my-dissertation.pdf (21 pages, 633402 bytes).
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on my-dissertation.pdf (22 pages, 638926 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 387 compressed objects within 4 object streams
- 131 named destinations out of 1000 (max. 500000)
+ 450 PDF objects out of 1000 (max. 8388607)
+ 397 compressed objects within 4 object streams
+ 135 named destinations out of 1000 (max. 500000)
  245 words of extra memory for PDF output out of 10000 (max. 10000000)
 

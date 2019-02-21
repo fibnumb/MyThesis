@@ -3,7 +3,7 @@
 Beginning in March of 2012, the LHC began seven months of pp collisions at $\sqrt{s} = \,$ 8 TeV.  The jet cross sections and ratios of the cross sections for jets of different radii offers a unique perspective on the pQCD effects of hadronization at this new energy frontier.  Due to the expectation that no QGP is formed in a pp collision these measurements serve as a baseline for separating phenomena associated with the QGP in heavy-ion collisions.  In order to measure the jet cross section the following formula is used,
 
 \begin{equation}
-	\frac{d \sigma^{jet}}{d\eta \, dp_{T}} = \frac{A_{trigger}}{\epsilon_{trigger}(p_{T})} \times C_{MC} \times \frac{1}{A(p_{T}) } \times \frac{1}{L_{int}} \times \frac{dN^{jet}}{dp_{T} \, d\eta}
+	\frac{d \sigma^{jet}}{d\eta \, dp_{T}} = \frac{A_{trigger}}{\epsilon_{trigger}(p_{T})} \times C_{MC} \times \frac{1}{A(p_{T}) } \times \frac{1}{\mathscr{L}_{int}} \times \frac{dN^{jet}}{dp_{T} \, d\eta}
 \label{eq:xsecdef}
 \end{equation}
 
@@ -26,7 +26,7 @@ The following sections will go over how each factor was determined and the quali
 ALICE is a state-of-the-art experiment with excellent tracking and particle identification capabilities as discussed in Chapter \ref{ch:alice}.  However, just like any real world experiment, it contains a number of inefficiencies and imperfections.  This means that the data collected during the 8 TeV pp collision must be examined and any inaccuracies in the data must be removed before hard physics conclusions may be reached.  Data may be compromised at both the event-level, the experiment erroneously recorded something as an event, or at the constituent-level, one of the subdetectors mismeasured a feature of a particle, and these outliers must be accounted for and removed 
 \section{Event Selection}
 
-For an event to be selected into a physics analysis it must pass a number of quality control tests.  For example, the LHC must have be in a state of stable beams, cosmics must be excluded by only accepting tracks that originate from a vertex inside the detector, and the relevant detectors for a given analysis must be functioning as intended.  
+For an event to be selected into a physics analysis it must pass a number of quality control tests.  For example, the LHC must have be in a state of stable beams, cosmic rays must be excluded by only accepting tracks that originate from a vertex inside the detector, and the relevant detectors for a given analysis must be functioning as intended.  
 
 \begin{figure}[h]
 \includegraphics[width=17cm]{8TeVRunefficency}
@@ -57,11 +57,14 @@ During the 8 TeV data collection period approximately 180 million minimum bias e
 \caption{2012 8 TeV data taking period.}
 \end{table}
 
-Approximatly, 15\% of the data sampled is unusable due to malfunctions in TPC chambers, EMCal super modules, the electronics for the EMCal or TPC, and   
+Approximately, 15\% of the data sampled is unusable due to malfunctions in TPC chambers, EMCal super modules, the electronics for the EMCal or TPC, and   
 \section{Raw measurements}
 The ALICE experiment is capable of two types of jet reconstruction, charged and full jets.  Charged jets use information from the charged particle tracking detectors, such as the ITS and TPC, in conjunction with a jet finding algorithm to identify jets.  Full jets implement a similar procedure but also incorporates the EMCal in order to 
 
 \subsection{Raw Jet Momentum Spectra in pp Collisions}
+
+
+
 
 \section{Unfolding}
 
@@ -71,7 +74,14 @@ The ALICE experiment is capable of two types of jet reconstruction, charged and 
 
 \subsection{Unfolded Spectra}
 
-\section{Trigger Efficiency}
+\section{EMCal Triggered Data}
+
+In addition with the minimum bias data collected, the EMCal was used during the 8 TeV run in order to provided an enhanced data set that is preferential to hard processes.   The Level-1 trigger\cite{Bourrion:2010js} in the EMCal 
+
+\begin{equation}
+	Trigger \, Efficency = \frac{N^{Triggered}_{events}}{N^{MinBias}_{events}} \times \frac{d^{2} N_{Triggered}^{jet}}{d\eta \, dp_{T}} \Bigg/  \frac{d^{2} N_{MinBias}^{jet}}{d\eta \, dp_{T}} 
+\label{eq:xsecdef}
+\end{equation}
 
 \section{Systematic Uncertainties}
 
@@ -79,9 +89,22 @@ The ALICE experiment is capable of two types of jet reconstruction, charged and 
 
 \subsection{Systematic Uncertainty to Jet Energy Scale}
 
+\subsubsection{Luminosity Uncertainty}
+
+The luminosity of a hadronic collider, $\mathscr{L}$, is given by the expression
+
+
+
+\begin{equation}
+\mathscr{L} = \frac{R}{\sigma}
+\label{eq:xlumdef}
+\end{equation}
+
+The luminosity along with its uncertainity were determined during a a special Van der Meer scan run in April of 2012\cite{ALICE-PUBLIC-2017-002}.
 \subsection{Total Uncertainty}
 
 \section{Corrected pp jet cross section}
+
 
 \subsection{Comparisons to pQCD predictions}
 
@@ -90,7 +113,7 @@ The ALICE experiment is capable of two types of jet reconstruction, charged and 
 Given two jets of different radii, $R_{1}$ and $R_{2}$, the ratio of the cross sections may be written in short hand as,
 
 \begin{equation}
-	\frac{\sigma_{R_{1}}}{\sigma_{R_{2}}}= \frac{d \sigma^{jet}_{R_{1}}}{d\eta \, dp_{T}} \Big/  \frac{d \sigma^{jet}_{R_{2}}}{d\eta \, dp_{T}}
+	\frac{\sigma_{R_{1}}}{\sigma_{R_{2}}}= \frac{d \sigma^{jet}_{R_{1}}}{dp_{T}} \Bigg/  \frac{d \sigma^{jet}_{R_{2}}}{dp_{T}}
 \label{eq:xsecratiodef}
 \end{equation}
 

@@ -1,7 +1,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces LHC state during the 8 TeV run. \relax }}{3}{figure.caption.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Energy loss of a muon traversing a copper medium between 0.1 MeV to 100 TeV \cite {Patrignani:2016xqp}.\relax }}{14}{figure.caption.13}
-\contentsline {figure}{\numberline {2}{\ignorespaces Specific energy loss for the ITS\textit {(left)} and the TPC\textit {(right)} with Bethe-Bloch fits from different particle species traversing each detector\cite {Noferini:2016lcw}.\relax }}{15}{figure.caption.14}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALICE ITS(pp $\sqrt {s} = 13$ TeV )}}}{15}{subfigure.2.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ALICE TPC (PbPb $\sqrt {s_{NN}} = 5.02$ TeV )}}}{15}{subfigure.2.2}
+\contentsline {figure}{\numberline {1}{\ignorespaces Energy loss of a muon traversing a copper medium between 0.1 MeV to 100 TeV \cite {Patrignani:2016xqp}.\relax }}{15}{figure.caption.14}
+\contentsline {figure}{\numberline {2}{\ignorespaces Specific energy loss for the ITS\textit {(left)} and the TPC\textit {(right)} with Bethe-Bloch fits from different particle species traversing each detector\cite {Noferini:2016lcw}.\relax }}{16}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALICE ITS(pp $\sqrt {s} = 13$ TeV )}}}{16}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ALICE TPC (PbPb $\sqrt {s_{NN}} = 5.02$ TeV )}}}{16}{subfigure.2.2}
