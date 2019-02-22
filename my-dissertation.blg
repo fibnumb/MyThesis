@@ -1,74 +1,63 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: my-dissertation.aux
-A level-1 auxiliary file: chapters/chapter-1.aux
-A level-1 auxiliary file: chapters/chapter-2.aux
-A level-1 auxiliary file: chapters/chapter-3.aux
 A level-1 auxiliary file: chapters/chapter-4.aux
-A level-1 auxiliary file: chapters/chapter-5.aux
-A level-1 auxiliary file: chapters/chapter-6.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-dissertation.bib
 Warning--entry type for "Santimaria:1690550" isn't style-file defined
---line 719 of file references-dissertation.bib
-Warning--I didn't find a database entry for "Tangwancharoen:2016dq"
+--line 746 of file references-dissertation.bib
 Warning--I didn't find a database entry for "Pfeiffer:2628608"
-Warning--empty journal in Mobs:2197559
-Warning--empty journal in Abeysekara:2010ze
-Warning--empty booktitle in Dick2017QM
-Warning--empty author in CERN-LHCC-2013-020
-Warning--empty institution in CERN-LHCC-2013-020
-Warning--empty author in CERN-LHCC-2015-002
-Warning--empty institution in CERN-LHCC-2015-002
-Warning--empty journal in Huth:217490
-Warning--there's a number but no volume in Huth:217490
-Warning--empty journal in Gligorov:2018vkc
 Warning--empty journal in Apollinari:2015bam
 Warning--empty institution in Abelev:1625842
 Warning--empty author in CERN-LHCC-2015-001
 Warning--empty institution in CERN-LHCC-2015-001
 Warning--empty institution in Buncic:2011297
-You've used 62 entries,
+Warning--empty author in CERN-LHCC-2013-020
+Warning--empty institution in CERN-LHCC-2013-020
+Warning--empty author in CERN-LHCC-2015-002
+Warning--empty institution in CERN-LHCC-2015-002
+Warning--empty booktitle in Dick2017QM
+You've used 25 entries,
             1791 wiz_defined-function locations,
-            856 strings with 14832 characters,
-and the built_in function-call counts, 13183 in all, are:
-= -- 1115
-> -- 563
-< -- 9
-+ -- 215
-- -- 153
-* -- 902
-:= -- 2147
-add.period$ -- 189
-call.type$ -- 62
-change.case$ -- 62
+            619 strings with 8452 characters,
+and the built_in function-call counts, 5127 in all, are:
+= -- 430
+> -- 222
+< -- 8
++ -- 85
+- -- 60
+* -- 350
+:= -- 828
+add.period$ -- 74
+call.type$ -- 25
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 77
-duplicate$ -- 577
-empty$ -- 1344
-format.name$ -- 153
-if$ -- 2919
+cite$ -- 35
+duplicate$ -- 237
+empty$ -- 515
+format.name$ -- 60
+if$ -- 1140
 int.to.chr$ -- 0
-int.to.str$ -- 62
-missing$ -- 54
-newline$ -- 315
-num.names$ -- 59
-pop$ -- 135
+int.to.str$ -- 25
+missing$ -- 18
+newline$ -- 126
+num.names$ -- 22
+pop$ -- 67
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 238
+skip$ -- 101
 stack$ -- 0
-substring$ -- 879
-swap$ -- 85
-text.length$ -- 9
+substring$ -- 278
+swap$ -- 44
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 15
-while$ -- 109
-width$ -- 64
-write$ -- 671
-(There were 18 warnings)
+warning$ -- 10
+while$ -- 39
+width$ -- 27
+write$ -- 267
+(There were 12 warnings)

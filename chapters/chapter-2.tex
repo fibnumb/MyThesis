@@ -34,6 +34,14 @@ At short distances, less than 0.2 \textit{fm}, the strong coupling constant beco
 \end{figure}
 
 \subsection{Scattering and Hard Processes}
+
+\begin{figure}[h]
+\includegraphics[width=12.0cm]{ppcollison}
+\centering
+\caption{Timeline of a proton-proton collision.  Starting from the bottom, two partons confined within the colliding protons have a hard interaction.  The outgoing partons will induce partonic showers by radiating quarks and gluons.  The partonic showers will eventually form into final state hadrons due to confinement\cite{Dobbs:2001ck}.}
+\label{fig:as}
+\end{figure}
+
 One of the best places to fundamentally test QCD is with high energy hadron colliders such as those found at CERN, Fermilab, and BNL\footnote{Discussed in detail in Chapter 3}.  Hard probes, partons that interact with a high momentum transfer (large $Q^{2}$ and all $\alpha_{s}$), can be probed using perturbation theory. The time scale that a hard probe is created in a high energy collison is on the order of $\tau \approx 1/p_{T} \approx$ \, 0.1 fm/\textit{c} which probes the initial state these interactions.  As these partons separate from one another 
 
 \begin{equation}
@@ -45,8 +53,13 @@ d\sigma^{pp \rightarrow jet} \sim f_{a/A}(x_{1},Q^{2}) \otimes  f_{b/B}(x_{2},Q^
 
 \subsubsection{Hadronization}
 
+Hadronization is the process by which the partons form into hadrons.  Accurataly modeling this transition requires 
+
 \subsubsection{Partonic Distribution}
 
+\subsection{PYTHIA}
+
+PYTHIA\cite{Sjostrand:2007gs}, is a Monte Carlo software tool-kit used to model proton-proton collisions.  The package uses pre-defined parton distribution functions as input and from their simulates partonic showers and radiation due to a hard scattering by generating the NLO scattering matrix elements.  Hadronization is performed in PYTHIA using the Lund String Model.  After which relative branching ratios are used to statistically throw the decay modes of the hadrons.  
 
 \subsection{Kinematics}\label{sec:kinematics};
 Before I give a detailed discussion of the physics and observables in high energy and nuclear physics it would be advantageus to define some terms and go over a few formulas.

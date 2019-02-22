@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  21 FEB 2019 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  22 FEB 2019 16:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -449,12 +449,15 @@ Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks32
 \inpenc@posthook=\toks33
 )
-(./my-dissertation.aux (./chapters/chapter-5.aux
+(./my-dissertation.aux (./chapters/chapter-1.aux) (./chapters/chapter-2.aux
 
-LaTeX Warning: Label `eq:xsecdef' multiply defined.
+LaTeX Warning: Label `fig:as' multiply defined.
 
-) (./chapters/chapter-6.aux) (./back-matter/appendix-1.aux)
-(./back-matter/vita.aux))
+) (./chapters/chapter-4.aux
+
+LaTeX Warning: Label `fig:IROCprod' multiply defined.
+
+) (./back-matter/appendix-1.aux) (./back-matter/vita.aux))
 \openout1 = `my-dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
@@ -559,21 +562,27 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 81.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 81.
+:<+ chapters/chapter-1.tex
+\openout2 = `chapters/chapter-1.aux'.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 81.
+(./chapters/chapter-1.tex
+Chapter 1.
+<figures/pdf/Fundamental_Particles.png, id=129, 301.125pt x 324.21124pt>
+File: figures/pdf/Fundamental_Particles.png Graphic file (type png)
+<use figures/pdf/Fundamental_Particles.png>
+Package pdftex.def Info: figures/pdf/Fundamental_Particles.png  used on input l
+ine 5.
+(pdftex.def)             Requested size: 170.71652pt x 183.81291pt.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [1
+Package natbib Warning: Citation `Langacker:2009my' on page 1 undefined on inpu
+t line 11.
+
+
+Package natbib Warning: Citation `Aoyama:2014sxa' on page 1 undefined on input 
+line 11.
+
+[1
 Non-PDF special ignored!
 <special> papersize=614.295pt,794.96999pt
 
@@ -581,129 +590,302 @@ Non-PDF special ignored!
 
 
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 86.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+
+
+
+
+
+
+
+
+
+
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figur
+es/pdf/Fundamental_Particles.png>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 17.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 17.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 17.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)) [2] [3]
+:<-
+:<+ chapters/chapter-2.tex
+\openout2 = `chapters/chapter-2.aux'.
+
+(./chapters/chapter-2.tex
+Chapter 2.
+
+Package natbib Warning: Citation `Riordan1287' on page 4 undefined on input lin
+e 4.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 6.
+
+[4
+
+
+
+
+]
+
+Package natbib Warning: Citation `Wilczek:2005az' on page 5 undefined on input 
+line 19.
+
+<figures/pdf/alphas_s.jpg, id=164, 819.06pt x 582.175pt>
+File: figures/pdf/alphas_s.jpg Graphic file (type jpg)
+<use figures/pdf/alphas_s.jpg>
+Package pdftex.def Info: figures/pdf/alphas_s.jpg  used on input line 30.
+(pdftex.def)             Requested size: 341.43306pt x 242.69077pt.
+
+Package natbib Warning: Citation `CMS:2014mna' on page 5 undefined on input lin
+e 32.
+
+
+Package natbib Warning: Citation `CMS:2014mna' on page 5 undefined on input lin
+e 32.
+
+<figures/pdf/ppcollison.png, id=165, 732.7375pt x 587.19376pt>
+File: figures/pdf/ppcollison.png Graphic file (type png)
+<use figures/pdf/ppcollison.png>
+Package pdftex.def Info: figures/pdf/ppcollison.png  used on input line 39.
+(pdftex.def)             Requested size: 341.43306pt x 273.6157pt.
+
+Package natbib Warning: Citation `Dobbs:2001ck' on page 5 undefined on input li
+ne 41.
+
+
+Package natbib Warning: Citation `Dobbs:2001ck' on page 5 undefined on input li
+ne 41.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <./figures/pdf/alphas_s.jpg>]
+
+LaTeX Warning: Reference `ch:alice' on page 6 undefined on input line 62.
+
+[6 <./figures/pdf/ppcollison.png>]
+<figures/pdf/CCfir5_04_13.jpg, id=191, 702.625pt x 284.06125pt>
+File: figures/pdf/CCfir5_04_13.jpg Graphic file (type jpg)
+<use figures/pdf/CCfir5_04_13.jpg>
+Package pdftex.def Info: figures/pdf/CCfir5_04_13.jpg  used on input line 95.
+(pdftex.def)             Requested size: 284.52756pt x 115.03116pt.
+
+
+Package natbib Warning: Citation `Loizides:2016djv' on page 7 undefined on inpu
+t line 102.
+
+
+Package natbib Warning: Citation `Miller:2007ri' on page 7 undefined on input l
+ine 102.
+
+[7 <./figures/pdf/CCfir5_04_13.jpg>]
+
+Package natbib Warning: Citation `Huth:217490' on page 8 undefined on input lin
+e 119.
+
+[8] [9]) [10]
+:<-
+:<+ chapters/chapter-4.tex
+\openout2 = `chapters/chapter-4.aux'.
+
+(./chapters/chapter-4.tex
+Chapter 3.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 6.
+
+
+LaTeX Warning: Reference `sec:LHC' on page 11 undefined on input line 7.
+
+[11
+
+
+
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 22.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
- [2
-
-
-]
-(./my-dissertation.toc [3
-
-
-
-
-
-
-
-
-
-])
-\tf@toc=\write4
-\openout4 = `my-dissertation.toc'.
-
- [4] (./my-dissertation.lof)
-\tf@lof=\write5
-\openout5 = `my-dissertation.lof'.
-
- [5
-
-]
-:<+ chapters/chapter-5.tex
-\openout2 = `chapters/chapter-5.aux'.
-
-(./chapters/chapter-5.tex
-Chapter 1.
-[1
-
-
-
-]
-
-LaTeX Warning: Reference `ch:alice' on page 2 undefined on input line 26.
-
-<figures/pdf/8TeVRunefficency.png, id=193, 2260.445pt x 939.51pt>
-File: figures/pdf/8TeVRunefficency.png Graphic file (type png)
-<use figures/pdf/8TeVRunefficency.png>
-Package pdftex.def Info: figures/pdf/8TeVRunefficency.png  used on input line 3
-2.
-(pdftex.def)             Requested size: 483.69684pt x 201.03021pt.
-
-Overfull \hbox (13.94182pt too wide) in paragraph at lines 32--34
- [][] 
- []
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
+<figures/pdf/dilepton-mass.png, id=245, 1163.34625pt x 551.05875pt>
+File: figures/pdf/dilepton-mass.png Graphic file (type png)
+<use figures/pdf/dilepton-mass.png>
+Package pdftex.def Info: figures/pdf/dilepton-mass.png  used on input line 32.
+(pdftex.def)             Requested size: 469.75502pt x 222.51329pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package caption Warning: \label without proper reference on input line 41.
-See the caption package documentation for explanation.
+LaTeX Warning: Reference `sec:tpc' on page 12 undefined on input line 39.
+
+[12]
+<figures/pdf/Scanning-electron-microscopy-image-of-GEM-foil-top-view-left-and-c
+ross-section-right.png, id=266, 853.1875pt x 303.1325pt>
+File: figures/pdf/Scanning-electron-microscopy-image-of-GEM-foil-top-view-left-
+and-cross-section-right.png Graphic file (type png)
+<use figures/pdf/Scanning-electron-microscopy-image-of-GEM-foil-top-view-left-a
+nd-cross-section-right.png>
+Package pdftex.def Info: figures/pdf/Scanning-electron-microscopy-image-of-GEM-
+foil-top-view-left-and-cross-section-right.png  used on input line 46.
+(pdftex.def)             Requested size: 398.33858pt x 141.5287pt.
+ [13 <./figures/pdf/dilepton-mass.png>]
+<figures/pdf/ALICEGEMSIMULATION.png, id=281, 584.1825pt x 277.035pt>
+File: figures/pdf/ALICEGEMSIMULATION.png Graphic file (type png)
+<use figures/pdf/ALICEGEMSIMULATION.png>
+Package pdftex.def Info: figures/pdf/ALICEGEMSIMULATION.png  used on input line
+ 57.
+(pdftex.def)             Requested size: 398.33858pt x 188.9097pt.
 
 
-LaTeX Warning: Reference `tab:RunSummary' on page 2 undefined on input line 38.
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14 <./figures/pdf/Scanning-electron-microscopy-image-of-GEM-foil-top-view-left
+-and-cross-section-right.png>]
+
+Package natbib Warning: Citation `Pfeiffer:2628608' on page 15 undefined on inp
+ut line 71.
+
+[15 <./figures/pdf/ALICEGEMSIMULATION.png>]
+<figures/pdf/ResoSim.png, id=311, 1053.9375pt x 360.34625pt>
+File: figures/pdf/ResoSim.png Graphic file (type png)
+<use figures/pdf/ResoSim.png>
+Package pdftex.def Info: figures/pdf/ResoSim.png  used on input line 74.
+(pdftex.def)             Requested size: 469.75502pt x 160.61475pt.
+<figures/pdf/4GEMROC.png, id=315, 539.01375pt x 277.035pt>
+File: figures/pdf/4GEMROC.png Graphic file (type png)
+<use figures/pdf/4GEMROC.png>
+Package pdftex.def Info: figures/pdf/4GEMROC.png  used on input line 84.
+(pdftex.def)             Requested size: 284.52756pt x 146.24026pt.
+ [16 <./figures/pdf/ResoSim.png> <./figures/pdf/4GEMROC.png>]
+
+LaTeX Warning: Reference `fig:TPCreadout' on page 17 undefined on input line 10
+9.
 
 
-[2]
+LaTeX Warning: Reference `sec:LHCop' on page 17 undefined on input line 111.
 
-Package natbib Warning: Citation `Bourrion:2010js' on page 3 undefined on input
- line 79.
+<figures/pdf/GemProtoPID.png, id=329, 961.5925pt x 408.52625pt>
+File: figures/pdf/GemProtoPID.png Graphic file (type png)
+<use figures/pdf/GemProtoPID.png>
+Package pdftex.def Info: figures/pdf/GemProtoPID.png  used on input line 114.
+(pdftex.def)             Requested size: 284.52756pt x 120.88197pt.
 
-[3 <./figures/pdf/8TeVRunefficency.png>]
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package natbib Warning: Citation `ALICE-PUBLIC-2017-002' on page 4 undefined on
- input line 103.
+<figures/pdf/ProtoIBFEres.png, id=333, 573.14125pt x 491.8375pt>
+File: figures/pdf/ProtoIBFEres.png Graphic file (type png)
+<use figures/pdf/ProtoIBFEres.png>
+Package pdftex.def Info: figures/pdf/ProtoIBFEres.png  used on input line 127.
+(pdftex.def)             Requested size: 170.71652pt x 146.50171pt.
 
-[4]) [5]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17]
+<figures/pdf/GEMShowerSim.png, id=348, 571.13374pt x 394.47375pt>
+File: figures/pdf/GEMShowerSim.png Graphic file (type png)
+<use figures/pdf/GEMShowerSim.png>
+Package pdftex.def Info: figures/pdf/GEMShowerSim.png  used on input line 137.
+(pdftex.def)             Requested size: 227.62204pt x 157.21487pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/pdf/IROCproductionflow.png, id=351, 633.36626pt x 489.83pt>
+File: figures/pdf/IROCproductionflow.png Graphic file (type png)
+<use figures/pdf/IROCproductionflow.png>
+Package pdftex.def Info: figures/pdf/IROCproductionflow.png  used on input line
+ 151.
+(pdftex.def)             Requested size: 284.52756pt x 220.04774pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18 <./figures/pdf/GemProtoPID.png> <./figures/pdf/ProtoIBFEres.png>]
+<figures/pdf/IROCAssemblyUTK.png, id=363, 1002.74625pt x 424.58624pt>
+File: figures/pdf/IROCAssemblyUTK.png Graphic file (type png)
+<use figures/pdf/IROCAssemblyUTK.png>
+Package pdftex.def Info: figures/pdf/IROCAssemblyUTK.png  used on input line 16
+1.
+(pdftex.def)             Requested size: 469.75502pt x 198.90768pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19 <./figures/pdf/GEMShowerSim.png>] [20 <./figures/pdf/IROCproductionflow.png
+> <./figures/pdf/IROCAssemblyUTK.png>]
+<figures/pdf/PicoSetup.png, id=382, 800.9925pt x 316.18124pt>
+File: figures/pdf/PicoSetup.png Graphic file (type png)
+<use figures/pdf/PicoSetup.png>
+Package pdftex.def Info: figures/pdf/PicoSetup.png  used on input line 178.
+(pdftex.def)             Requested size: 469.75502pt x 185.43085pt.
+ [21 <./figures/pdf/PicoSetup.png>]
+<figures/pdf/LeakSetupUTK.png, id=393, 1015.795pt x 310.15875pt>
+File: figures/pdf/LeakSetupUTK.png Graphic file (type png)
+<use figures/pdf/LeakSetupUTK.png>
+Package pdftex.def Info: figures/pdf/LeakSetupUTK.png  used on input line 192.
+(pdftex.def)             Requested size: 469.75502pt x 143.43198pt.
+<figures/pdf/AcceptanceCriteria.png, id=394, 1038.88126pt x 569.12625pt>
+File: figures/pdf/AcceptanceCriteria.png Graphic file (type png)
+<use figures/pdf/AcceptanceCriteria.png>
+Package pdftex.def Info: figures/pdf/AcceptanceCriteria.png  used on input line
+ 209.
+(pdftex.def)             Requested size: 227.62204pt x 124.69579pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22 <./figures/pdf/LeakSetupUTK.png>]
+<figures/pdf/LHCSparkTest.png, id=405, 714.67pt x 462.72874pt>
+File: figures/pdf/LHCSparkTest.png Graphic file (type png)
+<use figures/pdf/LHCSparkTest.png>
+Package pdftex.def Info: figures/pdf/LHCSparkTest.png  used on input line 224.
+(pdftex.def)             Requested size: 398.33858pt x 257.9119pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23 <./figures/pdf/AcceptanceCriteria.png>]) [24 <./figures/pdf/LHCSparkTest.pn
+g>]
 :<-
-:<+ chapters/chapter-6.tex
-\openout2 = `chapters/chapter-6.aux'.
-
-(./chapters/chapter-6.tex
-Chapter 2.
-) [6
-
-
-
-
-]
-:<-
-[7
+[25
 
 
 
 ]
 :<+ my-dissertation.bbl
 (./my-dissertation.bbl (./my-dissertation.brf)
-\tf@brf=\write6
-\openout6 = `my-dissertation.brf'.
+\tf@brf=\write4
+\openout4 = `my-dissertation.brf'.
 
- [8]
-Underfull \hbox (badness 4001) in paragraph at lines 87--87
+ [26]
+Underfull \hbox (badness 4001) in paragraph at lines 85--85
 []\OT1/cmr/m/n/12 Purba Bhat-tacharya, Be-dan-gadas Mo-hanty, Supratik Mukhopad
 -hyay, Nayana
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 129--129
-\OT1/cmr/m/n/12 Closed Lep-ton Loops.  \OT1/cmr/m/it/12 Phys. Rev.\OT1/cmr/m/n/
-12 , D91(3):033006, 2015.  [Er-ra-tum: Phys.
- []
-
-[9] [10] [11] [12]
-Underfull \hbox (badness 1406) in paragraph at lines 351--351
+Underfull \hbox (badness 1406) in paragraph at lines 107--107
 \OT1/cmr/m/it/12 Nu-clear In-stru-ments and Meth-ods in Physics Re-search Sec-t
 ion A: Ac-cel-er-a-tors,
  []
 
-)
+[27])
 :<-
-[13] [14
+[28] [29
 
 
 ]
@@ -711,37 +893,37 @@ ion A: Ac-cel-er-a-tors,
 \openout2 = `back-matter/appendix-1.aux'.
 
 (./back-matter/appendix-1.tex
-<figures/pdf/bethe.png, id=329, 1168.365pt x 735.74875pt>
+<figures/pdf/bethe.png, id=476, 1168.365pt x 735.74875pt>
 File: figures/pdf/bethe.png Graphic file (type png)
 <use figures/pdf/bethe.png>
 Package pdftex.def Info: figures/pdf/bethe.png  used on input line 13.
 (pdftex.def)             Requested size: 469.75502pt x 295.8211pt.
- [15
+ [30
 
 
  <./figures/pdf/bethe.png (PNG copy)>]
 
-LaTeX Warning: Reference `sec:its' on page 16 undefined on input line 21.
+LaTeX Warning: Reference `sec:its' on page 31 undefined on input line 21.
 
 
-LaTeX Warning: Reference `sec:tpc' on page 16 undefined on input line 21.
+LaTeX Warning: Reference `sec:tpc' on page 31 undefined on input line 21.
 
-<figures/pdf/ALICEITSPID.png, id=340, 342.27875pt x 232.87pt>
+<figures/pdf/ALICEITSPID.png, id=488, 342.27875pt x 232.87pt>
 File: figures/pdf/ALICEITSPID.png Graphic file (type png)
 <use figures/pdf/ALICEITSPID.png>
 Package pdftex.def Info: figures/pdf/ALICEITSPID.png  used on input line 26.
 (pdftex.def)             Requested size: 216.81pt x 147.5119pt.
-<figures/pdf/TPC_PID2.png, id=341, 343.2825pt x 247.92625pt>
+<figures/pdf/TPC_PID2.png, id=489, 343.2825pt x 247.92625pt>
 File: figures/pdf/TPC_PID2.png Graphic file (type png)
 <use figures/pdf/TPC_PID2.png>
 Package pdftex.def Info: figures/pdf/TPC_PID2.png  used on input line 28.
 (pdftex.def)             Requested size: 216.81pt x 156.58401pt.
-) [16 <./figures/pdf/ALICEITSPID.png> <./figures/pdf/TPC_PID2.png>]
+) [31 <./figures/pdf/ALICEITSPID.png> <./figures/pdf/TPC_PID2.png>]
 :<-
 :<+ back-matter/vita.tex
 \openout2 = `back-matter/vita.aux'.
 
-(./back-matter/vita.tex) [17
+(./back-matter/vita.tex) [32
 
 
 
@@ -755,14 +937,15 @@ Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
-(./my-dissertation.aux (./chapters/chapter-5.aux) (./chapters/chapter-6.aux)
-(./back-matter/appendix-1.aux) (./back-matter/vita.aux))
+(./my-dissertation.aux (./chapters/chapter-1.aux) (./chapters/chapter-2.aux)
+(./chapters/chapter-4.aux) (./back-matter/appendix-1.aux)
+(./back-matter/vita.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
 Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 856FCFBC64C4C5C541B04355B010A7DC;1921.
+(rerunfilecheck)             Checksum: 0F15A7D29B69712E2A0895805E12FF89;2214.
 Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
-(rerunfilecheck)             Checksum: BA21D13494B27D1EC769B8923F31EB73;287.
+(rerunfilecheck)             Checksum: 94AD3286BA698FC756D4B8A563B68A68;2152.
 
 
 LaTeX Warning: There were undefined references.
@@ -773,35 +956,33 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 9692 strings out of 492649
- 146731 string characters out of 6129622
- 243136 words of memory out of 5000000
- 13246 multiletter control sequences out of 15000+600000
- 18287 words of font info for 74 fonts, out of 8000000 for 9000
+ 9593 strings out of 492649
+ 145311 string characters out of 6129622
+ 245529 words of memory out of 5000000
+ 13109 multiletter control sequences out of 15000+600000
+ 16737 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,53p,751b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,53p,1378b,511s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on my-dissertation.pdf (22 pages, 638741 bytes).
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on my-dissertation.pdf (32 pages, 4454987 bytes).
 PDF statistics:
- 450 PDF objects out of 1000 (max. 8388607)
- 397 compressed objects within 4 object streams
- 135 named destinations out of 1000 (max. 500000)
- 245 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 594 PDF objects out of 1000 (max. 8388607)
+ 489 compressed objects within 5 object streams
+ 147 named destinations out of 1000 (max. 500000)
+ 354 words of extra memory for PDF output out of 10000 (max. 10000000)
 
