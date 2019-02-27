@@ -9,11 +9,9 @@ A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-dissertation.bib
 Warning--entry type for "Santimaria:1690550" isn't style-file defined
---line 791 of file references-dissertation.bib
-Warning--I didn't find a database entry for "Collins:1989gx"
-Warning--I didn't find a database entry for "Brambilla:2006wp"
-Warning--I didn't find a database entry for "Erdmann:2001ne"
+--line 913 of file references-dissertation.bib
 Warning--I didn't find a database entry for "Pfeiffer:2628608"
+Warning--empty journal in Panofsky:871460
 Warning--empty journal in Huth:217490
 Warning--there's a number but no volume in Huth:217490
 Warning--empty journal in Apollinari:2015bam
@@ -26,45 +24,45 @@ Warning--empty institution in CERN-LHCC-2013-020
 Warning--empty author in CERN-LHCC-2015-002
 Warning--empty institution in CERN-LHCC-2015-002
 Warning--empty booktitle in Dick2017QM
-You've used 37 entries,
+You've used 45 entries,
             1791 wiz_defined-function locations,
-            719 strings with 10785 characters,
-and the built_in function-call counts, 7928 in all, are:
-= -- 674
-> -- 336
+            768 strings with 12651 characters,
+and the built_in function-call counts, 9732 in all, are:
+= -- 813
+> -- 442
 < -- 9
-+ -- 129
-- -- 92
-* -- 560
-:= -- 1281
-add.period$ -- 112
-call.type$ -- 37
-change.case$ -- 37
++ -- 168
+- -- 123
+* -- 696
+:= -- 1591
+add.period$ -- 138
+call.type$ -- 45
+change.case$ -- 45
 chr.to.int$ -- 0
-cite$ -- 49
-duplicate$ -- 353
-empty$ -- 797
-format.name$ -- 92
-if$ -- 1757
+cite$ -- 58
+duplicate$ -- 427
+empty$ -- 968
+format.name$ -- 123
+if$ -- 2145
 int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 30
-newline$ -- 188
-num.names$ -- 34
-pop$ -- 85
+int.to.str$ -- 45
+missing$ -- 38
+newline$ -- 230
+num.names$ -- 42
+pop$ -- 101
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 144
+skip$ -- 168
 stack$ -- 0
-substring$ -- 505
-swap$ -- 61
+substring$ -- 607
+swap$ -- 69
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 12
-while$ -- 66
-width$ -- 39
-write$ -- 402
-(There were 17 warnings)
+warning$ -- 13
+while$ -- 80
+width$ -- 47
+write$ -- 491
+(There were 15 warnings)

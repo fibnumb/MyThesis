@@ -52,6 +52,57 @@ Matt Dobbs and Jorgen~Beck Hansen.
 \newblock {The HepMC C++ Monte Carlo event record for High Energy Physics}.
 \newblock {\em Comput. Phys. Commun.}, 134:41--46, 2001.
 
+\bibitem{Panofsky:871460}
+Wolfgang Kurt~Hermann Panofsky.
+\newblock {Low q electrodynamics, elastic and inelastic electron (and muon )
+  scattering}.
+\newblock 1968.
+
+\bibitem{Feltesse:2010}
+J.~Feltesse.
+\newblock {I}ntroduction to {P}arton {D}istribution {F}unctions.
+\newblock {\em Scholarpedia}, 5(11):10160, 2010.
+\newblock revision \#186761.
+
+\bibitem{Kovarik:2013sya}
+K.~Kovarik, T.~Jezo, A.~Kusina, F.~I. Olness, I.~Schienbein, T.~Stavreva, and
+  J.~Y. Yu.
+\newblock {CTEQ nuclear parton distribution functions}.
+\newblock {\em PoS}, DIS2013:274, 2013.
+
+\bibitem{Ball:1966481}
+Richard~D. Ball, Valerio Bertone, Stefano Carrazza, Christopher~S. Deans, Luigi
+  Del~Debbio, Stefano Forte, Alberto Guffanti, Nathan~P. Hartland, Jos{\'e}~I.
+  Latorre, Juan Rojo, and Maria Ubiali.
+\newblock {Parton distributions for the LHC Run II}.
+\newblock {\em JHEP}, 04(arXiv:1410.8849. EDINBURGH 2014-15. IFUM-1034-FT.
+  CERN-PH-TH-2013-253. OUTP-14-11P. CAVENDISH-HEP-14-11):040. 138 p, Oct 2014.
+\newblock Comments: 138 pages, 64 figures. Several typos in text and references
+  corrected, one reference added.
+
+\bibitem{Collins:1989gx}
+John~C. Collins, Davison~E. Soper, and George~F. Sterman.
+\newblock {Factorization of Hard Processes in QCD}.
+\newblock {\em Adv. Ser. Direct. High Energy Phys.}, 5:1--91, 1989.
+
+\bibitem{Brambilla:2006wp}
+Nora Brambilla, Xavier Garcia~i Tormo, Joan Soto, and Antonio Vairo.
+\newblock {The Logarithmic contribution to the QCD static energy at N**4 LO}.
+\newblock {\em Phys. Lett.}, B647:185--193, 2007.
+
+\bibitem{Erdmann:2001ne}
+Martin Erdmann.
+\newblock {Investigation of quark - anti-quark interaction properties using
+  leading particle measurements in e+ e- annihilation}.
+\newblock {\em Phys. Lett.}, B510:29--35, 2001.
+
+\bibitem{Andersson:2002ap}
+Bo~Andersson, Sandipan Mohanty, and Fredrik Soderberg.
+\newblock {Recent developments in the Lund model}.
+\newblock In {\em {36th Annual Winter School on Nuclear and Particle Physics
+  (PINP 2002) and 8th St. Petersburg School on Theoretical Physics St.
+  Petersburg, Russia, February 25-March 3, 2002}}, 2002.
+
 \bibitem{Sjostrand:2007gs}
 Torbjorn Sjostrand, Stephen Mrenna, and Peter~Z. Skands.
 \newblock {A Brief Introduction to PYTHIA 8.1}.

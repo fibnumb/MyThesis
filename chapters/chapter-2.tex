@@ -35,11 +35,11 @@ At short distances, less than 0.2 \textit{fm}, the strong coupling constant beco
 
 \section{Jets}
 
-Hard probes (large $Q^{2}$ interactions), are produced in the earliest stages of a high energy collision when the largest momentum transfer processes occur.  As two highly energetic partons propagate away from one another, in a back-to-back fashion, they will instigate a shower of daughter partons via gluon radiation and the generation of low-mass $q \bar{q}$\, pairs.  The clustering of these daughter partons together is colloquially known as a `jet'.  The physicist James Daniel Bjorken postulated that a correlation could be surmised by summing over the final state transverse momentum of the daughter partons that form a jet to the parton that initiated the hard scattering\cite{PhysRev.179.1547}\cite{Bjorken:1973kd}.  This has lead to jets becoming the work-horse for both experimentalists and theoreticians over the past 30 years in probing QCD phenomena
+Hard probes (large $Q^{2}$ interactions), are produced in the earliest stages of a high energy collision when the largest momentum transfer processes occur.  As two highly energetic partons propagate away from one another, in a back-to-back fashion, they will instigate a shower of daughter partons via gluon radiation and the generation of low-mass $q \bar{q}$\, pairs.  The clustering of these daughter partons together is colloquially known as a `jet'.  The physicist James Daniel Bjorken postulated that a correlation could be surmised by summing over the final state transverse momentum of the daughter partons that form a jet to the parton that initiated the hard scattering\cite{PhysRev.179.1547}\cite{Bjorken:1973kd}.  This has lead to jets becoming the work-horse for both experimentalists and theoreticians over the past 30 years in probing QCD phenomena.  This thesis makes use of jets as an important probe of QCD and the following sections are devoted to developing a background for both the theroertical and experimental treatment of jet physics.
 
 \subsection{Jet Production and the Factorization Theorem}
 
-Due to confinement, bare quarks are unobserved, therefore experimentalists must probe QCD interactions by detecting the color neutral final state hadrons measured in collider experiments.  Fortunately, the factorization theorem (Equation \ref{eq:xsection}) allows for the final state jet cross section to be broken into a number of steps that can either be calculated pertubativlely or modeled phenomenologically.
+Due to confinement bare quarks are unobserved, therefore experimentalists must probe QCD interactions by detecting the color neutral final state hadrons measured in collider experiments.  Fortunately, the factorization theorem (Equation \ref{eq:xsection}) allows for the final state jet cross section to be broken into a number of steps that can either be calculated pertubativlely using pQCD or modeled phenomenologically.  Using the factorization theorem the jet cross section in a pp collision is,
 
 
 \begin{equation}
@@ -50,7 +50,7 @@ d\sigma^{pp \rightarrow jet} \sim f_{a/A}(x_{1},Q^{2}) \otimes  f_{b/B}(x_{2},Q^
 \noindent
 \begin{itemize}
 \item  $ f_{a/A}(x_{1},Q^{2})$ and $ f_{b/B}(x_{2},Q^{2})$ are the parton distribution functions (PDF) that describe the probability of finding parton, \textit{a} or \textit{b}, within nuclei, \textit{A} and \textit{B}, with a given momentum fraction, $x \equiv p_{parton} / p_{hadron} $ as a function of $Q^{2}$.
-\item  $d\sigma_{ab \rightarrow c + X} (x_{1},x_{2})$ is the pQCD parton-parton cross section due to the hard scattering of the two partons, \textit{a} and \textit{b}, to and intermediate parton,\textit{c}, and X.
+\item  $d\sigma_{ab \rightarrow c + X} (x_{1},x_{2})$ is the pQCD parton-parton cross section due to the hard scattering of the two partons, \textit{a} and \textit{b}, to and intermediate parton (\textit{c}).
 \item   $ D_{c \rightarrow h/jet}(z,Q^{2})$ is the fragmentation function (FF) that describes the probability the an outgoing parton, \textit{c}, fragments and hardonizes into a final state hadron, \textit{h}, within a jet with momentum fraction, $z \equiv p_{hadron} / p_{jet}$.
 \end{itemize}
 
@@ -58,14 +58,14 @@ d\sigma^{pp \rightarrow jet} \sim f_{a/A}(x_{1},Q^{2}) \otimes  f_{b/B}(x_{2},Q^
 \includegraphics[width=12.0cm]{ppcollison}
 \centering
 \caption{Timeline of a proton-proton collision.  Starting from the bottom, two partons confined within the colliding protons have a hard interaction.  The outgoing partons will induce partonic showers by radiating quarks and gluons.  The partonic showers will eventually form into final state hadrons due to confinement which are measured in high energy experiments\cite{Dobbs:2001ck}.}
-\label{fig:as}
+\label{fig:FactorizationCartoon}
 \end{figure}
 
 \noindent
-One of the best places to fundamentally test QCD phenomena using hard probes, such as jets, are with high energy hadron colliders such as those found at CERN\footnote{Discussed in detail in Chapter 3}, Fermilab, and BNL. The time scale that a hard probe is created in a high energy collision is on the order of $\tau \approx 1/p_{T} \approx$ \, 0.1 fm/\textit{c} which probes the initial state these interactions.  The factorization theorem allows for a high level of agreement between the QCD theory of nature and experimental observables, but to ascertain this connection we should discuss each term of the factorization theorem in more depth.
+Figure \ref{fig:FactorizationCartoon} shows a timeline of a pp collision broken into the relevant steps in accordance to the factorization theroem.  One of the best places to fundamentally test QCD phenomena using hard probes, such as jets, are with high energy hadron colliders such as those found at CERN\footnote{Discussed in detail in Chapter 3}, Fermilab, and BNL. The time scale that a hard probe is created in a high energy collision is on the order of $\tau \approx 1/p_{T} \approx$ \, 0.1 fm/\textit{c} which probes the initial state these interactions.  The factorization theorem allows for a high level of agreement between the QCD theory of nature and experimental observables, but to ascertain this connection we should discuss each term of the factorization theorem in more depth.
 
 \subsubsection{Parton Distribution Functions}
-The PDF occurs twice in Equation \ref{eq:xsection} due to the two partons that will undergo the hard scattering being confined in two different nuclei.  PDFs may be thought of as conveying the structure of a nucleon in terms of the number of flavored quarks and gluons ($u(x)$, $d(x)$, $s(x)$, $\overline{u}(x)$, $\overline{d}(x)$, $\overline{s}(x)$, $g(x)$) and must obey certain constraints and summation rules.  For example, in the case of a proton, with electric charge, \textit{e} = +1,
+The PDF occurs twice in Equation \ref{eq:xsection} due to the two partons that will undergo the hard scattering being confined in two different protons.  PDFs may be thought of as conveying the structure of a nucleon in terms of the number of flavored quarks or gluons ($u(x)$, $d(x)$, $s(x)$, $\overline{u}(x)$, $\overline{d}(x)$, $\overline{s}(x)$, $g(x)$) and must obey certain constraints and summation rules.  In the case of a proton, with electric charge (\textit{e} = +1),
 
 \begin{equation}
 +1 = \frac{2}{3} \int_{0}^{1} [u(x) - \overline{u}(x)] dx - \frac{1}{3} \int^{1}_{0} [d(x) - \overline{d}(x)] dx
@@ -73,7 +73,7 @@ The PDF occurs twice in Equation \ref{eq:xsection} due to the two partons that w
 \end{equation}
 
 \noindent
-and isospin, \textit{I} = 1/2,
+and isospin (\textit{I} = 1/2),
 
 \begin{equation}
 \frac{1}{2} = \frac{1}{2} \int_{0}^{1} [u(x) - \overline{u}(x)] dx - \frac{1}{2} \int^{1}_{0} [d(x) - \overline{d}(x)] dx
@@ -93,17 +93,19 @@ have a solution,
 \end{equation}
 
 \noindent
-This corresponds to the classical partonic view that protons contained two up quarks and a down quark, similarly the neutron, with charge \textit{e} = 0 and isospin I = -1/2, can be shown that it compromises two down quarks and a up quark.  
+This corresponds to the classical partonic view that protons contained two up quarks and a down quark, similarly the neutron, with charge \textit{e} = 0 and isospin I = -1/2, can be shown that it compromises two down quarks and a up quark.  Naively, we could assume that the three quarks composing a proton would each carry a momentum fraction of approximately 1/3 the total momentum of a proton.  However, high energy deep inelastic scattering experiments conducted at the Stanford Linear Collider in the 1960's\cite{Panofsky:871460} measured the momentum carried by the three quarks only accounting for about 1/2 the total proton momentum.  This lead to a more complex and dynamic model of the proton structure with the other half of the proton momentum being occupied by neutral partons which would eventually become known as gluons.
 
 \begin{figure}[h]
 \includegraphics[width=15.0cm]{aOzz6}
 \centering
-\caption{Proton PDF at $Q^{2}$ = 10 GeV (left) and  $Q^{2}$ = 10 TeV (right)\cite{Feltesse:2010}.}
-\label{fig:qqbar}
+\caption{Proton PDF at $Q^{2}$ = 10 GeV (left) and  $Q^{2}$ = 10 TeV (right) from the NNPDF Collaboration\cite{Feltesse:2010}.}
+\label{fig:PDFNNPDF}
 \end{figure}
 
+Measuring the structure of the partons making up a nucleon is a major endeavor by both theoreticians and experimentalists.  Two of the most popular PDFs available to physicists are the CTEQ\cite{Kovarik:2013sya} (Coordinated Theoretical-Experimental Project on QCD) and the NNPDF\cite{Ball:1966481} (Neural Network Parton Distribtuion Function) sets.  Figure \ref{fig:PDFNNPDF} shows the proton PDF as a function of the momentum fraction for two energy ranges, at high values of \textit{x} the the two up quarks account for about 2/3 of the momentum fraction while down quark accounts for about 1/3 the total momentum, these quarks are collectively called the valence quarks.  At high energies, low values of \textit{x}, we see that the proton has non negligible contributions from gluons, anti-quarks, strange, and even charm quarks, these are collectively known as the sea partons.
+
 \subsubsection{Parton-Parton Cross-Section}
-The parton-parton cross section can be calculated using perturbation theory.  To the zeroth order in $\alpha_{s}$ this cross-section would be a simple quark-antiquark annihilation and would be calculable using Feynman diagrams as seen in Figure \ref{fig:qqbar}\cite{Collins:1989gx}.  Higher ordered contributions, such as the creation of virtual gluons, require the hard cross-section to be expanded as a series in terms of $\alpha_{s}$.  Calculations of the hard cross section that incorporate these higher order terms are known as \textit{next-to-leading order} (NLO) with N denoting the number of terms after the leading order that have been included in the cross-section calculation.  Various calculations of the hard cross-section of different QCD processes have been performed over the years typically using either power series or logarithmic expansions of $\alpha_{s}$\cite{Brambilla:2006wp}.
+The parton-parton cross section can be calculated using perturbation theory.  To the zeroth order in $\alpha_{s}$ this cross-section would be a simple quark-antiquark annihilation and would be calculable using Feynman diagrams as seen in Figure \ref{fig:qqbar}\cite{Collins:1989gx}.  Higher ordered contributions, such as the creation of virtual gluons, require the hard cross-section to be expanded as a series in terms of $\alpha_{s}$.  Calculations of the hard cross section that incorporate these higher order terms are known as \textit{next-to-leading order} (NLO) with N denoting the number of terms after the leading order that have been included in the cross-section calculation.  Various calculations of the hard cross-section of different QCD processes have been performed over the years typically using either power series or logarithmic expansions of $\alpha_{s}$\cite{Brambilla:2006wp} and corrections for LO, NLO, and even NNLO constitutes a very active field in high energy physics.
 
 \begin{figure}[h]
 \includegraphics[width=6.0cm]{Ttbar_production_via_qqbar_annihilation}
@@ -152,7 +154,7 @@ Although, it may simple to have a conceptual grasp of what a jet `is' there is n
 Although there are a number of jet finding algorithms available, I will only focus on algorithms that are both collinear and infrared safe.   
 
 
-\subsection{Kinematics}\label{sec:kinematics}
+\section{Kinematics}\label{sec:kinematics}
 Before I give a detailed discussion of the physics and observables in high energy and nuclear physics it would be advantageous to define some terms and go over a few formulas.
 
 In a circular particle accelerator a beam of relativistic particles travels along a beamline.  The coordinates along this beamline are broken into longitudinal and transverse component. The momentum can similarly be described in these coordinates as the longitudinal and transverse momentum, denoted as $\mathbf{p}_{L}$ and $\mathbf{p}_{T}$.  For cylindrical detectors like ALICE\footnote{See Chapter \ref{ch:alice}} it is more advantageous to use a cylindrical coordinate system of with $\theta$ as the polar angle and $\phi$ as the azimuth angle.  Relativistic particles traveling along the beamline will have 
