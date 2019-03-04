@@ -24,7 +24,7 @@ At short distances, less than 0.2 \textit{fm}, the strong coupling constant beco
 \end{equation}
 
 \noindent
-
+where $\alpha_{s}$ is the strong coupling constant, $Q^{2}$ is the momentum transfer between two interacting partons, and $\Lambda^{2}$ is a cutoff below which QCD phenomena are strongly suppressed and $\beta_{0}$ is a correction factor.
 
 \begin{figure}[h]
 \includegraphics[width=12.0cm]{alphas_s}
@@ -102,7 +102,7 @@ This corresponds to the classical partonic view that protons contained two up qu
 \label{fig:PDFNNPDF}
 \end{figure}
 
-Measuring the structure of the partons making up a nucleon is a major endeavor by both theoreticians and experimentalists.  Two of the most popular PDFs available to physicists are the CTEQ\cite{Kovarik:2013sya} (Coordinated Theoretical-Experimental Project on QCD) and the NNPDF\cite{Ball:1966481} (Neural Network Parton Distribtuion Function) sets.  Figure \ref{fig:PDFNNPDF} shows the proton PDF as a function of the momentum fraction for two energy ranges, at high values of \textit{x} the the two up quarks account for about 2/3 of the momentum fraction while down quark accounts for about 1/3 the total momentum, these quarks are collectively called the valence quarks.  At high energies, low values of \textit{x}, we see that the proton has non negligible contributions from gluons, anti-quarks, strange, and even charm quarks, these are collectively known as the sea partons.
+Measuring the structure of the partons making up a nucleon is a major endeavor by both theoreticians and experimentalists.  Two of the most popular PDFs available to physicists are the CTEQ\cite{Kovarik:2013sya} (Coordinated Theoretical-Experimental Project on QCD) and the NNPDF\cite{Ball:1966481} (Neural Network Parton Distribtuion Function) sets.  Figure \ref{fig:PDFNNPDF} shows the proton PDF as a function of the momentum fraction for two energy ranges, at high values of \textit{x} the the two up quarks account for about 2/3 of the momentum fraction while down quark accounts for about 1/3 the total momentum, these quarks are collectively called the valence quarks.  At high energies, low values of \textit{x}, we see that the proton has non negligible contributions from gluons, anti-quarks, strange, and even charm quarks, these are collectively known as the sea partons.  Today, the modern picture of a protons structure is that it is mostly composed of gluons and sea quarks at low values of \textit{x} and this domination only increases as a function of $Q^{2}$\cite{Fritzsch:1992mu}.
 
 \subsubsection{Parton-Parton Cross-Section}
 The parton-parton cross section can be calculated using perturbation theory.  To the zeroth order in $\alpha_{s}$ this cross-section would be a simple quark-antiquark annihilation and would be calculable using Feynman diagrams as seen in Figure \ref{fig:qqbar}\cite{Collins:1989gx}.  Higher ordered contributions, such as the creation of virtual gluons, require the hard cross-section to be expanded as a series in terms of $\alpha_{s}$.  Calculations of the hard cross section that incorporate these higher order terms are known as \textit{next-to-leading order} (NLO) with N denoting the number of terms after the leading order that have been included in the cross-section calculation.  Various calculations of the hard cross-section of different QCD processes have been performed over the years typically using either power series or logarithmic expansions of $\alpha_{s}$\cite{Brambilla:2006wp} and corrections for LO, NLO, and even NNLO constitutes a very active field in high energy physics.
@@ -114,16 +114,20 @@ The parton-parton cross section can be calculated using perturbation theory.  To
 \label{fig:qqbar}
 \end{figure}
 
-
-
-
-
-\subsubsection{Fragmentation}
-The FF is similar to the PDF in that it is also a probability distribution.  Ideally, the FF would be defined as the fractional momentum of the hadrons created from the fragmenting parton, $z \equiv p_{hadron} / p_{parton}$
-
+Perturbative techniques of the hard cross-section have been extremely successfully in describing jet features in hadronic collisions\cite{Fritzsch:1992mu}.
 \subsubsection{Hadronization}
 
-Hadronization is the process by which the colored partons form into final state colorless hadrons.  Accurately modeling this transition is difficult due to the fact that $\alpha_{s}$ becomes large over large distances and perturbation techniques fail.  Their are two main phenomenological models used to describe the hadronization process, the Lund String Model and the Cluster Hadronization Model.  The QCD potential goes as,
+Hadronization is the process by which the colored pQCD partons of form into colorless non-pQCD hadrons and represents a significant barrier in progressing jet physics.  This is due to the fact that hadronization encompass several smaller processes which in themselves are hard to characterize. Thus, like PDFs, an accurate description of hadronization requires a phenomenological approach by which experimental results help complement theoretical calculations.  Jet production via hadronization\cite{Webber:1994zd} follows two distinct stages.  First, the partons that underwent a hard scattering start to emit radiation via gluon bremsstrahlung up until time, $t < Q^{2}$, this is known as the parton cascade.  The parton cascade is the precursor of what will become a jet as most of the radiation generated will travel in the same direction as the initial hard scattered parton.  However, this immediately poses an issue in jet physics as radiation generated at a wide angle away from the momentum axis of the inital hard scattered parton will not be associated with the jet.
+
+\begin{figure}[h]
+\includegraphics[width=8.0cm]{partoncascade}
+\centering
+\caption{Parton cascade in a hadronic collision\cite{Webber:1994zd}.}
+\label{fig:pcascade}
+\end{figure}
+
+\noindent
+After the cascade has ended the partons must fragment into color neutral hadrons.  Their are two main phenomenological models used to describe the hadron forming process, the Lund String Model and the Cluster Hadronization Model.  The QCD potential is,
 
 \begin{equation}
 V(r) = - \frac{\alpha_{s}}{r} + \sigma \, r
@@ -131,7 +135,7 @@ V(r) = - \frac{\alpha_{s}}{r} + \sigma \, r
 \end{equation}
 
 \noindent
-where the first term of Equation \ref{eq:QCDPotential} goes as the Coulomb potential with a 1/r dependence and is the dominate term at short distance and the second term has a string-like potential.  The Lund String Model has fragementation occur by breaking the string with the vaccum production of quark-antiquak pairs
+where the first term of Equation \ref{eq:QCDPotential} goes as the Coulomb potential with a 1/r dependence and is the dominate term at short distance and the second term has a string-like potential with $\sigma$ referring to a string-like tension.  The Lund String Model ignores gluon radiation and has fragmentation occur via breaking the string tension with the production of $q\overline{q}$ sea quarks.  The created sea quarks will carry some momentum fraction, z, of the initial parton until z falls below some cutoff.  Figure \ref{fig:qqbarstring} shows a two quarks undergoing a string breaking, each of the quarks initiating the string breaking will combine with a sea quark in an iterative manner to form hadrons.  
 
 
 \begin{figure}[h]
@@ -140,9 +144,21 @@ where the first term of Equation \ref{eq:QCDPotential} goes as the Coulomb poten
 \caption{$u \overline{d}$ generating a $d \overline{d}$ pair via string breaking which will form color neutral hadrons, black lines show the string like equipotentials.\cite{Andersson:2002ap}.}
 \label{fig:qqbarstring}
 \end{figure}
+
+
+The Cluster Hadronization Model has gluons splitting after the parton cascade phase into $q\overline{q}$ pairs.  These pairs will form color-singlet clusters with other neighboring quarks in phase-space.  These color-singlets will typically be a few GeV/\textit{$c^{2}$} in mass and are treated as excited meson resonances.  These psuedo-resonances will decay via their normal branching ratios into the stable hadrons\cite{Webber:1983if}.
+
+
+\subsubsection{Fragmentation}
+The FF is similar to the PDF in that it is also a probability distribution.  Ideally, the FF would be defined as the fractional momentum of the hadrons created from the fragmenting parton, $z \equiv p_{hadron} / p_{parton}$.  Due to the confinement of partons we must use a a suitable substitution for measuring the FF.  The Parton-Hadron Duality\cite{Jenkovszky:2012dc} states that a hadron found near the center of a jet should encompass the quantum numbers and kinematic properties associated with the hard scattered quark that initiated the jet.  Thus we can measure the fragmentation function as $z = p_{hadron} / p_{jet}$.
+
+
+
 \subsection{PYTHIA}
 
 PYTHIA\cite{Sjostrand:2007gs}, is a Monte Carlo software tool-kit used to model proton-proton collisions.  The package uses pre-defined parton distribution functions as input and from their simulates partonic showers and radiation due to a hard scattering by generating the LO scattering matrix elements.  Hadronization is performed in PYTHIA using the Lund String Model.  After which relative branching ratios are used to statistically throw the decay modes of the hadrons.  
+
+
 
 \subsection{PHOJET}
 

@@ -9,7 +9,7 @@ A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-dissertation.bib
 Warning--entry type for "Santimaria:1690550" isn't style-file defined
---line 913 of file references-dissertation.bib
+--line 953 of file references-dissertation.bib
 Warning--I didn't find a database entry for "Pfeiffer:2628608"
 Warning--empty journal in Panofsky:871460
 Warning--empty journal in Huth:217490
@@ -24,45 +24,45 @@ Warning--empty institution in CERN-LHCC-2013-020
 Warning--empty author in CERN-LHCC-2015-002
 Warning--empty institution in CERN-LHCC-2015-002
 Warning--empty booktitle in Dick2017QM
-You've used 45 entries,
+You've used 48 entries,
             1791 wiz_defined-function locations,
-            768 strings with 12651 characters,
-and the built_in function-call counts, 9732 in all, are:
-= -- 813
-> -- 442
-< -- 9
-+ -- 168
-- -- 123
-* -- 696
-:= -- 1591
-add.period$ -- 138
-call.type$ -- 45
-change.case$ -- 45
+            788 strings with 13090 characters,
+and the built_in function-call counts, 10561 in all, are:
+= -- 892
+> -- 454
+< -- 11
++ -- 174
+- -- 126
+* -- 735
+:= -- 1699
+add.period$ -- 147
+call.type$ -- 48
+change.case$ -- 48
 chr.to.int$ -- 0
-cite$ -- 58
-duplicate$ -- 427
-empty$ -- 968
-format.name$ -- 123
-if$ -- 2145
+cite$ -- 61
+duplicate$ -- 476
+empty$ -- 1064
+format.name$ -- 126
+if$ -- 2354
 int.to.chr$ -- 0
-int.to.str$ -- 45
-missing$ -- 38
-newline$ -- 230
-num.names$ -- 42
-pop$ -- 101
+int.to.str$ -- 48
+missing$ -- 41
+newline$ -- 245
+num.names$ -- 45
+pop$ -- 114
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 168
+skip$ -- 200
 stack$ -- 0
-substring$ -- 607
-swap$ -- 69
-text.length$ -- 9
+substring$ -- 676
+swap$ -- 90
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 13
-while$ -- 80
-width$ -- 47
-write$ -- 491
+while$ -- 88
+width$ -- 50
+write$ -- 524
 (There were 15 warnings)

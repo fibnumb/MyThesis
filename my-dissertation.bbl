@@ -80,6 +80,12 @@ Richard~D. Ball, Valerio Bertone, Stefano Carrazza, Christopher~S. Deans, Luigi
 \newblock Comments: 138 pages, 64 figures. Several typos in text and references
   corrected, one reference added.
 
+\bibitem{Fritzsch:1992mu}
+Harald Fritzsch.
+\newblock {QCD: 20 years later}.
+\newblock In {\em {QCD 20 Years Later: Proceedings, Workshop, Aachen, Germany,
+  June 9-13, 1992}}, pages 827--852, 1992.
+
 \bibitem{Collins:1989gx}
 John~C. Collins, Davison~E. Soper, and George~F. Sterman.
 \newblock {Factorization of Hard Processes in QCD}.
@@ -96,12 +102,24 @@ Martin Erdmann.
   leading particle measurements in e+ e- annihilation}.
 \newblock {\em Phys. Lett.}, B510:29--35, 2001.
 
+\bibitem{Webber:1994zd}
+B.~R. Webber.
+\newblock {Hadronization}.
+\newblock In {\em {Proceedings: Summer School on Hadronic Aspects of Collider
+  Physics, Zuoz, Switzerland, Aug 23-31, 1994}}, pages 49--77, 1994.
+
 \bibitem{Andersson:2002ap}
 Bo~Andersson, Sandipan Mohanty, and Fredrik Soderberg.
 \newblock {Recent developments in the Lund model}.
 \newblock In {\em {36th Annual Winter School on Nuclear and Particle Physics
   (PINP 2002) and 8th St. Petersburg School on Theoretical Physics St.
   Petersburg, Russia, February 25-March 3, 2002}}, 2002.
+
+\bibitem{Webber:1983if}
+B.~R. Webber.
+\newblock {A QCD Model for Jet Fragmentation Including Soft Gluon
+  Interference}.
+\newblock {\em Nucl. Phys.}, B238:492--528, 1984.
 
 \bibitem{Sjostrand:2007gs}
 Torbjorn Sjostrand, Stephen Mrenna, and Peter~Z. Skands.
