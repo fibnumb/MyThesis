@@ -35,7 +35,7 @@ where $\alpha_{s}$ is the strong coupling constant, $Q^{2}$ is the momentum tran
 
 \section{Jets}
 
-Hard probes (large $Q^{2}$ interactions), are produced in the earliest stages of a high energy collision when the largest momentum transfer processes occur.  As two highly energetic partons propagate away from one another, in a back-to-back fashion, they will instigate a shower of daughter partons via gluon radiation and the generation of low-mass $q \bar{q}$\, pairs.  The clustering of these daughter partons together is colloquially known as a `jet'.  The physicist James Daniel Bjorken postulated that a correlation could be surmised by summing over the final state transverse momentum of the daughter partons that form a jet to the parton that initiated the hard scattering\cite{PhysRev.179.1547}\cite{Bjorken:1973kd}.  This has lead to jets becoming the work-horse for both experimentalists and theoreticians over the past 30 years in probing QCD phenomena.  This thesis makes use of jets as an important probe of QCD and the following sections are devoted to developing a background for both the theroertical and experimental treatment of jet physics.
+Hard probes (large $Q^{2}$ interactions), are produced in the earliest stages of a high energy collision when the largest momentum transfer processes occur.  As two highly energetic partons propagate away from one another, in a back-to-back fashion, they will instigate a shower of daughter partons via gluon radiation and the generation of low-mass $q \bar{q}$\, pairs.  These daughter partons will go on to form hadrons and the clustering of theses hadrons is colloquially known as a `jet'.  The physicist James Daniel Bjorken postulated that a correlation could be surmised by summing over the final state transverse momentum of the hadrons that form a jet to the parton that initiated the hard scattering\cite{PhysRev.179.1547}\cite{Bjorken:1973kd}.  This has lead to jets becoming the work-horse for both experimentalists and theoreticians over the past 30 years in probing QCD phenomena.  This thesis makes use of jets as an important probe of QCD and the following sections are devoted to developing a background for both the theoretical and experimental treatment of jet physics.  The following sections will be devoted to how jets are produced from a physics point-of-view and the latest results which this thesis compares to.
 
 \subsection{Jet Production and the Factorization Theorem}
 
@@ -49,9 +49,9 @@ d\sigma^{pp \rightarrow jet} \sim f_{a/A}(x_{1},Q^{2}) \otimes  f_{b/B}(x_{2},Q^
 
 \noindent
 \begin{itemize}
-\item  $ f_{a/A}(x_{1},Q^{2})$ and $ f_{b/B}(x_{2},Q^{2})$ are the parton distribution functions (PDF) that describe the probability of finding parton, \textit{a} or \textit{b}, within nuclei, \textit{A} and \textit{B}, with a given momentum fraction, $x \equiv p_{parton} / p_{hadron} $ as a function of $Q^{2}$.
+\item  $ f_{a/A}(x_{1},Q^{2})$ and $ f_{b/B}(x_{2},Q^{2})$ are the parton distribution functions (PDF) that describe the probability of finding parton, \textit{a} or \textit{b}, within nuclei, \textit{A} and \textit{B}, with a given momentum fraction, $x = p_{parton} / p_{hadron} $ as a function of $Q^{2}$.
 \item  $d\sigma_{ab \rightarrow c + X} (x_{1},x_{2})$ is the pQCD parton-parton cross section due to the hard scattering of the two partons, \textit{a} and \textit{b}, to and intermediate parton (\textit{c}).
-\item   $ D_{c \rightarrow h/jet}(z,Q^{2})$ is the fragmentation function (FF) that describes the probability the an outgoing parton, \textit{c}, fragments and hardonizes into a final state hadron, \textit{h}, within a jet with momentum fraction, $z \equiv p_{hadron} / p_{jet}$.
+\item   $ D_{c \rightarrow h/jet}(z,Q^{2})$ is the fragmentation function (FF) that describes the probability the an outgoing parton, \textit{c}, fragments and hardonizes into a final state hadron, \textit{h}, within a jet with momentum fraction, $z \equiv p_{hadron} / p_{parton}$.
 \end{itemize}
 
 \begin{figure}[h]
@@ -62,7 +62,7 @@ d\sigma^{pp \rightarrow jet} \sim f_{a/A}(x_{1},Q^{2}) \otimes  f_{b/B}(x_{2},Q^
 \end{figure}
 
 \noindent
-Figure \ref{fig:FactorizationCartoon} shows a timeline of a pp collision broken into the relevant steps in accordance to the factorization theroem.  One of the best places to fundamentally test QCD phenomena using hard probes, such as jets, are with high energy hadron colliders such as those found at CERN\footnote{Discussed in detail in Chapter 3}, Fermilab, and BNL. The time scale that a hard probe is created in a high energy collision is on the order of $\tau \approx 1/p_{T} \approx$ \, 0.1 fm/\textit{c} which probes the initial state these interactions.  The factorization theorem allows for a high level of agreement between the QCD theory of nature and experimental observables, but to ascertain this connection we should discuss each term of the factorization theorem in more depth.
+Figure \ref{fig:FactorizationCartoon} shows a timeline of a pp collision broken into the relevant steps in accordance to the factorization theorem.  One of the best places to fundamentally test QCD phenomena using hard probes, i.e. jets, are with high energy hadron colliders such as those found at CERN\footnote{Discussed in detail in Chapter 3}, Fermilab, and BNL. The time scale that a hard probe is created in a high energy collision is on the order of $\tau \approx 1/p_{T} \approx$ \, 0.1 fm/\textit{c} which probes the initial state these interactions.  The factorization theorem allows for a high level of agreement between the QCD theory of nature and experimental observables but to ascertain this connection we should discuss each term of the factorization theorem in more depth.
 
 \subsubsection{Parton Distribution Functions}
 The PDF occurs twice in Equation \ref{eq:xsection} due to the two partons that will undergo the hard scattering being confined in two different protons.  PDFs may be thought of as conveying the structure of a nucleon in terms of the number of flavored quarks or gluons ($u(x)$, $d(x)$, $s(x)$, $\overline{u}(x)$, $\overline{d}(x)$, $\overline{s}(x)$, $g(x)$) and must obey certain constraints and summation rules.  In the case of a proton, with electric charge (\textit{e} = +1),
@@ -145,18 +145,35 @@ where the first term of Equation \ref{eq:QCDPotential} goes as the Coulomb poten
 \label{fig:qqbarstring}
 \end{figure}
 
-
 The Cluster Hadronization Model has gluons splitting after the parton cascade phase into $q\overline{q}$ pairs.  These pairs will form color-singlet clusters with other neighboring quarks in phase-space.  These color-singlets will typically be a few GeV/\textit{$c^{2}$} in mass and are treated as excited meson resonances.  These psuedo-resonances will decay via their normal branching ratios into the stable hadrons\cite{Webber:1983if}.
 
 
 \subsubsection{Fragmentation}
-The FF is similar to the PDF in that it is also a probability distribution.  Ideally, the FF would be defined as the fractional momentum of the hadrons created from the fragmenting parton, $z \equiv p_{hadron} / p_{parton}$.  Due to the confinement of partons we must use a a suitable substitution for measuring the FF.  The Parton-Hadron Duality\cite{Jenkovszky:2012dc} states that a hadron found near the center of a jet should encompass the quantum numbers and kinematic properties associated with the hard scattered quark that initiated the jet.  Thus we can measure the fragmentation function as $z = p_{hadron} / p_{jet}$.
+Similar to how a PDF quantitatively describes the structure of a nucleon the FF quantitatively describes the hadronization process.  The FF is also similar to the PDF in that it is also a probability distribution, thus it follows the probabilistic rule that,
+
+\begin{equation}
+\sum \int z D_{c \rightarrow \, h/jet} (z,Q^{2})dz = 1
+\label{eq:FFRule}
+\end{equation}
+
+\noindent
+Ideally, the fractional momentum of the hadrons created from the fragmenting parton, $z \equiv p_{hadron} / p_{parton}$.  Due to the confinement of partons we must use a a suitable substitution for measuring the FF.  The Parton-Hadron Duality\cite{Jenkovszky:2012dc} states that a hadron found near the center of a jet should encompass the quantum numbers and kinematic properties associated with the hard scattered quark that initiated the jet.  Thus we can measure the fragmentation function as $z = p_{hadron} / p_{jet}$.  The formulation of the FF as a fractional energy carried by the hadrons in a jet was a breakthrough in pQCD techniques and is analogous to how an electron passing through an absorber creates photon showers with these photons generating conversion electrons until the total energy has been dissipated into the material.
+
+\begin{figure}[h]
+\includegraphics[width=10.0cm]{FFfunctions}
+\centering
+\caption{Fragmentaion Functions from $e^{+}e^{-}$and DIS experiments with fits\cite{rak_tannenbaum_2013}.}
+\label{fig:FFfunc}
+\end{figure}
+
+
+Figure \ref{fig:FFfunc} is the FF in terms of the Gaussian equation, $z \, dN/dz = - dN /d \xi $ with $\xi = -ln  \,1/z$. The observation that the Gaussian peaks of Figure \ref{fig:FFfunc} along with the suppression of the FF at low z values due to gluon coherence were predicted by pQCD. 
 
 
 
 \subsection{PYTHIA}
 
-PYTHIA\cite{Sjostrand:2007gs}, is a Monte Carlo software tool-kit used to model proton-proton collisions.  The package uses pre-defined parton distribution functions as input and from their simulates partonic showers and radiation due to a hard scattering by generating the LO scattering matrix elements.  Hadronization is performed in PYTHIA using the Lund String Model.  After which relative branching ratios are used to statistically throw the decay modes of the hadrons.  
+PYTHIA\cite{Sjostrand:2007gs}, is a Monte Carlo software tool-kit used to model proton-proton collisions.  The package uses pre-defined parton distribution functions as input and from their simulates partonic showers and radiation due to a hard scattering by generating the LO scattering matrix elements.  Hadronization is performed in PYTHIA using the Lund String Model.  After which relative branching ratios are used to statistically throw the decay modes of the hadrons until they are stabilized.  
 
 
 
@@ -165,10 +182,24 @@ PYTHIA\cite{Sjostrand:2007gs}, is a Monte Carlo software tool-kit used to model 
 \subsection{HERWIG}
 
 \subsection{FastJet}
-Although, it may simple to have a conceptual grasp of what a jet `is' there is no unambiguous definition, both experimentally and theoretically, for how to define a jet.  This is due to the fragmentation process by which partons form into their final state hadrons is not calculable pertubatively.  The earliest jet measurements used multiple definitions which complicated comparisons between experiments and theoretical calculations.  In 1990, the Snowmass Accord\cite{Huth:217490} was held in order to standardized the definition of a jet between experimentalists and theoreticians.  The agreement maintained that any algorithm that clusters particles into a jet must be both infrared and collinear safe (IRC).  If a high-momentum parton radiates a soft gluon tis emisson should not affect the 
+Although, it may simple to have a conceptual grasp of what a `jet' is there is no unambiguous definition, both experimentally and theoretically, for how to define a jet.  This is due to the fragmentation process by which partons form into their final state hadrons is not calculable pertubatively.  The earliest jet measurements used multiple definitions which complicated comparisons between experiments and theoretical calculations.  In 1990, the Snowmass Accord\cite{Huth:217490} was held in order to standardized the definition of a jet between experimentalists and theoreticians.  
+
+The agreement maintained that any algorithm that clusters particles into a jet must be both infrared and colinear safe (IRC).  If a high-momentum parton radiates a soft gluon tis emisson should not affect the 
 
 Although there are a number of jet finding algorithms available, I will only focus on algorithms that are both collinear and infrared safe.   
 
+\begin{equation}
+d_{i,j} = min[k^{2p}_{T,i},k^{2p}_{T,j}] \, \frac{\Delta^{2}_{ij}}{R^{2}}
+\label{eq:JetAlgo}
+\end{equation}
+
+\begin{equation}
+d_{i,B} = k^{2p}_{Ti}
+\label{eq:MinJet}
+\end{equation}
+
+\noindent
+where $k_{T}$ is the inverse of the transverse momentum, $\Delta^{2}_{ij} = (\eta_{i} - \eta_{j})^{2} + (\phi_{i} + \phi_{j})^{2}$ is the distance between two candidate particles composing a jet in the detector cordinates of psuedorapidity and azimuth angle, $R^{2}$ is the jet resolution, or jet con radius, in $\eta$ and $\phi$
 
 \section{Kinematics}\label{sec:kinematics}
 Before I give a detailed discussion of the physics and observables in high energy and nuclear physics it would be advantageous to define some terms and go over a few formulas.
