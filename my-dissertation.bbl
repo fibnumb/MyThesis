@@ -132,16 +132,16 @@ Jan Rak and Michael~J. Tannenbaum.
 \newblock Cambridge Monographs on Particle Physics, Nuclear Physics and
   Cosmology. Cambridge University Press, 2013.
 
-\bibitem{Sjostrand:2007gs}
-Torbjorn Sjostrand, Stephen Mrenna, and Peter~Z. Skands.
-\newblock {A Brief Introduction to PYTHIA 8.1}.
-\newblock {\em Comput. Phys. Commun.}, 178:852--867, 2008.
-
 \bibitem{Huth:217490}
 J~E Huth, N~Wainer, K~Meier, N~J Hadley, F~Aversa, Mario Greco, P~Chiappetta,
   J~P Guillet, S~Ellis, Zolt{\'a}n Kunszt, and Davison~Eugene Soper.
 \newblock {Toward a standardization of jet definitions}.
 \newblock (FERMILAB-CONF-90-249-E):7 p, Dec 1990.
+
+\bibitem{Sjostrand:2007gs}
+Torbjorn Sjostrand, Stephen Mrenna, and Peter~Z. Skands.
+\newblock {A Brief Introduction to PYTHIA 8.1}.
+\newblock {\em Comput. Phys. Commun.}, 178:852--867, 2008.
 
 \bibitem{Loizides:2016djv}
 Constantin Loizides.

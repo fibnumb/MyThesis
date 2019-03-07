@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  4 MAR 2019 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  7 MAR 2019 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -565,7 +565,7 @@ Package caption Info: End \AtBeginDocument code.
 
 (./chapters/chapter-1.tex
 Chapter 1.
-<figures/pdf/Fundamental_Particles.png, id=137, 301.125pt x 324.21124pt>
+<figures/pdf/Fundamental_Particles.png, id=141, 301.125pt x 324.21124pt>
 File: figures/pdf/Fundamental_Particles.png Graphic file (type png)
 <use figures/pdf/Fundamental_Particles.png>
 Package pdftex.def Info: figures/pdf/Fundamental_Particles.png  used on input l
@@ -619,7 +619,7 @@ Chapter 2.
 
 
 ]
-<figures/pdf/alphas_s.jpg, id=180, 819.06pt x 582.175pt>
+<figures/pdf/alphas_s.jpg, id=184, 819.06pt x 582.175pt>
 File: figures/pdf/alphas_s.jpg Graphic file (type jpg)
 <use figures/pdf/alphas_s.jpg>
 Package pdftex.def Info: figures/pdf/alphas_s.jpg  used on input line 30.
@@ -633,13 +633,13 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
  [6]
-<figures/pdf/ppcollison.png, id=204, 732.7375pt x 587.19376pt>
+<figures/pdf/ppcollison.png, id=208, 732.7375pt x 587.19376pt>
 File: figures/pdf/ppcollison.png Graphic file (type png)
 <use figures/pdf/ppcollison.png>
 Package pdftex.def Info: figures/pdf/ppcollison.png  used on input line 58.
 (pdftex.def)             Requested size: 341.43306pt x 273.6157pt.
  [7 <./figures/pdf/ppcollison.png>]
-<figures/pdf/aOzz6.jpg, id=223, 738.76pt x 478.78876pt>
+<figures/pdf/aOzz6.jpg, id=227, 738.76pt x 478.78876pt>
 File: figures/pdf/aOzz6.jpg Graphic file (type jpg)
 <use figures/pdf/aOzz6.jpg>
 Package pdftex.def Info: figures/pdf/aOzz6.jpg  used on input line 99.
@@ -649,7 +649,7 @@ Package pdftex.def Info: figures/pdf/aOzz6.jpg  used on input line 99.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8] [9 <./figures/pdf/aOzz6.jpg>]
-<figures/pdf/Ttbar_production_via_qqbar_annihilation.png, id=256, 903.375pt x 5
+<figures/pdf/Ttbar_production_via_qqbar_annihilation.png, id=260, 903.375pt x 5
 55.07375pt>
 File: figures/pdf/Ttbar_production_via_qqbar_annihilation.png Graphic file (typ
 e png)
@@ -657,7 +657,7 @@ e png)
 Package pdftex.def Info: figures/pdf/Ttbar_production_via_qqbar_annihilation.pn
 g  used on input line 111.
 (pdftex.def)             Requested size: 170.71652pt x 104.88916pt.
-<figures/pdf/partoncascade.png, id=261, 369.38pt x 365.365pt>
+<figures/pdf/partoncascade.png, id=265, 369.38pt x 365.365pt>
 File: figures/pdf/partoncascade.png Graphic file (type png)
 <use figures/pdf/partoncascade.png>
 Package pdftex.def Info: figures/pdf/partoncascade.png  used on input line 123.
@@ -668,7 +668,7 @@ Package pdftex.def Info: figures/pdf/partoncascade.png  used on input line 123.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10 <./figures/pdf/Ttbar_production_via_qqbar_annihilation.png>]
-<figures/pdf/qqbarproductionvaccum.png, id=275, 726.715pt x 180.675pt>
+<figures/pdf/qqbarproductionvaccum.png, id=279, 726.715pt x 180.675pt>
 File: figures/pdf/qqbarproductionvaccum.png Graphic file (type png)
 <use figures/pdf/qqbarproductionvaccum.png>
 Package pdftex.def Info: figures/pdf/qqbarproductionvaccum.png  used on input l
@@ -679,7 +679,7 @@ ine 142.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11 <./figures/pdf/partoncascade.png>]
-<figures/pdf/FFfunctions.png, id=288, 770.88pt x 774.895pt>
+<figures/pdf/FFfunctions.png, id=292, 770.88pt x 774.895pt>
 File: figures/pdf/FFfunctions.png Graphic file (type png)
 <use figures/pdf/FFfunctions.png>
 Package pdftex.def Info: figures/pdf/FFfunctions.png  used on input line 163.
@@ -688,18 +688,41 @@ Package pdftex.def Info: figures/pdf/FFfunctions.png  used on input line 163.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12 <./figures/pdf/qqbarproductionvaccum.png (PNG copy)>] [13 <./figures/pdf/FF
-functions.png>]
 
-LaTeX Warning: Reference `ch:alice' on page 14 undefined on input line 207.
+Package natbib Warning: Citation `Atkin:2015msa' on page 12 undefined on input 
+line 174.
 
-[14]
-<figures/pdf/CCfir5_04_13.jpg, id=322, 702.625pt x 284.06125pt>
+[12 <./figures/pdf/qqbarproductionvaccum.png (PNG copy)>]
+<figures/pdf/IRCsafe.png, id=308, 856.19875pt x 257.96375pt>
+File: figures/pdf/IRCsafe.png Graphic file (type png)
+<use figures/pdf/IRCsafe.png>
+Package pdftex.def Info: figures/pdf/IRCsafe.png  used on input line 177.
+(pdftex.def)             Requested size: 426.79134pt x 128.58792pt.
+
+
+Package natbib Warning: Citation `Blazey:2000qt' on page 13 undefined on input 
+line 179.
+
+
+Package natbib Warning: Citation `Blazey:2000qt' on page 13 undefined on input 
+line 179.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:IRCsafe' on page 13 undefined on input line 184.
+
+[13 <./figures/pdf/FFfunctions.png>] [14 <./figures/pdf/IRCsafe.png>]
+
+LaTeX Warning: Reference `ch:alice' on page 15 undefined on input line 217.
+
+<figures/pdf/CCfir5_04_13.jpg, id=327, 702.625pt x 284.06125pt>
 File: figures/pdf/CCfir5_04_13.jpg Graphic file (type jpg)
 <use figures/pdf/CCfir5_04_13.jpg>
-Package pdftex.def Info: figures/pdf/CCfir5_04_13.jpg  used on input line 240.
+Package pdftex.def Info: figures/pdf/CCfir5_04_13.jpg  used on input line 250.
 (pdftex.def)             Requested size: 284.52756pt x 115.03116pt.
- [15 <./figures/pdf/CCfir5_04_13.jpg>] [16]) [17]
+[15] [16 <./figures/pdf/CCfir5_04_13.jpg>]) [17]
 :<-
 :<+ chapters/chapter-4.tex
 \openout2 = `chapters/chapter-4.aux'.
@@ -719,7 +742,7 @@ LaTeX Warning: Reference `sec:LHC' on page 18 undefined on input line 7.
 
 
 ]
-<figures/pdf/dilepton-mass.png, id=373, 1163.34625pt x 551.05875pt>
+<figures/pdf/dilepton-mass.png, id=380, 1163.34625pt x 551.05875pt>
 File: figures/pdf/dilepton-mass.png Graphic file (type png)
 <use figures/pdf/dilepton-mass.png>
 Package pdftex.def Info: figures/pdf/dilepton-mass.png  used on input line 32.
@@ -733,7 +756,7 @@ LaTeX Warning: Reference `sec:tpc' on page 19 undefined on input line 39.
 
 [19]
 <figures/pdf/Scanning-electron-microscopy-image-of-GEM-foil-top-view-left-and-c
-ross-section-right.png, id=395, 853.1875pt x 303.1325pt>
+ross-section-right.png, id=402, 853.1875pt x 303.1325pt>
 File: figures/pdf/Scanning-electron-microscopy-image-of-GEM-foil-top-view-left-
 and-cross-section-right.png Graphic file (type png)
 <use figures/pdf/Scanning-electron-microscopy-image-of-GEM-foil-top-view-left-a
@@ -742,7 +765,7 @@ Package pdftex.def Info: figures/pdf/Scanning-electron-microscopy-image-of-GEM-
 foil-top-view-left-and-cross-section-right.png  used on input line 46.
 (pdftex.def)             Requested size: 398.33858pt x 141.5287pt.
  [20 <./figures/pdf/dilepton-mass.png>]
-<figures/pdf/ALICEGEMSIMULATION.png, id=409, 584.1825pt x 277.035pt>
+<figures/pdf/ALICEGEMSIMULATION.png, id=416, 584.1825pt x 277.035pt>
 File: figures/pdf/ALICEGEMSIMULATION.png Graphic file (type png)
 <use figures/pdf/ALICEGEMSIMULATION.png>
 Package pdftex.def Info: figures/pdf/ALICEGEMSIMULATION.png  used on input line
@@ -759,12 +782,12 @@ Package natbib Warning: Citation `Pfeiffer:2628608' on page 22 undefined on inp
 ut line 71.
 
 [22 <./figures/pdf/ALICEGEMSIMULATION.png>]
-<figures/pdf/ResoSim.png, id=438, 1053.9375pt x 360.34625pt>
+<figures/pdf/ResoSim.png, id=445, 1053.9375pt x 360.34625pt>
 File: figures/pdf/ResoSim.png Graphic file (type png)
 <use figures/pdf/ResoSim.png>
 Package pdftex.def Info: figures/pdf/ResoSim.png  used on input line 74.
 (pdftex.def)             Requested size: 469.75502pt x 160.61475pt.
-<figures/pdf/4GEMROC.png, id=442, 539.01375pt x 277.035pt>
+<figures/pdf/4GEMROC.png, id=449, 539.01375pt x 277.035pt>
 File: figures/pdf/4GEMROC.png Graphic file (type png)
 <use figures/pdf/4GEMROC.png>
 Package pdftex.def Info: figures/pdf/4GEMROC.png  used on input line 84.
@@ -777,7 +800,7 @@ LaTeX Warning: Reference `fig:TPCreadout' on page 24 undefined on input line 10
 
 LaTeX Warning: Reference `sec:LHCop' on page 24 undefined on input line 111.
 
-<figures/pdf/GemProtoPID.png, id=456, 961.5925pt x 408.52625pt>
+<figures/pdf/GemProtoPID.png, id=463, 961.5925pt x 408.52625pt>
 File: figures/pdf/GemProtoPID.png Graphic file (type png)
 <use figures/pdf/GemProtoPID.png>
 Package pdftex.def Info: figures/pdf/GemProtoPID.png  used on input line 114.
@@ -785,7 +808,7 @@ Package pdftex.def Info: figures/pdf/GemProtoPID.png  used on input line 114.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/pdf/ProtoIBFEres.png, id=460, 573.14125pt x 491.8375pt>
+<figures/pdf/ProtoIBFEres.png, id=467, 573.14125pt x 491.8375pt>
 File: figures/pdf/ProtoIBFEres.png Graphic file (type png)
 <use figures/pdf/ProtoIBFEres.png>
 Package pdftex.def Info: figures/pdf/ProtoIBFEres.png  used on input line 127.
@@ -794,7 +817,7 @@ Package pdftex.def Info: figures/pdf/ProtoIBFEres.png  used on input line 127.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [24]
-<figures/pdf/GEMShowerSim.png, id=475, 571.13374pt x 394.47375pt>
+<figures/pdf/GEMShowerSim.png, id=483, 571.13374pt x 394.47375pt>
 File: figures/pdf/GEMShowerSim.png Graphic file (type png)
 <use figures/pdf/GEMShowerSim.png>
 Package pdftex.def Info: figures/pdf/GEMShowerSim.png  used on input line 137.
@@ -803,7 +826,7 @@ Package pdftex.def Info: figures/pdf/GEMShowerSim.png  used on input line 137.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/pdf/IROCproductionflow.png, id=478, 633.36626pt x 489.83pt>
+<figures/pdf/IROCproductionflow.png, id=486, 633.36626pt x 489.83pt>
 File: figures/pdf/IROCproductionflow.png Graphic file (type png)
 <use figures/pdf/IROCproductionflow.png>
 Package pdftex.def Info: figures/pdf/IROCproductionflow.png  used on input line
@@ -813,7 +836,7 @@ Package pdftex.def Info: figures/pdf/IROCproductionflow.png  used on input line
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [25 <./figures/pdf/GemProtoPID.png> <./figures/pdf/ProtoIBFEres.png>]
-<figures/pdf/IROCAssemblyUTK.png, id=492, 1002.74625pt x 424.58624pt>
+<figures/pdf/IROCAssemblyUTK.png, id=499, 1002.74625pt x 424.58624pt>
 File: figures/pdf/IROCAssemblyUTK.png Graphic file (type png)
 <use figures/pdf/IROCAssemblyUTK.png>
 Package pdftex.def Info: figures/pdf/IROCAssemblyUTK.png  used on input line 16
@@ -825,18 +848,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [26 <./figures/pdf/GEMShowerSim.png>] [27 <./figures/pdf/IROCproductionflow.png
 > <./figures/pdf/IROCAssemblyUTK.png>]
-<figures/pdf/PicoSetup.png, id=510, 800.9925pt x 316.18124pt>
+<figures/pdf/PicoSetup.png, id=517, 800.9925pt x 316.18124pt>
 File: figures/pdf/PicoSetup.png Graphic file (type png)
 <use figures/pdf/PicoSetup.png>
 Package pdftex.def Info: figures/pdf/PicoSetup.png  used on input line 178.
 (pdftex.def)             Requested size: 469.75502pt x 185.43085pt.
  [28 <./figures/pdf/PicoSetup.png>]
-<figures/pdf/LeakSetupUTK.png, id=521, 1015.795pt x 310.15875pt>
+<figures/pdf/LeakSetupUTK.png, id=528, 1015.795pt x 310.15875pt>
 File: figures/pdf/LeakSetupUTK.png Graphic file (type png)
 <use figures/pdf/LeakSetupUTK.png>
 Package pdftex.def Info: figures/pdf/LeakSetupUTK.png  used on input line 192.
 (pdftex.def)             Requested size: 469.75502pt x 143.43198pt.
-<figures/pdf/AcceptanceCriteria.png, id=522, 1038.88126pt x 569.12625pt>
+<figures/pdf/AcceptanceCriteria.png, id=529, 1038.88126pt x 569.12625pt>
 File: figures/pdf/AcceptanceCriteria.png Graphic file (type png)
 <use figures/pdf/AcceptanceCriteria.png>
 Package pdftex.def Info: figures/pdf/AcceptanceCriteria.png  used on input line
@@ -847,7 +870,7 @@ Package pdftex.def Info: figures/pdf/AcceptanceCriteria.png  used on input line
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [29 <./figures/pdf/LeakSetupUTK.png>]
-<figures/pdf/LHCSparkTest.png, id=533, 714.67pt x 462.72874pt>
+<figures/pdf/LHCSparkTest.png, id=540, 714.67pt x 462.72874pt>
 File: figures/pdf/LHCSparkTest.png Graphic file (type png)
 <use figures/pdf/LHCSparkTest.png>
 Package pdftex.def Info: figures/pdf/LHCSparkTest.png  used on input line 224.
@@ -903,7 +926,7 @@ ion A: Ac-cel-er-a-tors,
 \openout2 = `back-matter/appendix-1.aux'.
 
 (./back-matter/appendix-1.tex
-<figures/pdf/bethe.png, id=640, 1168.365pt x 735.74875pt>
+<figures/pdf/bethe.png, id=647, 1168.365pt x 735.74875pt>
 File: figures/pdf/bethe.png Graphic file (type png)
 <use figures/pdf/bethe.png>
 Package pdftex.def Info: figures/pdf/bethe.png  used on input line 13.
@@ -918,12 +941,12 @@ LaTeX Warning: Reference `sec:its' on page 40 undefined on input line 21.
 
 LaTeX Warning: Reference `sec:tpc' on page 40 undefined on input line 21.
 
-<figures/pdf/ALICEITSPID.png, id=652, 342.27875pt x 232.87pt>
+<figures/pdf/ALICEITSPID.png, id=659, 342.27875pt x 232.87pt>
 File: figures/pdf/ALICEITSPID.png Graphic file (type png)
 <use figures/pdf/ALICEITSPID.png>
 Package pdftex.def Info: figures/pdf/ALICEITSPID.png  used on input line 26.
 (pdftex.def)             Requested size: 216.81pt x 147.5119pt.
-<figures/pdf/TPC_PID2.png, id=653, 343.2825pt x 247.92625pt>
+<figures/pdf/TPC_PID2.png, id=660, 343.2825pt x 247.92625pt>
 File: figures/pdf/TPC_PID2.png Graphic file (type png)
 <use figures/pdf/TPC_PID2.png>
 Package pdftex.def Info: figures/pdf/TPC_PID2.png  used on input line 28.
@@ -953,9 +976,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 400E7E206F3B75A5D5D6FE0051698E38;2308.
+(rerunfilecheck)             Checksum: D7E46C43B0362FAB1E33CF57FEF0017B;2388.
 Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
-(rerunfilecheck)             Checksum: E3FBAE1FB8A7273FC797FE9DC4D9BD80;3648.
+(rerunfilecheck)             Checksum: 3234DB5FF4550AE30D7DBF89E205699B;3641.
 
 
 LaTeX Warning: There were undefined references.
@@ -966,10 +989,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 9836 strings out of 492649
- 150248 string characters out of 6129622
- 247450 words of memory out of 5000000
- 13296 multiletter control sequences out of 15000+600000
+ 9846 strings out of 492649
+ 150423 string characters out of 6129622
+ 247595 words of memory out of 5000000
+ 13303 multiletter control sequences out of 15000+600000
  16737 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,12n,53p,1378b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -989,10 +1012,10 @@ ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/201
 8/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on my-dissertation.pdf (41 pages, 4808421 bytes).
+Output written on my-dissertation.pdf (41 pages, 4857142 bytes).
 PDF statistics:
- 769 PDF objects out of 1000 (max. 8388607)
- 639 compressed objects within 7 object streams
- 198 named destinations out of 1000 (max. 500000)
- 395 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 777 PDF objects out of 1000 (max. 8388607)
+ 645 compressed objects within 7 object streams
+ 200 named destinations out of 1000 (max. 500000)
+ 408 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -10,6 +10,8 @@ A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-dissertation.bib
 Warning--entry type for "Santimaria:1690550" isn't style-file defined
 --line 995 of file references-dissertation.bib
+Warning--I didn't find a database entry for "Atkin:2015msa"
+Warning--I didn't find a database entry for "Blazey:2000qt"
 Warning--I didn't find a database entry for "Pfeiffer:2628608"
 Warning--empty journal in Panofsky:871460
 Warning--empty journal in Huth:217490
@@ -26,7 +28,7 @@ Warning--empty institution in CERN-LHCC-2015-002
 Warning--empty booktitle in Dick2017QM
 You've used 50 entries,
             1791 wiz_defined-function locations,
-            802 strings with 13495 characters,
+            806 strings with 13547 characters,
 and the built_in function-call counts, 11173 in all, are:
 = -- 953
 > -- 476
@@ -65,4 +67,4 @@ warning$ -- 13
 while$ -- 94
 width$ -- 52
 write$ -- 547
-(There were 15 warnings)
+(There were 17 warnings)

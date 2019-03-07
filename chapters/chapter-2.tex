@@ -169,24 +169,21 @@ Ideally, the fractional momentum of the hadrons created from the fragmenting par
 
 Figure \ref{fig:FFfunc} is the FF in terms of the Gaussian equation, $z \, dN/dz = - dN /d \xi $ with $\xi = -ln  \,1/z$. The observation that the Gaussian peaks of Figure \ref{fig:FFfunc} along with the suppression of the FF at low z values due to gluon coherence were predicted by pQCD. 
 
+\section{Jet Finding Algorithams}
+
+A jet arises from the the collimated hadronization and fragmentation of final state hadrons that form from the hard scattering of a parton.  However, grouping the hadrons together into a jet is a non-trivial task and jet finding algorithms are deployed in order to achieve this objective.  Early on in jet physics, both theoreticians and experimentalists used a wide variety of jet finders that made comparisons between experiments or to theoretical calculations nearly impossible\cite{Atkin:2015msa}.  For example, a gluon that splits into a quark anti-quark pair may become one or two jets depending on the angular separation and the algorithm used.  In 1990, the Snowmass Accord\cite{Huth:217490} was held in order to standardized the definition of a jet between experimentalists and theoreticians.  The agreement maintained that any algorithm that clusters particles into a jet must be both infrared and collinear safe (IRC).  
+
+\begin{figure}[h]
+\includegraphics[width=15.0cm]{IRCsafe}
+\centering
+\caption{Cartoon showing Collinear and Infrared safe jet candidates\cite{Blazey:2000qt}.}
+\label{fig:IRCsafe}
+\end{figure}
 
 
-\subsection{PYTHIA}
+Collinear safety in a jet finder requires that a high-$p_{T}$ particle broken up into several particles should both return the same jets and this makes the jet finders insensitive to hadronization models.  Infrared safety inturn requires that the emission of soft radiation should not affect the jet properties returned by a jet finder.  Both of these processes are shown in Figure \ref{fig:IRCsafe}.  After the adoption of these standards from the Snowmass conference old algorithms that violated these rules were patched and new jet finders were also developed.  The most prevalent jet finding algorithms today fall into two categories: cone algorithms and sequential recombination /clustering algorithams.
 
-PYTHIA\cite{Sjostrand:2007gs}, is a Monte Carlo software tool-kit used to model proton-proton collisions.  The package uses pre-defined parton distribution functions as input and from their simulates partonic showers and radiation due to a hard scattering by generating the LO scattering matrix elements.  Hadronization is performed in PYTHIA using the Lund String Model.  After which relative branching ratios are used to statistically throw the decay modes of the hadrons until they are stabilized.  
-
-
-
-\subsection{PHOJET}
-
-\subsection{HERWIG}
-
-\subsection{FastJet}
-Although, it may simple to have a conceptual grasp of what a `jet' is there is no unambiguous definition, both experimentally and theoretically, for how to define a jet.  This is due to the fragmentation process by which partons form into their final state hadrons is not calculable pertubatively.  The earliest jet measurements used multiple definitions which complicated comparisons between experiments and theoretical calculations.  In 1990, the Snowmass Accord\cite{Huth:217490} was held in order to standardized the definition of a jet between experimentalists and theoreticians.  
-
-The agreement maintained that any algorithm that clusters particles into a jet must be both infrared and colinear safe (IRC).  If a high-momentum parton radiates a soft gluon tis emisson should not affect the 
-
-Although there are a number of jet finding algorithms available, I will only focus on algorithms that are both collinear and infrared safe.   
+A cone algoritham defines a cone of radius, R, in the detector coordinates of $(\eta,\phi)$
 
 \begin{equation}
 d_{i,j} = min[k^{2p}_{T,i},k^{2p}_{T,j}] \, \frac{\Delta^{2}_{ij}}{R^{2}}
@@ -200,6 +197,19 @@ d_{i,B} = k^{2p}_{Ti}
 
 \noindent
 where $k_{T}$ is the inverse of the transverse momentum, $\Delta^{2}_{ij} = (\eta_{i} - \eta_{j})^{2} + (\phi_{i} + \phi_{j})^{2}$ is the distance between two candidate particles composing a jet in the detector cordinates of psuedorapidity and azimuth angle, $R^{2}$ is the jet resolution, or jet con radius, in $\eta$ and $\phi$
+
+\section{Monte-Carlo Generators}
+\subsection{PYTHIA}
+
+PYTHIA\cite{Sjostrand:2007gs}, is a Monte Carlo software tool-kit used to model proton-proton collisions.  The package uses pre-defined parton distribution functions as input and from their simulates partonic showers and radiation due to a hard scattering by generating the LO scattering matrix elements.  Hadronization is performed in PYTHIA using the Lund String Model.  After which relative branching ratios are used to statistically throw the decay modes of the hadrons until they are stabilized.  
+
+
+
+\subsection{PHOJET}
+
+\subsection{HERWIG}
+
+
 
 \section{Kinematics}\label{sec:kinematics}
 Before I give a detailed discussion of the physics and observables in high energy and nuclear physics it would be advantageous to define some terms and go over a few formulas.
