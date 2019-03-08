@@ -1,0 +1,306 @@
+%Fucking left quote symbol ` and not '    
+
+\chapter{Quantum Chromodynamics} \label{ch:qcd}
+In 1968 deep inelastic scatterings performed at the Stanford Linear Accelerator Center showed that the proton had internal structure\cite{Riordan1287} called partons at the time.  Within a decade of this discovery the partons were broken into two categories: the mass carrying fermions were known as the quarks and the gauge boson force carriers were called gluons.  The interactions of these two types of particles were described by the quantum field theory known as quantum chromodynamics (QCD) and by the SU(3) symmetry group.  SU(3) guarantees that color charge is conserved and this results in quarks grouping together into `colorless' hadrons.
+
+\section{The QCD Lagrangian}
+QCD is the strongest of the known fundamental forces.  It is a gauge field theory described by the Lagrangian density
+
+\begin{equation}
+{\cal L}=-\frac{1}{4}F^{\alpha}_{\mu\nu}F^{\mu\nu}_{\alpha}
+- \alpha_{s} (\bar{q}_{j}\gamma^{\mu}T_{\alpha}q_{j})G_{\alpha}^{\mu}
++ \bar{q}_{j}(i\gamma^{\mu} \partial_{\mu} - m)q_{j}
+\label{eq:lagrangian}
+\end{equation}
+
+\noindent
+where $q$ and $\bar{q}$ represent the color anti-color fields summed over color $j$, $\alpha_{s}$ is the strong coupling strength,$\gamma^{\mu}$ is the Dirac gamma matrix, $G_{\alpha}^{\mu}$ is the gauge field for color \textit{$\alpha$}, is similar in analogy to the \textbf{W} matrix from the electroweak theory.  $F^{\alpha}_{\mu\nu}$ is the field strength tensor and it describes the gluon interactions. The first term of the Lagrangian is the gluon contribution and carries no mass term.  The second term of the Lagrangian describes how quarks and gluons interact with each other. The final term describes quark interactions and the coupling between them and will be explored further in this thesis.
+
+At short distances, less than 0.2 \textit{fm}, the strong coupling constant becomes exceedingly small and second term of the Lagrangian displays an important property known as asymptotic freedom\cite{Wilczek:2005az}. 
+
+\begin{equation}
+\alpha_{s} = \frac{1}{\beta_{0} \; \ln(Q^{2}/\Lambda^{2} )}
+\label{eq:alpha_s}
+\end{equation}
+
+\noindent
+where $\alpha_{s}$ is the strong coupling constant, $Q^{2}$ is the momentum transfer between two interacting partons, and $\Lambda^{2}$ is a cutoff below which QCD phenomena are strongly suppressed and $\beta_{0}$ is a correction factor.
+
+\begin{figure}[h]
+\includegraphics[width=12.0cm]{alphas_s}
+\centering
+\caption{Strong coupling constant ($\alpha_{s}$) as a function of the momentum transfer (Q)\cite{CMS:2014mna}.}
+\label{fig:as}
+\end{figure}
+
+\section{Jets}
+
+Hard probes (large $Q^{2}$ interactions), are produced in the earliest stages of a high energy collision when the largest momentum transfer processes occur.  As two highly energetic partons propagate away from one another, in a back-to-back fashion, they will instigate a shower of daughter partons via gluon radiation and the generation of low-mass $q \bar{q}$\, pairs.  These daughter partons will go on to form hadrons and the clustering of theses hadrons is colloquially known as a `jet'.  The physicist, James Daniel Bjorken, postulated that a correlation could be surmised from the final state transverse momentum of the hadrons that form a jet to the parton that initiated the hard scattering\cite{PhysRev.179.1547}\cite{Bjorken:1973kd}.  This has led to jets becoming the work-horse for both experimentalists and theoreticians over the past 30 years in probing QCD phenomena.  This thesis makes use of jets as an important probe of QCD and the following sections are devoted to developing a background for both the theoretical and experimental treatment of jet physics.  The following sections will be devoted to the production of jets from a physics point-of-view as well as the latest results which this thesis will compare with.
+
+\subsection{Jet Production and the Factorization Theorem}
+
+Due to confinement bare quarks are unobserved, therefore experimentalists must probe QCD interactions by detecting the color neutral final state hadrons measured in collider experiments.  Fortunately, the factorization theorem (Equation \ref{eq:xsection}) allows for the final state jet cross section to be broken into a number of steps that can either be calculated pertubativlely using pQCD or modeled phenomenologically.  Using the factorization theorem the jet cross section in a pp collision is,
+
+
+\begin{equation}
+d\sigma^{pp \rightarrow jet} \sim f_{a/A}(x_{1},Q^{2}) \otimes  f_{b/B}(x_{2},Q^{2}) \otimes d\sigma_{ab \rightarrow c + X} (x_{1},x_{2}) \otimes D_{c \rightarrow h/jet}(z,Q^{2})
+\label{eq:xsection}
+\end{equation}
+
+\noindent
+\begin{itemize}
+\item  $ f_{a/A}(x_{1},Q^{2})$ and $ f_{b/B}(x_{2},Q^{2})$ are the parton distribution functions (PDF) that describe the probability of finding parton, \textit{a} or \textit{b}, within nuclei, \textit{A} and \textit{B}, with a given momentum fraction, $x = p_{parton} / p_{hadron} $ as a function of $Q^{2}$.
+\item  $d\sigma_{ab \rightarrow c + X} (x_{1},x_{2})$ is the pQCD parton-parton cross section due to the hard scattering of the two partons, \textit{a} and \textit{b}, to and intermediate parton (\textit{c}).
+\item   $ D_{c \rightarrow h/jet}(z,Q^{2})$ is the fragmentation function (FF) that describes the probability that an outgoing parton, \textit{c}, fragments and hadronizes into a final state hadron, \textit{h}, within a jet with momentum fraction, $z \equiv p_{hadron} / p_{parton}$.
+\end{itemize}
+
+\begin{figure}[h]
+\includegraphics[width=12.0cm]{ppcollison}
+\centering
+\caption{Timeline of a proton-proton collision.  Starting from the bottom, two partons confined within the colliding protons have a hard interaction.  The outgoing partons will induce partonic showers by radiating quarks and gluons.   Eventually, due to confinement, the showers form into the final state hadrons, which are observed in nuclear experiments\cite{Dobbs:2001ck}.}
+\label{fig:FactorizationCartoon}
+\end{figure}
+
+\noindent
+Figure \ref{fig:FactorizationCartoon} shows a timeline of a pp collision broken into the relevant steps in accordance to the factorization theorem.  One of the best places to fundamentally test QCD phenomena using hard probes, i.e. jets, are with high energy hadron colliders such as those found at CERN\footnote{Discussed in detail in Chapter 3}, Fermilab, and BNL. The time scale that a hard probe is created in a high energy collision is on the order of $\tau \approx 1/p_{T} \approx$ \, 0.1 fm/\textit{c} which probes the earliest stages of a hadron collision.  The factorization theorem allows for a high level of agreement between the QCD theory of nature and experimental observables but to ascertain this connection we should discuss each term of the factorization theorem in more depth.
+
+\subsubsection{Parton Distribution Functions}
+The PDF occurs twice in Equation \ref{eq:xsection} due to the two partons that will undergo the hard scattering being confined in two different protons.  PDFs may be thought of as conveying the structure of a nucleon in terms of the number of flavored quarks or gluons ($u(x)$, $d(x)$, $s(x)$, $\overline{u}(x)$, $\overline{d}(x)$, $\overline{s}(x)$, $g(x)$) and must obey certain constraints and summation rules.  In the case of a proton, with electric charge (\textit{e} = +1),
+
+\begin{equation}
++1 = \frac{2}{3} \int_{0}^{1} [u(x) - \overline{u}(x)] dx - \frac{1}{3} \int^{1}_{0} [d(x) - \overline{d}(x)] dx
+\label{eq:PDFcharge}
+\end{equation}
+
+\noindent
+and isospin (\textit{I} = 1/2),
+
+\begin{equation}
+\frac{1}{2} = \frac{1}{2} \int_{0}^{1} [u(x) - \overline{u}(x)] dx - \frac{1}{2} \int^{1}_{0} [d(x) - \overline{d}(x)] dx
+\label{eq:PDFIso}
+\end{equation}
+
+\noindent
+have a solution,
+\begin{equation}
+ \int_{0}^{1} [u(x) - \overline{u}(x)] = 2
+\label{eq:PDFSouU}
+\end{equation}
+
+\begin{equation}
+\int^{1}_{0} [d(x) - \overline{d}(x)] dx = 1
+\label{eq:PDFSouD}
+\end{equation}
+
+\noindent
+This corresponds to the classical partonic view that protons contained two up quarks and a down quark.  Similarly the neutron, with charge \textit{e} = 0 and isospin I = -1/2, can be shown that it compromises two down quarks and a up quark.  Naively, we could assume that the three quarks composing a proton would each carry a momentum fraction of approximately 1/3 the total momentum of a proton.  However, high energy deep inelastic scattering experiments conducted at the Stanford Linear Collider in the 1960's\cite{Panofsky:871460} measured the momentum carried by the three quarks only accounting for about 1/2 the total proton momentum.  This led to a more complex and dynamic model of the proton structure with the other half of the proton momentum being occupied by neutral partons which would eventually become known as gluons.
+
+\begin{figure}[h]
+\includegraphics[width=15.0cm]{aOzz6}
+\centering
+\caption{Proton PDF at $Q^{2}$ = 10 GeV (left) and  $Q^{2}$ = 10 TeV (right) from the NNPDF Collaboration\cite{Feltesse:2010}.}
+\label{fig:PDFNNPDF}
+\end{figure}
+
+Measuring the structure of the partons making up a nucleon is a major endeavor by both theoreticians and experimentalists.  Two of the most popular PDFs available to physicists are the CTEQ\cite{Kovarik:2013sya} (Coordinated Theoretical-Experimental Project on QCD) and the NNPDF\cite{Ball:1966481} (Neural Network Parton Distribtuion Function) sets.  Figure \ref{fig:PDFNNPDF} shows the NNPDF proton PDF as a function of the momentum fraction for two energy ranges.  At low energies and high values of \textit{x}, the the two up quarks account for about 2/3 of the momentum fraction while down quark accounts for about 1/3 the total momentum, these quarks are collectively called the valence quarks.  At high energies, low values of \textit{x}, we see that the proton has non negligible contributions from gluons, anti-quarks, strange, and even charm quarks, these are collectively known as the sea partons.  Today, the modern picture of a protons structure is that it is mostly composed of gluons and sea quarks at low values of \textit{x} and this domination only increases as a function of $Q^{2}$\cite{Fritzsch:1992mu}.
+
+\subsubsection{Parton-Parton Cross-Section}
+The parton-parton cross section can be calculated using perturbation theory.  To the zeroth order in $\alpha_{s}$ this cross-section would be a simple quark-antiquark annihilation and would be calculable using Feynman diagrams as seen in Figure \ref{fig:qqbar}\cite{Collins:1989gx}.  Higher ordered contributions, such as the creation of virtual gluons, require the hard cross-section to be expanded as a series in terms of $\alpha_{s}$.  Calculations of the hard cross section that incorporate these higher order terms are known as \textit{next-to-leading order} (NLO) with N denoting the number of terms after the leading order that have been included in the cross-section calculation.  Various calculations of the hard cross-section of different QCD processes have been performed over the years typically using either power series or logarithmic expansions of $\alpha_{s}$\cite{Brambilla:2006wp} and corrections for LO, NLO, and even NNLO constitutes a very active field in high energy physics.
+
+\begin{figure}[h]
+\includegraphics[width=6.0cm]{Ttbar_production_via_qqbar_annihilation}
+\centering
+\caption{Lowest order quark-antiquark annihilation to top-antitop pair\cite{Erdmann:2001ne}.}
+\label{fig:qqbar}
+\end{figure}
+
+\noindent
+Perturbative techniques of the hard cross-section have been extremely successful in describing jet features in hadronic collisions\cite{Fritzsch:1992mu}.
+
+\subsubsection{Hadronization}
+
+Hadronization is the process by which the colored pQCD partons form into colorless non-pQCD hadrons.  Hadronization is a significant barrier in progressing jet physics as it encompass several smaller processes which in themselves are hard to characterize. Thus, like PDFs, an accurate description of hadronization requires a phenomenological approach by which experimental results help complement theoretical calculations.  Jet production via hadronization\cite{Webber:1994zd} follows two distinct stages.  First, the partons that underwent a hard scattering start to emit radiation via gluon bremsstrahlung up until time, $t < Q^{2}$, this is known as the parton cascade.  The parton cascade is the precursor of what will become a jet as most of the radiation generated will travel in the same direction as the initial hard scattered parton.  However, this immediately poses an issue in jet physics as radiation generated at a wide angle away from the momentum axis of the inital hard scattered parton will not be associated with the jet.
+
+\begin{figure}[h]
+\includegraphics[width=8.0cm]{partoncascade}
+\centering
+\caption{Parton cascade in a hadronic collision\cite{Webber:1994zd}.}
+\label{fig:pcascade}
+\end{figure}
+
+\noindent
+After the cascade has ended the partons fragment into color neutral hadrons.  There are two main phenomenological models used to describe the hadron forming process, the Lund String Model and the Cluster Hadronization Model.  
+
+The QCD potential is,
+
+\begin{equation}
+V(r) = - \frac{\alpha_{s}}{r} + \sigma \, r
+\label{eq:QCDPotential}
+\end{equation}
+
+\noindent
+where the first term of Equation \ref{eq:QCDPotential} goes as the Coulomb potential with a 1/r dependence and is the dominate term at short distance and the second term has a string-like potential with $\sigma$ referring to a string-like tension.  The Lund String Model ignores gluon radiation and has fragmentation occur via breaking the string tension with the production of $q\overline{q}$ sea quarks.  The created sea quarks will carry some momentum fraction, z, of the initial parton until z falls below some cutoff.  Figure \ref{fig:qqbarstring} shows two quarks undergoing a string breaking, each of the quarks initiating the string breaking will combine with a sea quark in an iterative manner to form hadrons.  
+
+
+\begin{figure}[h]
+\includegraphics[width=15.0cm]{qqbarproductionvaccum}
+\centering
+\caption{$u \overline{d}$ generating a $d \overline{d}$ pair via string breaking which will form color neutral hadrons, black lines show the string like equipotentials.\cite{Andersson:2002ap}.}
+\label{fig:qqbarstring}
+\end{figure}
+
+The Cluster Hadronization Model has gluons splitting after the parton cascade phase into $q\overline{q}$ pairs.  These pairs will form color-singlet clusters with other neighboring quarks in phase-space.  These color-singlets will typically be a few GeV/\textit{$c^{2}$} in mass and are treated as excited meson resonances.  These psuedo-resonances will decay via their normal branching ratios into the stable hadrons\cite{Webber:1983if}.
+
+
+\subsubsection{Fragmentation}
+Similar to how a PDF quantitatively describes the structure of a nucleon the FF quantitatively describes the hadronization process.  The FF is also similar to the PDF in that it is also a probability distribution, thus it follows from momentum conservation and probability theory that.
+
+\begin{equation}
+\sum \int z D_{c \rightarrow \, h/jet} (z,Q^{2})dz = 1
+\label{eq:FFRule}
+\end{equation}
+
+\noindent
+Ideally, the FF would be defined as the momentum fraction carried by the hadrons created from the fragmenting parton, $z \equiv p_{hadron} / p_{parton}$.  Due to the confinement of partons we must use a a suitable substitution for measuring the FF.  The Parton-Hadron Duality\cite{Jenkovszky:2012dc} states that a hadron found near the center of a jet should encompass the quantum numbers and kinematic properties associated with the hard scattered quark that initiated the jet.  Thus we can measure the fragmentation function as $z = p_{hadron} / p_{jet}$.  The formulation of the FF as a fractional energy carried by the hadrons in a jet was a breakthrough in pQCD techniques and is analogous to how an electron passing through an absorber creates photon showers with these photons generating conversion electrons until the total energy has been dissipated into the material.
+
+\begin{figure}[h]
+\includegraphics[width=10.0cm]{FFfunctions}
+\centering
+\caption{Fragmentaion Functions from $e^{+}e^{-}$and DIS experiments with fits\cite{rak_tannenbaum_2013}.}
+\label{fig:FFfunc}
+\end{figure}
+
+
+Figure \ref{fig:FFfunc} is the FF in terms of the Gaussian equation, $z \, dN/dz = - dN /d \xi $ with $\xi = -ln  \,1/z$. The observation that the Gaussian peaks of Figure \ref{fig:FFfunc} shift to higher values of $\xi$ as a function of $\sqrt{s}$ along with the suppression of the FF at low z values due to gluon coherence were predicted by pQCD. 
+
+
+
+\subsection{PYTHIA}
+
+PYTHIA\cite{Sjostrand:2007gs}, is a Monte Carlo software tool-kit used to model proton-proton collisions.  The package uses pre-defined parton distribution functions as input and from their simulates partonic showers and radiation due to a hard scattering by generating the LO scattering matrix elements.  Hadronization is performed in PYTHIA using the Lund String Model.  After which relative branching ratios are used to statistically throw the decay modes of the hadrons until they are stabilized.  
+
+
+
+\subsection{PHOJET}
+
+\subsection{HERWIG}
+
+\subsection{FastJet}
+Although, it may simple to have a conceptual grasp of what a `jet' is there is no unambiguous definition, both experimentally and theoretically, for how to define a jet.  This is due to the fragmentation process by which partons form into their final state hadrons is not calculable pertubatively.  The earliest jet measurements used multiple definitions which complicated comparisons between experiments and theoretical calculations.  In 1990, the Snowmass Accord\cite{Huth:217490} was held in order to standardized the definition of a jet between experimentalists and theoreticians.  
+
+The agreement maintained that any algorithm that clusters particles into a jet must be both infrared and colinear safe (IRC).  If a high-momentum parton radiates a soft gluon tis emisson should not affect the 
+
+Although there are a number of jet finding algorithms available, I will only focus on algorithms that are both collinear and infrared safe.   
+
+\begin{equation}
+d_{i,j} = min[k^{2p}_{T,i},k^{2p}_{T,j}] \, \frac{\Delta^{2}_{ij}}{R^{2}}
+\label{eq:JetAlgo}
+\end{equation}
+
+\begin{equation}
+d_{i,B} = k^{2p}_{Ti}
+\label{eq:MinJet}
+\end{equation}
+
+\noindent
+where $k_{T}$ is the inverse of the transverse momentum, $\Delta^{2}_{ij} = (\eta_{i} - \eta_{j})^{2} + (\phi_{i} + \phi_{j})^{2}$ is the distance between two candidate particles composing a jet in the detector cordinates of psuedorapidity and azimuth angle, $R^{2}$ is the jet resolution, or jet con radius, in $\eta$ and $\phi$
+
+\section{Kinematics}\label{sec:kinematics}
+Before I give a detailed discussion of the physics and observables in high energy and nuclear physics it would be advantageous to define some terms and go over a few formulas.
+
+In a circular particle accelerator a beam of relativistic particles travels along a beamline.  The coordinates along this beamline are broken into longitudinal and transverse component. The momentum can similarly be described in these coordinates as the longitudinal and transverse momentum, denoted as $\mathbf{p}_{L}$ and $\mathbf{p}_{T}$.  For cylindrical detectors like ALICE\footnote{See Chapter \ref{ch:alice}} it is more advantageous to use a cylindrical coordinate system of with $\theta$ as the polar angle and $\phi$ as the azimuth angle.  Relativistic particles traveling along the beamline will have 
+
+\begin{equation}
+\textit{y} = \frac{1}{2} \ln \frac{E + |\mathbf{p}|}{E - |\mathbf{p}|}
+\label{eq:rapidity}
+\end{equation}
+
+\begin{equation}
+\eta = \frac{1}{2} \ln \frac{|\mathbf{p}| + p_{L}}{|\mathbf{p}| - p_{L}}
+\label{eq:psuedo}
+\end{equation}
+
+\noindent
+Therefore in terms of cartesian coordinates with the x-y plane as the plane transverse to the beamline and the z component as the component along the beam line we can derive the following relationships
+
+\begin{equation}
+p_{x} = p_{T} \cos \phi
+\label{eq:xcomp}
+\end{equation}
+\begin{equation}
+p_{y} = p_{T} \sin \phi
+\label{eq:ycomp}
+\end{equation}
+\begin{equation}
+p_{z} = p_{T} \sinh \eta
+\label{eq:zcomp}
+\end{equation}
+
+\noindent
+The advantage of using the azimuthal angle and psuedorapidity over cylindrical or Cartesian coordinates is that given any two particles, the separation between $R = \sqrt{ (\phi_{i} - \phi_{j})^{2} + (\eta_{i} - \eta_{j})^{2}  } $ is invariant under all Lorentz boosts along the beamline.
+
+
+\begin{figure}[h]
+\includegraphics[width=10.0cm]{CCfir5_04_13}
+\centering
+\caption{Nuclear collison  .}
+\label{fig:centrality}
+\end{figure}
+
+\noindent
+In nuclear collisions the offset between the centers of two nuclei is known as the impact parameter (b) as seen in Figure \ref{fig:centrality}.  Measuring the impact parameter in an experimental setting is non-trivial and model-dependent.  The distribution of nucleons in the nucleus is modeled after a Glauber distribution\cite{Loizides:2016djv}.  The Glauber model predicts that there is a direct correlation between the impact parameter of a nuclear collision and to the inelastic differential cross section ($\sigma_{inel}$)\cite{Miller:2007ri}.
+
+
+\begin{equation}
+c(b) =\frac{ \int_{0}^{b} \frac{d \sigma}{db} db}{ \int_{0}^{\infty} \frac{d \sigma}{db} db} = \frac{1}{\sigma_{inel}} \int_{0}^{b} \frac{d \sigma}{db} db
+\label{eq:centrality}
+\end{equation}
+
+
+
+
+
+
+\section{The Quark-Gluon Plasma}
+
+\subsection{Asymptotic Freedom and the Perfect Fluid}
+
+\subsubsection{Hydrodynamics}
+The conservation laws for a relativistic fluid conserve the charge current and energy-momentum tensor of the expanding fluid such that:
+
+\begin{equation}
+\partial_{\mu} N_{\textit{i}}^{\mu} = 0
+\label{eq:hydrochrg}
+\end{equation}
+
+\begin{equation}
+\partial_{\mu} T^{\mu \nu} = 0
+\label{eq:hydroenrgy}
+\end{equation}
+
+\subsection{Energy Loss in a Colored Medium}
+
+\subsection{The Nuclear Modification Factor}
+
+\subsection{Nuclear Collisions}
+
+%\subsection{Jet Results from Nuclear Collisions}
+
+\section{QGP in Proton-Proton Collisions?}
+As previoulsy stated a QGP is believed to be absent in proton-proton collisions, thus any signature of a QGP should likewise be absent.  One way of quantifying the presence of the QGP is via the Bjorken energy density.  
+
+\begin{equation}
+\varepsilon = \frac{1}{\tau A} \frac{dE_{T}}{d \eta}
+\label{eq:bjorkenEt}
+\end{equation}
+
+\noindent
+where A is the transverse area of the nuclei, $\tau$ is the proper time, and $dE_{T}/d \eta$ is the transverse energy per unit psuedorapidity.  It can be shown that  the 150 MeV critical temperature need for the phase transition to the QGP corresponds to ~ $1 - 3 GeV/fm^{3}$ energy density.  The quantity $dE_{T}/d \eta$ can be related to the mean transverse momentum $<p_{T}>$ and particle multiplictiy\footnote{Multiplicity is defined as the number of particles per event} per unity psuedorapidity as:
+
+\begin{equation}
+\frac{dE_{t}}{d \eta}  \approx  <p_{T}> \frac{dN}{d\eta}
+\label{eq:Et}
+\end{equation}
+
+where $ <p_{T} >$ is the mean transverse momentum and $dN/d\eta$ is the particle multiplicity per unit psuedorapidity.
+This suggest that in very high multiplicity proton-proton events signatures of the QGP may be present.  This is one of the most active and newest areas of research in heavy ion physics.  
