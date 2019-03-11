@@ -194,22 +194,76 @@ A jet arises from the the collimated hadronization and fragmentation of final st
 
 Collinear safety in a jet finder requires that a high-$p_{T}$ particle broken up into several particles should both return the same jets and this makes the jet finders insensitive to how hadrons are grouped together.  Infrared safety inturn requires that the emission of soft radiation should not affect the jet properties returned by a jet finder, this makes jets returned by the algorithm insensitive to soft physics.  Both of these processes are shown in Figure \ref{fig:IRCsafe}.  After the adoption of these standards from the Snowmass conference old algorithms that violated these rules were patched and new jet finders were also developed.  The most prevalent jet finding algorithms today fall into two categories: cone algorithms and sequential recombination /clustering algorithms.
 
-\subsubsection{Cone Algorithms}
+\subsection{Cone Algorithms}
 
-Cone algorithms made up the bulk or early jet finders, but most are not IRC safe.  The only IRC safe cone algorithm still in use today is the seedless infra-red safe cone algorithm (SIScone).  SIScone defines a cone of radius, R, in the detector coordinates of $(\eta,\phi)$ such that $R = \sqrt{\phi^{2} + \eta^{2}}$.  Siscone then proceeds through an iterative process by which it finds the largest $p_{T}$ particle in an event
+Cone algorithms made up the bulk of early jet finders, most were not IRC safe.  The only IRC safe cone algorithm still in use today is the seedless infra-red safe cone algorithm (SIScone).  SIScone defines a cone of radius, R, around the highest momentum particle in the coordinates of $(\eta,\phi)$, this is the proto-jet.  SIScone then proceeds through an iterative process of finding all the particles withing the jet radius such that $R \leq \sqrt{\phi^{2} + \eta^{2}}$ and calculating a new jet center based on these particles momentums and $(\eta,\phi)$.  If the new center matches the proto-jet center the proto-jet is tagged as a jet, all the particles in that jet are removed, and SIScone moves onto the next highest $p_{T}$ particle.  Cone algorithms tend to be unpopular due to being computationally expensive, they are hard to implement theoretically, and can give results not calculable in pertubation theory.
+
+\subsection{Sequential/Recombination Algorithms}
+
+The other class of jet finders are the sequential/recombination class of algorithms, which are favored by experimentalists and theoreticians and are IRC safe.  Their are three types of sequential/recombination algorithms: $k_{T}$, Anti-$k_{T}$, and the Cambridge/Aachen jet finders, with $k_{T}$ referring to the inverse of the transverse momentum, $1/p_{T}$.  All of the algorithms use a similar method, first the find the distance between every pair of particles, $d_{i,j}$,  such that
+
+
 
 \begin{equation}
-d_{i,j} = min[k^{2p}_{T,i},k^{2p}_{T,j}] \, \frac{\Delta^{2}_{ij}}{R^{2}}
+d_{i,j} = min[p^{a}_{T,i},p^{a}_{T,j}] \, \frac{\Delta^{2}_{ij}}{R^{2}}
 \label{eq:JetAlgo}
 \end{equation}
 
+\noindent
+
+where $p^{a}_{T,i}$ is the transverse momentum of particle \textit{i}, \textit{a} is free parameter that is set based on which algoritham is used, $\Delta^{2}_{ij} = (\eta_{i} - \eta_{j})^{2} + (\phi_{i} + \phi_{j})^{2}$ and R is the radius of the jet.  A second distance is defined in the sequential/recombination algorithm,
+
 \begin{equation}
-d_{i,B} = k^{2p}_{Ti}
+d_{i,B} = p^{a}_{T,i}
 \label{eq:MinJet}
 \end{equation}
 
 \noindent
-where $k_{T}$ is the inverse of the transverse momentum, $\Delta^{2}_{ij} = (\eta_{i} - \eta_{j})^{2} + (\phi_{i} + \phi_{j})^{2}$ is the distance between two candidate particles composing a jet in the detector coordinates of psuedorapidity and azimuth angle, $R^{2}$ is the jet resolution, or jet con radius, in $\eta$ and $\phi$
+
+this is the distance between a given particle \textit{i} and the beam axis.  Sequential/Recombination algorithms find the set of all particles, ${d_{i,j},d_{i,B}}$, such that if $d_{i,B}$ is the minimmum particle \textit{i} is tagged as a jet and removed from the list.  If $d_{i,j}$ are a minimum
+
+\subsubsection{$k_{T}$ Algorithm}
+The $k_{T}$ algorithm sets the value \textit{a} to 2, this results is a minimum function,
+
+\begin{equation}
+d_{i,j} = min[p^{2}_{T,i},p^{2}_{T,j}] \, \frac{\Delta^{2}_{ij}}{R^{2}}
+\label{eq:kt}
+\end{equation}
+
+\noindent
+which clusters low momentum particles first, making this algorithm susceptible to the underlying event (UE) or pile-up (PU).  Thus the $k_{T}$ algorithm is good at estimating any background present in a high energy collision. 
+
+\subsubsection{Anti-$k_{T}$ Algorithm}
+The Anti-$k_{T}$ algorithm sets the value \textit{a} to -2, resulting in a minimization function,
+
+\begin{equation}
+d_{i,j} = min \Bigg [\frac{1}{p^{2}_{T,i}}, \frac{1}{p^{2}_{T,j}} \Bigg ] \, \frac{\Delta^{2}_{ij}}{R^{2}}
+\label{eq:Akt}
+\end{equation}
+
+\subsubsection{Cambridge/Aachen Algorithm}
+
+The Cambridge/Aachen algorithm sets \textit{a} to 0 and this results in a minimization function of,
+
+\begin{equation}
+d_{i,j} = \frac{\Delta^{2}_{ij}}{R^{2}}
+\label{eq:CBalg}
+\end{equation}
+
+\noindent
+which makes it independent of particle momentum and sensitive to PU and UE.  Due to the fact that the Cambridge/Aachen algorithm is only dependent on the particle coordinate it is most useful in studying jet structure.
+
+Figure \ref{fig:AllJetFinder} shows the jets found in a single event using all four jet finding algorithms.  It should be noted that the Cambridge/Aachen and $k_{T}$ algorithms have highly irregular and large shapes, making them both susceptible to the presence of a UE, while SIScone finds an additional jet due to splitting.  The Anti-$k_{T}$ algorithm finds circular jets which demonstrates its robustness to hard radiation.  
+
+\begin{figure}[h]
+\includegraphics[width=15.0cm]{FastJet}
+\centering
+\caption{Lego plot of all four jet finders used on a single event with R = 1 jet radii\cite{Atkin:2015msa}.}
+\label{fig:AllJetFinder}
+\end{figure}
+
+
+FastJet\cite{Cacciari:2011ma} is a C++ software package that implements the four previously discussed jet finders.  The robust nature of FastJet across a wide kinematic range, different collision systems, along with being easily implemented and open-source 
 
 \section{Monte-Carlo Generators}
 Monte-Carlos (MC) allow for the simulation of high energy events on a statistical basis.  Particle level generators use different phenomenological models of the factorization theorem in order to simulate the energy, momentum, particle species, multiplicity, and direction of travel expected in a high energy collision.  In order to validate an analysis the particle level simulations are further propagated through a detector level simulation of an experiment, such as Geant3\cite{Brun:1119728}, in order to negate detector effects on the output observables from the MC simulation.  In this section only the particle level simulations used in the thesis are discussed.
@@ -244,7 +298,7 @@ In a circular particle accelerator a beam of relativistic particles travels alon
 \end{equation}
 
 \noindent
-Therefore in terms of cartesian coordinates with the x-y plane as the plane transverse to the beamline and the z component as the component along the beam line we can derive the following relationships
+Therefore in terms of Cartesian coordinates with the x-y plane as the plane transverse to the beamline and the z component as the component along the beam line we can derive the following relationships
 
 \begin{equation}
 p_{x} = p_{T} \cos \phi

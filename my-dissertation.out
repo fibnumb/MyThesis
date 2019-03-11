@@ -4,44 +4,28 @@
 \BOOKMARK [1][-]{c.1}{Acknowledgments}{rootNode.0}% 4
 \BOOKMARK [1][-]{e.1}{Abstract}{rootNode.0}% 5
 \BOOKMARK [0][-]{f.0}{Table of Contents}{}% 6
-\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 7
-\BOOKMARK [0][-]{chapter.2}{2 Quantum Chromodynamics}{}% 8
-\BOOKMARK [1][-]{section.2.1}{2.1 The QCD Lagrangian}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.2}{2.2 Jets}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Jet Production and the Factorization Theorem}{section.2.2}% 11
-\BOOKMARK [1][-]{section.2.3}{2.3 Jet Finding Algorithams}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.4}{2.4 Monte-Carlo Generators}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 PYTHIA}{section.2.4}% 14
-\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 PHOJET}{section.2.4}% 15
-\BOOKMARK [2][-]{subsection.2.4.3}{2.4.3 HERWIG}{section.2.4}% 16
-\BOOKMARK [1][-]{section.2.5}{2.5 Kinematics}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.6}{2.6 The Quark-Gluon Plasma}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.6.1}{2.6.1 Asymptotic Freedom and the Perfect Fluid}{section.2.6}% 19
-\BOOKMARK [2][-]{subsection.2.6.2}{2.6.2 Energy Loss in a Colored Medium}{section.2.6}% 20
-\BOOKMARK [2][-]{subsection.2.6.3}{2.6.3 The Nuclear Modification Factor}{section.2.6}% 21
-\BOOKMARK [2][-]{subsection.2.6.4}{2.6.4 Nuclear Collisions}{section.2.6}% 22
-\BOOKMARK [1][-]{section.2.7}{2.7 QGP in Proton-Proton Collisions?}{chapter.2}% 23
-\BOOKMARK [0][-]{chapter.3}{3 The LHC and ALICE}{}% 24
-\BOOKMARK [1][-]{section.3.1}{3.1 Overview of the LHC}{chapter.3}% 25
-\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 LHC Operations}{section.3.1}% 26
-\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 LHC Accelerator Complex}{section.3.1}% 27
-\BOOKMARK [1][-]{section.3.2}{3.2 The ALICE Experiment}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 TZERO}{section.3.2}% 29
-\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 VZERO}{section.3.2}% 30
-\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Inner Tracking System}{section.3.2}% 31
-\BOOKMARK [2][-]{subsection.3.2.4}{3.2.4 Time Projection Chamber}{section.3.2}% 32
-\BOOKMARK [2][-]{subsection.3.2.5}{3.2.5 Electromagnetic Calorimeter}{section.3.2}% 33
-\BOOKMARK [0][-]{chapter.4}{4 The ALICE TPC Upgrade}{}% 34
-\BOOKMARK [1][-]{subsection.4.0.1}{4.0.1 Physics Motivation}{chapter.4}% 35
-\BOOKMARK [2][-]{subsection.4.0.2}{4.0.2 Gaseous Electron Multiplier Foils}{subsection.4.0.1}% 36
-\BOOKMARK [2][-]{subsection.4.0.3}{4.0.3 Research and Development}{subsection.4.0.1}% 37
-\BOOKMARK [2][-]{subsection.4.0.4}{4.0.4 Production of the Inner Readout Chambers in the U.S.}{subsection.4.0.1}% 38
-\BOOKMARK [2][-]{subsection.4.0.5}{4.0.5 GEM and Chamber Quality Assurance}{subsection.4.0.1}% 39
-\BOOKMARK [2][-]{subsection.4.0.6}{4.0.6 Outlook}{subsection.4.0.1}% 40
-\BOOKMARK [0][-]{section*.54}{Bibliography}{}% 41
-\BOOKMARK [0][-]{section*.55}{Appendices}{}% 42
-\BOOKMARK [1][-]{section.Alph0.1}{A Particle Identification via Bethe-Bloch}{section*.55}% 43
-\BOOKMARK [1][-]{section.Alph0.2}{B Summary of Stuff}{section*.55}% 44
-\BOOKMARK [2][-]{subsection.Alph0.2.1}{B.1 More Things}{section.Alph0.2}% 45
-\BOOKMARK [2][-]{subsection.Alph0.2.2}{B.2 Other Aspects}{section.Alph0.2}% 46
-\BOOKMARK [0][-]{section*.58}{Vita}{}% 47
+\BOOKMARK [0][-]{chapter.1}{1 Quantum Chromodynamics}{}% 7
+\BOOKMARK [1][-]{section.1.1}{1.1 The QCD Lagrangian}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.2}{1.2 Jets}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 Jet Production and the Factorization Theorem}{section.1.2}% 10
+\BOOKMARK [1][-]{section.1.3}{1.3 Jet Finding Algorithams}{chapter.1}% 11
+\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 Cone Algorithms}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Sequential/Recombination Algorithms}{section.1.3}% 13
+\BOOKMARK [1][-]{section.1.4}{1.4 Monte-Carlo Generators}{chapter.1}% 14
+\BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 PYTHIA}{section.1.4}% 15
+\BOOKMARK [2][-]{subsection.1.4.2}{1.4.2 PHOJET}{section.1.4}% 16
+\BOOKMARK [2][-]{subsection.1.4.3}{1.4.3 HERWIG}{section.1.4}% 17
+\BOOKMARK [1][-]{section.1.5}{1.5 Kinematics}{chapter.1}% 18
+\BOOKMARK [1][-]{section.1.6}{1.6 The Quark-Gluon Plasma}{chapter.1}% 19
+\BOOKMARK [2][-]{subsection.1.6.1}{1.6.1 Asymptotic Freedom and the Perfect Fluid}{section.1.6}% 20
+\BOOKMARK [2][-]{subsection.1.6.2}{1.6.2 Energy Loss in a Colored Medium}{section.1.6}% 21
+\BOOKMARK [2][-]{subsection.1.6.3}{1.6.3 The Nuclear Modification Factor}{section.1.6}% 22
+\BOOKMARK [2][-]{subsection.1.6.4}{1.6.4 Nuclear Collisions}{section.1.6}% 23
+\BOOKMARK [1][-]{section.1.7}{1.7 QGP in Proton-Proton Collisions?}{chapter.1}% 24
+\BOOKMARK [0][-]{section*.26}{Bibliography}{}% 25
+\BOOKMARK [0][-]{section*.27}{Appendices}{}% 26
+\BOOKMARK [1][-]{section.Alph0.1}{A Particle Identification via Bethe-Bloch}{section*.27}% 27
+\BOOKMARK [1][-]{section.Alph0.2}{B Summary of Stuff}{section*.27}% 28
+\BOOKMARK [2][-]{subsection.Alph0.2.1}{B.1 More Things}{section.Alph0.2}% 29
+\BOOKMARK [2][-]{subsection.Alph0.2.2}{B.2 Other Aspects}{section.Alph0.2}% 30
+\BOOKMARK [0][-]{section*.30}{Vita}{}% 31
