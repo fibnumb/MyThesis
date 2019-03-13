@@ -1,24 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{Patrignani:2016xqp}
-C.~Patrignani et~al.
-\newblock {Review of Particle Physics}.
-\newblock {\em Chin. Phys.}, C40(10):100001, 2016.
-
-\bibitem{Langacker:2009my}
-Paul Langacker.
-\newblock {Introduction to the Standard Model and Electroweak Physics}.
-\newblock In {\em {Proceedings of Theoretical Advanced Study Institute in
-  Elementary Particle Physics on The dawn of the LHC era (TASI 2008): Boulder,
-  USA, June 2-27, 2008}}, pages 3--48, 2010.
-
-\bibitem{Aoyama:2014sxa}
-Tatsumi Aoyama, M.~Hayakawa, Toichiro Kinoshita, and Makiko Nio.
-\newblock {Tenth-Order Electron Anomalous Magnetic Moment --- Contribution of
-  Diagrams without Closed Lepton Loops}.
-\newblock {\em Phys. Rev.}, D91(3):033006, 2015.
-\newblock [Erratum: Phys. Rev.D96,no.1,019901(2017)].
-
 \bibitem{Riordan1287}
 Michael Riordan.
 \newblock The discovery of quarks.
@@ -152,319 +133,53 @@ Gerald~C. Blazey et~al.
 \newblock In {\em {QCD and weak boson physics in Run II. Proceedings, Batavia,
   USA, March 4-6, June 3-4, November 4-6, 1999}}, pages 47--77, 2000.
 
+\bibitem{Cacciari:2011ma}
+Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
+\newblock {FastJet User Manual}.
+\newblock {\em Eur. Phys. J.}, C72:1896, 2012.
+
+\bibitem{Connors:2017ptx}
+Megan Connors, Christine Nattrass, Rosi Reed, and Sevil Salur.
+\newblock {Jet measurements in heavy ion physics}.
+\newblock {\em Rev. Mod. Phys.}, 90:025005, 2018.
+
+\bibitem{Brun:1119728}
+R~Brun, F~Bruyant, M~Maire, A~C McPherson, and P~Zanarini.
+\newblock {\em {GEANT 3: user's guide Geant 3.10, Geant 3.11; rev. version}}.
+\newblock CERN, Geneva, 1987.
+
 \bibitem{Sjostrand:2007gs}
 Torbjorn Sjostrand, Stephen Mrenna, and Peter~Z. Skands.
 \newblock {A Brief Introduction to PYTHIA 8.1}.
 \newblock {\em Comput. Phys. Commun.}, 178:852--867, 2008.
 
-\bibitem{Loizides:2016djv}
-Constantin Loizides.
-\newblock {Glauber modeling of high-energy nuclear collisions at the subnucleon
-  level}.
-\newblock {\em Phys. Rev.}, C94(2):024914, 2016.
+\bibitem{Skands:2010ak}
+Peter~Zeiler Skands.
+\newblock {Tuning Monte Carlo Generators: The Perugia Tunes}.
+\newblock {\em Phys. Rev.}, D82:074018, 2010.
 
-\bibitem{Miller:2007ri}
-Michael~L. Miller, Klaus Reygers, Stephen~J. Sanders, and Peter Steinberg.
-\newblock {Glauber modeling in high energy nuclear collisions}.
-\newblock {\em Ann. Rev. Nucl. Part. Sci.}, 57:205--243, 2007.
+\bibitem{CAPELLA1994225}
+A.~Capella, U.~Sukhatme, C.-I. Tan, and J.~Tran~Thanh Van.
+\newblock Dual parton model.
+\newblock {\em Physics Reports}, 236(4):225 -- 329, 1994.
 
-\bibitem{doi:10.1142/S0217751X13300354}
-STEPHEN MYERS.
-\newblock The large hadron collider 2008--2013.
-\newblock {\em International Journal of Modern Physics A}, 28(25):1330035,
-  2013.
+\bibitem{Wong:241251}
+Cheuk-Yin Wong.
+\newblock {\em {Introduction to high-energy heavy-ion collisions}}.
+\newblock World Scientific, Singapore, 1994.
+\newblock Erratum.
 
-\bibitem{Taylor:2017edx}
-Thomas Taylor and Daniel Treille.
-\newblock {The Large Electron Positron Collider (LEP): Probing the Standard
-  Model}.
-\newblock {\em Adv. Ser. Direct. High Energy Phys.}, 27:217--261, 2017.
+\bibitem{Bopp:1998rc}
+Fritz~W. Bopp, R.~Engel, and J.~Ranft.
+\newblock {Rapidity gaps and the PHOJET Monte Carlo}.
+\newblock In {\em {High energy physics. Proceedings, LAFEX International
+  School, Session C, Workshop on Diffractive Physics, LISHEP'98, Rio de
+  Janeiro, Brazil, February 16-20, 1998}}, pages 729--741, 1998.
 
-\bibitem{Aad:2008zzm}
-G.~Aad et~al.
-\newblock {The ATLAS Experiment at the CERN Large Hadron Collider}.
-\newblock {\em JINST}, 3:S08003, 2008.
-
-\bibitem{Chatrchyan:2008aa}
-S.~Chatrchyan et~al.
-\newblock {The CMS Experiment at the CERN LHC}.
-\newblock {\em JINST}, 3:S08004, 2008.
-
-\bibitem{Alves:2008zz}
-A.~Augusto Alves, Jr. et~al.
-\newblock {The LHCb Detector at the LHC}.
-\newblock {\em JINST}, 3:S08005, 2008.
-
-\bibitem{Aamodt:2008zz}
-K.~Aamodt et~al.
-\newblock {The ALICE experiment at the CERN LHC}.
-\newblock {\em JINST}, 3:S08002, 2008.
-
-\bibitem{Chatrchyan:2012xdj}
-Serguei Chatrchyan et~al.
-\newblock {Observation of a new boson at a mass of 125 GeV with the CMS
-  experiment at the LHC}.
-\newblock {\em Phys. Lett.}, B716:30--61, 2012.
-
-\bibitem{Aad:2012tfa}
-Georges Aad et~al.
-\newblock {Observation of a new particle in the search for the Standard Model
-  Higgs boson with the ATLAS detector at the LHC}.
-\newblock {\em Phys. Lett.}, B716:1--29, 2012.
-
-\bibitem{Mobs:2197559}
-Esma Mobs.
-\newblock {The CERN accelerator complex. Complexe des acc{\'e}l{\'e}rateurs du
-  CERN}.
-\newblock Jul 2016.
-\newblock General Photo.
-
-\bibitem{Fabjan:2011jb}
-C.~Fabjan and J.~Schukraft.
-\newblock {The Story of ALICE: Building the dedicated heavy ion detector at
-  LHC}.
-\newblock In {\em {'The Large Hadron Collider: A marvel technology', EPFL-Press
-  Lausanne, Switzerland, 2009 (Editor: L. Evans), chapter 5.4}}, 2011.
-
-\bibitem{Alberico:2011zy}
-W.~M. Alberico, A.~Beraudo, A.~De~Pace, A.~Molinari, M.~Monteno, M.~Nardi, and
-  F.~Prino.
-\newblock {Heavy-flavour spectra in high energy nucleus-nucleus collisions}.
-\newblock {\em Eur. Phys. J.}, C71:1666, 2011.
-
-\bibitem{Gligorov:2018vkc}
-Vladimir~V. Gligorov, Simon Knapen, Benjamin Nachman, Michele Papucci, and
-  Dean~J. Robinson.
-\newblock {Leveraging the ALICE/L3 cavern for long-lived exotics}.
-\newblock 2018.
-
-\bibitem{Bondila:2005xy}
-M.~Bondila et~al.
-\newblock {ALICE T0 detector}.
-\newblock {\em IEEE Trans. Nucl. Sci.}, 52:1705--1711, 2005.
-
-\bibitem{Abbas:2013taa}
-E.~Abbas et~al.
-\newblock {Performance of the ALICE VZERO system}.
-\newblock {\em JINST}, 8:P10016, 2013.
-
-\bibitem{Field:2011iq}
-Rick Field.
-\newblock {Min-Bias and the Underlying Event at the LHC}.
-\newblock {\em Acta Phys. Polon.}, B42:2631--2656, 2011.
-
-\bibitem{Adam:2015ptt}
-Jaroslav Adam et~al.
-\newblock {Centrality dependence of the charged-particle multiplicity density
-  at midrapidity in Pb-Pb collisions at $\sqrt{s_{\rm NN}}$ = 5.02 TeV}.
-\newblock {\em Phys. Rev. Lett.}, 116(22):222302, 2016.
-
-\bibitem{BEOLE20121062}
-S.~Beol{\`e}.
-\newblock The alice inner tracking system: Performance with proton and lead
-  beams.
-\newblock {\em Physics Procedia}, 37:1062 -- 1069, 2012.
-\newblock Proceedings of the 2nd International Conference on Technology and
-  Instrumentation in Particle Physics (TIPP 2011).
-
-\bibitem{Adam:2016acv}
-Jaroslav Adam et~al.
-\newblock {Particle identification in ALICE: a Bayesian approach}.
-\newblock {\em Eur. Phys. J. Plus}, 131(5):168, 2016.
-
-\bibitem{2010NIMPA.622..316A}
-J.~{Alme} et~al.
-\newblock {The ALICE TPC, a large 3-dimensional tracking device with fast
-  readout for ultra-high multiplicity events}.
-\newblock {\em Nuclear Instruments and Methods in Physics Research A},
-  622:316--367, October 2010.
-
-\bibitem{diener}
-Ralf Diener.
-\newblock Gas amplification with micro pattern gas detectors.
-
-\bibitem{Abelev:2014ffa}
-Betty~Bezverkhny Abelev et~al.
-\newblock {Performance of the ALICE Experiment at the CERN LHC}.
-\newblock {\em Int. J. Mod. Phys.}, A29:1430044, 2014.
-
-\bibitem{LIPPMANN2012434}
-Christian Lippmann.
-\newblock Performance of the alice time projection chamber.
-\newblock {\em Physics Procedia}, 37:434 -- 441, 2012.
-\newblock Proceedings of the 2nd International Conference on Technology and
-  Instrumentation in Particle Physics (TIPP 2011).
-
-\bibitem{1742-6596-293-1-012043}
-A~Fantoni and the ALICE~collaboration.
-\newblock The alice electromagnetic calorimeter: Emcal.
-\newblock {\em Journal of Physics: Conference Series}, 293(1):012043, 2011.
-
-\bibitem{1742-6596-110-3-032006}
-G~Bourdaud.
-\newblock Gamma-jet physics with the electro-magnetic calorimeter in the alice
-  experiment at lhc.
-\newblock {\em Journal of Physics: Conference Series}, 110(3):032006, 2008.
-
-\bibitem{Abeysekara:2010ze}
-U.~Abeysekara et~al.
-\newblock {ALICE EMCal Physics Performance Report}.
-\newblock 2010.
-
-\bibitem{bourrion2010level}
-Olivier Bourrion, R~Guernane, B~Boyer, JL~Bouly, and G~Marcotte.
-\newblock Level-1 jet trigger hardware for the alice electromagnetic
-  calorimeter at lhc.
-\newblock {\em Journal of Instrumentation}, 5(12):C12048, 2010.
-
-\bibitem{bourrion2013alice}
-O~Bourrion, N~Arbor, G~Conesa-Balbastre, C~Furget, R~Guernane, and G~Marcotte.
-\newblock The alice emcal l1 trigger first year of operation experience.
-\newblock {\em Journal of Instrumentation}, 8(01):C01013, 2013.
-
-\bibitem{Kral2012261}
-Jiri Kral, Terry Awes, Hans Muller, Jan Rak, and Joachim Schambach.
-\newblock \{L0\} trigger for the \{EMCal\} detector of the \{ALICE\}
-  experiment.
-\newblock {\em Nuclear Instruments and Methods in Physics Research Section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment}, 693:261 --
-  267, 2012.
-
-\bibitem{Jahnke:2018mrq}
-Cristiane Jahnke.
-\newblock {J/$\psi$ production as a function of event multiplicity in pp
-  collisions at $\sqrt{s}$ = 13 TeV using EMCal-triggered events with ALICE at
-  the LHC}.
-\newblock In {\em {14th International Workshop on Hadron Physics (Hadron
-  Physics 2018) Florianopolis, Santa Catarina, Brazil, March 18-23, 2018}},
-  2018.
-
-\bibitem{Apollinari:2015bam}
-G~Apollinari, I~B{\'e}jar~Alonso, O~Br{\"u}ning, M~Lamont, and L~Rossi.
-\newblock {High-Luminosity Large Hadron Collider (HL-LHC) : Preliminary Design
-  Report}.
-\newblock 2015.
-
-\bibitem{Abelev:1475243}
-B~Abelev et~al.
-\newblock {Upgrade of the ALICE Experiment: Letter of Intent}.
-\newblock Technical Report CERN-LHCC-2012-012. LHCC-I-022. ALICE-UG-002, CERN,
-  Geneva, Aug 2012.
-
-\bibitem{1742-6596-589-1-012014}
-Levente Molnar and the ALICE~Collaboration.
-\newblock Upgrade and physics perspective of alice at the lhc.
-\newblock {\em Journal of Physics: Conference Series}, 589(1):012014, 2015.
-
-\bibitem{1742-6596-798-1-012186}
-T~L Karavicheva and ALICE Collaboration.
-\newblock The fast interaction trigger detector for the alice upgrade.
-\newblock {\em Journal of Physics: Conference Series}, 798(1):012186, 2017.
-
-\bibitem{Abelev:1625842}
-B~Abelev and all.
-\newblock {Technical Design Report for the Upgrade of the ALICE Inner Tracking
-  System}.
-\newblock Technical Report CERN-LHCC-2013-024. ALICE-TDR-017, Nov 2013.
-
-\bibitem{CERN-LHCC-2015-001}
-{Technical Design Report for the Muon Forward Tracker}.
-\newblock Technical Report CERN-LHCC-2015-001. ALICE-TDR-018, Jan 2015.
-
-\bibitem{Buncic:2011297}
-P~Buncic, M~Krzewicki, and P~Vande~Vyvre.
-\newblock {Technical Design Report for the Upgrade of the Online-Offline
-  Computing System}.
-\newblock Technical Report CERN-LHCC-2015-006. ALICE-TDR-019, Apr 2015.
-
-\bibitem{Ryblewski:2015sha}
-Radoslaw Ryblewski and Michael Strickland.
-\newblock {Dilepton production from the quark-gluon plasma using leading-order
-  (3+1)D anisotropic hydrodynamics}.
-\newblock {\em Acta Phys. Polon. Supp.}, 8(2):445, 2015.
-
-\bibitem{Mauricio:2007vz}
-Mauricio Martinez and Michael Strickland.
-\newblock {Measuring QGP thermalization time with dileptons}.
-\newblock {\em Phys. Rev. Lett.}, 100:102301, 2008.
-
-\bibitem{CERN-LHCC-2013-020}
-{Upgrade of the ALICE Time Projection Chamber}.
-\newblock Technical Report CERN-LHCC-2013-020. ALICE-TDR-016, Oct 2013.
-
-\bibitem{CERN-LHCC-2015-002}
-{Addendum to the Technical Design Report for the Upgrade of the ALICE Time
-  Projection Chamber}.
-\newblock Technical Report CERN-LHCC-2015-002. ALICE-TDR-016-ADD-1, Feb 2015.
-
-\bibitem{Sauli:1997qp}
-F.~Sauli.
-\newblock {GEM: A new concept for electron amplification in gas detectors}.
-\newblock {\em Nucl. Instrum. Meth.}, A386:531--534, 1997.
-
-\bibitem{Titov:2013hmq}
-Maxim Titov.
-\newblock {Perspectives of Micro-Pattern Gaseous Detector Technologies for
-  Future Physics Projects}.
-\newblock In {\em {Proceedings, CMS Workshop: Perspectives on Physics and on
-  CMS at Very High Luminosity, HL-LHC: Alushta, Crimea, Ukraine, May 28--31,
-  2012}}, pages 241--258, 2013.
-
-\bibitem{Brucken:2017qjy}
-Erik Br{\"u}cken and Timo Hild{\'e}n.
-\newblock {GEM Foil Quality Assurance For The ALICE TPC Upgrade}.
-\newblock {\em EPJ Web Conf.}, 174:03004, 2018.
-
-\bibitem{Bhattacharya:2017yaj}
-Purba Bhattacharya, Bedangadas Mohanty, Supratik Mukhopadhyay, Nayana Majumdar,
-  and Hugo Natal~da Luz.
-\newblock {3D simulation of electron and ion transmission of GEM-based
-  detectors}.
-\newblock {\em Nucl. Instrum. Meth.}, A870:64--72, 2017.
-
-\bibitem{0960-1317-17-8-021}
-M~Tang, A~Q Liu, A~Agarwal, and M~H Habib.
-\newblock A single-mask substrate transfer technique for the fabrication of
-  high-aspect-ratio micromachined structures.
-\newblock {\em Journal of Micromechanics and Microengineering}, 17(8):1575,
-  2007.
-
-\bibitem{1748-0221-12-06-C06036}
-W.~You, Y.~Zhou, J.~Liu, M.~Shao, C.~Li, H.~Chen, Z.~Tang, Y.~Sun, Y.~Zhang,
-  Y.~Lv, G.~Song, X.~Wang, D.~Hu, and D.~Hong.
-\newblock A new technique for assembling large-size gem detectors.
-\newblock {\em Journal of Instrumentation}, 12(06):C06036, 2017.
-
-\bibitem{SAULI20162}
-Fabio Sauli.
-\newblock The gas electron multiplier (gem): Operating principles and
-  applications.
-\newblock {\em Nuclear Instruments and Methods in Physics Research Section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment}, 805:2 --
-  24, 2016.
-\newblock Special Issue in memory of Glenn F. Knoll.
-
-\bibitem{Santimaria:1690550}
-Marco Santimaria and Davide Pinci.
-\newblock {Study of the GEM detector for the LHCb experiment upgrade}, Nov
-  2013.
-\newblock Presented 19 Dec 2013.
-
-\bibitem{Agostinelli:2002hh}
-S.~Agostinelli et~al.
-\newblock {GEANT4: A Simulation toolkit}.
-\newblock {\em Nucl. Instrum. Meth.}, A506:250--303, 2003.
-
-\bibitem{Dick2017QM}
-Dick Majka.
-\newblock The alice tpc upgrade project.
-\newblock Quark Matter 2017, 2017.
-
-\bibitem{Brucken:2018rej}
-Jens~Erik Br{\"u}cken and Timo~Eero Hild{\'e}n.
-\newblock {The GEM QA Protocol of the ALICE TPC Upgrade Project}.
-\newblock In {\em {5th International Conference on Micro Pattern Gas Detectors
-  (MPGD2017) Temple University, Philadelphia, USA, May 22-26, 2017}}, 2018.
+\bibitem{Patrignani:2016xqp}
+C.~Patrignani et~al.
+\newblock {Review of Particle Physics}.
+\newblock {\em Chin. Phys.}, C40(10):100001, 2016.
 
 \bibitem{Noferini:2016lcw}
 Francesco Noferini.

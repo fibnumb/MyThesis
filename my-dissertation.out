@@ -11,21 +11,20 @@
 \BOOKMARK [1][-]{section.1.3}{1.3 Jet Finding Algorithams}{chapter.1}% 11
 \BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 Cone Algorithms}{section.1.3}% 12
 \BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Sequential/Recombination Algorithms}{section.1.3}% 13
-\BOOKMARK [1][-]{section.1.4}{1.4 Monte-Carlo Generators}{chapter.1}% 14
-\BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 PYTHIA}{section.1.4}% 15
-\BOOKMARK [2][-]{subsection.1.4.2}{1.4.2 PHOJET}{section.1.4}% 16
-\BOOKMARK [2][-]{subsection.1.4.3}{1.4.3 HERWIG}{section.1.4}% 17
-\BOOKMARK [1][-]{section.1.5}{1.5 Kinematics}{chapter.1}% 18
-\BOOKMARK [1][-]{section.1.6}{1.6 The Quark-Gluon Plasma}{chapter.1}% 19
-\BOOKMARK [2][-]{subsection.1.6.1}{1.6.1 Asymptotic Freedom and the Perfect Fluid}{section.1.6}% 20
-\BOOKMARK [2][-]{subsection.1.6.2}{1.6.2 Energy Loss in a Colored Medium}{section.1.6}% 21
-\BOOKMARK [2][-]{subsection.1.6.3}{1.6.3 The Nuclear Modification Factor}{section.1.6}% 22
-\BOOKMARK [2][-]{subsection.1.6.4}{1.6.4 Nuclear Collisions}{section.1.6}% 23
-\BOOKMARK [1][-]{section.1.7}{1.7 QGP in Proton-Proton Collisions?}{chapter.1}% 24
-\BOOKMARK [0][-]{section*.26}{Bibliography}{}% 25
-\BOOKMARK [0][-]{section*.27}{Appendices}{}% 26
-\BOOKMARK [1][-]{section.Alph0.1}{A Particle Identification via Bethe-Bloch}{section*.27}% 27
-\BOOKMARK [1][-]{section.Alph0.2}{B Summary of Stuff}{section*.27}% 28
-\BOOKMARK [2][-]{subsection.Alph0.2.1}{B.1 More Things}{section.Alph0.2}% 29
-\BOOKMARK [2][-]{subsection.Alph0.2.2}{B.2 Other Aspects}{section.Alph0.2}% 30
-\BOOKMARK [0][-]{section*.30}{Vita}{}% 31
+\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 FastJet}{section.1.3}% 14
+\BOOKMARK [1][-]{section.1.4}{1.4 Monte-Carlo Generators}{chapter.1}% 15
+\BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 PYTHIA}{section.1.4}% 16
+\BOOKMARK [2][-]{subsection.1.4.2}{1.4.2 PHOJET}{section.1.4}% 17
+\BOOKMARK [1][-]{section.1.5}{1.5 The Quark-Gluon Plasma}{chapter.1}% 18
+\BOOKMARK [2][-]{subsection.1.5.1}{1.5.1 Asymptotic Freedom and the Perfect Fluid}{section.1.5}% 19
+\BOOKMARK [2][-]{subsection.1.5.2}{1.5.2 Energy Loss in a Colored Medium}{section.1.5}% 20
+\BOOKMARK [2][-]{subsection.1.5.3}{1.5.3 The Nuclear Modification Factor}{section.1.5}% 21
+\BOOKMARK [2][-]{subsection.1.5.4}{1.5.4 Nuclear Collisions}{section.1.5}% 22
+\BOOKMARK [1][-]{section.1.6}{1.6 QGP in Proton-Proton Collisions?}{chapter.1}% 23
+\BOOKMARK [0][-]{section*.25}{Bibliography}{}% 24
+\BOOKMARK [0][-]{section*.26}{Appendices}{}% 25
+\BOOKMARK [1][-]{section.Alph0.1}{A Particle Identification via Bethe-Bloch}{section*.26}% 26
+\BOOKMARK [1][-]{section.Alph0.2}{B Summary of Stuff}{section*.26}% 27
+\BOOKMARK [2][-]{subsection.Alph0.2.1}{B.1 More Things}{section.Alph0.2}% 28
+\BOOKMARK [2][-]{subsection.Alph0.2.2}{B.2 Other Aspects}{section.Alph0.2}% 29
+\BOOKMARK [0][-]{section*.29}{Vita}{}% 30
