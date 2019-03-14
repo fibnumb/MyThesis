@@ -2,55 +2,58 @@ This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: my-dissertation.aux
 A level-1 auxiliary file: chapters/chapter-2.aux
+A level-1 auxiliary file: chapters/chapter-5.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/appendix-2.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-dissertation.bib
 Warning--entry type for "JetPic" isn't style-file defined
---line 134 of file references-dissertation.bib
+--line 155 of file references-dissertation.bib
 Warning--empty journal in Panofsky:871460
 Warning--empty journal in Huth:217490
 Warning--there's a number but no volume in Huth:217490
-You've used 34 entries,
+Warning--empty author in ALICE-PUBLIC-2017-002
+Warning--empty journal in ALICE-PUBLIC-2017-002
+You've used 37 entries,
             1791 wiz_defined-function locations,
-            702 strings with 9999 characters,
-and the built_in function-call counts, 8136 in all, are:
-= -- 710
-> -- 326
+            722 strings with 10650 characters,
+and the built_in function-call counts, 8732 in all, are:
+= -- 761
+> -- 348
 < -- 6
-+ -- 125
-- -- 91
-* -- 541
-:= -- 1272
-add.period$ -- 106
-call.type$ -- 34
-change.case$ -- 31
++ -- 134
+- -- 97
+* -- 585
+:= -- 1366
+add.period$ -- 115
+call.type$ -- 37
+change.case$ -- 34
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 373
-empty$ -- 830
-format.name$ -- 91
-if$ -- 1854
+cite$ -- 42
+duplicate$ -- 399
+empty$ -- 891
+format.name$ -- 97
+if$ -- 1984
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 36
-newline$ -- 175
-num.names$ -- 33
-pop$ -- 87
+int.to.str$ -- 37
+missing$ -- 39
+newline$ -- 190
+num.names$ -- 35
+pop$ -- 94
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 174
+skip$ -- 184
 stack$ -- 0
-substring$ -- 587
-swap$ -- 87
+substring$ -- 632
+swap$ -- 89
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 71
-width$ -- 36
-write$ -- 379
-(There were 4 warnings)
+warning$ -- 5
+while$ -- 75
+width$ -- 39
+write$ -- 410
+(There were 6 warnings)

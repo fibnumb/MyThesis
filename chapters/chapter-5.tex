@@ -20,9 +20,34 @@ where,
 \end{itemize}
 
 \noindent
-The following sections will go over how each factor was determined and the quality assurance procedures used for this analysis.
+Furthermore, it is useful to define the ratio of cross sections,
 
-\section{Data Quality}
+\begin{equation}
+\mathscr{R}(p_{T};R_{1},R_{2}) = \frac{\sigma(p_{T};R_{1})}{\sigma(p_{T};R_{2})}
+\label{eq:xsecratio}
+\end{equation}
+
+\noindent
+where $\sigma(p_{T};R_{1})$ refers to the doubly differential cross section (Equation \ref{eq:xsecdef}) of a jet with radius $R_{1}$.  The ratio is carried out on a bin--by--bin basis per each $p_{T}$ bin.  
+
+\section{Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}
+Inclusive jet spectra and cross section ratios were measured in the ALICE experiment using a 2011 pp 2.76 TeV data sample\cite{MA2013319}.  Jets were reconstructed using TPC tracks and EMCal clusters with the FastJet Anti-$K_{T}$ algorithm.  Tracks with a minimum $p_{T} \geq \,$ 150 MeV and constrained to within 10 cm of the primary vertex were accepted into the jet finder.  EMCal clusters were 
+
+\begin{figure}[h]
+\includegraphics[width=17cm]{AliceppRongRong}
+\centering
+\caption{Inclusive differential cross section from the 2.76 TeV proton proton run with ALICE}
+\label{fig:RunEff}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{AliceRatioRongRong}
+\centering
+\caption{LHC state during the 8 TeV run. }
+\label{fig:RunEff}
+\end{figure}
+
+\section{8 TeV Data Quality}
 ALICE is a state-of-the-art experiment with excellent tracking and particle identification capabilities as discussed in Chapter \ref{ch:alice}.  However, just like any real world experiment, it contains a number of inefficiencies and imperfections.  This means that the data collected during the 8 TeV pp collision must be examined and any inaccuracies in the data must be removed before hard physics conclusions may be reached.  Data may be compromised at both the event-level, the experiment erroneously recorded something as an event, or at the constituent-level, one of the subdetectors mismeasured a feature of a particle, and these outliers must be accounted for and removed 
 \section{Event Selection}
 
@@ -35,7 +60,7 @@ For an event to be selected into a physics analysis it must pass a number of qua
 \label{fig:RunEff}
 \end{figure}
 
-During the 8 TeV data collection period approximately 180 million minimum bias events were recorded, as summarized in table \ref{tab:RunSummary}.  These events are separated into periods, which dictate the particular beam and detector configurations during the data taking.The 8 TeV data is broken into 7 periods with approximately 181 million minimum bias events recorded.
+During the 8 TeV data collection period approximately 180 million minimum bias events were recorded, as summarized in table \ref{tab:RunSummary}.  These events are separated into periods, which dictate the particular beam and detector configurations during the data taking.The 8 TeV data is broken into 7 periods with approximately 181 million minimum bias events recorded.  This minimum bias sample corresponds to an integrated luminosity, $\mathscr{L}_{int}$, of $8.95 \, pb^{-1}$ during this time period\cite{ALICE-PUBLIC-2017-002}.
 
 \begin{table}[hb]
 \label{tab:RunSummary}
@@ -63,6 +88,41 @@ The ALICE experiment is capable of two types of jet reconstruction, charged and 
 
 \subsection{Raw Jet Momentum Spectra in pp Collisions}
 
+\subsection{Acceptance Correction}
+Jet spectra, cross sections, and ratios of cross sections are reported over the full azimuth angle and psuedorapidity acceptance.  However, due to jets being constrained to the EMCal, a geometric factor is used to correct for the limited acceptance of the detector.  This thesis uses a maximum jet radius of 0.5 to help study the effects of wide angle radiation on jet fragmentation.  Heavy-ion use smaller jet radii, typically of 0.2, to help negate the high multiplicity background.  Due to these geometric corrections the centroid of a jet is constrained to,
+
+\begin{equation}
+|\eta_{jet}| \leq 0.7 - R, \; 1.4 + R \leq \phi_{jet} \leq 3.14 -R.
+\label{eq:jetconstration}
+\end{equation}
+
+\begin{equation}
+A(p_{T}) = \frac{(1.4 - 2R) \times (1.745 - 2R)}{2 \pi}.
+\label{eq:acceptance}
+\end{equation}
+
+For jets between R = 0.1 through R = 0.5 the following jet acceptance corrections are used.
+
+\begin{table}[hb]
+\label{tab:AcceptanceFactor}
+\begin{center}
+\begin{tabular}[b]{|c|c|c|}
+	\hline
+	Jet R & $A(p_{T})$ \\ \hline
+	0.1 & 0.2960282 \\ \hline
+	0.2 & 0.2148592 \\ \hline
+	0.3 & 0.1464225 \\ \hline
+	0.4 & 0.09071832 \\ \hline
+	0.5 & 0.04774648\\ \hline
+\end{tabular}
+\end{center}
+\caption{EMCal jet acceptance for radii 0.1 - 0.5.}
+\end{table}
+
+
+
+
+
 
 
 
@@ -76,10 +136,10 @@ The ALICE experiment is capable of two types of jet reconstruction, charged and 
 
 \section{EMCal Triggered Data}
 
-In addition with the minimum bias data collected, the EMCal was used during the 8 TeV run in order to provided an enhanced data set that is preferential to hard processes.   The Level-1 trigger\cite{Bourrion:2010js} in the EMCal 
+In addition with the minimum bias data collected, the EMCal was used during the 8 TeV run in order to provided an enhanced data set that is preferential to hard processes.   The Level-1 trigger\cite{Bourrion:2010js} in the EMCal has a associated trigger, $\epsilon$, of 
 
 \begin{equation}
-	Trigger \, Efficency = \frac{N^{Triggered}_{events}}{N^{MinBias}_{events}} \times \frac{d^{2} N_{Triggered}^{jet}}{d\eta \, dp_{T}} \Bigg/  \frac{d^{2} N_{MinBias}^{jet}}{d\eta \, dp_{T}} 
+	\epsilon = \frac{N^{Triggered}_{events}}{N^{MinBias}_{events}} \times \frac{d^{2} N_{Triggered}^{jet}}{d\eta \, dp_{T}} \Bigg/  \frac{d^{2} N_{MinBias}^{jet}}{d\eta \, dp_{T}} 
 \label{eq:xsecdef}
 \end{equation}
 
@@ -100,7 +160,8 @@ The luminosity of a hadronic collider, $\mathscr{L}$, is given by the expression
 \label{eq:xlumdef}
 \end{equation}
 
-The luminosity along with its uncertainity were determined during a a special Van der Meer scan run in April of 2012\cite{ALICE-PUBLIC-2017-002}.
+The luminosity along with its uncertainty were determined during a a special Van der Meer scan run in April of 2012\cite{ALICE-PUBLIC-2017-002}.  The total systematic uncertainty was obtained by measuring the visible cross section using the T0 and V0 detectors.  The Uncertainty was found to be 2.36\% with the T0 and 2.60\% with the V0.  A combined average uncertainty of 2.48\% is used in this thesis.
+
 \subsection{Total Uncertainty}
 
 \section{Corrected pp jet cross section}
@@ -108,12 +169,7 @@ The luminosity along with its uncertainity were determined during a a special Va
 
 \subsection{Comparisons to pQCD predictions}
 
-\subsection{Jet Cross Section and Ratios}
+\subsection{Jet Cross Sections and Ratios}
 
-Given two jets of different radii, $R_{1}$ and $R_{2}$, the ratio of the cross sections may be written in short hand as,
 
-\begin{equation}
-	\frac{\sigma_{R_{1}}}{\sigma_{R_{2}}}= \frac{d \sigma^{jet}_{R_{1}}}{dp_{T}} \Bigg/  \frac{d \sigma^{jet}_{R_{2}}}{dp_{T}}
-\label{eq:xsecratiodef}
-\end{equation}
 
