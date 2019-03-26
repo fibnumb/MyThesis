@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  15 MAR 2019 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  26 MAR 2019 13:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -449,17 +449,7 @@ Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks32
 \inpenc@posthook=\toks33
 )
-(./my-dissertation.aux (./chapters/chapter-2.aux
-
-LaTeX Warning: Label `eq:JetPhi' multiply defined.
-
-
-LaTeX Warning: Label `eq:JetPhi' multiply defined.
-
-
-LaTeX Warning: Label `fig:JetEloss' multiply defined.
-
-) (./chapters/chapter-5.aux
+(./my-dissertation.aux (./chapters/chapter-2.aux) (./chapters/chapter-5.aux
 
 LaTeX Warning: Label `fig:RunEff' multiply defined.
 
@@ -702,76 +692,42 @@ Package pdftex.def Info: figures/pdf/610_1.jpg  used on input line 395.
 (pdftex.def)             Requested size: 284.52756pt x 315.30765pt.
 
 
-Package natbib Warning: Citation `Mohanty:2013yca' on page 17 undefined on inpu
-t line 397.
-
-
-Package natbib Warning: Citation `Mohanty:2013yca' on page 17 undefined on inpu
-t line 397.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+Package natbib Warning: Citation `Jacak310' on page 17 undefined on input line 
+402.
+
 [17]
-<figures/pdf/dijetfig2.png, id=435, 582.175pt x 737.75626pt>
+<figures/pdf/dijetfig2.png, id=442, 582.175pt x 737.75626pt>
 File: figures/pdf/dijetfig2.png Graphic file (type png)
 <use figures/pdf/dijetfig2.png>
 Package pdftex.def Info: figures/pdf/dijetfig2.png  used on input line 407.
 (pdftex.def)             Requested size: 142.26378pt x 180.27342pt.
 
 
-Package natbib Warning: Citation `Mohanty:2013yca' on page 18 undefined on inpu
-t line 409.
-
-
-Package natbib Warning: Citation `Mohanty:2013yca' on page 18 undefined on inpu
-t line 409.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/pdf/ppevolution.png, id=436, 1062.97125pt x 922.44624pt>
+<figures/pdf/ppevolution.png, id=445, 1062.97125pt x 922.44624pt>
 File: figures/pdf/ppevolution.png Graphic file (type png)
 <use figures/pdf/ppevolution.png>
 Package pdftex.def Info: figures/pdf/ppevolution.png  used on input line 414.
 (pdftex.def)             Requested size: 341.43306pt x 296.30078pt.
 
-Package natbib Warning: Citation `PhysRevD.27.140' on page 18 undefined on inpu
-t line 416.
-
-
-Package natbib Warning: Citation `PhysRevD.27.140' on page 18 undefined on inpu
-t line 416.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Package natbib Warning: Citation `Miller:2007ri' on page 18 undefined on input 
-line 426.
-
-
-Package natbib Warning: Citation `Aaboud:2018twu' on page 18 undefined on input
- line 428.
-
-<figures/pdf/jetRAA.png, id=438, 601.24625pt x 456.70625pt>
+[18 <./figures/pdf/610_1.jpg>]
+<figures/pdf/jetRAA.png, id=463, 601.24625pt x 456.70625pt>
 File: figures/pdf/jetRAA.png Graphic file (type png)
 <use figures/pdf/jetRAA.png>
 Package pdftex.def Info: figures/pdf/jetRAA.png  used on input line 430.
 (pdftex.def)             Requested size: 284.52756pt x 216.12933pt.
 
-Package natbib Warning: Citation `Aaboud:2018twu' on page 18 undefined on input
- line 432.
-
-
-Package natbib Warning: Citation `Aaboud:2018twu' on page 18 undefined on input
- line 432.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18 <./figures/pdf/610_1.jpg>] [19 <./figures/pdf/dijetfig2.png (PNG copy)>]
-[20 <./figures/pdf/ppevolution.png>]) [21 <./figures/pdf/jetRAA.png>]
+[19 <./figures/pdf/dijetfig2.png (PNG copy)>] [20 <./figures/pdf/ppevolution.pn
+g>]) [21 <./figures/pdf/jetRAA.png>]
 :<-
 :<+ chapters/chapter-5.tex
 \openout2 = `chapters/chapter-5.aux'.
@@ -784,7 +740,7 @@ Chapter 2.
 
 
 ]
-<figures/pdf/AliceppRongRong.png, id=479, 1114.1625pt x 478.78876pt>
+<figures/pdf/AliceppRongRong.png, id=504, 1114.1625pt x 478.78876pt>
 File: figures/pdf/AliceppRongRong.png Graphic file (type png)
 <use figures/pdf/AliceppRongRong.png>
 Package pdftex.def Info: figures/pdf/AliceppRongRong.png  used on input line 37
@@ -795,7 +751,7 @@ Overfull \hbox (13.94182pt too wide) in paragraph at lines 37--39
  [][] 
  []
 
-<figures/pdf/AliceRatioRongRong.png, id=480, 668.4975pt x 484.81125pt>
+<figures/pdf/AliceRatioRongRong.png, id=505, 668.4975pt x 484.81125pt>
 File: figures/pdf/AliceRatioRongRong.png Graphic file (type png)
 <use figures/pdf/AliceRatioRongRong.png>
 Package pdftex.def Info: figures/pdf/AliceRatioRongRong.png  used on input line
@@ -808,7 +764,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: Reference `ch:alice' on page 23 undefined on input line 51.
 
 [23 <./figures/pdf/AliceppRongRong.png>]
-<figures/pdf/8TeVRunefficency.png, id=493, 2260.445pt x 939.51pt>
+<figures/pdf/8TeVRunefficency.png, id=517, 2260.445pt x 939.51pt>
 File: figures/pdf/8TeVRunefficency.png Graphic file (type png)
 <use figures/pdf/8TeVRunefficency.png>
 Package pdftex.def Info: figures/pdf/8TeVRunefficency.png  used on input line 5
@@ -843,40 +799,22 @@ LaTeX Warning: Reference `tab:RunSummary' on page 24 undefined on input line 63
 \tf@brf=\write4
 \openout4 = `my-dissertation.brf'.
 
-
-Underfull \hbox (badness 1859) in paragraph at lines 21--21
-\OT1/cmr/m/n/12 Closed Lep-ton Loops.  \OT1/cmr/m/it/12 Phys. Rev.\OT1/cmr/m/n/
-12 , D91(3):033006, 2015.  [Er-ra-tum: Phys.
- []
-
-[30]
-Underfull \hbox (badness 1325) in paragraph at lines 137--137
+ [30]
+Underfull \hbox (badness 1325) in paragraph at lines 118--118
 []\OT1/cmr/m/n/12 Jan Rak and Michael J. Tan-nen-baum.  \OT1/cmr/m/it/12 QCD in
  hard scat-ter-ing\OT1/cmr/m/n/12 , pages 214--
  []
 
-[31] [32] [33] [34] [35] [36]
-Underfull \hbox (badness 4001) in paragraph at lines 457--457
-[]\OT1/cmr/m/n/12 Purba Bhat-tacharya, Be-dan-gadas Mo-hanty, Supratik Mukhopad
--hyay, Nayana
- []
-
-
-Underfull \hbox (badness 1406) in paragraph at lines 479--479
-\OT1/cmr/m/it/12 Nu-clear In-stru-ments and Meth-ods in Physics Re-search Sec-t
-ion A: Ac-cel-er-a-tors,
- []
-
-[37])
+[31] [32])
 :<-
-[38] [39
+[33] [34
 
 
 ]
 :<+ back-matter/vita.tex
 \openout2 = `back-matter/vita.aux'.
 
-(./back-matter/vita.tex) [40
+(./back-matter/vita.tex) [35
 
 
 
@@ -894,9 +832,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
 Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 2C2CCA35D358C0FCE597FC379880B95A;3188.
+(rerunfilecheck)             Checksum: 2A258FFA9A20DB3003F40F99BB1638DC;3187.
 Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
-(rerunfilecheck)             Checksum: 5448F26D1B2EAE83902F96DD56FCC7F3;2152.
+(rerunfilecheck)             Checksum: 0ADFFDFA5229E98A5E6232ECAC37BF4F;2780.
 
 
 LaTeX Warning: There were undefined references.
@@ -907,13 +845,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 10098 strings out of 492649
- 154378 string characters out of 6129622
- 243987 words of memory out of 5000000
- 13525 multiletter control sequences out of 15000+600000
+ 9758 strings out of 492649
+ 147020 string characters out of 6129622
+ 243404 words of memory out of 5000000
+ 13238 multiletter control sequences out of 15000+600000
  21311 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,10n,50p,1843b,781s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,10n,50p,1844b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -932,10 +870,10 @@ e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 18/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2018/
 texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on my-dissertation.pdf (42 pages, 5194751 bytes).
+Output written on my-dissertation.pdf (37 pages, 5184139 bytes).
 PDF statistics:
- 790 PDF objects out of 1000 (max. 8388607)
- 683 compressed objects within 7 object streams
- 251 named destinations out of 1000 (max. 500000)
+ 736 PDF objects out of 1000 (max. 8388607)
+ 630 compressed objects within 7 object streams
+ 198 named destinations out of 1000 (max. 500000)
  438 words of extra memory for PDF output out of 10000 (max. 10000000)
 

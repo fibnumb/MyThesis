@@ -1,81 +1,57 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: my-dissertation.aux
-A level-1 auxiliary file: front-matter.aux
-A level-1 auxiliary file: chapters/chapter-1.aux
 A level-1 auxiliary file: chapters/chapter-2.aux
-A level-1 auxiliary file: chapters/chapter-3.aux
-A level-1 auxiliary file: chapters/chapter-4.aux
 A level-1 auxiliary file: chapters/chapter-5.aux
 The style file: unsrt.bst
-A level-1 auxiliary file: back-matter/appendix-1.aux
-A level-1 auxiliary file: back-matter/appendix-2.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-dissertation.bib
 Warning--entry type for "JetPic" isn't style-file defined
---line 155 of file references-dissertation.bib
-Warning--entry type for "Santimaria:1690550" isn't style-file defined
---line 1178 of file references-dissertation.bib
-Warning--I didn't find a database entry for "Mohanty:2013yca"
-Warning--I didn't find a database entry for "Tangwancharoen:2016dq"
-Warning--I didn't find a database entry for "Pfeiffer:2628608"
+--line 204 of file references-dissertation.bib
 Warning--empty journal in Panofsky:871460
 Warning--empty journal in Huth:217490
 Warning--there's a number but no volume in Huth:217490
-Warning--empty journal in Mobs:2197559
-Warning--empty journal in Gligorov:2018vkc
-Warning--empty journal in Abeysekara:2010ze
-Warning--empty journal in Apollinari:2015bam
-Warning--empty institution in Abelev:1625842
-Warning--empty author in CERN-LHCC-2015-001
-Warning--empty institution in CERN-LHCC-2015-001
-Warning--empty institution in Buncic:2011297
-Warning--empty author in CERN-LHCC-2013-020
-Warning--empty institution in CERN-LHCC-2013-020
-Warning--empty author in CERN-LHCC-2015-002
-Warning--empty institution in CERN-LHCC-2015-002
-Warning--empty booktitle in Dick2017QM
 Warning--empty author in ALICE-PUBLIC-2017-002
 Warning--empty journal in ALICE-PUBLIC-2017-002
-You've used 91 entries,
+You've used 43 entries,
             1791 wiz_defined-function locations,
-            1048 strings with 20107 characters,
-and the built_in function-call counts, 19879 in all, are:
-= -- 1696
-> -- 826
-< -- 14
-+ -- 317
-- -- 226
-* -- 1335
-:= -- 3182
-add.period$ -- 278
-call.type$ -- 91
-change.case$ -- 88
+            759 strings with 11863 characters,
+and the built_in function-call counts, 9909 in all, are:
+= -- 871
+> -- 382
+< -- 5
++ -- 149
+- -- 106
+* -- 672
+:= -- 1568
+add.period$ -- 136
+call.type$ -- 43
+change.case$ -- 40
 chr.to.int$ -- 0
-cite$ -- 109
-duplicate$ -- 892
-empty$ -- 2038
-format.name$ -- 226
-if$ -- 4451
+cite$ -- 48
+duplicate$ -- 441
+empty$ -- 1015
+format.name$ -- 106
+if$ -- 2234
 int.to.chr$ -- 0
-int.to.str$ -- 91
-missing$ -- 85
-newline$ -- 461
-num.names$ -- 86
-pop$ -- 216
+int.to.str$ -- 43
+missing$ -- 45
+newline$ -- 224
+num.names$ -- 41
+pop$ -- 93
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 387
+skip$ -- 191
 stack$ -- 0
-substring$ -- 1347
-swap$ -- 158
-text.length$ -- 14
+substring$ -- 746
+swap$ -- 86
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 18
-while$ -- 166
-width$ -- 93
-write$ -- 987
-(There were 23 warnings)
+warning$ -- 5
+while$ -- 87
+width$ -- 45
+write$ -- 481
+(There were 6 warnings)
