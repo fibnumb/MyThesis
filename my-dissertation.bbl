@@ -216,11 +216,21 @@ J.~Adams et~al.
 \newblock {\em Nuclear Physics A}, 757(1--2):102 -- 183, 2005.
 \newblock First Three Years of Operation of \{RHIC\}.
 
+\bibitem{Jacak310}
+Barbara~V. Jacak and Berndt M{\"u}ller.
+\newblock The exploration of hot nuclear matter.
+\newblock {\em Science}, 337(6092):310--314, 2012.
+
 \bibitem{PhysRevD.27.140}
 J.~D. Bjorken.
 \newblock Highly relativistic nucleus-nucleus collisions: The central rapidity
   region.
 \newblock {\em Phys. Rev. D}, 27:140--151, Jan 1983.
+
+\bibitem{CAO2018255}
+Shanshan Cao, Tan Luo, Guang-You Qin, and Xin-Nian Wang.
+\newblock Heavy and light flavor jet quenching at rhic and lhc energies.
+\newblock {\em Physics Letters B}, 777:255 -- 259, 2018.
 
 \bibitem{Miller:2007ri}
 Michael~L. Miller, Klaus Reygers, Stephen~J. Sanders, and Peter Steinberg.
@@ -232,6 +242,23 @@ Morad Aaboud et~al.
 \newblock {Measurement of the nuclear modification factor for inclusive jets in
   Pb+Pb collisions at $\sqrt{s_\mathrm{NN}}=5.02$ TeV with the ATLAS detector}.
 \newblock {\em Phys. Lett.}, B790:108--128, 2019.
+
+\bibitem{Klochkov_2017}
+Klochkov and I~Selyuzhenkov and.
+\newblock Centrality determination in heavy-ion collisions with the {CBM}
+  experiment.
+\newblock {\em Journal of Physics: Conference Series}, 798:012059, jan 2017.
+
+\bibitem{Nagle:2018nvi}
+James~L. Nagle and William~A. Zajc.
+\newblock {Small System Collectivity in Relativistic Hadronic and Nuclear
+  Collisions}.
+\newblock {\em Ann. Rev. Nucl. Part. Sci.}, 68:211--235, 2018.
+
+\bibitem{ZHAO2018495}
+Wenbin Zhao, You Zhou, Hao jie Xu, Weitian Deng, and Huichao Song.
+\newblock Hydrodynamic collectivity in proton--proton collisions at 13 tev.
+\newblock {\em Physics Letters B}, 780:495 -- 500, 2018.
 
 \bibitem{MA2013319}
 Rongrong Ma.
@@ -249,5 +276,17 @@ O.~Bourrion, R.~Guernane, B.~Boyer, J.~L. Bouly, and G.~Marcotte.
 \newblock {Level-1 jet trigger hardware for the ALICE electromagnetic
   calorimeter at LHC}.
 \newblock {\em JINST}, 5:C12048, 2010.
+
+\bibitem{CMS:2013kda}
+CMS Collaboration.
+\newblock {Measurement of the double-differential inclusive jet cross section
+  at sqrt(s) = 8 TeV with the CMS detector}.
+\newblock 2013.
+
+\bibitem{Aaboud:2017dvo}
+Morad Aaboud et~al.
+\newblock {Measurement of the inclusive jet cross-sections in proton-proton
+  collisions at $ \sqrt{s}=8 $ TeV with the ATLAS detector}.
+\newblock {\em JHEP}, 09:020, 2017.
 
 \end{thebibliography}

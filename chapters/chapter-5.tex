@@ -30,6 +30,10 @@ Furthermore, it is useful to define the ratio of cross sections,
 \noindent
 where $\sigma(p_{T};R_{1})$ refers to the doubly differential cross section (Equation \ref{eq:xsecdef}) of a jet with radius $R_{1}$.  The ratio is carried out on a bin--by--bin basis per each $p_{T}$ bin.  
 
+\section{Raw Jet Spectra}
+
+This thesis reports inclusive jet results for radii between 0.1 and 0.5.  Furthermore, jet results for radii R = 0.2 and R = 0.4 will be presented in the body of this chapter while results from the other radii will be limited to the appendex.  
+
 \section{Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}
 Inclusive jet spectra and cross section ratios were measured in the ALICE experiment using a 2011 pp 2.76 TeV data sample\cite{MA2013319}.  Jets were reconstructed using TPC tracks and EMCal clusters with the FastJet Anti-$K_{T}$ algorithm.  Tracks with a minimum $p_{T} \geq \,$ 150 MeV and constrained to within 10 cm of the primary vertex were accepted into the jet finder.  EMCal clusters were 
 
@@ -109,11 +113,11 @@ For jets between R = 0.1 through R = 0.5 the following jet acceptance correction
 \begin{tabular}[b]{|c|c|c|}
 	\hline
 	Jet R & $A(p_{T})$ \\ \hline
-	0.1 & 0.2960282 \\ \hline
-	0.2 & 0.2148592 \\ \hline
-	0.3 & 0.1464225 \\ \hline
-	0.4 & 0.09071832 \\ \hline
-	0.5 & 0.04774648\\ \hline
+	0.1 & 0.296 \\ \hline
+	0.2 & 0.214\\ \hline
+	0.3 & 0.146\\ \hline
+	0.4 & 0.091\\ \hline
+	0.5 & 0.048\\ \hline
 \end{tabular}
 \end{center}
 \caption{EMCal jet acceptance for radii 0.1 - 0.5.}
@@ -127,6 +131,8 @@ For jets between R = 0.1 through R = 0.5 the following jet acceptance correction
 
 
 \section{Unfolding}
+
+The reconstructed jet $p_{T}$ has a number of detector effects `folded' into the measurement.  In order to have results which can be compared to theoretical calculations or between experiemnts these effects must be accounted and corrected.  `Unfolding' is the method by which these results are corrected by and it accounts for a number of effects including; tracking and momentum inefficencies associated with the tracking detectors, material loss in the detector, hadronic corrections in the EMCal, gaps in the acceptance of the detector and dead regions.  Unfolding corrects the detector-level reconstructed jet spectra to the truth-level  hadronic spectra by constructing a response matrix. In this analysis the response matrix is constructed by propagating the truth-level particle jets generated from a MC simulation through a GEANT 3 simulation of the detector during the time period that the data taking occurred.  The particle-level jet centroid ($\phi_{part}$,$\eta_{part}$)is matched to the detector-level jet via a constrain on the displaced distance between the two jet centroids in ($\phi$,$\eta$).  This distance was constrained to: $\Delta  R = \sqrt{(\phi_{part} - \phi_{det})^{2} + (\eta_{part} - \eta_{det})^{2}} \leq 0.25 \; $ for R = 0.3 to R = 0.5 jets and $\Delta R \leq 0.1 \;$ for R = 0.1 and R = 0.2 jets.
 
 \subsection{Corrections to particle Level}
 

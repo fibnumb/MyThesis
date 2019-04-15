@@ -3,55 +3,57 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: my-dissertation.aux
 A level-1 auxiliary file: chapters/chapter-2.aux
 A level-1 auxiliary file: chapters/chapter-5.aux
+A level-1 auxiliary file: chapters/chapter-6.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-dissertation.bib
 Warning--entry type for "JetPic" isn't style-file defined
---line 204 of file references-dissertation.bib
+--line 319 of file references-dissertation.bib
 Warning--empty journal in Panofsky:871460
 Warning--empty journal in Huth:217490
 Warning--there's a number but no volume in Huth:217490
 Warning--empty author in ALICE-PUBLIC-2017-002
 Warning--empty journal in ALICE-PUBLIC-2017-002
-You've used 43 entries,
+Warning--empty journal in CMS:2013kda
+You've used 50 entries,
             1791 wiz_defined-function locations,
-            759 strings with 11863 characters,
-and the built_in function-call counts, 9909 in all, are:
-= -- 871
-> -- 382
+            803 strings with 12977 characters,
+and the built_in function-call counts, 11453 in all, are:
+= -- 1007
+> -- 449
 < -- 5
-+ -- 149
-- -- 106
-* -- 672
-:= -- 1568
-add.period$ -- 136
-call.type$ -- 43
-change.case$ -- 40
++ -- 174
+- -- 124
+* -- 781
+:= -- 1822
+add.period$ -- 157
+call.type$ -- 50
+change.case$ -- 47
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 441
-empty$ -- 1015
-format.name$ -- 106
-if$ -- 2234
+cite$ -- 56
+duplicate$ -- 503
+empty$ -- 1167
+format.name$ -- 124
+if$ -- 2572
 int.to.chr$ -- 0
-int.to.str$ -- 43
-missing$ -- 45
-newline$ -- 224
-num.names$ -- 41
-pop$ -- 93
+int.to.str$ -- 50
+missing$ -- 52
+newline$ -- 259
+num.names$ -- 48
+pop$ -- 104
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 191
+skip$ -- 216
 stack$ -- 0
-substring$ -- 746
-swap$ -- 86
+substring$ -- 873
+swap$ -- 92
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 87
-width$ -- 45
-write$ -- 481
-(There were 6 warnings)
+warning$ -- 6
+while$ -- 101
+width$ -- 52
+write$ -- 556
+(There were 7 warnings)
