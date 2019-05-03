@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  15 APR 2019 11:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  3 MAY 2019 13:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -755,46 +755,61 @@ Package pdftex.def Info: figures/pdf/AliceRatioRongRong.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<figures/pdf/EventRejectionMB.png, id=530, 1194.4625pt x 810.02625pt>
+File: figures/pdf/EventRejectionMB.png Graphic file (type png)
+<use figures/pdf/EventRejectionMB.png>
+Package pdftex.def Info: figures/pdf/EventRejectionMB.png  used on input line 5
+7.
+(pdftex.def)             Requested size: 230.18253pt x 156.0943pt.
 
-LaTeX Warning: Reference `ch:alice' on page 24 undefined on input line 55.
+Underfull \hbox (badness 4543) in paragraph at lines 58--58
+[]\OT1/cmr/bx/n/12 Figure 2.3: |\OT1/cmr/m/n/12 Mim-im-mum Bias Event
+ []
 
-[24]
-<figures/pdf/8TeVRunefficency.png, id=538, 2260.445pt x 939.51pt>
+<figures/pdf/EventRejectionEGA.png, id=531, 1217.54875pt x 809.0225pt>
+File: figures/pdf/EventRejectionEGA.png Graphic file (type png)
+<use figures/pdf/EventRejectionEGA.png>
+Package pdftex.def Info: figures/pdf/EventRejectionEGA.png  used on input line 
+62.
+(pdftex.def)             Requested size: 230.18253pt x 152.9505pt.
+
+LaTeX Warning: Reference `ch:alice' on page 24 undefined on input line 68.
+
+[24] [25 <./figures/pdf/AliceppRongRong.png>] [26 <./figures/pdf/AliceRatioRong
+Rong.png> <./figures/pdf/EventRejectionMB.png> <./figures/pdf/EventRejectionEGA
+.png>]
+<figures/pdf/8TeVRunefficency.png, id=555, 2260.445pt x 939.51pt>
 File: figures/pdf/8TeVRunefficency.png Graphic file (type png)
 <use figures/pdf/8TeVRunefficency.png>
-Package pdftex.def Info: figures/pdf/8TeVRunefficency.png  used on input line 6
-1.
+Package pdftex.def Info: figures/pdf/8TeVRunefficency.png  used on input line 9
+3.
 (pdftex.def)             Requested size: 483.69684pt x 201.03021pt.
 
-Overfull \hbox (13.94182pt too wide) in paragraph at lines 61--63
+Overfull \hbox (13.94182pt too wide) in paragraph at lines 93--95
  [][] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package caption Warning: \label without proper reference on input line 70.
+Package caption Warning: \label without proper reference on input line 102.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:RunSummary' on page 25 undefined on input line 67
+LaTeX Warning: Reference `tab:RunSummary' on page 27 undefined on input line 99
 .
 
-[25 <./figures/pdf/AliceppRongRong.png>] [26 <./figures/pdf/AliceRatioRongRong.
-png>] [27 <./figures/pdf/8TeVRunefficency.png>] [28]) [29] [30]
+[27 <./figures/pdf/8TeVRunefficency.png>] [28] [29]) [30] [31]
 :<-
 :<+ chapters/chapter-6.tex
 \openout2 = `chapters/chapter-6.aux'.
 
 (./chapters/chapter-6.tex
 Chapter 3.
-<figures/pdf/CMS8TeVJet.png, id=584, 574.145pt x 427.5975pt>
+<figures/pdf/CMS8TeVJet.png, id=593, 574.145pt x 427.5975pt>
 File: figures/pdf/CMS8TeVJet.png Graphic file (type png)
 <use figures/pdf/CMS8TeVJet.png>
 Package pdftex.def Info: figures/pdf/CMS8TeVJet.png  used on input line 8.
 (pdftex.def)             Requested size: 284.52756pt x 211.90608pt.
-<figures/pdf/ATLAS8TeVJet.png, id=587, 1005.7575pt x 976.64874pt>
+<figures/pdf/ATLAS8TeVJet.png, id=596, 1005.7575pt x 976.64874pt>
 File: figures/pdf/ATLAS8TeVJet.png Graphic file (type png)
 <use figures/pdf/ATLAS8TeVJet.png>
 Package pdftex.def Info: figures/pdf/ATLAS8TeVJet.png  used on input line 15.
@@ -802,7 +817,7 @@ Package pdftex.def Info: figures/pdf/ATLAS8TeVJet.png  used on input line 15.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/pdf/ATLAS8TeVJetRecaled.png, id=590, 1452.42625pt x 634.37pt>
+<figures/pdf/ATLAS8TeVJetRecaled.png, id=599, 1452.42625pt x 634.37pt>
 File: figures/pdf/ATLAS8TeVJetRecaled.png Graphic file (type png)
 <use figures/pdf/ATLAS8TeVJetRecaled.png>
 Package pdftex.def Info: figures/pdf/ATLAS8TeVJetRecaled.png  used on input lin
@@ -811,15 +826,15 @@ e 22.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [31
+) [32
 
 
 
 
- <./figures/pdf/CMS8TeVJet.png>] [32 <./figures/pdf/ATLAS8TeVJet.png> <./figure
+ <./figures/pdf/CMS8TeVJet.png>] [33 <./figures/pdf/ATLAS8TeVJet.png> <./figure
 s/pdf/ATLAS8TeVJetRecaled.png>]
 :<-
-[33
+[34
 
 
 
@@ -829,22 +844,22 @@ s/pdf/ATLAS8TeVJetRecaled.png>]
 \tf@brf=\write4
 \openout4 = `my-dissertation.brf'.
 
- [34]
+ [35]
 Underfull \hbox (badness 1325) in paragraph at lines 118--118
 []\OT1/cmr/m/n/12 Jan Rak and Michael J. Tan-nen-baum.  \OT1/cmr/m/it/12 QCD in
  hard scat-ter-ing\OT1/cmr/m/n/12 , pages 214--
  []
 
-[35] [36] [37])
+[36] [37] [38])
 :<-
-[38] [39
+[39] [40
 
 
 ]
 :<+ back-matter/vita.tex
 \openout2 = `back-matter/vita.aux'.
 
-(./back-matter/vita.tex) [40
+(./back-matter/vita.tex) [41
 
 
 
@@ -859,10 +874,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
 Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: DDB71151B7C5EC2D9E5E51A401973FC8;3310.
-Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
-(rerunfilecheck)             Checksum: E3D3A9E63F556BA59B8C6E508722DA22;3308.
+(rerunfilecheck)             Checksum: 6DB6965236C64313EEC446E42C5FD2D6;3310.
 
+
+Package rerunfilecheck Warning: File `my-dissertation.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `my-dissertation.brf':
+(rerunfilecheck)             Before: 4C0BD708A1B85B09C9C575167304F220;3308
+(rerunfilecheck)             After:  86623361E6C80777193A7F067140B225;3308.
 
 LaTeX Warning: There were undefined references.
 
@@ -872,10 +892,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 9838 strings out of 492649
- 148582 string characters out of 6129622
- 246656 words of memory out of 5000000
- 13296 multiletter control sequences out of 15000+600000
+ 9850 strings out of 492649
+ 148945 string characters out of 6129622
+ 246657 words of memory out of 5000000
+ 13304 multiletter control sequences out of 15000+600000
  20610 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,10n,50p,1844b,603s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -896,10 +916,10 @@ e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/20
 18/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/201
 8/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on my-dissertation.pdf (42 pages, 5847595 bytes).
+Output written on my-dissertation.pdf (43 pages, 6047457 bytes).
 PDF statistics:
- 802 PDF objects out of 1000 (max. 8388607)
- 683 compressed objects within 7 object streams
- 212 named destinations out of 1000 (max. 500000)
- 469 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 812 PDF objects out of 1000 (max. 8388607)
+ 688 compressed objects within 7 object streams
+ 214 named destinations out of 1000 (max. 500000)
+ 479 words of extra memory for PDF output out of 10000 (max. 10000000)
 

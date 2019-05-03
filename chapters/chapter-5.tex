@@ -32,7 +32,7 @@ where $\sigma(p_{T};R_{1})$ refers to the doubly differential cross section (Equ
 
 \section{Raw Jet Spectra}
 
-This thesis reports inclusive jet results for radii between 0.1 and 0.5.  Furthermore, jet results for radii R = 0.2 and R = 0.4 will be presented in the body of this chapter while results from the other radii will be limited to the appendex.  
+This thesis reports inclusive jet results for radii between 0.1 and 0.5.  Furthermore, jet results for radii R = 0.2 and R = 0.4 will be presented in the body of this chapter while results from the other radii will be limited to the appendex.  Figure shows the raw (uncorrected) $p_{T}$ spectra for inclusive jets from both MB and EMCal triggered data.  It is also evident from Figure that the Emcla triggered data extends the $p_{T}$ reach 
 
 \section{Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}
 Inclusive jet spectra and cross section ratios were measured in the ALICE experiment using a 2011 pp 2.76 TeV data sample\cite{MA2013319}.  Jets were reconstructed using TPC tracks and EMCal clusters with the FastJet Anti-$K_{T}$ algorithm.  Tracks with a minimum $p_{T} \geq \,$ 150 MeV and constrained to within 10 cm of the primary vertex were accepted into the jet finder.  EMCal clusters were 
@@ -51,11 +51,43 @@ Inclusive jet spectra and cross section ratios were measured in the ALICE experi
 \label{fig:RunEff}
 \end{figure}
 
+\begin{figure}[!tbp]
+  \centering
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{EventRejectionMB}
+    \caption{Mimimmum Bias Event Rejection}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{EventRejectionEGA}
+    \caption{Emcal Triggered Event Rejection}
+  \end{minipage}
+\end{figure}
+
 \section{8 TeV Data Quality}
 ALICE is a state-of-the-art experiment with excellent tracking and particle identification capabilities as discussed in Chapter \ref{ch:alice}.  However, just like any real world experiment, it contains a number of inefficiencies and imperfections.  This means that the data collected during the 8 TeV pp collision must be examined and any inaccuracies in the data must be removed before hard physics conclusions may be reached.  Data may be compromised at both the event-level, the experiment erroneously recorded something as an event, or at the constituent-level, one of the subdetectors mismeasured a feature of a particle, and these outliers must be accounted for and removed 
+
 \section{Event Selection}
 
-For an event to be selected into a physics analysis it must pass a number of quality control tests.  For example, the LHC must have be in a state of stable beams, cosmic rays must be excluded by only accepting tracks that originate from a vertex inside the detector, and the relevant detectors for a given analysis must be functioning as intended.  
+For an event to be selected into a physics analysis it must pass a number of quality control tests.  For example, the LHC must have be in a state of stable beams, cosmic rays must be excluded by only accepting tracks that originate from a vertex inside the detector, and the relevant detectors for a given analysis must be functioning as intended.  Event selction and QA is implemented via a centralized class, AliEventCuts, within the AliRoot framework.  This class contains a number of corrections including:
+
+\begin{itemize}
+  \item 
+  \item Another entry in the list
+\end{itemize}
+
+Further more the class AliAnalysisTaskEmcalCorrection within the AliRoot framework performs a number of corrections to the tower-level within phyasics analysis dependent on the EMCal.  These corrections include:
+
+\begin{itemize}
+  \item Energy calibration:  Remove double counting due to the amount of energy typically deposited by a Hadron.
+  \item Bad Channel Map: Remove both dead and hot towers from the EMCal clusterize based on an iterative average energy per occupancy algoritham
+  \item Time Calibration:  Remove slow particles, such as neutrons, which readout to the EMCal after the event has been recorded.
+   \item Exotics Correction:  Remove inefficiencies due to how a particle interacted with the EMCal.
+\end{itemize}\
+
+After the above cuts are performed on EMCal towers the cells compromising the towers are clustered together using a clusterization algoritham 
+
+
 
 \begin{figure}[h]
 \includegraphics[width=17cm]{8TeVRunefficency}
