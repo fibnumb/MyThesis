@@ -11,7 +11,7 @@ Beginning in March of 2012, the LHC began seven months of pp collisions at $\sqr
 where,
 
 \begin{itemize}
-  \item $A_{trigger}$ is the acceptance for EMCal triggered events and $\epsilon_{trigger}(p_{T})$ is the EMCal trigger efficiency.  These factors correct for imperfections in the electronics of the EMCal and the overall factors are equal to one in minnimum bias events.
+  \item $A_{trigger}$ is the acceptance for EMCal triggered events and $\epsilon_{trigger}(p_{T})$ is the EMCal trigger efficiency.  These factors correct for imperfections in the electronics of the EMCal and the overall factors are equal to one in minimum bias events.
   \item $C_{MC}$ is a correction factor due to detector effects and it allows for comparisons between the ALICE experiment to other experiments or theoretical calculations.  Unfolding is used to determine this factor.
   \item $\mathscr{L}_{int}$ is the integrated luminosity during the period when the data was recorded.
   \item $A(p_{T})$ is the geometrical detector acceptance.
@@ -32,37 +32,9 @@ where $\sigma(p_{T};R_{1})$ refers to the doubly differential cross section (Equ
 
 \section{Raw Jet Spectra}
 
-This thesis reports inclusive jet results for radii between 0.1 and 0.5.  Furthermore, jet results for radii R = 0.2 and R = 0.4 will be presented in the body of this chapter while results from the other radii will be limited to the appendex.  Figure shows the raw (uncorrected) $p_{T}$ spectra for inclusive jets from both MB and EMCal triggered data.  It is also evident from Figure that the Emcla triggered data extends the $p_{T}$ reach 
+This thesis reports inclusive jet results for radii between 0.1 and 0.5.  Furthermore, jet results for radii R = 0.2 and R = 0.4 will be presented in the body of this chapter while results from the other radii will be limited to the appendix.  Figure shows the raw (uncorrected) $p_{T}$ spectra for inclusive jets from both MB and EMCal triggered data.  It is also evident from Figure that the Emcla triggered data extends the $p_{T}$ reach 
 
-\section{Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}
-Inclusive jet spectra and cross section ratios were measured in the ALICE experiment using a 2011 pp 2.76 TeV data sample\cite{MA2013319}.  Jets were reconstructed using TPC tracks and EMCal clusters with the FastJet Anti-$K_{T}$ algorithm.  Tracks with a minimum $p_{T} \geq \,$ 150 MeV and constrained to within 10 cm of the primary vertex were accepted into the jet finder.  EMCal clusters were 
 
-\begin{figure}[h]
-\includegraphics[width=17cm]{AliceppRongRong}
-\centering
-\caption{Inclusive differential cross section from the 2.76 TeV proton proton run with ALICE}
-\label{fig:RunEff}
-\end{figure}
-
-\begin{figure}[h]
-\includegraphics[width=10cm]{AliceRatioRongRong}
-\centering
-\caption{LHC state during the 8 TeV run. }
-\label{fig:RunEff}
-\end{figure}
-
-\begin{figure}[!tbp]
-  \centering
-  \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{EventRejectionMB}
-    \caption{Mimimmum Bias Event Rejection}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.49\textwidth}
-    \includegraphics[width=\textwidth]{EventRejectionEGA}
-    \caption{Emcal Triggered Event Rejection}
-  \end{minipage}
-\end{figure}
 
 \section{8 TeV Data Quality}
 ALICE is a state-of-the-art experiment with excellent tracking and particle identification capabilities as discussed in Chapter \ref{ch:alice}.  However, just like any real world experiment, it contains a number of inefficiencies and imperfections.  This means that the data collected during the 8 TeV pp collision must be examined and any inaccuracies in the data must be removed before hard physics conclusions may be reached.  Data may be compromised at both the event-level, the experiment erroneously recorded something as an event, or at the constituent-level, one of the subdetectors mismeasured a feature of a particle, and these outliers must be accounted for and removed 
@@ -164,11 +136,23 @@ For jets between R = 0.1 through R = 0.5 the following jet acceptance correction
 
 \section{Unfolding}
 
-The reconstructed jet $p_{T}$ has a number of detector effects `folded' into the measurement.  In order to have results which can be compared to theoretical calculations or between experiemnts these effects must be accounted and corrected.  `Unfolding' is the method by which these results are corrected by and it accounts for a number of effects including; tracking and momentum inefficencies associated with the tracking detectors, material loss in the detector, hadronic corrections in the EMCal, gaps in the acceptance of the detector and dead regions.  Unfolding corrects the detector-level reconstructed jet spectra to the truth-level  hadronic spectra by constructing a response matrix. In this analysis the response matrix is constructed by propagating the truth-level particle jets generated from a MC simulation through a GEANT 3 simulation of the detector during the time period that the data taking occurred.  The particle-level jet centroid ($\phi_{part}$,$\eta_{part}$)is matched to the detector-level jet via a constrain on the displaced distance between the two jet centroids in ($\phi$,$\eta$).  This distance was constrained to: $\Delta  R = \sqrt{(\phi_{part} - \phi_{det})^{2} + (\eta_{part} - \eta_{det})^{2}} \leq 0.25 \; $ for R = 0.3 to R = 0.5 jets and $\Delta R \leq 0.1 \;$ for R = 0.1 and R = 0.2 jets.
+The reconstructed jet $p_{T}$ has a number of detector effects `folded' into the measurement.  In order to have results which can be compared to theoretical calculations or between experiments these effects must be accounted and corrected.  `Unfolding' is the method by which these results are corrected by and it accounts for a number of effects including; tracking and momentum inefficencies associated with the tracking detectors, material loss in the detector, hadronic corrections in the EMCal, and gaps in the acceptance of the detector and dead regions.  In this analysis the response matrix is constructed by propagating the truth-level particle jets generated from a MC simulation through a simulation of the detector during the time period that the data taking occurred.  
 
 \subsection{Corrections to particle Level}
 
-\subsection{Unfolding Matrix}
+Unfolding was performed using the \verb+RooUnfold+\cite{Adye:2011gm} software package.  The response matrix was constructed by embedding the final state hadrons created from a PYTHIA generated event into a GEANT3 simulation of the ALICE detector calibrated for each of the 8 TeV periods.  Corrections are applied using the bin-by-bin\cite{Cowan:2002in} algorithm. 
+
+\begin{equation}
+C_{MC} \big( p_{T}^{low} : p_{T}^{high} \big) =  \frac{  \int^{p_{T}^{high}}_{p_{T}^{low}} dp_{T} \; \frac{dF^{uncorr}_{meas}}{dp_{T}} \times \frac{d^{2}N^{particle}_{MC}/d\eta \, dp_{T}}{d^{2}N^{detector}_{MC}/d\eta \, dp_{T}}  } { \int^{p_{T}^{high}}_{p_{T}^{low}} dp_{T} \; \frac{dF^{uncorr}_{meas}}{dp_{T}} }
+\label{eq:binbybin}
+\end{equation}
+
+\noindent
+where $d^{2}N^{particle}_{MC}/dp_{T} \, d\eta$ is the PYTHIA level inclusive jet spectra, $d^{2}N^{detector}_{MC}/dp_{T} \, d\eta$ is the GEANT 3 level inclusive jet spectra, $dF^{uncorr}_{meas} / dp_{T}$ is a weight function which minimizes the dependence on the two simulation spectra shapes, finally $p_{T}^{low}$ and $p_{T}^{low}$ are the lower and upper bin limits.  
+
+\subsection{Response Matrix}
+The detector response is calculated on a jet-by-jet basis.  The particle-level jet centroid ($\phi_{part}$,$\eta_{part}$)is matched to the detector-level jet via a constrain on the displaced distance between the two jet centroids in ($\phi$,$\eta$).  This distance was constrained to: $\Delta  R = \sqrt{(\phi_{part} - \phi_{det})^{2} + (\eta_{part} - \eta_{det})^{2}} \leq 0.25 \; $ for R = 0.3 to R = 0.5 jets and $\Delta R \leq 0.0 \;$ for R = 0.1 and R = 0.2 jets.  The resulting response matrices are shown in
+
 
 \subsection{Unfolded Spectra}
 
@@ -183,9 +167,31 @@ In addition with the minimum bias data collected, the EMCal was used during the 
 
 \section{Systematic Uncertainties}
 
-\subsection{Systematic Uncertainty to Jet Yield}
+Systematic uncertainties arise due to our limited knowledge of the precise operating conditions and performance of the experiment and also due to any bias in our understanding of how to fundamental model the interactions.  They systematics may therefore be broken into two components: uncertainties to the jet energy scale (JES) which shifts the momentum spectra along the x-axis and uncertainties in the jet yield which shift the spectra along the y-axis.  The systematical and statistical uncertainties presented in this analysis will be presented as errors to the yield of the spectra.  Due to the fact that the $p_{T}$ distribution follows a power law function, $dN/dp_{T} \sim p_{T}^{-5}$ uncertainties in the JES are converted to yield uncertainties by dividing each one by 5.
+Due to the low statistics at the highest $p_{T}$ bins in this analysis, uncertainties in this regime my have large statistical fluctuations.  Small ,systematic variations for the input of the jet spectra will have a dramatic effect over sparsely filled bins versus bins with a low granularity.  As such it may be necessary to extrapolate the systematic from a low $p_{T}$ bin to those at the highsest $p_{T}$ range.  The systematics were performed on both the MB and EMCal triggered data samples but no large variation was observed between the two, thus only the uncertainties from the MB sample are shown and are extrapolated to the triggered data.
+
 
 \subsection{Systematic Uncertainty to Jet Energy Scale}
+
+\subsubsection{Tracking Efficiency}
+Corrections for the tracking efficiency were performed by randomly throwing out 5\% of the tracks from each event from the 8 TeV data samples and reperforming jet on the altered data.  All of the inputs for jet finding were maintained.
+
+
+\begin{figure*}[t!]
+$\begin{array}{rl}
+    \includegraphics[width=0.5\textwidth]{SysR02_TrkEff} &
+    \includegraphics[width=0.5\textwidth]{SysR03_TrkEff}\\
+    \multicolumn{2}{c}{\includegraphics[width=0.5\textwidth]{SysR04_TrkEff}}
+\end{array}$
+\caption[Systematic due to TPC tracking efficiency.]{\label{fig:trkeff}Systematic due to TPC tracking efficiency.}
+\end{figure*}
+
+\noindent
+Figure \ref{fig:trkeff}
+
+\subsection{Systematic Uncertainty to Jet Yield}
+
+
 
 \subsubsection{Luminosity Uncertainty}
 
@@ -198,7 +204,15 @@ The luminosity of a hadronic collider, $\mathscr{L}$, is given by the expression
 \label{eq:xlumdef}
 \end{equation}
 
-The luminosity along with its uncertainty were determined during a a special Van der Meer scan run in April of 2012\cite{ALICE-PUBLIC-2017-002}.  The total systematic uncertainty was obtained by measuring the visible cross section using the T0 and V0 detectors.  The Uncertainty was found to be 2.36\% with the T0 and 2.60\% with the V0.  A combined average uncertainty of 2.48\% is used in this thesis.
+The luminosity along with its uncertainty were determined during a a special Van der Meer scan run in April of 2012\cite{ALICE-PUBLIC-2017-002}.  The total systematic uncertainty for the minimum bias (MB) trigger were obtained by measuring the visible cross section using the T0 and V0 detectors.  The MB trigger was defined as V0AND which required a hit in both tjhe V0A and V0C.  The cross section was reported as being a combined average for MB with the V0AND as, 
+
+\begin{equation}
+\sigma_{V0} = (55.8 \pm 1.2) mb
+\label{eq:xlumdef}
+\end{equation}
+
+with a combined systematic uncertainty of 2.19\% on the visible cross section and 2.60\% on the luminosity. 
+
 
 \subsection{Total Uncertainty}
 
