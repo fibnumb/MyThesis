@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  2 JUN 2019 15:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  5 JUN 2019 17:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -471,12 +471,24 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks34
 \inpenc@posthook=\toks35
 )
-(./my-dissertation.aux (./chapters/chapter-5.aux
+(./my-dissertation.aux (./chapters/chapter-1.aux) (./chapters/chapter-2.aux)
+(./chapters/chapter-3.aux) (./chapters/chapter-4.aux
+
+LaTeX Warning: Label `fig:IROCprod' multiply defined.
+
+) (./chapters/chapter-5.aux
 
 LaTeX Warning: Label `eq:xsecdef' multiply defined.
 
 
 LaTeX Warning: Label `eq:xlumdef' multiply defined.
+
+) (./chapters/chapter-6.aux
+
+LaTeX Warning: Label `fig:RunEff' multiply defined.
+
+
+LaTeX Warning: Label `fig:RunEff' multiply defined.
 
 ) (./back-matter/vita.aux))
 \openout1 = `my-dissertation.aux'.
@@ -617,11 +629,33 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 
 
 ]
-:<+ chapters/chapter-5.tex
-\openout2 = `chapters/chapter-5.aux'.
+:<+ chapters/chapter-1.tex
+\openout2 = `chapters/chapter-1.aux'.
 
-(./chapters/chapter-5.tex
+(./chapters/chapter-1.tex
 Chapter 1.
+<figures/pdf/Fundamental_Particles.png, id=281, 301.125pt x 324.21124pt>
+File: figures/pdf/Fundamental_Particles.png Graphic file (type png)
+<use figures/pdf/Fundamental_Particles.png>
+Package pdftex.def Info: figures/pdf/Fundamental_Particles.png  used on input l
+ine 5.
+(pdftex.def)             Requested size: 170.71652pt x 183.81291pt.
+
+Package natbib Warning: Citation `Patrignani:2016xqp' on page 1 undefined on in
+put line 7.
+
+
+Package natbib Warning: Citation `Patrignani:2016xqp' on page 1 undefined on in
+put line 7.
+
+
+Package natbib Warning: Citation `Langacker:2009my' on page 1 undefined on inpu
+t line 11.
+
+
+Package natbib Warning: Citation `Aoyama:2014sxa' on page 1 undefined on input 
+line 11.
+
 [1
 
 
@@ -634,12 +668,750 @@ Chapter 1.
 
 
 
+ <./figures/pdf/Fundamental_Particles.png>]) [2] [3]
+:<-
+:<+ chapters/chapter-2.tex
+\openout2 = `chapters/chapter-2.aux'.
+
+(./chapters/chapter-2.tex
+Chapter 2.
+[4
+
+
+
+
+]
+<figures/pdf/alphas_s.jpg, id=310, 819.06pt x 582.175pt>
+File: figures/pdf/alphas_s.jpg Graphic file (type jpg)
+<use figures/pdf/alphas_s.jpg>
+Package pdftex.def Info: figures/pdf/alphas_s.jpg  used on input line 30.
+(pdftex.def)             Requested size: 341.43306pt x 242.69077pt.
+ [5 <./figures/pdf/alphas_s.jpg>]
+<figures/pdf/jetsatcmsand.png, id=325, 1111.15125pt x 410.53375pt>
+File: figures/pdf/jetsatcmsand.png Graphic file (type png)
+<use figures/pdf/jetsatcmsand.png>
+Package pdftex.def Info: figures/pdf/jetsatcmsand.png  used on input line 43.
+(pdftex.def)             Requested size: 341.43306pt x 126.14911pt.
+ [6 <./figures/pdf/jetsatcmsand.png>]
+<figures/pdf/ppcollison.png, id=342, 732.7375pt x 587.19376pt>
+File: figures/pdf/ppcollison.png Graphic file (type png)
+<use figures/pdf/ppcollison.png>
+Package pdftex.def Info: figures/pdf/ppcollison.png  used on input line 69.
+(pdftex.def)             Requested size: 341.43306pt x 273.6157pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7] [8 <./figures/pdf/ppcollison.png>]
+<figures/pdf/aOzz6.jpg, id=371, 738.76pt x 478.78876pt>
+File: figures/pdf/aOzz6.jpg Graphic file (type jpg)
+<use figures/pdf/aOzz6.jpg>
+Package pdftex.def Info: figures/pdf/aOzz6.jpg  used on input line 110.
+(pdftex.def)             Requested size: 426.79134pt x 276.6018pt.
+ [9 <./figures/pdf/aOzz6.jpg>]
+<figures/pdf/Ttbar_production_via_qqbar_annihilation.png, id=390, 903.375pt x 5
+55.07375pt>
+File: figures/pdf/Ttbar_production_via_qqbar_annihilation.png Graphic file (typ
+e png)
+<use figures/pdf/Ttbar_production_via_qqbar_annihilation.png>
+Package pdftex.def Info: figures/pdf/Ttbar_production_via_qqbar_annihilation.pn
+g  used on input line 122.
+(pdftex.def)             Requested size: 170.71652pt x 104.88916pt.
+ [10 <./figures/pdf/Ttbar_production_via_qqbar_annihilation.png>]
+<figures/pdf/partoncascade.png, id=406, 369.38pt x 365.365pt>
+File: figures/pdf/partoncascade.png Graphic file (type png)
+<use figures/pdf/partoncascade.png>
+Package pdftex.def Info: figures/pdf/partoncascade.png  used on input line 134.
+
+(pdftex.def)             Requested size: 227.62204pt x 225.14693pt.
+ [11 <./figures/pdf/partoncascade.png>]
+<figures/pdf/qqbarproductionvaccum.png, id=420, 726.715pt x 180.675pt>
+File: figures/pdf/qqbarproductionvaccum.png Graphic file (type png)
+<use figures/pdf/qqbarproductionvaccum.png>
+Package pdftex.def Info: figures/pdf/qqbarproductionvaccum.png  used on input l
+ine 153.
+(pdftex.def)             Requested size: 426.79134pt x 106.10934pt.
+ [12 <./figures/pdf/qqbarproductionvaccum.png (PNG copy)>]
+<figures/pdf/FFfunctions.png, id=435, 770.88pt x 774.895pt>
+File: figures/pdf/FFfunctions.png Graphic file (type png)
+<use figures/pdf/FFfunctions.png>
+Package pdftex.def Info: figures/pdf/FFfunctions.png  used on input line 174.
+(pdftex.def)             Requested size: 284.52756pt x 286.00905pt.
+
+[13 <./figures/pdf/FFfunctions.png>]
+<figures/pdf/IRCsafe.png, id=449, 856.19875pt x 257.96375pt>
+File: figures/pdf/IRCsafe.png Graphic file (type png)
+<use figures/pdf/IRCsafe.png>
+Package pdftex.def Info: figures/pdf/IRCsafe.png  used on input line 188.
+(pdftex.def)             Requested size: 426.79134pt x 128.58792pt.
+ [14 <./figures/pdf/IRCsafe.png>] [15]
+[16]
+<figures/pdf/FastJet.png, id=480, 1255.69125pt x 983.675pt>
+File: figures/pdf/FastJet.png Graphic file (type png)
+<use figures/pdf/FastJet.png>
+Package pdftex.def Info: figures/pdf/FastJet.png  used on input line 257.
+(pdftex.def)             Requested size: 426.79134pt x 334.325pt.
+ [17 <./figures/pdf/FastJet.png>] [18] [19] [20]
+<figures/pdf/610_1.jpg, id=537, 525.6438pt x 582.4962pt>
+File: figures/pdf/610_1.jpg Graphic file (type jpg)
+<use figures/pdf/610_1.jpg>
+Package pdftex.def Info: figures/pdf/610_1.jpg  used on input line 395.
+(pdftex.def)             Requested size: 256.0748pt x 283.77243pt.
+ [21 <./figures/pdf/610_1.jpg>]
+<figures/pdf/ppevolution.png, id=560, 1062.97125pt x 922.44624pt>
+File: figures/pdf/ppevolution.png Graphic file (type png)
+<use figures/pdf/ppevolution.png>
+Package pdftex.def Info: figures/pdf/ppevolution.png  used on input line 410.
+(pdftex.def)             Requested size: 312.9803pt x 271.5985pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/pdf/dijetfig2.png, id=563, 582.175pt x 737.75626pt>
+File: figures/pdf/dijetfig2.png Graphic file (type png)
+<use figures/pdf/dijetfig2.png>
+Package pdftex.def Info: figures/pdf/dijetfig2.png  used on input line 417.
+(pdftex.def)             Requested size: 128.0374pt x 162.25058pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22]
+<figures/pdf/jetRAA.png, id=580, 601.24625pt x 456.70625pt>
+File: figures/pdf/jetRAA.png Graphic file (type png)
+<use figures/pdf/jetRAA.png>
+Package pdftex.def Info: figures/pdf/jetRAA.png  used on input line 439.
+(pdftex.def)             Requested size: 284.52756pt x 216.12933pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23 <./figures/pdf/ppevolution.png>] [24 <./figures/pdf/dijetfig2.png (PNG copy
+)> <./figures/pdf/jetRAA.png>]) [25]
+:<-
+:<+ chapters/chapter-3.tex
+\openout2 = `chapters/chapter-3.aux'.
+
+(./chapters/chapter-3.tex
+Chapter 3.
+
+Package natbib Warning: Citation `doi:10.1142/S0217751X13300354' on page 26 und
+efined on input line 4.
+
+
+Package natbib Warning: Citation `Taylor:2017edx' on page 26 undefined on input
+ line 4.
+
+
+Package natbib Warning: Citation `Aad:2008zzm' on page 26 undefined on input li
+ne 4.
+
+
+Package natbib Warning: Citation `Chatrchyan:2008aa' on page 26 undefined on in
+put line 4.
+
+
+Package natbib Warning: Citation `Alves:2008zz' on page 26 undefined on input l
+ine 4.
+
+
+Package natbib Warning: Citation `Aamodt:2008zz' on page 26 undefined on input 
+line 4.
+
+
+Package natbib Warning: Citation `Chatrchyan:2012xdj' on page 26 undefined on i
+nput line 4.
+
+
+Package natbib Warning: Citation `Aad:2012tfa' on page 26 undefined on input li
+ne 4.
+
+<figures/pdf/1920px-Cern-accelerator-complex.png, id=612, 1927.2pt x 1255.69125
+pt>
+File: figures/pdf/1920px-Cern-accelerator-complex.png Graphic file (type png)
+<use figures/pdf/1920px-Cern-accelerator-complex.png>
+Package pdftex.def Info: figures/pdf/1920px-Cern-accelerator-complex.png  used 
+on input line 7.
+(pdftex.def)             Requested size: 312.9803pt x 203.92287pt.
+
+Package natbib Warning: Citation `Mobs:2197559' on page 26 undefined on input l
+ine 9.
+
+
+Package natbib Warning: Citation `Mobs:2197559' on page 26 undefined on input l
+ine 9.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26
+
+
+
+
+] [27 <./figures/pdf/1920px-Cern-accelerator-complex.png>]
+
+Package natbib Warning: Citation `Fabjan:2011jb' on page 28 undefined on input 
+line 23.
+
+
+Package natbib Warning: Citation `Fabjan:2011jb' on page 28 undefined on input 
+line 27.
+
+[28]
+<figures/pdf/ALICE-event-b.jpg, id=630, 580.569pt x 356.0502pt>
+File: figures/pdf/ALICE-event-b.jpg Graphic file (type jpg)
+<use figures/pdf/ALICE-event-b.jpg>
+Package pdftex.def Info: figures/pdf/ALICE-event-b.jpg  used on input line 30.
+(pdftex.def)             Requested size: 341.43306pt x 209.3941pt.
+
+
+Package natbib Warning: Citation `Alberico:2011zy' on page 29 undefined on inpu
+t line 32.
+
+
+Package natbib Warning: Citation `Alberico:2011zy' on page 29 undefined on inpu
+t line 32.
+
+<figures/pdf/ITS.jpg, id=631, 451.6875pt x 299.61937pt>
+File: figures/pdf/ITS.jpg Graphic file (type jpg)
+<use figures/pdf/ITS.jpg>
+Package pdftex.def Info: figures/pdf/ITS.jpg  used on input line 37.
+(pdftex.def)             Requested size: 227.62204pt x 150.99341pt.
+
+Package natbib Warning: Citation `Alberico:2011zy' on page 29 undefined on inpu
+t line 39.
+
+
+Package natbib Warning: Citation `Alberico:2011zy' on page 29 undefined on inpu
+t line 39.
+
+
+Package natbib Warning: Citation `Gligorov:2018vkc' on page 29 undefined on inp
+ut line 44.
+
+[29 <./figures/pdf/ALICE-event-b.jpg> <./figures/pdf/ITS.jpg>]
+
+Package natbib Warning: Citation `Bondila:2005xy' on page 30 undefined on input
+ line 47.
+
+
+Package natbib Warning: Citation `Abbas:2013taa' on page 30 undefined on input 
+line 50.
+
+
+Package natbib Warning: Citation `Field:2011iq' on page 30 undefined on input l
+ine 50.
+
+
+LaTeX Warning: Reference `sec:kinematics' on page 30 undefined on input line 50
+.
+
+
+Package natbib Warning: Citation `Loizides:2016djv' on page 30 undefined on inp
+ut line 50.
+
+[30]
+<figures/pdf/V0MGlau-18545.png, id=655, 953.5625pt x 604.2575pt>
+File: figures/pdf/V0MGlau-18545.png Graphic file (type png)
+<use figures/pdf/V0MGlau-18545.png>
+Package pdftex.def Info: figures/pdf/V0MGlau-18545.png  used on input line 53.
+(pdftex.def)             Requested size: 312.9803pt x 198.33604pt.
+
+
+Package natbib Warning: Citation `Adam:2015ptt' on page 31 undefined on input l
+ine 55.
+
+
+Package natbib Warning: Citation `Adam:2015ptt' on page 31 undefined on input l
+ine 55.
+
+
+Package natbib Warning: Citation `BEOLE20121062' on page 31 undefined on input 
+line 60.
+
+
+LaTeX Warning: Reference `ref:pid' on page 31 undefined on input line 60.
+
+
+Package natbib Warning: Citation `Adam:2016acv' on page 31 undefined on input l
+ine 60.
+
+<figures/pdf/alice-tpc-schematic.png, id=657, 557.08125pt x 414.54875pt>
+File: figures/pdf/alice-tpc-schematic.png Graphic file (type png)
+<use figures/pdf/alice-tpc-schematic.png>
+Package pdftex.def Info: figures/pdf/alice-tpc-schematic.png  used on input lin
+e 68.
+(pdftex.def)             Requested size: 284.52756pt x 211.73334pt.
+
+Package natbib Warning: Citation `2010NIMPA.622..316A' on page 31 undefined on 
+input line 70.
+
+
+Package natbib Warning: Citation `2010NIMPA.622..316A' on page 31 undefined on 
+input line 70.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `2010NIMPA.622..316A' on page 31 undefined on 
+input line 74.
+
+[31 <./figures/pdf/V0MGlau-18545.png>]
+<figures/pdf/Wirereadout_eng.jpg, id=668, 203.3196pt x 246.6816pt>
+File: figures/pdf/Wirereadout_eng.jpg Graphic file (type jpg)
+<use figures/pdf/Wirereadout_eng.jpg>
+Package pdftex.def Info: figures/pdf/Wirereadout_eng.jpg  used on input line 79
+.
+(pdftex.def)             Requested size: 256.0748pt x 310.69623pt.
+
+
+Package natbib Warning: Citation `diener' on page 32 undefined on input line 81
+.
+
+
+Package natbib Warning: Citation `diener' on page 32 undefined on input line 81
+.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `Tangwancharoen:2016dq' on page 32 undefined o
+n input line 85.
+
+[32 <./figures/pdf/alice-tpc-schematic.png>] [33 <./figures/pdf/Wirereadout_eng
+.jpg>]
+<figures/pdf/PTresolution_vs_1Pt_pPb_2013_PerfPaper-8441.png, id=686, 953.5625p
+t x 780.9175pt>
+File: figures/pdf/PTresolution_vs_1Pt_pPb_2013_PerfPaper-8441.png Graphic file 
+(type png)
+<use figures/pdf/PTresolution_vs_1Pt_pPb_2013_PerfPaper-8441.png>
+Package pdftex.def Info: figures/pdf/PTresolution_vs_1Pt_pPb_2013_PerfPaper-844
+1.png  used on input line 94.
+(pdftex.def)             Requested size: 216.81pt x 177.55772pt.
+<figures/pdf/tpc_abseff-8423.png, id=687, 953.5625pt x 713.66624pt>
+File: figures/pdf/tpc_abseff-8423.png Graphic file (type png)
+<use figures/pdf/tpc_abseff-8423.png>
+Package pdftex.def Info: figures/pdf/tpc_abseff-8423.png  used on input line 96
+.
+(pdftex.def)             Requested size: 216.81pt x 162.26675pt.
+
+
+Package natbib Warning: Citation `Abelev:2014ffa' on page 34 undefined on input
+ line 97.
+
+
+Package natbib Warning: Citation `Abelev:2014ffa' on page 34 undefined on input
+ line 97.
+
+
+Package natbib Warning: Citation `LIPPMANN2012434' on page 34 undefined on inpu
+t line 102.
+
+
+Package natbib Warning: Citation `1742-6596-293-1-012043' on page 34 undefined 
+on input line 109.
+
+<figures/pdf/ALICEEMCAL.png, id=690, 675.52374pt x 528.97626pt>
+File: figures/pdf/ALICEEMCAL.png Graphic file (type png)
+<use figures/pdf/ALICEEMCAL.png>
+Package pdftex.def Info: figures/pdf/ALICEEMCAL.png  used on input line 112.
+(pdftex.def)             Requested size: 284.52756pt x 222.80615pt.
+
+Package natbib Warning: Citation `1742-6596-110-3-032006' on page 34 undefined 
+on input line 114.
+
+
+Package natbib Warning: Citation `1742-6596-110-3-032006' on page 34 undefined 
+on input line 114.
+
+[34 <./figures/pdf/PTresolution_vs_1Pt_pPb_2013_PerfPaper-8441.png> <./figures/
+pdf/tpc_abseff-8423.png>] [35 <./figures/pdf/ALICEEMCAL.png>]
+<figures/pdf/Alice-EMCal-Performance.png, id=712, 503.8825pt x 430.60875pt>
+File: figures/pdf/Alice-EMCal-Performance.png Graphic file (type png)
+<use figures/pdf/Alice-EMCal-Performance.png>
+Package pdftex.def Info: figures/pdf/Alice-EMCal-Performance.png  used on input
+ line 138.
+(pdftex.def)             Requested size: 284.52756pt x 243.14983pt.
+
+
+Package natbib Warning: Citation `Abeysekara:2010ze' on page 36 undefined on in
+put line 140.
+
+
+Package natbib Warning: Citation `Abeysekara:2010ze' on page 36 undefined on in
+put line 140.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `bourrion2010level' on page 36 undefined on in
+put line 153.
+
+
+Package natbib Warning: Citation `bourrion2013alice' on page 36 undefined on in
+put line 153.
+
+
+Package natbib Warning: Citation `Kral2012261' on page 36 undefined on input li
+ne 153.
+
+[36]
+<figures/pdf/2017-Jul-05-Ecluster_emcal_alice_style.pdf, id=721, 569.12625pt x 
+416.55624pt>
+File: figures/pdf/2017-Jul-05-Ecluster_emcal_alice_style.pdf Graphic file (type
+ pdf)
+<use figures/pdf/2017-Jul-05-Ecluster_emcal_alice_style.pdf>
+Package pdftex.def Info: figures/pdf/2017-Jul-05-Ecluster_emcal_alice_style.pdf
+  used on input line 156.
+(pdftex.def)             Requested size: 284.52756pt x 208.25853pt.
+
+
+Package natbib Warning: Citation `Jahnke:2018mrq' on page 37 undefined on input
+ line 158.
+
+
+Package natbib Warning: Citation `Jahnke:2018mrq' on page 37 undefined on input
+ line 158.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `sec:trigeff' on page 37 undefined on input line 162.
+
+) [37 <./figures/pdf/Alice-EMCal-Performance.png>] [38 <./figures/pdf/2017-Jul-
+05-Ecluster_emcal_alice_style.pdf>]
+:<-
+:<+ chapters/chapter-4.tex
+\openout2 = `chapters/chapter-4.aux'.
+
+(./chapters/chapter-4.tex
+Chapter 4.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 6.
+
+
+Package natbib Warning: Citation `Apollinari:2015bam' on page 39 undefined on i
+nput line 7.
+
+
+Package natbib Warning: Citation `Abelev:1475243' on page 39 undefined on input
+ line 9.
+
+[39
+
+
+
+
 ]
 
-LaTeX Warning: Reference `ch:alice' on page 2 undefined on input line 40.
+Package natbib Warning: Citation `1742-6596-589-1-012014' on page 40 undefined 
+on input line 19.
 
-[2]
-<figures/pdf/8TeVRunefficency.png, id=152, 2260.445pt x 939.51pt>
+
+Package natbib Warning: Citation `1742-6596-798-1-012186' on page 40 undefined 
+on input line 22.
+
+
+Package natbib Warning: Citation `Abelev:1625842' on page 40 undefined on input
+ line 23.
+
+
+Package natbib Warning: Citation `CERN-LHCC-2015-001' on page 40 undefined on i
+nput line 23.
+
+
+Package natbib Warning: Citation `Abelev:1475243' on page 40 undefined on input
+ line 24.
+
+
+Package natbib Warning: Citation `Buncic:2011297' on page 40 undefined on input
+ line 25.
+
+
+Package natbib Warning: Citation `Ryblewski:2015sha' on page 40 undefined on in
+put line 29.
+
+
+Package natbib Warning: Citation `Mauricio:2007vz' on page 40 undefined on inpu
+t line 29.
+
+<figures/pdf/dilepton-mass.png, id=757, 1163.34625pt x 551.05875pt>
+File: figures/pdf/dilepton-mass.png Graphic file (type png)
+<use figures/pdf/dilepton-mass.png>
+Package pdftex.def Info: figures/pdf/dilepton-mass.png  used on input line 32.
+(pdftex.def)             Requested size: 469.75502pt x 222.51329pt.
+
+Package natbib Warning: Citation `Abelev:1475243' on page 40 undefined on input
+ line 34.
+
+
+Package natbib Warning: Citation `Abelev:1475243' on page 40 undefined on input
+ line 34.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `Abelev:1475243' on page 40 undefined on input
+ line 39.
+
+
+Package natbib Warning: Citation `CERN-LHCC-2013-020' on page 40 undefined on i
+nput line 39.
+
+
+Package natbib Warning: Citation `CERN-LHCC-2015-002' on page 40 undefined on i
+nput line 39.
+
+[40]
+
+Package natbib Warning: Citation `Sauli:1997qp' on page 41 undefined on input l
+ine 43.
+
+
+Package natbib Warning: Citation `Titov:2013hmq' on page 41 undefined on input 
+line 43.
+
+<figures/pdf/Scanning-electron-microscopy-image-of-GEM-foil-top-view-left-and-c
+ross-section-right.png, id=764, 853.1875pt x 303.1325pt>
+File: figures/pdf/Scanning-electron-microscopy-image-of-GEM-foil-top-view-left-
+and-cross-section-right.png Graphic file (type png)
+<use figures/pdf/Scanning-electron-microscopy-image-of-GEM-foil-top-view-left-a
+nd-cross-section-right.png>
+Package pdftex.def Info: figures/pdf/Scanning-electron-microscopy-image-of-GEM-
+foil-top-view-left-and-cross-section-right.png  used on input line 46.
+(pdftex.def)             Requested size: 398.33858pt x 141.5287pt.
+
+Package natbib Warning: Citation `Brucken:2017qjy' on page 41 undefined on inpu
+t line 48.
+
+
+Package natbib Warning: Citation `Brucken:2017qjy' on page 41 undefined on inpu
+t line 48.
+
+[41 <./figures/pdf/dilepton-mass.png>]
+<figures/pdf/ALICEGEMSIMULATION.png, id=774, 584.1825pt x 277.035pt>
+File: figures/pdf/ALICEGEMSIMULATION.png Graphic file (type png)
+<use figures/pdf/ALICEGEMSIMULATION.png>
+Package pdftex.def Info: figures/pdf/ALICEGEMSIMULATION.png  used on input line
+ 57.
+(pdftex.def)             Requested size: 398.33858pt x 188.9097pt.
+
+
+Package natbib Warning: Citation `Bhattacharya:2017yaj' on page 42 undefined on
+ input line 59.
+
+
+Package natbib Warning: Citation `Bhattacharya:2017yaj' on page 42 undefined on
+ input line 59.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `0960-1317-17-8-021' on page 42 undefined on i
+nput line 66.
+
+
+Package natbib Warning: Citation `1748-0221-12-06-C06036' on page 42 undefined 
+on input line 66.
+
+
+Package natbib Warning: Citation `SAULI20162' on page 42 undefined on input lin
+e 66.
+
+[42 <./figures/pdf/Scanning-electron-microscopy-image-of-GEM-foil-top-view-left
+-and-cross-section-right.png>]
+
+Package natbib Warning: Citation `Santimaria:1690550' on page 43 undefined on i
+nput line 71.
+
+
+Package natbib Warning: Citation `Pfeiffer:2628608' on page 43 undefined on inp
+ut line 71.
+
+
+Package natbib Warning: Citation `Agostinelli:2002hh' on page 43 undefined on i
+nput line 71.
+
+[43 <./figures/pdf/ALICEGEMSIMULATION.png>]
+<figures/pdf/ResoSim.png, id=789, 1053.9375pt x 360.34625pt>
+File: figures/pdf/ResoSim.png Graphic file (type png)
+<use figures/pdf/ResoSim.png>
+Package pdftex.def Info: figures/pdf/ResoSim.png  used on input line 74.
+(pdftex.def)             Requested size: 469.75502pt x 160.61475pt.
+
+
+Package natbib Warning: Citation `Dick2017QM' on page 44 undefined on input lin
+e 76.
+
+
+Package natbib Warning: Citation `Dick2017QM' on page 44 undefined on input lin
+e 76.
+
+<figures/pdf/4GEMROC.png, id=791, 539.01375pt x 277.035pt>
+File: figures/pdf/4GEMROC.png Graphic file (type png)
+<use figures/pdf/4GEMROC.png>
+Package pdftex.def Info: figures/pdf/4GEMROC.png  used on input line 84.
+(pdftex.def)             Requested size: 284.52756pt x 146.24026pt.
+
+Package natbib Warning: Citation `CERN-LHCC-2013-020' on page 44 undefined on i
+nput line 86.
+
+
+Package natbib Warning: Citation `CERN-LHCC-2013-020' on page 44 undefined on i
+nput line 86.
+
+[44 <./figures/pdf/ResoSim.png> <./figures/pdf/4GEMROC.png>]
+<figures/pdf/GemProtoPID.png, id=804, 961.5925pt x 408.52625pt>
+File: figures/pdf/GemProtoPID.png Graphic file (type png)
+<use figures/pdf/GemProtoPID.png>
+Package pdftex.def Info: figures/pdf/GemProtoPID.png  used on input line 114.
+(pdftex.def)             Requested size: 284.52756pt x 120.88197pt.
+
+
+Package natbib Warning: Citation `CERN-LHCC-2015-002' on page 45 undefined on i
+nput line 116.
+
+
+Package natbib Warning: Citation `CERN-LHCC-2015-002' on page 45 undefined on i
+nput line 116.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/pdf/ProtoIBFEres.png, id=806, 573.14125pt x 491.8375pt>
+File: figures/pdf/ProtoIBFEres.png Graphic file (type png)
+<use figures/pdf/ProtoIBFEres.png>
+Package pdftex.def Info: figures/pdf/ProtoIBFEres.png  used on input line 127.
+(pdftex.def)             Requested size: 170.71652pt x 146.50171pt.
+
+Package natbib Warning: Citation `CERN-LHCC-2015-002' on page 45 undefined on i
+nput line 129.
+
+
+Package natbib Warning: Citation `CERN-LHCC-2015-002' on page 45 undefined on i
+nput line 129.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[45]
+<figures/pdf/GEMShowerSim.png, id=819, 571.13374pt x 394.47375pt>
+File: figures/pdf/GEMShowerSim.png Graphic file (type png)
+<use figures/pdf/GEMShowerSim.png>
+Package pdftex.def Info: figures/pdf/GEMShowerSim.png  used on input line 137.
+(pdftex.def)             Requested size: 227.62204pt x 157.21487pt.
+
+
+Package natbib Warning: Citation `CERN-LHCC-2015-002' on page 46 undefined on i
+nput line 139.
+
+
+Package natbib Warning: Citation `CERN-LHCC-2015-002' on page 46 undefined on i
+nput line 139.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/pdf/IROCproductionflow.png, id=820, 633.36626pt x 489.83pt>
+File: figures/pdf/IROCproductionflow.png Graphic file (type png)
+<use figures/pdf/IROCproductionflow.png>
+Package pdftex.def Info: figures/pdf/IROCproductionflow.png  used on input line
+ 151.
+(pdftex.def)             Requested size: 284.52756pt x 220.04774pt.
+
+Package natbib Warning: Citation `Dick2017QM' on page 46 undefined on input lin
+e 153.
+
+
+Package natbib Warning: Citation `Dick2017QM' on page 46 undefined on input lin
+e 153.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[46 <./figures/pdf/GemProtoPID.png> <./figures/pdf/ProtoIBFEres.png>]
+<figures/pdf/IROCAssemblyUTK.png, id=830, 1002.74625pt x 424.58624pt>
+File: figures/pdf/IROCAssemblyUTK.png Graphic file (type png)
+<use figures/pdf/IROCAssemblyUTK.png>
+Package pdftex.def Info: figures/pdf/IROCAssemblyUTK.png  used on input line 16
+1.
+(pdftex.def)             Requested size: 469.75502pt x 198.90768pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package natbib Warning: Citation `Brucken:2018rej' on page 47 undefined on inpu
+t line 171.
+
+
+Package natbib Warning: Citation `Brucken:2017qjy' on page 47 undefined on inpu
+t line 171.
+
+[47 <./figures/pdf/GEMShowerSim.png>] [48 <./figures/pdf/IROCproductionflow.png
+> <./figures/pdf/IROCAssemblyUTK.png>]
+<figures/pdf/PicoSetup.png, id=846, 800.9925pt x 316.18124pt>
+File: figures/pdf/PicoSetup.png Graphic file (type png)
+<use figures/pdf/PicoSetup.png>
+Package pdftex.def Info: figures/pdf/PicoSetup.png  used on input line 178.
+(pdftex.def)             Requested size: 469.75502pt x 185.43085pt.
+
+
+Package natbib Warning: Citation `Brucken:2018rej' on page 49 undefined on inpu
+t line 180.
+
+
+Package natbib Warning: Citation `Brucken:2018rej' on page 49 undefined on inpu
+t line 180.
+
+[49 <./figures/pdf/PicoSetup.png>]
+<figures/pdf/LeakSetupUTK.png, id=855, 1015.795pt x 310.15875pt>
+File: figures/pdf/LeakSetupUTK.png Graphic file (type png)
+<use figures/pdf/LeakSetupUTK.png>
+Package pdftex.def Info: figures/pdf/LeakSetupUTK.png  used on input line 192.
+(pdftex.def)             Requested size: 469.75502pt x 143.43198pt.
+<figures/pdf/AcceptanceCriteria.png, id=856, 1038.88126pt x 569.12625pt>
+File: figures/pdf/AcceptanceCriteria.png Graphic file (type png)
+<use figures/pdf/AcceptanceCriteria.png>
+Package pdftex.def Info: figures/pdf/AcceptanceCriteria.png  used on input line
+ 209.
+(pdftex.def)             Requested size: 227.62204pt x 124.69579pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[50 <./figures/pdf/LeakSetupUTK.png>]
+<figures/pdf/LHCSparkTest.png, id=868, 714.67pt x 462.72874pt>
+File: figures/pdf/LHCSparkTest.png Graphic file (type png)
+<use figures/pdf/LHCSparkTest.png>
+Package pdftex.def Info: figures/pdf/LHCSparkTest.png  used on input line 224.
+(pdftex.def)             Requested size: 398.33858pt x 257.9119pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[51 <./figures/pdf/AcceptanceCriteria.png>]) [52 <./figures/pdf/LHCSparkTest.pn
+g>]
+:<-
+:<+ chapters/chapter-5.tex
+\openout2 = `chapters/chapter-5.aux'.
+
+(./chapters/chapter-5.tex
+Chapter 5.
+[53
+
+
+
+
+] [54]
+<figures/pdf/8TeVRunefficency.png, id=896, 2260.445pt x 939.51pt>
 File: figures/pdf/8TeVRunefficency.png Graphic file (type png)
 <use figures/pdf/8TeVRunefficency.png>
 Package pdftex.def Info: figures/pdf/8TeVRunefficency.png  used on input line 6
@@ -658,46 +1430,155 @@ Package caption Warning: \label without proper reference on input line 74.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:RunSummary' on page 3 undefined on input line 71.
+LaTeX Warning: Reference `tab:RunSummary' on page 55 undefined on input line 71
+.
 
+[55] [56 <./figures/pdf/8TeVRunefficency.png>] [57] [58]
+<figures/pdf/responseR02.png, id=925, 2087.8pt x 1224.575pt>
+File: figures/pdf/responseR02.png Graphic file (type png)
+<use figures/pdf/responseR02.png>
+Package pdftex.def Info: figures/pdf/responseR02.png  used on input line 167.
+(pdftex.def)             Requested size: 234.8775pt x 137.74939pt.
+<figures/pdf/responseR03.png, id=926, 2087.8pt x 1224.575pt>
+File: figures/pdf/responseR03.png Graphic file (type png)
+<use figures/pdf/responseR03.png>
+Package pdftex.def Info: figures/pdf/responseR03.png  used on input line 168.
+(pdftex.def)             Requested size: 234.8775pt x 137.74939pt.
+<figures/pdf/responseR04.png, id=927, 2087.8pt x 1224.575pt>
+File: figures/pdf/responseR04.png Graphic file (type png)
+<use figures/pdf/responseR04.png>
+Package pdftex.def Info: figures/pdf/responseR04.png  used on input line 169.
+(pdftex.def)             Requested size: 234.8775pt x 137.74939pt.
 
-[3] [4 <./figures/pdf/8TeVRunefficency.png>] [5]
-
-Package natbib Warning: Citation `Adye:2011gm' on page 6 undefined on input lin
-e 143.
-
-
-Package natbib Warning: Citation `Cowan:2002in' on page 6 undefined on input li
-ne 143.
-
-[6]
-<figures/pdf/SysR02_TrkEff.png, id=187, 698.61pt x 473.77pt>
-File: figures/pdf/SysR02_TrkEff.png Graphic file (type png)
-<use figures/pdf/SysR02_TrkEff.png>
-Package pdftex.def Info: figures/pdf/SysR02_TrkEff.png  used on input line 182.
-
-(pdftex.def)             Requested size: 234.8775pt x 159.28683pt.
-<figures/pdf/SysR03_TrkEff.png, id=188, 698.61pt x 473.77pt>
-File: figures/pdf/SysR03_TrkEff.png Graphic file (type png)
-<use figures/pdf/SysR03_TrkEff.png>
-Package pdftex.def Info: figures/pdf/SysR03_TrkEff.png  used on input line 183.
-
-(pdftex.def)             Requested size: 234.8775pt x 159.28683pt.
-<figures/pdf/SysR04_TrkEff.png, id=189, 698.61pt x 473.77pt>
-File: figures/pdf/SysR04_TrkEff.png Graphic file (type png)
-<use figures/pdf/SysR04_TrkEff.png>
-Package pdftex.def Info: figures/pdf/SysR04_TrkEff.png  used on input line 184.
-
-(pdftex.def)             Requested size: 234.8775pt x 159.28683pt.
-
-Overfull \hbox (19.99998pt too wide) in paragraph at lines 181--186
+Overfull \hbox (19.99998pt too wide) in paragraph at lines 166--171
 []$[]$ 
  []
 
-[7] [8 <./figures/pdf/SysR02_TrkEff.png> <./figures/pdf/SysR03_TrkEff.png> <./f
-igures/pdf/SysR04_TrkEff.png>]) [9]
+
+Package natbib Warning: Citation `Adye:2011gm' on page 59 undefined on input li
+ne 178.
+
+
+Package natbib Warning: Citation `Cowan:2002in' on page 59 undefined on input l
+ine 178.
+
+[59]
+<figures/pdf/RawandUnfoldedSpectraMBR03.png, id=935, 2087.8pt x 1224.575pt>
+File: figures/pdf/RawandUnfoldedSpectraMBR03.png Graphic file (type png)
+<use figures/pdf/RawandUnfoldedSpectraMBR03.png>
+Package pdftex.def Info: figures/pdf/RawandUnfoldedSpectraMBR03.png  used on in
+put line 189.
+(pdftex.def)             Requested size: 483.69684pt x 283.70174pt.
+
+Overfull \hbox (13.94182pt too wide) in paragraph at lines 189--191
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[60 <./figures/pdf/responseR02.png> <./figures/pdf/responseR03.png> <./figures/
+pdf/responseR04.png>] [61 <./figures/pdf/RawandUnfoldedSpectraMBR03.png>]
+<figures/pdf/SysR02_TrkEff.png, id=947, 698.61pt x 473.77pt>
+File: figures/pdf/SysR02_TrkEff.png Graphic file (type png)
+<use figures/pdf/SysR02_TrkEff.png>
+Package pdftex.def Info: figures/pdf/SysR02_TrkEff.png  used on input line 214.
+
+(pdftex.def)             Requested size: 234.8775pt x 159.28683pt.
+<figures/pdf/SysR03_TrkEff.png, id=948, 698.61pt x 473.77pt>
+File: figures/pdf/SysR03_TrkEff.png Graphic file (type png)
+<use figures/pdf/SysR03_TrkEff.png>
+Package pdftex.def Info: figures/pdf/SysR03_TrkEff.png  used on input line 215.
+
+(pdftex.def)             Requested size: 234.8775pt x 159.28683pt.
+<figures/pdf/SysR04_TrkEff.png, id=949, 698.61pt x 473.77pt>
+File: figures/pdf/SysR04_TrkEff.png Graphic file (type png)
+<use figures/pdf/SysR04_TrkEff.png>
+Package pdftex.def Info: figures/pdf/SysR04_TrkEff.png  used on input line 216.
+
+(pdftex.def)             Requested size: 234.8775pt x 159.28683pt.
+
+Overfull \hbox (19.99998pt too wide) in paragraph at lines 213--218
+[]$[]$ 
+ []
+
+[62 <./figures/pdf/SysR02_TrkEff.png> <./figures/pdf/SysR03_TrkEff.png> <./figu
+res/pdf/SysR04_TrkEff.png>] [63]) [64]
 :<-
-[10
+:<+ chapters/chapter-6.tex
+\openout2 = `chapters/chapter-6.aux'.
+
+(./chapters/chapter-6.tex
+Chapter 6.
+<figures/pdf/CMS8TeVJet.png, id=974, 574.145pt x 427.5975pt>
+File: figures/pdf/CMS8TeVJet.png Graphic file (type png)
+<use figures/pdf/CMS8TeVJet.png>
+Package pdftex.def Info: figures/pdf/CMS8TeVJet.png  used on input line 8.
+(pdftex.def)             Requested size: 284.52756pt x 211.90608pt.
+<figures/pdf/ATLAS8TeVJet.png, id=977, 1005.7575pt x 976.64874pt>
+File: figures/pdf/ATLAS8TeVJet.png Graphic file (type png)
+<use figures/pdf/ATLAS8TeVJet.png>
+Package pdftex.def Info: figures/pdf/ATLAS8TeVJet.png  used on input line 15.
+(pdftex.def)             Requested size: 284.52756pt x 276.29124pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/pdf/ATLAS8TeVJetRecaled.png, id=980, 1452.42625pt x 634.37pt>
+File: figures/pdf/ATLAS8TeVJetRecaled.png Graphic file (type png)
+<use figures/pdf/ATLAS8TeVJetRecaled.png>
+Package pdftex.def Info: figures/pdf/ATLAS8TeVJetRecaled.png  used on input lin
+e 22.
+(pdftex.def)             Requested size: 398.33858pt x 173.97313pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[65
+
+
+
+
+ <./figures/pdf/CMS8TeVJet.png>]
+<figures/pdf/AliceppRongRong.png, id=993, 1114.1625pt x 478.78876pt>
+File: figures/pdf/AliceppRongRong.png Graphic file (type png)
+<use figures/pdf/AliceppRongRong.png>
+Package pdftex.def Info: figures/pdf/AliceppRongRong.png  used on input line 32
+.
+(pdftex.def)             Requested size: 483.69684pt x 207.855pt.
+
+Overfull \hbox (13.94182pt too wide) in paragraph at lines 32--34
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/pdf/AliceRatioRongRong.png, id=994, 668.4975pt x 484.81125pt>
+File: figures/pdf/AliceRatioRongRong.png Graphic file (type png)
+<use figures/pdf/AliceRatioRongRong.png>
+Package pdftex.def Info: figures/pdf/AliceRatioRongRong.png  used on input line
+ 39.
+(pdftex.def)             Requested size: 284.52756pt x 206.34904pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/pdf/EventRejectionMB.png, id=995, 1194.4625pt x 810.02625pt>
+File: figures/pdf/EventRejectionMB.png Graphic file (type png)
+<use figures/pdf/EventRejectionMB.png>
+Package pdftex.def Info: figures/pdf/EventRejectionMB.png  used on input line 4
+8.
+(pdftex.def)             Requested size: 187.89914pt x 127.41913pt.
+<figures/pdf/EventRejectionEGA.png, id=996, 1217.54875pt x 809.0225pt>
+File: figures/pdf/EventRejectionEGA.png Graphic file (type png)
+<use figures/pdf/EventRejectionEGA.png>
+Package pdftex.def Info: figures/pdf/EventRejectionEGA.png  used on input line 
+53.
+(pdftex.def)             Requested size: 230.18253pt x 152.9505pt.
+) [66 <./figures/pdf/ATLAS8TeVJet.png>] [67 <./figures/pdf/ATLAS8TeVJetRecaled.
+png> <./figures/pdf/AliceppRongRong.png>] [68 <./figures/pdf/AliceRatioRongRong
+.png> <./figures/pdf/EventRejectionMB.png> <./figures/pdf/EventRejectionEGA.png
+>]
+:<-
+[69
 
 
 
@@ -707,22 +1588,22 @@ igures/pdf/SysR04_TrkEff.png>]) [9]
 \tf@brf=\write4
 \openout4 = `my-dissertation.brf'.
 
- [11]
+ [70]
 Underfull \hbox (badness 1325) in paragraph at lines 118--118
 []\OT1/cmr/m/n/12 Jan Rak and Michael J. Tan-nen-baum.  \OT1/cmr/m/it/12 QCD in
  hard scat-ter-ing\OT1/cmr/m/n/12 , pages 214--
  []
 
-[12] [13] [14])
+[71] [72] [73])
 :<-
-[15] [16
+[74] [75
 
 
 ]
 :<+ back-matter/vita.tex
 \openout2 = `back-matter/vita.aux'.
 
-(./back-matter/vita.tex) [17
+(./back-matter/vita.tex) [76
 
 
 
@@ -735,14 +1616,27 @@ Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
-(./my-dissertation.aux (./chapters/chapter-5.aux) (./back-matter/vita.aux))
+(./my-dissertation.aux (./chapters/chapter-1.aux) (./chapters/chapter-2.aux)
+(./chapters/chapter-3.aux) (./chapters/chapter-4.aux) (./chapters/chapter-5.aux
+) (./chapters/chapter-6.aux) (./back-matter/vita.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
-Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 1A361A9C486BE6A5E18DD033965AD398;1920.
-Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
-(rerunfilecheck)             Checksum: F00EEA5B595D895FED159CD964E45A26;175.
 
+
+Package rerunfilecheck Warning: File `my-dissertation.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `my-dissertation.out':
+(rerunfilecheck)             Before: 38F097249B51FBDB00F5485CBD0C6EAD;4797
+(rerunfilecheck)             After:  A2E4792402C6C759E4822DCEC369D95D;4797.
+
+Package rerunfilecheck Warning: File `my-dissertation.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `my-dissertation.brf':
+(rerunfilecheck)             Before: D7B5369761F5C008D74C9F40367139E0;3318
+(rerunfilecheck)             After:  888D554265886FEA29EBAA389DFDAFA1;3318.
 
 LaTeX Warning: There were undefined references.
 
@@ -752,31 +1646,43 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 10479 strings out of 492616
- 160538 string characters out of 6129482
- 291998 words of memory out of 5000000
- 14089 multiletter control sequences out of 15000+600000
- 15954 words of font info for 63 fonts, out of 8000000 for 9000
+ 11151 strings out of 492616
+ 174836 string characters out of 6129482
+ 305178 words of memory out of 5000000
+ 14453 multiletter control sequences out of 15000+600000
+ 21619 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,100p,837b,603s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/
-texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
-e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive
-/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/
-2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on my-dissertation.pdf (19 pages, 340660 bytes).
+ 57i,12n,100p,2197b,599s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{figure.caption.65} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.75} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2019/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2019/texmf-
+dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on my-dissertation.pdf (78 pages, 11940824 bytes).
 PDF statistics:
- 371 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
- 119 named destinations out of 1000 (max. 500000)
- 245 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1252 PDF objects out of 1440 (max. 8388607)
+ 1027 compressed objects within 11 object streams
+ 326 named destinations out of 1000 (max. 500000)
+ 796 words of extra memory for PDF output out of 10000 (max. 10000000)
 

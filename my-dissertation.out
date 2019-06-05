@@ -4,25 +4,62 @@
 \BOOKMARK [1][-]{c.1}{Acknowledgments}{rootNode.0}% 4
 \BOOKMARK [1][-]{e.1}{Abstract}{rootNode.0}% 5
 \BOOKMARK [0][-]{f.0}{Table of Contents}{}% 6
-\BOOKMARK [0][-]{chapter.1}{1 Jet Results and Discussion}{}% 7
-\BOOKMARK [1][-]{section.1.1}{1.1 Raw Jet Spectra}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.2}{1.2 8 TeV Data Quality}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.3}{1.3 Event Selection}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.4}{1.4 Raw measurements}{chapter.1}% 11
-\BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 Raw Jet Momentum Spectra in pp Collisions}{section.1.4}% 12
-\BOOKMARK [2][-]{subsection.1.4.2}{1.4.2 Acceptance Correction}{section.1.4}% 13
-\BOOKMARK [1][-]{section.1.5}{1.5 Unfolding}{chapter.1}% 14
-\BOOKMARK [2][-]{subsection.1.5.1}{1.5.1 Corrections to particle Level}{section.1.5}% 15
-\BOOKMARK [2][-]{subsection.1.5.2}{1.5.2 Response Matrix}{section.1.5}% 16
-\BOOKMARK [2][-]{subsection.1.5.3}{1.5.3 Unfolded Spectra}{section.1.5}% 17
-\BOOKMARK [1][-]{section.1.6}{1.6 EMCal Triggered Data}{chapter.1}% 18
-\BOOKMARK [1][-]{section.1.7}{1.7 Systematic Uncertainties}{chapter.1}% 19
-\BOOKMARK [2][-]{subsection.1.7.1}{1.7.1 Systematic Uncertainty to Jet Energy Scale}{section.1.7}% 20
-\BOOKMARK [2][-]{subsection.1.7.2}{1.7.2 Systematic Uncertainty to Jet Yield}{section.1.7}% 21
-\BOOKMARK [2][-]{subsection.1.7.3}{1.7.3 Total Uncertainty}{section.1.7}% 22
-\BOOKMARK [1][-]{section.1.8}{1.8 Corrected pp jet cross section}{chapter.1}% 23
-\BOOKMARK [2][-]{subsection.1.8.1}{1.8.1 Comparisons to pQCD predictions}{section.1.8}% 24
-\BOOKMARK [2][-]{subsection.1.8.2}{1.8.2 Jet Cross Sections and Ratios}{section.1.8}% 25
-\BOOKMARK [0][-]{section*.13}{Bibliography}{}% 26
-\BOOKMARK [0][-]{section*.14}{Appendices}{}% 27
-\BOOKMARK [0][-]{section*.15}{Vita}{}% 28
+\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 7
+\BOOKMARK [0][-]{chapter.2}{2 Quantum Chromodynamics}{}% 8
+\BOOKMARK [1][-]{section.2.1}{2.1 The QCD Lagrangian}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{2.2 Jets}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Jet Production and the Factorization Theorem}{section.2.2}% 11
+\BOOKMARK [1][-]{section.2.3}{2.3 Jet Finding Algorithms}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Cone Algorithms}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Sequential/Recombination Algorithms}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 FastJet}{section.2.3}% 15
+\BOOKMARK [1][-]{section.2.4}{2.4 Monte-Carlo Generators}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 PYTHIA}{section.2.4}% 17
+\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 PHOJET}{section.2.4}% 18
+\BOOKMARK [1][-]{section.2.5}{2.5 The Quark-Gluon Plasma}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.5.1}{2.5.1 Nuclear Collisions}{section.2.5}% 20
+\BOOKMARK [2][-]{subsection.2.5.2}{2.5.2 Jets as a Probe of the QGP}{section.2.5}% 21
+\BOOKMARK [1][-]{section.2.6}{2.6 QGP in Proton-Proton Collisions?}{chapter.2}% 22
+\BOOKMARK [0][-]{chapter.3}{3 The LHC and ALICE}{}% 23
+\BOOKMARK [1][-]{section.3.1}{3.1 Overview of the LHC}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 LHC Operations}{section.3.1}% 25
+\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 LHC Accelerator Complex}{section.3.1}% 26
+\BOOKMARK [1][-]{section.3.2}{3.2 The ALICE Experiment}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 TZERO}{section.3.2}% 28
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 VZERO}{section.3.2}% 29
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Inner Tracking System}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.4}{3.2.4 Time Projection Chamber}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.5}{3.2.5 Electromagnetic Calorimeter}{section.3.2}% 32
+\BOOKMARK [0][-]{chapter.4}{4 The ALICE TPC Upgrade}{}% 33
+\BOOKMARK [1][-]{subsection.4.0.1}{4.0.1 Physics Motivation}{chapter.4}% 34
+\BOOKMARK [2][-]{subsection.4.0.2}{4.0.2 Gaseous Electron Multiplier Foils}{subsection.4.0.1}% 35
+\BOOKMARK [2][-]{subsection.4.0.3}{4.0.3 Research and Development}{subsection.4.0.1}% 36
+\BOOKMARK [2][-]{subsection.4.0.4}{4.0.4 Production of the Inner Readout Chambers in the U.S.}{subsection.4.0.1}% 37
+\BOOKMARK [2][-]{subsection.4.0.5}{4.0.5 GEM and Chamber Quality Assurance}{subsection.4.0.1}% 38
+\BOOKMARK [2][-]{subsection.4.0.6}{4.0.6 Outlook}{subsection.4.0.1}% 39
+\BOOKMARK [0][-]{chapter.5}{5 Jet Results and Discussion}{}% 40
+\BOOKMARK [1][-]{section.5.1}{5.1 Raw Jet Spectra}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.2}{5.2 8 TeV Data Quality}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.3}{5.3 Event Selection}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.4}{5.4 Raw measurements}{chapter.5}% 44
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Raw Jet Momentum Spectra in pp Collisions}{section.5.4}% 45
+\BOOKMARK [1][-]{section.5.5}{5.5 EMCal Triggered Data}{chapter.5}% 46
+\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Acceptance Correction}{section.5.5}% 47
+\BOOKMARK [1][-]{section.5.6}{5.6 Unfolding}{chapter.5}% 48
+\BOOKMARK [2][-]{subsection.5.6.1}{5.6.1 Response Matrix}{section.5.6}% 49
+\BOOKMARK [2][-]{subsection.5.6.2}{5.6.2 Corrections to Particle Level}{section.5.6}% 50
+\BOOKMARK [2][-]{subsection.5.6.3}{5.6.3 Unfolded MB Spectra}{section.5.6}% 51
+\BOOKMARK [2][-]{subsection.5.6.4}{5.6.4 Unfolded EMCal Triggered Spectra}{section.5.6}% 52
+\BOOKMARK [1][-]{section.5.7}{5.7 Systematic Uncertainties}{chapter.5}% 53
+\BOOKMARK [2][-]{subsection.5.7.1}{5.7.1 Systematic Uncertainty to Jet Energy Scale}{section.5.7}% 54
+\BOOKMARK [2][-]{subsection.5.7.2}{5.7.2 Systematic Uncertainty to Jet Yield}{section.5.7}% 55
+\BOOKMARK [2][-]{subsection.5.7.3}{5.7.3 Total Uncertainty}{section.5.7}% 56
+\BOOKMARK [1][-]{section.5.8}{5.8 Corrected pp jet cross section}{chapter.5}% 57
+\BOOKMARK [2][-]{subsection.5.8.1}{5.8.1 Comparisons to pQCD predictions}{section.5.8}% 58
+\BOOKMARK [2][-]{subsection.5.8.2}{5.8.2 Jet Cross Sections and Ratios}{section.5.8}% 59
+\BOOKMARK [0][-]{chapter.6}{6 Conclusion and Outlook}{}% 60
+\BOOKMARK [1][-]{section.6.1}{6.1 8 TeV Inclusive Jet Results from CMS and ATLAS}{chapter.6}% 61
+\BOOKMARK [1][-]{section.6.2}{6.2 Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}{chapter.6}% 62
+\BOOKMARK [0][-]{section*.76}{Bibliography}{}% 63
+\BOOKMARK [0][-]{section*.77}{Appendices}{}% 64
+\BOOKMARK [0][-]{section*.78}{Vita}{}% 65

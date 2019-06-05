@@ -96,6 +96,15 @@ The ALICE experiment is capable of two types of jet reconstruction, charged and 
 
 \subsection{Raw Jet Momentum Spectra in pp Collisions}
 
+\section{EMCal Triggered Data}
+
+In addition with the minimum bias data collected, the EMCal was used during the 8 TeV run in order to provided an enhanced data set that is preferential to hard processes.   The Level-1 trigger\cite{Bourrion:2010js} in the EMCal has a associated trigger, $\epsilon$, of 
+
+\begin{equation}
+	\epsilon = \frac{N^{Triggered}_{events}}{N^{MinBias}_{events}} \times \frac{d^{2} N_{Triggered}^{jet}}{d\eta \, dp_{T}} \Bigg/  \frac{d^{2} N_{MinBias}^{jet}}{d\eta \, dp_{T}} 
+\label{eq:xsecdef}
+\end{equation}
+
 \subsection{Acceptance Correction}
 Jet spectra, cross sections, and ratios of cross sections are reported over the full azimuth angle and psuedorapidity acceptance.  However, due to jets being constrained to the EMCal, a geometric factor is used to correct for the limited acceptance of the detector.  This thesis uses a maximum jet radius of 0.5 to help study the effects of wide angle radiation on jet fragmentation.  Heavy-ion use smaller jet radii, typically of 0.2, to help negate the high multiplicity background.  Due to these geometric corrections the centroid of a jet is constrained to,
 
@@ -136,11 +145,37 @@ For jets between R = 0.1 through R = 0.5 the following jet acceptance correction
 
 \section{Unfolding}
 
-The reconstructed jet $p_{T}$ has a number of detector effects `folded' into the measurement.  In order to have results which can be compared to theoretical calculations or between experiments these effects must be accounted and corrected.  `Unfolding' is the method by which these results are corrected by and it accounts for a number of effects including; tracking and momentum inefficencies associated with the tracking detectors, material loss in the detector, hadronic corrections in the EMCal, and gaps in the acceptance of the detector and dead regions.  In this analysis the response matrix is constructed by propagating the truth-level particle jets generated from a MC simulation through a simulation of the detector during the time period that the data taking occurred.  
+The reconstructed jet $p_{T}$ has a number of detector effects `folded' into the measurement.  These effects included such things as:
 
-\subsection{Corrections to particle Level}
+\begin{itemize}
+\item Tracking inefficiencies from the TPC and ITS.
+\item Missing jet energy components from long-lived particles, such as the $K^{0}_{L}$ and neutron, that are cut by the EMCal timing requirement.
+\item TPC track $p_{T}$ and EMCal cluster energy resolutions.
+\item Hadronic corrections to the EMCal cluster spectrum.
+\item Material loss in the detectors.
+\end{itemize}
 
-Unfolding was performed using the \verb+RooUnfold+\cite{Adye:2011gm} software package.  The response matrix was constructed by embedding the final state hadrons created from a PYTHIA generated event into a GEANT3 simulation of the ALICE detector calibrated for each of the 8 TeV periods.  Corrections are applied using the bin-by-bin\cite{Cowan:2002in} algorithm. 
+\noindent
+Unfolding is the method by which these detector effects are removed from the raw inclusive jet spectra and a `true' jet spectra may be obtained and compared with theoretical calculations or other experimental results.  In order to unfold a jet spectra it is necessary to generate a response matrix that simulates the described effects above, after the response matrix is generated a number of statistical approaches including, Bayesian, Singular Value Decomposition (SVD), or Bin-by-Bin, may be applied to unfold the raw jet spectra.  In order to generate the response matrix we embed a Pythia generated event into a GEANT3 simulation of the ALICE detector.  Due to the fact that the performance and efficiency of the ALICE detector may change between the data taking periods each simulation is `anchored' to a given LHC, these anchors contain all the hot and dead sectors for the subdetectors, along with their calibrated performance during that specified data taking.  Two Monte Carlo data sets were produced with the MB trigger for the full 8 TeV run, the first was a Pythia generator using the Monesh-2013 tune and the second was a MB tune of the PHOjet Monte Carlo package.  Both data sets were explored for this thesis and it was decided that the final corrected spectra would be obtained via unfolding with the Pythia MC data set.  The magnitude of any one of the effects unfolding is supposed to account for is not expected to be very large, but combined may be significant, thus unfolding is an important step in this analysis.
+
+\subsection{Response Matrix}
+Given a truth-level particle jet $p_{T}$ we wish to reconstruct that jet's $p_{T}$ at the detector-level.  The particle-level pythia jets are constructed from the primary particles generated via Pythia while excluding any daughter decay particles in order to avoid double counting.  In addition the tracking efficiency in Pythia is known to deviate from nature.  This is due to Pythia under predicting the production of strange quarks.  
+Constructing the response matrix in this case is calculated on a jet-by-jet basis.  The particle-level jet centroid ($\phi_{part}$,$\eta_{part}$)is matched to the detector-level jet via a constrain on the displaced distance between the two jet centroids in ($\phi$,$\eta$).  This distance was constrained to: $\Delta  R = \sqrt{(\phi_{part} - \phi_{det})^{2} + (\eta_{part} - \eta_{det})^{2}} \leq 0.25 \; $.  Once a jet is matched at the detector level to a jet generated from the particle level the response matrix is incremented by jet $p_{T}$ at both the detector and Monte Carlo levels.  The response matrix is generated with a fine binning with a width of 1 GeV per bin. 
+
+\begin{figure*}[t!]
+$\begin{array}{rl}
+    \includegraphics[width=0.5\textwidth]{responseR02} &
+    \includegraphics[width=0.5\textwidth]{responseR03}\\
+    \multicolumn{2}{c}{\includegraphics[width=0.5\textwidth]{responseR04}}
+\end{array}$
+\caption[Response Matrices for R = 0.2, R=0.3, and R = 0.4 jets.]{\label{fig:response}Response Matrices for R = 0.2, R=0.3, and R = 0.4 jets.}
+\end{figure*}
+
+Figure \ref{fig:response} shows the response matrices for the R = 0.2 (top left), R = 0.3 (top right), and R = 0.4 (bottom) jets generated with the prescribed manner.  The response matrices display a linear relationship below 50 GeV on both axis and above ~ 100 GeV the matrices are statistics starved.  This is primarily due to the Monte Carlo Pythia and PhoJet data sets generated for the 8 TeV pp run did not model the high-$p_{T}$ triggers associated with the EMCal.  The particle jet finders configured for the response matrices allowed for jet finding down to a 100 MeV jet candidate at the particle level with no constraints on the minimum particle momentum or energy for a constituent.  The detector level jet finders were configured in the same manner as the jet finders configured for the raw jet spectra measurement.  
+
+\subsection{Corrections to Particle Level}
+
+Unfolding was performed using the \verb+RooUnfold+\cite{Adye:2011gm} software package.  Corrections are applied using the bin-by-bin\cite{Cowan:2002in} algorithm. 
 
 \begin{equation}
 C_{MC} \big( p_{T}^{low} : p_{T}^{high} \big) =  \frac{  \int^{p_{T}^{high}}_{p_{T}^{low}} dp_{T} \; \frac{dF^{uncorr}_{meas}}{dp_{T}} \times \frac{d^{2}N^{particle}_{MC}/d\eta \, dp_{T}}{d^{2}N^{detector}_{MC}/d\eta \, dp_{T}}  } { \int^{p_{T}^{high}}_{p_{T}^{low}} dp_{T} \; \frac{dF^{uncorr}_{meas}}{dp_{T}} }
@@ -148,22 +183,23 @@ C_{MC} \big( p_{T}^{low} : p_{T}^{high} \big) =  \frac{  \int^{p_{T}^{high}}_{p_
 \end{equation}
 
 \noindent
-where $d^{2}N^{particle}_{MC}/dp_{T} \, d\eta$ is the PYTHIA level inclusive jet spectra, $d^{2}N^{detector}_{MC}/dp_{T} \, d\eta$ is the GEANT 3 level inclusive jet spectra, $dF^{uncorr}_{meas} / dp_{T}$ is a weight function which minimizes the dependence on the two simulation spectra shapes, finally $p_{T}^{low}$ and $p_{T}^{low}$ are the lower and upper bin limits.  
-
-\subsection{Response Matrix}
-The detector response is calculated on a jet-by-jet basis.  The particle-level jet centroid ($\phi_{part}$,$\eta_{part}$)is matched to the detector-level jet via a constrain on the displaced distance between the two jet centroids in ($\phi$,$\eta$).  This distance was constrained to: $\Delta  R = \sqrt{(\phi_{part} - \phi_{det})^{2} + (\eta_{part} - \eta_{det})^{2}} \leq 0.25 \; $ for R = 0.3 to R = 0.5 jets and $\Delta R \leq 0.0 \;$ for R = 0.1 and R = 0.2 jets.  The resulting response matrices are shown in
+where $d^{2}N^{particle}_{MC}/dp_{T} \, d\eta$ is the PYTHIA level inclusive jet spectra, $d^{2}N^{detector}_{MC}/dp_{T} \, d\eta$ is the GEANT 3 level inclusive jet spectra, $dF^{uncorr}_{meas} / dp_{T}$ is a weight function which minimizes the dependence on the two simulation spectra shapes, finally $p_{T}^{low}$ and $p_{T}^{low}$ are the lower and upper bin limits.  Due to the limited statistics derived from the Monte Carlos available the unfolding procedure was stable only in aunfolding the truth level jet spectra for the range: $p_{T,jet} \epsilon \;$ [10 GeV, 120 GeV] for both the raw Min Bias and Emcal triggered data sets.  Due to the  the final truth value for the jet spectra will be reported in this range.
 
 
-\subsection{Unfolded Spectra}
+\subsection{Unfolded MB Spectra}
 
-\section{EMCal Triggered Data}
+\begin{figure}[h]
+\includegraphics[width=17cm]{RawandUnfoldedSpectraMBR03}
+\centering
+\caption{Unfolded jet spectra with fine binning for R = 0.3}
+\label{fig:Unfoldfine}
+\end{figure}
 
-In addition with the minimum bias data collected, the EMCal was used during the 8 TeV run in order to provided an enhanced data set that is preferential to hard processes.   The Level-1 trigger\cite{Bourrion:2010js} in the EMCal has a associated trigger, $\epsilon$, of 
+Figure \ref{fig:Unfoldfine} shows an example of the output from the bin-by-bin unfodling with the fine binning for R = 0.3 jets.  It should be noted that at low-$p_{T}$ it was observed that unfolding increased the yield of the spectra while at high-$p_{T} \geq \,$ 40 GeV the yield was decreased for all jet radii in this analysis.  This is most likely due to the lack of statistics in the response matrix.
 
-\begin{equation}
-	\epsilon = \frac{N^{Triggered}_{events}}{N^{MinBias}_{events}} \times \frac{d^{2} N_{Triggered}^{jet}}{d\eta \, dp_{T}} \Bigg/  \frac{d^{2} N_{MinBias}^{jet}}{d\eta \, dp_{T}} 
-\label{eq:xsecdef}
-\end{equation}
+
+\subsection{Unfolded EMCal Triggered Spectra}
+
 
 \section{Systematic Uncertainties}
 
@@ -187,8 +223,11 @@ $\begin{array}{rl}
 \end{figure*}
 
 \noindent
-Figure \ref{fig:trkeff}
+Figure \ref{fig:trkeff} shows the systematical uncertainties for R = 0.2 (top left), R = 0.3 (top right), and R = 0.4 (bottom) jets.   
 
+\subsubsection{Hadronic Correction}
+
+\subsubsection{EMCal Clusterization Algorithm}
 \subsection{Systematic Uncertainty to Jet Yield}
 
 
@@ -204,6 +243,8 @@ The luminosity of a hadronic collider, $\mathscr{L}$, is given by the expression
 \label{eq:xlumdef}
 \end{equation}
 
+\noindent
+where R is the interaction rate and $\sigma$ is the visible cross section.  Due to the fact that we only measure events within a 10 cm window within the primary vertex region we must scale the total luminosity to that which is delievered within the primary vertex region of the ALICE experiment.  This scale factor is determined by dividing the total number of MB events to those accepted within the 10 cm window.  $N^{tot}_{MB} / N^{10 cm vertex}_{MB}$ = 1.024 from the acceptance criteria held in this analysis.
 The luminosity along with its uncertainty were determined during a a special Van der Meer scan run in April of 2012\cite{ALICE-PUBLIC-2017-002}.  The total systematic uncertainty for the minimum bias (MB) trigger were obtained by measuring the visible cross section using the T0 and V0 detectors.  The MB trigger was defined as V0AND which required a hit in both tjhe V0A and V0C.  The cross section was reported as being a combined average for MB with the V0AND as, 
 
 \begin{equation}
@@ -211,10 +252,33 @@ The luminosity along with its uncertainty were determined during a a special Van
 \label{eq:xlumdef}
 \end{equation}
 
+\noindent
 with a combined systematic uncertainty of 2.19\% on the visible cross section and 2.60\% on the luminosity. 
 
 
 \subsection{Total Uncertainty}
+
+A summary of the total systematic errors used in the final analysis.
+
+\begin{tabular}{ |p{5cm}||p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{Systematic Errors} \\
+ \hline
+ Systematic &R = 0.2 Jets & R = 0.3 Jets& R = 0.4 Jets\\
+ \hline
+Sensitivity to Clusterization   & AF    &AFG&   004\\
+Hadronic Correction&   AX  & ALA   &248\\
+Tracking Efficency &AL & ALB&  008\\
+Sensitivity to Unfolding&DZ & DZA&  012\\
+Momentum Resolution&   AS  & ASM&016\\
+Energy Resolution& AND   &020 & 02\\
+ Angola& AO  & AGO&024\\
+ \hline
+
+\end{tabular}
+\noindent
+
+The systematics from the yield and JES are added in quadrater together and this is combined in quardrater with the statistical errors.
 
 \section{Corrected pp jet cross section}
 
