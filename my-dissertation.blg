@@ -1,59 +1,84 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: my-dissertation.aux
+A level-1 auxiliary file: front-matter/dedication.aux
+A level-1 auxiliary file: front-matter/acknowledgments.aux
+A level-1 auxiliary file: front-matter/abstract.aux
+A level-1 auxiliary file: front-matter/nomenclature.aux
+A level-1 auxiliary file: front-matter.aux
+A level-1 auxiliary file: chapters/chapter-1.aux
 A level-1 auxiliary file: chapters/chapter-2.aux
+A level-1 auxiliary file: chapters/chapter-3.aux
+A level-1 auxiliary file: chapters/chapter-4.aux
 A level-1 auxiliary file: chapters/chapter-5.aux
 A level-1 auxiliary file: chapters/chapter-6.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-dissertation.bib
 Warning--entry type for "JetPic" isn't style-file defined
---line 319 of file references-dissertation.bib
+--line 350 of file references-dissertation.bib
+Warning--entry type for "Santimaria:1690550" isn't style-file defined
+--line 1373 of file references-dissertation.bib
+Warning--I didn't find a database entry for "Tangwancharoen:2016dq"
+Warning--I didn't find a database entry for "Pfeiffer:2628608"
+Warning--empty journal in Mobs:2197559
+Warning--empty journal in Abeysekara:2010ze
+Warning--empty booktitle in Dick2017QM
+Warning--empty author in CERN-LHCC-2013-020
+Warning--empty institution in CERN-LHCC-2013-020
+Warning--empty author in CERN-LHCC-2015-002
+Warning--empty institution in CERN-LHCC-2015-002
+Warning--empty journal in CMS:2013kda
 Warning--empty journal in Panofsky:871460
 Warning--empty journal in Huth:217490
 Warning--there's a number but no volume in Huth:217490
+Warning--empty journal in Gligorov:2018vkc
+Warning--empty journal in Apollinari:2015bam
+Warning--empty institution in Abelev:1625842
+Warning--empty author in CERN-LHCC-2015-001
+Warning--empty institution in CERN-LHCC-2015-001
+Warning--empty institution in Buncic:2011297
 Warning--empty author in ALICE-PUBLIC-2017-002
 Warning--empty journal in ALICE-PUBLIC-2017-002
-Warning--empty journal in CMS:2013kda
-You've used 50 entries,
+You've used 107 entries,
             1791 wiz_defined-function locations,
-            803 strings with 12977 characters,
-and the built_in function-call counts, 11453 in all, are:
-= -- 1007
-> -- 449
-< -- 5
-+ -- 174
-- -- 124
-* -- 781
-:= -- 1822
-add.period$ -- 157
-call.type$ -- 50
-change.case$ -- 47
+            1152 strings with 23107 characters,
+and the built_in function-call counts, 23382 in all, are:
+= -- 2022
+> -- 943
+< -- 14
++ -- 364
+- -- 257
+* -- 1577
+:= -- 3754
+add.period$ -- 331
+call.type$ -- 107
+change.case$ -- 104
 chr.to.int$ -- 0
-cite$ -- 56
-duplicate$ -- 503
-empty$ -- 1167
-format.name$ -- 124
-if$ -- 2572
+cite$ -- 126
+duplicate$ -- 1035
+empty$ -- 2396
+format.name$ -- 257
+if$ -- 5227
 int.to.chr$ -- 0
-int.to.str$ -- 50
-missing$ -- 52
-newline$ -- 259
-num.names$ -- 48
-pop$ -- 104
+int.to.str$ -- 107
+missing$ -- 101
+newline$ -- 546
+num.names$ -- 102
+pop$ -- 231
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 216
+skip$ -- 439
 stack$ -- 0
-substring$ -- 873
-swap$ -- 92
-text.length$ -- 5
+substring$ -- 1655
+swap$ -- 173
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 6
-while$ -- 101
-width$ -- 52
-write$ -- 556
-(There were 7 warnings)
+warning$ -- 19
+while$ -- 199
+width$ -- 110
+write$ -- 1171
+(There were 23 warnings)

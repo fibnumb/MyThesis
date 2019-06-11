@@ -32,33 +32,34 @@ where $\sigma(p_{T};R_{1})$ refers to the doubly differential cross section (Equ
 
 \section{Raw Jet Spectra}
 
-This thesis reports inclusive jet results for radii between 0.1 and 0.5.  Furthermore, jet results for radii R = 0.2 and R = 0.4 will be presented in the body of this chapter while results from the other radii will be limited to the appendix.  Figure shows the raw (uncorrected) $p_{T}$ spectra for inclusive jets from both MB and EMCal triggered data.  It is also evident from Figure that the Emcla triggered data extends the $p_{T}$ reach 
+This thesis measured inclusive jet results for radii between 0.1 and 0.5.  Furthermore, jet results for radii R = 0.2 to R = 0.4 will be presented in the body of this chapter while results from the other jet radii are still being investigated.  Figures \ref{fig:rawjetR02} \ref{fig:rawjetR03} \ref{fig:rawjetR04} show the raw (uncorrected) $p_{T}$ spectra for inclusive jets from both MB and EMCal triggered data.  It is also evident from Figures that the EMCal triggered data extends the $p_{T}$ reach of the spectra.
 
+\begin{figure}[h]
+\includegraphics[width=10cm]{RawR02JetSpectra}
+\centering
+\caption{Raw inclusive R = 0.2 jet spectra from the 8 TeV Min Bias and EMCal triggered data}
+\label{fig:rawjetR02}
+\end{figure}
+\begin{figure}[h]
+\includegraphics[width=10cm]{RawR03JetSpectra}
+\centering
+\caption{Raw inclusive R = 0.3 jet spectra from the 8 TeV Min Bias and EMCal triggered data}
+\label{fig:rawjetR03}
+\end{figure}
+\begin{figure}[h]
+\includegraphics[width=10cm]{RawR04JetSpectra}
+\centering
+\caption{Raw inclusive R = 0.4 jet spectra from the 8 TeV Min Bias and EMCal triggered data}
+\label{fig:rawjetR04}
+\end{figure}
 
+\noindent
+The next sections of this chapter will discuss the QA implemented to the data, trigger scaling, unfolding, and other corrections 
 
 \section{8 TeV Data Quality}
 ALICE is a state-of-the-art experiment with excellent tracking and particle identification capabilities as discussed in Chapter \ref{ch:alice}.  However, just like any real world experiment, it contains a number of inefficiencies and imperfections.  This means that the data collected during the 8 TeV pp collision must be examined and any inaccuracies in the data must be removed before hard physics conclusions may be reached.  Data may be compromised at both the event-level, the experiment erroneously recorded something as an event, or at the constituent-level, one of the subdetectors mismeasured a feature of a particle, and these outliers must be accounted for and removed 
 
 \section{Event Selection}
-
-For an event to be selected into a physics analysis it must pass a number of quality control tests.  For example, the LHC must have be in a state of stable beams, cosmic rays must be excluded by only accepting tracks that originate from a vertex inside the detector, and the relevant detectors for a given analysis must be functioning as intended.  Event selction and QA is implemented via a centralized class, AliEventCuts, within the AliRoot framework.  This class contains a number of corrections including:
-
-\begin{itemize}
-  \item 
-  \item Another entry in the list
-\end{itemize}
-
-Further more the class AliAnalysisTaskEmcalCorrection within the AliRoot framework performs a number of corrections to the tower-level within phyasics analysis dependent on the EMCal.  These corrections include:
-
-\begin{itemize}
-  \item Energy calibration:  Remove double counting due to the amount of energy typically deposited by a Hadron.
-  \item Bad Channel Map: Remove both dead and hot towers from the EMCal clusterize based on an iterative average energy per occupancy algoritham
-  \item Time Calibration:  Remove slow particles, such as neutrons, which readout to the EMCal after the event has been recorded.
-   \item Exotics Correction:  Remove inefficiencies due to how a particle interacted with the EMCal.
-\end{itemize}\
-
-After the above cuts are performed on EMCal towers the cells compromising the towers are clustered together using a clusterization algoritham 
-
 
 
 \begin{figure}[h]
@@ -91,9 +92,47 @@ During the 8 TeV data collection period approximately 180 million minimum bias e
 \end{table}
 
 Approximately, 15\% of the data sampled is unusable due to malfunctions in TPC chambers, EMCal super modules, the electronics for the EMCal or TPC, and   
-\section{Raw measurements}
-The ALICE experiment is capable of two types of jet reconstruction, charged and full jets.  Charged jets use information from the charged particle tracking detectors, such as the ITS and TPC, in conjunction with a jet finding algorithm to identify jets.  Full jets implement a similar procedure but also incorporates the EMCal in order to 
 
+For an event to be selected into a physics analysis it must pass a number of quality control tests.  For example, the LHC must have be in a state of stable beams, cosmic rays must be excluded by only accepting tracks that originate from a vertex inside the detector, and the relevant detectors for a given analysis must be functioning as intended.  Event selection and QA is implemented via a centralized class, AliEventCuts, within the AliRoot framework.  This class contains a number of corrections including:
+
+\begin{itemize}
+  \item The event has a primary vertex reconstructed.
+  \item The primary vertex occurs within a 10 cm window of the primary interaction point.
+  \item The vertex resolution must be below 0.25 cm.
+  \item The event passes basic pile-up checks based on the V0 and T0 signals.
+\end{itemize}
+
+\noindent
+A summary of the rejection reasons at the event level is summarized in Figure \ref{fig:eventqa}.
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{RejectionReasons}
+\centering
+\caption{Min Bias event rejection summary.}
+\label{fig:eventqa}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{zvertex}
+\centering
+\caption{Vertex displacement from primary interaction point for accepted Min Bias events.}
+\label{fig:vertrec}
+\end{figure}
+
+\noindent 
+Figure \ref{fig:vertrec} shows the reconstructed vertex for the accepted Min Bias events.  We see that the vertex distribution peaks at the primary interaction point as expected.  It should also be noted that a similar set of event QA was implemented to the EMCal triggered data \textit{(not shown)} and that the results were consistant with the Min Bias data.
+
+\subsection{EMCal Cluster Selection}
+Corrections are performed on EMCal cells including; removing hot and dead towers (bad channels) based on the average occupancy and energy of the towers, timing calibrations in order to remove slow particles such as $K_{0}^{L}$ and \textit{n}, and a energy calibration is implemented based on the $\pi^{0}$ mass.  After these corrections are applied to the towers are grouped together into clusters using the v2 algorithm.  The v2 algorithm has a minimum tower seed, $E_{seed} = \,$ 300 MeV, after which all adjacent towers with a minnimum energy, $E_{cell} \geq \,$ 100 MeV, are iteratively added until a local minimum is reached.  The cluster energy is the sum of the seed and grouped neighbor tower energies.   
+
+\begin{figure}[h]
+\includegraphics[width=14cm]{BadChannelMap}
+\centering
+\caption{EMCal cell occupancy after bad channels removed.}
+\label{fig:badchannel}
+\end{figure}
+
+\subsection{TPC Track Selection}
 \subsection{Raw Jet Momentum Spectra in pp Collisions}
 
 \section{EMCal Triggered Data}
@@ -186,20 +225,82 @@ C_{MC} \big( p_{T}^{low} : p_{T}^{high} \big) =  \frac{  \int^{p_{T}^{high}}_{p_
 where $d^{2}N^{particle}_{MC}/dp_{T} \, d\eta$ is the PYTHIA level inclusive jet spectra, $d^{2}N^{detector}_{MC}/dp_{T} \, d\eta$ is the GEANT 3 level inclusive jet spectra, $dF^{uncorr}_{meas} / dp_{T}$ is a weight function which minimizes the dependence on the two simulation spectra shapes, finally $p_{T}^{low}$ and $p_{T}^{low}$ are the lower and upper bin limits.  Due to the limited statistics derived from the Monte Carlos available the unfolding procedure was stable only in aunfolding the truth level jet spectra for the range: $p_{T,jet} \epsilon \;$ [10 GeV, 120 GeV] for both the raw Min Bias and Emcal triggered data sets.  Due to the  the final truth value for the jet spectra will be reported in this range.
 
 
+
 \subsection{Unfolded MB Spectra}
 
 \begin{figure}[h]
-\includegraphics[width=17cm]{RawandUnfoldedSpectraMBR03}
+\includegraphics[width=13cm]{RawandUnfoldedSpectraMBR03}
 \centering
 \caption{Unfolded jet spectra with fine binning for R = 0.3}
 \label{fig:Unfoldfine}
 \end{figure}
 
-Figure \ref{fig:Unfoldfine} shows an example of the output from the bin-by-bin unfodling with the fine binning for R = 0.3 jets.  It should be noted that at low-$p_{T}$ it was observed that unfolding increased the yield of the spectra while at high-$p_{T} \geq \,$ 40 GeV the yield was decreased for all jet radii in this analysis.  This is most likely due to the lack of statistics in the response matrix.
+Figure \ref{fig:Unfoldfine} shows an example of the output from the bin-by-bin unfodling with the fine binning for R = 0.3 jets.  It should be noted that at low-$p_{T}$ it was observed that unfolding increased the yield of the spectra while at high-$p_{T} \geq \,$ 40 GeV the yield was decreased for all jet radii in this analysis.  This is most likely due to the lack of statistics in the response matrix.  Once the bin-by-bin unfolding has been performed for the fine binned spectra the output along with the bin-by-bin correction factors ar rebinned using a variable binning between 10 GeV and 120 GeV.
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{UnfoldedR02MinBias}
+\centering
+\caption{Unfolded Min Bias R = 0.2 jet spectra with corrections factors using a variable binning.}
+\label{fig:UnfoldvarR02}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{UnfoldedR03MinBias}
+\centering
+\caption{Unfolded Min Bias R = 0.3 jet spectra with corrections factors using a variable binning.}
+\label{fig:UnfoldvarR03}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{UnfoldedR04MinBias}
+\centering
+\caption{Unfolded Min Bias R = 0.4 jet spectra with corrections factors using a variable binning.}
+\label{fig:UnfoldvarR04}
+\end{figure}
 
 
 \subsection{Unfolded EMCal Triggered Spectra}
+The unfolding procedure is repeated again for the EMCal triggered jet spectra.  The response matrix from the Min Bias sample is used for the bin-by-bin unfolding and performed using a fine binning.  The detector level and particle level jets are configured in the same manner as above and the output from the unfolded triggered specta are reported after rebinning to a variable size over the same kinematic range as the Min Bias sample.
 
+\begin{figure}[h]
+\includegraphics[width=10cm]{UnfoldedR02EGAtrigger}
+\centering
+\caption{Unfolded EMCal triggered R = 0.2 jet spectra with corrections factors using a variable binning.}
+\label{fig:UnfoldvarR02EGA}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{UnfoldedR03EGAtrigger}
+\centering
+\caption{Unfolded EMCal triggered R = 0.3 jet spectra with corrections factors using a variable binning.}
+\label{fig:UnfoldvarR03EGA}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{UnfoldedR04EGAtrigger}
+\centering
+\caption{Unfolded EMCal triggered R = 0.4 jet spectra with corrections factors using a variable binning.}
+\label{fig:UnfoldvarR04EGA}
+\end{figure}
+
+\noindent
+Due to the limitations on the response matrix the bin-by-bin unfolding of the EMCal triggered data was only stable up to 120 GeV.  It should be noted that the hump in the EMCal jet spectra is due to the firing threshold of the trigger.  The unfolded Emcal jet spectra was used to estimate the ratio the the jet yields between the Min Bias and triggered data samples, from this point the trigger scaling was calculated.  Due to the lack of a trigger modeled with the 8 TeV Monte Carlo productions the inability to extend the kinematic range of the jet spectras beyond 120 GeV presents a missed oppurtunity in terms of the recorded data from the 8 TeV runs.  In order to address this issue a new Monte Carlo production will need to be requested from the ALICE collaboration.
+
+\subsection{Jet Reconstruction and Matching Efficiency}
+In order to quantify the inefficiencies due to unfolding along with inefficencies in the ALICE experiment in reconstructing jets we quantify the jet reconstruction efficiency, $\epsilon_{reco} (p_{T, jet})$, and the jet matching efficiency, $\epsilon_{match} (p_{T, jet})$.
+
+\begin{equation}
+ \epsilon_{reco} (p_{T, jet}) = \frac{N_{reco}(p_{T, jet}) }{N_{Truth} (p_{T, jet})}
+\label{eq:jetrecoeff}
+\end{equation}
+
+\begin{equation}
+ \epsilon_{match} (p_{T, jet}) = \frac{N_{match}(p_{T, jet}) }{N_{Truth}(p_{T, jet})}
+\label{eq:jetmatchoeff}
+\end{equation}
+
+\noindent 
+where $N_{reco} (p_{T, jet})$ is the reconstructed jet yield at the detector level per $p_{T}$ bin, $N_{match}(p_{T, jet})$ is the reconstructed jet at the detector level that was matched to a particle level jet per $p_{T}$ bin, and $N_{truth} (p_{T, jet})$ is the truth-level jet yield from the Pythia embedded event per $p_{T}$ bin.  These quantities 
 
 \section{Systematic Uncertainties}
 
