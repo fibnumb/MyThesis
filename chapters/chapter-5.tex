@@ -3,7 +3,7 @@
 Beginning in March of 2012, the LHC began seven months of pp collisions at $\sqrt{s} = \,$ 8 TeV.  The jet cross sections and ratios of the cross sections for jets of different radii offers a unique perspective on the pQCD effects of hadronization at this new energy frontier.  Due to the expectation that no QGP is formed in a pp collision these measurements serve as a baseline for separating phenomena associated with the QGP in heavy-ion collisions.  In order to measure the jet cross section the following formula is used,
 
 \begin{equation}
-	\frac{d^{2} \sigma^{jet}}{d\eta \, dp_{T}} = \frac{A_{trigger}}{\epsilon_{trigger}(p_{T})} \times C_{MC} \times \frac{1}{A(p_{T}) } \times \frac{1}{\mathscr{L}_{int}} \times \frac{dN^{jet}}{dp_{T} \, d\eta}
+	\frac{d^{2} \sigma^{jet}}{d\eta \, dp_{T}} = \frac{A_{trigger}}{\epsilon_{trigger}(p_{T})} \times C_{MC} \times \frac{1}{A(p_{T}) } \times \frac{1}{\mathscr{L}_{int}} \times \frac{dN^{2}_{jet}}{dp_{T} \, d\eta}
 \label{eq:xsecdef}
 \end{equation}
 
@@ -15,7 +15,7 @@ where,
   \item $C_{MC}$ is a correction factor due to detector effects and it allows for comparisons between the ALICE experiment to other experiments or theoretical calculations.  Unfolding is used to determine this factor.
   \item $\mathscr{L}_{int}$ is the integrated luminosity during the period when the data was recorded.
   \item $A(p_{T})$ is the geometrical detector acceptance.
-  \item $\frac{dN^{jet}}{dp_{T} \, d\eta}$ is the inclusive jet momentum spectra.
+  \item $\frac{dN^{2}_{jet}}{dp_{T} \, d\eta}$ is the inclusive jet momentum spectra.
   
 \end{itemize}
 
@@ -122,7 +122,7 @@ A summary of the rejection reasons at the event level is summarized in Figure \r
 \noindent 
 Figure \ref{fig:vertrec} shows the reconstructed vertex for the accepted Min Bias events.  We see that the vertex distribution peaks at the primary interaction point as expected.  It should also be noted that a similar set of event QA was implemented to the EMCal triggered data \textit{(not shown)} and that the results were consistant with the Min Bias data.
 
-\subsection{EMCal Cluster Selection}
+\section{EMCal Cluster Selection}
 Corrections are performed on EMCal cells including; removing hot and dead towers (bad channels) based on the average occupancy and energy of the towers, calibrations to cell timing caused by the physical layout of the EMCal (such as differences in cabling length), and a energy calibration is implemented based on the $\pi^{0}$ mass.  After these corrections are applied to the towers are grouped together into clusters using the v2 algorithm.  The v2 algorithm has a minimum tower seed, $E_{seed} = \,$ 300 MeV, after which all adjacent towers with a minimum energy, $E_{cell} \geq \,$ 100 MeV, are iteratively added until a local minimum is reached.  The cluster energy is the sum of the seed and grouped neighbor tower energies.   
 
 \begin{figure}[h]
@@ -132,12 +132,6 @@ Corrections are performed on EMCal cells including; removing hot and dead towers
 \label{fig:badchannel}
 \end{figure}
 
-\begin{figure}[h]
-\includegraphics[width=14cm]{timming}
-\centering
-\caption{EMCal cell occupancy after bad channels removed.}
-\label{fig:EMCaltime}
-\end{figure}
 
 \noindent
 Figure \ref{fig:badchannel} shows the bad channel map after removing bad towers, the $\phi$ distribution is segmented into 5 parts representing the five super modules of the EMCal.  After the cells are clustered together the clusters are corrected for exotics.  This correction is performed by cutting all clusters with a $F_{cross} \geq \,$ 0.97, where
@@ -148,10 +142,53 @@ F_{cross} = 1 - \frac{ E_{cross} }{ E_{cell} },
 \end{equation}
 
 \noindent
- 
-\subsection{TPC Track Selection}
+$E_{cross}$ is the sum of the four cells sharing a full edge with the leading cell.  The main source of exotic clusters in the EMCal is due to a hadron hitting the Avalanche Photodiode (APD) in a tower.  This will concentrate the energy of the cluster into a single tower while the adjacent towers will contain only a small fraction of the cluster energy.  These clusters are removed before jet finding occurs as they are not part of the jet energy.
 
-Tracks are reconstructed in the TPC using a Kalman filtering which helps alleviate any corrections needed due to multiple scatterings, dead sectors, etc.  Jet finding was performed using `hybrid' tracks.  Hybrid tracks consist of two track sets the first being all the tracks with at least one hit in the SPD (Global) and the second set being all tracks that can be costrained to the primary vertex (Complimentary).  For this analysis, the minimal $p_{T, track}$ is 150 MeV/c and the track must be constrained to: - 0.9 $\leq \eta \leq$ 0.9 and 0 $\leq \phi \leq$ 2$\pi$, shown in Figure \ref{fig:Hybridtracketaphi}.
+The EMCal is optimized to measure the energy of electrons and photons as they tend to fully shower inside the EMCal structure.  Hadrons are detected by the EMCal but will only shower a fraction of their intrinsic energy.  A hadronic correction is performed in order to account for this missing energy due to the partial hadron shower.  Charged tracks from the outer layer of the TPC are propagated to the EMCal and the centroids of the clusters and tracks are matched together.  Figure \ref{fig:EMChadetaphi} shows the distance between the centroid of a cluster in the EMCal to the nearest track propageted from the TPC.  Hadrons are identified by requiring the matched distance to be, $\sqrt{ \Delta\phi^{2} + \Delta\eta^{2} } \leq \,$ 0.015, which is within one EMCal tower distance.
+
+\begin{figure}[h]
+\includegraphics[width=12cm]{hadronetaphi}
+\centering
+\caption{Matched track-cluster distance.}
+\label{fig:EMChadetaphi}
+\end{figure}
+
+\noindent
+Corrections for the double counting from hadrons is based on correcting the EMCal cluster energy by a weight function,
+
+\begin{equation}
+E_{corr} = E_{clust} - f_{sub} \times \sum p ,
+\label{eq:HadCorr}
+\end{equation}
+
+\noindent
+where $\sum p$ is the magnitude of the 3-mommentum of the hadron and $f_{sub} = 1$ is the nominal value for the weight.  If $E_{corr} \leq 0$ the cluster is removed, this may be caused by cluster pile-up and only accounts for a small fraction of the clusters.  In order for a cluester to be accepted $E_{corr} \geq \,$ 300 MeV was required.
+
+A final cut was performed on the cluster time.  
+\begin{figure}[h]
+\includegraphics[width=12cm]{timming}
+\centering
+\caption{EMCal cluster time distribution before cuts.}
+\label{fig:EMCaltime}
+\end{figure}
+
+\noindent
+Cutting on the cluster time is done in order to readout only the particles created from an event and to limit the contaimination due to slower particles from previous events.  The main source of the slow moving particles are neutrons and $K_{L}^{0}$ and this analysis limits cluster time to $t_{clus} \epsilon \,$ [-50 ns, 100 ns].
+
+
+\begin{figure}[h]
+\includegraphics[width=12cm]{Eclusfinal}
+\centering
+\caption{Corrected EMCal cluster yield.}
+\label{fig:EMCalfinal}
+\end{figure}
+\newpage
+
+Figure {fig:EMCalfinal} shows the final cluster energy distribution with all the cuts and corrections previously discussed applied and makes up the set of clusters over which the jet finding was performed.  The same cuts and QA was applied to the EMCal triggered data.
+ 
+\section{TPC Track Selection}
+
+Tracks are reconstructed in the TPC using a Kalman filtering which helps alleviate any corrections needed due to multiple scatterings, dead sectors, etc.  Jet finding was performed using `hybrid' tracks.  Hybrid tracks consist of two track sets the first being all the tracks with at least one hit in the SPD (Global) and the second set being all tracks that can be costrained to the primary vertex (Complimentary).  For this analysis, the minimal $p_{T, track}$ is 150 MeV/c and the track must be constrained to: - 0.9 $\leq \eta \leq$ 0.9 and 0 $\leq \phi \leq$ 2$\pi$, shown in Figure \ref{fig:Hybridtracketaphi}.  The spatial distributions of the hybrid tracks remain relatively flat as expected in the 8 TeV data set.
 
 \begin{figure}%
     \centering
@@ -162,6 +199,7 @@ Tracks are reconstructed in the TPC using a Kalman filtering which helps allevia
     \label{fig:Hybridtracketaphi}%
 \end{figure}
 
+\noindent
 The quality of the jet $p_{T}$ resolution was maintained by only accepting jets into the jet finder with a resolution below 1\%, Figure \ref{fig:trackresolution}, and this $p_{T}$ distribution may be seen in Figure \ref{fig:hybtrackpt}.
 
 \begin{figure}[h]
@@ -181,7 +219,7 @@ The quality of the jet $p_{T}$ resolution was maintained by only accepting jets 
 \noindent
 These cuts followed a number of previous track cuts seen in a number of jet results published from ALICE\cite{Acharya:2018eat}.
 \newpage
-\subsection{Raw Jet Momentum Spectra in pp Collisions}
+\section{Jet Selection}
 
 \section{EMCal Triggered Data}
 
