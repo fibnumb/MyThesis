@@ -123,7 +123,7 @@ A summary of the rejection reasons at the event level is summarized in Figure \r
 Figure \ref{fig:vertrec} shows the reconstructed vertex for the accepted Min Bias events.  We see that the vertex distribution peaks at the primary interaction point as expected.  It should also be noted that a similar set of event QA was implemented to the EMCal triggered data \textit{(not shown)} and that the results were consistant with the Min Bias data.
 
 \subsection{EMCal Cluster Selection}
-Corrections are performed on EMCal cells including; removing hot and dead towers (bad channels) based on the average occupancy and energy of the towers, timing calibrations in order to remove slow particles such as $K_{0}^{L}$ and \textit{n}, and a energy calibration is implemented based on the $\pi^{0}$ mass.  After these corrections are applied to the towers are grouped together into clusters using the v2 algorithm.  The v2 algorithm has a minimum tower seed, $E_{seed} = \,$ 300 MeV, after which all adjacent towers with a minnimum energy, $E_{cell} \geq \,$ 100 MeV, are iteratively added until a local minimum is reached.  The cluster energy is the sum of the seed and grouped neighbor tower energies.   
+Corrections are performed on EMCal cells including; removing hot and dead towers (bad channels) based on the average occupancy and energy of the towers, calibrations to cell timing caused by the physical layout of the EMCal (such as differences in cabling length), and a energy calibration is implemented based on the $\pi^{0}$ mass.  After these corrections are applied to the towers are grouped together into clusters using the v2 algorithm.  The v2 algorithm has a minimum tower seed, $E_{seed} = \,$ 300 MeV, after which all adjacent towers with a minimum energy, $E_{cell} \geq \,$ 100 MeV, are iteratively added until a local minimum is reached.  The cluster energy is the sum of the seed and grouped neighbor tower energies.   
 
 \begin{figure}[h]
 \includegraphics[width=14cm]{BadChannelMap}
@@ -132,7 +132,26 @@ Corrections are performed on EMCal cells including; removing hot and dead towers
 \label{fig:badchannel}
 \end{figure}
 
+\begin{figure}[h]
+\includegraphics[width=14cm]{timming}
+\centering
+\caption{EMCal cell occupancy after bad channels removed.}
+\label{fig:EMCaltime}
+\end{figure}
+
+\noindent
+Figure \ref{fig:badchannel} shows the bad channel map after removing bad towers, the $\phi$ distribution is segmented into 5 parts representing the five super modules of the EMCal.  After the cells are clustered together the clusters are corrected for exotics.  This correction is performed by cutting all clusters with a $F_{cross} \geq \,$ 0.97, where
+
+\begin{equation}
+F_{cross} = 1 - \frac{ E_{cross} }{ E_{cell} },
+\label{eq:Fcross}
+\end{equation}
+
+\noindent
+ 
 \subsection{TPC Track Selection}
+Jet finding was performed using hybrid tracks.  Hybrid tracks consist of two track sets the first being
+
 \subsection{Raw Jet Momentum Spectra in pp Collisions}
 
 \section{EMCal Triggered Data}
