@@ -51,29 +51,29 @@
 \contentsline {section}{\numberline {5.3}Event Selection}{55}{section.5.3}% 
 \contentsline {subsection}{\numberline {5.3.1}EMCal Cluster Selection}{58}{subsection.5.3.1}% 
 \contentsline {subsection}{\numberline {5.3.2}TPC Track Selection}{59}{subsection.5.3.2}% 
-\contentsline {subsection}{\numberline {5.3.3}Raw Jet Momentum Spectra in pp Collisions}{59}{subsection.5.3.3}% 
-\contentsline {section}{\numberline {5.4}EMCal Triggered Data}{59}{section.5.4}% 
-\contentsline {subsection}{\numberline {5.4.1}Acceptance Correction}{59}{subsection.5.4.1}% 
-\contentsline {section}{\numberline {5.5}Unfolding}{60}{section.5.5}% 
-\contentsline {subsection}{\numberline {5.5.1}Response Matrix}{62}{subsection.5.5.1}% 
-\contentsline {subsection}{\numberline {5.5.2}Corrections to Particle Level}{62}{subsection.5.5.2}% 
-\contentsline {subsection}{\numberline {5.5.3}Unfolded MB Spectra}{63}{subsection.5.5.3}% 
-\contentsline {subsection}{\numberline {5.5.4}Unfolded EMCal Triggered Spectra}{64}{subsection.5.5.4}% 
-\contentsline {subsection}{\numberline {5.5.5}Jet Reconstruction and Matching Efficiency}{65}{subsection.5.5.5}% 
-\contentsline {section}{\numberline {5.6}Systematic Uncertainties}{66}{section.5.6}% 
-\contentsline {subsection}{\numberline {5.6.1}Systematic Uncertainty to Jet Energy Scale}{67}{subsection.5.6.1}% 
-\contentsline {subsubsection}{Tracking Efficiency}{67}{section*.84}% 
-\contentsline {subsubsection}{Hadronic Correction}{67}{section*.86}% 
-\contentsline {subsubsection}{EMCal Clusterization Algorithm}{67}{section*.87}% 
-\contentsline {subsection}{\numberline {5.6.2}Systematic Uncertainty to Jet Yield}{67}{subsection.5.6.2}% 
-\contentsline {subsubsection}{Luminosity Uncertainty}{67}{section*.88}% 
-\contentsline {subsection}{\numberline {5.6.3}Total Uncertainty}{69}{subsection.5.6.3}% 
-\contentsline {section}{\numberline {5.7}Corrected pp jet cross section}{71}{section.5.7}% 
-\contentsline {subsection}{\numberline {5.7.1}Comparisons to pQCD predictions}{71}{subsection.5.7.1}% 
-\contentsline {subsection}{\numberline {5.7.2}Jet Cross Sections and Ratios}{71}{subsection.5.7.2}% 
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{72}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}8 TeV Inclusive Jet Results from CMS and ATLAS}{72}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}{73}{section.6.2}% 
-\contentsline {chapter}{Bibliography}{76}{section*.95}% 
-\contentsline {chapter}{Appendices}{88}{section*.96}% 
-\contentsline {chapter}{Vita}{89}{section*.97}% 
+\contentsline {subsection}{\numberline {5.3.3}Raw Jet Momentum Spectra in pp Collisions}{60}{subsection.5.3.3}% 
+\contentsline {section}{\numberline {5.4}EMCal Triggered Data}{60}{section.5.4}% 
+\contentsline {subsection}{\numberline {5.4.1}Acceptance Correction}{61}{subsection.5.4.1}% 
+\contentsline {section}{\numberline {5.5}Unfolding}{62}{section.5.5}% 
+\contentsline {subsection}{\numberline {5.5.1}Response Matrix}{63}{subsection.5.5.1}% 
+\contentsline {subsection}{\numberline {5.5.2}Corrections to Particle Level}{64}{subsection.5.5.2}% 
+\contentsline {subsection}{\numberline {5.5.3}Unfolded MB Spectra}{65}{subsection.5.5.3}% 
+\contentsline {subsection}{\numberline {5.5.4}Unfolded EMCal Triggered Spectra}{66}{subsection.5.5.4}% 
+\contentsline {subsection}{\numberline {5.5.5}Jet Reconstruction and Matching Efficiency}{67}{subsection.5.5.5}% 
+\contentsline {section}{\numberline {5.6}Systematic Uncertainties}{68}{section.5.6}% 
+\contentsline {subsection}{\numberline {5.6.1}Systematic Uncertainty to Jet Energy Scale}{69}{subsection.5.6.1}% 
+\contentsline {subsubsection}{Tracking Efficiency}{69}{section*.87}% 
+\contentsline {subsubsection}{Hadronic Correction}{69}{section*.89}% 
+\contentsline {subsubsection}{EMCal Clusterization Algorithm}{69}{section*.90}% 
+\contentsline {subsection}{\numberline {5.6.2}Systematic Uncertainty to Jet Yield}{69}{subsection.5.6.2}% 
+\contentsline {subsubsection}{Luminosity Uncertainty}{69}{section*.91}% 
+\contentsline {subsection}{\numberline {5.6.3}Total Uncertainty}{72}{subsection.5.6.3}% 
+\contentsline {section}{\numberline {5.7}Corrected pp jet cross section}{72}{section.5.7}% 
+\contentsline {subsection}{\numberline {5.7.1}Comparisons to pQCD predictions}{72}{subsection.5.7.1}% 
+\contentsline {subsection}{\numberline {5.7.2}Jet Cross Sections and Ratios}{72}{subsection.5.7.2}% 
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{73}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}8 TeV Inclusive Jet Results from CMS and ATLAS}{73}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}{74}{section.6.2}% 
+\contentsline {chapter}{Bibliography}{77}{section*.98}% 
+\contentsline {chapter}{Appendices}{89}{section*.99}% 
+\contentsline {chapter}{Vita}{90}{section*.100}% 

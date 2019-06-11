@@ -150,8 +150,37 @@ F_{cross} = 1 - \frac{ E_{cross} }{ E_{cell} },
 \noindent
  
 \subsection{TPC Track Selection}
-Jet finding was performed using hybrid tracks.  Hybrid tracks consist of two track sets the first being
 
+Tracks are reconstructed in the TPC using a Kalman filtering which helps alleviate any corrections needed due to multiple scatterings, dead sectors, etc.  Jet finding was performed using `hybrid' tracks.  Hybrid tracks consist of two track sets the first being all the tracks with at least one hit in the SPD (Global) and the second set being all tracks that can be costrained to the primary vertex (Complimentary).  For this analysis, the minimal $p_{T, track}$ is 150 MeV/c and the track must be constrained to: - 0.9 $\leq \eta \leq$ 0.9 and 0 $\leq \phi \leq$ 2$\pi$, shown in Figure \ref{fig:Hybridtracketaphi}.
+
+\begin{figure}%
+    \centering
+    \subfloat[Hybrid Track $\eta$]{{\includegraphics[width=5cm]{tracketa} }}%
+    \qquad
+    \subfloat[Hybrid Track $\phi$]{{\includegraphics[width=5cm]{trackphi} }}%
+    \caption{Hybrid Track $\eta$ and $\phi$ yields.}%
+    \label{fig:Hybridtracketaphi}%
+\end{figure}
+
+The quality of the jet $p_{T}$ resolution was maintained by only accepting jets into the jet finder with a resolution below 1\%, Figure \ref{fig:trackresolution}, and this $p_{T}$ distribution may be seen in Figure \ref{fig:hybtrackpt}.
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{trackresolution}
+\centering
+\caption{Accepted hybrid track resolution.}
+\label{fig:trackresolution}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{trackpt}
+\centering
+\caption{Accepted track $p_{T}$ yield.}
+\label{fig:hybtrackpt}
+\end{figure}
+
+\noindent
+These cuts followed a number of previous track cuts seen in a number of jet results published from ALICE\cite{Acharya:2018eat}.
+\newpage
 \subsection{Raw Jet Momentum Spectra in pp Collisions}
 
 \section{EMCal Triggered Data}
