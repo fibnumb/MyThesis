@@ -91,8 +91,12 @@ During the 8 TeV data collection period approximately 180 million minimum bias e
 \caption{2012 8 TeV data taking period.}
 \end{table}
 
-Approximately, 15\% of the data sampled is unusable due to malfunctions in TPC chambers, EMCal super modules, the electronics for the EMCal or TPC, and   
+Approximately, 15\% of the data sampled is unusable due to malfunctions in TPC chambers, EMCal super modules, the electronics for the EMCal or TPC,.  LHC12a,b triggered data is not used in this analysis due to the trigger threshold being varied from the other periods.  
 
+\subsection{Monte Carlo Anchored Data}
+The ALICE Collaboration produced two Monte Carlo data sets anchored to the detector performance during the 8 TeV run.  LHC15l2a1 is a PYTHIA anchored data set that consisted of about 17 million Min Bias triggered events and LHC15l2a2 is a PHOjet anchored data set consisting of about 21 million Min Bias triggered Events.  Neither of these data driven Monte Carlos modeled the EMCal triggers.
+
+\subsection{General Event Section Criteria}
 For an event to be selected into a physics analysis it must pass a number of quality control tests.  For example, the LHC must have be in a state of stable beams, cosmic rays must be excluded by only accepting tracks that originate from a vertex inside the detector, and the relevant detectors for a given analysis must be functioning as intended.  Event selection and QA is implemented via a centralized class, AliEventCuts, within the AliRoot framework.  This class contains a number of corrections including:
 
 \begin{itemize}
@@ -162,7 +166,7 @@ E_{corr} = E_{clust} - f_{sub} \times \sum p ,
 \end{equation}
 
 \noindent
-where $\sum p$ is the magnitude of the 3-mommentum of the hadron and $f_{sub} = 1$ is the nominal value for the weight.  If $E_{corr} \leq 0$ the cluster is removed, this may be caused by cluster pile-up and only accounts for a small fraction of the clusters.  In order for a cluester to be accepted $E_{corr} \geq \,$ 300 MeV was required.
+where $\sum p$ is the magnitude of the 3-mommentum of the hadron and $f_{sub} = 1$ is the nominal value for the weight.  If $E_{corr} \leq 0$ the cluster is removed, this may be caused by cluster pile-up and only accounts for a small fraction of the clusters.  In order for a cluster to be accepted $E_{corr} \geq \,$ 300 MeV was required.  The 300 MeV threshold is required because a minimum ionizing particle (MIP) will on average deposit 280 MeV in the EMCal.  
 
 A final cut was performed on the cluster time.  
 \begin{figure}[h]
@@ -220,6 +224,75 @@ The quality of the jet $p_{T}$ resolution was maintained by only accepting jets 
 These cuts followed a number of previous track cuts seen in a number of jet results published from ALICE\cite{Acharya:2018eat}.
 \newpage
 \section{Jet Selection}
+
+Accepted tracks and clusters are feed into the anti-kt jet reconstruction algorithm to reconstruct inclusive jets.  A minimum threshold of 5 GeV was used to reconstruct a jet in this analysis.  A high-$p_{T}$ track threshold of 100 GeV is placed on the reconstructed jets.  This is motivated by the degradation of the momentum resolution above that energy range.  In addition a cut was applied that a jet must be composed of at least one constituent, Figure \ref{fig:JetPt} and \ref{fig:JetConst}.
+
+\begin{figure}[h]
+\includegraphics[width=8cm]{ptleadingR02}
+\centering
+\caption{R = 0.2 leading track $p_{T}$ per jet $p_{T}$.}
+\label{fig:JetPt}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=8cm]{JetnumcconstR02}
+\centering
+\caption{R = 0.2 number of constituents in a jet per jet $p_{T}$.}
+\label{fig:JetConst}
+\end{figure}
+
+
+
+\noindent
+\subsection{$z_{leading}$ cut}
+
+The fragmentation function for the leading track in a jet,
+
+\begin{equation}
+z_{leading} = \frac{ p_{leading, proj} }{ p_{jet} },
+\label{eq:zleading}
+\end{equation}
+
+\noindent
+may be artificially high due to misidentifiying secondary decay particles as primary vertex tracks and assigning them a much larger $p_{T}$.  Additionally, fake clusters, such as exotics, may skew the jet $p_{T}$ to apperantly large values and thus make $z_{leading}$ infinitesimal.  
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{JetzR02}
+\centering
+\caption{R = 0.2 $z_{leading}$ from the Min Bias data sample.}
+\label{fig:Jetz}
+\end{figure}
+
+\noindent
+Figure \ref{fig:Jetz} shows the projection of the hadronic 3-momentum onto the jet axis.  We observer an excess of jets, especially at low jet $p_{T}$, of z values close to 1 or zero.  To help remove these biased jets a cut on $ z_{leading} \geq 0.03$ and $z_{leading} \leq 0.97$ is imposed.  It should also be noted that due to QCD hadronization $z_{leading} \sim 1$ corresponds to a singular particle jet which is highly rare.  Inbetween .03 and .97 we see the $z_{leading}$ is continuous and uniform as expected.  
+
+\subsection{Jet Area Cut}
+
+A jet area of, $A_{jet}$, cut was imposed on accepted jets.
+
+\begin{equation}
+A_{jet} \geq 0.6 \pi R_{jet}^{2}
+\label{eq:AreaJet}
+\end{equation}
+
+The area is estimated in FastJet using `ghost' particles.  As jet reconstrution is being performed these fake particles with infinitesimal $p_{T}$ are placed randomly through the event.  The number of ghost particles captured in a jet is proportional to the jet area, thus the precision of the jet area is sensative to the reconstruction of soft particles.  Figure \ref{fig:jetrej} shows the rejection reason for a jet with the dominate reasoning due to the area cut and this distribution skewed towards loa-$p{T}$ jets.
+
+\subsection{NEF cut}
+The Neutral Energy Fraction (NEF) is the total jet energy carried by the neutral components of the jet, i.e. EMCal clusters.  Figure \ref{fig:JetNEF} shows the NEF for R = 0.2 jets from the Min Bias sample.
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{NEFR02}
+\centering
+\caption{R = 0.2 NEF per jet $P_{T}$.}
+\label{fig:JetNEF}
+\end{figure}
+\noindent
+We observe an excess in jets at low-$p_{T}$ with NEF values around zero or one, similar to what was seen with the $z_{leading}$ distribution.  The cause for these excesses were explored in this analysis but no hard source was identified and no cut to the NEF was used.
+
+The jets the passed all of the selection criteria and cuts make up the signal jets that are reported in the cross section and spectra.  These criteria were implemented for the R = 0.3 and R = 0.4 along with the EMCal triggered data.
+
+
+
 
 \section{EMCal Triggered Data}
 

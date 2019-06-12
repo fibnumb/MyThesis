@@ -41,27 +41,32 @@
 \BOOKMARK [1][-]{section.5.1}{5.1 Raw Jet Spectra}{chapter.5}% 41
 \BOOKMARK [1][-]{section.5.2}{5.2 8 TeV Data Quality}{chapter.5}% 42
 \BOOKMARK [1][-]{section.5.3}{5.3 Event Selection}{chapter.5}% 43
-\BOOKMARK [1][-]{section.5.4}{5.4 EMCal Cluster Selection}{chapter.5}% 44
-\BOOKMARK [1][-]{section.5.5}{5.5 TPC Track Selection}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.6}{5.6 Jet Selection}{chapter.5}% 46
-\BOOKMARK [1][-]{section.5.7}{5.7 EMCal Triggered Data}{chapter.5}% 47
-\BOOKMARK [2][-]{subsection.5.7.1}{5.7.1 Acceptance Correction}{section.5.7}% 48
-\BOOKMARK [1][-]{section.5.8}{5.8 Unfolding}{chapter.5}% 49
-\BOOKMARK [2][-]{subsection.5.8.1}{5.8.1 Response Matrix}{section.5.8}% 50
-\BOOKMARK [2][-]{subsection.5.8.2}{5.8.2 Corrections to Particle Level}{section.5.8}% 51
-\BOOKMARK [2][-]{subsection.5.8.3}{5.8.3 Unfolded MB Spectra}{section.5.8}% 52
-\BOOKMARK [2][-]{subsection.5.8.4}{5.8.4 Unfolded EMCal Triggered Spectra}{section.5.8}% 53
-\BOOKMARK [2][-]{subsection.5.8.5}{5.8.5 Jet Reconstruction and Matching Efficiency}{section.5.8}% 54
-\BOOKMARK [1][-]{section.5.9}{5.9 Systematic Uncertainties}{chapter.5}% 55
-\BOOKMARK [2][-]{subsection.5.9.1}{5.9.1 Systematic Uncertainty to Jet Energy Scale}{section.5.9}% 56
-\BOOKMARK [2][-]{subsection.5.9.2}{5.9.2 Systematic Uncertainty to Jet Yield}{section.5.9}% 57
-\BOOKMARK [2][-]{subsection.5.9.3}{5.9.3 Total Uncertainty}{section.5.9}% 58
-\BOOKMARK [1][-]{section.5.10}{5.10 Corrected pp jet cross section}{chapter.5}% 59
-\BOOKMARK [2][-]{subsection.5.10.1}{5.10.1 Comparisons to pQCD predictions}{section.5.10}% 60
-\BOOKMARK [2][-]{subsection.5.10.2}{5.10.2 Jet Cross Sections and Ratios}{section.5.10}% 61
-\BOOKMARK [0][-]{chapter.6}{6 Conclusion and Outlook}{}% 62
-\BOOKMARK [1][-]{section.6.1}{6.1 8 TeV Inclusive Jet Results from CMS and ATLAS}{chapter.6}% 63
-\BOOKMARK [1][-]{section.6.2}{6.2 Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}{chapter.6}% 64
-\BOOKMARK [0][-]{section*.100}{Bibliography}{}% 65
-\BOOKMARK [0][-]{section*.101}{Appendices}{}% 66
-\BOOKMARK [0][-]{section*.102}{Vita}{}% 67
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Monte Carlo Anchored Data}{section.5.3}% 44
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 General Event Section Criteria}{section.5.3}% 45
+\BOOKMARK [1][-]{section.5.4}{5.4 EMCal Cluster Selection}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.5}{5.5 TPC Track Selection}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.6}{5.6 Jet Selection}{chapter.5}% 48
+\BOOKMARK [2][-]{subsection.5.6.1}{5.6.1 zleading cut}{section.5.6}% 49
+\BOOKMARK [2][-]{subsection.5.6.2}{5.6.2 Jet Area Cut}{section.5.6}% 50
+\BOOKMARK [2][-]{subsection.5.6.3}{5.6.3 NEF cut}{section.5.6}% 51
+\BOOKMARK [1][-]{section.5.7}{5.7 EMCal Triggered Data}{chapter.5}% 52
+\BOOKMARK [2][-]{subsection.5.7.1}{5.7.1 Acceptance Correction}{section.5.7}% 53
+\BOOKMARK [1][-]{section.5.8}{5.8 Unfolding}{chapter.5}% 54
+\BOOKMARK [2][-]{subsection.5.8.1}{5.8.1 Response Matrix}{section.5.8}% 55
+\BOOKMARK [2][-]{subsection.5.8.2}{5.8.2 Corrections to Particle Level}{section.5.8}% 56
+\BOOKMARK [2][-]{subsection.5.8.3}{5.8.3 Unfolded MB Spectra}{section.5.8}% 57
+\BOOKMARK [2][-]{subsection.5.8.4}{5.8.4 Unfolded EMCal Triggered Spectra}{section.5.8}% 58
+\BOOKMARK [2][-]{subsection.5.8.5}{5.8.5 Jet Reconstruction and Matching Efficiency}{section.5.8}% 59
+\BOOKMARK [1][-]{section.5.9}{5.9 Systematic Uncertainties}{chapter.5}% 60
+\BOOKMARK [2][-]{subsection.5.9.1}{5.9.1 Systematic Uncertainty to Jet Energy Scale}{section.5.9}% 61
+\BOOKMARK [2][-]{subsection.5.9.2}{5.9.2 Systematic Uncertainty to Jet Yield}{section.5.9}% 62
+\BOOKMARK [2][-]{subsection.5.9.3}{5.9.3 Total Uncertainty}{section.5.9}% 63
+\BOOKMARK [1][-]{section.5.10}{5.10 Corrected pp jet cross section}{chapter.5}% 64
+\BOOKMARK [2][-]{subsection.5.10.1}{5.10.1 Comparisons to pQCD predictions}{section.5.10}% 65
+\BOOKMARK [2][-]{subsection.5.10.2}{5.10.2 Jet Cross Sections and Ratios}{section.5.10}% 66
+\BOOKMARK [0][-]{chapter.6}{6 Conclusion and Outlook}{}% 67
+\BOOKMARK [1][-]{section.6.1}{6.1 8 TeV Inclusive Jet Results from CMS and ATLAS}{chapter.6}% 68
+\BOOKMARK [1][-]{section.6.2}{6.2 Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}{chapter.6}% 69
+\BOOKMARK [0][-]{section*.104}{Bibliography}{}% 70
+\BOOKMARK [0][-]{section*.105}{Appendices}{}% 71
+\BOOKMARK [0][-]{section*.106}{Vita}{}% 72
