@@ -17,68 +17,73 @@
 \contentsline {section}{\numberline {2.4}Monte-Carlo Generators}{19}{section.2.4}% 
 \contentsline {subsection}{\numberline {2.4.1}PYTHIA}{19}{subsection.2.4.1}% 
 \contentsline {subsection}{\numberline {2.4.2}PHOJET}{20}{subsection.2.4.2}% 
-\contentsline {section}{\numberline {2.5}The Quark-Gluon Plasma}{20}{section.2.5}% 
+\contentsline {subsection}{\numberline {2.4.3}HERWIG}{20}{subsection.2.4.3}% 
+\contentsline {subsection}{\numberline {2.4.4}AliROOT}{21}{subsection.2.4.4}% 
+\contentsline {section}{\numberline {2.5}The Quark-Gluon Plasma}{21}{section.2.5}% 
 \contentsline {subsection}{\numberline {2.5.1}Nuclear Collisions}{21}{subsection.2.5.1}% 
-\contentsline {subsection}{\numberline {2.5.2}Jets as a Probe of the QGP}{22}{subsection.2.5.2}% 
-\contentsline {section}{\numberline {2.6}QGP in Proton-Proton Collisions?}{24}{section.2.6}% 
-\contentsline {chapter}{\numberline {3}The LHC and ALICE}{26}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Overview of the LHC}{26}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}LHC Operations}{27}{subsection.3.1.1}% 
-\contentsline {subsection}{\numberline {3.1.2}LHC Accelerator Complex}{28}{subsection.3.1.2}% 
-\contentsline {section}{\numberline {3.2}The ALICE Experiment}{29}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}TZERO}{30}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}VZERO}{30}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Inner Tracking System}{31}{subsection.3.2.3}% 
-\contentsline {subsection}{\numberline {3.2.4}Time Projection Chamber}{32}{subsection.3.2.4}% 
-\contentsline {subsubsection}{The TPC readout}{32}{section*.40}% 
-\contentsline {subsubsection}{TPC Performance}{34}{section*.42}% 
-\contentsline {subsection}{\numberline {3.2.5}Electromagnetic Calorimeter}{35}{subsection.3.2.5}% 
-\contentsline {subsubsection}{EMCal Performance}{36}{section*.45}% 
-\contentsline {subsubsection}{EMCal Trigger}{36}{section*.47}% 
-\contentsline {chapter}{\numberline {4}The ALICE TPC Upgrade}{39}{chapter.4}% 
-\contentsline {subsection}{\numberline {4.0.1}Physics Motivation}{39}{subsection.4.0.1}% 
-\contentsline {subsection}{\numberline {4.0.2}Gaseous Electron Multiplier Foils}{41}{subsection.4.0.2}% 
-\contentsline {subsection}{\numberline {4.0.3}Research and Development}{43}{subsection.4.0.3}% 
-\contentsline {subsubsection}{2014 Test Beam}{45}{section*.54}% 
-\contentsline {subsection}{\numberline {4.0.4}Production of the Inner Readout Chambers in the U.S.}{46}{subsection.4.0.4}% 
-\contentsline {subsection}{\numberline {4.0.5}GEM and Chamber Quality Assurance}{48}{subsection.4.0.5}% 
-\contentsline {subsubsection}{GEM QA}{49}{section*.60}% 
-\contentsline {subsubsection}{Chamber QA}{50}{section*.62}% 
-\contentsline {subsection}{\numberline {4.0.6}Outlook}{51}{subsection.4.0.6}% 
-\contentsline {chapter}{\numberline {5}Jet Results and Discussion}{53}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Raw Jet Spectra}{54}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}8 TeV Data Quality}{55}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}Event Selection}{55}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}Monte Carlo Anchored Data}{56}{subsection.5.3.1}% 
-\contentsline {subsection}{\numberline {5.3.2}General Event Section Criteria}{57}{subsection.5.3.2}% 
-\contentsline {section}{\numberline {5.4}EMCal Cluster Selection}{58}{section.5.4}% 
-\contentsline {section}{\numberline {5.5}TPC Track Selection}{61}{section.5.5}% 
-\contentsline {section}{\numberline {5.6}Jet Selection}{62}{section.5.6}% 
-\contentsline {subsection}{\numberline {5.6.1}$z_{leading}$ cut}{62}{subsection.5.6.1}% 
-\contentsline {subsection}{\numberline {5.6.2}Jet Area Cut}{63}{subsection.5.6.2}% 
-\contentsline {subsection}{\numberline {5.6.3}NEF cut}{64}{subsection.5.6.3}% 
-\contentsline {section}{\numberline {5.7}EMCal Triggered Data}{65}{section.5.7}% 
-\contentsline {subsection}{\numberline {5.7.1}Acceptance Correction}{66}{subsection.5.7.1}% 
-\contentsline {section}{\numberline {5.8}Unfolding}{67}{section.5.8}% 
-\contentsline {subsection}{\numberline {5.8.1}Response Matrix}{68}{subsection.5.8.1}% 
-\contentsline {subsection}{\numberline {5.8.2}Corrections to Particle Level}{69}{subsection.5.8.2}% 
-\contentsline {subsection}{\numberline {5.8.3}Unfolded MB Spectra}{70}{subsection.5.8.3}% 
-\contentsline {subsection}{\numberline {5.8.4}Unfolded EMCal Triggered Spectra}{71}{subsection.5.8.4}% 
-\contentsline {subsection}{\numberline {5.8.5}Jet Reconstruction and Matching Efficiency}{72}{subsection.5.8.5}% 
-\contentsline {section}{\numberline {5.9}Systematic Uncertainties}{72}{section.5.9}% 
-\contentsline {subsection}{\numberline {5.9.1}Systematic Uncertainty to Jet Energy Scale}{74}{subsection.5.9.1}% 
-\contentsline {subsubsection}{Tracking Efficiency}{74}{section*.93}% 
-\contentsline {subsubsection}{Hadronic Correction}{74}{section*.95}% 
-\contentsline {subsubsection}{EMCal Clusterization Algorithm}{74}{section*.96}% 
-\contentsline {subsection}{\numberline {5.9.2}Systematic Uncertainty to Jet Yield}{74}{subsection.5.9.2}% 
-\contentsline {subsubsection}{Luminosity Uncertainty}{74}{section*.97}% 
-\contentsline {subsection}{\numberline {5.9.3}Total Uncertainty}{77}{subsection.5.9.3}% 
-\contentsline {section}{\numberline {5.10}Corrected pp jet cross section}{77}{section.5.10}% 
-\contentsline {subsection}{\numberline {5.10.1}Comparisons to pQCD predictions}{77}{subsection.5.10.1}% 
-\contentsline {subsection}{\numberline {5.10.2}Jet Cross Sections and Ratios}{77}{subsection.5.10.2}% 
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{78}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}8 TeV Inclusive Jet Results from CMS and ATLAS}{78}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}{79}{section.6.2}% 
-\contentsline {chapter}{Bibliography}{82}{section*.104}% 
-\contentsline {chapter}{Appendices}{94}{section*.105}% 
-\contentsline {chapter}{Vita}{95}{section*.106}% 
+\contentsline {subsection}{\numberline {2.5.2}Jets as a Probe of the QGP}{23}{subsection.2.5.2}% 
+\contentsline {section}{\numberline {2.6}QGP in Proton-Proton Collisions?}{25}{section.2.6}% 
+\contentsline {chapter}{\numberline {3}The LHC and ALICE}{27}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Overview of the LHC}{27}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}LHC Operations}{28}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}LHC Accelerator Complex}{29}{subsection.3.1.2}% 
+\contentsline {section}{\numberline {3.2}The ALICE Experiment}{30}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}TZERO}{31}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}VZERO}{31}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}Inner Tracking System}{32}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.4}Time Projection Chamber}{33}{subsection.3.2.4}% 
+\contentsline {subsubsection}{The TPC readout}{33}{section*.40}% 
+\contentsline {subsubsection}{TPC Performance}{35}{section*.42}% 
+\contentsline {subsection}{\numberline {3.2.5}Electromagnetic Calorimeter}{36}{subsection.3.2.5}% 
+\contentsline {subsubsection}{EMCal Performance}{37}{section*.45}% 
+\contentsline {subsubsection}{EMCal Trigger}{37}{section*.47}% 
+\contentsline {chapter}{\numberline {4}The ALICE TPC Upgrade}{40}{chapter.4}% 
+\contentsline {subsection}{\numberline {4.0.1}Physics Motivation}{40}{subsection.4.0.1}% 
+\contentsline {subsection}{\numberline {4.0.2}Gaseous Electron Multiplier Foils}{42}{subsection.4.0.2}% 
+\contentsline {subsection}{\numberline {4.0.3}Research and Development}{44}{subsection.4.0.3}% 
+\contentsline {subsubsection}{2014 Test Beam}{46}{section*.54}% 
+\contentsline {subsection}{\numberline {4.0.4}Production of the Inner Readout Chambers in the U.S.}{47}{subsection.4.0.4}% 
+\contentsline {subsection}{\numberline {4.0.5}GEM and Chamber Quality Assurance}{49}{subsection.4.0.5}% 
+\contentsline {subsubsection}{GEM QA}{50}{section*.60}% 
+\contentsline {subsubsection}{Chamber QA}{51}{section*.62}% 
+\contentsline {subsection}{\numberline {4.0.6}Outlook}{52}{subsection.4.0.6}% 
+\contentsline {chapter}{\numberline {5}Jet Results and Discussion}{54}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Raw Jet Spectra}{55}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}8 TeV Data Quality}{56}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Event Selection}{56}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Monte Carlo Anchored Data}{57}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}General Event Section Criteria}{58}{subsection.5.3.2}% 
+\contentsline {section}{\numberline {5.4}EMCal Cluster Selection}{59}{section.5.4}% 
+\contentsline {section}{\numberline {5.5}TPC Track Selection}{62}{section.5.5}% 
+\contentsline {section}{\numberline {5.6}Jet Selection}{63}{section.5.6}% 
+\contentsline {subsection}{\numberline {5.6.1}$z_{leading}$ cut}{63}{subsection.5.6.1}% 
+\contentsline {subsection}{\numberline {5.6.2}Jet Area Cut}{64}{subsection.5.6.2}% 
+\contentsline {subsection}{\numberline {5.6.3}NEF cut}{65}{subsection.5.6.3}% 
+\contentsline {section}{\numberline {5.7}EMCal Triggered Data}{66}{section.5.7}% 
+\contentsline {section}{\numberline {5.8}Acceptance Correction}{69}{section.5.8}% 
+\contentsline {section}{\numberline {5.9}Unfolding}{70}{section.5.9}% 
+\contentsline {subsection}{\numberline {5.9.1}Response Matrix}{71}{subsection.5.9.1}% 
+\contentsline {subsection}{\numberline {5.9.2}Corrections to Particle Level}{72}{subsection.5.9.2}% 
+\contentsline {subsection}{\numberline {5.9.3}Unfolded MB Spectra}{73}{subsection.5.9.3}% 
+\contentsline {subsection}{\numberline {5.9.4}Unfolded EMCal Triggered Spectra}{73}{subsection.5.9.4}% 
+\contentsline {subsection}{\numberline {5.9.5}Jet Reconstruction and Matching Efficiency}{74}{subsection.5.9.5}% 
+\contentsline {section}{\numberline {5.10}Systematic Uncertainties}{75}{section.5.10}% 
+\contentsline {subsection}{\numberline {5.10.1}Systematic Uncertainty to Jet Energy Scale}{76}{subsection.5.10.1}% 
+\contentsline {subsubsection}{Tracking Efficiency Sensativity}{76}{section*.95}% 
+\contentsline {subsubsection}{Hadronic Correction Systematic}{77}{section*.97}% 
+\contentsline {subsubsection}{Sensativity to EMCal Clusterization Algorithm}{77}{section*.98}% 
+\contentsline {subsection}{\numberline {5.10.2}Systematic Uncertainty to Jet Yield}{77}{subsection.5.10.2}% 
+\contentsline {subsubsection}{Track $p_{T}$ resolution}{78}{section*.99}% 
+\contentsline {subsubsection}{Cluster Energy resolution}{78}{section*.101}% 
+\contentsline {subsubsection}{Trigger Systematic}{78}{section*.102}% 
+\contentsline {subsubsection}{Min Bias Luminosity and Uncertainty}{78}{section*.103}% 
+\contentsline {subsection}{\numberline {5.10.3}Total Uncertainty}{80}{subsection.5.10.3}% 
+\contentsline {section}{\numberline {5.11}Corrected pp jet cross section}{81}{section.5.11}% 
+\contentsline {subsection}{\numberline {5.11.1}Comparisons to pQCD predictions}{81}{subsection.5.11.1}% 
+\contentsline {subsection}{\numberline {5.11.2}Jet Cross Sections and Ratios}{81}{subsection.5.11.2}% 
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{82}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}8 TeV Inclusive Jet Results from CMS and ATLAS}{82}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}{83}{section.6.2}% 
+\contentsline {chapter}{Bibliography}{86}{section*.110}% 
+\contentsline {chapter}{Appendices}{98}{section*.111}% 
+\contentsline {chapter}{Vita}{99}{section*.112}% 

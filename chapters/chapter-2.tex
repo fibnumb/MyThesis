@@ -323,10 +323,17 @@ NLO corrections to the cross-section will not match experimental results, PYTHIA
 PHOJET is a \verb|FORTRAN 77| Monte Carlo simulator used to model proton-proton collisions. It is an alternative to PYTHIA and is better at modeling soft physics processes present in high energy collisions.   PHOJET implements the Dual Parton model\cite{CAPELLA1994225}\cite{Wong:241251} and multiple parton interactions\cite{Bopp:1998rc} to model soft physics.  Hard interactions are implemented in PHOJET using LO scattering elements and it uses PYTHIA for the fragmentation and hadronization phase.  Due to its ability to model soft physics, PHOJET is better at comparing to minimum bias\footnote{Events with a low total transverse momentum and high cross section} data and understanding jet results in a low kinematic range.  PHOJET also acts as a benchmark in understanding any bias due to using other MC generators, such as PYTHIA.  PHOJET v1.2 is used in this thesis.
 
 
+\subsection{HERWIG}
+The Herwig\cite{Bahr:2008pv} Monte Carlo generator is a \verb|FORTRAN 77| package used to generate proton proton events.  It is similar to PYTHIA in that it does the LO hard scattering of partons, however it uses the cluster model of hadronization to produce jets based on gluon splitting.  It is also similar to PHOJET in regards to the evolution of final state jets with soft gluon angular ordering.  By comparing HERWIG, PYTHIA, and PHOJET it is possible to test for sensativities to jet production in high energy events due to different types of hadronization models and soft radiation.
 
+\subsection{AliROOT}
+AliROOT is the official framework of \verb|C++| classes developed for the ALICE Experiment.  The software is broken into two packages AliRoot, which contains code mostly used for the sub-detectors callibrations and reconstruction of particles, and AliPhysics which contains user defined classes to perform physics related analysis.  This thesis developed a number of classes in both packages and are part of the offical repository avaliable on GitHUB.
 
 \iffalse
 \subsection{HERWIG}
+
+The Herwig Monte Carlo generator is a \verb|FORTRAN 77| package that generates pp events.  It is similar to PYTHIA in that it does the LO hard scattering of partons, however it uses the cluster model of hadronization to produce jets based on gluon splitting.  It 
+
 \section{Kinematics}\label{sec:kinematics}
 
 

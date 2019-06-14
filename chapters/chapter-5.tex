@@ -296,14 +296,34 @@ The jets the passed all of the selection criteria and cuts make up the signal je
 
 \section{EMCal Triggered Data}
 
-In addition with the minimum bias data collected, the EMCal was used during the 8 TeV run in order to provided an enhanced data set that is preferential to hard processes.   The Level-1 trigger\cite{Bourrion:2010js} in the EMCal has a associated trigger, $\epsilon$, of 
+Figures \ref{fig:rawjetR02} - \ref{fig:rawjetR04} show the raw Min Bias and EMCal triggered data for the 8 TeV run and that the triggered data greatly extends the kinematic reach for the spectra.  This thesis looked at the two primary Level-1 triggers configured for the EMCal, the jet trigger (EJE) and the gamma (EGA) trigger\cite{Bourrion:2010js}.  Although both of the Level-1 triggers were investigated in this analysis, only the EGA trigger was ultimatley corrected  and used for the final jet cross sections and spectra.  The EJE trigger utilizes a trigger patch consisting of 32 x 32 EMCal towers sliding by 8 towers until a patch is reconstructed that meets the minimum predefined trigger energy threshold.  Once this threshold is surpassed the event is recorded and tagged as a kEMCEJE triggered event.  A similar procedure is followed for the EGA trigger, but with a smaller patch region of 4 x 4 towers with a sliding window of 2 towers and its own predefined trigger threshold.  The bump at low-$p_{T}$ seen in figures \ref{fig:rawjetR02} - \ref{fig:rawjetR04} is the trigger turn on curve and the peak corresponds to the trigger threshold for the EGA trigger.  Ideally, ta jet in the EMCal acceptance should fire the EJE trigger and the EGA should fire due to the presence of a photon or electron.  Since, the triggers increase the yield of jets.  In order to calculate the trigger bias two macros were used, AliEMCalTriggerMaker.cxx reconstructs the EMCal and trigger patch geometries while AliEMCalSetupTask.cxx allows a user to set the trigger thresholds for the EkEMCEJE and kEMCEGA triggers.  The trigger bias was calculated by reconstructing trigger patches from the Pythia Min Bias sample production created by ALICE and matching those reconstructed patches to jets within the EMCal acceptance.  
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{DistanceJetEJER02}
+\centering
+\caption{Distance to closest reconstructed EJE patch to R = 0.2 jet with the Min Bias Pythia Monte Carlo.}
+\label{fig:DisJetEJE}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{DistanceJetEGAR02}
+\centering
+\caption{Distance to closest reconstructed EGA patch to R = 0.2 jet with the Min Bias Pythia Monte Carlo.}
+\label{fig:DisJetEGA}
+\end{figure}
+
+\noindent
+Figures \ref{fig:DisJetEJE} and \ref{fig:DisJetEGA} show the distance between a reconstructed jet and its closest reconstructed EMCal trigger patch for R = 0.2 jets in the Pythia Monte Carlo.  We can see that with the EGA trigger that the peak of the distribution is within the jet radius of R = 0.2 while with the EJE trigger the distribution is more uniformly distributed.  The EJE distribution can be accounted for the fact that the EJE trigger is large enough to have multiple jets matched to EJE trigger patch or vice-versa.  For the trigger reconstruction I used the EGA trigger and performed a geometrical matching requirement to the spatial center of the trigger patch,
 
 \begin{equation}
-	\epsilon = \frac{N^{Triggered}_{events}}{N^{MinBias}_{events}} \times \frac{d^{2} N_{Triggered}^{jet}}{d\eta \, dp_{T}} \Bigg/  \frac{d^{2} N_{MinBias}^{jet}}{d\eta \, dp_{T}} 
-\label{eq:xsecdef}
+\sqrt{ ( \phi_{jet} - \phi_{EGA, patch} )^{2} + ( \eta_{jet} - \eta_{EGA, patch} )^{2}}  \leq R_{jet} 
+\label{eq:triggermatch}
 \end{equation}
 
-\subsection{Acceptance Correction}
+\noindent
+Equation \ref{eq:triggermatch} ensures that any EGA trigger patch that fired due to the presence of a jet was confined within the radius parameter of the jet.  Double counting may occur if multiple triggers are reconstructed within the same jet.  In order to account for this the simulated Monte Carlo spectra is scaled by $N_{Triggers}$ matched to a jet.
+
+\section{Acceptance Correction}
 Jet spectra, cross sections, and ratios of cross sections are reported over the full azimuth angle and psuedorapidity acceptance.  However, due to jets being constrained to the EMCal, a geometric factor is used to correct for the limited acceptance of the detector.  This thesis uses a maximum jet radius of 0.5 to help study the effects of wide angle radiation on jet fragmentation.  Heavy-ion use smaller jet radii, typically of 0.2, to help negate the high multiplicity background.  Due to these geometric corrections the centroid of a jet is constrained to,
 
 \begin{equation}
@@ -469,7 +489,10 @@ Due to the low statistics at the highest $p_{T}$ bins in this analysis, uncertai
 
 \subsection{Systematic Uncertainty to Jet Energy Scale}
 
-\subsubsection{Tracking Efficiency}
+The following sections present and discuss the uncertainties cause by shifts to the JES.
+
+\subsubsection{Tracking Efficiency Sensativity}
+Only a fraction of charged tracks generated by the hard scattering of two protons will be detected in the TPC due to finite track efficiency.  Missing tracks from a event will cause a JES 
 Corrections for the tracking efficiency were performed by randomly throwing out 5\% of the tracks from each event from the 8 TeV data samples and reperforming jet on the altered data.  All of the inputs for jet finding were maintained.
 
 
@@ -485,14 +508,33 @@ $\begin{array}{rl}
 \noindent
 Figure \ref{fig:trkeff} shows the systematical uncertainties for R = 0.2 (top left), R = 0.3 (top right), and R = 0.4 (bottom) jets.   
 
-\subsubsection{Hadronic Correction}
+\subsubsection{Hadronic Correction Systematic}
 
-\subsubsection{EMCal Clusterization Algorithm}
+\subsubsection{Sensativity to EMCal Clusterization Algorithm}
+As previously stated, the clusterizer used in this thesis was the v2 algorithm. This algorithm was used in both the detector-level Monte Carlo and data analysis.  In order to test the sensitivity the JES has to the clusterization algorithm a different algorithm was chosen and a new spectra was generated.  The v1 algorithm was choosen and is similar to the v2 algorithm with the exception that the total size of the cluster is forced to be smaller then nine towers.  Similar to the other systematic presented we see a large anti-correlated bin-to-bin variatiaions at high-$p_{T}$ due to sparsely field binning.  
+
 \subsection{Systematic Uncertainty to Jet Yield}
+The following sections discuss the systematic uncertainties affecting the jet yield.
+
+\subsubsection{Track $p_{T}$ resolution}
+The momentum resolution of TPC is estimated using the covariance matrix, Figure\ref{fig:trackpcovmatrix}, generated from a Kalman filtering\cite{Fruhwirth:1987fm} pad signal on the TPC read-out region.  To estimate the systematic due to the $p_{T}$ resolution tracks are smeared 
+
+\begin{figure}[h]
+\includegraphics[width=8cm]{trackcovmatrix}
+\centering
+\caption{Inclusive track resolution, Min Bias 8 TeV.}
+\label{fig:trackpcovmatrix}
+\end{figure}
+
+Most tracks have below 1\% momentum resolution and the tracks with $\sigma(p_{T})/p_{T} \geq$ 1\% tend to be tracks below 200 MeV tracks.  To measure the $p_{T}$ resolution I smeared each track from the Min Bias data by a Gaussian function which would alter the track $p_{T}$ by up to 1\% of its original value and remeasure the spectra.  
 
 
+\subsubsection{Cluster Energy resolution}
 
-\subsubsection{Luminosity Uncertainty}
+\subsubsection{Trigger Systematic}
+
+
+\subsubsection{Min Bias Luminosity and Uncertainty}
 
 The luminosity of a hadronic collider, $\mathscr{L}$, is given by the expression
 
