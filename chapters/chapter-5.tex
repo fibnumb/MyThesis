@@ -1,9 +1,21 @@
-\chapter{Jet Results and Discussion} \label{ch:analysis}
+\chapter{Analysis Methods and Corrections} \label{ch:analysis}
 
-Beginning in March of 2012, the LHC began seven months of pp collisions at $\sqrt{s} = \,$ 8 TeV.  The jet cross sections and ratios of the cross sections for jets of different radii offers a unique perspective on the pQCD effects of hadronization at this new energy frontier.  Due to the expectation that no QGP is formed in a pp collision these measurements serve as a baseline for separating phenomena associated with the QGP in heavy-ion collisions.  In order to measure the jet cross section the following formula is used,
+Beginning in March of 2012, the LHC began seven months of pp collisions at $\sqrt{s} = \,$ 8 TeV. During the 7 months of data taking the ALICE Experiment was recording data almost 60\% of the time, Figure \ref{fig:RunEff}.
+
+\begin{figure}[h]
+\includegraphics[width=17cm]{8TeVRunefficency}
+\centering
+\caption{LHC state during the 8 TeV run. }
+\label{fig:RunEff}
+\end{figure}
+
+\noindent
+This large amount of data taking produced almost 200 million events recorded from ALICE that satisfied the Min Bias trigger.  The proton-proton Min Bias trigger is defined that at least one hit was recorded in the SPD or V0.  The 8 TeV data set also recorded almost high-$p_{T}$ events using the EMCal triggered data, which in the case of the Gamma trigger was a trigger patch threshold of 8 GeV.  
+
+This large amount of data offers a unique chance to explore QCD phenomena using jets with a large dataset.   In order to measure the jet cross section the following formula is used,
 
 \begin{equation}
-	\frac{d^{2} \sigma^{jet}}{d\eta \, dp_{T}} = \frac{A_{trigger}}{\epsilon_{trigger}(p_{T})} \times C_{MC} \times \frac{1}{A(p_{T}) } \times \frac{1}{\mathscr{L}_{int}} \times \frac{dN^{2}_{jet}}{dp_{T} \, d\eta}
+	\frac{d^{2} \sigma^{jet}}{d\eta \, dp_{T}} = \frac{1}{\epsilon_{reco}} \frac{A_{trigger}}{\epsilon_{trigger}(p_{T})} \times C_{MC} \times \frac{1}{A(p_{T}) } \times \frac{1}{\mathscr{L}_{int}} \times \frac{dN^{2}_{jet}}{dp_{T} \, d\eta}
 \label{eq:xsecdef}
 \end{equation}
 
@@ -11,6 +23,7 @@ Beginning in March of 2012, the LHC began seven months of pp collisions at $\sqr
 where,
 
 \begin{itemize}
+  \item $\epsilon_{reco}$ is the efficency for reconstructing the jet in the ALICE detector.
   \item $A_{trigger}$ is the acceptance for EMCal triggered events and $\epsilon_{trigger}(p_{T})$ is the EMCal trigger efficiency.  These factors correct for imperfections in the electronics of the EMCal and the overall factors are equal to one in minimum bias events.
   \item $C_{MC}$ is a correction factor due to detector effects and it allows for comparisons between the ALICE experiment to other experiments or theoretical calculations.  Unfolding is used to determine this factor.
   \item $\mathscr{L}_{int}$ is the integrated luminosity during the period when the data was recorded.
@@ -20,15 +33,8 @@ where,
 \end{itemize}
 
 \noindent
-Furthermore, it is useful to define the ratio of cross sections,
 
-\begin{equation}
-\mathscr{R}(p_{T};R_{1},R_{2}) = \frac{d^{2}\sigma(p_{T};R_{1})/d\eta \, dp_{T}}{d^{2}\sigma(p_{T};R_{2})/d\eta \, dp_{T}}
-\label{eq:xsecratio}
-\end{equation}
-
-\noindent
-where $\sigma(p_{T};R_{1})$ refers to the doubly differential cross section (Equation \ref{eq:xsecdef}) of a jet with radius $R_{1}$.  The ratio is carried out on a bin--by--bin basis per each $p_{T}$ bin.  
+The following sec
 
 \section{Raw Jet Spectra}
 
@@ -59,15 +65,10 @@ The next sections of this chapter will discuss the QA implemented to the data, t
 \section{8 TeV Data Quality}
 ALICE is a state-of-the-art experiment with excellent tracking and particle identification capabilities as discussed in Chapter \ref{ch:alice}.  However, just like any real world experiment, it contains a number of inefficiencies and imperfections.  This means that the data collected during the 8 TeV pp collision must be examined and any inaccuracies in the data must be removed before hard physics conclusions may be reached.  Data may be compromised at both the event-level, the experiment erroneously recorded something as an event, or at the constituent-level, one of the subdetectors mismeasured a feature of a particle, and these outliers must be accounted for and removed 
 
-\section{Event Selection}
+\subsubsection{Event Selection}
 
 
-\begin{figure}[h]
-\includegraphics[width=17cm]{8TeVRunefficency}
-\centering
-\caption{LHC state during the 8 TeV run. }
-\label{fig:RunEff}
-\end{figure}
+
 
 During the 8 TeV data collection period approximately 180 million minimum bias events were recorded, as summarized in table \ref{tab:RunSummary}.  These events are separated into periods, which dictate the particular beam and detector configurations during the data taking.The 8 TeV data is broken into 7 periods with approximately 181 million minimum bias events recorded.  This minimum bias sample corresponds to an integrated luminosity, $\mathscr{L}_{int}$, of $8.95 \, pb^{-1}$ during this time period\cite{ALICE-PUBLIC-2017-002}.
 
@@ -93,10 +94,10 @@ During the 8 TeV data collection period approximately 180 million minimum bias e
 
 Approximately, 15\% of the data sampled is unusable due to malfunctions in TPC chambers, EMCal super modules, the electronics for the EMCal or TPC,.  LHC12a,b triggered data is not used in this analysis due to the trigger threshold being varied from the other periods.  
 
-\subsection{Monte Carlo Anchored Data}
+\subsubsection{Monte Carlo Anchored Data}
 The ALICE Collaboration produced two Monte Carlo data sets anchored to the detector performance during the 8 TeV run.  LHC15l2a1 is a PYTHIA anchored data set that consisted of about 17 million Min Bias triggered events and LHC15l2a2 is a PHOjet anchored data set consisting of about 21 million Min Bias triggered Events.  Neither of these data driven Monte Carlos modeled the EMCal triggers.
 
-\subsection{General Event Section Criteria}
+\subsubsection{General Event Section Criteria}
 For an event to be selected into a physics analysis it must pass a number of quality control tests.  For example, the LHC must have be in a state of stable beams, cosmic rays must be excluded by only accepting tracks that originate from a vertex inside the detector, and the relevant detectors for a given analysis must be functioning as intended.  Event selection and QA is implemented via a centralized class, AliEventCuts, within the AliRoot framework.  This class contains a number of corrections including:
 
 \begin{itemize}
@@ -126,7 +127,7 @@ A summary of the rejection reasons at the event level is summarized in Figure \r
 \noindent 
 Figure \ref{fig:vertrec} shows the reconstructed vertex for the accepted Min Bias events.  We see that the vertex distribution peaks at the primary interaction point as expected.  It should also be noted that a similar set of event QA was implemented to the EMCal triggered data \textit{(not shown)} and that the results were consistant with the Min Bias data.
 
-\section{EMCal Cluster Selection}
+\subsection{EMCal Cluster Selection}
 Corrections are performed on EMCal cells including; removing hot and dead towers (bad channels) based on the average occupancy and energy of the towers, calibrations to cell timing caused by the physical layout of the EMCal (such as differences in cabling length), and a energy calibration is implemented based on the $\pi^{0}$ mass.  After these corrections are applied to the towers are grouped together into clusters using the v2 algorithm.  The v2 algorithm has a minimum tower seed, $E_{seed} = \,$ 300 MeV, after which all adjacent towers with a minimum energy, $E_{cell} \geq \,$ 100 MeV, are iteratively added until a local minimum is reached.  The cluster energy is the sum of the seed and grouped neighbor tower energies.   
 
 \begin{figure}[h]
@@ -190,7 +191,7 @@ Cutting on the cluster time is done in order to readout only the particles creat
 
 Figure {fig:EMCalfinal} shows the final cluster energy distribution with all the cuts and corrections previously discussed applied and makes up the set of clusters over which the jet finding was performed.  The same cuts and QA was applied to the EMCal triggered data.
  
-\section{TPC Track Selection}
+\subsection{TPC Track Selection}
 
 Tracks are reconstructed in the TPC using a Kalman filtering which helps alleviate any corrections needed due to multiple scatterings, dead sectors, etc.  Jet finding was performed using `hybrid' tracks.  Hybrid tracks consist of two track sets the first being all the tracks with at least one hit in the SPD (Global) and the second set being all tracks that can be costrained to the primary vertex (Complimentary).  For this analysis, the minimal $p_{T, track}$ is 150 MeV/c and the track must be constrained to: - 0.9 $\leq \eta \leq$ 0.9 and 0 $\leq \phi \leq$ 2$\pi$, shown in Figure \ref{fig:Hybridtracketaphi}.  The spatial distributions of the hybrid tracks remain relatively flat as expected in the 8 TeV data set.
 
@@ -463,7 +464,7 @@ The unfolding procedure is repeated again for the EMCal triggered jet spectra.  
 \end{figure}
 
 \noindent
-Due to the limitations on the response matrix the bin-by-bin unfolding of the EMCal triggered data was only stable up to 120 GeV.  It should be noted that the hump in the EMCal jet spectra is due to the firing threshold of the trigger.  The unfolded Emcal jet spectra was used to estimate the ratio the the jet yields between the Min Bias and triggered data samples, from this point the trigger scaling was calculated.  Due to the lack of a trigger modeled with the 8 TeV Monte Carlo productions the inability to extend the kinematic range of the jet spectras beyond 120 GeV presents a missed oppurtunity in terms of the recorded data from the 8 TeV runs.  In order to address this issue a new Monte Carlo production will need to be requested from the ALICE collaboration.
+Due to the limitations on the response matrix the bin-by-bin unfolding of the EMCal triggered data was only stable up to 120 GeV.  It should be noted that the hump in the EMCal jet spectra is due to the firing threshold of the trigger.  The unfolded Emcal jet spectra was used to estimate the ratio the the jet yields between the Min Bias and triggered data samples, from this point the trigger scaling was calculated.  Due to the lack of a trigger modeled with the 8 TeV Monte Carlo productions the inability to extend the kinematic range of the jet spectras beyond 120 GeV presents a missed opportunity in terms of the recorded data from the 8 TeV runs.  In order to address this issue a new Monte Carlo production will need to be requested from the ALICE collaboration.
 
 \subsection{Jet Reconstruction and Matching Efficiency}
 In order to quantify the inefficiencies due to unfolding along with inefficencies in the ALICE experiment in reconstructing jets we quantify the jet reconstruction efficiency, $\epsilon_{reco} (p_{T, jet})$, and the jet matching efficiency, $\epsilon_{match} (p_{T, jet})$.
@@ -481,113 +482,7 @@ In order to quantify the inefficiencies due to unfolding along with inefficencie
 \noindent 
 where $N_{reco} (p_{T, jet})$ is the reconstructed jet yield at the detector level per $p_{T}$ bin, $N_{match}(p_{T, jet})$ is the reconstructed jet at the detector level that was matched to a particle level jet per $p_{T}$ bin, and $N_{truth} (p_{T, jet})$ is the truth-level jet yield from the Pythia embedded event per $p_{T}$ bin.  These quantities 
 
-\section{Systematic Uncertainties}
 
-Systematic uncertainties arise due to our limited knowledge of the precise operating conditions and performance of the experiment and also due to any bias in our understanding of how to fundamental model the interactions.  They systematics may therefore be broken into two components: uncertainties to the jet energy scale (JES) which shifts the momentum spectra along the x-axis and uncertainties in the jet yield which shift the spectra along the y-axis.  The systematical and statistical uncertainties presented in this analysis will be presented as errors to the yield of the spectra.  Due to the fact that the $p_{T}$ distribution follows a power law function, $dN/dp_{T} \sim p_{T}^{-5}$ uncertainties in the JES are converted to yield uncertainties by dividing each one by 5.
-Due to the low statistics at the highest $p_{T}$ bins in this analysis, uncertainties in this regime my have large statistical fluctuations.  Small ,systematic variations for the input of the jet spectra will have a dramatic effect over sparsely filled bins versus bins with a low granularity.  As such it may be necessary to extrapolate the systematic from a low $p_{T}$ bin to those at the highsest $p_{T}$ range.  The systematics were performed on both the MB and EMCal triggered data samples but no large variation was observed between the two, thus only the uncertainties from the MB sample are shown and are extrapolated to the triggered data.
-
-
-\subsection{Systematic Uncertainty to Jet Energy Scale}
-
-The following sections present and discuss the uncertainties cause by shifts to the JES.
-
-\subsubsection{Tracking Efficiency Sensativity}
-Only a fraction of charged tracks generated by the hard scattering of two protons will be detected in the TPC due to finite track efficiency.  Missing tracks from a event will cause a JES 
-Corrections for the tracking efficiency were performed by randomly throwing out 5\% of the tracks from each event from the 8 TeV data samples and reperforming jet on the altered data.  All of the inputs for jet finding were maintained.
-
-
-\begin{figure*}[t!]
-$\begin{array}{rl}
-    \includegraphics[width=0.5\textwidth]{SysR02_TrkEff} &
-    \includegraphics[width=0.5\textwidth]{SysR03_TrkEff}\\
-    \multicolumn{2}{c}{\includegraphics[width=0.5\textwidth]{SysR04_TrkEff}}
-\end{array}$
-\caption[Systematic due to TPC tracking efficiency.]{\label{fig:trkeff}Systematic due to TPC tracking efficiency.}
-\end{figure*}
-
-\noindent
-Figure \ref{fig:trkeff} shows the systematical uncertainties for R = 0.2 (top left), R = 0.3 (top right), and R = 0.4 (bottom) jets.   
-
-\subsubsection{Hadronic Correction Systematic}
-
-\subsubsection{Sensativity to EMCal Clusterization Algorithm}
-As previously stated, the clusterizer used in this thesis was the v2 algorithm. This algorithm was used in both the detector-level Monte Carlo and data analysis.  In order to test the sensitivity the JES has to the clusterization algorithm a different algorithm was chosen and a new spectra was generated.  The v1 algorithm was choosen and is similar to the v2 algorithm with the exception that the total size of the cluster is forced to be smaller then nine towers.  Similar to the other systematic presented we see a large anti-correlated bin-to-bin variatiaions at high-$p_{T}$ due to sparsely field binning.  
-
-\subsection{Systematic Uncertainty to Jet Yield}
-The following sections discuss the systematic uncertainties affecting the jet yield.
-
-\subsubsection{Track $p_{T}$ resolution}
-The momentum resolution of TPC is estimated using the covariance matrix, Figure\ref{fig:trackpcovmatrix}, generated from a Kalman filtering\cite{Fruhwirth:1987fm} pad signal on the TPC read-out region.  To estimate the systematic due to the $p_{T}$ resolution tracks are smeared 
-
-\begin{figure}[h]
-\includegraphics[width=8cm]{trackcovmatrix}
-\centering
-\caption{Inclusive track resolution, Min Bias 8 TeV.}
-\label{fig:trackpcovmatrix}
-\end{figure}
-
-Most tracks have below 1\% momentum resolution and the tracks with $\sigma(p_{T})/p_{T} \geq$ 1\% tend to be tracks below 200 MeV tracks.  To measure the $p_{T}$ resolution I smeared each track from the Min Bias data by a Gaussian function which would alter the track $p_{T}$ by up to 1\% of its original value and remeasure the spectra.  
-
-
-\subsubsection{Cluster Energy resolution}
-
-\subsubsection{Trigger Systematic}
-
-
-\subsubsection{Min Bias Luminosity and Uncertainty}
-
-The luminosity of a hadronic collider, $\mathscr{L}$, is given by the expression
-
-
-
-\begin{equation}
-\mathscr{L} = \frac{R}{\sigma}
-\label{eq:xlumdef}
-\end{equation}
-
-\noindent
-where R is the interaction rate and $\sigma$ is the visible cross section.  Due to the fact that we only measure events within a 10 cm window within the primary vertex region we must scale the total luminosity to that which is delievered within the primary vertex region of the ALICE experiment.  This scale factor is determined by dividing the total number of MB events to those accepted within the 10 cm window.  $N^{tot}_{MB} / N^{10 cm vertex}_{MB}$ = 1.024 from the acceptance criteria held in this analysis.
-The luminosity along with its uncertainty were determined during a a special Van der Meer scan run in April of 2012\cite{ALICE-PUBLIC-2017-002}.  The total systematic uncertainty for the minimum bias (MB) trigger were obtained by measuring the visible cross section using the T0 and V0 detectors.  The MB trigger was defined as V0AND which required a hit in both tjhe V0A and V0C.  The cross section was reported as being a combined average for MB with the V0AND as, 
-
-\begin{equation}
-\sigma_{V0} = (55.8 \pm 1.2) mb
-\label{eq:xlumdef}
-\end{equation}
-
-\noindent
-with a combined systematic uncertainty of 2.19\% on the visible cross section and 2.60\% on the luminosity. 
-
-
-\subsection{Total Uncertainty}
-
-A summary of the total systematic errors used in the final analysis.
-
-\begin{tabular}{ |p{5cm}||p{3cm}|p{3cm}|p{3cm}|  }
- \hline
- \multicolumn{4}{|c|}{Systematic Errors} \\
- \hline
- Systematic &R = 0.2 Jets & R = 0.3 Jets& R = 0.4 Jets\\
- \hline
-Sensitivity to Clusterization   & AF    &AFG&   004\\
-Hadronic Correction&   AX  & ALA   &248\\
-Tracking Efficency &AL & ALB&  008\\
-Sensitivity to Unfolding&DZ & DZA&  012\\
-Momentum Resolution&   AS  & ASM&016\\
-Energy Resolution& AND   &020 & 02\\
- Angola& AO  & AGO&024\\
- \hline
-
-\end{tabular}
-\noindent
-
-The systematics from the yield and JES are added in quadrater together and this is combined in quardrater with the statistical errors.
-
-\section{Corrected pp jet cross section}
-
-
-\subsection{Comparisons to pQCD predictions}
-
-\subsection{Jet Cross Sections and Ratios}
 
 
 

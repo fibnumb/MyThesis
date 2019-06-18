@@ -318,6 +318,11 @@ Fritz~W. Bopp, R.~Engel, and J.~Ranft.
   School, Session C, Workshop on Diffractive Physics, LISHEP'98, Rio de
   Janeiro, Brazil, February 16-20, 1998}}, pages 729--741, 1998.
 
+\bibitem{Bahr:2008pv}
+M.~Bahr et~al.
+\newblock {Herwig++ Physics and Manual}.
+\newblock {\em Eur. Phys. J.}, C58:639--707, 2008.
+
 \bibitem{Csorgo:2000yu}
 T.~Csorgo.
 \newblock {New form of matter at CERN SPS: Quark matter but not quark gluon
@@ -599,6 +604,12 @@ S.~Agostinelli et~al.
 {ALICE luminosity determination for pp collisions at $\sqrt{s}=8$ TeV}.
 \newblock Mar 2017.
 
+\bibitem{Acharya:2018eat}
+Shreyasi Acharya et~al.
+\newblock {Charged jet cross section and fragmentation in proton-proton
+  collisions at $\sqrt{s}$ = 7 TeV}.
+\newblock {\em Phys. Rev.}, D99(1):012016, 2019.
+
 \bibitem{Bourrion:2010js}
 O.~Bourrion, R.~Guernane, B.~Boyer, J.~L. Bouly, and G.~Marcotte.
 \newblock {Level-1 jet trigger hardware for the ALICE electromagnetic
@@ -617,6 +628,17 @@ G.~Cowan.
 \newblock {A survey of unfolding methods for particle physics}.
 \newblock {\em Conf. Proc.}, C0203181:248--257, 2002.
 \newblock [,248(2002)].
+
+\bibitem{Abelev:2013ala}
+Betty~Bezverkhny Abelev et~al.
+\newblock {Energy Dependence of the Transverse Momentum Distributions of
+  Charged Particles in pp Collisions Measured by ALICE}.
+\newblock {\em Eur. Phys. J.}, C73(12):2662, 2013.
+
+\bibitem{Fruhwirth:1987fm}
+R.~Fruhwirth.
+\newblock {Application of Kalman filtering to track and vertex fitting}.
+\newblock {\em Nucl. Instrum. Meth.}, A262:444--450, 1987.
 
 \bibitem{MA2013319}
 Rongrong Ma.

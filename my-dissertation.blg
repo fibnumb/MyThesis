@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2018)
+This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: my-dissertation.aux
 A level-1 auxiliary file: front-matter/dedication.aux
@@ -16,9 +16,9 @@ The style file: unsrt.bst
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-dissertation.bib
 Warning--entry type for "JetPic" isn't style-file defined
---line 350 of file references-dissertation.bib
+--line 414 of file references-dissertation.bib
 Warning--entry type for "Santimaria:1690550" isn't style-file defined
---line 1373 of file references-dissertation.bib
+--line 1437 of file references-dissertation.bib
 Warning--I didn't find a database entry for "Tangwancharoen:2016dq"
 Warning--I didn't find a database entry for "Pfeiffer:2628608"
 Warning--empty journal in Mobs:2197559
@@ -40,45 +40,45 @@ Warning--empty institution in CERN-LHCC-2015-001
 Warning--empty institution in Buncic:2011297
 Warning--empty author in ALICE-PUBLIC-2017-002
 Warning--empty journal in ALICE-PUBLIC-2017-002
-You've used 107 entries,
+You've used 111 entries,
             1791 wiz_defined-function locations,
-            1152 strings with 23107 characters,
-and the built_in function-call counts, 23382 in all, are:
-= -- 2022
-> -- 943
+            1175 strings with 23617 characters,
+and the built_in function-call counts, 24229 in all, are:
+= -- 2099
+> -- 971
 < -- 14
-+ -- 364
-- -- 257
-* -- 1577
-:= -- 3754
-add.period$ -- 331
-call.type$ -- 107
-change.case$ -- 104
++ -- 375
+- -- 264
+* -- 1634
+:= -- 3891
+add.period$ -- 343
+call.type$ -- 111
+change.case$ -- 108
 chr.to.int$ -- 0
-cite$ -- 126
-duplicate$ -- 1035
-empty$ -- 2396
-format.name$ -- 257
-if$ -- 5227
+cite$ -- 130
+duplicate$ -- 1071
+empty$ -- 2486
+format.name$ -- 264
+if$ -- 5417
 int.to.chr$ -- 0
-int.to.str$ -- 107
-missing$ -- 101
-newline$ -- 546
-num.names$ -- 102
-pop$ -- 231
+int.to.str$ -- 111
+missing$ -- 105
+newline$ -- 566
+num.names$ -- 106
+pop$ -- 235
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 439
+skip$ -- 454
 stack$ -- 0
-substring$ -- 1655
-swap$ -- 173
+substring$ -- 1727
+swap$ -- 177
 text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 19
-while$ -- 199
-width$ -- 110
-write$ -- 1171
+while$ -- 207
+width$ -- 114
+write$ -- 1215
 (There were 23 warnings)
