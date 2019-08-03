@@ -15,10 +15,10 @@
 \contentsline {subsubsection}{Cambridge/Aachen Algorithm}{19}{section*.29}% 
 \contentsline {subsection}{\numberline {2.3.3}FastJet}{21}{subsection.2.3.3}% 
 \contentsline {section}{\numberline {2.4}Monte-Carlo Generators}{22}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}PYTHIA}{23}{subsection.2.4.1}% 
-\contentsline {subsection}{\numberline {2.4.2}PHOJET}{23}{subsection.2.4.2}% 
-\contentsline {subsection}{\numberline {2.4.3}HERWIG}{24}{subsection.2.4.3}% 
-\contentsline {subsection}{\numberline {2.4.4}AliROOT}{24}{subsection.2.4.4}% 
+\contentsline {subsubsection}{PYTHIA}{23}{section*.31}% 
+\contentsline {subsubsection}{PHOJET}{23}{section*.32}% 
+\contentsline {subsubsection}{HERWIG}{24}{section*.33}% 
+\contentsline {subsubsection}{AliROOT}{24}{section*.34}% 
 \contentsline {section}{\numberline {2.5}The Quark-Gluon Plasma}{25}{section.2.5}% 
 \contentsline {subsection}{\numberline {2.5.1}Nuclear Collisions}{25}{subsection.2.5.1}% 
 \contentsline {subsection}{\numberline {2.5.2}Jets as a Probe of the QGP}{27}{subsection.2.5.2}% 
@@ -32,27 +32,27 @@
 \contentsline {subsection}{\numberline {3.2.2}VZERO}{36}{subsection.3.2.2}% 
 \contentsline {subsection}{\numberline {3.2.3}Inner Tracking System}{37}{subsection.3.2.3}% 
 \contentsline {subsection}{\numberline {3.2.4}Time Projection Chamber}{38}{subsection.3.2.4}% 
-\contentsline {subsubsection}{The TPC readout}{39}{section*.40}% 
-\contentsline {subsubsection}{TPC Performance}{40}{section*.42}% 
+\contentsline {subsubsection}{The TPC readout}{39}{section*.44}% 
+\contentsline {subsubsection}{TPC Performance}{40}{section*.46}% 
 \contentsline {subsection}{\numberline {3.2.5}Electromagnetic Calorimeter}{41}{subsection.3.2.5}% 
-\contentsline {subsubsection}{EMCal Performance}{42}{section*.45}% 
-\contentsline {subsubsection}{EMCal Trigger}{44}{section*.47}% 
+\contentsline {subsubsection}{EMCal Performance}{42}{section*.49}% 
+\contentsline {subsubsection}{EMCal Trigger}{44}{section*.51}% 
 \contentsline {chapter}{\numberline {4}The ALICE TPC Upgrade}{46}{chapter.4}% 
 \contentsline {subsection}{\numberline {4.0.1}Physics Motivation}{46}{subsection.4.0.1}% 
 \contentsline {subsection}{\numberline {4.0.2}Gaseous Electron Multiplier Foils}{49}{subsection.4.0.2}% 
 \contentsline {subsection}{\numberline {4.0.3}Research and Development}{51}{subsection.4.0.3}% 
-\contentsline {subsubsection}{2014 Test Beam}{53}{section*.54}% 
+\contentsline {subsubsection}{2014 Test Beam}{53}{section*.58}% 
 \contentsline {subsection}{\numberline {4.0.4}Production of the Inner Readout Chambers in the U.S.}{55}{subsection.4.0.4}% 
 \contentsline {subsection}{\numberline {4.0.5}GEM and Chamber Quality Assurance}{57}{subsection.4.0.5}% 
-\contentsline {subsubsection}{GEM QA}{58}{section*.60}% 
-\contentsline {subsubsection}{Chamber QA}{59}{section*.62}% 
+\contentsline {subsubsection}{GEM QA}{58}{section*.64}% 
+\contentsline {subsubsection}{Chamber QA}{59}{section*.66}% 
 \contentsline {subsection}{\numberline {4.0.6}Outlook}{61}{subsection.4.0.6}% 
 \contentsline {chapter}{\numberline {5}Analysis Methods and Corrections}{63}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}Raw Jet Spectra}{65}{section.5.1}% 
 \contentsline {section}{\numberline {5.2}8 TeV Data Quality}{65}{section.5.2}% 
-\contentsline {subsubsection}{Event Selection}{66}{section*.70}% 
-\contentsline {subsubsection}{Monte Carlo Anchored Data}{68}{section*.72}% 
-\contentsline {subsubsection}{General Event Section Criteria}{68}{section*.73}% 
+\contentsline {subsubsection}{Event Selection}{66}{section*.74}% 
+\contentsline {subsubsection}{Monte Carlo Anchored Data}{68}{section*.76}% 
+\contentsline {subsubsection}{General Event Section Criteria}{68}{section*.77}% 
 \contentsline {subsection}{\numberline {5.2.1}EMCal Cluster Selection}{69}{subsection.5.2.1}% 
 \contentsline {subsection}{\numberline {5.2.2}TPC Track Selection}{73}{subsection.5.2.2}% 
 \contentsline {section}{\numberline {5.3}Jet Selection}{75}{section.5.3}% 
@@ -70,16 +70,16 @@
 \contentsline {chapter}{\numberline {6}Conclusion and Outlook}{91}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}Systematic Uncertainties}{91}{section.6.1}% 
 \contentsline {subsection}{\numberline {6.1.1}Systematic Uncertainty to Jet Energy Scale}{92}{subsection.6.1.1}% 
-\contentsline {subsubsection}{Tracking Efficiency Sensativity}{92}{section*.98}% 
-\contentsline {subsubsection}{Hadronic Correction Systematic}{94}{section*.100}% 
-\contentsline {subsubsection}{Sensativity to EMCal Clusterization Algorithm}{94}{section*.102}% 
+\contentsline {subsubsection}{Tracking Efficiency Sensativity}{92}{section*.102}% 
+\contentsline {subsubsection}{Hadronic Correction Systematic}{94}{section*.104}% 
+\contentsline {subsubsection}{Sensativity to EMCal Clusterization Algorithm}{94}{section*.106}% 
 \contentsline {subsection}{\numberline {6.1.2}Systematic Uncertainty to Jet Yield}{95}{subsection.6.1.2}% 
-\contentsline {subsubsection}{Track $p_{T}$ resolution}{95}{section*.104}% 
-\contentsline {subsubsection}{Cluster Energy resolution}{95}{section*.107}% 
-\contentsline {subsubsection}{Min Bias Luminosity and Uncertainty}{95}{section*.109}% 
-\contentsline {subsubsection}{Total Uncertainty}{97}{section*.110}% 
+\contentsline {subsubsection}{Track $p_{T}$ resolution}{95}{section*.108}% 
+\contentsline {subsubsection}{Cluster Energy resolution}{95}{section*.111}% 
+\contentsline {subsubsection}{Min Bias Luminosity and Uncertainty}{95}{section*.113}% 
+\contentsline {subsubsection}{Total Uncertainty}{97}{section*.114}% 
 \contentsline {section}{\numberline {6.2}8 TeV Inclusive Jet Results from CMS and ATLAS}{98}{section.6.2}% 
 \contentsline {section}{\numberline {6.3}Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}{99}{section.6.3}% 
-\contentsline {chapter}{Bibliography}{103}{section*.117}% 
-\contentsline {chapter}{Appendices}{118}{section*.118}% 
-\contentsline {chapter}{Vita}{119}{section*.119}% 
+\contentsline {chapter}{Bibliography}{103}{section*.121}% 
+\contentsline {chapter}{Appendices}{118}{section*.122}% 
+\contentsline {chapter}{Vita}{119}{section*.123}% 

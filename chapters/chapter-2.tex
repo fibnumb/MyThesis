@@ -168,7 +168,7 @@ Similar to how a PDF quantitatively describes the structure of a nucleon the FF 
 \end{equation}
 
 \noindent
-Ideally, the fractional momentum of the hadrons created from the fragmenting parton, $z \equiv p_{hadron} / p_{parton}$.  Due to the confinement of partons we must use a a suitable substitution for measuring the FF.  The Parton-Hadron Duality\cite{Jenkovszky:2012dc} states that a hadron found near the center of a jet should encompass the quantum numbers and kinematic properties associated with the hard scattered quark that initiated the jet.  Thus we can measure the fragmentation function as $z = p_{hadron} / p_{jet}$.  The formulation of the FF as a fractional energy carried by the hadrons in a jet was a breakthrough in pQCD techniques and is analogous to how an electron passing through an absorber creates photon showers with these photons generating conversion electrons until the total energy has been dissipated into the material.
+Ideally, the fractional momentum of the hadrons created from the fragmenting parton, $z \equiv p_{hadron} / p_{parton}$.  The Parton-Hadron Duality\cite{Jenkovszky:2012dc} states that the leading hadron should encompass the quantum numbers and kinematic properties associated with the hard scattered quark that initiated the jet.  Thus we can measure the fragmentation function as $z = p_{hadron} / p_{jet}$.  The formulation of the FF as a fractional energy carried by the hadrons in a jet was a breakthrough in pQCD techniques and is analogous to how an electron passing through an absorber creates photon showers with these photons generating conversion electrons until the total energy has been dissipated into the material.
 
 \begin{figure}[h]
 \includegraphics[width=10.0cm]{FFfunctions}
@@ -182,7 +182,7 @@ Figure \ref{fig:FFfunc} is the FF in terms of the Gaussian equation, $z \, dN/dz
 
 \section{Jet Finding Algorithms}
 
-A jet arises from the fragmentation of a hard parton to final state hadrons.  However, grouping the hadrons together into a jet is a non-trivial task and jet finding algorithms are deployed in order to achieve this objective.  Early on in jet physics, both theorists and experimentalists used a wide variety of jet finders that made comparisons between experiments or to theoretical calculations nearly impossible\cite{Atkin:2015msa}.  For example, a radiated gluon that splits into a quark anti-quark pair may become one or two jets depending on the angular separation and the algorithm used.  Early jet finders tended to be sensitive to soft particles or could give widely varying yields to the number of jets in an event.  In 1990, the Snowmass Accord\cite{Huth:217490} was held in order to standardize the definition of a jet between experimentalists and theorists.  The agreement maintained that any algorithm that clusters particles into a jet must be both infrared and collinear safe (IRC).  
+A jet arises from the fragmentation of a hard parton to final state hadrons.  However, grouping the hadrons together into a jet is a non-trivial task and jet finding algorithms are deployed in order to achieve this objective.  Early on in jet physics, both theorists and experimentalists used a wide variety of jet finders that made comparisons between experiments or to theoretical calculations nearly impossible\cite{Atkin:2015msa}.  For example, a radiated gluon that splits into a quark anti-quark pair may become one or two jets depending on the angular separation and the algorithm used.  Early jet finders tended to be sensitive to soft particles or could give widely varying yields to the number of jets in an event.  In 1990, the Snowmass Accord\cite{Huth:217490} reached a standardized definition of a jet between experimental and theorists.  The agreement maintained that any algorithm that clusters particles into a jet must be both infrared and collinear safe (IRC).  
 
 \begin{figure}[h]
 \includegraphics[width=15.0cm]{IRCsafe}
@@ -200,7 +200,7 @@ Cone algorithms made up the bulk of early jet finders.  The only IRC safe cone a
 
 \subsection{Sequential/Recombination Algorithms}
 
-The other class of jet finders are the sequential/recombination algorithms, which are favored by experimentalists, theoreticians and are IRC safe.  There are three types of sequential/recombination algorithms: $k_{T}$, Anti-$k_{T}$, and the Cambridge/Aachen jet finders, with $k_{T}$ referring to the transverse momentum of particle.  All of the algorithms use a similar method, first they find the distance between every pair of particles, $d_{i,j}$,  such that
+The other class of jet finders are the sequential/recombination algorithms, which are favored by experimentalists and theorists, and are IRC safe.  There are three types of sequential/recombination algorithms: $k_{T}$, Anti-$k_{T}$, and the Cambridge/Aachen jet finders, with $k_{T}$ referring to the component of a jet constituents momentum perpendicular to the jet axis.  All of the algorithms use a similar method, first they find the distance between every pair of particles, $d_{i,j}$,  such that
 
 
 
@@ -306,7 +306,7 @@ In addition to basic jet measurements, FastJet contains a number of advance feat
 \section{Monte-Carlo Generators}
 Monte-Carlos (MC) allow for the simulation of high energy events on a statistical basis.  Particle level generators use different phenomenological models of the factorization theorem in order to simulate the energy, momentum, particle species, multiplicity, and direction of travel expected in a high energy collision.  In order to validate an analysis the particle level simulations are further propagated through a detector level simulation of an experiment, such as Geant3\cite{Brun:1119728}, in order to negate detector effects on the output observables from the MC simulation.  In this section only the particle level simulations used in the thesis are discussed.
 
-\subsection{PYTHIA}
+\subsubsection{PYTHIA}
 
 PYTHIA\cite{Sjostrand:2007gs}, is a \verb|C++| Monte Carlo software tool-kit used to model proton-proton collisions.  The package uses pre-defined parton distribution functions as input afterwards it simulates the partonic showers and radiation due to a hard scattering by generating the LO scattering matrix elements.  Hadronization is performed in PYTHIA using the Lund String Model.  After which relative branching ratios are used to statistically throw the decay modes of the hadrons until they are stabilized.
 
@@ -319,20 +319,20 @@ K = \frac{\sigma_{NLO}}{\sigma_{LO}}.
 
 NLO corrections to the cross-section will not match experimental results, PYTHIA implements additional phenomenological adjustments used to better match data.  PYTHIA encompass these corrections into sets known as `tunes', with PYTHIA 6.4 Perugia-2010 tune being used for this analysis\cite{Skands:2010ak}.
 
-\subsection{PHOJET}
+\subsubsection{PHOJET}
 PHOJET is a \verb|FORTRAN 77| Monte Carlo simulator used to model proton-proton collisions. It is an alternative to PYTHIA and is better at modeling soft physics processes present in high energy collisions.   PHOJET implements the Dual Parton model\cite{CAPELLA1994225}\cite{Wong:241251} and multiple parton interactions\cite{Bopp:1998rc} to model soft physics.  Hard interactions are implemented in PHOJET using LO scattering elements and it uses PYTHIA for the fragmentation and hadronization phase.  Due to its ability to model soft physics, PHOJET is better at comparing to minimum bias\footnote{Events with a low total transverse momentum and high cross section} data and understanding jet results in a low kinematic range.  PHOJET also acts as a benchmark in understanding any bias due to using other MC generators, such as PYTHIA.  PHOJET v1.2 is used in this thesis.
 
 
-\subsection{HERWIG}
+\subsubsection{HERWIG}
 The Herwig\cite{Bahr:2008pv} Monte Carlo generator is a \verb|FORTRAN 77| package used to generate proton proton events.  It is similar to PYTHIA in that it does the LO hard scattering of partons, however it uses the cluster model of hadronization to produce jets based on gluon splitting.  It is also similar to PHOJET in regards to the evolution of final state jets with soft gluon angular ordering.  By comparing HERWIG, PYTHIA, and PHOJET it is possible to test for sensativities to jet production in high energy events due to different types of hadronization models and soft radiation.
 
-\subsection{AliROOT}
+\subsubsection{AliROOT}
 AliROOT is the official framework of \verb|C++| classes developed for the ALICE Experiment.  The software is broken into two packages AliRoot, which contains code mostly used for the sub-detectors callibrations and reconstruction of particles, and AliPhysics which contains user defined classes to perform physics related analysis.  This thesis developed a number of classes in both packages and are part of the offical repository avaliable on GitHUB.
 
 \iffalse
 \subsection{HERWIG}
 
-The Herwig Monte Carlo generator is a \verb|FORTRAN 77| package that generates pp events.  It is similar to PYTHIA in that it does the LO hard scattering of partons, however it uses the cluster model of hadronization to produce jets based on gluon splitting.  It 
+The Herwig Monte Carlo generator is a \verb|FORTRAN 77| package that generates pp events.  It is similar to PYTHIA in that it does the LO hard scattering of partons, however it uses the cluster model of hadronization to produce jets based on gluon splitting.
 
 \section{Kinematics}\label{sec:kinematics}
 
