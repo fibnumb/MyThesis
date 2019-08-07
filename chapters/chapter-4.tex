@@ -3,7 +3,7 @@
 From 2014 until 2018, I worked on the upgrade of the TPC to a continuous readout.  This includes working on a test beam in 2014 for a prototype Read-Out Chamber (ROCs) using Micropattern Gaseous Detectors (MPGD) over the current Multi-Wire Proportional Chamber (MWPC) design.  Once a final design for the new ROCs was chosen the production of the new Inner Read-Out Chambers (IROCs) using a stack of four Gaseous Electron Multiplier (GEM) foils took place at the University of Tennessee.  During this period I assembled 49 new IROCs.  In 2018, I traveled to Yale University and CERN to help with quality assurance of the IROCs built at Tennessee.
 
 
-\subsection{Physics Motivation}
+\section{Physics Motivation}
 After the 2018 heavy-ion run ends, the LHC will begin the second long shutdown (LS2) and upgrade to the High Luminosity LHC (Hi-Lumi LHC)\cite{Apollinari:2015bam} which was briefly mentioned in section \ref{sec:LHC}.  The goal of the LHC upgrade is to move into an era of high precision measurements of rare QCD processes and increase the production of soft probes.  Once the upgrade is complete the expected event rate in ALICE will be 50 kHz in MinBias PbPb collisions.  This will lead to a factor of x100 increase in MinBias data and a factor of x10 increase in high-$p_{T}$ triggered data recorded by ALICE.
 
 The ALICE experiment has focused on probing the thermodynamic properties of the QGP in the past.  The increase in event rate expected from the Hi-Lumi LHC would open new ways to probe the QGP including\cite{Abelev:1475243}:
@@ -39,7 +39,7 @@ Leptons weakly couple to the QGP\cite{Ryblewski:2015sha} and by studying these t
 The TPC used in the ALICE experiment along with the readout was discussed in section \ref{sec:tpc}.  The ALICE collaboration first proposed an upgrade of the TPC in 2012 with a Letter of Intent (LoI)\cite{Abelev:1475243}.  A Technical Design Report(TDR)\cite{CERN-LHCC-2013-020} was published in 2013 with an initial design overview.  An addendum to the TDR\cite{CERN-LHCC-2015-002} was published in 2015 after the performance of prototype ROCs was measured on a test beam at CERN in 2014.  The overall goals of the TPC upgrade are to continuously readout events in the high luminosity environment expected after LS2, to minimize the accumulation of space-charge distortions in the drift field, and to maintain the PID and tracking performance of the current TPC.
 
 
-\subsection{Gaseous Electron Multiplier Foils}
+\section{Gaseous Electron Multiplier Foils}
 Gaseous Electron Multiplier (GEM) Foils were first proposed by CERN physicist Fabio Sauli in 1997\cite{Sauli:1997qp}.  GEMs belong to a new form of detector technology known as Micropattern Gaseous Detectors\cite{Titov:2013hmq} that use microelectronic or chemical etching techniques to print a readout structure onto a material surface.
 
 \begin{figure}[h]
@@ -66,7 +66,7 @@ The configuration of the pitch and size holes ion a GEM foil is directly correla
 Creating GEMs with a uniform hole distribution and stacking them in a consistent manner in order to minimize the overlap of holes from one layer to another restricted them to small prototypes and impeded their use on large experiments.  Around 2010 two methods were developed, the single-mask technique\cite{0960-1317-17-8-021} and the NS2 assembly\cite{1748-0221-12-06-C06036}, which allowed for a systematic way of etching holes and stretching GEMs so they could be properly aligned.  These methods allowed for GEMs to become a viable amplification device for large experiments.  As of 2018 the TOTEM, COMPASS, ATLAS, and LHCb experiments have all incorporated GEMs in their trackers.  Future colliders, such as the Electron-Ion Collider (EIC), plan on using them\cite{SAULI20162}.
 
 
-\subsection{Research and Development}
+\section{Research and Development}
 
 Initially, it was decided that the new ROCs would incorporate a stack of three GEMs with a hole geometry similar to the one incorporated on the LHCb experiments\cite{Santimaria:1690550} tracking detector.  This was a starting point to bench mark performance for the ALICE TPC upgrade as well as an opportunity to use experts in GEM technology already present at CERN.  The first phase of the R\&D involved simulating the performance of the LHCb 3-GEM stack in the high event rate environment expected  after the Hi-Lumi LHC upgrade using a the software package called Garfield++\cite{Pfeiffer:2628608}, which is a GEANT4\cite{Agostinelli:2002hh} add-on package built to simulate MPGDs.  It was quickly observed from the simulations that a 3-GEM stack would be insufficient in maintaining the performance needed for the TPC while minimizing the ion back flow.  An additional layer of GEM was added to the 3-GEM stack in simulation and it was observed that this configuration would preserve the TPC performance.
 
@@ -142,7 +142,7 @@ Figure \ref{fig:ProtoIBFEres} shows the energy resolution of the iron peak as a 
 
 
 
-\subsection{Production of the Inner Readout Chambers in the U.S.}
+\section{Production of the Inner Readout Chambers in the U.S.}
 Once a final design was settled on from the simulation and prototype R\&D, the project entered the production phase.  A minimum of 36 new ROCs would need to be built with the 4-GEM stack to replace the old ROCs in the TPC while 4 additional ROCs would be constructed as spares.  Due to the size and weight of the ROCs, production of the IROCs would take place in the United States and the OROC production mainly in Germany. 
 
 
@@ -167,7 +167,7 @@ Figure \ref{fig:IROCprod} shows the production flow for the construction of the 
 Figure \ref{fig:IROCassm} shows the procedure followed at Tennessee in order to build an IROC.  Furthest on the left is a picture of a copper pipe glued into the aluminum body.  This copper pipe is flushed with a coolant that maintains the temperature of the Front End Electronics (FEE).  The next two photos show the pad plane being mounted on a vacuum table while glue is applied to it and the aluminum body.  Once all the components are placed glued and mounted on the table the IROC is loaded with lead bricks and allowed to cure for 24 hours.  The right most picture shows the final step of the HV feedthroughs mounted and glued for the GEM foils.  Before a completed IROC leaves Tennessee we performed a gas tightness test that will be discussed more in the next section.  Full production of the IROCs ended in November of 2018 with a total of 47 chambers being built at Tennessee.  A surplus of chambers were built with excess materials to provide spares.
 
 
-\subsection{GEM and Chamber Quality Assurance}
+\section{GEM and Chamber Quality Assurance}
 A stringent set of quality assurance (QA)\cite{Brucken:2018rej}\cite{Brucken:2017qjy} protocols were implemented to monitor any damaged sustained during transport and to quickly identify any flaws in the production procedures.  The QA can be broken into two major categories: QA performed on the GEM foils as received from the manufacturer and QA performed on complete/semi-complete chambers as they were going through the different production steps.  I will discuss only the QA tasks that I was directly involved with.
 
 \subsubsection{GEM QA}
@@ -233,7 +233,7 @@ Once an IROC chamber was fitted with the 4 GEM foils at Yale and sent to CERN a 
 %\subsection{Upgrade of the TPC Front-End Cards}
 %The TPC is expected to see a factor of x100 increase in MinBias data and a factor x10 increase in high-$p_{t}$ data after the Hi-Lumi upgrade.  This necessitates an upgrade of the front-end electronics to continuously sample events and to transfer the signal from events of interest to a disk farm.
 
-\subsection{Outlook}
+\section{Outlook}
 
 As of November 2018, the 47 IROCs assembled at Tennessee have been received at CERN.  None of the built chambers have surpassed the gas leak test performed at CERN and so far only 4 chambers exhibit sparking rates above the threshold.  By May of 2019, the LHC beamline around ALICE will be decommissioned and the TPC will be moved to a surface level clean room for the installation of the chambers.  The installation of the new FEE electronics and the ROC chambers should take place throughout the summer of 2019.  Afterwards there will be a 10 month commissioning with the TPC, during which the performance of the upgraded TPC will be evaluated with cosmic rays.  By the end of 2020, the TPC should be back in the ALICE cavern and the beam line will have been re-installed.  The Hi-Lumi run of the LHC is expected to start in March of 2021.
 

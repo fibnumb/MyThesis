@@ -48,7 +48,7 @@ Hard probes (large $Q^{2}$ interactions), are produced in the earliest stages of
 
 The physicist James Daniel Bjorken postulated that a correlation could be surmised by summing over the final state transverse momentum of the hadrons that form a jet to the parton that initiated the hard scattering\cite{PhysRev.179.1547}\cite{Bjorken:1973kd}.  This has lead to jets becoming the work-horse for both experimentalists and theorists over the past 30 years in probing QCD phenomena.  This thesis makes use of jets as an important probe of QCD and the following sections are devoted to developing a background for both the theoretical and experimental treatment of jet physics.  The following sections will be devoted to how jets are produced from a physics point-of-view and the latest results which this thesis compares to.
 
-\subsection{Jet Production and the Factorization Theorem}\label{sec:fac}
+\subsubsection{Jet Production and the Factorization Theorem}\label{sec:fac}
 
 Due to confinement bare quarks are unobserved, therefore experimentalists must probe QCD interactions by detecting the color neutral final state hadrons measured in collider experiments.  Fortunately, the factorization theorem (Equation \ref{eq:xsection}) allows for the final state jet cross section to be broken into a number of steps that can either be calculated pertubativlely using pQCD or modeled phenomenologically.  Using the factorization theorem the jet cross section in a pp collision is,
 
@@ -194,11 +194,11 @@ A jet arises from the fragmentation of a hard parton to final state hadrons.  Ho
 
 Collinear safety ensures that a high-$p_{T}$ particle split into two or more particles should not influence the kinematics of a hard jet, this makes the jet finders insensitive to how hadrons are grouped together.  Infrared safety in turn requires that the emission of soft radiation should not affect the properties of a jet, this makes jets returned by the algorithm independent of soft physics and a true signature of a hard process.  Both of these processes are shown in Figure \ref{fig:IRCsafe}. After the adoption of these standards from the Snowmass Accord, old algorithms that violated these rules were patched and new jet finders were developed to comply with IRC safety.  The most prevalent jet finding algorithms today fall into two categories: cone algorithms and sequential recombination/clustering algorithms.
 
-\subsection{Cone Algorithms}
+\subsubsection{Cone Algorithms}
 
 Cone algorithms made up the bulk of early jet finders.  The only IRC safe cone algorithm still in use today is the seedless infra-red safe cone algorithm (SIScone).  SIScone defines a cone of radius, R, around the highest momentum particle in the coordinates of $(\eta,\phi)$\footnote{It is possible to use a Cartesian coordinate system in particle colliders, with the z-component referring to points along the beam axis while the xy-plane is perpendicular to the beam axis.  However, this system is not invariant under a Lorentz boost.  Therefore it is more useful to use the cylindrical-like coordinates of psuedorapidity ($\eta$) and the azimuth angle ($\phi$). Psuedorapidity may be thought of as the polar angle in a cylindrical coordinate system with $\eta = 0$ when the polar angle is perpendicular to the beam axis and $\eta = \inf$ along the beam axis.  $\phi$ is the azimuth angle that rotates around the beam axis.  Both, $\eta$ and $\phi$ are invariant for Lorentz boosts along the beamline and allow for easy comparisons between the center-of-mass frame and the laboratory frame of a high energy collision.}, this is the proto-jet.  SIScone then proceeds through an iterative process of finding all the particles withing the jet radius such that $R \leq \sqrt{\phi^{2} + \eta^{2}}$ and calculates a new jet center based on these particles momenta and a new weighted jet axis$(\eta,\phi)$.  If the new center matches the proto-jet center, the proto-jet is tagged as a stable jet, all the particles in that jet are removed, and SIScone moves onto the next highest $p_{T}$ particle.  Cone algorithms tend to be unpopular due to being computationally expensive, they are hard to implement theoretically, and can give results not calculable in pertubation theory.
 
-\subsection{Sequential/Recombination Algorithms}
+\subsubsection{Sequential/Recombination Algorithms}
 
 The other class of jet finders are the sequential/recombination algorithms, which are favored by experimentalists and theorists, and are IRC safe.  There are three types of sequential/recombination algorithms: $k_{T}$, Anti-$k_{T}$, and the Cambridge/Aachen jet finders, with $k_{T}$ referring to the component of a jet constituents momentum perpendicular to the jet axis.  All of the algorithms use a similar method, first they find the distance between every pair of particles, $d_{i,j}$,  such that
 
@@ -288,7 +288,7 @@ E^{jet} = \sum_{particles} E = \sum_{towers} E
 \noindent 
 where $p_{L}$ refers to the longitudinal momentum which is the momentum component parallel to the beam axis.  This method of adding the 4-vector of the particles composing the jet together in order to gain the jet kinematics is known as the E-scheme\cite{Cacciari:2011ma}.
 
-\subsection{FastJet}
+\subsubsection{FastJet}
 FastJet\cite{Cacciari:2011ma} is a \verb|C++| software package that performs jet finding.  Due to the computational efficiency, ease of use, and straight forward implementation, FastJet is the de-facto preferred jet finder used by theoreticians and all current high energy experiments. It implements the four previously discussed jet finders along with both the E-scheme and a boost invariant $p_{T}$ scheme (BIpt-scheme) for recombination.  The BIpt-scheme obtains the jet momentum and energy in the same manner as the E-scheme but uses a weighted average to find the jet coordinates,
 
 \begin{equation}
@@ -394,7 +394,7 @@ c(b) =\frac{ \int_{0}^{b} \frac{d \sigma}{db} db}{ \int_{0}^{\infty} \frac{d \si
 
 \section{The Quark-Gluon Plasma}
 At the temperatures and pressures typical to the Universe today nuclear matter is confined to a colorless hadronic gas.  However, it was theorized that at extreme temperatures, such as those experienced in the early Universe, partons would have undergone a phase transition where by they were no longer bound to a color neutral state.  This state of matter would have been analogous to a conventional plasma where by the electrons are no longer bound to a nucleus, thus the state was dubbed the Quark-Gluon Plasma (QGP)
-The nuclear phase diagram is shown in Figure \ref{fig:QCDphase} as a function of temperature and the net baryon density.  Normal nuclear matter is confined to the bottom left while increasing temperatures and/or densities correspond to the QGP.  Modern particle colliders , such as RHIC and the LHC, are able to obtain the densities and temperatures necessary to create a QGP and are likewise shown in the figure.  The reason for particle colliders being located at low baryon density is due to the fact that at high $Q^{2}$ energies more quark antiquark pairs are produce.  This dilutes the total baryon density in the initial system and is more akin to what the early Universe was like.  
+The nuclear phase diagram is shown in Figure \ref{fig:QCDphase} as a function of temperature and the net baryon density.  Normal nuclear matter is confined to the bottom left while increasing temperatures and/or densities correspond to the QGP.  Modern particle colliders , such as RHIC and the LHC, are able to obtain the densities and temperatures necessary to create a QGP and are likewise shown in the figure.  The reason for particle colliders being located at low baryon density is due to the fact that at collider energies at mid-rapiditythe plasma are dominated by quark-antiquark pairs, so the net baryon density is close to zero.  This dilutes the total baryon density in the initial system and is more akin to what the early Universe was like.  
 
 
 
@@ -405,13 +405,13 @@ The nuclear phase diagram is shown in Figure \ref{fig:QCDphase} as a function of
 \label{fig:QCDphase}
 \end{figure}
 
-\subsection{Nuclear Collisions}
+\subsubsection{Nuclear Collisions}
 By colliding heavy nuclei together in high energy collisions it is possible to obtain the energy densities and temperatures associated with the QGP state.  The first signatures for the QGP were measured via a J/$\psi$ suppression at the Super Proton Synchrotron located at CERN in 2000\cite{Csorgo:2000yu}.  In 2005, the four experiments on the RHIC collider: BRAHMS\cite{Arsene:2004fa}, PHENIX\cite{Adcox2005184}, PHOBOS\cite{Back200528}, and STAR\cite{Adams2005102}, co-announced the observation of a new state of matter consistent with the hot and dense QGP.  Surprisingly, the results from RHIC pointed at the QGP behaving more like a perfect fluid over a plasma-like state\cite{Jacak310}.  The QGP offers a rich and dynamic environment to test QCD predictions under some of the most extreme circumstances.  
 Figure \ref{fig:HeavyIonCollisionvPP} shows the difference between a proton-proton collision and a heavy-ion collision.  The heavy-ion collision mirrors the processes in a proton-proton collision (left) described in depth in Section \ref{sec:fac}.  After the inital hard scattering the phase transition to a QGP occurs.  The QGP undergoes a hydrodynamical evolution and expansion until it cools to a colorless hadronic gas.  After the phase transition occurs unstable hadrons will decay until they are stable at which point the final state particle composition is set and the chemical freeze out occurs. The hadron gas expands and cools until all soft interactions cease, this is the kinetic freeze out, after which the final momentum spectra is set.  
 
-\subsection{Jets as a Probe of the QGP}
+\subsubsection{Jets as a Probe of the QGP}
 
-Jets are an excellent probe of the thermodynamic properties of the QGP.  This is due to them being produced in the earliest stages, before the formation of the QGP, and surviving the full evolution of a heavy-ion collision.  As a jet propagates through the QGP is will lose energy to the medium through a combination of gluon radiation to the colored medium and inelastic scatterings.  These energy loss mechanisms are dependent on the distance a parton travels through the QGP and on the species of the parton.  
+Jets are an excellent probe of for the properties of the QGP.  This is due to them being produced in the earliest stages, before the formation of the QGP, and surviving the full evolution of a heavy-ion collision.  As a jet propagates through the QGP will lose energy to the medium through a combination of gluon radiation to the colored medium and inelastic scatterings.  These energy loss mechanisms are dependent on the distance a parton travels through the QGP and on the species of the parton.  
 
 \begin{figure}[h]
 \includegraphics[width=11.0cm]{ppevolution}
@@ -427,7 +427,7 @@ Jets are an excellent probe of the thermodynamic properties of the QGP.  This is
 \label{fig:JetEloss}
 \end{figure}
 
-Figure \ref{fig:JetEloss} shows two back-to-back partons undergoing a hard scattering.  Both will fragment into jets, but the first parton with transverse energy, $E_{T1}$, will be subjected to much less energy loss over the second parton due to the first parton only traveling through the outer edge of the QGP.  The species dependent parton energy loss arises from kinematic constraints to gluon emission from the heaviest of quarks.  This radiation is suppressed at angles smaller then the ratio of the quark mass to its energy and has been dubbed the \textit{Dead-Cone Effect}.  Tagging the flavor dependence of jets, either via measuring electrons from semi-leptonic decays or reconstructing the secondary vertex of heavy flavor mesons, has recently shown that energy loss via the Dead-Cone effect is strongly suppressed with jets containing a charm quark\cite{CAO2018255}.
+Figure \ref{fig:JetEloss} shows two back-to-back partons undergoing a hard scattering.  Both will fragment into jets, but the first parton with transverse energy, $E_{T1}$, will be subjected to much less energy loss over the second parton due to the first parton only traveling through the outer edge of the QGP.  The species dependent parton energy loss arises from kinematic constraints to gluon emission from the heaviest of quarks.  This radiation is suppressed at angles smaller then the ratio of the quark mass to its energy and has been dubbed the \textit{Dead-Cone Effect}\cite{Thomas:2004ie}.  Tagging the flavor dependence of jets, either via measuring electrons from semi-leptonic decays or reconstructing the secondary vertex of heavy flavor mesons, has recently shown that energy loss via the Dead-Cone effect is strongly suppressed with jets containing a charm quark\cite{CAO2018255}.
 
 One way of quantifying the energy loss in a heavy-ion collision is via measurements of the nuclear modification factor, $R_{AA}$,
 
@@ -438,10 +438,11 @@ R_{AA} = \frac{1}{N_{binary}} \frac{d^{2}N_{AA}/dp_{T}d\eta}{d^{2}N_{pp}/dp_{T}d
 \end{equation}
 
 \noindent
-where $N_{binary}$ is the number of binary collisions and is estimated using a Glauber model\cite{Miller:2007ri} of a nucleus while $d^{2}N_{AA}/dp_{T}d\eta$ and $d^{2}N_{pp}/dp_{T}d\eta$ are the spectra measured in nucleus nucleus and proton proton collision respectively.  $R_{AA}$ may be thought of as asking the question: Does a heavy-ion collision scale as a superposition of $N_{binary}$ proton-proton collisons?  If a heavy-ion collision simply looks like some $N_{binary}$ factor of 
+where $N_{binary}$ is the number of binary collisions and is estimated using a Glauber model\cite{Miller:2007ri} of a nucleus while $d^{2}N_{AA}/dp_{T}d\eta$ and $d^{2}N_{pp}/dp_{T}d\eta$ are the spectra measured in nucleus nucleus and proton proton collision respectively.  $R_{AA}$ may be thought of as asking the question: Does a heavy-ion collision scale as a superposition of $N_{binary}$ proton-proton collisons?  A $R_{AA}$ value of 1 corresponds to no energy lose mechanism in a heavy ion collison not already present in a proton-proton collision.  The observation of $R_{AA}$ below unity shows a suppression of jets in heavy ion collisions.  Where does the missing energy go?  This is still a subject for debate and it is not clear weather the energy may propagate outside of the cone radius of the jet or if the energy may become thermalized in the medium.
 
 
 Figure \ref{fig:JetEloss} shows the nuclear modification factor with R = 0.4 jets in the ATLAS experiment at 5.02 TeV\cite{Aaboud:2018twu}.  The different colored bands in the figure are broken into centrality\footnote{The purple 10 - 20\% band denotes the most central events (i.e. the two colliding nuclei have a low impact parameter and collide nearly head-on), while the 70 - 80\% red band denotes the least central events (i.e. the two colliding nuclei have a high impact parameter and barely graze one another).  An in depth discussion of centrality may be found here\cite{Klochkov_2017}.}
+
 \begin{figure}[h]
 \includegraphics[width=10.0cm]{jetRAA}
 \centering
@@ -451,7 +452,7 @@ Figure \ref{fig:JetEloss} shows the nuclear modification factor with R = 0.4 jet
 
 
 
-\section{QGP in Proton-Proton Collisions?}
+\subsubsection{QGP in Proton-Proton Collisions?}
 As previously stated a QGP is believed to be absent in proton-proton collisions, thus any signature of a QGP should likewise be absent.  However, one way of quantifying the presence of the QGP is via the Bjorken energy density.  
 
 \begin{equation}

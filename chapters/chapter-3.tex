@@ -12,12 +12,12 @@ The Large Hadron Collider (LHC)\cite{doi:10.1142/S0217751X13300354} is a circula
 
 Figure \ref{fig:AccComp} shows a schematic of the LHC along with the pre-accelerators that help to accelerate protons and ions to their final energies before a collision at one of the four experimental interaction points(IP).  Protons are injected into the LHC together in groups called `bunches'.  Every bunch is comprised of about 120 billion protons with about 50 nanoseconds between the arrival of the next bunch.  The bunch scheme during the heavy-ion run is reduced to 200 nanoseconds due to the high multiplicity of the events and additional computational resources needed. 
 
-\subsection{LHC Operations}
+\subsubsection{LHC Operations}
 The LHC first attempted particle collisions in September of 2008.  The initial ramping up of the super conducting magnets led to mechanical failure of the helium pipes inside of the LHC beam line.  This fault caused the LHC to remain shut down for over a year while the accelerator was repaired and new safety procedures were implemented. The first successful collisions occurred in 2009 with proton collisions at a reduced energy of 0.9 TeV.  2010 marked the beginning of a new era in the high energy frontier with proton collisions at a record setting 7 TeV.  The only other major fault that has occurred was in the summer of 2016. A stone marten chewed through a high voltage line in a power transformer on a ground level building at the LHC.  The LHC went offline for about a week while repairs occurred and quickly resumed the physics program.  Unfortunately, the marten did not survive.
 
 The typical operating year at the LHC allows for any repairs or upgrades on any of the experiments to be performed during the offline period for the first few months.  After the offline period the proton physics program begins and lasts until approximately mid-November.  The heavy ion program lasts until the first week of December, after which the LHC shuts down for the remainder of the year.  From 2014 until early 2015 the LHC was shutdown for major renovations and upgrades fto the accelerator and a number of sub-detectors on each experiment,. This was known as long shutdown 1 (LS1).  After 2018, the LHC will go through another shutdown (LS2) during which the accelerator will have a high luminosity (Hi-Lumi) upgrade.  This will be discussed in detail along with the upgrades that will be done to ALICE in chapter \ref{ch:tpcu}.
 
-\subsection{LHC Accelerator Complex}\label{sec:LHCop}
+\subsubsection{LHC Accelerator Complex}\label{sec:LHCop}
 The LHC accelerator complex is a succession of particle accelerators that increase the energy of particles before they are injected into the next accelerator.  Hydrogen atoms are first passed through a high voltage environment that strips any electrons around the nuclei.  Once the nuclei are stripped of their electrons they are injected into the linear accelerator(LINAC).  The LINAC uses radio frequency cavities to accelerate particles to 50 MeV before they enter the first circular accelerator the Proton Synchrotron(PS).  The PS begins to focus the protons into bunches and further accelerates them to 1.4 GeV before the the beam enters the Super Proton Synchrotron(SPS).  The SPS will further accelerate the particles to 450 GeV.  The beam is then injected into the LHC.  Once the beams are injected into the LHC they are accelerated to the final collision energy.  Afterwards the beams get `squeezed', or tightly focused, with a series of quadrapole magnets.  The final step is to `adjust'  the two beams to overlap with one another at each experiments IP.  Once the adjust phase is completed, collisions will occur at each experiment and data begins to get collected.  This entire process from stripping the electrons to having collisions in each IP takes 20 minutes.
 
 In order for the beam parameters to be maintained in the LHC, numerous dipole and quadrupole magnets are deployed to accelerate, focus, and bend the particle beams.  The magnets use a superconducting niobium-titanium alloy that are maintained at an operating temperature of 1.9 K using helium-4.  Upgrading these magnets is one of the major goals during LS2 as part of the Hi-Lumi upgrade of the LHC\cite{Fabjan:2011jb}.
@@ -43,10 +43,10 @@ A Large Ion Collider Experiment(ALICE) is a general purpose detector that covers
 \noindent
 Figure \ref{fig:alice} shows the ALICE detector with human figures to set the scale.  Figure \ref{fig:ITS} shows the area closest to the IP with the TZERO, VZERO, Inner Tracking System and Forward Multiplicity Detector; these detectors give basic information on the collision such as vertex location, centrality, timing.   Further out from the central region are a number of tracking detectors like the Time Projection Chamber and Time-of-Flight detectors that focus on  measuring charged particle momentum and PID.  Next are the calorimeters that measure particle and jet energies, such as the Electromagnetic Calorimeter, Photon Spectrometer, and the Dijet Calorimeter.  All of these sub-detectors are housed in the L3 magnet seen as the red octagon in Figure \ref{fig:alice}.   The L3 magnet provides a uniform magnetic field over the central area of ALICE and is responsible for the high PID performance ALICE has over a wide kinematic region\cite{Gligorov:2018vkc}.  At high rapidity, there is a muon tracker and trigger for muon identification.  The following sections give a more detailed discussion of the sub-detectors used for this analysis
 
-\subsection{TZERO}
+\subsubsection{TZERO}
 The TZERO(T0)\cite{Bondila:2005xy} detector is a double layer Cherenkov counter located at 70 cm(T0A) and 370 cm(T0B) from the IP.  T0 functions as a trigger and timing detector that determines the precise moment in time at which an event `starts' in the ALICE detector.  The timing information from the T0 is fed to other sub-detectors, like the Time-of-Flight and Time Projection Chamber detector, for track reconstruction.  The T0 also gives feedback on the target luminosity of the ALICE experiment to the LHC operations center.  
 
-\subsection{VZERO}
+\subsubsection{VZERO}
 The VZERO(V0)\cite{Abbas:2013taa} detector is a double layer scintillator array and similar to the T0 is asymmetrically placed at a distance of 86 cm(V0A) and 329 cm(V0C) away from the primary IP.  It provides the `minimum bias'(MinBias)\footnote{A MinBias event is unsurprisingly defined as an event with the least amount of bias possible.  Events recorded with a MinBias trigger  attempt to not artificially prefer either diffractive or non-diffractive processes over one another\cite{Field:2011iq}.} trigger information for events and centrality information during the heavy-ion run.   Centrality\footnote{See Section \ref{sec:kinematics}} is determined by measuring the multiplicity amplitude from the V0 and fitting these results to a Glauber\footnote{A Glauber model treats the nucleons composing a nucleus as hard shells, more can be found here \cite{Loizides:2016djv}.} distribution, as seen in Figure \ref{fig:ITSGLAUBERFIT}.  The V0 is also capable of precision measurements of the target luminosity in the ALICE detector.
 
 \begin{figure}[h!]
@@ -56,13 +56,13 @@ The VZERO(V0)\cite{Abbas:2013taa} detector is a double layer scintillator array 
  \label{fig:ITSGLAUBERFIT}
 \end{figure}
 
-\subsection{Inner Tracking System}\label{sec:its}
+\subsubsection{Inner Tracking System}\label{sec:its}
 The Inner Tracking System(ITS)\cite{BEOLE20121062} is six layers of solid state silicon detectors.  Closest to the beam line are two layers of Silicon Pixel Detectors.  The next two layers are Silicon Drift Detectors and furthest from the beam line are two layers of Silicon Strip Detectors.  The main purpose of the ITS is to perform momentum measurements, PID, and vertex reconstruction of charged tracks.  PID\footnote{See Appendix \ref{ref:pid}} is performed by measuring the ionization energy, $\frac{dE}{dx}$, of charged particles as they traverse the detector\cite{Adam:2016acv}.  The ITS has a spatial resolution of 100 $\mu m$.  This allows for measurements of short lived hadrons by reconstructing secondary vertices, which is the distance of closest approach a track has to the primary vertex.
 
 
 %TPC
 
-\subsection{Time Projection Chamber}\label{sec:tpc}
+\subsubsection{Time Projection Chamber}\label{sec:tpc}
 
 \begin{figure}[h]
 \includegraphics[width=10.0cm]{alice-tpc-schematic}
@@ -105,7 +105,7 @@ The TPC has excellent momentum resolution between 150 MeV/\textit{c} to 100 GeV/
 
 %EMCAL
 
-\subsection{Electromagnetic Calorimeter}
+\subsubsection{Electromagnetic Calorimeter}
 The Electromagnetic Calorimeter(EMCal)\cite{1742-6596-293-1-012043} is a lead based sampling calorimeter located at a radius of 4.5 meters from the beam pipe.  It covers a pseudorapidity of $ \left | \eta \right | \leq 0.7$ and has azimuthal coverage of $ \Delta \phi = 107 \deg$.
 
 \begin{figure}[h]
