@@ -4,7 +4,7 @@
 In 1968 deep inelastic scatterings performed at the Stanford Linear Accelerator Center showed that the proton had internal structure\cite{Riordan1287} called partons at the time.  Within a decade of this discovery the partons were broken into two categories: the mass carrying fermions were known as the quarks and the gauge boson force carriers were called gluons.  The interactions of these two types of particles were described by the quantum field theory known as Quantum Chromodynamics (QCD) and by the SU(3) symmetry group.  SU(3) guarantees that color charge is conserved and this results in quarks grouping together into `colorless' hadrons.
 
 \section{The QCD Lagrangian}
-QCD is the strongest of the known fundamental forces.  It is a gauge field theory described by the Lagrangian density
+QCD is the strongest of the known fundamental forces.  It is a gauge field theory described by the Lagrangian density,
 
 \begin{equation}
 {\cal L}=-\frac{1}{4}F^{\alpha}_{\mu\nu}F^{\mu\nu}_{\alpha}
@@ -14,9 +14,9 @@ QCD is the strongest of the known fundamental forces.  It is a gauge field theor
 \end{equation}
 
 \noindent
-where $q$ and $\bar{q}$ represent the color anti-color fields summed over color $j$, $\alpha_{s}$ is the strong coupling strength,$\gamma^{\mu}$ is the Dirac gamma matrix, $G_{\alpha}^{\mu}$ is the gauge field for color \textit{$\alpha$}, is similar in analogy to the \textbf{W} matrix from the electroweak theory.  $F^{\alpha}_{\mu\nu}$ is the field strength tensor and it describes the gluon interactions. The first term of the Lagrangian is the gluon contribution and carries no mass term.  The second term of the Lagrangian describes how quarks and gluons interact with each other. The final term describes quark interactions and the coupling between them and will be explored further in this thesis.
+where $q$ and $\bar{q}$ represent the color/anti-color fields summed over color $j$, $\alpha_{s}$ is the strong coupling strength,$\gamma^{\mu}$ is the Dirac gamma matrix, $G_{\alpha}^{\mu}$ is the gauge field for color \textit{$\alpha$}, is similar in analogy to the \textbf{W} matrix from the electroweak theory.  $F^{\alpha}_{\mu\nu}$ is the field strength tensor and it describes the gluon interactions. The first term of the Lagrangian is the gluon contribution and carries no mass term.  The second term of the Lagrangian describes how quarks and gluons interact with each other. The final term describes quark interactions and the coupling between them and will be explored further in this thesis.
 
-At short distances, less than 0.2 \textit{fm}, the strong coupling constant becomes exceedingly small and second term of the Lagrangian displays an important property known as asymptotic freedom\cite{Wilczek:2005az}. 
+At short distances, less than 0.2 \textit{fm}, the strong coupling constant becomes exceedingly small and the second term of the Lagrangian displays an important property known as asymptotic freedom\cite{Wilczek:2005az}.  Numerically the strong coupling constant is given as,
 
 \begin{equation}
 \alpha_{s} = \frac{1}{\beta_{0} \; \ln(Q^{2}/\Lambda^{2} )}
@@ -24,7 +24,7 @@ At short distances, less than 0.2 \textit{fm}, the strong coupling constant beco
 \end{equation}
 
 \noindent
-where $\alpha_{s}$ is the strong coupling constant, $Q^{2}$ is the momentum transfer between two interacting partons, and $\Lambda^{2}$ is a cutoff below which QCD phenomena are strongly suppressed and $\beta_{0}$ is a correction factor.
+$\alpha_{s}$ is the strong coupling constant, $Q^{2}$ is the momentum transfer between two interacting partons, and $\Lambda^{2}$ is a cutoff below which QCD phenomena are strongly suppressed and $\beta_{0}$ is a correction factor.
 
 \begin{figure}[h]
 \includegraphics[width=12.0cm]{alphas_s}
@@ -35,22 +35,22 @@ where $\alpha_{s}$ is the strong coupling constant, $Q^{2}$ is the momentum tran
 
 \section{Jets}
 
-Hard probes (large $Q^{2}$ interactions), are produced in the earliest stages of a high energy collision when the largest momentum transfer processes occur.  As two highly energetic partons propagate away from one another, in a back-to-back fashion, they will instigate a shower of daughter partons via gluon radiation and the generation of low-mass $q \bar{q}$\, pairs.  These daughter partons will go on to form hadrons and the clustering of theses hadrons is colloquially known as a `jet'.  If the jet was created in a high energy experiment the final state hadrons will be recorded as tracks in a tracking detector or energy deposits in a calorimeter.  This process is shown in Figure \ref{fig:MakeAJet}.
+Hard probes (large $Q^{2}$ interactions), are produced in the earliest stages of a high energy collision when the largest momentum transfer processes occur.  As two highly energetic partons propagate away from one another, in a back-to-back fashion, they will instigate a shower of daughter partons via gluon radiation and the generation of low-mass $q \bar{q}$\, pairs.  These daughter partons will go on to form hadrons and the clustering of these hadrons is colloquially known as a `jet'.  If the jet was created in a high energy experiment, the final state hadrons will be recorded as tracks in a tracking detector or energy deposits in a calorimeter.  This process is shown in Figure \ref{fig:MakeAJet}.
 
 
 
 \begin{figure}[h]
 \includegraphics[width=12.0cm]{jetsatcmsand}
 \centering
-\caption{Diagram showing a jet created by two partons under going a hard scattering, forming into hadrons, and detected in a calorimeter\cite{JetPic}.}
+\caption{Diagram showing a jet created by two partons undergoing a hard scattering, forming into hadrons, and detected in a calorimeter\cite{JetPic}.}
 \label{fig:MakeAJet}
 \end{figure}
 
-The physicist James Daniel Bjorken postulated that a correlation could be surmised by summing over the final state transverse momentum of the hadrons that form a jet to the parton that initiated the hard scattering\cite{PhysRev.179.1547}\cite{Bjorken:1973kd}.  This has lead to jets becoming the work-horse for both experimentalists and theorists over the past 30 years in probing QCD phenomena.  This thesis makes use of jets as an important probe of QCD and the following sections are devoted to developing a background for both the theoretical and experimental treatment of jet physics.  The following sections will be devoted to how jets are produced from a physics point-of-view and the latest results which this thesis compares to.
+The physicist James Daniel Bjorken postulated that a correlation could be surmised by summing over the final state transverse momentum of the hadrons that form a jet to the parton that initiated the hard scattering\cite{PhysRev.179.1547}\cite{Bjorken:1973kd}.  This has led to jets becoming the work-horse for both experimentalists and theorists over the past 30 years in probing QCD phenomena.  This thesis makes use of jets as an important probe of QCD and the following sections are devoted to developing a background for both the theoretical and experimental treatment of jet physics.  The following sections of this chapter will be devoted to the production of jets from a physics point of view.
 
 \subsubsection{Jet Production and the Factorization Theorem}\label{sec:fac}
 
-Due to confinement bare quarks are unobserved, therefore experimentalists must probe QCD interactions by detecting the color neutral final state hadrons measured in collider experiments.  Fortunately, the factorization theorem (Equation \ref{eq:xsection}) allows for the final state jet cross section to be broken into a number of steps that can either be calculated pertubativlely using pQCD or modeled phenomenologically.  Using the factorization theorem the jet cross section in a pp collision is,
+Due to confinement bare quarks are unobserved, therefore experimentalists must probe QCD interactions by detecting the color neutral final state hadrons measured in collider experiments.  Fortunately, the factorization theorem (Equation \ref{eq:xsection}) allows for the final state jet cross section to be broken into a number of steps that can either be calculated pertubatively using pQCD or modeled phenomenologically.  Using the factorization theorem the jet cross section in a pp collision is:
 
 
 \begin{equation}
@@ -59,21 +59,23 @@ d\sigma^{pp \rightarrow jet} \sim f_{a/A}(x_{1},Q^{2}) \otimes  f_{b/B}(x_{2},Q^
 \end{equation}
 
 \noindent
+Breaking Equation \ref{eq:xsection} down into digestible portions we have:
+
 \begin{itemize}
 \item  $ f_{a/A}(x_{1},Q^{2})$ and $ f_{b/B}(x_{2},Q^{2})$ are the parton distribution functions (PDF) that describe the probability of finding parton, \textit{a} or \textit{b}, within nuclei, \textit{A} and \textit{B}, with a given momentum fraction, $x = p_{parton} / p_{hadron} $ as a function of $Q^{2}$.
-\item  $d\sigma_{ab \rightarrow c + X} (x_{1},x_{2})$ is the pQCD parton-parton cross section due to the hard scattering of the two partons, \textit{a} and \textit{b}, to and intermediate parton (\textit{c}).
+\item  $d\sigma_{ab \rightarrow c + X} (x_{1},x_{2})$ is the pQCD parton-parton cross section due to the hard scattering of the two partons, \textit{a} and \textit{b}, to an intermediate parton (\textit{c}).
 \item   $ D_{c \rightarrow h/jet}(z,Q^{2})$ is the fragmentation function (FF) that describes the probability the an outgoing parton, \textit{c}, fragments and hardonizes into a final state hadron, \textit{h}, within a jet with momentum fraction, $z \equiv p_{hadron} / p_{parton}$.
 \end{itemize}
 
 \begin{figure}[h]
 \includegraphics[width=12.0cm]{ppcollison}
 \centering
-\caption{Timeline of a proton-proton collision.  Starting from the bottom, two partons confined within the colliding protons have a hard interaction.  The outgoing partons will induce partonic showers by radiating quarks and gluons.  The partonic showers will eventually form into final state hadrons due to confinement which are measured in high energy experiments\cite{Dobbs:2001ck}.}
+\caption{Timeline of a proton-proton collision.  Starting from the bottom, two partons confined within the colliding protons have a hard interaction.  The outgoing partons will induce partonic showers by radiating quarks and gluons.  The partonic showers will eventually form into final state hadrons, due to confinement, which are measured in high energy experiments\cite{Dobbs:2001ck}.}
 \label{fig:FactorizationCartoon}
 \end{figure}
 
 \noindent
-Figure \ref{fig:FactorizationCartoon} shows a timeline of a pp collision broken into the relevant steps in accordance to the factorization theorem.  One of the best places to fundamentally test QCD phenomena using hard probes, i.e. jets, are with high energy hadron colliders such as those found at CERN\footnote{Discussed in detail in Chapter 3}, Fermilab, and BNL. The time scale that a hard probe is created in a high energy collision is on the order of $\tau \approx 1/p_{T} \approx$ \, 0.1 fm/\textit{c} which probes the initial state these interactions.  The factorization theorem allows for a high level of agreement between the QCD theory of nature and experimental observables but to ascertain this connection we should discuss each term of the factorization theorem in more depth.
+Figure \ref{fig:FactorizationCartoon} shows a timeline of a pp collision broken into the relevant steps in accordance with the factorization theorem.  One of the best places to fundamentally test QCD phenomena using hard probes, i.e. jets, are at high energy hadron colliders, such as those found at CERN\footnote{Discussed in detail in Chapter 3}, Fermilab, and BNL. The time scale that a hard probe is created in a high energy collision is on the order of $\tau \approx 1/p_{T} \approx$ \, 0.1 fm/\textit{c} which corresponds to some of the eraliest stages of the nuclear collision.  The factorization theorem allows for a high level of agreement between the QCD theory of nature and experimental observable but to ascertain this connection we should discuss each term of the factorization theorem in more depth.
 
 \subsubsection{Parton Distribution Functions}
 The PDF occurs twice in Equation \ref{eq:xsection} due to the two partons that will undergo the hard scattering being confined in two different protons.  PDFs may be thought of as conveying the structure of a nucleon in terms of the number of flavored quarks or gluons ($u(x)$, $d(x)$, $s(x)$, $\overline{u}(x)$, $\overline{d}(x)$, $\overline{s}(x)$, $g(x)$) and must obey certain constraints and summation rules.  In the case of a proton, with electric charge (\textit{e} = +1),
@@ -104,7 +106,7 @@ have a solution,
 \end{equation}
 
 \noindent
-This corresponds to the classical partonic view that protons contained two up quarks and a down quark, similarly the neutron, with charge \textit{e} = 0 and isospin I = -1/2, can be shown that it compromises two down quarks and a up quark.  Naively, we could assume that the three quarks composing a proton would each carry a momentum fraction of approximately 1/3 the total momentum of a proton.  However, high energy deep inelastic scattering experiments conducted at the Stanford Linear Collider in the 1960's\cite{Panofsky:871460} measured the momentum carried by the three quarks only accounting for about 1/2 the total proton momentum.  This lead to a more complex and dynamic model of the proton structure with the other half of the proton momentum being occupied by neutral partons which would eventually become known as gluons.
+This corresponds to the classical partonic view that protons contained two up quarks and a down quark, similarly the neutron, with charge \textit{e} = 0 and isospin I = -1/2, is composed of two down quarks and an up quark.  Naively, we could assume that the three quarks composing a proton would each carry a momentum fraction of approximately 1/3 the total momentum of a proton.  However, high energy deep inelastic scattering experiments conducted at the Stanford Linear Collider in the 1960's\cite{Panofsky:871460} measured the momentum carried by the three quarks as only accounting for about 1/2 the total proton momentum.  This led to a more complex and dynamic model of the proton structure with the other half of the proton momentum being occupied by neutral partons which would eventually become known as gluons.
 
 \begin{figure}[h]
 \includegraphics[width=15.0cm]{aOzz6}
@@ -113,10 +115,10 @@ This corresponds to the classical partonic view that protons contained two up qu
 \label{fig:PDFNNPDF}
 \end{figure}
 
-Measuring the structure of the partons making up a nucleon is a major endeavor by both theorists and experimentalists.  Two of the most popular PDFs available to physicists are the CTEQ\cite{Kovarik:2013sya} (Coordinated Theoretical-Experimental Project on QCD) and the NNPDF\cite{Ball:1966481} (Neural Network Parton Distribtuion Function) sets.  Figure \ref{fig:PDFNNPDF} shows the proton PDF as a function of the momentum fraction for two energy ranges, at high values of \textit{x} the the two up quarks account for about 2/3 of the momentum fraction while down quark accounts for about 1/3 the total momentum, these quarks are collectively called the valence quarks.  At high energies, low values of \textit{x}, we see that the proton has non negligible contributions from gluons, anti-quarks, strange, and even charm quarks, these are collectively known as the sea partons.  Today, the modern picture of a protons structure is that it is mostly composed of gluons and sea quarks at low values of \textit{x} and this domination only increases as a function of $Q^{2}$\cite{Fritzsch:1992mu}.
+Measuring the structure of the partons making up a nucleon is a major endeavor by both theorists and experimentalists.  Two of the most popular PDFs available to physicists are the CTEQ\cite{Kovarik:2013sya} (Coordinated Theoretical-Experimental Project on QCD) and the NNPDF\cite{Ball:1966481} (Neural Network Parton Distribtuion Function) sets.  Figure \ref{fig:PDFNNPDF} shows the proton PDF as a function of the momentum fraction for two energy ranges, at high values of \textit{x} the two up quarks account for about 2/3 of the momentum fraction while the down quark accounts for about 1/3 of the total momentum, these quarks are collectively called the valence quarks.  At high energies, low values of \textit{x}, we see that the proton has non negligible contributions from gluons, anti-quarks, strange, and even charm quarks, these are collectively known as the sea partons.  Today, the modern picture of a proton's structure is mostly composed of gluons and sea quarks at low values of \textit{x} and this domination only increases as a function of $Q^{2}$\cite{Fritzsch:1992mu}.
 
 \subsubsection{Parton-Parton Cross-Section}
-The parton-parton cross section can be calculated using perturbation theory.  To the zeroth order in $\alpha_{s}$ this cross-section would be a simple quark-antiquark annihilation and would be calculable using Feynman diagrams as seen in Figure \ref{fig:qqbar}\cite{Collins:1989gx}.  Higher ordered contributions, such as the creation of virtual gluons, require the hard cross-section to be expanded as a series in terms of $\alpha_{s}$.  Calculations of the hard cross section that incorporate these higher order terms are known as \textit{next-to-leading order} (NLO) with N denoting the number of terms after the leading order that have been included in the cross-section calculation.  Various calculations of the hard cross-section of different QCD processes have been performed over the years typically using either power series or logarithmic expansions of $\alpha_{s}$\cite{Brambilla:2006wp} and corrections for LO, NLO, and even NNLO constitutes a very active field in high energy physics.
+The parton-parton cross section can be calculated using perturbation theory.  To the zeroth order in $\alpha_{s}$ this cross-section would be a simple quark-antiquark annihilation and would be calculable using Feynman diagrams as seen in Figure \ref{fig:qqbar}\cite{Collins:1989gx}.  Higher ordered contributions, such as the creation of virtual gluons, require the hard cross-section to be expanded as a series in terms of $\alpha_{s}$.  Calculations of the hard cross-section that incorporate these higher order terms are known as \textit{next-to-leading order} (NLO) with N denoting the number of terms after the leading order that have been included in the cross-section calculation.  Various calculations of the hard cross-section of different QCD processes have been performed over the years typically using either power series or logarithmic expansions of $\alpha_{s}$\cite{Brambilla:2006wp} and corrections for LO, NLO, and even NNLO constitutes a very active field in high energy physics.
 
 \begin{figure}[h]
 \includegraphics[width=6.0cm]{Ttbar_production_via_qqbar_annihilation}
@@ -126,9 +128,10 @@ The parton-parton cross section can be calculated using perturbation theory.  To
 \end{figure}
 
 Perturbative techniques of the hard cross-section have been extremely successfully in describing jet features in hadronic collisions\cite{Fritzsch:1992mu}.
+
 \subsubsection{Hadronization}
 
-Hadronization is the process by which the colored pQCD partons of form into colorless non-pQCD hadrons and represents a significant barrier in progressing jet physics.  This is due to the fact that hadronization encompass several smaller processes which in themselves are hard to characterize. Thus, like PDFs, an accurate description of hadronization requires a phenomenological approach by which experimental results help complement theoretical calculations.  Jet production via hadronization\cite{Webber:1994zd} follows two distinct stages.  First, the partons that underwent a hard scattering start to emit radiation via gluon bremsstrahlung up until time, $t < Q^{2}$, this is known as the parton cascade.  The parton cascade is the precursor of what will become a jet as most of the radiation generated will travel in the same direction as the initial hard scattered parton.  However, this immediately poses an issue in jet physics as radiation generated at a wide angle away from the momentum axis of the initial hard scattered parton will not be associated with the jet.
+Hadronization is the process by which the colored pQCD partons form into colorless non-pQCD hadrons and represents a significant barrier in progressing jet physics.  This is due to the fact that hadronization encompasses several smaller processes, which in themselves are hard to characterize. Thus, like PDFs, an accurate description of hadronization requires a phenomenological approach by which experimental results help complement theoretical calculations.  Jet production via hadronization\cite{Webber:1994zd} follows two distinct stages.  First, the partons that underwent a hard scattering start to emit radiation via gluon bremsstrahlung up until time, $t < Q^{2}$, this is known as the parton cascade.  The parton cascade is the precursor of what will become a jet as most of the radiation generated will travel in the same direction as the initial hard scattered parton.  However, this immediately poses an issue in jet physics as radiation generated at a wide angle away from the momentum axis of the initial hard scattered parton will not be associated with the jet.
 
 \begin{figure}[h]
 \includegraphics[width=8.0cm]{partoncascade}
@@ -138,7 +141,7 @@ Hadronization is the process by which the colored pQCD partons of form into colo
 \end{figure}
 
 \noindent
-After the cascade has ended the partons must fragment into color neutral hadrons.  Their are two main phenomenological models used to describe the hadron forming process, the Lund String Model and the Cluster Hadronization Model.  The QCD potential is,
+After the cascade has ended the partons form into color neutral hadrons.  There are two main phenomenological models used to describe the hadron forming process, the Lund String Model and the Cluster Hadronization Model.  The QCD potential is,
 
 \begin{equation}
 V(r) = - \frac{\alpha_{s}}{r} + \sigma \, r
@@ -146,7 +149,7 @@ V(r) = - \frac{\alpha_{s}}{r} + \sigma \, r
 \end{equation}
 
 \noindent
-where the first term of Equation \ref{eq:QCDPotential} goes as the Coulomb potential with a 1/r dependence and is the dominate term at short distance and the second term has a string-like potential with $\sigma$ referring to a string-like tension.  The Lund String Model ignores gluon radiation and has fragmentation occur via breaking the string tension with the production of $q\overline{q}$ sea quarks.  The created sea quarks will carry some momentum fraction, z, of the initial parton until z falls below some cutoff.  Figure \ref{fig:qqbarstring} shows a two quarks undergoing a string breaking, each of the quarks initiating the string breaking will combine with a sea quark in an iterative manner to form hadrons.  
+where the first term of Equation \ref{eq:QCDPotential} goes as the Coulomb potential with a 1/r dependence and is the dominate term at short distance and the second term has a string-like potential with $\sigma$ referring to a string-like tension.  The Lund String Model ignores gluon radiation and has fragmentation occur via breaking the string tension with the production of $q\overline{q}$ sea quarks.  The created sea quarks will carry some momentum fraction, z, of the initial parton until z falls below some cutoff.  Figure \ref{fig:qqbarstring} shows two quarks undergoing a string breaking, each of the quarks initiating the string breaking will combine with a sea quark in an iterative manner to form hadrons.  
 
 
 \begin{figure}[h]
@@ -158,9 +161,9 @@ where the first term of Equation \ref{eq:QCDPotential} goes as the Coulomb poten
 
 The Cluster Hadronization Model has gluons splitting after the parton cascade phase into $q\overline{q}$ pairs.  These pairs will form color-singlet clusters with other neighboring quarks in phase-space.  These color-singlets will typically be a few GeV/\textit{$c^{2}$} in mass and are treated as excited meson resonances.  These psuedo-resonances will decay via their normal branching ratios into the stable hadrons\cite{Webber:1983if}.
 
-
 \subsubsection{Fragmentation}
-Similar to how a PDF quantitatively describes the structure of a nucleon the FF quantitatively describes the hadronization process.  The FF is also similar to the PDF in that it is also a probability distribution, thus it follows the probabilistic rule that,
+
+Similar to the way a PDF quantitatively describes the structure of a nucleon the FF quantitatively describes the hadronization process.  The FF is also similar to the PDF in that it is also a probability distribution, thus it follows the probabilistic rule that,
 
 \begin{equation}
 \sum \int z D_{c \rightarrow \, h/jet} (z,Q^{2})dz = 1
@@ -168,7 +171,7 @@ Similar to how a PDF quantitatively describes the structure of a nucleon the FF 
 \end{equation}
 
 \noindent
-Ideally, the fractional momentum of the hadrons created from the fragmenting parton, $z \equiv p_{hadron} / p_{parton}$.  The Parton-Hadron Duality\cite{Jenkovszky:2012dc} states that the leading hadron should encompass the quantum numbers and kinematic properties associated with the hard scattered quark that initiated the jet.  Thus we can measure the fragmentation function as $z = p_{hadron} / p_{jet}$.  The formulation of the FF as a fractional energy carried by the hadrons in a jet was a breakthrough in pQCD techniques and is analogous to how an electron passing through an absorber creates photon showers with these photons generating conversion electrons until the total energy has been dissipated into the material.
+Ideally, the fractional momentum of the hadrons created from the fragmenting parton, $z \equiv p_{hadron} / p_{parton}$.  The Parton-Hadron Duality\cite{Jenkovszky:2012dc} states that the leading hadron should encompass the quantum numbers and kinematic properties associated with the hard scattered quark that initiated the jet.  Thus we can measure the fragmentation function as $z = p_{hadron} / p_{jet}$.  The formulation of the FF as a fractional energy carried by the hadrons in a jet was a breakthrough in pQCD techniques and is analogous to the way an electron passing through an absorber creates photon showers, these photons continue generating conversion electrons until the total energy has been dissipated into the material.
 
 \begin{figure}[h]
 \includegraphics[width=10.0cm]{FFfunctions}
@@ -182,7 +185,7 @@ Figure \ref{fig:FFfunc} is the FF in terms of the Gaussian equation, $z \, dN/dz
 
 \section{Jet Finding Algorithms}
 
-A jet arises from the fragmentation of a hard parton to final state hadrons.  However, grouping the hadrons together into a jet is a non-trivial task and jet finding algorithms are deployed in order to achieve this objective.  Early on in jet physics, both theorists and experimentalists used a wide variety of jet finders that made comparisons between experiments or to theoretical calculations nearly impossible\cite{Atkin:2015msa}.  For example, a radiated gluon that splits into a quark anti-quark pair may become one or two jets depending on the angular separation and the algorithm used.  Early jet finders tended to be sensitive to soft particles or could give widely varying yields to the number of jets in an event.  In 1990, the Snowmass Accord\cite{Huth:217490} reached a standardized definition of a jet between experimental and theorists.  The agreement maintained that any algorithm that clusters particles into a jet must be both infrared and collinear safe (IRC).  
+A jet arises from the fragmentation of a hard parton to final state hadrons.  However, grouping the hadrons together into a jet is a non-trivial task and jet finding algorithms are deployed in order to achieve this objective.  Early on in jet physics, both theorists and experimentalists used a wide variety of jet finders and definitions which made comparisons between experiments or to theoretical calculations nearly impossible\cite{Atkin:2015msa}.  For example, a radiated gluon that splits into a quark anti-quark pair may become one or two jets depending on the angular separation and the algorithm used.  Early jet finders tended to be sensitive to soft particles or could give widely varying yields to the number of jets in an event.  In 1990, the Snowmass Accord\cite{Huth:217490} reached a standardized definition of a jet between experimentalists and theorists.  The agreement maintained that any algorithm that clusters particles into a jet must be both infrared and collinear safe (IRC).  
 
 \begin{figure}[h]
 \includegraphics[width=15.0cm]{IRCsafe}
@@ -196,7 +199,7 @@ Collinear safety ensures that a high-$p_{T}$ particle split into two or more par
 
 \subsubsection{Cone Algorithms}
 
-Cone algorithms made up the bulk of early jet finders.  The only IRC safe cone algorithm still in use today is the seedless infra-red safe cone algorithm (SIScone).  SIScone defines a cone of radius, R, around the highest momentum particle in the coordinates of $(\eta,\phi)$\footnote{It is possible to use a Cartesian coordinate system in particle colliders, with the z-component referring to points along the beam axis while the xy-plane is perpendicular to the beam axis.  However, this system is not invariant under a Lorentz boost.  Therefore it is more useful to use the cylindrical-like coordinates of psuedorapidity ($\eta$) and the azimuth angle ($\phi$). Psuedorapidity may be thought of as the polar angle in a cylindrical coordinate system with $\eta = 0$ when the polar angle is perpendicular to the beam axis and $\eta = \inf$ along the beam axis.  $\phi$ is the azimuth angle that rotates around the beam axis.  Both, $\eta$ and $\phi$ are invariant for Lorentz boosts along the beamline and allow for easy comparisons between the center-of-mass frame and the laboratory frame of a high energy collision.}, this is the proto-jet.  SIScone then proceeds through an iterative process of finding all the particles withing the jet radius such that $R \leq \sqrt{\phi^{2} + \eta^{2}}$ and calculates a new jet center based on these particles momenta and a new weighted jet axis$(\eta,\phi)$.  If the new center matches the proto-jet center, the proto-jet is tagged as a stable jet, all the particles in that jet are removed, and SIScone moves onto the next highest $p_{T}$ particle.  Cone algorithms tend to be unpopular due to being computationally expensive, they are hard to implement theoretically, and can give results not calculable in pertubation theory.
+Cone algorithms made up the bulk of early jet finders.  The only IRC safe cone algorithm still in use today is the seedless infra-red safe cone algorithm (SIScone).  SIScone defines a cone of radius, R, around the highest momentum particle in the coordinates of $(\eta,\phi)$\footnote{It is possible to use a Cartesian coordinate system in particle colliders, with the z-component referring to points along the beam axis while the xy-plane is perpendicular to the beam axis.  However, this system is not invariant under a Lorentz boost.  Therefore it is more useful to use the cylindrical-like coordinates of psuedorapidity ($\eta$) and the azimuth angle ($\phi$). Psuedorapidity may be thought of as the polar angle in a cylindrical coordinate system with $\eta = 0$ when the polar angle is perpendicular to the beam axis and $\eta = \inf$ along the beam axis.  $\phi$ is the azimuth angle that rotates around the beam axis.  Both, $\eta$ and $\phi$ are invariant for Lorentz boosts along the beamline and allow for easy comparisons between the center-of-mass frame and the laboratory frame of a high energy collision.}, this is the proto-jet.  SIScone then proceeds through an iterative process of finding all the particles within the jet radius such that $R \leq \sqrt{\phi^{2} + \eta^{2}}$ and calculates a new jet center based on these particles momenta and a new weighted jet axis$(\eta,\phi)$.  If the new center matches the proto-jet center, the proto-jet is tagged as a stable jet, all the particles in that jet are removed, and SIScone moves onto the next highest $p_{T}$ particle.  Cone algorithms tend to be unpopular due to being computationally expensive, difficult to implement theoretically, and can give results not calculable in perturbation theory.
 
 \subsubsection{Sequential/Recombination Algorithms}
 
@@ -262,7 +265,7 @@ which makes it independent of particle momentum and sensitive to PU and UE.  Due
 
 Figure \ref{fig:AllJetFinder} shows the jets found in a single event using all four jet finding algorithms.  It should be noted that the Cambridge/Aachen and $k_{T}$ algorithms have highly irregular and large shapes, making them both susceptible to the presence of a UE, while SIScone finds an additional jet due to splitting.  The Anti-$k_{T}$ algorithm finds circular jets which demonstrates its robustness to hard radiation.  
 
-Once a stable jet is found, a recombination scheme is deployed in order to garner the jet kinematics.  By adding the 4-vector, $\boldsymbol{p}^{\mu} = (\boldsymbol{E},\boldsymbol{p}_{x},\boldsymbol{p}_{y},\boldsymbol{p}_{Z})$, for all of the associated particles composing a jet, we may obtain the jet momentum, energy, coordinates, etc\footnote{For a review of relativistic kinematic see Appendix ...}.  In a particle collider with the tracks from a tracking detector measuring particle momentum and the towers of a calorimeter measuring particle energy we obtain the following relationships
+Once a stable jet is found, a recombination scheme is deployed in order to garner the jet kinematics.  By adding the 4-vector, $\boldsymbol{p}^{\mu} = (\boldsymbol{E},\boldsymbol{p}_{x},\boldsymbol{p}_{y},\boldsymbol{p}_{Z})$, for all of the associated particles composing a jet, we may obtain the jet momentum, energy, coordinates, etc.  In a particle collider with the tracks from a tracking detector measuring particle momentum and the towers of a calorimeter measuring particle energy we obtain the following relationships
 
 
 
@@ -317,7 +320,7 @@ K = \frac{\sigma_{NLO}}{\sigma_{LO}}.
 \label{eq:Kfactor}
 \end{equation}
 
-NLO corrections to the cross-section will not match experimental results, PYTHIA implements additional phenomenological adjustments used to better match data.  PYTHIA encompass these corrections into sets known as `tunes', with PYTHIA 6.4 Perugia-2010 tune being used for this analysis\cite{Skands:2010ak}.
+NLO corrections to the cross-section will not match experimental results, PYTHIA implements additional phenomenological adjustments used to better match data.  PYTHIA encompasses these corrections into sets known as `tunes', with PYTHIA 6.4 Perugia-2010 tune being used for this analysis\cite{Skands:2010ak}.
 
 \subsubsection{PHOJET}
 PHOJET is a \verb|FORTRAN 77| Monte Carlo simulator used to model proton-proton collisions. It is an alternative to PYTHIA and is better at modeling soft physics processes present in high energy collisions.   PHOJET implements the Dual Parton model\cite{CAPELLA1994225}\cite{Wong:241251} and multiple parton interactions\cite{Bopp:1998rc} to model soft physics.  Hard interactions are implemented in PHOJET using LO scattering elements and it uses PYTHIA for the fragmentation and hadronization phase.  Due to its ability to model soft physics, PHOJET is better at comparing to minimum bias\footnote{Events with a low total transverse momentum and high cross section} data and understanding jet results in a low kinematic range.  PHOJET also acts as a benchmark in understanding any bias due to using other MC generators, such as PYTHIA.  PHOJET v1.2 is used in this thesis.
@@ -327,7 +330,7 @@ PHOJET is a \verb|FORTRAN 77| Monte Carlo simulator used to model proton-proton 
 The Herwig\cite{Bahr:2008pv} Monte Carlo generator is a \verb|FORTRAN 77| package used to generate proton proton events.  It is similar to PYTHIA in that it does the LO hard scattering of partons, however it uses the cluster model of hadronization to produce jets based on gluon splitting.  It is also similar to PHOJET in regards to the evolution of final state jets with soft gluon angular ordering.  By comparing HERWIG, PYTHIA, and PHOJET it is possible to test for sensativities to jet production in high energy events due to different types of hadronization models and soft radiation.
 
 \subsubsection{AliROOT}
-AliROOT is the official framework of \verb|C++| classes developed for the ALICE Experiment.  The software is broken into two packages AliRoot, which contains code mostly used for the sub-detectors callibrations and reconstruction of particles, and AliPhysics which contains user defined classes to perform physics related analysis.  This thesis developed a number of classes in both packages and are part of the offical repository avaliable on GitHUB.
+AliROOT is the official framework of \verb|C++| classes developed for the ALICE Experiment.  The software is broken into two packages AliRoot, which contains code mostly used for sub-detector calibrations and reconstruction of particles, and AliPhysics which contains user defined classes to perform physics related analysis.  This thesis developed a number of classes in both packages that are part of the official repository avaliable on GitHUB.
 
 \iffalse
 \subsection{HERWIG}
@@ -394,7 +397,7 @@ c(b) =\frac{ \int_{0}^{b} \frac{d \sigma}{db} db}{ \int_{0}^{\infty} \frac{d \si
 
 \section{The Quark-Gluon Plasma}
 At the temperatures and pressures typical to the Universe today nuclear matter is confined to a colorless hadronic gas.  However, it was theorized that at extreme temperatures, such as those experienced in the early Universe, partons would have undergone a phase transition where by they were no longer bound to a color neutral state.  This state of matter would have been analogous to a conventional plasma where by the electrons are no longer bound to a nucleus, thus the state was dubbed the Quark-Gluon Plasma (QGP)
-The nuclear phase diagram is shown in Figure \ref{fig:QCDphase} as a function of temperature and the net baryon density.  Normal nuclear matter is confined to the bottom left while increasing temperatures and/or densities correspond to the QGP.  Modern particle colliders , such as RHIC and the LHC, are able to obtain the densities and temperatures necessary to create a QGP and are likewise shown in the figure.  The reason for particle colliders being located at low baryon density is due to the fact that at collider energies at mid-rapiditythe plasma are dominated by quark-antiquark pairs, so the net baryon density is close to zero.  This dilutes the total baryon density in the initial system and is more akin to what the early Universe was like.  
+The nuclear phase diagram is shown in Figure \ref{fig:QCDphase} as a function of temperature and the net baryon density.  Normal nuclear matter is confined to the bottom left while increasing temperatures and/or densities correspond to the QGP.  Modern particle colliders, such as RHIC and the LHC, are able to obtain the densities and temperatures necessary to create a QGP and are likewise shown in the figure.  The reason for particle colliders being located at low baryon density is due to the fact that at collider energies at mid-rapidity the plasma are dominated by quark-antiquark pairs, so the net baryon density is close to zero.  This dilutes the total baryon density in the initial system and is more akin to what the early Universe was like.  
 
 
 
@@ -406,12 +409,12 @@ The nuclear phase diagram is shown in Figure \ref{fig:QCDphase} as a function of
 \end{figure}
 
 \subsubsection{Nuclear Collisions}
-By colliding heavy nuclei together in high energy collisions it is possible to obtain the energy densities and temperatures associated with the QGP state.  The first signatures for the QGP were measured via a J/$\psi$ suppression at the Super Proton Synchrotron located at CERN in 2000\cite{Csorgo:2000yu}.  In 2005, the four experiments on the RHIC collider: BRAHMS\cite{Arsene:2004fa}, PHENIX\cite{Adcox2005184}, PHOBOS\cite{Back200528}, and STAR\cite{Adams2005102}, co-announced the observation of a new state of matter consistent with the hot and dense QGP.  Surprisingly, the results from RHIC pointed at the QGP behaving more like a perfect fluid over a plasma-like state\cite{Jacak310}.  The QGP offers a rich and dynamic environment to test QCD predictions under some of the most extreme circumstances.  
+By colliding heavy nuclei together in high energy collisions it is possible to obtain the energy densities and temperatures associated with the QGP state.  The first signatures for the QGP were measured via a J/$\psi$ suppression at the Super Proton Synchrotron, located at CERN in 2000\cite{Csorgo:2000yu}.  In 2005, the four experiments on the RHIC collider: BRAHMS\cite{Arsene:2004fa}, PHENIX\cite{Adcox2005184}, PHOBOS\cite{Back200528}, and STAR\cite{Adams2005102}, co-announced the observation of a new state of matter consistent with the hot and dense QGP.  Surprisingly, the results from RHIC pointed at the QGP behaving more like a perfect fluid over a plasma-like state\cite{Jacak310}.  The QGP offers a rich and dynamic environment to test QCD predictions under some of the most extreme circumstances.  
 Figure \ref{fig:HeavyIonCollisionvPP} shows the difference between a proton-proton collision and a heavy-ion collision.  The heavy-ion collision mirrors the processes in a proton-proton collision (left) described in depth in Section \ref{sec:fac}.  After the inital hard scattering the phase transition to a QGP occurs.  The QGP undergoes a hydrodynamical evolution and expansion until it cools to a colorless hadronic gas.  After the phase transition occurs unstable hadrons will decay until they are stable at which point the final state particle composition is set and the chemical freeze out occurs. The hadron gas expands and cools until all soft interactions cease, this is the kinetic freeze out, after which the final momentum spectra is set.  
 
 \subsubsection{Jets as a Probe of the QGP}
 
-Jets are an excellent probe of for the properties of the QGP.  This is due to them being produced in the earliest stages, before the formation of the QGP, and surviving the full evolution of a heavy-ion collision.  As a jet propagates through the QGP will lose energy to the medium through a combination of gluon radiation to the colored medium and inelastic scatterings.  These energy loss mechanisms are dependent on the distance a parton travels through the QGP and on the species of the parton.  
+Jets are an excellent probe of the properties of the QGP.  This is due to them being produced in the earliest stages, before the formation of the QGP, and surviving the full evolution of a heavy-ion collision.  As a jet propagates through the QGP, it will lose energy to the medium through a combination of gluon radiation to the colored medium and inelastic scatterings.  These energy loss mechanisms are dependent on the distance a parton travels through the QGP and on the species of the parton.  
 
 \begin{figure}[h]
 \includegraphics[width=11.0cm]{ppevolution}
@@ -427,6 +430,7 @@ Jets are an excellent probe of for the properties of the QGP.  This is due to th
 \label{fig:JetEloss}
 \end{figure}
 
+\noindent
 Figure \ref{fig:JetEloss} shows two back-to-back partons undergoing a hard scattering.  Both will fragment into jets, but the first parton with transverse energy, $E_{T1}$, will be subjected to much less energy loss over the second parton due to the first parton only traveling through the outer edge of the QGP.  The species dependent parton energy loss arises from kinematic constraints to gluon emission from the heaviest of quarks.  This radiation is suppressed at angles smaller then the ratio of the quark mass to its energy and has been dubbed the \textit{Dead-Cone Effect}\cite{Thomas:2004ie}.  Tagging the flavor dependence of jets, either via measuring electrons from semi-leptonic decays or reconstructing the secondary vertex of heavy flavor mesons, has recently shown that energy loss via the Dead-Cone effect is strongly suppressed with jets containing a charm quark\cite{CAO2018255}.
 
 One way of quantifying the energy loss in a heavy-ion collision is via measurements of the nuclear modification factor, $R_{AA}$,
@@ -438,7 +442,7 @@ R_{AA} = \frac{1}{N_{binary}} \frac{d^{2}N_{AA}/dp_{T}d\eta}{d^{2}N_{pp}/dp_{T}d
 \end{equation}
 
 \noindent
-where $N_{binary}$ is the number of binary collisions and is estimated using a Glauber model\cite{Miller:2007ri} of a nucleus while $d^{2}N_{AA}/dp_{T}d\eta$ and $d^{2}N_{pp}/dp_{T}d\eta$ are the spectra measured in nucleus nucleus and proton proton collision respectively.  $R_{AA}$ may be thought of as asking the question: Does a heavy-ion collision scale as a superposition of $N_{binary}$ proton-proton collisons?  A $R_{AA}$ value of 1 corresponds to no energy lose mechanism in a heavy ion collison not already present in a proton-proton collision.  The observation of $R_{AA}$ below unity shows a suppression of jets in heavy ion collisions.  Where does the missing energy go?  This is still a subject for debate and it is not clear weather the energy may propagate outside of the cone radius of the jet or if the energy may become thermalized in the medium.
+where $N_{binary}$ is the number of binary collisions and is estimated using a Glauber model\cite{Miller:2007ri} of a nucleus while $d^{2}N_{AA}/dp_{T}d\eta$ and $d^{2}N_{pp}/dp_{T}d\eta$ are the spectra measured in nucleus nucleus and proton-proton collision respectively.  $R_{AA}$ may be thought of as asking the question: Does a heavy-ion collision scale as a superposition of $N_{binary}$ proton-proton collisons?  A $R_{AA}$ value of 1 corresponds to no energy loss mechanism in a heavy ion collison not already present in a proton-proton collision.  The observation of $R_{AA}$ below unity shows a suppression of jets in heavy-ion collisions.  Where does the missing energy go?  This is still a subject for debate and it is not clear whether the energy may propagate outside of the cone radius of the jet or if the energy may become thermalized in the medium.
 
 
 Figure \ref{fig:JetEloss} shows the nuclear modification factor with R = 0.4 jets in the ATLAS experiment at 5.02 TeV\cite{Aaboud:2018twu}.  The different colored bands in the figure are broken into centrality\footnote{The purple 10 - 20\% band denotes the most central events (i.e. the two colliding nuclei have a low impact parameter and collide nearly head-on), while the 70 - 80\% red band denotes the least central events (i.e. the two colliding nuclei have a high impact parameter and barely graze one another).  An in depth discussion of centrality may be found here\cite{Klochkov_2017}.}
@@ -468,5 +472,4 @@ where A is the transverse area of the nuclei, $\tau$ is the proper time, and $dE
 \label{eq:Et}
 \end{equation}
 
-where $ <p_{T} >$ is the mean transverse momentum and $dN/d\eta$ is the particle multiplicity per unit psuedorapidity.
-This suggest that in very high multiplicity proton-proton events signatures of the QGP may be present.  Although suppression has never been observed in high multiplicity proton-proton collisions physicists have recently measured collective flow in such systems\cite{Nagle:2018nvi}.  CMS presented collective flow results in proton-proton collisions at 13 TeV using soft-particles, $p_{T} \leq\,$ 2 GeV/\textit{c}, consistent with hydrodynamical predictions\cite{ZHAO2018495}. These results have opened new debates and questions into the very nature of the QGP and whether jets can be used to enlighten our understanding in such systems will make up a very active and interesting segment of high energy physics research in the coming years.
+where $ <p_{T} >$ is the mean transverse momentum and $dN/d\eta$ is the particle multiplicity per unit psuedorapidity.  This suggest that in very high multiplicity proton-proton events signatures of the QGP may be present.  Although suppression has never been observed in high multiplicity proton-proton collisions physicists have recently measured collective flow in such systems\cite{Nagle:2018nvi}.  CMS presented collective flow results in proton-proton collisions at 13 TeV using soft-particles, $p_{T} \leq\,$ 2 GeV/\textit{c}, consistent with hydrodynamical predictions\cite{ZHAO2018495}. These results have opened new debates and questions into the very nature of the QGP.  Whether jets can be used to enlighten our understanding in such systems will make up a very active and interesting segment of high energy physics research in the coming years.

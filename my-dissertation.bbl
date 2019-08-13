@@ -185,6 +185,14 @@ Morad Aaboud et~al.
   collisions at $ \sqrt{s}=8 $ TeV with the ATLAS detector}.
 \newblock {\em JHEP}, 09:020, 2017.
 
+\bibitem{Noferini:2016lcw}
+Francesco Noferini.
+\newblock {The ALICE PID performance in Run 1 and perspectives in view of Run
+  2}.
+\newblock In {\em {Proceedings, 3rd Large Hadron Collider Physics Conference
+  (LHCP 2015): St. Petersburg, Russia, August 31-September 5, 2015}}, pages
+  523--528, Gatchina, 2016. Kurchatov Institute, Kurchatov Institute.
+
 \bibitem{Langacker:2009my}
 Paul Langacker.
 \newblock {Introduction to the Standard Model and Electroweak Physics}.
@@ -485,6 +493,11 @@ Jaroslav Adam et~al.
 \newblock {Particle identification in ALICE: a Bayesian approach}.
 \newblock {\em Eur. Phys. J. Plus}, 131(5):168, 2016.
 
+\bibitem{Tangwancharoen:2016dqs}
+S.~Tangwancharoen et~al.
+\newblock {A Gating Grid Driver for Time Projection Chambers}.
+\newblock {\em Nucl. Instrum. Meth.}, A853:44--52, 2017.
+
 \bibitem{LIPPMANN2012434}
 Christian Lippmann.
 \newblock Performance of the alice time projection chamber.
@@ -600,6 +613,17 @@ Marco Santimaria and Davide Pinci.
   2013.
 \newblock Presented 19 Dec 2013.
 
+\bibitem{PFEIFFER2019121}
+Dorothea Pfeiffer, Lennert~De Keukeleere, Carlos Azevedo, Francesca Belloni,
+  Stephen Biagi, Vladimir Grichine, Leendert Hayen, Andrei~R. Hanu, Ivana H{\v
+  r}ivn{\'a}{\v c}ov{\'a}, Vladimir Ivanchenko, Vladyslav Krylov, Heinrich
+  Schindler, and Rob Veenhof.
+\newblock Interfacing geant4, garfield++ and degrad for the simulation of
+  gaseous detectors.
+\newblock {\em Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment}, 935:121 --
+  134, 2019.
+
 \bibitem{Agostinelli:2002hh}
 S.~Agostinelli et~al.
 \newblock {GEANT4: A Simulation toolkit}.
@@ -651,5 +675,11 @@ Rongrong Ma.
   in pp collisions with the alice experiment at the lhc.
 \newblock {\em Nuclear Physics A}, 910-911:319 -- 322, 2013.
 \newblock Hard Probes 2012.
+
+\bibitem{Abelev:2014laa}
+Betty~Bezverkhny Abelev et~al.
+\newblock {Production of charged pions, kaons and protons at large transverse
+  momenta in pp and Pb--Pb collisions at $\sqrt{s_{\rm NN}}$ =2.76 TeV}.
+\newblock {\em Phys. Lett.}, B736:196--207, 2014.
 
 \end{thebibliography}

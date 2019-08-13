@@ -31,8 +31,8 @@
 \contentsline {subsubsection}{TZERO}{36}{section*.51}% 
 \contentsline {subsubsection}{VZERO}{36}{section*.52}% 
 \contentsline {subsubsection}{Inner Tracking System}{37}{section*.54}% 
-\contentsline {subsubsection}{Time Projection Chamber}{37}{section*.55}% 
-\contentsline {subsubsection}{The TPC readout}{38}{section*.57}% 
+\contentsline {subsubsection}{Time Projection Chamber}{38}{section*.55}% 
+\contentsline {subsubsection}{The TPC readout}{39}{section*.57}% 
 \contentsline {subsubsection}{TPC Performance}{40}{section*.59}% 
 \contentsline {subsubsection}{Electromagnetic Calorimeter}{41}{section*.61}% 
 \contentsline {subsubsection}{EMCal Performance}{42}{section*.63}% 
@@ -42,8 +42,8 @@
 \contentsline {section}{\numberline {4.2}Gaseous Electron Multiplier Foils}{49}{section.4.2}% 
 \contentsline {section}{\numberline {4.3}Research and Development}{51}{section.4.3}% 
 \contentsline {subsubsection}{2014 Test Beam}{53}{section*.72}% 
-\contentsline {section}{\numberline {4.4}Production of the Inner Readout Chambers in the U.S.}{55}{section.4.4}% 
-\contentsline {section}{\numberline {4.5}GEM and Chamber Quality Assurance}{57}{section.4.5}% 
+\contentsline {section}{\numberline {4.4}Production of the Inner Readout Chambers in the U.S.}{56}{section.4.4}% 
+\contentsline {section}{\numberline {4.5}GEM and Chamber Quality Assurance}{58}{section.4.5}% 
 \contentsline {subsubsection}{GEM QA}{58}{section*.78}% 
 \contentsline {subsubsection}{Chamber QA}{59}{section*.80}% 
 \contentsline {section}{\numberline {4.6}Outlook}{62}{section.4.6}% 
@@ -82,4 +82,5 @@
 \contentsline {section}{\numberline {6.3}Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}{99}{section.6.3}% 
 \contentsline {chapter}{Bibliography}{103}{section*.135}% 
 \contentsline {chapter}{Appendices}{119}{section*.136}% 
-\contentsline {chapter}{Vita}{120}{section*.137}% 
+\contentsline {section}{\numberline {A}Particle Identification via Bethe-Bloch}{120}{section.Alph0.1}% 
+\contentsline {chapter}{Vita}{123}{section*.139}% 
