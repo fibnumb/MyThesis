@@ -4,11 +4,11 @@
 In 1968 deep inelastic scatterings performed at the Stanford Linear Accelerator Center showed that the proton had internal structure\cite{Riordan1287} called partons at the time.  Within a decade of this discovery the partons were broken into two categories: the mass carrying fermions were known as the quarks and the gauge boson force carriers were called gluons.  The interactions of these two types of particles were described by the quantum field theory known as Quantum Chromodynamics (QCD) and by the SU(3) symmetry group.  SU(3) guarantees that color charge is conserved and this results in quarks grouping together into `colorless' hadrons.
 
 \section{The QCD Lagrangian}
-QCD is the strongest of the known fundamental forces.  It is a gauge field theory described by the Lagrangian density,
+QCD is the strongest of the known fundamental forces.  It is a gauge field theory described by the Lagrangian density
 
 \begin{equation}
 {\cal L}=-\frac{1}{4}F^{\alpha}_{\mu\nu}F^{\mu\nu}_{\alpha}
-- \alpha_{s} (\bar{q}_{j}\gamma^{\mu}T_{\alpha}q_{j})G_{\alpha}^{\mu}
+- \alpha_{s} (\bar{q}_{j}\gamma_{\mu}T_{\alpha}q_{j})G_{\alpha}^{\mu}
 + \bar{q}_{j}(i\gamma^{\mu} \partial_{\mu} - m)q_{j}
 \label{eq:lagrangian}
 \end{equation}
@@ -24,7 +24,7 @@ At short distances, less than 0.2 \textit{fm}, the strong coupling constant beco
 \end{equation}
 
 \noindent
-$\alpha_{s}$ is the strong coupling constant, $Q^{2}$ is the momentum transfer between two interacting partons, and $\Lambda^{2}$ is a cutoff below which QCD phenomena are strongly suppressed and $\beta_{0}$ is a correction factor.
+$\alpha_{s}$ is the strong coupling constant, $Q^{2}$ is the momentum transfer between two interacting partons, and $\Lambda^{2}$ is a cutoff below which QCD phenomena are strongly suppressed and $\beta_{0}$ is a scale factor.  Figure \ref{fig:as} shows the value of $\alpha_{s}$ as a function of the momentum transfer measured from various particle experiments and clearly shows the decreasing strength as high energies.
 
 \begin{figure}[h]
 \includegraphics[width=12.0cm]{alphas_s}
@@ -35,7 +35,7 @@ $\alpha_{s}$ is the strong coupling constant, $Q^{2}$ is the momentum transfer b
 
 \section{Jets}
 
-Hard probes (large $Q^{2}$ interactions), are produced in the earliest stages of a high energy collision when the largest momentum transfer processes occur.  As two highly energetic partons propagate away from one another, in a back-to-back fashion, they will instigate a shower of daughter partons via gluon radiation and the generation of low-mass $q \bar{q}$\, pairs.  These daughter partons will go on to form hadrons and the clustering of these hadrons is colloquially known as a `jet'.  If the jet was created in a high energy experiment, the final state hadrons will be recorded as tracks in a tracking detector or energy deposits in a calorimeter.  This process is shown in Figure \ref{fig:MakeAJet}.
+Hard probes (large $Q^{2}$ interactions), are produced in the earliest stages of a high energy collision when the largest momentum transfer processes occur.  The interaction and scattering of partons is a 2 $\rightarrow$ 2 process, meaning that two partons will interact and the outgoing partons also come in pairs.  As two highly energetic partons propagate away from one another they will instigate a shower of daughter partons via gluon radiation and the generation of low-mass $q \bar{q}$\, pairs.  These daughter partons will go on to form collomated sprays of hadrons known as a `jet'.  If the jet was created in a high energy experiment, the final state hadrons will be recorded as tracks in a tracking detector or energy deposits in a calorimeter.  This process is shown in Figure \ref{fig:MakeAJet}.
 
 
 
@@ -46,11 +46,11 @@ Hard probes (large $Q^{2}$ interactions), are produced in the earliest stages of
 \label{fig:MakeAJet}
 \end{figure}
 
-The physicist James Daniel Bjorken postulated that a correlation could be surmised by summing over the final state transverse momentum of the hadrons that form a jet to the parton that initiated the hard scattering\cite{PhysRev.179.1547}\cite{Bjorken:1973kd}.  This has led to jets becoming the work-horse for both experimentalists and theorists over the past 30 years in probing QCD phenomena.  This thesis makes use of jets as an important probe of QCD and the following sections are devoted to developing a background for both the theoretical and experimental treatment of jet physics.  The following sections of this chapter will be devoted to the production of jets from a physics point of view.
+The physicist James Daniel Bjorken postulated that a correlation could be surmised by summing over the final state transverse momentum of the hadrons that form a jet to the parton that initiated the hard scattering\cite{PhysRev.179.1547}\cite{Bjorken:1973kd}.  This has led to jets becoming the work-horse for both experimentalists and theorists over the past 30 years in probing QCD phenomena.  This thesis makes use of jets as an important probe of QCD and the following sections are devoted to developing a background for both the theoretical and experimental treatment of jet physics.  The following sections of this chapter will be devoted to the background of jet production.
 
 \subsubsection{Jet Production and the Factorization Theorem}\label{sec:fac}
 
-Due to confinement bare quarks are unobserved, therefore experimentalists must probe QCD interactions by detecting the color neutral final state hadrons measured in collider experiments.  Fortunately, the factorization theorem (Equation \ref{eq:xsection}) allows for the final state jet cross section to be broken into a number of steps that can either be calculated pertubatively using pQCD or modeled phenomenologically.  Using the factorization theorem the jet cross section in a pp collision is:
+Due to confinement bare quarks are unobserved, therefore experimentalists must probe QCD interactions by detecting the color neutral final state hadrons measured in collider experiments.  The factorization theorem allows for the final state jet cross section to be broken into a number of steps that can either be calculated pertubatively using pQCD or modeled phenomenologically.  Using the factorization theorem the jet cross section in a pp collision is:
 
 
 \begin{equation}
@@ -59,26 +59,26 @@ d\sigma^{pp \rightarrow jet} \sim f_{a/A}(x_{1},Q^{2}) \otimes  f_{b/B}(x_{2},Q^
 \end{equation}
 
 \noindent
-Breaking Equation \ref{eq:xsection} down into digestible portions we have:
+Breaking Equation \ref{eq:xsection} down we have:
 
 \begin{itemize}
 \item  $ f_{a/A}(x_{1},Q^{2})$ and $ f_{b/B}(x_{2},Q^{2})$ are the parton distribution functions (PDF) that describe the probability of finding parton, \textit{a} or \textit{b}, within nuclei, \textit{A} and \textit{B}, with a given momentum fraction, $x = p_{parton} / p_{hadron} $ as a function of $Q^{2}$.
 \item  $d\sigma_{ab \rightarrow c + X} (x_{1},x_{2})$ is the pQCD parton-parton cross section due to the hard scattering of the two partons, \textit{a} and \textit{b}, to an intermediate parton (\textit{c}).
-\item   $ D_{c \rightarrow h/jet}(z,Q^{2})$ is the fragmentation function (FF) that describes the probability the an outgoing parton, \textit{c}, fragments and hardonizes into a final state hadron, \textit{h}, within a jet with momentum fraction, $z \equiv p_{hadron} / p_{parton}$.
+\item   $ D_{c \rightarrow h/jet}(z,Q^{2})$ is the fragmentation function (FF) that describes the probability that an outgoing parton, \textit{c}, fragments and hardonizes into a final state hadron, \textit{h}, within a jet with momentum fraction, $z \equiv p_{hadron} / p_{parton}$.
 \end{itemize}
 
 \begin{figure}[h]
 \includegraphics[width=12.0cm]{ppcollison}
 \centering
-\caption{Timeline of a proton-proton collision.  Starting from the bottom, two partons confined within the colliding protons have a hard interaction.  The outgoing partons will induce partonic showers by radiating quarks and gluons.  The partonic showers will eventually form into final state hadrons, due to confinement, which are measured in high energy experiments\cite{Dobbs:2001ck}.}
+\caption{Schematic of a proton-proton collision.  Starting from the bottom, two partons confined within the colliding protons have a hard interaction.  The outgoing partons will induce partonic showers by radiating quarks and gluons.  The partonic showers will eventually form into final state hadrons, due to confinement, which are measured in high energy experiments\cite{Dobbs:2001ck}.}
 \label{fig:FactorizationCartoon}
 \end{figure}
 
 \noindent
-Figure \ref{fig:FactorizationCartoon} shows a timeline of a pp collision broken into the relevant steps in accordance with the factorization theorem.  One of the best places to fundamentally test QCD phenomena using hard probes, i.e. jets, are at high energy hadron colliders, such as those found at CERN\footnote{Discussed in detail in Chapter 3}, Fermilab, and BNL. The time scale that a hard probe is created in a high energy collision is on the order of $\tau \approx 1/p_{T} \approx$ \, 0.1 fm/\textit{c} which corresponds to some of the eraliest stages of the nuclear collision.  The factorization theorem allows for a high level of agreement between the QCD theory of nature and experimental observable but to ascertain this connection we should discuss each term of the factorization theorem in more depth.
+Figure \ref{fig:FactorizationCartoon} shows a timeline of a pp collision broken into the relevant steps in accordance with the factorization theorem.  The best place to test QCD phenomena using hard probes, i.e. jets, is at high energy hadron colliders, such as those found at CERN\footnote{Discussed in detail in Chapter 3}, Fermilab, and BNL. The time scale that a hard probe is created in a high energy collision is on the order of $\tau \approx 1/p_{T} \approx$ \, 0.1 fm/\textit{c} at $p_{T} = 1 \,$ GeV, which corresponds to some of the earliest stages of the nuclear collision.  The factorization theorem is an incredible tool for understanding high energy interactions and the following sections will discuss the ter important concepts enveloped in it.
 
 \subsubsection{Parton Distribution Functions}
-The PDF occurs twice in Equation \ref{eq:xsection} due to the two partons that will undergo the hard scattering being confined in two different protons.  PDFs may be thought of as conveying the structure of a nucleon in terms of the number of flavored quarks or gluons ($u(x)$, $d(x)$, $s(x)$, $\overline{u}(x)$, $\overline{d}(x)$, $\overline{s}(x)$, $g(x)$) and must obey certain constraints and summation rules.  In the case of a proton, with electric charge (\textit{e} = +1),
+The PDF occurs twice in Equation \ref{eq:xsection} due to the two partons that will undergo the hard scattering being confined in two different protons.  PDFs convey the structure of a nucleon in terms of the number of flavored quarks or gluons ($u(x)$, $d(x)$, $s(x)$, $\overline{u}(x)$, $\overline{d}(x)$, $\overline{s}(x)$, $g(x)$) and must obey certain constraints and summation rules.  In the case of a proton, with electric charge (\textit{e} = +1),
 
 \begin{equation}
 +1 = \frac{2}{3} \int_{0}^{1} [u(x) - \overline{u}(x)] dx - \frac{1}{3} \int^{1}_{0} [d(x) - \overline{d}(x)] dx
@@ -106,7 +106,7 @@ have a solution,
 \end{equation}
 
 \noindent
-This corresponds to the classical partonic view that protons contained two up quarks and a down quark, similarly the neutron, with charge \textit{e} = 0 and isospin I = -1/2, is composed of two down quarks and an up quark.  Naively, we could assume that the three quarks composing a proton would each carry a momentum fraction of approximately 1/3 the total momentum of a proton.  However, high energy deep inelastic scattering experiments conducted at the Stanford Linear Collider in the 1960's\cite{Panofsky:871460} measured the momentum carried by the three quarks as only accounting for about 1/2 the total proton momentum.  This led to a more complex and dynamic model of the proton structure with the other half of the proton momentum being occupied by neutral partons which would eventually become known as gluons.
+This corresponds to the classical partonic view that protons contained two up quarks and a down quark similarly, the neutron, with charge \textit{e} = 0 and isospin I = -1/2, is composed of two down quarks and an up quark.  Naively, we could assume that the three quarks composing a proton would each carry a momentum fraction of approximately 1/3 the total momentum of a proton.  However, high energy deep inelastic scattering experiments conducted at the Stanford Linear Collider in the 1960's\cite{Panofsky:871460} measured the momentum carried by the three quarks as only accounting for about 1/2 the total proton momentum.  This led to a more complex and dynamic model of the proton structure with the other half of the proton momentum being carried by neutral partons which would eventually become known as gluons.
 
 \begin{figure}[h]
 \includegraphics[width=15.0cm]{aOzz6}
@@ -115,10 +115,10 @@ This corresponds to the classical partonic view that protons contained two up qu
 \label{fig:PDFNNPDF}
 \end{figure}
 
-Measuring the structure of the partons making up a nucleon is a major endeavor by both theorists and experimentalists.  Two of the most popular PDFs available to physicists are the CTEQ\cite{Kovarik:2013sya} (Coordinated Theoretical-Experimental Project on QCD) and the NNPDF\cite{Ball:1966481} (Neural Network Parton Distribtuion Function) sets.  Figure \ref{fig:PDFNNPDF} shows the proton PDF as a function of the momentum fraction for two energy ranges, at high values of \textit{x} the two up quarks account for about 2/3 of the momentum fraction while the down quark accounts for about 1/3 of the total momentum, these quarks are collectively called the valence quarks.  At high energies, low values of \textit{x}, we see that the proton has non negligible contributions from gluons, anti-quarks, strange, and even charm quarks, these are collectively known as the sea partons.  Today, the modern picture of a proton's structure is mostly composed of gluons and sea quarks at low values of \textit{x} and this domination only increases as a function of $Q^{2}$\cite{Fritzsch:1992mu}.
+Determining the structure of the partons making up a nucleon is a major endeavor by both theorists and experimentalists.  Two of the most popular PDFs available to physicists are the CTEQ\cite{Kovarik:2013sya} (Coordinated Theoretical-Experimental Project on QCD) and the NNPDF\cite{Ball:1966481} (Neural Network Parton Distribtuion Function) sets.  Figure \ref{fig:PDFNNPDF} shows the proton PDF as a function of the momentum fraction for two energy ranges.  At high values of \textit{x}, the two up quarks account for about 2/3 of the momentum fraction while the down quark accounts for about 1/3 of the total momentum.  These quarks are collectively called the valence quarks.  At high energies (low values of \textit{x}) we see that the proton has non negligible contributions from gluons, anti-quarks, strange, and even charm quarks.  These are collectively known as the sea partons.  Today, the modern picture of a proton's structure is mostly composed of gluons and sea quarks at low values of \textit{x} and this domination only increases as a function of $Q^{2}$\cite{Fritzsch:1992mu}.
 
 \subsubsection{Parton-Parton Cross-Section}
-The parton-parton cross section can be calculated using perturbation theory.  To the zeroth order in $\alpha_{s}$ this cross-section would be a simple quark-antiquark annihilation and would be calculable using Feynman diagrams as seen in Figure \ref{fig:qqbar}\cite{Collins:1989gx}.  Higher ordered contributions, such as the creation of virtual gluons, require the hard cross-section to be expanded as a series in terms of $\alpha_{s}$.  Calculations of the hard cross-section that incorporate these higher order terms are known as \textit{next-to-leading order} (NLO) with N denoting the number of terms after the leading order that have been included in the cross-section calculation.  Various calculations of the hard cross-section of different QCD processes have been performed over the years typically using either power series or logarithmic expansions of $\alpha_{s}$\cite{Brambilla:2006wp} and corrections for LO, NLO, and even NNLO constitutes a very active field in high energy physics.
+The quark-pquark, quark-gluon, and gluon-gluon cross section can be calculated using perturbation theory.  To the zeroth order in $\alpha_{s}$ this cross-section would be a simple quark-antiquark annihilation and would be calculable using Feynman diagrams as seen in Figure \ref{fig:qqbar}\cite{Collins:1989gx}.  Higher ordered contributions, such as the creation of virtual gluons, require the hard cross-section to be expanded as a series in terms of $\alpha_{s}$.  Calculations of the hard cross-section that incorporate these higher order terms are known as \textit{next-to-leading order} (NLO) with N denoting the number of terms after the leading order that have been included in the cross-section calculation.  Various calculations of the hard cross-section of different QCD processes have been performed over the years typically using either power series or logarithmic expansions of $\alpha_{s}$\cite{Brambilla:2006wp} and corrections for LO, NLO, and even NNLO constitutes a very active field in high energy physics.
 
 \begin{figure}[h]
 \includegraphics[width=6.0cm]{Ttbar_production_via_qqbar_annihilation}
@@ -131,7 +131,7 @@ Perturbative techniques of the hard cross-section have been extremely successful
 
 \subsubsection{Hadronization}
 
-Hadronization is the process by which the colored pQCD partons form into colorless non-pQCD hadrons and represents a significant barrier in progressing jet physics.  This is due to the fact that hadronization encompasses several smaller processes, which in themselves are hard to characterize. Thus, like PDFs, an accurate description of hadronization requires a phenomenological approach by which experimental results help complement theoretical calculations.  Jet production via hadronization\cite{Webber:1994zd} follows two distinct stages.  First, the partons that underwent a hard scattering start to emit radiation via gluon bremsstrahlung up until time, $t < Q^{2}$, this is known as the parton cascade.  The parton cascade is the precursor of what will become a jet as most of the radiation generated will travel in the same direction as the initial hard scattered parton.  However, this immediately poses an issue in jet physics as radiation generated at a wide angle away from the momentum axis of the initial hard scattered parton will not be associated with the jet.
+Hadronization is the process by which the colored pQCD partons form into colorless non-pQCD hadrons and represents a significant barrier in progressing jet physics.  This is due to the fact that hadronization encompasses several smaller processes, which in themselves are hard to characterize. Thus, like PDFs, an accurate description of hadronization requires a phenomenological approach by which experimental results help complement theoretical calculations.  Jet production via hadronization\cite{Webber:1994zd} follows two distinct stages.  First, the partons that underwent a hard scattering start to emit radiation via gluon bremsstrahlung up until time, $t < Q^{2}$.  This is known as the parton cascade.  The parton cascade is the precursor of what will become a jet as most of the radiation generated will travel in the same direction as the initial hard scattered parton.  However, this immediately poses an issue in jet physics as radiation generated at a wide angle away from the momentum axis of the initial hard scattered parton will not be associated with the jet.
 
 \begin{figure}[h]
 \includegraphics[width=8.0cm]{partoncascade}
@@ -141,7 +141,7 @@ Hadronization is the process by which the colored pQCD partons form into colorle
 \end{figure}
 
 \noindent
-After the cascade has ended the partons form into color neutral hadrons.  There are two main phenomenological models used to describe the hadron forming process, the Lund String Model and the Cluster Hadronization Model.  The QCD potential is,
+After the cascade has ended the partons form into color neutral hadrons.  There are two main phenomenological models used to describe the hadron forming process, the Lund String Model and the Cluster Hadronization Model.  The QCD potential is
 
 \begin{equation}
 V(r) = - \frac{\alpha_{s}}{r} + \sigma \, r
@@ -149,7 +149,7 @@ V(r) = - \frac{\alpha_{s}}{r} + \sigma \, r
 \end{equation}
 
 \noindent
-where the first term of Equation \ref{eq:QCDPotential} goes as the Coulomb potential with a 1/r dependence and is the dominate term at short distance and the second term has a string-like potential with $\sigma$ referring to a string-like tension.  The Lund String Model ignores gluon radiation and has fragmentation occur via breaking the string tension with the production of $q\overline{q}$ sea quarks.  The created sea quarks will carry some momentum fraction, z, of the initial parton until z falls below some cutoff.  Figure \ref{fig:qqbarstring} shows two quarks undergoing a string breaking, each of the quarks initiating the string breaking will combine with a sea quark in an iterative manner to form hadrons.  
+where the first term of Equation \ref{eq:QCDPotential} goes as the Coulomb potential with a 1/r dependence and is the dominate term at short distance.  The second term has a string-like potential with $\sigma$ referring to a string-like tension.  The Lund String Model ignores gluon radiation and has fragmentation occur via breaking the string tension with the production of $q\overline{q}$ sea quarks.  The created sea quarks will carry some momentum fraction, z, of the initial parton until z falls below some cutoff.  Figure \ref{fig:qqbarstring} shows two quarks undergoing a string breaking, each of the quarks initiating the string breaking will combine with a sea quark in an iterative manner to form hadrons.  
 
 
 \begin{figure}[h]
@@ -163,15 +163,15 @@ The Cluster Hadronization Model has gluons splitting after the parton cascade ph
 
 \subsubsection{Fragmentation}
 
-Similar to the way a PDF quantitatively describes the structure of a nucleon the FF quantitatively describes the hadronization process.  The FF is also similar to the PDF in that it is also a probability distribution, thus it follows the probabilistic rule that,
+Similar to the way a PDF quantitatively describes the structure of a nucleon, the fragmentaion function (FF) quantitatively describes the hadronization process.  The FF is also similar to the PDF in that it is also a probability distribution, thus it follows the probabilistic rule that
 
 \begin{equation}
-\sum \int z D_{c \rightarrow \, h/jet} (z,Q^{2})dz = 1
+\sum \int z D_{c \rightarrow \, h/jet} (z,Q^{2})dz = 1 .
 \label{eq:FFRule}
 \end{equation}
 
 \noindent
-Ideally, the fractional momentum of the hadrons created from the fragmenting parton, $z \equiv p_{hadron} / p_{parton}$.  The Parton-Hadron Duality\cite{Jenkovszky:2012dc} states that the leading hadron should encompass the quantum numbers and kinematic properties associated with the hard scattered quark that initiated the jet.  Thus we can measure the fragmentation function as $z = p_{hadron} / p_{jet}$.  The formulation of the FF as a fractional energy carried by the hadrons in a jet was a breakthrough in pQCD techniques and is analogous to the way an electron passing through an absorber creates photon showers, these photons continue generating conversion electrons until the total energy has been dissipated into the material.
+The fractional momentum of the hadrons created from the fragmenting parton, $z \equiv p_{hadron} / p_{parton}$, is a exponentially decreasing distribution between 0 and 1 which shows how fragmented hadrons carry the partial energy from the inital parton scattering.  Parton-Hadron Duality\cite{Jenkovszky:2012dc} states that the leading hadron should encompass the quantum numbers and kinematic properties associated with the hard scattered quark that initiated the jet.  Thus we can measure the fragmentation function as $z = p_{hadron} / p_{jet}$.  The formulation of the FF as a fractional energy carried by the hadrons in a jet was a breakthrough in pQCD techniques and is analogous to the way an electron passing through an absorber creates photon showers, these photons continue generating conversion electrons until the total energy has been dissipated into the material.
 
 \begin{figure}[h]
 \includegraphics[width=10.0cm]{FFfunctions}
