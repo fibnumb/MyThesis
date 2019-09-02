@@ -62,7 +62,7 @@ This thesis measured inclusive jet results for radii between 0.1 and 0.5.  Furth
 \noindent
 The next sections of this chapter will discuss the QA implemented to the data, trigger scaling, unfolding, and other corrections 
 
-\section{8 TeV Data Quality}
+\section{8 TeV Data Sample}
 ALICE is a state-of-the-art experiment with excellent tracking and particle identification capabilities as discussed in Chapter \ref{ch:alice}.  However, just like any real world experiment, it contains a number of inefficiencies and imperfections.  This means that the data collected during the 8 TeV pp collision must be examined and any inaccuracies in the data must be removed before hard physics conclusions may be reached.  Data may be compromised at both the event-level, the experiment erroneously recorded something as an event, or at the constituent-level, one of the subdetectors mismeasured a feature of a particle, and these outliers must be accounted for and removed 
 
 \subsubsection{Event Selection}
@@ -127,7 +127,7 @@ A summary of the rejection reasons at the event level is summarized in Figure \r
 \noindent 
 Figure \ref{fig:vertrec} shows the reconstructed vertex for the accepted Min Bias events.  We see that the vertex distribution peaks at the primary interaction point as expected.  It should also be noted that a similar set of event QA was implemented to the EMCal triggered data \textit{(not shown)} and that the results were consistant with the Min Bias data.
 
-\subsection{EMCal Cluster Selection}
+\subsubsection{EMCal Cluster Selection}
 Corrections are performed on EMCal cells including; removing hot and dead towers (bad channels) based on the average occupancy and energy of the towers, calibrations to cell timing caused by the physical layout of the EMCal (such as differences in cabling length), and a energy calibration is implemented based on the $\pi^{0}$ mass.  After these corrections are applied to the towers are grouped together into clusters using the v2 algorithm.  The v2 algorithm has a minimum tower seed, $E_{seed} = \,$ 300 MeV, after which all adjacent towers with a minimum energy, $E_{cell} \geq \,$ 100 MeV, are iteratively added until a local minimum is reached.  The cluster energy is the sum of the seed and grouped neighbor tower energies.   
 
 \begin{figure}[h]
@@ -191,7 +191,7 @@ Cutting on the cluster time is done in order to readout only the particles creat
 
 Figure {fig:EMCalfinal} shows the final cluster energy distribution with all the cuts and corrections previously discussed applied and makes up the set of clusters over which the jet finding was performed.  The same cuts and QA was applied to the EMCal triggered data.
  
-\subsection{TPC Track Selection}
+\subsubsection{TPC Track Selection}
 
 Tracks are reconstructed in the TPC using a Kalman filtering which helps alleviate any corrections needed due to multiple scatterings, dead sectors, etc.  Jet finding was performed using `hybrid' tracks.  Hybrid tracks consist of two track sets the first being all the tracks with at least one hit in the SPD (Global) and the second set being all tracks that can be costrained to the primary vertex (Complimentary).  For this analysis, the minimal $p_{T, track}$ is 150 MeV/c and the track must be constrained to: - 0.9 $\leq \eta \leq$ 0.9 and 0 $\leq \phi \leq$ 2$\pi$, shown in Figure \ref{fig:Hybridtracketaphi}.  The spatial distributions of the hybrid tracks remain relatively flat as expected in the 8 TeV data set.
 
@@ -357,11 +357,6 @@ For jets between R = 0.1 through R = 0.5 the following jet acceptance correction
 
 
 
-
-
-
-
-
 \section{Unfolding}
 
 The reconstructed jet $p_{T}$ has a number of detector effects `folded' into the measurement.  These effects included such things as:
@@ -406,7 +401,7 @@ where $d^{2}N^{particle}_{MC}/dp_{T} \, d\eta$ is the PYTHIA level inclusive jet
 
 
 
-\subsection{Unfolded MB Spectra}
+\subsubsection{Unfolded MB Spectra}
 
 \begin{figure}[h]
 \includegraphics[width=13cm]{RawandUnfoldedSpectraMBR03}
@@ -439,7 +434,7 @@ Figure \ref{fig:Unfoldfine} shows an example of the output from the bin-by-bin u
 \end{figure}
 
 
-\subsection{Unfolded EMCal Triggered Spectra}
+\subsubsection{Unfolded EMCal Triggered Spectra}
 The unfolding procedure is repeated again for the EMCal triggered jet spectra.  The response matrix from the Min Bias sample is used for the bin-by-bin unfolding and performed using a fine binning.  The detector level and particle level jets are configured in the same manner as above and the output from the unfolded triggered specta are reported after rebinning to a variable size over the same kinematic range as the Min Bias sample.
 
 \begin{figure}[h]
@@ -466,7 +461,7 @@ The unfolding procedure is repeated again for the EMCal triggered jet spectra.  
 \noindent
 Due to the limitations on the response matrix the bin-by-bin unfolding of the EMCal triggered data was only stable up to 120 GeV.  It should be noted that the hump in the EMCal jet spectra is due to the firing threshold of the trigger.  The unfolded Emcal jet spectra was used to estimate the ratio the the jet yields between the Min Bias and triggered data samples, from this point the trigger scaling was calculated.  Due to the lack of a trigger modeled with the 8 TeV Monte Carlo productions the inability to extend the kinematic range of the jet spectras beyond 120 GeV presents a missed opportunity in terms of the recorded data from the 8 TeV runs.  In order to address this issue a new Monte Carlo production will need to be requested from the ALICE collaboration.
 
-\subsection{Jet Reconstruction and Matching Efficiency}
+\subsubsection{Jet Reconstruction and Matching Efficiency}
 In order to quantify the inefficiencies due to unfolding along with inefficencies in the ALICE experiment in reconstructing jets we quantify the jet reconstruction efficiency, $\epsilon_{reco} (p_{T, jet})$, and the jet matching efficiency, $\epsilon_{match} (p_{T, jet})$.
 
 \begin{equation}
