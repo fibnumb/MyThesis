@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  1 SEP 2019 22:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  2 SEP 2019 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1621,7 +1621,7 @@ Underfull \hbox (badness 1430) in paragraph at lines 209--209
 \openout2 = `back-matter/appendix-1.aux'.
 
 (./back-matter/appendix-1.tex
-<figures/pdf/bethe.png, id=2594, 1168.365pt x 735.74875pt>
+<figures/pdf/bethe.png, id=2591, 1168.365pt x 735.74875pt>
 File: figures/pdf/bethe.png Graphic file (type png)
 <use figures/pdf/bethe.png>
 Package pdftex.def Info: figures/pdf/bethe.png  used on input line 13.
@@ -1630,12 +1630,12 @@ Package pdftex.def Info: figures/pdf/bethe.png  used on input line 13.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/pdf/ALICEITSPID.png, id=2602, 342.27875pt x 232.87pt>
+<figures/pdf/ALICEITSPID.png, id=2599, 342.27875pt x 232.87pt>
 File: figures/pdf/ALICEITSPID.png Graphic file (type png)
 <use figures/pdf/ALICEITSPID.png>
 Package pdftex.def Info: figures/pdf/ALICEITSPID.png  used on input line 26.
 (pdftex.def)             Requested size: 216.81pt x 147.5119pt.
-<figures/pdf/TPC_PID2.png, id=2603, 343.2825pt x 247.92625pt>
+<figures/pdf/TPC_PID2.png, id=2600, 343.2825pt x 247.92625pt>
 File: figures/pdf/TPC_PID2.png Graphic file (type png)
 <use figures/pdf/TPC_PID2.png>
 Package pdftex.def Info: figures/pdf/TPC_PID2.png  used on input line 28.
@@ -1674,14 +1674,9 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
 Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: 818A5F76FEDEC1750639676561709637;3088.
+Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
+(rerunfilecheck)             Checksum: 185A3E41F75286D2BE2FA4E93E9DCEDB;9866.
 
-
-Package rerunfilecheck Warning: File `my-dissertation.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `my-dissertation.brf':
-(rerunfilecheck)             Before: D0EAAB4B4962DF7AF08FBEE250AF65E5;9919
-(rerunfilecheck)             After:  185A3E41F75286D2BE2FA4E93E9DCEDB;9866.
 
 LaTeX Warning: There were undefined references.
 
@@ -1720,10 +1715,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2019/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2019/texmf-di
 st/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on my-dissertation.pdf (142 pages, 13735622 bytes).
+Output written on my-dissertation.pdf (142 pages, 13735690 bytes).
 PDF statistics:
- 2810 PDF objects out of 2984 (max. 8388607)
- 2048 compressed objects within 21 object streams
+ 2807 PDF objects out of 2984 (max. 8388607)
+ 2045 compressed objects within 21 object streams
  508 named destinations out of 1000 (max. 500000)
  831 words of extra memory for PDF output out of 10000 (max. 10000000)
 
