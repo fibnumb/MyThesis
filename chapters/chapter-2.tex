@@ -171,21 +171,21 @@ Similar to the way a PDF quantitatively describes the structure of a nucleon, th
 \end{equation}
 
 \noindent
-The fractional momentum of the hadrons created from the fragmenting parton, $z \equiv p_{hadron} / p_{parton}$, is a exponentially decreasing distribution between 0 and 1 which shows how fragmented hadrons carry the partial energy from the inital parton scattering.  Parton-Hadron Duality\cite{Jenkovszky:2012dc} states that the leading hadron should encompass the quantum numbers and kinematic properties associated with the hard scattered quark that initiated the jet.  Thus we can measure the fragmentation function as $z = p_{hadron} / p_{jet}$.  The formulation of the FF as a fractional energy carried by the hadrons in a jet was a breakthrough in pQCD techniques and is analogous to the way an electron passing through an absorber creates photon showers, these photons continue generating conversion electrons until the total energy has been dissipated into the material.
+The fractional momentum of the hadrons created from the fragmenting parton, $z \equiv p_{hadron} / p_{parton}$, is a exponentially decreasing distribution between 0 and 1 which shows how fragmented hadrons carry the partial energy from the inital parton scattering.  Parton-Hadron Duality\cite{Jenkovszky:2012dc} states that the leading hadron should encompass the quantum numbers and kinematic properties associated with the hard scattered quark that initiated the jet.  Thus we can measure the fragmentation function as $z = p_{hadron} / p_{jet}$.  The formulation of the FF as the fractional energy carried by the hadrons in a jet was a breakthrough in pQCD techniques and is analogous to the way an electron passing through an absorber creates photon showers. These photons continue generating conversion electrons until the total energy has been dissipated into the material.
 
 \begin{figure}[h]
 \includegraphics[width=10.0cm]{FFfunctions}
 \centering
-\caption{Fragmentaion Functions from $e^{+}e^{-}$and DIS experiments with fits\cite{rak_tannenbaum_2013}.}
+\caption{Fragmentaion Functions from $e^{+}e^{-}$and DIS experiments with fits\cite{rak_tannenbaum_2013} as a function of the total cross-sectio, $\sigma$.}
 \label{fig:FFfunc}
 \end{figure}
 
 
-Figure \ref{fig:FFfunc} is the FF in terms of the Gaussian equation, $z \, dN/dz = - dN /d \xi $ with $\xi = -ln  \,1/z$. The observation that the Gaussian peaks of Figure \ref{fig:FFfunc} along with the suppression of the FF at low z values due to gluon coherence were predicted by pQCD. 
+Figure \ref{fig:FFfunc} is the FF in terms of the Gaussian equation, $z \, dN/dz = - dN /d \xi $ with $\xi = -ln  \,1/x_{p}$. The Gaussian peaks in Figure \ref{fig:FFfunc} along with the suppression of the FF at low z values due to gluon coherence were predicted by pQCD. 
 
 \section{Jet Finding Algorithms}
 
-A jet arises from the fragmentation of a hard parton to final state hadrons.  However, grouping the hadrons together into a jet is a non-trivial task and jet finding algorithms are deployed in order to achieve this objective.  Early on in jet physics, both theorists and experimentalists used a wide variety of jet finders and definitions which made comparisons between experiments or to theoretical calculations nearly impossible\cite{Atkin:2015msa}.  For example, a radiated gluon that splits into a quark anti-quark pair may become one or two jets depending on the angular separation and the algorithm used.  Early jet finders tended to be sensitive to soft particles or could give widely varying yields to the number of jets in an event.  In 1990, the Snowmass Accord\cite{Huth:217490} reached a standardized definition of a jet between experimentalists and theorists.  The agreement maintained that any algorithm that clusters particles into a jet must be both infrared and collinear safe (IRC).  
+A jet arises from the fragmentation of a hard parton to final state hadrons.  However, grouping the hadrons together into a jet is a non-trivial task and jet finding algorithms are used in order to achieve this objective.  Early on in jet physics, both theorists and experimentalists used a wide variety of jet finders and definitions which made comparisons between experiments or to theoretical calculations nearly impossible\cite{Atkin:2015msa}.  For example, a radiated gluon that splits into a quark anti-quark pair may become one or two jets depending on the angular separation and the algorithm used.  Early jet finders tended to be sensitive to soft particles or could give widely varying yields to the number of jets in an event.  In 1990, the Snowmass Accord\cite{Huth:217490} reached a standardized definition of a jet between experimentalists and theorists.  The agreement maintained that any algorithm that clusters particles into a jet must be both infrared and collinear safe (IRC).  
 
 \begin{figure}[h]
 \includegraphics[width=15.0cm]{IRCsafe}
@@ -195,15 +195,15 @@ A jet arises from the fragmentation of a hard parton to final state hadrons.  Ho
 \end{figure}
 
 
-Collinear safety ensures that a high-$p_{T}$ particle split into two or more particles should not influence the kinematics of a hard jet, this makes the jet finders insensitive to how hadrons are grouped together.  Infrared safety in turn requires that the emission of soft radiation should not affect the properties of a jet, this makes jets returned by the algorithm independent of soft physics and a true signature of a hard process.  Both of these processes are shown in Figure \ref{fig:IRCsafe}. After the adoption of these standards from the Snowmass Accord, old algorithms that violated these rules were patched and new jet finders were developed to comply with IRC safety.  The most prevalent jet finding algorithms today fall into two categories: cone algorithms and sequential recombination/clustering algorithms.
+Collinear safety ensures that a high-$p_{T}$ particle split into two or more particles should not influence the kinematics of a hard jet, this makes the jet finders insensitive to gluon splitting which is hard to calculate theoretically.  Infrared safety in turn requires that the emission of soft radiation should not affect the properties of a jet.  This makes jets returned by the algorithm independent of soft physics and a signature of a hard process.  Both of these processes are shown in Figure \ref{fig:IRCsafe}. After the adoption of these standards from the Snowmass Accord, old algorithms that violated these rules were patched and new jet finders were developed to comply with IRC safety.  The most prevalent jet finding algorithms today fall into two categories: cone algorithms and sequential recombination/clustering algorithms.
 
 \subsubsection{Cone Algorithms}
 
-Cone algorithms made up the bulk of early jet finders.  The only IRC safe cone algorithm still in use today is the seedless infra-red safe cone algorithm (SIScone).  SIScone defines a cone of radius, R, around the highest momentum particle in the coordinates of $(\eta,\phi)$\footnote{It is possible to use a Cartesian coordinate system in particle colliders, with the z-component referring to points along the beam axis while the xy-plane is perpendicular to the beam axis.  However, this system is not invariant under a Lorentz boost.  Therefore it is more useful to use the cylindrical-like coordinates of psuedorapidity ($\eta$) and the azimuth angle ($\phi$). Psuedorapidity may be thought of as the polar angle in a cylindrical coordinate system with $\eta = 0$ when the polar angle is perpendicular to the beam axis and $\eta = \inf$ along the beam axis.  $\phi$ is the azimuth angle that rotates around the beam axis.  Both, $\eta$ and $\phi$ are invariant for Lorentz boosts along the beamline and allow for easy comparisons between the center-of-mass frame and the laboratory frame of a high energy collision.}, this is the proto-jet.  SIScone then proceeds through an iterative process of finding all the particles within the jet radius such that $R \leq \sqrt{\phi^{2} + \eta^{2}}$ and calculates a new jet center based on these particles momenta and a new weighted jet axis$(\eta,\phi)$.  If the new center matches the proto-jet center, the proto-jet is tagged as a stable jet, all the particles in that jet are removed, and SIScone moves onto the next highest $p_{T}$ particle.  Cone algorithms tend to be unpopular due to being computationally expensive, difficult to implement theoretically, and can give results not calculable in perturbation theory.
+Cone algorithms made up the bulk of early jet finders.  The only IRC safe cone algorithm still in use today is the seedless infra-red safe cone algorithm (SIScone).  SIScone defines a cone of radius (R) around the highest momentum particle in the coordinates of $(\eta,\phi)$\footnote{It is possible to use a Cartesian coordinate system in particle colliders, with the z-component referring to points along the beam axis while the xy-plane is perpendicular to the beam axis.  However, this system is not invariant under a Lorentz boost.  Therefore it is more useful to use the cylindrical-like coordinates of psuedorapidity ($\eta$) and the azimuth angle ($\phi$). Psuedorapidity may be thought of as the polar angle in a cylindrical coordinate system with $\eta = 0$ when the polar angle is perpendicular to the beam axis and $\eta = \infty$ along the beam axis.  $\phi$ is the azimuth angle that rotates around the beam axis.  Both, $\eta$ and $\phi$ are invariant for Lorentz boosts along the beamline and allow for easy comparisons between the center-of-mass frame and the laboratory frame of a high energy collision.}.  This is the proto-jet.  SIScone then proceeds through an iterative process of finding all the particles within the jet radius such that $R \leq \sqrt{\phi^{2} + \eta^{2}}$ and calculates a new jet center based on these particles momenta and a new weighted jet axis$(\eta,\phi)$.  If the new center matches the proto-jet center, the proto-jet is tagged as a stable jet.  All the particles in that jet are removed and SIScone moves onto the next highest $p_{T}$ particle.  Cone algorithms tend to be unpopular due to being computationally expensive, difficult to implement theoretically, and can give results not calculable in perturbation theory.
 
 \subsubsection{Sequential/Recombination Algorithms}
 
-The other class of jet finders are the sequential/recombination algorithms, which are favored by experimentalists and theorists, and are IRC safe.  There are three types of sequential/recombination algorithms: $k_{T}$, Anti-$k_{T}$, and the Cambridge/Aachen jet finders, with $k_{T}$ referring to the component of a jet constituents momentum perpendicular to the jet axis.  All of the algorithms use a similar method, first they find the distance between every pair of particles, $d_{i,j}$,  such that
+The other class of jet finders are the sequential/recombination algorithms, which are favored by experimentalists and theorists, and are IRC safe.  There are three sequential/recombination algorithms: $k_{T}$, Anti-$k_{T}$, and the Cambridge/Aachen jet finders, with $k_{T}$ referring to the component of a jet constituent's momentum perpendicular to the jet axis.  All of the algorithms use a similar method.  First they find the distance between every pair of particles, $d_{i,j}$,  such that
 
 
 
@@ -221,7 +221,7 @@ d_{i,B} = p^{a}_{T,i}
 \end{equation}
 
 \noindent
-this is the distance between a given particle \textit{i} and the beam axis.  Sequential/Recombination algorithms find the set of all particles, ${d_{i,j},d_{i,B}}$, such that if $d_{i,B}$ is the minimum for particle \textit{i} it is tagged as a jet and removed from the list.  If $d_{i,j}$ are a minimum for particles \textit{i} and \textit{j} these two particles are merged together into a new particle (\textit{ij}) and a new minimum is found between (\textit{ij}) and particle \textit{k} until all the particles are either merged into jets or the minimization function is no longer satisfied.
+which is only a function of the particles transverse momentum.  Sequential/Recombination algorithms find the set of all particles, ${d_{i,j},d_{i,B}}$, such that if $d_{i,B}$ is the minimum for particle \textit{i} it is tagged as a jet and removed from the list.  If $d_{i,j}$ are a minimum for particles \textit{i} and \textit{j} these two particles are merged together into a new particle (\textit{ij}) and a new minimum is found between (\textit{ij}) and particle \textit{k} until all the particles are either merged into jets or the minimization function is no longer satisfied.
 
 \subsubsection{$k_{T}$ Algorithm}
 The $k_{T}$ algorithm sets the value \textit{a} to 2, this results in a minimization function,
@@ -232,7 +232,7 @@ d_{i,j} = min[p^{2}_{T,i},p^{2}_{T,j}] \, \frac{\Delta^{2}_{ij}}{R^{2}}
 \end{equation}
 
 \noindent
-which clusters low momentum particles first, making this algorithm susceptible to the underlying event (UE) or pile-up (PU).  Thus the $k_{T}$ algorithm is good at estimating any background present in a high energy collision. 
+which clusters low momentum particles first, making this algorithm susceptible to the underlying event or pile-up.  Thus the $k_{T}$ algorithm is good at estimating any background present in a high energy collision. 
 
 \subsubsection{Anti-$k_{T}$ Algorithm}
 The Anti-$k_{T}$ algorithm sets the value \textit{a} to -2, resulting in a minimization function,
@@ -242,7 +242,7 @@ d_{i,j} = min \Bigg [\frac{1}{p^{2}_{T,i}}, \frac{1}{p^{2}_{T,j}} \Bigg ] \, \fr
 \label{eq:Akt}
 \end{equation}
 
-The minimization function is dominated by high-$p_{T}$ particles, thus the area and axis of a jet is only slightly perturbed by soft particles.  This makes the Anti-$k_{T}$ algorithm robust in jet finding with events having a UE and PU.  The Anti-$k_{T}$ algorithm is the default jet finding algorithm used at the Large Hadron Collider and is the one used in this thesis.
+The minimization function begins with high-$p_{T}$ particles, thus the area and axis of a jet is only slightly perturbed by soft particles.  This makes the Anti-$k_{T}$ algorithm robust in jet finding with events having pile-up  The Anti-$k_{T}$ algorithm is the default jet finding algorithm used at the Large Hadron Collider and is the one used in this thesis.
 
 \subsubsection{Cambridge/Aachen Algorithm}
 
@@ -292,7 +292,7 @@ E^{jet} = \sum_{particles} E = \sum_{towers} E
 where $p_{L}$ refers to the longitudinal momentum which is the momentum component parallel to the beam axis.  This method of adding the 4-vector of the particles composing the jet together in order to gain the jet kinematics is known as the E-scheme\cite{Cacciari:2011ma}.
 
 \subsubsection{FastJet}
-FastJet\cite{Cacciari:2011ma} is a \verb|C++| software package that performs jet finding.  Due to the computational efficiency, ease of use, and straight forward implementation, FastJet is the de-facto preferred jet finder used by theoreticians and all current high energy experiments. It implements the four previously discussed jet finders along with both the E-scheme and a boost invariant $p_{T}$ scheme (BIpt-scheme) for recombination.  The BIpt-scheme obtains the jet momentum and energy in the same manner as the E-scheme but uses a weighted average to find the jet coordinates,
+FastJet\cite{Cacciari:2011ma} is a \verb|C++| software package that performs jet finding.  Due to the computational efficiency, ease of use, and straight forward implementation, FastJet is the de-facto preferred jet finding software package used by theorists and all current high energy experiments. It implements the four previously discussed jet finders along with both the E-scheme and a boost invariant $p_{T}$ scheme (BIpt-scheme) for recombination.  The BIpt-scheme obtains the jet momentum and energy in the same manner as the E-scheme but uses a weighted average to find the jet coordinates,
 
 \begin{equation}
 \eta^{Jet} = \sum_{particle} \frac{p_{T}^{particle}}{P_{T}^{jet}} \, \eta^{particle}
