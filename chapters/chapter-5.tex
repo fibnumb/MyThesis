@@ -123,7 +123,50 @@ A summary of the rejection reasons for an event are shown in Figure \ref{fig:eve
 \noindent 
 Figure \ref{fig:vertrec} shows the reconstructed vertex for the accepted Min Bias events after the QA has been performed.  We see that the vertex distribution peaks at the primary interaction point as expected and that the distribution is well defined.  It should also be noted that a similar set of event QA was implemented to the EMCal triggered data \textit{(not shown)} and that the results were consistent with the Min Bias data.
 
-\subsubsection{Cluster Selection}
+
+\section{EMCal Triggered Data}
+
+Figures \ref{fig:rawjetR02} - \ref{fig:rawjetR04} showed the raw Min Bias and EMCal triggered data for the 8 TeV run and that the triggered data greatly extends the kinematic reach for the spectra.  This thesis looked at the two primary Level-1 triggers configured for the EMCal, the jet trigger (EJE) and the gamma (EGA) trigger\cite{Bourrion:2010js}.  Although both of the Level-1 triggers were investigated in this analysis, only the EGA trigger was ultimatley corrected  and used for the final jet cross sections and spectra.  The EJE trigger utilizes a trigger patch consisting of 32 x 32 EMCal towers sliding by 8 towers until a patch is reconstructed that meets the minimum predefined trigger energy threshold.  Once this threshold is surpassed the event is recorded and tagged as a kEMCEJE triggered event.  A similar procedure is followed for the EGA trigger, but with a smaller patch region of 4 x 4 towers with a sliding window of 2 towers and its own predefined trigger threshold.  The bump at low-$p_{T}$ seen in figures \ref{fig:rawjetR02} - \ref{fig:rawjetR04} is the trigger turn on curve and the peak corresponds to the trigger threshold for the EGA trigger.  Ideally, a jet in the EMCal acceptance should fire the EJE trigger and the EGA should fire due to the presence of a photon or electron.  Since, the triggers increase the yield of jets measured the spectra from the triggered data must be corrected and downscaled.  In order to calculate these corrections two macros were used, AliEMCalTriggerMaker.cxx reconstructs the EMCal and trigger patch geometries while AliEMCalSetupTask.cxx allows a user to set the trigger thresholds for the EkEMCEJE and kEMCEGA triggers to values used during a givien LHC data taking period.  Since a trigger patch requirements may be fired if two or more jets are within the geometric area of the trigger patch this could lead to double counting.  In order to correct for this, the jet spectra from the triggered data is scaled by the number of triggers, $N_{trig}$, fired that fell within the jet
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{DistanceJetEJER02}
+\centering
+\caption{Distance to closest reconstructed EJE patch to R = 0.2 jet with the Min Bias Pythia Monte Carlo.}
+\label{fig:DisJetEJE}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{DistanceJetEGAR02}
+\centering
+\caption{Distance to closest reconstructed EGA patch to R = 0.2 jet with the Min Bias Pythia Monte Carlo.}
+\label{fig:DisJetEGA}
+\end{figure}
+
+\noindent
+Figures \ref{fig:DisJetEJE} and \ref{fig:DisJetEGA} show the distance between a reconstructed jet and its closest reconstructed EMCal trigger patch for R = 0.2 jets in the Pythia Monte Carlo.  We can see that with the EGA trigger that the peak of the distribution is within the jet radius of R = 0.2 while with the EJE trigger the distribution is more uniformly distributed.  The EJE distribution can be accounted for the fact that the EJE trigger is large enough to have multiple jets matched to EJE trigger patch or vice-versa.  For the trigger reconstruction I used the EGA trigger and performed a geometrical matching requirement to the spatial center of the trigger patch,
+
+\begin{equation}
+\sqrt{ ( \phi_{jet} - \phi_{EGA, patch} )^{2} + ( \eta_{jet} - \eta_{EGA, patch} )^{2}}  \leq R_{jet} 
+\label{eq:triggermatch}
+\end{equation}
+
+\noindent
+Once this correction is implemented the triggered data must then be downscale in order to combine the Min Bias data and triggered data together.  The downscale correction factors, Figure\ref{fig:EMCalDownScale}, are obtained by taking the ratio of the EMCal jet spectra to the Min Bias jet spectra and fitting the plateau region to a line.  At low-$p_{T}$, below 40 GeV,  the two data sets dont scale linear and so the EMCal data below 40 GeV is ignored.
+
+
+\begin{figure*}[t!]
+$\begin{array}{rl}
+    \includegraphics[width=0.5\textwidth]{R02TriggerYields} &
+    \includegraphics[width=0.5\textwidth]{R03TriggerYields}\\
+    \multicolumn{2}{c}{\includegraphics[width=0.5\textwidth]{R04TriggerYields}}
+\end{array}$
+\caption[EMCal triggered data correction factors for R=0.2, R=0.3, and R=0.4 jets.]{\label{fig:EMCalDownScale}EMCal triggered data correction factors for R=0.2, R=0.3, and R=0.4 jets.}
+\end{figure*}
+
+These two corrections allow for the EMCal data to be rescaled and combined with the Min Bias data It should be noted that these corrections were performed after the bin by bin Monte Carlo corrections were implemented which is discussed towards the end of this chapter.  With the data scaled and combine the next sections will detail correcting the jets and their constituents before the Monte Carlo corrections were performed.
+
+
+\section{Cluster Selection}
 Corrections are performed on EMCal cells including.  These include removing hot and dead towers (bad channels) based on the average occupancy and energy of the towers, calibrations to cell timing caused by the physical layout of the EMCal (such as differences in cabling length), and a energy calibration is implemented based on the $\pi^{0}$ mass.  After these corrections are applied to the towers are grouped together into clusters using the v2 algorithm.  The v2 algorithm has a minimum tower seed, $E_{seed} = \,$ 300 MeV, after which all adjacent towers with a minimum energy, $E_{cell} \geq \,$ 100 MeV, are iteratively added until a local minimum is reached.  The cluster energy is the sum of the seed and grouped neighbor tower energies.   
 
 \begin{figure}[h]
@@ -188,7 +231,7 @@ Cutting on the cluster time is done in order to readout only the particles creat
 
 Figure \ref{fig:EMCalfinal} shows the final cluster energy distribution with all the cuts and corrections previously discussed applied and makes up the set of clusters over which the jet finding was performed.  The same cuts and corrections were applied to the EMCal triggered data.
 
-\subsubsection{Track Selection}
+\section{Track Selection}
 
 Tracks are reconstructed in the TPC using a Kalman filtering which helps alleviate any corrections needed due to multiple scatterings, dead sectors, etc.  Jet finding was performed using `hybrid' tracks.  Hybrid tracks consist of two track sets the first being all the tracks with at least one hit in the SPD (Global) and the second set being all tracks that can be constrained to the primary vertex (Complimentary).  The reconstruction of a signal from the ITS and TPC form good tracks if the $\chi^{2}/NDF$, chi-square per degrees of freedom, was required to be less than 4 in the TPC and $\chi^{2}$ was required to be less than 36 in the ITS. For this analysis, the minimal $p_{T, track}$ is 150 MeV/c and the track must be constrained to: - 0.9 $\leq \eta \leq$ 0.9 and 0 $\leq \phi \leq$ 2$\pi$, shown in Figure \ref{fig:Hybridtracketaphi}.  The spatial distributions of the hybrid tracks remain relatively flat as expected in the 8 TeV data set.
 
@@ -239,30 +282,30 @@ Accepted tracks and clusters are feed into the anti-kt jet reconstruction algori
 
 
 
-%%\noindent
-%\subsection{$z_{leading}$ cut}
+\noindent
+\subsubsection{$z_{leading}$ cut}
 
-%The fragmentation function for the leading track in a jet,
+The fragmentation function for the leading track in a jet,
 
-%\begin{equation}
-%z_{leading} = \frac{ p_{leading, proj} }{ p_{jet} },
-%\label{eq:zleading}
-%\end{equation}
+\begin{equation}
+z_{leading} = \frac{ p_{leading, proj} }{ p_{jet} },
+\label{eq:zleading}
+\end{equation}
 
-%\noindent
-%may be artificially high due to misidentifying secondary decay particles as primary vertex tracks and assigning them a much larger $p_{T}$.  Additionally, fake clusters, such as exotics, may skew the jet $p_{T}$ to apparently large values and thus make $z_{leading}$ infinitesimal.  
+\noindent
+may be artificially high due to misidentifying secondary decay particles as primary vertex tracks and assigning them a much larger $p_{T}$.  Additionally, fake clusters, such as exotics, may skew the jet $p_{T}$ to apparently large values and thus make $z_{leading}$ infinitesimal.  
 
-%\begin{figure}[h]
-%\includegraphics[width=10cm]{JetzR02}
-%\centering
-%\caption{R = 0.2 $z_{leading}$ from the Min Bias data sample.}
-%\label{fig:Jetz}
-%\end{figure}
+\begin{figure}[h]
+\includegraphics[width=10cm]{JetzR02}
+\centering
+\caption{R = 0.2 $z_{leading}$ from the Min Bias data sample.}
+\label{fig:Jetz}
+\end{figure}
 
-%\noindent
-%Figure \ref{fig:Jetz} shows the projection of the hadronic 3-momentum onto the jet axis.  We observer an excess of jets, especially at low jet $p_{T}$, of z values close to 1 or zero.  To help remove these biased jets a cut on $ z_{leading} \geq 0.03$ and $z_{leading} \leq 0.97$ is imposed.  It should also be noted that due to QCD hadronization $z_{leading} \sim 1$ corresponds to a singular particle jet which is highly rare.  Inbetween .03 and .97 we see the $z_{leading}$ is continuous and uniform as expected.  
+\noindent
+Figure \ref{fig:Jetz} shows the projection of the hadronic 3-momentum onto the jet axis.  We observer an excess of jets, especially at low jet $p_{T}$, of z values close to 1 or zero.  Previous jet results from ALICE removed these biased jets a cut on $ z_{leading} \geq 0.03$ and $z_{leading} \leq 0.97$ is imposed.  It should also be noted that due to QCD hadronization $z_{leading} \sim 1$ corresponds to a singular particle jet which is highly rare.  In between .03 and .97 we see the $z_{leading}$ is continuous and uniform as expected.  
 
-\subsection{Jet Area Cut}
+\subsubsection{Jet Area Cut}
 
 A jet area of, $A_{jet}$, cut was imposed on accepted jets.
 
@@ -271,53 +314,30 @@ A_{jet} \geq 0.6 \pi R_{jet}^{2}
 \label{eq:AreaJet}
 \end{equation}
 
-The area is estimated in FastJet using `ghost' particles.  As jet reconstrution is being performed these fake particles with infinitesimal $p_{T}$ are placed randomly through the event.  The number of ghost particles captured in a jet is proportional to the jet area, thus the precision of the jet area is sensative to the reconstruction of soft particles.  Figure \ref{fig:jetrej} shows the rejection reason for a jet with the dominate reasoning due to the area cut and this distribution skewed towards low-$p{T}$ jets.
-
-%\subsection{NEF cut}
-%The Neutral Energy Fraction (NEF) is the total jet energy carried by the neutral components of the jet, i.e. EMCal clusters.  Figure \ref{fig:JetNEF} shows the NEF for R = 0.2 jets from the Min Bias sample.
-
-%\begin{figure}[h]
-%\includegraphics[width=10cm]{NEFR02}
-%\centering
-%\caption{R = 0.2 NEF per jet $P_{T}$.}
-%\label{fig:JetNEF}
-%\end{figure}
-%\noindent
-%We observe an excess in jets at low-$p_{T}$ with NEF values around zero or one, similar to what was seen with the $z_{leading}$ distribution.  The cause for these excesses were explored in this analysis but no hard source was identified and no cut to the NEF was used.
-
-%The jets the passed all of the selection criteria and cuts make up the signal jets that are reported in the cross section and spectra.  These criteria were implemented for the R = 0.3 and R = 0.4 along with the EMCal triggered data.
-
-
-l
-
-\section{EMCal Triggered Data}
-
-Figures \ref{fig:rawjetR02} - \ref{fig:rawjetR04} showed the raw Min Bias and EMCal triggered data for the 8 TeV run and that the triggered data greatly extends the kinematic reach for the spectra.  This thesis looked at the two primary Level-1 triggers configured for the EMCal, the jet trigger (EJE) and the gamma (EGA) trigger\cite{Bourrion:2010js}.  Although both of the Level-1 triggers were investigated in this analysis, only the EGA trigger was ultimatley corrected  and used for the final jet cross sections and spectra.  The EJE trigger utilizes a trigger patch consisting of 32 x 32 EMCal towers sliding by 8 towers until a patch is reconstructed that meets the minimum predefined trigger energy threshold.  Once this threshold is surpassed the event is recorded and tagged as a kEMCEJE triggered event.  A similar procedure is followed for the EGA trigger, but with a smaller patch region of 4 x 4 towers with a sliding window of 2 towers and its own predefined trigger threshold.  The bump at low-$p_{T}$ seen in figures \ref{fig:rawjetR02} - \ref{fig:rawjetR04} is the trigger turn on curve and the peak corresponds to the trigger threshold for the EGA trigger.  Ideally, ta jet in the EMCal acceptance should fire the EJE trigger and the EGA should fire due to the presence of a photon or electron.  Since, the triggers increase the yield of jets.  In order to calculate the trigger bias two macros were used, AliEMCalTriggerMaker.cxx reconstructs the EMCal and trigger patch geometries while AliEMCalSetupTask.cxx allows a user to set the trigger thresholds for the EkEMCEJE and kEMCEGA triggers.  The trigger bias was calculated by reconstructing trigger patches from the Pythia Min Bias sample production created by ALICE and matching those reconstructed patches to jets within the EMCal acceptance.  
+The area is estimated in FastJet using `ghost' particles.  As jet reconstrution is being performed these fake particles with infinitesimal $p_{T}$ are placed randomly through the event.  The number of ghost particles captured in a jet is proportional to the jet area, thus the precision of the jet area is sensative to the reconstruction of soft particles.  Figure \ref{fig:jetRejectionj} shows the rejection reason for a jet with the dominate reasoning due to the area cut, this cut skewed towards low-$p{T}$ jets.
 
 \begin{figure}[h]
-\includegraphics[width=10cm]{DistanceJetEJER02}
+\includegraphics[width=10cm]{jetRejection}
 \centering
-\caption{Distance to closest reconstructed EJE patch to R = 0.2 jet with the Min Bias Pythia Monte Carlo.}
-\label{fig:DisJetEJE}
+\caption{Jet rejection reason.}
+\label{fig:jetRejection}
 \end{figure}
+
+\subsubsection{NEF cut}
+The Neutral Energy Fraction (NEF) is the total jet energy carried by the neutral components of the jet, i.e. EMCal clusters.  Figure \ref{fig:JetNEF} shows the NEF for R = 0.2 jets from the Min Bias sample.
 
 \begin{figure}[h]
-\includegraphics[width=10cm]{DistanceJetEGAR02}
+\includegraphics[width=10cm]{NEFR02}
 \centering
-\caption{Distance to closest reconstructed EGA patch to R = 0.2 jet with the Min Bias Pythia Monte Carlo.}
-\label{fig:DisJetEGA}
+\caption{R = 0.2 NEF per jet $P_{T}$.}
+\label{fig:JetNEF}
 \end{figure}
-
 \noindent
-Figures \ref{fig:DisJetEJE} and \ref{fig:DisJetEGA} show the distance between a reconstructed jet and its closest reconstructed EMCal trigger patch for R = 0.2 jets in the Pythia Monte Carlo.  We can see that with the EGA trigger that the peak of the distribution is within the jet radius of R = 0.2 while with the EJE trigger the distribution is more uniformly distributed.  The EJE distribution can be accounted for the fact that the EJE trigger is large enough to have multiple jets matched to EJE trigger patch or vice-versa.  For the trigger reconstruction I used the EGA trigger and performed a geometrical matching requirement to the spatial center of the trigger patch,
+We observe an excess in jets at low-$p_{T}$ with NEF values around zero or one, similar to what was seen with the $z_{leading}$ distribution.  The cause for these excesses were explored in this analysis but no hard source was identified and no cut to the NEF was used.
+The jets the passed all of the selection criteria and cuts make up the signal jets that are reported in the cross section and spectra.  These criteria were implemented for the R = 0.3 and R = 0.4 along with the EMCal triggered data.
 
-\begin{equation}
-\sqrt{ ( \phi_{jet} - \phi_{EGA, patch} )^{2} + ( \eta_{jet} - \eta_{EGA, patch} )^{2}}  \leq R_{jet} 
-\label{eq:triggermatch}
-\end{equation}
 
-\noindent
-Equation \ref{eq:triggermatch} ensures that any EGA trigger patch that fired due to the presence of a jet was confined within the radius parameter of the jet.  Double counting may occur if multiple triggers are reconstructed within the same jet.  In order to account for this the simulated Monte Carlo spectra is scaled by $N_{Triggers}$ matched to a jet.
+
 
 \section{Acceptance Correction}
 Jet spectra, cross sections, and ratios of cross sections are reported over the full azimuth angle and psuedorapidity acceptance.  However, due to jets being constrained to the EMCal, a geometric factor is used to correct for the limited acceptance of the detector.  This thesis uses a maximum jet radius of 0.5 to help study the effects of wide angle radiation on jet fragmentation.  Heavy-ion use smaller jet radii, typically of 0.2, to help negate the high multiplicity background.  Due to these geometric corrections the centroid of a jet is constrained to,
@@ -367,7 +387,7 @@ The reconstructed jet $p_{T}$ has a number of detector effects `folded' into the
 \noindent
 Unfolding is the method by which these detector effects are removed from the raw inclusive jet spectra and a `true' jet spectra may be obtained and compared with theoretical calculations or other experimental results.  In order to unfold a jet spectra it is necessary to generate a response matrix that simulates the described effects above, after the response matrix is generated a number of statistical approaches including, Bayesian, Singular Value Decomposition (SVD), or Bin-by-Bin, may be applied to unfold the raw jet spectra.  In order to generate the response matrix we embed a Pythia generated event into a GEANT3 simulation of the ALICE detector.  Due to the fact that the performance and efficiency of the ALICE detector may change between the data taking periods each simulation is `anchored' to a given LHC, these anchors contain all the hot and dead sectors for the subdetectors, along with their calibrated performance during that specified data taking.  Two Monte Carlo data sets were produced with the MB trigger for the full 8 TeV run, the first was a Pythia generator using the Monesh-2013 tune and the second was a MB tune of the PHOjet Monte Carlo package.  Both data sets were explored for this thesis and it was decided that the final corrected spectra would be obtained via unfolding with the Pythia MC data set.  The magnitude of any one of the effects unfolding is supposed to account for is not expected to be very large, but combined may be significant, thus unfolding is an important step in this analysis.
 
-\subsection{Response Matrix}
+\subsubsection{Response Matrix}
 Given a truth-level particle jet $p_{T}$ we wish to reconstruct that jet's $p_{T}$ at the detector-level.  The particle-level pythia jets are constructed from the primary particles generated via Pythia while excluding any daughter decay particles in order to avoid double counting.  In addition the tracking efficiency in Pythia is known to deviate from nature.  This is due to Pythia under predicting the production of strange quarks.  
 Constructing the response matrix in this case is calculated on a jet-by-jet basis.  The particle-level jet centroid ($\phi_{part}$,$\eta_{part}$)is matched to the detector-level jet via a constrain on the displaced distance between the two jet centroids in ($\phi$,$\eta$).  This distance was constrained to: $\Delta  R = \sqrt{(\phi_{part} - \phi_{det})^{2} + (\eta_{part} - \eta_{det})^{2}} \leq 0.25 \; $.  Once a jet is matched at the detector level to a jet generated from the particle level the response matrix is incremented by jet $p_{T}$ at both the detector and Monte Carlo levels.  The response matrix is generated with a fine binning with a width of 1 GeV per bin. 
 
@@ -382,7 +402,7 @@ $\begin{array}{rl}
 
 Figure \ref{fig:response} shows the response matrices for the R = 0.2 (top left), R = 0.3 (top right), and R = 0.4 (bottom) jets generated with the prescribed manner.  The response matrices display a linear relationship below 50 GeV on both axis and above ~ 100 GeV the matrices are statistics starved.  This is primarily due to the Monte Carlo Pythia and PhoJet data sets generated for the 8 TeV pp run did not model the high-$p_{T}$ triggers associated with the EMCal.  The particle jet finders configured for the response matrices allowed for jet finding down to a 100 MeV jet candidate at the particle level with no constraints on the minimum particle momentum or energy for a constituent.  The detector level jet finders were configured in the same manner as the jet finders configured for the raw jet spectra measurement.  
 
-\subsection{Corrections to Particle Level}
+\subsubsection{Corrections to Particle Level}
 
 Unfolding was performed using the \verb+RooUnfold+\cite{Adye:2011gm} software package.  Corrections are applied using the bin-by-bin\cite{Cowan:2002in} algorithm. 
 
@@ -432,8 +452,8 @@ $\begin{array}{rl}
 \noindent
 Due to the limitations on the response matrix the bin-by-bin unfolding of the EMCal triggered data was only stable up to 120 GeV.  It should be noted that the hump in the EMCal jet spectra is due to the firing threshold of the trigger.  The unfolded Emcal jet spectra was used to estimate the ratio the the jet yields between the Min Bias and triggered data samples, from this point the trigger scaling was calculated.  Due to the lack of a trigger modeled with the 8 TeV Monte Carlo productions the inability to extend the kinematic range of the jet spectras beyond 120 GeV presents a missed opportunity in terms of the recorded data from the 8 TeV runs.  In order to address this issue a new Monte Carlo production will need to be requested from the ALICE collaboration.
 
-\subsubsection{Jet Reconstruction and Matching Efficiency}
-In order to quantify the inefficiencies due to unfolding along with inefficencies in the ALICE experiment in reconstructing jets we quantify the jet reconstruction efficiency, $\epsilon_{reco} (p_{T, jet})$, and the jet matching efficiency, $\epsilon_{match} (p_{T, jet})$.
+\section{Jet Reconstruction and Matching Efficiency}
+In order to quantify the inefficiencies due to unfolding along with inefficiencies in the ALICE experiment in reconstructing jets we quantify the jet reconstruction efficiency, $\epsilon_{reco} (p_{T, jet})$, and the jet matching efficiency, $\epsilon_{match} (p_{T, jet})$.
 
 \begin{equation}
  \epsilon_{reco} (p_{T, jet}) = \frac{N_{reco}(p_{T, jet}) }{N_{Truth} (p_{T, jet})}
@@ -446,9 +466,26 @@ In order to quantify the inefficiencies due to unfolding along with inefficencie
 \end{equation}
 
 \noindent 
-where $N_{reco} (p_{T, jet})$ is the reconstructed jet yield at the detector level per $p_{T}$ bin, $N_{match}(p_{T, jet})$ is the reconstructed jet at the detector level that was matched to a particle level jet per $p_{T}$ bin, and $N_{truth} (p_{T, jet})$ is the truth-level jet yield from the Pythia embedded event per $p_{T}$ bin.  These quantities 
+where $N_{reco} (p_{T, jet})$ is the reconstructed jet yield at the detector level per $p_{T}$ bin, $N_{match}(p_{T, jet})$ is the reconstructed jet at the detector level that was matched to a particle level jet per $p_{T}$ bin, and $N_{truth} (p_{T, jet})$ is the truth-level particle jet yield from the Pythia embedded event per $p_{T}$ bin.  The $N_{truth} (p_{T, jet})$ were obtained by running FastJet on Pythia events with no constituent $p_{T}$ cut while $N_{match}(p_{T, jet})$ and $N_{reco} (p_{T, jet})$ had the same kinematic cuts as the data driven analysis mentioned earlier in this chapter.  The truth level jets contained no geometric acceptance cut in order to account for jets that may have been reconstructed at the detector level but had no match to a particle level because part of the particle level jet was outside the EMCal acceptance.  The spectrums were corrected by these efficiencies after the bin-by-bin corrections were performed.  The correction factors are shown in Figures \ref{fig:JetMatcheff} and \ref{fig:JetRecoeff}.
+
+\begin{figure*}[t!]
+$\begin{array}{rl}
+    \includegraphics[width=0.5\textwidth]{Ematch_R02} &
+    \includegraphics[width=0.5\textwidth]{Ematch_R03}\\
+    \multicolumn{2}{c}{\includegraphics[width=0.5\textwidth]{Ematch_R04}}
+\end{array}$
+\caption[Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4. ]{\label{fig:JetMatcheff}Jet matching efficiency for jets between R = 0.2 and R = 0.4.}
+\end{figure*}
+
+\begin{figure*}[t!]
+$\begin{array}{rl}
+    \includegraphics[width=0.5\textwidth]{Ereco_R02} &
+    \includegraphics[width=0.5\textwidth]{Ereco_R02}\\
+    \multicolumn{2}{c}{\includegraphics[width=0.5\textwidth]{Ereco_R02}}
+\end{array}$
+\caption[Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4.]{\label{fig:JetRecoeff}Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4}
+\end{figure*}
 
 
-
-
+The major steps performed for this thesis have been described in this chapter.  The final chapter will go over the systematic errors reported for the final results, present the final cross-sections measured at 8 TeV, and compare these results to previous measurements and  calculations.
 
