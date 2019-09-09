@@ -1,18 +1,18 @@
 \chapter{Analysis Methods and Corrections} \label{ch:analysis}
 
-Beginning in March of 2012, the LHC began seven months of pp collisions at $\sqrt{s} = \,$ 8 TeV. During the 7 months of data taking the ALICE Experiment was recording data almost 60\% of the time, Figure \ref{fig:RunEff}, with stable beams.
+Beginning in March of 2012, the LHC began seven months of pp collisions at $\sqrt{s} = \,$ 8 TeV. During the seven months of data taking, the ALICE Experiment was recording data almost 60\% of the time, Figure \ref{fig:RunEffer}, with stable beams.
 
 \begin{figure}[h]
 \includegraphics[width=17cm]{8TeVRunefficency}
 \centering
 \caption{LHC state during the 8 TeV run. }
-\label{fig:RunEff}
+\label{fig:RunEffer}
 \end{figure}
 
 
-This large amount of data taking produced almost 200 million events recorded by ALICE that satisfied the Min Bias trigger.  The pp Min Bias trigger is satisfied with at least one hit recorded in the SPD or V0.  The 8 TeV data set also recorded high-$p_{T}$ events using the EMCal triggered data, which in the case of the Gamma trigger was set at 5 GeV.  
+Almost 200 million events were recorded by ALICE that satisfied the Min Bias trigger.  The pp Min Bias trigger is satisfied with at least one hit recorded in the SPD or V0.  The 8 TeV data set also recorded high-$p_{T}$ events using the EMCal triggered data, which in the case of the Gamma trigger was set at 5 GeV.  
 
-This large amount of data offers a unique chance to explore jet cross sections using high statistics.   In order to measure the jet double differential cross section the following formula is used,
+This large amount of data offers a unique chance to explore jet cross-sections using high statistics.   In order to measure the jet double differential cross-section, the following formula is used,
 
 \begin{equation}
 	\frac{d^{2} \sigma^{jet}}{d\eta \, dp_{T}} = \frac{1}{\epsilon_{reco}} \frac{A_{trigger}}{\epsilon_{trigger}(p_{T})} \times C_{MC} \times \frac{1}{A(p_{T}) } \times \frac{1}{\mathscr{L}_{int}} \times \frac{dN^{2}_{jet}}{dp_{T} \, d\eta}
@@ -24,7 +24,7 @@ where,
 
 \begin{itemize}
   \item $\epsilon_{reco}$ is the efficency for reconstructing the jet in the ALICE detector.
-  \item $A_{trigger}$ is the acceptance for EMCal triggered events and $\epsilon_{trigger}(p_{T})$ is the EMCal trigger efficiency.  These factors correct for imperfections in the electronics of the EMCal and the overall factors are equal to one in minimum bias events.
+  \item $A_{trigger}$ is the acceptance for EMCal triggered events and $\epsilon_{trigger}(p_{T})$ is the EMCal trigger efficiency.  These factors correct for imperfections in the electronics of the EMCal and the overall factors are equal to one in Min Bias events.
   \item $C_{MC}$ is a correction factor due to detector effects and it allows for comparisons between the ALICE experiment and other experiments or theoretical calculations.  Unfolding is used to determine this factor.
   \item $\mathscr{L}_{int}$ is the integrated luminosity during the period when the data was recorded.
   \item $A(p_{T})$ is the geometrical detector acceptance.
@@ -34,12 +34,12 @@ where,
 
 \noindent
 
-ALICE is a state-of-the-art experiment with excellent tracking and particle identification capabilities as discussed in Chapter \ref{ch:alice}.  However, just like any real world experiment, it contains a number of inefficiencies and imperfections.  This means that the data collected during the 8 TeV pp collisions must be examined and any inaccuracies in the data must be removed before any conclusions may be reached.  Data may be compromised at both the event-level, the experiment erroneously recorded something as an event, or at the constituent-level, one of the subdetectors mismeasured a feature of a particle.  The remainder of this chapter focuses on the corrections and quality assurance perofrmed on the 8 TeV data.
+ALICE is a state-of-the-art experiment with excellent tracking and particle identification capabilities, as discussed in Chapter \ref{ch:alice}.  However, just like any real world experiment, it contains a number of inefficiencies and imperfections.  This means that the data collected during the 8 TeV pp collisions must be examined and any inaccuracies in the data must be removed before any conclusions may be reached.  Data may be compromised at either the event-level, the experiment erroneously recorded something as an event, or at the constituent-level, one of the subdetectors mismeasured a feature of a particle.  The remainder of this chapter focuses on the corrections and quality assurance performed on the 8 TeV data.
 
 
 \section{Raw Jet Spectra}
 
-This thesis measured inclusive jet results for radii between 0.1 and 0.5.  Furthermore, jet results for radii R = 0.2 to R = 0.4 will be presented in the body of this chapter while results from the other jet radii are still being investigated.  Figures \ref{fig:rawjetR02}, \ref{fig:rawjetR03}, and \ref{fig:rawjetR04} show the raw (uncorrected) $p_{T}$ spectra for inclusive jets from both MB and EMCal triggered data and how the $p_{T}$ reach of the spectra is extended by using the triggered data.
+This analysis measured inclusive jet results for radii between 0.1 and 0.5.  However, jet results for radii R = 0.2 to R = 0.4 will be presented in the body of this chapter while results from the other jet radii are still being investigated.  Figures \ref{fig:rawjetR02}, \ref{fig:rawjetR03}, and \ref{fig:rawjetR04} show the raw (uncorrected) $p_{T}$ spectra for inclusive jets from both Min Bias and EMCal triggered data.  It is also evident from these figures that the EMCal triggered data greatly extends the kinematic reach of the measured jet spectra, to about 200 GeV/c.  The next sections of this chapter will discuss the QA implemented to the data, trigger scaling, unfolding, and other corrections used in this thesis. 
 
 \begin{figure}[h]
 \includegraphics[width=8cm]{RawR02JetSpectra}
@@ -61,12 +61,12 @@ This thesis measured inclusive jet results for radii between 0.1 and 0.5.  Furth
 \end{figure}
 
 \noindent
-The next sections of this chapter will discuss the QA implemented to the data, trigger scaling, unfolding, and other corrections 
+
 
 
 \subsubsection{Event Selection}
 
-During the 8 TeV data collection period approximately 180 million minimum bias events were recorded, as summarized in table 5.1.  These events are separated into periods, which dictate the particular beam and detector configurations during the data taking.  The 8 TeV data is broken into 7 periods with approximately 181 million minimum bias events recorded.  Periods are futher broken into runs.  Runs represent an uninterrupted period of time during which the ALICE experiment is recording data, a run can be as short as 5 minutes or as long as 10 hours.  Runs were separated into `good' runs when both the TPC and EMCal were fully operations, `semi-good runs when a sector of the TPC was turned off but not around the region below the EMCal, and `bad' runs when a portion of the TPC was turned off directly below the EMCal.  This analysis only incorporated good and semi-good runs.
+During the 8 TeV data collection period, approximately 180 million Min Bias events were recorded, as summarized in table 5.1.  These events were separated into periods, which dictate the particular beam and detector configurations used during the data taking.  The 8 TeV data was broken into 7 periods, which werefurther broken into runs.  Runs represent an uninterrupted period of time during which the ALICE experiment is recording data. A run can be as short as 5 minutes or as long as 10 hours.  Runs were separated into `good' runs when both the TPC and EMCal were fully operational, `semi-good runs when a sector of the TPC was turned off but not around the region below the EMCal, and `bad' runs when a portion of the TPC was turned off directly below the EMCal or something else critically compromised the data.  This analysis only incorporated good and semi-good runs.
 
 \begin{table}[hb]
 \label{tab:RunSummary}
@@ -88,13 +88,13 @@ During the 8 TeV data collection period approximately 180 million minimum bias e
 \caption{2012 8 TeV data taking period.}
 \end{table}
 
-Approximately 15\% of the data sampled is unusable due to malfunctions in TPC chambers, EMCal super modules, or the electronics for the EMCal or TPC.  LHC12f  and LHC12g EMCal triggered data is not used in this analysis due to the trigger threshold being varied from the other periods.  Besides the bad runs excluded from each of the periods due to detector inefficiencies and the triggered LHC12f and LHC12g data, the rest of the 8 TeV data was used to generate the jet cross-sections.  The integrated luminosity was reported as, $\mathscr{L}_{int} = 8.95 \, pb^{-1}$ during the Min Bias data taking\cite{ALICE-PUBLIC-2017-002}.
+Approximately 15\% of the data sampled was unusable due to malfunctions in TPC chambers, EMCal super modules, or the electronics of the EMCal or TPC.  The LHC12f  and LHC12g EMCal triggered data is not used in this analysis due to the trigger threshold being varied from the other periods.  Besides the bad runs excluded from each of the periods due to detector inefficiencies and the triggered LHC12f and LHC12g data, the rest of the 8 TeV data was used to generate the jet cross-sections in this thesis.  The LHC reported the integrated luminosity as $\mathscr{L}_{int} = 8.95 \, pb^{-1}$ during this data taking\cite{ALICE-PUBLIC-2017-002}.
 
 \subsubsection{Monte Carlo Anchored Data}
-Two Monte Carlo data sets which included a GEANT4 simulation of the ALICE detector were used for the Monte Carlo corrections.   LHC15l2a1 is a PYTHIA anchored to a ALICE GEANT4 simulation consisted of about 17 million Min Bias triggered events and LHC15l2a2 is a PHOjet anchored data set consisting of about 21 million Min Bias triggered Events.  Neither of these data driven Monte Carlos modeled the EMCal triggers.  Monte Carlo corrections of the EMCal triggered data suffered due to the lack of any simulations of the trigger and this is discussed in more detail later in this chapter.
+Two Monte Carlo data sets, LHC15l2a1 and LHC15l2a2, which included a full GEANT4 simulation of the ALICE detector were produced by the ALICE collaboration and used for the Monte Carlo corrections in this analysis.   LHC15l2a1 uses a Pythia particle-level simulation embedded, or anchored, in a ALICE GEANT4 simulation with about 17 million Min Bias generated events.  LHC15l2a2 uses a PHOjet anchored data set consisting of about 21 million Min Bias triggered events.  Neither of these data driven Monte Carlos modeled the EMCal triggers.  Monte Carlo corrections of the EMCal triggered data suffered due to the lack of any simulations of the trigger and this is discussed in more detail later in this chapter.
 
 \subsubsection{Event Selection Criteria}
-For an event to be selected into a physics analysis it must pass a number of quality control tests.  For example, the LHC must have be in a state of stable beams, cosmic rays must be excluded by only accepting tracks that originate from a vertex inside the detector, and the relevant detectors for a given analysis must be functioning as intended.  Code was developed and used that performed a number of these corrections including:
+For an event to be selected into a physics analysis it must pass a number of quality control tests.  For example, the LHC must be in a state of stable beams, cosmic rays must be excluded by only accepting tracks that originate from a vertex inside the detector, and the relevant detectors for a given analysis must be functioning as intended.  A number of these quality assurance, QA, were performed at the event level to exclude bad data, this thesis required the following criteria:
 
 \begin{itemize}
   \item The event has a primary vertex reconstructed.
@@ -103,30 +103,39 @@ For an event to be selected into a physics analysis it must pass a number of qua
   \item The event passes basic pile-up checks based on the V0 and T0 signals.
 \end{itemize}
 
-\noindent
-A summary of the rejection reasons for an event are shown in Figure \ref{fig:eventqa}, most events were rejected due to the event not satisfying the vertex requirements.
+
+A summary of the rejection reasons for an event are shown in Figure \ref{fig:eventqa}.  Most of the rejected events were excluded due to the event not satisfying the vertex requirements.
 
 \begin{figure}[h]
-\includegraphics[width=10cm]{RejectionReasons}
+\includegraphics[width=8.5cm]{RejectionReasons}
 \centering
 \caption{Min Bias event rejection summary.}
 \label{fig:eventqa}
 \end{figure}
 
 \begin{figure}[h]
-\includegraphics[width=10cm]{zvertex}
+\includegraphics[width=8.5cm]{zvertex}
 \centering
 \caption{Vertex displacement from primary interaction point for accepted Min Bias events.}
 \label{fig:vertrec}
 \end{figure}
 
-\noindent 
-Figure \ref{fig:vertrec} shows the reconstructed vertex for the accepted Min Bias events after the QA has been performed.  We see that the vertex distribution peaks at the primary interaction point as expected and that the distribution is well defined.  It should also be noted that a similar set of event QA was implemented to the EMCal triggered data \textit{(not shown)} and that the results were consistent with the Min Bias data.
+
+Figure \ref{fig:vertrec} shows the reconstructed vertex for the accepted Min Bias events after the QA was performed.  We see that the vertex distribution peaks at the primary interaction point as expected and that the distribution is well defined.  It should also be noted that a similar set of event QA was implemented to the EMCal triggered data and that the results were consistent with the Min Bias data.
 
 
 \section{EMCal Triggered Data}
 
-Figures \ref{fig:rawjetR02} - \ref{fig:rawjetR04} showed the raw Min Bias and EMCal triggered data for the 8 TeV run and that the triggered data greatly extends the kinematic reach for the spectra.  This thesis looked at the two primary Level-1 triggers configured for the EMCal, the jet trigger (EJE) and the gamma (EGA) trigger\cite{Bourrion:2010js}.  Although both of the Level-1 triggers were investigated in this analysis, only the EGA trigger was ultimatley corrected  and used for the final jet cross sections and spectra.  The EJE trigger utilizes a trigger patch consisting of 32 x 32 EMCal towers sliding by 8 towers until a patch is reconstructed that meets the minimum predefined trigger energy threshold.  Once this threshold is surpassed the event is recorded and tagged as a kEMCEJE triggered event.  A similar procedure is followed for the EGA trigger, but with a smaller patch region of 4 x 4 towers with a sliding window of 2 towers and its own predefined trigger threshold.  The bump at low-$p_{T}$ seen in figures \ref{fig:rawjetR02} - \ref{fig:rawjetR04} is the trigger turn on curve and the peak corresponds to the trigger threshold for the EGA trigger.  Ideally, a jet in the EMCal acceptance should fire the EJE trigger and the EGA should fire due to the presence of a photon or electron.  Since, the triggers increase the yield of jets measured the spectra from the triggered data must be corrected and downscaled.  In order to calculate these corrections two macros were used, AliEMCalTriggerMaker.cxx reconstructs the EMCal and trigger patch geometries while AliEMCalSetupTask.cxx allows a user to set the trigger thresholds for the EkEMCEJE and kEMCEGA triggers to values used during a givien LHC data taking period.  Since a trigger patch requirements may be fired if two or more jets are within the geometric area of the trigger patch this could lead to double counting.  In order to correct for this, the jet spectra from the triggered data is scaled by the number of triggers, $N_{trig}$, fired that fell within the jet
+The EMCal triggered data for the 8 TeV data greatly extends the kinematic reach for the spectra.  This thesis looked at the two primary Level-1 triggers configured for the EMCal, the jet trigger (EJE) and the gamma (EGA) trigger\cite{Bourrion:2010js}.  Although both of the Level-1 triggers were investigated in this analysis, only the EGA trigger was ultimately corrected  and used for the final jet cross-sections and spectra.  
+
+The EJE trigger utilizes a trigger patch consisting of 32 x 32 EMCal towers sliding by 8 towers until a patch is reconstructed that meets the minimum predefined trigger energy threshold.  Once this threshold is surpassed the event is recorded and tagged as a EJE triggered event.  A similar procedure is followed for the EGA trigger, but with a smaller patch region of 4 x 4 towers with a sliding window of 2 towers and its own predefined trigger threshold.  
+
+The bump at low-$p_{T}$ seen in Figures \ref{fig:rawjetR02} - \ref{fig:rawjetR04} is the trigger turn on curve and the peak corresponds to the trigger threshold for the EGA trigger.  Ideally, a jet in the EMCal acceptance should fire the EJE trigger and the EGA should fire due to the presence of a photon or electron.  Since the triggers increase the yield of jets measured, the spectra from the triggered data must be corrected and downscaled.  In order to calculate these corrections two pieces of code were developed.  One reconstructs the EMCal and trigger patch geometries and allows a user to set the trigger thresholds for the EJE and EGA triggers to values used during a given LHC data taking period.  The other code attempts to match the reconstructed trigger center to the jet center.  The trigger centroid is obtained using a weighted means method by summing over the number of towers in a patch and dividing this quantity by the energy in each tower.  Both sets of codes are publicly available tp the public and are officially part of ALICE software framework.  For this analysis I used a lose requirement that the EGA or EJE patch center were within the radius of a given jet.  The geometrical matching requirement followed a simple quadratic relationship,,
+
+\begin{equation}
+\sqrt{ ( \phi_{jet} - \phi_{EGA, patch} )^{2} + ( \eta_{jet} - \eta_{EGA, patch} )^{2}}  \leq R_{jet} .
+\label{eq:triggermatch}
+\end{equation}
 
 \begin{figure}[h]
 \includegraphics[width=10cm]{DistanceJetEJER02}
@@ -143,15 +152,9 @@ Figures \ref{fig:rawjetR02} - \ref{fig:rawjetR04} showed the raw Min Bias and EM
 \end{figure}
 
 \noindent
-Figures \ref{fig:DisJetEJE} and \ref{fig:DisJetEGA} show the distance between a reconstructed jet and its closest reconstructed EMCal trigger patch for R = 0.2 jets in the Pythia Monte Carlo.  We can see that with the EGA trigger that the peak of the distribution is within the jet radius of R = 0.2 while with the EJE trigger the distribution is more uniformly distributed.  The EJE distribution can be accounted for the fact that the EJE trigger is large enough to have multiple jets matched to EJE trigger patch or vice-versa.  For the trigger reconstruction I used the EGA trigger and performed a geometrical matching requirement to the spatial center of the trigger patch,
+Figures \ref{fig:DisJetEJE} and \ref{fig:DisJetEGA} show the distance between a reconstructed jet and its closest reconstructed EMCal trigger patch for R = 0.2 jets in the Pythia Monte Carlo.  Since a trigger patch may be fired if two or more jets are within the geometric area of the trigger patch this could lead to double counting.  In order to correct for this, the jet spectra from the triggered data is scaled by the number of triggers, $N_{trig}$, fired that fell within the jet.  We can see that with the EGA trigger that the peak of the distribution is within the jet radius of R = 0.2 while with the EJE trigger the distribution is more uniformly distributed.  The EJE distribution can be accounted for the fact that the EJE trigger is large enough to have multiple jets matched to EJE trigger patch or vice-versa.  The fact that the distribution of seen in Figure \ref{fig:DisJetEJE} spans such a large area means that the jet center was typically not well correlated with the center of the EJE patch and this is the primary reason why the inclusion of the EMCal jet triggered data was abandoned for this thesis.
 
-\begin{equation}
-\sqrt{ ( \phi_{jet} - \phi_{EGA, patch} )^{2} + ( \eta_{jet} - \eta_{EGA, patch} )^{2}}  \leq R_{jet} 
-\label{eq:triggermatch}
-\end{equation}
-
-\noindent
-Once this correction is implemented the triggered data must then be downscale in order to combine the Min Bias data and triggered data together.  The downscale correction factors, Figure\ref{fig:EMCalDownScale}, are obtained by taking the ratio of the EMCal jet spectra to the Min Bias jet spectra and fitting the plateau region to a line.  At low-$p_{T}$, below 40 GeV,  the two data sets dont scale linear and so the EMCal data below 40 GeV is ignored.
+Once this correction was implemented, the triggered data was then downscaled in order to combine it with the Min Bias data.  The downscale correction factors, shown in Figure \ref{fig:EMCalDownScale}, wee obtained by taking the ratio of the EMCal jet spectra to the Min Bias jet spectra and fitting the plateau region to a line.  At low-$p_{T}$, below $\sim$40 GeV,  the two data sets do not scale linearly and so the EMCal data below 40 GeV was ignored.
 
 
 \begin{figure*}[t!]
@@ -163,11 +166,11 @@ $\begin{array}{rl}
 \caption[EMCal triggered data correction factors for R=0.2, R=0.3, and R=0.4 jets.]{\label{fig:EMCalDownScale}EMCal triggered data correction factors for R=0.2, R=0.3, and R=0.4 jets.}
 \end{figure*}
 
-These two corrections allow for the EMCal data to be rescaled and combined with the Min Bias data It should be noted that these corrections were performed after the bin by bin Monte Carlo corrections were implemented which is discussed towards the end of this chapter.  With the data scaled and combine the next sections will detail correcting the jets and their constituents before the Monte Carlo corrections were performed.
+These two corrections allow for the EMCal data to be combined with the Min Bias data.  It should be noted that the scale factors were after the Monte Carlo corrections were implemented which is discussed further on in this chapter.  With the data scaled and combined the next sections will detail more of the QA performed for this analysis.
 
 
 \section{Cluster Selection}
-Corrections are performed on EMCal cells including.  These include removing hot and dead towers (bad channels) based on the average occupancy and energy of the towers, calibrations to cell timing caused by the physical layout of the EMCal (such as differences in cabling length), and a energy calibration is implemented based on the $\pi^{0}$ mass.  After these corrections are applied to the towers are grouped together into clusters using the v2 algorithm.  The v2 algorithm has a minimum tower seed, $E_{seed} = \,$ 300 MeV, after which all adjacent towers with a minimum energy, $E_{cell} \geq \,$ 100 MeV, are iteratively added until a local minimum is reached.  The cluster energy is the sum of the seed and grouped neighbor tower energies.   
+Corrections were performed on EMCal cells including the removal of hot and dead towers (bad channels) based on the average occupancy and energy of the towers, calibrations to cell timing caused by the physical layout of the EMCal (such as differences in cabling length), and an energy calibration based on the $\pi^{0}$ mass.  After these corrections were applied, the towers were grouped together into clusters using the v2 algorithm.  The v2 algorithm has a minimum tower seed, $E_{seed} = \,$ 300 MeV, after which all adjacent towers with a minimum energy, $E_{cell} \geq \,$ 100 MeV, are iteratively added until a local minimum is reached.  The cluster energy is the sum of the seed and grouped neighbor tower energies.  Figure \ref{fig:badchannel} shows a bad channel map after removing the hot and dead towers from a typical run.  The $\phi$ distribution is segmented into 5 parts representing the five super modules of the EMCal.
 
 \begin{figure}[h]
 \includegraphics[width=14cm]{BadChannelMap}
@@ -176,9 +179,7 @@ Corrections are performed on EMCal cells including.  These include removing hot 
 \label{fig:badchannel}
 \end{figure}
 
-
-\noindent
-Figure \ref{fig:badchannel} shows the bad channel map after removing bad towers, the $\phi$ distribution is segmented into 5 parts representing the five super modules of the EMCal.  After the cells are clustered together the clusters are corrected for exotics.  This correction is performed by cutting all clusters with a $F_{cross} \geq \,$ 0.97, where
+After the cells are clustered together the clusters are corrected for exotics.  This correction was performed by cutting all clusters with a $F_{cross} \geq \,$ 0.97, where
 
 \begin{equation}
 F_{cross} = 1 - \frac{ E_{cross} }{ E_{cell} },
@@ -186,9 +187,9 @@ F_{cross} = 1 - \frac{ E_{cross} }{ E_{cell} },
 \end{equation}
 
 \noindent
-where $E_{cross}$ is the sum of the four cells sharing a full edge with the leading cell and $E_{cell}$ is the center pixels energy.  The main source of exotic clusters in the EMCal is due to a hadron hitting the Avalanche Photodiode (APD) in a tower.  This will concentrate the energy of the cluster into a single tower while the adjacent towers will contain only a small fraction of the cluster energy.  These clusters are removed before jet finding occurs as they are not part of the jet energy.
+where $E_{cross}$ is the sum of the four cells sharing a full edge with the leading cell and $E_{cell}$ is the center pixels energy.  The main source of exotic clusters in the EMCal is most often due to a hadron hitting the Avalanche Photodiode (APD) in a tower.  This will concentrate the energy of the cluster into a single tower while the adjacent towers will contain only a small fraction of the cluster energy.  The clusters were removed before jet finding occurred as they are an artifact of the detector performance.
 
-The EMCal is optimized to measure the energy of electrons and photons as they tend to fully shower inside the EMCal structure.  Hadrons are detected by the EMCal but will only shower a fraction of their intrinsic energy.  A hadronic correction is performed in order to account for this missing energy due to the partial hadron shower.  Charged tracks from the outer layer of the TPC are propagated to the EMCal and the centroids of the clusters and tracks are matched together.  Figure \ref{fig:EMChadetaphi} shows the distance between the centroid of a cluster in the EMCal to the nearest track propageted from the TPC.  Hadrons are identified by requiring the matched distance to be, $\sqrt{ \Delta\phi^{2} + \Delta\eta^{2} } \leq \,$ 0.015, which is within one EMCal tower distance.
+The EMCal is optimized to measure the energy of electrons and photons as they tend to fully shower inside the EMCal structure.  Hadrons are detected by the EMCal, but will only shower a fraction of their intrinsic energy.  A hadronic correction was performed in order to account for this missing energy due to the partial hadron shower.  Charged tracks from the outer layer of the TPC were propagated to the EMCal, by fitting the trajectory of the track to a curve, and the of the clusters and tracks were matched together geometrically.  Figure \ref{fig:EMChadetaphi} shows the distance between the centroid of a cluster in the EMCal and the nearest track propagated from the TPC.  Hadrons are identified by requiring the matched distance to be, $\sqrt{ \Delta\phi^{2} + \Delta\eta^{2} } \leq \,$ 0.015, which is within one EMCal tower distance.
 
 \begin{figure}[h]
 \includegraphics[width=12cm]{hadronetaphi}
@@ -206,9 +207,9 @@ E_{corr} = E_{clust} - f_{sub} \times \sum p ,
 \end{equation}
 
 \noindent
-where $\sum p$ is the magnitude of the 3-mommentum of the hadron and $f_{sub} = 1$ is the nominal value for the weight.  If $E_{corr} \leq 0$ the cluster is removed, this may be caused by cluster pile-up and only accounts for a small fraction of the clusters.  In order for a cluster to be accepted $E_{corr} \geq \,$ 300 MeV was required.  The 300 MeV threshold is required because a minimum ionizing particle (MIP) will on average deposit 280 MeV in the EMCal.  
+where $\sum p$ is the magnitude of the 3-momentum of the hadron and $f_{sub} = 1$ is the nominal value for the weight.  If $E_{corr} \leq 0$ the cluster was removed, this may be caused by cluster pile-up and only accounted for a small fraction of the clusters.  In order for a cluster to be accepted $E_{corr} \geq \,$ 300 MeV was required, because a minimum ionizing particle (MIP) will on average deposit 280 MeV in the EMCal.  
 
-A final cut was performed on the cluster time.  Based on the T0 the time of arrival for a particle is shown on the y-axis of Figure \ref{fig:EMCaltime}.  
+A final cut was performed on the cluster timing, obtained from the T0, the time of arrival for a particle is shown on the y-axis of Figure \ref{fig:EMCaltime}.  
 
 \begin{figure}[!h]
 \includegraphics[width=11cm]{timming}
@@ -217,23 +218,23 @@ A final cut was performed on the cluster time.  Based on the T0 the time of arri
 \label{fig:EMCaltime}
 \end{figure}
 
-\noindent
-Cutting on the cluster time is done in order to readout only the particles created from an event and to limit the contamination due to slower particles from previous events.  The main source of the slow moving particles are neutrons and $K_{L}^{0}$ and this analysis limits cluster time to $t_{clus} \epsilon \,$ [-50 ns, 100 ns].
+
+Cutting on the cluster time is done in order to readout only the particles created from an event and to limit the contamination due to slower particles from previous events.  The main source of the slow moving particles are neutrons and $K_{L}^{0}$ and this analysis limited cluster time to $t_{clus} \, \epsilon \,$ [-50 ns, 100 ns].
 
 
 \begin{figure}[h]
-\includegraphics[width=9cm]{Eclusfinal}
+\includegraphics[width=8cm]{Eclusfinal}
 \centering
 \caption{Corrected EMCal cluster yield.}
 \label{fig:EMCalfinal}
 \end{figure}
 \newpage
 
-Figure \ref{fig:EMCalfinal} shows the final cluster energy distribution with all the cuts and corrections previously discussed applied and makes up the set of clusters over which the jet finding was performed.  The same cuts and corrections were applied to the EMCal triggered data.
+Figure \ref{fig:EMCalfinal} shows the final cluster energy distribution with all the cuts and corrections previously discussed applied, and makes up the set of clusters over which the jet finding was performed.  The same cuts and corrections were applied to the EMCal triggered data.
 
 \section{Track Selection}
 
-Tracks are reconstructed in the TPC using a Kalman filtering which helps alleviate any corrections needed due to multiple scatterings, dead sectors, etc.  Jet finding was performed using `hybrid' tracks.  Hybrid tracks consist of two track sets the first being all the tracks with at least one hit in the SPD (Global) and the second set being all tracks that can be constrained to the primary vertex (Complimentary).  The reconstruction of a signal from the ITS and TPC form good tracks if the $\chi^{2}/NDF$, chi-square per degrees of freedom, was required to be less than 4 in the TPC and $\chi^{2}$ was required to be less than 36 in the ITS. For this analysis, the minimal $p_{T, track}$ is 150 MeV/c and the track must be constrained to: - 0.9 $\leq \eta \leq$ 0.9 and 0 $\leq \phi \leq$ 2$\pi$, shown in Figure \ref{fig:Hybridtracketaphi}.  The spatial distributions of the hybrid tracks remain relatively flat as expected in the 8 TeV data set.
+Tracks were reconstructed in the TPC using a Kalman filtering which helps alleviate any corrections needed due to multiple scatterings, dead sectors, etc.  Jet finding was performed using `hybrid' tracks.  Hybrid tracks consist of two track sets, the first being all tracks with at least one hit in the SPD (Global), and the second set being all tracks that can be constrained to the primary vertex (Complimentary).  The reconstruction of a signal from the ITS and TPC form good tracks if the $\chi^{2}/NDF$, chi-square per degrees of freedom, is required to be less than 4 in the TPC and $\chi^{2}$ is required to be less than 36 in the ITS. For this analysis, the minimal $p_{T, track}$ was 150 MeV/c and the track was constrained to the TPC acceptance: - 0.9 $\leq \eta \leq$ 0.9 and 0 $\leq \phi \leq$ 2$\pi$, shown in Figure \ref{fig:Hybridtracketaphi}.  The spatial distributions of the hybrid tracks remain relatively flat as expected in the 8 TeV data set for good and semi-good runs.
 
 \begin{figure}%
     \centering
@@ -244,8 +245,8 @@ Tracks are reconstructed in the TPC using a Kalman filtering which helps allevia
     \label{fig:Hybridtracketaphi}%
 \end{figure}
 
-\noindent
-The quality of the jet $p_{T}$ resolution was maintained by only accepting jets into the jet finder with a resolution below 1\%, Figure \ref{fig:trackresolution}, and this $p_{T}$ distribution may be seen in Figure \ref{fig:hybtrackpt}.  Tracks should travel in a smooth curve unless they decay in the detector.  Some tracks in the TPC we exhibit a kink due to the particle decaying.  Due to complications that would arise from trying to include these tracks in jet finding, any track with a kink was excluded from the analysis.  These cuts followed a number of previous track cuts seen in a number of jet results published from ALICE\cite{Acharya:2018eat}.
+
+The quality of the jet $p_{T}$ resolution was maintained by only accepting jets into the jet finder with a resolution below 1\% as seen in Figure \ref{fig:trackresolution}, and this $p_{T}$ distribution may be seen in Figure \ref{fig:hybtrackpt}.  Tracks should travel in a smooth curve unless they decay in the detector.  Some tracks in the TPC exhibit a kink due to the particle decaying.  Due to complications that would arise from trying to include these tracks in jet finding, any track with a kink was excluded from this analysis.  These cuts followed a number of previous track cuts seen in a number of jet results published from ALICE\cite{Acharya:2018eat}.
 
 \begin{figure}[h]
 \includegraphics[width=8cm]{trackresolution}
