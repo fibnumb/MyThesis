@@ -265,7 +265,7 @@ The quality of the jet $p_{T}$ resolution was maintained by only accepting jets 
 
 \section{Jet Selection}
 
-Accepted tracks and clusters are feed into the anti-kt jet reconstruction algorithm to reconstruct inclusive jets.  A minimum threshold of 5 GeV was used to reconstruct a jet in this analysis.  A high-$p_{T}$ track threshold of 100 GeV is placed on the reconstructed jets.  This is motivated by the degradation of the momentum resolution above that energy range.  In addition a cut was applied that a jet must be composed of at least one constituent, Figure \ref{fig:JetPt} and \ref{fig:JetConst}.
+Accepted tracks and clusters were pipped into the anti-kt jet reconstruction algorithm to measure inclusive jets.  A minimum threshold of 5 GeV was used to reconstruct a jet in this analysis.  A high-$p_{T}$ track threshold of 100 GeV was placed on the reconstructed jets.  This was motivated by the degradation of the momentum resolution above that energy range.  In addition a cut was applied that a jet must be composed of at least one constituent, as shown in Figure \ref{fig:JetPt} and \ref{fig:JetConst}.
 
 \begin{figure}[h]
 \includegraphics[width=8cm]{ptleadingR02}
@@ -282,9 +282,6 @@ Accepted tracks and clusters are feed into the anti-kt jet reconstruction algori
 \end{figure}
 
 
-
-\noindent
-\subsubsection{$z_{leading}$ cut}
 
 The fragmentation function for the leading track in a jet,
 
@@ -303,10 +300,7 @@ may be artificially high due to misidentifying secondary decay particles as prim
 \label{fig:Jetz}
 \end{figure}
 
-\noindent
-Figure \ref{fig:Jetz} shows the projection of the hadronic 3-momentum onto the jet axis.  We observer an excess of jets, especially at low jet $p_{T}$, of z values close to 1 or zero.  Previous jet results from ALICE removed these biased jets a cut on $ z_{leading} \geq 0.03$ and $z_{leading} \leq 0.97$ is imposed.  It should also be noted that due to QCD hadronization $z_{leading} \sim 1$ corresponds to a singular particle jet which is highly rare.  In between .03 and .97 we see the $z_{leading}$ is continuous and uniform as expected.  
-
-\subsubsection{Jet Area Cut}
+Figure \ref{fig:Jetz} shows the projection of the hadronic 3-momentum onto the jet axis.  We observed an excess of jets, especially at low jet $p_{T}$, of z values close to 1 or zero.  Previous jet results from ALICE removed these biased jets with a cut on $ z_{leading} \geq 0.03$ and $z_{leading} \leq 0.97$ is imposed.  It should also be noted that due to QCD hadronization $z_{leading} \sim 1$ corresponds to a jet dominated by a singular high-$p_{T}$ particle, howver this is allowed by QCD and thus no $z_{leading}$ cut was implemented in this analysis.  In between .03 and .97 we see the $z_{leading}$ is continuous and uniform as expected.  
 
 A jet area of, $A_{jet}$, cut was imposed on accepted jets.
 
@@ -315,17 +309,23 @@ A_{jet} \geq 0.6 \pi R_{jet}^{2}
 \label{eq:AreaJet}
 \end{equation}
 
-The area is estimated in FastJet using `ghost' particles.  As jet reconstrution is being performed these fake particles with infinitesimal $p_{T}$ are placed randomly through the event.  The number of ghost particles captured in a jet is proportional to the jet area, thus the precision of the jet area is sensative to the reconstruction of soft particles.  Figure \ref{fig:jetRejectionj} shows the rejection reason for a jet with the dominate reasoning due to the area cut, this cut skewed towards low-$p{T}$ jets.
+The area is estimated in FastJet using `ghost' particles.  As jet reconstruction is being performed, these fake particles with infinitesimal $p_{T}$ are placed randomly throughout the event.  The number of ghost particles captured in a jet is proportional to the jet area, thus the precision of the jet area is sensative to the reconstruction of soft particles.  Figure \ref{fig:jetRejection} shows the rejection reason for a jet with the dominate reasoning due to the area cut, this cut skewed towards low-$p{T}$ jets.
 
 \begin{figure}[h]
-\includegraphics[width=10cm]{jetRejection}
+\includegraphics[width=12cm]{jetRejection}
 \centering
 \caption{Jet rejection reason.}
 \label{fig:jetRejection}
 \end{figure}
 
-\subsubsection{NEF cut}
+
 The Neutral Energy Fraction (NEF) is the total jet energy carried by the neutral components of the jet, i.e. EMCal clusters.  Figure \ref{fig:JetNEF} shows the NEF for R = 0.2 jets from the Min Bias sample.
+
+
+We observed an excess of jets at low-$p_{T}$ with NEF values around zero or one, similar to what was seen with the $z_{leading}$ distribution.  The cause for these excesses were explored in this analysis, but no hard source was identified and no cut to the NEF was used.  Because this is not a well understood pheonmena no NEF cut was implemented, but this is something that should be explored in future analysis.
+
+
+After this exploratory data analysis was performed and the cuts that were used were implemented I obtained my sample of the signal jets that are reported in the cross section and spectra.  These criteria were implemented for the R = 0.3 and R = 0.4 along with the EMCal triggered data.
 
 \begin{figure}[h]
 \includegraphics[width=10cm]{NEFR02}
@@ -333,15 +333,10 @@ The Neutral Energy Fraction (NEF) is the total jet energy carried by the neutral
 \caption{R = 0.2 NEF per jet $P_{T}$.}
 \label{fig:JetNEF}
 \end{figure}
-\noindent
-We observe an excess in jets at low-$p_{T}$ with NEF values around zero or one, similar to what was seen with the $z_{leading}$ distribution.  The cause for these excesses were explored in this analysis but no hard source was identified and no cut to the NEF was used.
-The jets the passed all of the selection criteria and cuts make up the signal jets that are reported in the cross section and spectra.  These criteria were implemented for the R = 0.3 and R = 0.4 along with the EMCal triggered data.
-
-
 
 
 \section{Acceptance Correction}
-Jet spectra, cross sections, and ratios of cross sections are reported over the full azimuth angle and psuedorapidity acceptance.  However, due to jets being constrained to the EMCal, a geometric factor is used to correct for the limited acceptance of the detector.  This thesis uses a maximum jet radius of 0.5 to help study the effects of wide angle radiation on jet fragmentation.  Heavy-ion use smaller jet radii, typically of 0.2, to help negate the high multiplicity background.  Due to these geometric corrections the centroid of a jet is constrained to,
+Jet spectra, cross-sections, and ratios of cross-sections are reported over the full azimuth angle and psuedorapidity acceptance in this thesis.  However, due to jets being constrained to the EMCal, a geometric factor was used to correct for the limited acceptance of the detector.  This thesis explored jet radii between 0.1 and 0.5, in order to study the effects of wide angle radiation on jet fragmentation.  Jet measurements in heavy-ion collisions use radii, typically of 0.2, to help negate the high multiplicity background.  Due to these geometric corrections the centroid of a jet is constrained to,
 
 \begin{equation}
 |\eta_{jet}| \leq 0.7 - R, \; 1.4 + R \leq \phi_{jet} \leq 3.14 -R.
@@ -353,7 +348,7 @@ A(p_{T}) = \frac{(1.4 - 2R) \times (1.745 - 2R)}{2 \pi}.
 \label{eq:acceptance}
 \end{equation}
 
-For jets between R = 0.1 through R = 0.5 the following jet acceptance corrections are used.
+For jets between R = 0.1 through R = 0.5 the following jet acceptance corrections were used, see Table 5.2.
 
 \begin{table}[hb]
 \label{tab:AcceptanceFactor}
@@ -373,7 +368,7 @@ For jets between R = 0.1 through R = 0.5 the following jet acceptance correction
 
 
 
-\section{Unfolding}
+\section{Corrections to Monte Carlo}
 
 The reconstructed jet $p_{T}$ has a number of detector effects `folded' into the measurement.  These effects included such things as:
 
@@ -386,11 +381,13 @@ The reconstructed jet $p_{T}$ has a number of detector effects `folded' into the
 \end{itemize}
 
 \noindent
-Unfolding is the method by which these detector effects are removed from the raw inclusive jet spectra and a `true' jet spectra may be obtained and compared with theoretical calculations or other experimental results.  In order to unfold a jet spectra it is necessary to generate a response matrix that simulates the described effects above, after the response matrix is generated a number of statistical approaches including, Bayesian, Singular Value Decomposition (SVD), or Bin-by-Bin, may be applied to unfold the raw jet spectra.  In order to generate the response matrix we embed a Pythia generated event into a GEANT3 simulation of the ALICE detector.  Due to the fact that the performance and efficiency of the ALICE detector may change between the data taking periods each simulation is `anchored' to a given LHC, these anchors contain all the hot and dead sectors for the subdetectors, along with their calibrated performance during that specified data taking.  Two Monte Carlo data sets were produced with the MB trigger for the full 8 TeV run, the first was a Pythia generator using the Monesh-2013 tune and the second was a MB tune of the PHOjet Monte Carlo package.  Both data sets were explored for this thesis and it was decided that the final corrected spectra would be obtained via unfolding with the Pythia MC data set.  The magnitude of any one of the effects unfolding is supposed to account for is not expected to be very large, but combined may be significant, thus unfolding is an important step in this analysis.
+Unfolding is a method by which these detector effects are removed from the raw inclusive jet spectra so that a `true' jet spectra may be obtained and compared with theoretical calculations or other experimental results.  
+
+In order to unfold a jet spectra, it is necessary to generate a response matrix that simulates the described effects above.  After the response matrix is generated a number of statistical approaches including, Bayesian, Singular Value Decomposition (SVD), or Bin-by-Bin, may be applied to unfold the raw jet spectra.  In order to generate the response matrix, a Pythia generated event is embedded into a GEANT simulation of the ALICE detector.  Due to the fact that the performance and efficiency of the ALICE detector may change between the data taking periods each simulation is `anchored' to a given LHC.  These anchors contain all the hot and dead sectors for the subdetectors, along with their calibrated performance during that specified data taking.  Two Monte Carlo data sets were produced with the Min Bias trigger simulated for the full 8 TeV run, the first was a Pythia generator using the Monesh-2013 tune and the second was a Min Bias tune of the PHOjet Monte Carlo package.  Both data sets were explored for this thesis and it was decided that the final corrected spectra would be obtained via unfolding with the Pythia Monte Carlo data set.  The magnitude of any one of the effects unfolding is supposed to account for is not expected to be very large, but combined may be significant, thus unfolding is an important step in this analysis.
 
 \subsubsection{Response Matrix}
-Given a truth-level particle jet $p_{T}$ we wish to reconstruct that jet's $p_{T}$ at the detector-level.  The particle-level pythia jets are constructed from the primary particles generated via Pythia while excluding any daughter decay particles in order to avoid double counting.  In addition the tracking efficiency in Pythia is known to deviate from nature.  This is due to Pythia under predicting the production of strange quarks.  
-Constructing the response matrix in this case is calculated on a jet-by-jet basis.  The particle-level jet centroid ($\phi_{part}$,$\eta_{part}$)is matched to the detector-level jet via a constrain on the displaced distance between the two jet centroids in ($\phi$,$\eta$).  This distance was constrained to: $\Delta  R = \sqrt{(\phi_{part} - \phi_{det})^{2} + (\eta_{part} - \eta_{det})^{2}} \leq 0.25 \; $.  Once a jet is matched at the detector level to a jet generated from the particle level the response matrix is incremented by jet $p_{T}$ at both the detector and Monte Carlo levels.  The response matrix is generated with a fine binning with a width of 1 GeV per bin. 
+Given a truth-level, the Monte Carlo event at the particle level, jet $p_{T}$ we wish to reconstruct that jet's $p_{T}$ at the detector-level.  The particle-level Pythia jets are constructed from the primary particles generated via Pythia, while excluding any daughter decay particles in order to avoid double counting.  In addition the tracking efficiency in Pythia is known to deviate from nature.  This is due to Pythia under predicting the production of strange quarks.  
+Constructing the response matrix in this case was calculated on a jet-by-jet basis.  The particle-level jet centroid ($\phi_{part}$,$\eta_{part}$)is matched to the detector-level jet via a constrain on the displaced distance between the two jet centroids in ($\phi$,$\eta$).  This distance was constrained to: $\Delta  R = \sqrt{(\phi_{part} - \phi_{det})^{2} + (\eta_{part} - \eta_{det})^{2}} \leq 0.25 \; $.  Once a jet was matched at the detector level to a jet generated from the particle level the response matrix was incremented by jet $p_{T}$ at both the detector and Monte Carlo levels.  The response matrix was generated with a fine binning width of 1 GeV. 
 
 \begin{figure*}[t!]
 $\begin{array}{rl}
@@ -401,11 +398,11 @@ $\begin{array}{rl}
 \caption[Response Matrices for R = 0.2, R=0.3, and R = 0.4 jets.]{\label{fig:response}Response Matrices for R = 0.2, R=0.3, and R = 0.4 jets.}
 \end{figure*}
 
-Figure \ref{fig:response} shows the response matrices for the R = 0.2 (top left), R = 0.3 (top right), and R = 0.4 (bottom) jets generated with the prescribed manner.  The response matrices display a linear relationship below 50 GeV on both axis and above ~ 100 GeV the matrices are statistics starved.  This is primarily due to the Monte Carlo Pythia and PhoJet data sets generated for the 8 TeV pp run did not model the high-$p_{T}$ triggers associated with the EMCal.  The particle jet finders configured for the response matrices allowed for jet finding down to a 100 MeV jet candidate at the particle level with no constraints on the minimum particle momentum or energy for a constituent.  The detector level jet finders were configured in the same manner as the jet finders configured for the raw jet spectra measurement.  
+Figure \ref{fig:response} shows the response matrices for the R = 0.2, R = 0.3, and R = 0.4 jets generated with the prescribed manner.  The response matrices display a linear relationship below 50 GeV on both axis and show that above $\sim$100 GeV the matrices are statistically starved.  This is primarily because the Monte Carlo Pythia and PHOJet data sets generated for the 8 TeV pp run did not model the high-$p_{T}$ triggers associated with the EMCal.  The particle jet finders configured for the response matrices allowed for jet finding down to a 100 MeV jet candidate at the particle level with no constraints on the minimum particle momentum or energy for a constituent.  The detector level jet finders were configured in the same manner as they were for the raw jet spectra measurement.  
 
 \subsubsection{Corrections to Particle Level}
 
-Unfolding was performed using the \verb+RooUnfold+\cite{Adye:2011gm} software package.  Corrections are applied using the bin-by-bin\cite{Cowan:2002in} algorithm. 
+Unfolding was performed using the \verb+RooUnfold+\cite{Adye:2011gm} software package.  Corrections were applied using the bin-by-bin\cite{Cowan:2002in} algorithm. 
 
 \begin{equation}
 C_{MC} \big( p_{T}^{low} : p_{T}^{high} \big) =  \frac{  \int^{p_{T}^{high}}_{p_{T}^{low}} dp_{T} \; \frac{dF^{uncorr}_{meas}}{dp_{T}} \times \frac{d^{2}N^{particle}_{MC}/d\eta \, dp_{T}}{d^{2}N^{detector}_{MC}/d\eta \, dp_{T}}  } { \int^{p_{T}^{high}}_{p_{T}^{low}} dp_{T} \; \frac{dF^{uncorr}_{meas}}{dp_{T}} }
@@ -413,20 +410,20 @@ C_{MC} \big( p_{T}^{low} : p_{T}^{high} \big) =  \frac{  \int^{p_{T}^{high}}_{p_
 \end{equation}
 
 \noindent
-where $d^{2}N^{particle}_{MC}/dp_{T} \, d\eta$ is the PYTHIA level inclusive jet spectra, $d^{2}N^{detector}_{MC}/dp_{T} \, d\eta$ is the GEANT 3 level inclusive jet spectra, $dF^{uncorr}_{meas} / dp_{T}$ is a weight function which minimizes the dependence on the two simulation spectra shapes, finally $p_{T}^{low}$ and $p_{T}^{low}$ are the lower and upper bin limits.  Due to the limited statistics derived from the Monte Carlos available the unfolding procedure was stable only in aunfolding the truth level jet spectra for the range: $p_{T,jet} \epsilon \;$ [10 GeV, 120 GeV] for both the raw Min Bias and Emcal triggered data sets.  Due to the  the final truth value for the jet spectra will be reported in this range.
+where $d^{2}N^{particle}_{MC}/dp_{T} \, d\eta$ is the Pythia particle level inclusive jet spectra, $d^{2}N^{detector}_{MC}/dp_{T} \, d\eta$ is the GEANT detector level inclusive jet spectra, $dF^{uncorr}_{meas} / dp_{T}$ is a weight function which minimizes the dependence on the two simulation spectra shapes, and finally $p_{T}^{low}$ and $p_{T}^{high}$ are the lower and upper bin limits.  Due to the limited statistics derived from the Monte Carlos available, the unfolding procedure was stable only in unfolding the truth level jet spectra for the range: $p_{T,jet} \, \epsilon \;$ [10 GeV, 120 GeV] for both the raw Min Bias and EMCal triggered data sets.  The only way to get around this crutch to the analysis would be to ask the ALICE collaboration to make new official particle + detector level simulations that included the EMCal trigger.  The final truth value for the jet spectra will be reported in this range.
 
 
 
 \subsubsection{Unfolded MB Spectra}
 
 \begin{figure}[h]
-\includegraphics[width=10cm]{RawandUnfoldedSpectraMBR03}
+\includegraphics[width=8cm]{RawandUnfoldedSpectraMBR03}
 \centering
 \caption{Unfolded jet spectra with fine binning for R = 0.3}
 \label{fig:Unfoldfine}
 \end{figure}
 
-Figure \ref{fig:Unfoldfine} shows an example of the output from the bin-by-bin unfodling with the fine binning for R = 0.3 jets.  It should be noted that at low-$p_{T}$ it was observed that unfolding increased the yield of the spectra while at high-$p_{T} \geq \,$ 40 GeV the yield was decreased for all jet radii in this analysis.  This is most likely due to the lack of statistics in the response matrix.  Once the bin-by-bin unfolding has been performed for the fine binned spectra the output along with the bin-by-bin correction factors are rebinned using a variable binning between 10 GeV and 120 GeV, these corrected spectra are shown in Figure \ref{fig:unfoldMinbias}.
+An example of the output from the bin-by-bin unfolding with the fine binning for R = 0.3 jet is shown in Figure \ref{fig:Unfoldfine}.  It should be noted that at low-$p_{T}$ it was observed that unfolding increased the yield of the spectra while at high-$p_{T} \geq \,$ 40 GeV the yield was decreased for all jet radii in this analysis.  This is most likely due to the lack of statistics in the response matrix.  Once the bin-by-bin unfolding has been performed for the fine binned spectra the output along with the bin-by-bin correction factors are rebinned using a variable binning between 10 GeV and 120 GeV, these corrected spectra are shown in Figure \ref{fig:unfoldMinbias}.
 
 
 \begin{figure*}[t!]
@@ -439,7 +436,7 @@ $\begin{array}{rl}
 \end{figure*}
 
 \subsubsection{Unfolded EMCal Triggered Spectra}
-The unfolding procedure is repeated again for the EMCal triggered jet spectra.  The response matrix from the Min Bias sample is used for the bin-by-bin unfolding and performed using a fine binning.  The detector level and particle level jets are configured in the same manner as above and the output from the unfolded triggered spectra are reported after rebinning to a variable size over the same kinematic range as seen in Figure \ref{fig:unfoldEGA}.
+The unfolding procedure was repeated again for the EMCal triggered jet spectra.  The response matrix from the Min Bias sample was used for the bin-by-bin unfolding and performed using a fine binning.  The detector level and particle level jets were configured in the same manner as above and the output from the unfolded triggered spectra were reported after rebinning to a variable size over the same kinematic range, as seen in Figure \ref{fig:unfoldEGA}.
 
 \begin{figure*}[t!]
 $\begin{array}{rl}
@@ -450,11 +447,11 @@ $\begin{array}{rl}
 \caption[Corrected EMCal Triggered Jet Spectra to Monte Carlo level for R = 0.2, R=0.3, and R = 0.4 jets.]{\label{fig:unfoldEGA}Unfolded EMCal Triggered Jet Spectra with correction factors, $C_{MC}$, for R = 0.2, R=0.3, and R = 0.4 jets.}
 \end{figure*}
 
-\noindent
-Due to the limitations on the response matrix the bin-by-bin unfolding of the EMCal triggered data was only stable up to 120 GeV.  It should be noted that the hump in the EMCal jet spectra is due to the firing threshold of the trigger.  The unfolded Emcal jet spectra was used to estimate the ratio the the jet yields between the Min Bias and triggered data samples, from this point the trigger scaling was calculated.  Due to the lack of a trigger modeled with the 8 TeV Monte Carlo productions the inability to extend the kinematic range of the jet spectras beyond 120 GeV presents a missed opportunity in terms of the recorded data from the 8 TeV runs.  In order to address this issue a new Monte Carlo production will need to be requested from the ALICE collaboration.
+
+Due to the limitations of the response matrix, the bin-by-bin unfolding of the EMCal triggered data was only stable up to 120 GeV.  Again, it should be noted that the hump in the EMCal jet spectra is due to the firing threshold of the trigger.  The unfolded EMCal jet spectra was used to estimate the ratio that the jet yields between the Min Bias and triggered data samples, from this point the trigger scaling was calculated.  Due to the lack of a trigger modeled with the 8 TeV Monte Carlo productions, were unable to extend the kinematic range of the jet spectras beyond 120 GeV.  This presents a missed opportunity in terms of the recorded data from the 8 TeV runs.  In order to address this issue a new Monte Carlo production will need to be requested from the ALICE collaboration.
 
 \section{Jet Reconstruction and Matching Efficiency}
-In order to quantify the inefficiencies due to unfolding along with inefficiencies in the ALICE experiment in reconstructing jets we quantify the jet reconstruction efficiency, $\epsilon_{reco} (p_{T, jet})$, and the jet matching efficiency, $\epsilon_{match} (p_{T, jet})$.
+In order to quantify the inefficiencies due to unfolding along with the inefficiencies in the ALICE experiment in reconstructing jets, we quantify the jet reconstruction efficiency, $\epsilon_{reco} (p_{T, jet})$, and the jet matching efficiency, $\epsilon_{match} (p_{T, jet})$.
 
 \begin{equation}
  \epsilon_{reco} (p_{T, jet}) = \frac{N_{reco}(p_{T, jet}) }{N_{Truth} (p_{T, jet})}
@@ -467,7 +464,9 @@ In order to quantify the inefficiencies due to unfolding along with inefficienci
 \end{equation}
 
 \noindent 
-where $N_{reco} (p_{T, jet})$ is the reconstructed jet yield at the detector level per $p_{T}$ bin, $N_{match}(p_{T, jet})$ is the reconstructed jet at the detector level that was matched to a particle level jet per $p_{T}$ bin, and $N_{truth} (p_{T, jet})$ is the truth-level particle jet yield from the Pythia embedded event per $p_{T}$ bin.  The $N_{truth} (p_{T, jet})$ were obtained by running FastJet on Pythia events with no constituent $p_{T}$ cut while $N_{match}(p_{T, jet})$ and $N_{reco} (p_{T, jet})$ had the same kinematic cuts as the data driven analysis mentioned earlier in this chapter.  The truth level jets contained no geometric acceptance cut in order to account for jets that may have been reconstructed at the detector level but had no match to a particle level because part of the particle level jet was outside the EMCal acceptance.  The spectrums were corrected by these efficiencies after the bin-by-bin corrections were performed.  The correction factors are shown in Figures \ref{fig:JetMatcheff} and \ref{fig:JetRecoeff}.
+where $N_{reco} (p_{T, jet})$ is the reconstructed jet yield at the detector level per $p_{T}$ bin, $N_{match}(p_{T, jet})$ is the reconstructed jet at the detector level that was matched to a particle level jet per $p_{T}$ bin, and $N_{truth} (p_{T, jet})$ is the truth-level particle jet yield from the Pythia embedded event per $p_{T}$ bin.  
+
+The $N_{truth} (p_{T, jet})$ were obtained by running FastJet on Pythia events with no constituent $p_{T}$ cut, while $N_{match}(p_{T, jet})$ and $N_{reco} (p_{T, jet})$ had the same kinematic cuts as the data driven analysis mentioned earlier in this chapter.  The truth level jets contained no geometric acceptance cut in order to account for jets that may have been reconstructed at the detector level, but had no match to a particle level because part of the particle level jet was outside the EMCal acceptance.  The spectrums were corrected by these efficiencies after the bin-by-bin corrections were performed.  The correction factors are shown in Figures \ref{fig:JetMatcheff} and \ref{fig:JetRecoeff}.
 
 \begin{figure*}[t!]
 $\begin{array}{rl}

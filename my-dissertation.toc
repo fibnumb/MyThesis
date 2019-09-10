@@ -54,33 +54,30 @@
 \contentsline {subsubsection}{Event Selection Criteria}{69}{section*.90}% 
 \contentsline {section}{\numberline {5.2}EMCal Triggered Data}{71}{section.5.2}% 
 \contentsline {section}{\numberline {5.3}Cluster Selection}{74}{section.5.3}% 
-\contentsline {section}{\numberline {5.4}Track Selection}{79}{section.5.4}% 
-\contentsline {section}{\numberline {5.5}Jet Selection}{81}{section.5.5}% 
-\contentsline {subsubsection}{$z_{leading}$ cut}{81}{section*.105}% 
-\contentsline {subsubsection}{Jet Area Cut}{82}{section*.107}% 
-\contentsline {subsubsection}{NEF cut}{83}{section*.109}% 
+\contentsline {section}{\numberline {5.4}Track Selection}{78}{section.5.4}% 
+\contentsline {section}{\numberline {5.5}Jet Selection}{80}{section.5.5}% 
 \contentsline {section}{\numberline {5.6}Acceptance Correction}{84}{section.5.6}% 
-\contentsline {section}{\numberline {5.7}Unfolding}{85}{section.5.7}% 
-\contentsline {subsubsection}{Response Matrix}{86}{section*.112}% 
-\contentsline {subsubsection}{Corrections to Particle Level}{88}{section*.114}% 
-\contentsline {subsubsection}{Unfolded MB Spectra}{89}{section*.115}% 
-\contentsline {subsubsection}{Unfolded EMCal Triggered Spectra}{89}{section*.118}% 
+\contentsline {section}{\numberline {5.7}Corrections to Monte Carlo}{85}{section.5.7}% 
+\contentsline {subsubsection}{Response Matrix}{86}{section*.109}% 
+\contentsline {subsubsection}{Corrections to Particle Level}{87}{section*.111}% 
+\contentsline {subsubsection}{Unfolded MB Spectra}{88}{section*.112}% 
+\contentsline {subsubsection}{Unfolded EMCal Triggered Spectra}{89}{section*.115}% 
 \contentsline {section}{\numberline {5.8}Jet Reconstruction and Matching Efficiency}{91}{section.5.8}% 
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{95}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Systematic Uncertainties}{95}{section.6.1}% 
-\contentsline {subsection}{\numberline {6.1.1}Systematic Uncertainty to Jet Energy Scale}{96}{subsection.6.1.1}% 
-\contentsline {subsubsection}{Tracking Efficiency Sensitivity}{96}{section*.122}% 
-\contentsline {subsubsection}{Hadronic Correction Systematic}{97}{section*.124}% 
-\contentsline {subsubsection}{Sensativity to EMCal Clusterization Algorithm}{97}{section*.126}% 
-\contentsline {subsection}{\numberline {6.1.2}Systematic Uncertainty to Jet Yield}{99}{subsection.6.1.2}% 
-\contentsline {subsubsection}{Track $p_{T}$ resolution}{99}{section*.128}% 
-\contentsline {subsubsection}{Cluster Energy resolution}{99}{section*.131}% 
-\contentsline {subsubsection}{Luminosity and Uncertainty}{99}{section*.133}% 
-\contentsline {subsubsection}{Total Uncertainty}{101}{section*.134}% 
-\contentsline {section}{\numberline {6.2}8 TeV Inclusive Jet Results from CMS and ATLAS}{102}{section.6.2}% 
-\contentsline {section}{\numberline {6.3}Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}{103}{section.6.3}% 
-\contentsline {section}{\numberline {6.4}Summary and Discussion}{103}{section.6.4}% 
-\contentsline {chapter}{Bibliography}{108}{section*.141}% 
-\contentsline {chapter}{Appendices}{124}{section*.142}% 
-\contentsline {section}{\numberline {A}Particle Identification via Bethe-Bloch}{125}{section.Alph0.1}% 
-\contentsline {chapter}{Vita}{128}{section*.145}% 
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{94}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Systematic Uncertainties}{94}{section.6.1}% 
+\contentsline {subsection}{\numberline {6.1.1}Systematic Uncertainty to Jet Energy Scale}{95}{subsection.6.1.1}% 
+\contentsline {subsubsection}{Tracking Efficiency Sensitivity}{95}{section*.119}% 
+\contentsline {subsubsection}{Hadronic Correction Systematic}{96}{section*.121}% 
+\contentsline {subsubsection}{Sensativity to EMCal Clusterization Algorithm}{96}{section*.123}% 
+\contentsline {subsection}{\numberline {6.1.2}Systematic Uncertainty to Jet Yield}{98}{subsection.6.1.2}% 
+\contentsline {subsubsection}{Track $p_{T}$ resolution}{98}{section*.125}% 
+\contentsline {subsubsection}{Cluster Energy resolution}{98}{section*.128}% 
+\contentsline {subsubsection}{Luminosity and Uncertainty}{98}{section*.130}% 
+\contentsline {subsubsection}{Total Uncertainty}{100}{section*.131}% 
+\contentsline {section}{\numberline {6.2}8 TeV Inclusive Jet Results from CMS and ATLAS}{101}{section.6.2}% 
+\contentsline {section}{\numberline {6.3}Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}{102}{section.6.3}% 
+\contentsline {section}{\numberline {6.4}Summary and Discussion}{102}{section.6.4}% 
+\contentsline {chapter}{Bibliography}{107}{section*.138}% 
+\contentsline {chapter}{Appendices}{123}{section*.139}% 
+\contentsline {section}{\numberline {A}Particle Identification via Bethe-Bloch}{124}{section.Alph0.1}% 
+\contentsline {chapter}{Vita}{127}{section*.142}% 

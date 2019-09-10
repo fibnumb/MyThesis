@@ -53,40 +53,40 @@
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Distance to closest reconstructed EGA patch to R = 0.2 jet with the Min Bias Pythia Monte Carlo.\relax }}{73}{figure.caption.94}% 
 \contentsline {figure}{\numberline {5.9}{\ignorespaces EMCal triggered data correction factors for R=0.2, R=0.3, and R=0.4 jets.}}{74}{figure.caption.95}% 
 \contentsline {figure}{\numberline {5.10}{\ignorespaces EMCal cell occupancy after bad channels removed.\relax }}{75}{figure.caption.96}% 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Matched track-cluster distance.\relax }}{77}{figure.caption.97}% 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Matched track-cluster distance.\relax }}{76}{figure.caption.97}% 
 \contentsline {figure}{\numberline {5.12}{\ignorespaces EMCal cluster time distribution before cuts.\relax }}{77}{figure.caption.98}% 
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Corrected EMCal cluster yield.\relax }}{78}{figure.caption.99}% 
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Hybrid Track $\eta $ and $\phi $ yields.\relax }}{79}{figure.caption.100}% 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Hybrid Track $\eta $}}}{79}{subfigure.14.1}% 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hybrid Track $\phi $}}}{79}{subfigure.14.2}% 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Accepted hybrid track resolution.\relax }}{80}{figure.caption.101}% 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Accepted hybrid track resolution.\relax }}{79}{figure.caption.101}% 
 \contentsline {figure}{\numberline {5.16}{\ignorespaces Accepted track $p_{T}$ yield.\relax }}{80}{figure.caption.102}% 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces R = 0.2 leading track $p_{T}$ per jet $p_{T}$.\relax }}{81}{figure.caption.103}% 
+\contentsline {figure}{\numberline {5.17}{\ignorespaces R = 0.2 leading track $p_{T}$ per jet $p_{T}$.\relax }}{80}{figure.caption.103}% 
 \contentsline {figure}{\numberline {5.18}{\ignorespaces R = 0.2 number of constituents in a jet per jet $p_{T}$.\relax }}{81}{figure.caption.104}% 
-\contentsline {figure}{\numberline {5.19}{\ignorespaces R = 0.2 $z_{leading}$ from the Min Bias data sample.\relax }}{82}{figure.caption.106}% 
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Jet rejection reason.\relax }}{83}{figure.caption.108}% 
-\contentsline {figure}{\numberline {5.21}{\ignorespaces R = 0.2 NEF per jet $P_{T}$.\relax }}{84}{figure.caption.110}% 
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Response Matrices for R = 0.2, R=0.3, and R = 0.4 jets.}}{87}{figure.caption.113}% 
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Unfolded jet spectra with fine binning for R = 0.3\relax }}{89}{figure.caption.116}% 
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Corrected Jet Spectra to Monte Carlo level for R = 0.2, R=0.3, and R = 0.4 jets.}}{90}{figure.caption.117}% 
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Corrected EMCal Triggered Jet Spectra to Monte Carlo level for R = 0.2, R=0.3, and R = 0.4 jets.}}{91}{figure.caption.119}% 
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4. }}{93}{figure.caption.120}% 
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4.}}{94}{figure.caption.121}% 
+\contentsline {figure}{\numberline {5.19}{\ignorespaces R = 0.2 $z_{leading}$ from the Min Bias data sample.\relax }}{81}{figure.caption.105}% 
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Jet rejection reason.\relax }}{82}{figure.caption.106}% 
+\contentsline {figure}{\numberline {5.21}{\ignorespaces R = 0.2 NEF per jet $P_{T}$.\relax }}{83}{figure.caption.107}% 
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Response Matrices for R = 0.2, R=0.3, and R = 0.4 jets.}}{87}{figure.caption.110}% 
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Unfolded jet spectra with fine binning for R = 0.3\relax }}{88}{figure.caption.113}% 
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Corrected Jet Spectra to Monte Carlo level for R = 0.2, R=0.3, and R = 0.4 jets.}}{89}{figure.caption.114}% 
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Corrected EMCal Triggered Jet Spectra to Monte Carlo level for R = 0.2, R=0.3, and R = 0.4 jets.}}{90}{figure.caption.116}% 
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4. }}{92}{figure.caption.117}% 
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4.}}{93}{figure.caption.118}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Systematic due to TPC tracking efficiency.}}{97}{figure.caption.123}% 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Systematic due to Hadronic correction.}}{98}{figure.caption.125}% 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Systematic due to clusterization algorithm.}}{98}{figure.caption.127}% 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Inclusive track resolution, Min Bias 8 TeV.\relax }}{99}{figure.caption.129}% 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Systematic due to $P_{T}$ resolution.}}{100}{figure.caption.130}% 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Systematic due to energy resolution.}}{100}{figure.caption.132}% 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces 8 TeV CMS inclusive jet cross sections with radii of R = 0.7 and binned by jet rapidity compared to NLO calculations with non-pertubative corrections\cite {CMS:2013kda}.\relax }}{103}{figure.caption.135}% 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces R = 0.4 inclusive jet cross section at 8 TeV from ATLAS in binned by jet rapidity compared to NLO QCD predictions\cite {Aaboud:2017dvo}.\relax }}{104}{figure.caption.136}% 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces The 8 TeV ATLAS jet cross sections rescaled to better show comparissons with NLO and non-pertubative calculations at low $p_{T}$\cite {Aaboud:2017dvo}.\relax }}{105}{figure.caption.137}% 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Inclusive differential cross section from the 2.76 TeV proton proton run with ALICE\relax }}{106}{figure.caption.138}% 
-\contentsline {figure}{\numberline {6.11}{\ignorespaces LHC state during the 8 TeV run. \relax }}{107}{figure.caption.139}% 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Mimimmum Bias Event Rejection\relax }}{107}{figure.caption.140}% 
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Emcal Triggered Event Rejection\relax }}{107}{figure.caption.140}% 
-\contentsline {figure}{\numberline {14}{\ignorespaces Energy loss of a muon traversing a copper medium between 0.1 MeV to 100 TeV \cite {Patrignani:2016xqp}.\relax }}{126}{figure.caption.143}% 
-\contentsline {figure}{\numberline {15}{\ignorespaces Specific energy loss for the ITS\textit {(left)} and the TPC\textit {(right)} with Bethe-Bloch fits from different particle species traversing each detector\cite {Noferini:2016lcw}.\relax }}{127}{figure.caption.144}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALICE ITS(pp $\sqrt {s} = 13$ TeV )}}}{127}{subfigure.15.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ALICE TPC (PbPb $\sqrt {s_{NN}} = 5.02$ TeV )}}}{127}{subfigure.15.2}% 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Systematic due to TPC tracking efficiency.}}{96}{figure.caption.120}% 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Systematic due to Hadronic correction.}}{97}{figure.caption.122}% 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Systematic due to clusterization algorithm.}}{97}{figure.caption.124}% 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Inclusive track resolution, Min Bias 8 TeV.\relax }}{98}{figure.caption.126}% 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Systematic due to $P_{T}$ resolution.}}{99}{figure.caption.127}% 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Systematic due to energy resolution.}}{99}{figure.caption.129}% 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces 8 TeV CMS inclusive jet cross sections with radii of R = 0.7 and binned by jet rapidity compared to NLO calculations with non-pertubative corrections\cite {CMS:2013kda}.\relax }}{102}{figure.caption.132}% 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces R = 0.4 inclusive jet cross section at 8 TeV from ATLAS in binned by jet rapidity compared to NLO QCD predictions\cite {Aaboud:2017dvo}.\relax }}{103}{figure.caption.133}% 
+\contentsline {figure}{\numberline {6.9}{\ignorespaces The 8 TeV ATLAS jet cross sections rescaled to better show comparissons with NLO and non-pertubative calculations at low $p_{T}$\cite {Aaboud:2017dvo}.\relax }}{104}{figure.caption.134}% 
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Inclusive differential cross section from the 2.76 TeV proton proton run with ALICE\relax }}{105}{figure.caption.135}% 
+\contentsline {figure}{\numberline {6.11}{\ignorespaces LHC state during the 8 TeV run. \relax }}{106}{figure.caption.136}% 
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Mimimmum Bias Event Rejection\relax }}{106}{figure.caption.137}% 
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Emcal Triggered Event Rejection\relax }}{106}{figure.caption.137}% 
+\contentsline {figure}{\numberline {14}{\ignorespaces Energy loss of a muon traversing a copper medium between 0.1 MeV to 100 TeV \cite {Patrignani:2016xqp}.\relax }}{125}{figure.caption.140}% 
+\contentsline {figure}{\numberline {15}{\ignorespaces Specific energy loss for the ITS\textit {(left)} and the TPC\textit {(right)} with Bethe-Bloch fits from different particle species traversing each detector\cite {Noferini:2016lcw}.\relax }}{126}{figure.caption.141}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALICE ITS(pp $\sqrt {s} = 13$ TeV )}}}{126}{subfigure.15.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ALICE TPC (PbPb $\sqrt {s_{NN}} = 5.02$ TeV )}}}{126}{subfigure.15.2}% 
