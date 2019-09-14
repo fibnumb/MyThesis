@@ -93,12 +93,6 @@ W.~M. Alberico, A.~Beraudo, A.~De~Pace, A.~Molinari, M.~Monteno, M.~Nardi, and
 \newblock {Heavy-flavour spectra in high energy nucleus-nucleus collisions}.
 \newblock {\em Eur. Phys. J.}, C71:1666, 2011.
 
-\bibitem{Adam:2015ptt}
-Jaroslav Adam et~al.
-\newblock {Centrality dependence of the charged-particle multiplicity density
-  at midrapidity in Pb-Pb collisions at $\sqrt{s_{\rm NN}}$ = 5.02 TeV}.
-\newblock {\em Phys. Rev. Lett.}, 116(22):222302, 2016.
-
 \bibitem{2010NIMPA.622..316A}
 J.~{Alme} et~al.
 \newblock {The ALICE TPC, a large 3-dimensional tracking device with fast
@@ -172,18 +166,6 @@ Jens~Erik Br{\"u}cken and Timo~Eero Hild{\'e}n.
 \newblock {The GEM QA Protocol of the ALICE TPC Upgrade Project}.
 \newblock In {\em {5th International Conference on Micro Pattern Gas Detectors
   (MPGD2017) Temple University, Philadelphia, USA, May 22-26, 2017}}, 2018.
-
-\bibitem{CMS:2013kda}
-CMS Collaboration.
-\newblock {Measurement of the double-differential inclusive jet cross section
-  at sqrt(s) = 8 TeV with the CMS detector}.
-\newblock 2013.
-
-\bibitem{Aaboud:2017dvo}
-Morad Aaboud et~al.
-\newblock {Measurement of the inclusive jet cross-sections in proton-proton
-  collisions at $ \sqrt{s}=8 $ TeV with the ATLAS detector}.
-\newblock {\em JHEP}, 09:020, 2017.
 
 \bibitem{Noferini:2016lcw}
 Francesco Noferini.
@@ -633,17 +615,17 @@ S.~Agostinelli et~al.
 {ALICE luminosity determination for pp collisions at $\sqrt{s}=8$ TeV}.
 \newblock Mar 2017.
 
-\bibitem{Acharya:2018eat}
-Shreyasi Acharya et~al.
-\newblock {Charged jet cross section and fragmentation in proton-proton
-  collisions at $\sqrt{s}$ = 7 TeV}.
-\newblock {\em Phys. Rev.}, D99(1):012016, 2019.
-
 \bibitem{Bourrion:2010js}
 O.~Bourrion, R.~Guernane, B.~Boyer, J.~L. Bouly, and G.~Marcotte.
 \newblock {Level-1 jet trigger hardware for the ALICE electromagnetic
   calorimeter at LHC}.
 \newblock {\em JINST}, 5:C12048, 2010.
+
+\bibitem{Acharya:2018eat}
+Shreyasi Acharya et~al.
+\newblock {Charged jet cross section and fragmentation in proton-proton
+  collisions at $\sqrt{s}$ = 7 TeV}.
+\newblock {\em Phys. Rev.}, D99(1):012016, 2019.
 
 \bibitem{Adye:2011gm}
 Tim Adye.
@@ -668,6 +650,11 @@ Betty~Bezverkhny Abelev et~al.
 R.~Fruhwirth.
 \newblock {Application of Kalman filtering to track and vertex fitting}.
 \newblock {\em Nucl. Instrum. Meth.}, A262:444--450, 1987.
+
+\bibitem{SOYEZ201159}
+Gregory Soyez.
+\newblock A simple description of jet cross-section ratios.
+\newblock {\em Physics Letters B}, 698(1):59 -- 62, 2011.
 
 \bibitem{MA2013319}
 Rongrong Ma.
