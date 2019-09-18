@@ -17,9 +17,9 @@ A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-dissertation.bib
 Warning--entry type for "JetPic" isn't style-file defined
---line 463 of file references-dissertation.bib
+--line 481 of file references-dissertation.bib
 Warning--entry type for "Santimaria:1690550" isn't style-file defined
---line 1486 of file references-dissertation.bib
+--line 1504 of file references-dissertation.bib
 Warning--empty journal in Mobs:2197559
 Warning--empty journal in Abeysekara:2010ze
 Warning--empty booktitle in Dick2017QM
@@ -40,43 +40,43 @@ Warning--empty author in ALICE-PUBLIC-2017-002
 Warning--empty journal in ALICE-PUBLIC-2017-002
 You've used 114 entries,
             1791 wiz_defined-function locations,
-            1195 strings with 24327 characters,
-and the built_in function-call counts, 25294 in all, are:
-= -- 2195
+            1197 strings with 24398 characters,
+and the built_in function-call counts, 25344 in all, are:
+= -- 2200
 > -- 1027
 < -- 15
 + -- 395
 - -- 281
-* -- 1720
-:= -- 4056
+* -- 1731
+:= -- 4064
 add.period$ -- 353
 call.type$ -- 114
-change.case$ -- 111
+change.case$ -- 112
 chr.to.int$ -- 0
 cite$ -- 132
-duplicate$ -- 1111
-empty$ -- 2580
+duplicate$ -- 1110
+empty$ -- 2584
 format.name$ -- 281
-if$ -- 5664
+if$ -- 5672
 int.to.chr$ -- 0
 int.to.str$ -- 114
-missing$ -- 108
+missing$ -- 107
 newline$ -- 581
 num.names$ -- 109
-pop$ -- 237
+pop$ -- 232
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 474
+skip$ -- 475
 stack$ -- 0
-substring$ -- 1827
+substring$ -- 1845
 swap$ -- 190
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 18
-while$ -- 215
+while$ -- 216
 width$ -- 117
 write$ -- 1253
 (There were 20 warnings)

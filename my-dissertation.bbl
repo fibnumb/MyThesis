@@ -275,11 +275,6 @@ Megan Connors, Christine Nattrass, Rosi Reed, and Sevil Salur.
 \newblock {Jet measurements in heavy ion physics}.
 \newblock {\em Rev. Mod. Phys.}, 90:025005, 2018.
 
-\bibitem{Brun:1119728}
-R~Brun, F~Bruyant, M~Maire, A~C McPherson, and P~Zanarini.
-\newblock {\em {GEANT 3: user's guide Geant 3.10, Geant 3.11; rev. version}}.
-\newblock CERN, Geneva, 1987.
-
 \bibitem{Sjostrand:2007gs}
 Torbjorn Sjostrand, Stephen Mrenna, and Peter~Z. Skands.
 \newblock {A Brief Introduction to PYTHIA 8.1}.
@@ -351,6 +346,12 @@ J.~Adams et~al.
 Barbara~V. Jacak and Berndt M{\"u}ller.
 \newblock The exploration of hot nuclear matter.
 \newblock {\em Science}, 337(6092):310--314, 2012.
+
+\bibitem{Sharma:2018dyb}
+Natasha Sharma, Tony Perez, Andy Castro, Lokesh Kumar, and Christine Nattrass.
+\newblock {Methods for separation of deuterons produced in the medium and in
+  jets in high energy collisions}.
+\newblock {\em Phys. Rev.}, C98(1):014914, 2018.
 
 \bibitem{Thomas:2004ie}
 R.~Thomas, Burkhard Kampfer, and G.~Soff.
