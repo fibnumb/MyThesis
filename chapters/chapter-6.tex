@@ -1,6 +1,253 @@
-\chapter{Results and Conclusion} \label{ch:cando}
+\chapter{Corrections and Systematic Uncertainties} \label{ch:error}
 
-Up to this point I have given an overview of the physics background for jets created in high energy particle collisions, a description of the ALICE detector, and the steps needed to prepare the data for an analysis.  The final portion of this thesis will combine all of the results and corrections together in order to present the final cross sections.  However, in order to present the final cross-section we will need to discuss the systematic errors that contribute to the final uncertainty in my reported results.
+This large amount of data offers a unique chance to explore jet cross-sections using high statistics.   In order to measure the jet double differential cross-section, the following formula is used,
+
+\begin{equation}
+	\frac{d^{2} \sigma^{jet}}{d\eta \, dp_{T}} = \frac{1}{\epsilon_{reco}} \frac{A_{trigger}}{\epsilon_{trigger}(p_{T})} \times C_{MC} \times \frac{1}{A(p_{T}) } \times \frac{1}{\mathscr{L}_{int}} \times \frac{dN^{2}_{jet}}{dp_{T} \, d\eta}
+\label{eq:xsecdef}
+\end{equation}
+
+\noindent
+where,
+
+\begin{itemize}
+  \item $\epsilon_{reco}$ is the efficency for reconstructing the jet in the ALICE detector.
+  \item $A_{trigger}$ is the acceptance for EMCal triggered events and $\epsilon_{trigger}(p_{T})$ is the EMCal trigger efficiency.  These factors correct for imperfections in the electronics of the EMCal and the overall factors are equal to one in Min Bias events.
+  \item $C_{MC}$ is a correction factor due to detector effects and it allows for comparisons between the ALICE experiment and other experiments or theoretical calculations.  Unfolding is used to determine this factor.
+  \item $\mathscr{L}_{int}$ is the integrated luminosity during the period when the data was recorded.
+  \item $A(p_{T})$ is the geometrical detector acceptance.
+  \item $\frac{dN^{2}_{jet}}{dp_{T} \, d\eta}$ is the inclusive jet momentum spectra.
+  
+\end{itemize}
+
+Up to this point I have given an overview of the physics background for jets created in high energy particle collisions, a description of the ALICE detector, and the steps needed to prepare the data for an analysis.  This portion of the thesis will combine all of the data QA together to present a raw jet spectra.  Further cuts for the geometric acceptance, corrections for detector effects, and efficiency calculations need to be accounted for to create a fully corrected jet result.  This chapter will conclude with a presentation of the systematic errors that are reported with the final jet cross-sections
+
+\section{Raw Jet Spectra}
+
+This analysis measured inclusive jet results for radii between 0.1 and 0.5.  However, jet results for radii R = 0.2 to R = 0.4 will be presented in the body of this chapter while results from the other jet radii are still being investigated.  Figures \ref{fig:rawjetR02}, \ref{fig:rawjetR03}, and \ref{fig:rawjetR04} show the raw (uncorrected) $p_{T}$ spectra for inclusive jets from both Min Bias and EMCal triggered data.  It is also evident from these figures that the EMCal triggered data greatly extends the kinematic reach of the measured jet spectra, to about 200 GeV/c.  The next sections of this chapter will discuss the QA implemented to the data, trigger scaling, unfolding, and other corrections used in this thesis. 
+
+\afterpage{%
+\begin{figure}
+\includegraphics[width=\linewidth]{RawR02JetSpectra}
+\centering
+\caption{Raw inclusive R = 0.2 jet spectra from the 8 TeV Min Bias and EMCal triggered data}
+\label{fig:rawjetR02}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\linewidth]{RawR03JetSpectra}
+\centering
+\caption{Raw inclusive R = 0.3 jet spectra from the 8 TeV Min Bias and EMCal triggered data}
+\label{fig:rawjetR03}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\linewidth]{RawR04JetSpectra}
+\centering
+\caption{Raw inclusive R = 0.4 jet spectra from the 8 TeV Min Bias and EMCal triggered data}
+\label{fig:rawjetR04}
+\end{figure}
+
+\clearpage
+}
+
+
+\section{Acceptance Correction}
+Jet spectra, cross-sections, and ratios of cross-sections are reported over the full azimuth angle and psuedorapidity acceptance in this thesis.  However, due to jets being constrained to the EMCal, a geometric factor was used to correct for the limited acceptance of the detector.  This thesis explored jet radii between 0.1 and 0.5, in order to study the effects of wide angle radiation on jet fragmentation.  Jet measurements in heavy-ion collisions use radii, typically of 0.2, to help negate the high multiplicity background.  Due to these geometric corrections the centroid of a jet is constrained to,
+
+\begin{equation}
+|\eta_{jet}| \leq 0.7 - R, \; 1.4 + R \leq \phi_{jet} \leq 3.14 -R.
+\label{eq:jetconstration}
+\end{equation}
+
+\begin{equation}
+A(p_{T}) = \frac{(1.4 - 2R) \times (1.745 - 2R)}{2 \pi}.
+\label{eq:acceptance}
+\end{equation}
+
+For jets between R = 0.1 through R = 0.5 the following jet acceptance corrections were used, see Table 5.2.
+
+\begin{table}[hb]
+\label{tab:AcceptanceFactor}
+\begin{center}
+\caption{EMCal jet acceptance for radii 0.1 - 0.5.}
+\begin{tabular}[b]{|c|c|c|}
+	\hline
+	Jet R & $A(p_{T})$ \\ \hline
+	0.1 & 0.296 \\ \hline
+	0.2 & 0.214\\ \hline
+	0.3 & 0.146\\ \hline
+	0.4 & 0.091\\ \hline
+	0.5 & 0.048\\ \hline
+\end{tabular}
+\end{center}
+
+\end{table}
+
+\section{EMCal Triggered Data}
+
+The EMCal triggered data for the 8 TeV data greatly extends the kinematic reach for the spectra.  This thesis looked at the two primary Level-1 triggers configured for the EMCal, the jet trigger (EJE) and the gamma (EGA) trigger\cite{Bourrion:2010js}.  Although both of the Level-1 triggers were investigated in this analysis, only the EGA trigger was ultimately corrected  and used for the final jet cross-sections and spectra.  
+
+The EJE trigger utilizes a trigger patch consisting of 32 x 32 EMCal towers sliding by 8 towers until a patch is reconstructed that meets the minimum predefined trigger energy threshold.  Once this threshold is surpassed the event is recorded and tagged as a EJE triggered event.  A similar procedure is followed for the EGA trigger, but with a smaller patch region of 4 x 4 towers with a sliding window of 2 towers and its own predefined trigger threshold.  
+
+The bump at low-$p_{T}$ seen in Figures \ref{fig:rawjetR02} - \ref{fig:rawjetR04} is the trigger turn on curve and the peak corresponds to the trigger threshold for the EGA trigger.  Ideally, a jet in the EMCal acceptance should fire the EJE trigger and the EGA should fire due to the presence of a photon or electron.  Since the triggers increase the yield of jets measured, the spectra from the triggered data must be corrected and downscaled.  In order to calculate these corrections two pieces of code were developed.  One reconstructs the EMCal and trigger patch geometries and allows a user to set the trigger thresholds for the EJE and EGA triggers to values used during a given LHC data taking period.  The other code attempts to match the reconstructed trigger center to the jet center.  The trigger centroid is obtained using a weighted means method by summing over the number of towers in a patch and dividing this quantity by the energy in each tower.  Both sets of codes are publicly available tp the public and are officially part of ALICE software framework.  For this analysis I used a lose requirement that the EGA or EJE patch center were within the radius of a given jet.  The geometrical matching requirement followed a simple quadratic relationship,,
+
+\begin{equation}
+\sqrt{ ( \phi_{jet} - \phi_{EGA, patch} )^{2} + ( \eta_{jet} - \eta_{EGA, patch} )^{2}}  \leq R_{jet} .
+\label{eq:triggermatch}
+\end{equation}
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{DistanceJetEJER02}
+\centering
+\caption{Distance to closest reconstructed EJE patch to R = 0.2 jet with the Min Bias Pythia Monte Carlo.}
+\label{fig:DisJetEJE}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{DistanceJetEGAR02}
+\centering
+\caption{Distance to closest reconstructed EGA patch to R = 0.2 jet with the Min Bias Pythia Monte Carlo.}
+\label{fig:DisJetEGA}
+\end{figure}
+
+\noindent
+Figures \ref{fig:DisJetEJE} and \ref{fig:DisJetEGA} show the distance between a reconstructed jet and its closest reconstructed EMCal trigger patch for R = 0.2 jets in the Pythia Monte Carlo.  Since a trigger patch may be fired if two or more jets are within the geometric area of the trigger patch this could lead to double counting.  In order to correct for this, the jet spectra from the triggered data is scaled by the number of triggers, $N_{trig}$, fired that fell within the jet.  We can see that with the EGA trigger that the peak of the distribution is within the jet radius of R = 0.2 while with the EJE trigger the distribution is more uniformly distributed.  The EJE distribution can be accounted for the fact that the EJE trigger is large enough to have multiple jets matched to EJE trigger patch or vice-versa.  The fact that the distribution of seen in Figure \ref{fig:DisJetEJE} spans such a large area means that the jet center was typically not well correlated with the center of the EJE patch and this is the primary reason why the inclusion of the EMCal jet triggered data was abandoned for this thesis.
+
+Once this correction was implemented, the triggered data was then downscaled in order to combine it with the Min Bias data.  The downscale correction factors, shown in Figure \ref{fig:EMCalDownScale}, wee obtained by taking the ratio of the EMCal jet spectra to the Min Bias jet spectra and fitting the plateau region to a line.  At low-$p_{T}$, below $\sim$40 GeV,  the two data sets do not scale linearly and so the EMCal data below 40 GeV was ignored.
+
+
+\begin{figure*}[t!]
+$\begin{array}{rl}
+    \includegraphics[width=0.5\textwidth]{R02TriggerYields} &
+    \includegraphics[width=0.5\textwidth]{R03TriggerYields}\\
+    \multicolumn{2}{c}{\includegraphics[width=0.5\textwidth]{R04TriggerYields}}
+\end{array}$
+\caption[EMCal triggered data correction factors for R=0.2, R=0.3, and R=0.4 jets.]{\label{fig:EMCalDownScale}EMCal triggered data correction factors for R=0.2, R=0.3, and R=0.4 jets.}
+\end{figure*}
+
+These two corrections allow for the EMCal data to be combined with the Min Bias data.  It should be noted that the scale factors were after the Monte Carlo corrections were implemented which is discussed further on in this chapter.  With the data scaled and combined the next sections will detail more of the QA performed for this analysis.
+
+\section{Corrections to Monte Carlo}
+
+The reconstructed jet $p_{T}$ has a number of detector effects `folded' into the measurement.  These effects included such things as:
+
+\begin{itemize}
+\item Tracking inefficiencies from the TPC and ITS.
+\item Missing jet energy components from long-lived particles, such as the $K^{0}_{L}$ and neutron, that are cut by the EMCal timing requirement.
+\item TPC track $p_{T}$ and EMCal cluster energy resolutions.
+\item Hadronic corrections to the EMCal cluster spectrum.
+\item Material loss in the detectors.
+\end{itemize}
+
+\noindent
+Unfolding is a method by which these detector effects are removed from the raw inclusive jet spectra so that a `true' jet spectra may be obtained and compared with theoretical calculations or other experimental results.  
+
+In order to unfold a jet spectra, it is necessary to generate a response matrix that simulates the described effects above.  After the response matrix is generated a number of statistical approaches including, Bayesian, Singular Value Decomposition (SVD), or Bin-by-Bin, may be applied to unfold the raw jet spectra.  In order to generate the response matrix, a Pythia generated event is embedded into a GEANT simulation of the ALICE detector.  Due to the fact that the performance and efficiency of the ALICE detector may change between the data taking periods each simulation is `anchored' to a given LHC.  These anchors contain all the hot and dead sectors for the subdetectors, along with their calibrated performance during that specified data taking.  Two Monte Carlo data sets were produced with the Min Bias trigger simulated for the full 8 TeV run, the first was a Pythia generator using the Monesh-2013 tune and the second was a Min Bias tune of the PHOjet Monte Carlo package.  Both data sets were explored for this thesis and it was decided that the final corrected spectra would be obtained via unfolding with the Pythia Monte Carlo data set.  The magnitude of any one of the effects unfolding is supposed to account for is not expected to be very large, but combined may be significant, thus unfolding is an important step in this analysis.
+
+\subsubsection{Response Matrix}
+Given a truth-level, the Monte Carlo event at the particle level, jet $p_{T}$ we wish to reconstruct that jet's $p_{T}$ at the detector-level.  The particle-level Pythia jets are constructed from the primary particles generated via Pythia, while excluding any daughter decay particles in order to avoid double counting.  In addition the tracking efficiency in Pythia is known to deviate from nature.  This is due to Pythia under predicting the production of strange quarks.  
+Constructing the response matrix in this case was calculated on a jet-by-jet basis.  The particle-level jet centroid ($\phi_{part}$,$\eta_{part}$)is matched to the detector-level jet via a constrain on the displaced distance between the two jet centroids in ($\phi$,$\eta$).  This distance was constrained to: $\Delta  R = \sqrt{(\phi_{part} - \phi_{det})^{2} + (\eta_{part} - \eta_{det})^{2}} \leq 0.25 \; $.  Once a jet was matched at the detector level to a jet generated from the particle level the response matrix was incremented by jet $p_{T}$ at both the detector and Monte Carlo levels.  The response matrix was generated with a fine binning width of 1 GeV. 
+
+\begin{figure*}[t!]
+$\begin{array}{rl}
+    \includegraphics[width=0.5\textwidth]{responseR02} &
+    \includegraphics[width=0.5\textwidth]{responseR03}\\
+    \multicolumn{2}{c}{\includegraphics[width=0.5\textwidth]{responseR04}}
+\end{array}$
+\caption[Response Matrices for R = 0.2, R=0.3, and R = 0.4 jets.]{\label{fig:response}Response Matrices for R = 0.2, R=0.3, and R = 0.4 jets.}
+\end{figure*}
+
+Figure \ref{fig:response} shows the response matrices for the R = 0.2, R = 0.3, and R = 0.4 jets generated with the prescribed manner.  The response matrices display a linear relationship below 50 GeV on both axis and show that above $\sim$100 GeV the matrices are statistically starved.  This is primarily because the Monte Carlo Pythia and PHOJet data sets generated for the 8 TeV pp run did not model the high-$p_{T}$ triggers associated with the EMCal.  The particle jet finders configured for the response matrices allowed for jet finding down to a 100 MeV jet candidate at the particle level with no constraints on the minimum particle momentum or energy for a constituent.  The detector level jet finders were configured in the same manner as they were for the raw jet spectra measurement.  
+
+\subsubsection{Corrections to Particle Level}
+
+Unfolding was performed using the \verb+RooUnfold+\cite{Adye:2011gm} software package.  Corrections were applied using the bin-by-bin\cite{Cowan:2002in} algorithm. 
+
+\begin{equation}
+C_{MC} \big( p_{T}^{low} : p_{T}^{high} \big) =  \frac{  \int^{p_{T}^{high}}_{p_{T}^{low}} dp_{T} \; \frac{dF^{uncorr}_{meas}}{dp_{T}} \times \frac{d^{2}N^{particle}_{MC}/d\eta \, dp_{T}}{d^{2}N^{detector}_{MC}/d\eta \, dp_{T}}  } { \int^{p_{T}^{high}}_{p_{T}^{low}} dp_{T} \; \frac{dF^{uncorr}_{meas}}{dp_{T}} }
+\label{eq:binbybin}
+\end{equation}
+
+\noindent
+where $d^{2}N^{particle}_{MC}/dp_{T} \, d\eta$ is the Pythia particle level inclusive jet spectra, $d^{2}N^{detector}_{MC}/dp_{T} \, d\eta$ is the GEANT detector level inclusive jet spectra, $dF^{uncorr}_{meas} / dp_{T}$ is a weight function which minimizes the dependence on the two simulation spectra shapes, and finally $p_{T}^{low}$ and $p_{T}^{high}$ are the lower and upper bin limits.  Due to the limited statistics derived from the Monte Carlos available, the unfolding procedure was stable only in unfolding the truth level jet spectra for the range: $p_{T,jet} \, \epsilon \;$ [10 GeV, 120 GeV] for both the raw Min Bias and EMCal triggered data sets.  The only way to get around this crutch to the analysis would be to ask the ALICE collaboration to make new official particle + detector level simulations that included the EMCal trigger.  The final truth value for the jet spectra will be reported in this range.
+
+
+
+\subsubsection{Unfolded Min Bias Spectra}
+
+\begin{figure}[h]
+\includegraphics[width=8cm]{RawandUnfoldedSpectraMBR03}
+\centering
+\caption{Unfolded jet spectra with fine binning for R = 0.3}
+\label{fig:Unfoldfine}
+\end{figure}
+
+An example of the output from the bin-by-bin unfolding with the fine binning for R = 0.3 jet is shown in Figure \ref{fig:Unfoldfine}.  It should be noted that at low-$p_{T}$ it was observed that unfolding increased the yield of the spectra while at high-$p_{T} \geq \,$ 40 GeV the yield was decreased for all jet radii in this analysis.  This is most likely due to the lack of statistics in the response matrix.  Once the bin-by-bin unfolding has been performed for the fine binned spectra the output along with the bin-by-bin correction factors are rebinned using a variable binning between 10 GeV and 120 GeV, these corrected spectra are shown in Figure \ref{fig:unfoldMinbias}.
+
+
+\begin{figure*}[t!]
+$\begin{array}{rl}
+    \includegraphics[width=0.5\textwidth]{UnfoldedR02MinBias} &
+    \includegraphics[width=0.5\textwidth]{UnfoldedR03MinBias}\\
+    \multicolumn{2}{c}{\includegraphics[width=0.5\textwidth]{UnfoldedR04MinBias}}
+\end{array}$
+\caption[Corrected Jet Spectra to Monte Carlo level for R = 0.2, R=0.3, and R = 0.4 jets.]{\label{fig:unfoldMinbias}Unfolded Min Bias Jet Spectra with correction factors, $C_{MC}$, for R = 0.2, R=0.3, and R = 0.4 jets.}
+\end{figure*}
+
+\subsubsection{Unfolded EMCal Triggered Spectra}
+The unfolding procedure was repeated again for the EMCal triggered jet spectra.  The response matrix from the Min Bias sample was used for the bin-by-bin unfolding and performed using a fine binning.  The detector level and particle level jets were configured in the same manner as above and the output from the unfolded triggered spectra were reported after rebinning to a variable size over the same kinematic range, as seen in Figure \ref{fig:unfoldEGA}.
+
+\begin{figure*}[t!]
+$\begin{array}{rl}
+    \includegraphics[width=0.5\textwidth]{UnfoldedR02EGAtrigger} &
+    \includegraphics[width=0.5\textwidth]{UnfoldedR03EGAtrigger}\\
+    \multicolumn{2}{c}{\includegraphics[width=0.5\textwidth]{UnfoldedR04EGAtrigger}}
+\end{array}$
+\caption[Corrected EMCal Triggered Jet Spectra to Monte Carlo level for R = 0.2, R=0.3, and R = 0.4 jets.]{\label{fig:unfoldEGA}Unfolded EMCal Triggered Jet Spectra with correction factors, $C_{MC}$, for R = 0.2, R=0.3, and R = 0.4 jets.}
+\end{figure*}
+
+
+Due to the limitations of the response matrix, the bin-by-bin unfolding of the EMCal triggered data was only stable up to 120 GeV.  Again, it should be noted that the hump in the EMCal jet spectra is due to the firing threshold of the trigger.  The unfolded EMCal jet spectra was used to estimate the ratio that the jet yields between the Min Bias and triggered data samples, from this point the trigger scaling was calculated.  Due to the lack of a trigger modeled with the 8 TeV Monte Carlo productions, were unable to extend the kinematic range of the jet spectras beyond 120 GeV.  This presents a missed opportunity in terms of the recorded data from the 8 TeV runs.  In order to address this issue a new Monte Carlo production will need to be requested from the ALICE collaboration.
+
+\section{Jet Reconstruction and Matching Efficiency}
+In order to quantify the inefficiencies due to unfolding along with the inefficiencies in the ALICE experiment in reconstructing jets, we quantify the jet reconstruction efficiency, $\epsilon_{reco} (p_{T, jet})$, and the jet matching efficiency, $\epsilon_{match} (p_{T, jet})$.
+
+\begin{equation}
+ \epsilon_{reco} (p_{T, jet}) = \frac{N_{reco}(p_{T, jet}) }{N_{Truth} (p_{T, jet})}
+\label{eq:jetrecoeff}
+\end{equation}
+
+\begin{equation}
+ \epsilon_{match} (p_{T, jet}) = \frac{N_{match}(p_{T, jet}) }{N_{Truth}(p_{T, jet})}
+\label{eq:jetmatchoeff}
+\end{equation}
+
+\noindent 
+where $N_{reco} (p_{T, jet})$ is the reconstructed jet yield at the detector level per $p_{T}$ bin, $N_{match}(p_{T, jet})$ is the reconstructed jet at the detector level that was matched to a particle level jet per $p_{T}$ bin, and $N_{truth} (p_{T, jet})$ is the truth-level particle jet yield from the Pythia embedded event per $p_{T}$ bin.  
+
+The $N_{truth} (p_{T, jet})$ were obtained by running FastJet on Pythia events with no constituent $p_{T}$ cut, while $N_{match}(p_{T, jet})$ and $N_{reco} (p_{T, jet})$ had the same kinematic cuts as the data driven analysis mentioned earlier in this chapter.  The truth level jets contained no geometric acceptance cut in order to account for jets that may have been reconstructed at the detector level, but had no match to a particle level because part of the particle level jet was outside the EMCal acceptance.  The spectrums were corrected by these efficiencies after the bin-by-bin corrections were performed.  The correction factors are shown in Figures \ref{fig:JetMatcheff} and \ref{fig:JetRecoeff}.
+
+\begin{figure*}[t!]
+$\begin{array}{rl}
+    \includegraphics[width=0.5\textwidth]{Ematch_R02} &
+    \includegraphics[width=0.5\textwidth]{Ematch_R03}\\
+    \multicolumn{2}{c}{\includegraphics[width=0.5\textwidth]{Ematch_R04}}
+\end{array}$
+\caption[Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4. ]{\label{fig:JetMatcheff}Jet matching efficiency for jets between R = 0.2 and R = 0.4.}
+\end{figure*}
+
+\begin{figure*}[t!]
+$\begin{array}{rl}
+    \includegraphics[width=0.5\textwidth]{Ereco_R02} &
+    \includegraphics[width=0.5\textwidth]{Ereco_R02}\\
+    \multicolumn{2}{c}{\includegraphics[width=0.5\textwidth]{Ereco_R02}}
+\end{array}$
+\caption[Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4.]{\label{fig:JetRecoeff}Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4}
+\end{figure*}
+
+
+The major steps performed for this thesis have been described in this chapter.  The final chapter will go over the systematic errors reported for the final results, present the final cross-sections measured at 8 TeV, and compare these results to previous measurements and  calculations.
 
 \section{Systematic Uncertainties}
 
@@ -124,6 +371,7 @@ A summary of the total systematic errors used in the final analysis is given in 
 
 \begin{table}[h!]
 \centering
+\caption{Summary of JES and Yield Uncertainties.}
 \begin{tabular}{ |p{5cm}||p{3cm}|p{3cm}|p{3cm}|  }
  \hline
  \multicolumn{4}{|c|}{Systematic Errors} \\
@@ -145,95 +393,8 @@ Total Sys (low-$p_{T}$) & 8.9\%  & 6.6\% & 10.9\%\\
 (high-$p_{T}$) & 10.3\%  & 9.1 \% & 14.5\%\\
 \hline
 \end{tabular}
-\caption{Summary of JES and Yield Uncertainties.}
+
 \label{table:1}
 \end{table}
 
 
-\section{8 TeV Inclusive Jet Results and Discussion}
-
-\subsubsection{Differential Jet Cross-Section}
-
-\begin{figure}[h]
-\includegraphics[width=8.5cm]{XSecR02}
-\centering
-\caption{8 TeV inclusive jet differential cross-section for R = 0.2.}
-\label{fig:JetXsecR02}
-\end{figure}
-
-\begin{figure}[h]
-\includegraphics[width=8.5cm]{XSecR03}
-\centering
-\caption{8 TeV inclusive jet differential cross-section for R = 0.3.}
-\label{fig:JetXsecR03}
-\end{figure}
-
-\begin{figure}[h]
-\includegraphics[width=8.5cm]{XSecR04}
-\centering
-\caption{8 TeV inclusive jet differential cross-section for R = 0.4.}
-\label{fig:JetXsecR04}
-\end{figure}
-
-\noindent
-Figures \ref{fig:JetXsecR02}, \ref{fig:JetXsecR03}, and \ref{fig:JetXsecR04} show the inclusive jet cross-sections from R = 0.2 through R = 0.4 jet radii.  The figures are split into two sections.  The cross-sections as measured from ALICE along with the associated statistical errors are shown in black.  The associated systematic errors from the ALICE data as discussed in this chapter are shown as the green shaded area.  Min Bias Monte Carlo generated events from Pythia (Red), PHOjet (blue), and Herwig (magenta) are included and shown as colored bands to convey the statistical uncertainties from each simulation.  On the bottom half of each plot are the relative ratios of the ALICE jet cross-sections to one of the Monte Carlos using the same color scheme as above.  
-
-What can we tell from these results?  First, we can see that the cross-sections are measured over a wide range, about five orders of magnitude, between 20 GeV/\textit{c} to 160 GeV/\textit{c} in $p_{T}$.  The R = 0.2 and R = 0.3 cross-sections show a well defined trend between 20 GeV/\textit{c} - $\sim$100 GeV/c, after this point the data  has a hard drop after which the data points show wider fluctuations.  This same trend is seen in the R = 0.4 jet cross-section but the jerk happens earlier in $p_{T}$ around  80 GeV/\textit{c}.  The fluctuations are an artifact of the bin-by-bin corrections and the lack of EMCal trigger simulations as discussed in Chapter \ref{ch:analysis}.  
-
-Comparing the data to the Monte Carlos we see that the two simulations produced by the ALICE Collaboration, Pythia and PHOjet, tend to under predict the data.  PHOjet has the least agreement with the data.  The poor agreement with PHOjet can be explained by the fact that PHOjet is an older Monte Carlo generator and better tuned to describing lower energy experiments from the past.  PHOjet may also be under estimating the data because it focuses on describing photon interactions.  The Monte Carlo Simulation from Herwig was produced on a local server farm at the University of Tennessee.  I used a Min Bias tune of Herwig and generated 150 million events and we see that reflected in the low statistical errors.  The Herwig simulation tends to slightly over predict the data.  Both Herwig and Pythia agree well with the data between 20 GeV/c to 100 GeV/c.  It is hard to say that one is `better' then the other because of the relatively large statistical errors from Pythia.  However, for the R = 0.4 jet cross-section we can see that the data seems to trend better towards the clusterization description of hadronization used in Herwig.
-
-Through scaling these results may serve as a reference for heavy-ion collisions and help to better constrain our understanding of parton energy loss mechanisms in the QGP.  
-
-
-\subsubsection{Jet Cross-Section Ratios}
-
-\begin{figure}[h]
-\includegraphics[width=8.5cm]{XSecRatioR02}
-\centering
-\caption{Ratio of the jet cross-sections R = 0.2  to R = 0.4.}
-\label{fig:JetXsecRatioR02}
-\end{figure}
-
-\begin{figure}[h]
-\includegraphics[width=8.5cm]{XSecRatioR03}
-\centering
-\caption{Ratio of the jet cross-sections R = 0.3  to R = 0.4.}
-\label{fig:JetXsecRatioR03}
-\end{figure}
-
-
-\begin{figure}[h]
-\includegraphics[width=8.5cm]{XSecRatioR023}
-\centering
-\caption{Ratio of the jet cross-sections R = 0.2  to R = 0.3.}
-\label{fig:JetXsecRatioR023}
-\end{figure}
-
-
-\noindent
-The ratio of the jet cross-sections as a function of the jet radii is defined as,
-
-\begin{equation}
-\mathscr{R} (p_{T}; \, R_{1},R_{2}) = \frac{d\sigma(R_{1}) /d\eta \, dp_{T} }{d\sigma (R_{2}) /d\eta \, dp_{T}},
-\label{eq:jetxsecratio}
-\end{equation}
-
-\noindent
-where $R_{1}$ and $R_{2}$ are the jet radii in question. This probes the transverse structure of jets and is sensitive to QCD hardonization\cite{SOYEZ201159}.  Figures \ref{fig:JetXsecRatioR02}, \ref{fig:JetXsecRatioR03}, and \ref{fig:JetXsecRatioR023} report the ratios of the jet cross-sections between R = 0.2 / R = 0.4, R = 0.3 / R= 0.4, and R = 0.2 / R = 0.3 respectively.  The figures also show the relative ratios plotted from the 8 TeV ALICE data, Pythia, PHOjet, and Herwig using the same color schema as the jet cross-sections.  Errors between the cross-sections of different radii are considered uncorrelated and added in quadrature to form the error bars reported in the figures.
-
-A similar analysis to this thesis was performed using a 2.76 TeV  data sample collected from ALICE\cite{MA2013319} and it is compared to Figure \ref{fig:JetXsecRatioR02} and \ref{fig:JetXsecRatioR023} in green bullet points.  In order to avoid double counting by sampling the same jet  found using an R = 0.2 and R = 0.4 jet finder these ratios use disjointed samples of the 8 TeV data set.  From the results of the cross-section ratios, we see that the 8 TeV data as reported from this thesis agrees well with the 2.76 TeV results in Figure \ref{fig:JetXsecRatioR02}.  Interestingly it seems that the PHOjet Monte Carlo agrees well with the data for all three figures and is the simulation that agrees the best for the $\sigma (R = 0.3)$ / $\sigma (R = 0.4)$ ratio.  It can be concluded that the Pythia ratios have the least agreement because it only includes the LO matrix to calculate partonic showers, which does not model the angular ordering of QCD radiation very well.  Herwig tends to under predict the data, especially at low-$p_{T}$, which is expected and may be understood in terms of limitations modeling low energy background particles with tune used in this thesis (v2.3).  
-
-Similar to the previous results these ratios can be used to constrain jet quenching in the QGP.  These results also report the first ratio of jet cross-sections between R = 0.2 and R = 0.3.  This is especially helpful for heavy-ion collisions as most jet results from heavy-ions use either an R = 0.2 or R = 0.3 jet radius to suppress the background in the high multiplicity environment.
-
-
-\section{Conclusion}
-
-Jet cross-sections are a result of QCD interactions while the ratios of the cross-sections for jets of different radii probe the hadronization process.  The essential nature of how hadronization effects the jet cross-sections is still an open question and should be probed in future measurements at the LHC.  ALICE is in the unique position of being able to reconstruct full jets over a wide kinematic range, especially to low momentum.
-
-This thesis presents the first measurements of inclusive full jets at $\sqrt{s} = \,$ 8 TeV using the ALICE detector.  It also presents a procedure, by which using a set of corrections and QA criteria, we may obtain results comparable to pQCD Monte Carlo simulations.  The agreement between the results and Monte Carlo simulations show the jets are a well calibrated probe for testing QCD phenomena.  In terms of the kinematic reach, the results of this thesis are in good agreement with QCD calculations down to 20 GeV/\textit{c} through 100 GeV/\textit{c} in $p_{T}$.  This range may be extended with better Monte Carlos in the furture and this is currently being worked on until the results are published.  With a better Monte Carlo production we could see the range extend to between 5 GeV/\textit{c} to about 200 GeV/\textit{c} in $p_{T}$.  The comparisons with the Monte Carlos agree well, with the most tension lying with PHOJET.  However, these results are expected to improve once an improved GEANT4 Monte Carlo that models the EMCal trigger is made available.  
-
-It is striking how well both hadronization models, the Lund-String model and Clusterization model encompassed by Pythia and Herwig, agree with the data.  These are fundamentally different physics phenomenology and it begs the question , why this is?   It is interesting and exciting that some of the initial questions posed when I started my Ph.D. work remain and I am hopefully for new insights from future work in both theory and experiment.  
-
-The results from this thesis can also be used in future heavy-ion runs to probe jet quenching, as these results would serve as a baseline comparison.  The work in this thesis also presents the jet measurements from ALICE down to 20 GeV/\textit{c}, which will be important for probing energy loss in the QGP.  By measuring these very low energy jets we can probe the full energy loss mechanism for partons traversing the QGP.  Previous higher energy jet results would tend to bias to jets that traveled a very short distance through the QGP.
-
-With the increase in energy and luminosity seen at the LHC, we have moved into the era of high-precision testing of pQCD.  The work set forward by this thesis sets the stage for using jets in the future at CERN, especially after the high luminosity upgrade of the LHC is complete.  Although it dates to 2012, the 8 TeV contains some of the largest data sets available at a given energy from the LHC.  This makes it an important data set and worthy of future investigations.  I'm proud of the work presented in this body, both in terms of the data analysis and engineering aspect.  What results we will gain from the upgraded LHC and jets is only left to our imagination and to nature's mercy.

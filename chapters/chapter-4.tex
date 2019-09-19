@@ -139,16 +139,19 @@ Figure \ref{fig:ProtoIBFEres} shows the energy resolution of the iron peak as a 
 \label{fig:showersim}
 \end{figure}
 
-\section{Production of the Inner Readout Chambers in the U.S.}
+\section{Production of The Inner Readout Chambers}
 
 Once a final design was settled on from the simulation and prototype R\&D, the project entered the production phase.  A minimum of 36 new ROCs would need to be built with the 4-GEM stack to replace the old ROCs in the TPC, while 4 additional ROCs would be constructed as spares.  Due to the size and weight of the ROCs, production of the IROCs would take place in the United States and the OROC production mainly in Germany. 
 
+\afterpage{%
 \begin{figure}[h]
-\includegraphics[width=10.0cm]{IROCproductionflow}
+\includegraphics[width=\linewidth]{IROCproductionflow}
 \centering
 \caption{Production flow of the IROCs (red), OROCs (blue), and GEM foils (green)\cite{Dick2017QM}. }
 \label{fig:IROCprod}
 \end{figure}
+\clearpage
+}
 
 \noindent
 Figure \ref{fig:IROCprod} shows the production flow for the construction of the 4-GEM ROCs.  After GEMs are received from the manufacturer, they go through a number of quality assurance tests before they are shipped to Wayne State University, where they are stretched and mounted for the IROCs.   The aluminum bodies are manufactured at the University of Texas Austin and shipped to Tennessee.  At Tennessee we glue the pad plane, aluminum body and strong back together before it is shipped to Yale, where the chambers are fit with the GEMs from Wayne State.  The production steps for the OROC mirror those performed by the IROC except that it was performed mainly by German institutes.
@@ -166,7 +169,7 @@ Figure \ref{fig:IROCassm} shows the procedure followed at Tennessee in order to 
 
 A stringent set of quality assurance (QA)\cite{Brucken:2018rej}\cite{Brucken:2017qjy} protocols were implemented to monitor any damage sustained during transport and to quickly identify any flaws in the production procedures.  The QA can be broken into two major categories: QA performed on the GEM foils as received from the manufacturer and QA performed on complete/semi-complete chambers as they were going through the different production steps.  I will discuss only the QA tasks that I was directly involved with.
 
-\subsubsection{GEM QA}
+\subsubsection{GEM Quality Assurance}
 
 In order to evaluate the performance of a GEM foil, a spark test was performed on every foil.  Sparks are caused by the discharge of the foil and may be due to the presence of dust on a foil, imperfections in the hole geometry, or a short between the two copper layers of the GEM.  The final design of the GEM foil segmented each into twelve sectors with a 10$\: M \Omega$ bias resistor to ground across every segment.  Any sparks from charge accumulation that occur on the GEM will only discharge a given segment and not the entire foil.  Because of the delicate nature of the GEM foil, sparks have the potential to permanently damage a foil or seriously effect the performance of a ROC.  Thus GEMs with a high spark rate should be excluded as soon as possible in the production flow.
 
@@ -180,7 +183,7 @@ In order to evaluate the performance of a GEM foil, a spark test was performed o
 \noindent
 The GEM foil spark test involved mounting each foil in a high voltage box, which is flushed with $N_{2}$ until it reaches a relative humidity of $\approx 10\%$.  Once this humidity is reached 500 V is placed across each segment of the GEM and and monitored with a LabView interface.  A spark is defined as the LabView recording a current above 10 nA across the bias resistor through any GEM segment and read by a multi-channel picoammeter.  The criteria for a GEM to fail this QA was to have more than five sparks over a 20 minute recording window.
 
-\subsubsection{Chamber QA}
+\subsubsection{Chamber Quality Assurance}
 
 Most of the QA I helped with was on ROC chambers as they went through the production steps.  Before completed IROC chambers were sent to Yale, I performed a gas leak test.  The leak test consisted of mounting an individual chamber into an aluminum test vessel and flushing the inside of the vessel with $N_{2}$ gas.  By using a flowmeter to measure the rate that $N_{2}$ gas enters the test vessel and an oxygen sensor to measure the amount of oxygen present at the output of the test vessel, we can infer the leak rate of each IROC chamber.  Figure \ref{fig:LeakTest} shows a schematic of the setup, on the left, and a typical output from the LabView interface on the right.  By flowing at two different rates and measuring the oxygen content at each rate we could confirm the leak rate.
 

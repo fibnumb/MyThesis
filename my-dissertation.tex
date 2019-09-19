@@ -54,6 +54,7 @@
 \usepackage{mathrsfs}
 \usepackage{cleveref}
 \usepackage{float}
+\usepackage{afterpage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This section formats landscape pages properly with the correct page number.
@@ -115,14 +116,22 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Fucking left quote symbol ` and not '    
+
+% \afterpage{%
+% \begin{figure}
+%  ...
+%  \end{figure}
+%  \clearpage
+%  }
      
     \include{front-matter}
     \include{chapters/chapter-1}
-    \include{chapters/chapter-2}
-    \include{chapters/chapter-3}
-    \include{chapters/chapter-4}
-    \include{chapters/chapter-5}
-    \include{chapters/chapter-6}
+    \include{chapters/chapter-2} %\label{ch:qcd}
+    \include{chapters/chapter-3}%\label{ch:alice}
+    \include{chapters/chapter-4}%\label{ch:tpcu}
+    \include{chapters/chapter-5}% \label{ch:data}
+    \include{chapters/chapter-6}%\label{ch:error}
+    \include{chapters/chapter-7}%\label{ch:cando}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % BIBLIOGRAPHY
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -139,7 +148,7 @@
     % APPENDIX - OPTIONAL - COMMENT OUT IF NOT NEEDED
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
-    \makeAppendixPage{2}   % Input the number of appendices
+    \makeAppendixPage{1}   % Input the number of appendices
     \appendix    
     \include{back-matter/appendix-1}
     %\include{back-matter/appendix-2}
