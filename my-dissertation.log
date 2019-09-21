@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  21 SEP 2019 12:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  21 SEP 2019 12:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1021,4 +1021,98 @@ Package pdftex.def Info: figures/pdf/ResoSim.png  used on input line 71.
 File: figures/pdf/4GEMROC.png Graphic file (type png)
 <use figures/pdf/4GEMROC.png>
 Package pdftex.def Info: figures/pdf/4GEMROC.png  used on input line 81.
-(pdftex.def)             Req
+(pdftex.def)             Requested size: 284.52756pt x 146.24026pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[54 <./figures/pdf/ResoSim.png>] [55 <./figures/pdf/4GEMROC.png>]
+<figures/pdf/GemProtoPID.png, id=1239, 961.5925pt x 408.52625pt>
+File: figures/pdf/GemProtoPID.png Graphic file (type png)
+<use figures/pdf/GemProtoPID.png>
+Package pdftex.def Info: figures/pdf/GemProtoPID.png  used on input line 113.
+(pdftex.def)             Requested size: 469.75502pt x 199.57495pt.
+<figures/pdf/ProtoIBFEres.png, id=1243, 573.14125pt x 491.8375pt>
+File: figures/pdf/ProtoIBFEres.png Graphic file (type png)
+<use figures/pdf/ProtoIBFEres.png>
+Package pdftex.def Info: figures/pdf/ProtoIBFEres.png  used on input line 123.
+(pdftex.def)             Requested size: 199.16928pt x 170.9149pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[56 <./figures/pdf/GemProtoPID.png>]
+<figures/pdf/GEMShowerSim.png, id=1255, 571.13374pt x 394.47375pt>
+File: figures/pdf/GEMShowerSim.png Graphic file (type png)
+<use figures/pdf/GEMShowerSim.png>
+Package pdftex.def Info: figures/pdf/GEMShowerSim.png  used on input line 132.
+(pdftex.def)             Requested size: 227.62204pt x 157.21487pt.
+ [57 <./figures/pdf/ProtoIBFEres.png> <./figures/pdf/GEMShowerSim.png>]
+<figures/pdf/IROCAssemblyUTK.png, id=1265, 1002.74625pt x 424.58624pt>
+File: figures/pdf/IROCAssemblyUTK.png Graphic file (type png)
+<use figures/pdf/IROCAssemblyUTK.png>
+Package pdftex.def Info: figures/pdf/IROCAssemblyUTK.png  used on input line 15
+6.
+(pdftex.def)             Requested size: 469.75502pt x 198.90768pt.
+ [58 <./figures/pdf/IROCAssemblyUTK.png>]
+<figures/pdf/IROCproductionflow.png, id=1272, 633.36626pt x 489.83pt>
+File: figures/pdf/IROCproductionflow.png Graphic file (type png)
+<use figures/pdf/IROCproductionflow.png>
+Package pdftex.def Info: figures/pdf/IROCproductionflow.png  used on input line
+ 163.
+(pdftex.def)             Requested size: 469.75502pt x 363.30563pt.
+ [59 <./figures/pdf/IROCproductionflow.png>] [60
+
+]
+<figures/pdf/PicoSetup.png, id=1286, 800.9925pt x 316.18124pt>
+File: figures/pdf/PicoSetup.png Graphic file (type png)
+<use figures/pdf/PicoSetup.png>
+Package pdftex.def Info: figures/pdf/PicoSetup.png  used on input line 173.
+(pdftex.def)             Requested size: 469.75502pt x 185.43085pt.
+ [61 <./figures/pdf/PicoSetup.png>]
+<figures/pdf/LeakSetupUTK.png, id=1296, 1015.795pt x 310.15875pt>
+File: figures/pdf/LeakSetupUTK.png Graphic file (type png)
+<use figures/pdf/LeakSetupUTK.png>
+Package pdftex.def Info: figures/pdf/LeakSetupUTK.png  used on input line 187.
+(pdftex.def)             Requested size: 469.75502pt x 143.43198pt.
+
+[62 <./figures/pdf/LeakSetupUTK.png>]
+<figures/pdf/AcceptanceCriteria.png, id=1304, 1038.88126pt x 569.12625pt>
+File: figures/pdf/AcceptanceCriteria.png Graphic file (type png)
+<use figures/pdf/AcceptanceCriteria.png>
+Package pdftex.def Info: figures/pdf/AcceptanceCriteria.png  used on input line
+ 204.
+(pdftex.def)             Requested size: 227.62204pt x 124.69579pt.
+ [63 <./figures/pdf/AcceptanceCriteria.png>]
+<figures/pdf/LHCSparkTest.png, id=1314, 714.67pt x 462.72874pt>
+File: figures/pdf/LHCSparkTest.png Graphic file (type png)
+<use figures/pdf/LHCSparkTest.png>
+Package pdftex.def Info: figures/pdf/LHCSparkTest.png  used on input line 217.
+(pdftex.def)             Requested size: 398.33858pt x 257.9119pt.
+ [64 <./figures/pdf/LHCSparkTest.png>]) [65]
+:<-
+:<+ chapters/chapter-5.tex
+\openout2 = `chapters/chapter-5.aux'.
+
+(./chapters/chapter-5.tex
+Chapter 5.
+<figures/pdf/8TeVRunefficency.png, id=1325, 2260.445pt x 939.51pt>
+File: figures/pdf/8TeVRunefficency.png Graphic file (type png)
+<use figures/pdf/8TeVRunefficency.png>
+Package pdftex.def Info: figures/pdf/8TeVRunefficency.png  used on input line 6
+.
+(pdftex.def)             Requested size: 483.69684pt x 201.03021pt.
+
+Overfull \hbox (13.94182pt too wide) in paragraph at lines 6--8
+ [][] 
+ []
+
+[66
+
+
+
+
+ <./figures/pdf/8TeVRunefficency.png>] [67] [68]
+<figures/pdf/RejectionReasons.pdf, id=1348, 569.12625pt x 418.56375pt>
+File: figures/pdf/RejectionReasons.pdf Graphic file (type pdf)
+<use figu
