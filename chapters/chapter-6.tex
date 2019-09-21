@@ -3,7 +3,7 @@
 This large amount of data offers a unique chance to explore jet cross-sections using high statistics.   In order to measure the jet double differential cross-section, the following formula is used,
 
 \begin{equation}
-	\frac{d^{2} \sigma^{jet}}{d\eta \, dp_{T}} = \frac{1}{\epsilon_{reco}} \frac{A_{trigger}}{\epsilon_{trigger}(p_{T})} \times C_{MC} \times \frac{1}{A(p_{T}) } \times \frac{1}{\mathscr{L}_{int}} \times \frac{dN^{2}_{jet}}{dp_{T} \, d\eta}
+	\frac{d^{2} \sigma^{jet}}{d\eta \, dp_{T}} = \frac{1}{\epsilon_{reco}} \frac{A_{trigger}}{\epsilon_{trigger}(p_{T})} \times C_{MC} \times \frac{1}{A} \times \frac{1}{\mathscr{L}_{int}} \times \frac{dN^{2}_{jet}}{dp_{T} \, d\eta}
 \label{eq:xsecdef}
 \end{equation}
 
@@ -15,7 +15,7 @@ where,
   \item $A_{trigger}$ is the acceptance for EMCal triggered events and $\epsilon_{trigger}(p_{T})$ is the EMCal trigger efficiency.  These factors correct for imperfections in the electronics of the EMCal and the overall factors are equal to one in Min Bias events.
   \item $C_{MC}$ is a correction factor due to detector effects and it allows for comparisons between the ALICE experiment and other experiments or theoretical calculations.  Unfolding is used to determine this factor.
   \item $\mathscr{L}_{int}$ is the integrated luminosity during the period when the data was recorded.
-  \item $A(p_{T})$ is the geometrical detector acceptance.
+  \item $A$ is the geometrical detector acceptance.
   \item $\frac{dN^{2}_{jet}}{dp_{T} \, d\eta}$ is the inclusive jet momentum spectra.
   
 \end{itemize}
@@ -24,7 +24,7 @@ Up to this point I have given an overview of the physics background for jets cre
 
 \section{Raw Jet Spectra}
 
-This analysis measured inclusive jet results for radii between 0.1 and 0.5.  However, jet results for radii R = 0.2 to R = 0.4 will be presented in the body of this chapter while results from the other jet radii are still being investigated.  Figures \ref{fig:rawjetR02}, \ref{fig:rawjetR03}, and \ref{fig:rawjetR04} show the raw (uncorrected) $p_{T}$ spectra for inclusive jets from both Min Bias and EMCal triggered data.  It is also evident from these figures that the EMCal triggered data greatly extends the kinematic reach of the measured jet spectra, to about 200 GeV/c.  The next sections of this chapter will discuss the QA implemented to the data, trigger scaling, unfolding, and other corrections used in this thesis. 
+This analysis measured inclusive jet results for radii between 0.1 and 0.5.  However, jet results for radii R = 0.2 to R = 0.4 will be presented in the body of this chapter.  Figures \ref{fig:rawjetR02}, \ref{fig:rawjetR03}, and \ref{fig:rawjetR04} show the raw (uncorrected) $p_{T}$ spectra for inclusive jets from both Min Bias and EMCal triggered data.  It is also evident from these figures that the EMCal triggered data greatly extends the kinematic reach of the measured jet spectra, to about 200 GeV/c.  The EMCal data introduces a bias at low-$p_{T}$ as seen in the different distribution shapes.  The next sections of this chapter will discuss the QA implemented to the data, trigger scaling, unfolding, and other corrections used in this thesis. 
 
 \afterpage{%
 \begin{figure}
@@ -73,7 +73,7 @@ For jets between R = 0.1 through R = 0.5 the following jet acceptance correction
 \caption{EMCal jet acceptance for radii 0.1 - 0.5.}
 \begin{tabular}[b]{|c|c|c|}
 	\hline
-	Jet R & $A(p_{T})$ \\ \hline
+	Jet R & $ A $ \\ \hline
 	0.1 & 0.296 \\ \hline
 	0.2 & 0.214\\ \hline
 	0.3 & 0.146\\ \hline
@@ -84,7 +84,7 @@ For jets between R = 0.1 through R = 0.5 the following jet acceptance correction
 
 \end{table}
 
-\section{EMCal Triggered Data}
+\section{EMCal Triggered Data and Scaling}
 
 The EMCal triggered data for the 8 TeV data greatly extends the kinematic reach for the spectra.  This thesis looked at the two primary Level-1 triggers configured for the EMCal, the jet trigger (EJE) and the gamma (EGA) trigger\cite{Bourrion:2010js}.  Although both of the Level-1 triggers were investigated in this analysis, only the EGA trigger was ultimately corrected  and used for the final jet cross-sections and spectra.  
 
@@ -240,24 +240,25 @@ $\begin{array}{rl}
 \begin{figure*}[t!]
 $\begin{array}{rl}
     \includegraphics[width=0.5\textwidth]{Ereco_R02} &
-    \includegraphics[width=0.5\textwidth]{Ereco_R02}\\
-    \multicolumn{2}{c}{\includegraphics[width=0.5\textwidth]{Ereco_R02}}
+    \includegraphics[width=0.5\textwidth]{Ereco_R03}\\
+    \multicolumn{2}{c}{\includegraphics[width=0.5\textwidth]{Ereco_R04}}
 \end{array}$
 \caption[Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4.]{\label{fig:JetRecoeff}Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4}
 \end{figure*}
 
 
-The major steps performed for this thesis have been described in this chapter.  The final chapter will go over the systematic errors reported for the final results, present the final cross-sections measured at 8 TeV, and compare these results to previous measurements and  calculations.
+.
 
 \section{Systematic Uncertainties}
 
-Systematic uncertainties arise due to our limited knowledge of the precise operating conditions and performance of the experiment, they also are due to any bias in our understanding of how to fundamentally model the interactions.  The systematics may be broken into two categories: uncertainties to the jet energy scale (JES) which shifts the momentum spectra along the momentum axis, and uncertainties in the jet yield, which shift the spectra along the spectra/cross-section axis.  The systematical and statistical uncertainties presented in this analysis will be presented as errors to the yield of the spectra.  Due to the fact that the $p_{T}$ distribution follows a power law function, $d\sigma/dp_{T} \sim p_{T}^{-5}$ uncertainties to the JES are converted to yield uncertainties by dividing each one by five.
+The systematics may be broken into two categories: uncertainties in the jet energy scale (JES) which shifts the momentum spectra along the momentum axis, and uncertainties in the jet yield, which shift the spectra along the spectra/cross-section axis.  The systematical and statistical uncertainties presented in this analysis will be reported as errors to the yield of the spectra. 
+ Due to the fact that the $p_{T}$ distribution follows a power law function, $d\sigma/dp_{T} \sim p_{T}^{-5}$ uncertainties to the JES are converted to yield uncertainties by dividing each one by five.
 The low statistics at the highest $p_{T}$ bins in this analysis mean that uncertainties in this range may have large statistical fluctuations.  Another way to put this is that small systematic variations for the input of the jet spectra will have a dramatic effect over sparsely filled bins versus bins with a low granularity.  As such it may be necessary to extrapolate the systematic from a low $p_{T}$ bin to those at the highest $p_{T}$ range.  The systematics were performed on both the Min Bias and EMCal triggered data samples but no large variation was observed between the two, thus only the uncertainties from the Min Bias sample are shown and are extrapolated to the triggered data.
 
 
 \subsubsection{Systematic Uncertainty to Jet Energy Scale}
 
-The following sections present and discuss the uncertainties caused by shifts to the JES.  These uncertainties were divided by a factor of 5 to convert to uncertainties on the y-axis which reports jet cross-sections.
+The following sections present and discuss the uncertainties caused by shifts to the JES. 
 
 \subsubsection{Tracking Efficiency Sensitivity}
 Only a fraction of charged tracks generated by the hard scattering of two protons will be detected in the TPC due to its finite track efficiency.  Uncertainties in the efficiency of the TPC were studied and found to account for a 5\% discrepancy\cite{Abelev:2013ala} between the number of tracks in a collision versus the number of measured tracks in proton-proton collisions.  In order to obtain the error associated with this efficiency, this analysis was reperformed maintaining all the cuts and QA discussed in Chapter \ref{ch:analysis}, while throwing out 5\% of the tracks from each event and remeasuring the jet spectra.  Once this new jet spectra was generated, it was corrected using the bin-by-bin corrections and the ratio of this new spectra was taken with the original spectra to gauge the uncertainty from the tracking efficiency.
@@ -295,7 +296,7 @@ As previously stated, the clusterizer used in this thesis was the v2 algorithm, 
 $\begin{array}{rl}
     \includegraphics[width=0.40\textwidth]{SysR02_v1Clusterization} &
     \includegraphics[width=0.40\textwidth]{SysR03_v1Clusterization}\\
-    \multicolumn{2}{c}{\includegraphics[width=0.40\textwidth]{SysR04_F07}}
+    \multicolumn{2}{c}{\includegraphics[width=0.40\textwidth]{SysR02_v1Clusterization}}
 \end{array}$
 \caption[Systematic due to clusterization algorithm.]{\label{fig:cluseff}Systematic due to EMCal clusterization algorithm; R = 0.2 \textit{(top left)}, R = 0.3 \textit{(top right)}, R = 0.4 \textit{(bottom)}.}
 \end{figure*}
