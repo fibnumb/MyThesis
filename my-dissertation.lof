@@ -1,0 +1,95 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces The fundamental particles of the Standard Model\cite {Patrignani:2016xqp}.\relax }}{2}{figure.caption.13}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Strong coupling constant ($\alpha _{s}$) as a function of the momentum transfer (Q)\cite {CMS:2014mna}.\relax }}{6}{figure.caption.14}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Diagram showing a jet created by two partons undergoing a hard scattering, forming into hadrons, and detected in a calorimeter\cite {JetPic}.\relax }}{7}{figure.caption.15}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Schematic of a proton-proton collision. Starting from the bottom, two partons confined within the colliding protons have a hard interaction. The outgoing partons will induce partonic showers by radiating quarks and gluons. The partonic showers will eventually form into final state hadrons, due to confinement, which are measured in high energy experiments\cite {Dobbs:2001ck}.\relax }}{9}{figure.caption.18}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Proton PDF at $Q^{2}$ = 10 GeV (left) and $Q^{2}$ = 10 TeV (right) from the NNPDF Collaboration\cite {Feltesse:2010}.\relax }}{11}{figure.caption.19}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Lowest order quark-antiquark annihilation to top-antitop pair\cite {Erdmann:2001ne}.\relax }}{12}{figure.caption.21}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Parton cascade in a hadronic collision\cite {Webber:1994zd}.\relax }}{13}{figure.caption.23}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces $u \overline {d}$ generating a $d \overline {d}$ pair via string breaking which will form color neutral hadrons, black lines show the string like equipotentials.\cite {Andersson:2002ap}.\relax }}{14}{figure.caption.24}% 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Fragmentaion functions from $e^{+}e^{-}$and DIS experiments with fits\cite {rak_tannenbaum_2013} as a function of the total cross-section, $\sigma $.\relax }}{16}{figure.caption.26}% 
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Cartoon showing collinear and infrared safe jet candidates\cite {Blazey:2000qt}.\relax }}{17}{figure.caption.27}% 
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Lego plot of all four jet finders used on a single event with R = 1 jet radius\cite {Atkin:2015msa}.\relax }}{22}{figure.caption.34}% 
+\contentsline {figure}{\numberline {2.11}{\ignorespaces The QCD phase diagram\cite {Mohanty:2013yca}.\relax }}{26}{figure.caption.38}% 
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Comparison of the processes in a proton-proton collision with no medium and a heavy-ion collision with a colored medium stage\cite {PhysRevD.27.140}.\relax }}{28}{figure.caption.41}% 
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Jet energy loss in a QCD medium\cite {Mohanty:2013yca}.\relax }}{29}{figure.caption.42}% 
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Jet $R_{AA}$ at 5.02 TeV with the ATLAS experiment\cite {Aaboud:2018twu}.\relax }}{31}{figure.caption.43}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces LHC accelerator complex. The four main experiments are shown in their relative locations\cite {Mobs:2197559}.\relax }}{34}{figure.caption.45}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The ALICE Detector at CERN\cite {Alberico:2011zy}.\relax }}{38}{figure.caption.50}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces ALICE tracker, multiplicity, timing, and vertex detectors located near the interaction point\cite {Alberico:2011zy}.\relax }}{38}{figure.caption.51}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The ALICE Time Projection Chamber\cite {2010NIMPA.622..316A}.\relax }}{40}{figure.caption.54}% 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The TPC readout region\cite {diener}.\relax }}{41}{figure.caption.56}% 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces TPC momentum and tracking resolution\cite {Abelev:2014ffa}.\relax }}{43}{figure.caption.58}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {TPC momentum resolution}}}{43}{subfigure.6.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ITS-TPC track matching efficiency}}}{43}{subfigure.6.2}% 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces ALICE EMCal along with super modules, tower strips, and towers\cite {1742-6596-110-3-032006}.\relax }}{44}{figure.caption.60}% 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Energy resolution in the EMCal measured in a 2007 test beam at CERN (blue) compared to GEANT3 simulations of the EMCal (orange), fits for the parameters A, B, and C are also shown\cite {Abeysekara:2010ze}.\relax }}{46}{figure.caption.62}% 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Cluster Spectra from the ALICE EMCal. MinBias is shown in black while the red and blue points show the spectra using the gamma trigger at two energy thresholds\cite {Jahnke:2018mrq}.\relax }}{47}{figure.caption.64}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Simulation of the invariant mass spectra for dileptons in a typical heavy-ion run with current ALICE performance (left) and after upgrade of ALICE for Run-3 (right) in PbPb at $\sqrt {s_{NN}}$ = 5.5 TeV. The dilepton yields originating from the QGP are shown (red and orange), along with background contributions from light-hadrons (blue), and charm (magenta)\cite {Abelev:1475243}.\relax }}{50}{figure.caption.65}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Scanning electron microscope image of a GEM foil from top (left) and profile (right)\cite {Brucken:2017qjy}.\relax }}{51}{figure.caption.66}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Profile of GEM with electric-field lines and gradients (left). Simulation of an ionization electron (yellow line) entering a GEM from a drift volume, amplification electrons (green dots, yellow lines) and back flow ions (red lines) are created (right)\cite {Bhattacharya:2017yaj}.\relax }}{52}{figure.caption.67}% 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces ITS-TPC matching \textit {(left)} and inverse momentum resolution \textit {(right)} for a 4-GEM stack simulated in Garfield++ \cite {Dick2017QM}. \relax }}{54}{figure.caption.68}% 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Final design of the upgraded readout chambers with a stack of 4 GEMS \cite {CERN-LHCC-2013-020}. \relax }}{55}{figure.caption.69}% 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces dE/dx resolution of the 4-GEM IROC prototype\textit {(left)} and the separation power between electrons and pions as a function of gain \textit {(right)}\cite {CERN-LHCC-2015-002}.\relax }}{56}{figure.caption.71}% 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Energy resolution of the iron peak as measured from the prototype IROC with varying GEM voltages as a function of IBF\%\cite {CERN-LHCC-2015-002}.\relax }}{57}{figure.caption.72}% 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Simulation of the four GEM (blue) layers after test beam. The configuration is such that the two GEMs closest to the drift volume (right) absorb the amplification ions created by the two GEMs closest to the readout (left) \cite {CERN-LHCC-2015-002}.\relax }}{57}{figure.caption.73}% 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces The author assembling an Inner Readout Chamber at Tennessee. \relax }}{58}{figure.caption.74}% 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Production flow of the IROCs (red), OROCs (blue), and GEM foils (green)\cite {Dick2017QM}. \relax }}{59}{figure.caption.75}% 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Schematic for the setup of the GEM foil spark test (\textit {left})\cite {Brucken:2018rej} and the GEM mounted in the HV gas box (\textit {right}). \relax }}{61}{figure.caption.77}% 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Schematic of the gas tightness testing setup at the University of Tennessee \textit {(Courtesy of Joseph Rasson)}. \relax }}{62}{figure.caption.79}% 
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Leak rate of the 49 chambers built at Tennessee with the maximum failure rate at 0.25 ml/hr shown \textit {(Courtesy of Charles Hughes)}. \relax }}{63}{figure.caption.80}% 
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Testing for chamber sparking next to the LHC beam line \textit {(left)} and real time output from the spark test during a live beam (\textit {right}). \relax }}{64}{figure.caption.81}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces LHC state during the 8 TeV run. \relax }}{66}{figure.caption.82}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Min Bias event rejection summary.\relax }}{70}{figure.caption.86}% 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Vertex displacement from primary interaction point for accepted Min Bias events.\relax }}{70}{figure.caption.87}% 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces EMCal cell occupancy after bad channels removed.\relax }}{71}{figure.caption.88}% 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Matched track-cluster distance.\relax }}{73}{figure.caption.89}% 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces EMCal cluster time distribution before cuts.\relax }}{74}{figure.caption.90}% 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Corrected EMCal cluster yield.\relax }}{74}{figure.caption.91}% 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Hybrid Track $\eta $ and $\phi $ yields.\relax }}{77}{figure.caption.92}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Hybrid Track $\eta $}}}{77}{subfigure.8.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hybrid Track $\phi $}}}{77}{subfigure.8.2}% 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Accepted hybrid track resolution.\relax }}{78}{figure.caption.93}% 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Accepted track $p_{T}$ yield.\relax }}{78}{figure.caption.94}% 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces R = 0.2 leading track $p_{T}$ per jet $p_{T}$.\relax }}{79}{figure.caption.95}% 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces R = 0.2 number of constituents in a jet per jet $p_{T}$.\relax }}{80}{figure.caption.96}% 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces R = 0.2 $z_{leading}$ from the Min Bias data sample.\relax }}{81}{figure.caption.97}% 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Jet rejection reason.\relax }}{82}{figure.caption.98}% 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces R = 0.2 NEF per jet $P_{T}$.\relax }}{83}{figure.caption.99}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Raw inclusive R = 0.2 jet spectra from the 8 TeV Min Bias and EMCal triggered data\relax }}{86}{figure.caption.100}% 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Raw inclusive R = 0.3 jet spectra from the 8 TeV Min Bias and EMCal triggered data\relax }}{87}{figure.caption.101}% 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Raw inclusive R = 0.4 jet spectra from the 8 TeV Min Bias and EMCal triggered data\relax }}{88}{figure.caption.102}% 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Distance to closest reconstructed jet patch to R = 0.2 jet with the EMCal triggered data.\relax }}{91}{figure.caption.104}% 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Distance to closest reconstructed gamma patch to R = 0.2 jet with EMCal triggered data.\relax }}{92}{figure.caption.105}% 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces EMCal triggered data correction factors for R=0.2, R=0.3, and R=0.4 jets.}}{93}{figure.caption.106}% 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Response Matrices for R = 0.2 (top left), R=0.3 (top right), and R = 0.4 (bottom) jets.}}{95}{figure.caption.108}% 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces R = 0.2 bin-by-bin corrected Min Bias jet spectra.\relax }}{98}{figure.caption.112}% 
+\contentsline {figure}{\numberline {6.9}{\ignorespaces R = 0.3 bin-by-bin corrected Min Bias jet spectra.\relax }}{99}{figure.caption.113}% 
+\contentsline {figure}{\numberline {6.10}{\ignorespaces R = 0.4 bin-by-bin corrected Min Bias jet spectra.\relax }}{100}{figure.caption.114}% 
+\contentsline {figure}{\numberline {6.11}{\ignorespaces R = 0.2 bin-by-bin corrected EMCal triggered jet spectra.\relax }}{101}{figure.caption.115}% 
+\contentsline {figure}{\numberline {6.12}{\ignorespaces R = 0.3 bin-by-bin corrected EMCal triggered jet spectra.\relax }}{102}{figure.caption.116}% 
+\contentsline {figure}{\numberline {6.13}{\ignorespaces R = 0.4 bin-by-bin corrected EMCAL triggered jet spectra.\relax }}{103}{figure.caption.117}% 
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4. }}{105}{figure.caption.118}% 
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4.}}{106}{figure.caption.119}% 
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Systematic due to TPC tracking efficiency.}}{108}{figure.caption.122}% 
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Systematic due to Hadronic correction.}}{108}{figure.caption.124}% 
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Systematic due to clusterization algorithm.}}{109}{figure.caption.126}% 
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Inclusive TPC track momentum resolution, Min Bias 8 TeV.\relax }}{110}{figure.caption.129}% 
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Systematic due to $P_{T}$ resolution.}}{111}{figure.caption.130}% 
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Systematic due to energy resolution.}}{111}{figure.caption.132}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces 8 TeV inclusive jet differential cross-section for R = 0.2.\relax }}{115}{figure.caption.137}% 
+\contentsline {figure}{\numberline {7.2}{\ignorespaces 8 TeV inclusive jet differential cross-section for R = 0.3.\relax }}{116}{figure.caption.138}% 
+\contentsline {figure}{\numberline {7.3}{\ignorespaces 8 TeV inclusive jet differential cross-section for R = 0.4.\relax }}{117}{figure.caption.139}% 
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Ratio of the jet cross-sections R = 0.2 to R = 0.4.\relax }}{120}{figure.caption.141}% 
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Ratio of the jet cross-sections R = 0.3 to R = 0.4.\relax }}{121}{figure.caption.142}% 
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Ratio of the jet cross-sections R = 0.2 to R = 0.3.\relax }}{122}{figure.caption.143}% 
+\contentsline {figure}{\numberline {7}{\ignorespaces Energy loss of a muon traversing a copper medium between 0.1 MeV to 100 TeV \cite {Patrignani:2016xqp}.\relax }}{143}{figure.caption.146}% 
+\contentsline {figure}{\numberline {8}{\ignorespaces Specific energy loss for the ITS\textit {(left)} and the TPC\textit {(right)} with Bethe-Bloch fits from different particle species traversing each detector\cite {Noferini:2016lcw}.\relax }}{144}{figure.caption.147}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALICE ITS(pp $\sqrt {s} = 13$ TeV )}}}{144}{subfigure.8.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ALICE TPC (PbPb $\sqrt {s_{NN}} = 5.02$ TeV )}}}{144}{subfigure.8.2}% 
