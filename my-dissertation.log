@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  22 SEP 2019 12:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  22 SEP 2019 14:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1556,17 +1556,17 @@ Package pdftex.def Info: figures/pdf/XSecR04.png  used on input line 37.
 [116 <./figures/pdf/XSecR04.png>] [117
 
 ] [118]
-<figures/pdf/XSecRatioR02.png, id=2463, 2188.175pt x 1405.25pt>
+<figures/pdf/XSecRatioR02.png, id=2466, 2188.175pt x 1405.25pt>
 File: figures/pdf/XSecRatioR02.png Graphic file (type png)
 <use figures/pdf/XSecRatioR02.png>
 Package pdftex.def Info: figures/pdf/XSecRatioR02.png  used on input line 87.
 (pdftex.def)             Requested size: 469.75502pt x 301.67258pt.
-<figures/pdf/XSecRatioR03.png, id=2464, 2188.175pt x 1405.25pt>
+<figures/pdf/XSecRatioR03.png, id=2467, 2188.175pt x 1405.25pt>
 File: figures/pdf/XSecRatioR03.png Graphic file (type png)
 <use figures/pdf/XSecRatioR03.png>
 Package pdftex.def Info: figures/pdf/XSecRatioR03.png  used on input line 87.
 (pdftex.def)             Requested size: 469.75502pt x 301.67258pt.
-<figures/pdf/XSecRatioR023.png, id=2465, 2188.175pt x 1405.25pt>
+<figures/pdf/XSecRatioR023.png, id=2468, 2188.175pt x 1405.25pt>
 File: figures/pdf/XSecRatioR023.png Graphic file (type png)
 <use figures/pdf/XSecRatioR023.png>
 Package pdftex.def Info: figures/pdf/XSecRatioR023.png  used on input line 87.
@@ -1608,7 +1608,7 @@ Underfull \hbox (badness 1430) in paragraph at lines 191--191
 \openout2 = `back-matter/appendix-1.aux'.
 
 (./back-matter/appendix-1.tex
-<figures/pdf/bethe.png, id=2729, 1168.365pt x 735.74875pt>
+<figures/pdf/bethe.png, id=2735, 1168.365pt x 735.74875pt>
 File: figures/pdf/bethe.png Graphic file (type png)
 <use figures/pdf/bethe.png>
 Package pdftex.def Info: figures/pdf/bethe.png  used on input line 13.
@@ -1617,12 +1617,12 @@ Package pdftex.def Info: figures/pdf/bethe.png  used on input line 13.
 
 
  <./figures/pdf/bethe.png (PNG copy)>]
-<figures/pdf/ALICEITSPID.png, id=2739, 342.27875pt x 232.87pt>
+<figures/pdf/ALICEITSPID.png, id=2745, 342.27875pt x 232.87pt>
 File: figures/pdf/ALICEITSPID.png Graphic file (type png)
 <use figures/pdf/ALICEITSPID.png>
 Package pdftex.def Info: figures/pdf/ALICEITSPID.png  used on input line 26.
 (pdftex.def)             Requested size: 216.81pt x 147.5119pt.
-<figures/pdf/TPC_PID2.png, id=2740, 343.2825pt x 247.92625pt>
+<figures/pdf/TPC_PID2.png, id=2746, 343.2825pt x 247.92625pt>
 File: figures/pdf/TPC_PID2.png Graphic file (type png)
 <use figures/pdf/TPC_PID2.png>
 Package pdftex.def Info: figures/pdf/TPC_PID2.png  used on input line 28.
@@ -1655,9 +1655,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 159.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 159.
 Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: 8DAA2855E1344866045943DDF12F06A5;2792.
-Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
-(rerunfilecheck)             Checksum: 3A6577D93AE3BC0A15F2370C60D6EE66;9458.
 
+
+Package rerunfilecheck Warning: File `my-dissertation.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `my-dissertation.brf':
+(rerunfilecheck)             Before: 93E1E5E7C6A14E1D569DBEF924E552D4;9573
+(rerunfilecheck)             After:  66414712A6C6CDECEA08C3CA644B4473;9573.
 
 LaTeX Warning: There were undefined references.
 
@@ -1667,13 +1672,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 159.
  ) 
 Here is how much of TeX's memory you used:
- 13811 strings out of 492616
- 234977 string characters out of 6129482
+ 13825 strings out of 492616
+ 235234 string characters out of 6129482
  355077 words of memory out of 5000000
- 16799 multiletter control sequences out of 15000+600000
+ 16811 multiletter control sequences out of 15000+600000
  17523 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,100p,1858b,879s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,12n,100p,2005b,881s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -1696,10 +1701,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2019/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2019/texmf-di
 st/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on my-dissertation.pdf (162 pages, 13170991 bytes).
+Output written on my-dissertation.pdf (162 pages, 13171958 bytes).
 PDF statistics:
- 2943 PDF objects out of 2984 (max. 8388607)
- 2137 compressed objects within 22 object streams
- 529 named destinations out of 1000 (max. 500000)
+ 2949 PDF objects out of 2984 (max. 8388607)
+ 2143 compressed objects within 22 object streams
+ 531 named destinations out of 1000 (max. 500000)
  847 words of extra memory for PDF output out of 10000 (max. 10000000)
 
