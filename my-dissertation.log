@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  21 SEP 2019 20:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  22 SEP 2019 12:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -646,14 +646,14 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 :<+ front-matter/acknowledgments.tex
 \openout2 = `front-matter/acknowledgments.aux'.
 
-(./front-matter/acknowledgments.tex [4
+(./front-matter/acknowledgments.tex) [4
 
 
 
 
 
 
-]) [5]
+] [5]
 :<-
 :<+ front-matter/abstract.tex
 \openout2 = `front-matter/abstract.aux'.
@@ -1113,41 +1113,36 @@ Overfull \hbox (13.94182pt too wide) in paragraph at lines 6--8
 
 
  <./figures/pdf/8TeVRunefficency.png>] [67] [68]
-<figures/pdf/RejectionReasons.pdf, id=1357, 569.12625pt x 418.56375pt>
+<figures/pdf/RejectionReasons.pdf, id=1356, 569.12625pt x 418.56375pt>
 File: figures/pdf/RejectionReasons.pdf Graphic file (type pdf)
 <use figures/pdf/RejectionReasons.pdf>
 Package pdftex.def Info: figures/pdf/RejectionReasons.pdf  used on input line 6
 3.
 (pdftex.def)             Requested size: 241.84842pt x 177.87126pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/pdf/zvertex.png, id=1358, 1517.67pt x 941.5175pt>
+ [69]
+<figures/pdf/zvertex.png, id=1362, 1517.67pt x 941.5175pt>
 File: figures/pdf/zvertex.png Graphic file (type png)
 <use figures/pdf/zvertex.png>
 Package pdftex.def Info: figures/pdf/zvertex.png  used on input line 70.
 (pdftex.def)             Requested size: 241.84842pt x 150.02812pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[69] [70 <./figures/pdf/RejectionReasons.pdf, page is rotated 90 degrees> <./fi
-gures/pdf/zvertex.png>]
-<figures/pdf/BadChannelMap.pdf, id=1414, 569.12625pt x 334.24875pt>
+ [70 <./figures/pdf/RejectionReasons.pdf, page is rotated 90 degrees> <./figure
+s/pdf/zvertex.png>]
+<figures/pdf/BadChannelMap.pdf, id=1413, 569.12625pt x 334.24875pt>
 File: figures/pdf/BadChannelMap.pdf Graphic file (type pdf)
 <use figures/pdf/BadChannelMap.pdf>
 Package pdftex.def Info: figures/pdf/BadChannelMap.pdf  used on input line 89.
 (pdftex.def)             Requested size: 398.33858pt x 233.95721pt.
- [71 <./figures/pdf/BadChannelMap.pdf, page is rotated 90 degrees>] [72]
-<figures/pdf/hadronetaphi.pdf, id=1469, 569.12625pt x 326.21875pt>
+
+[71 <./figures/pdf/BadChannelMap.pdf, page is rotated 90 degrees>] [72]
+<figures/pdf/hadronetaphi.pdf, id=1468, 569.12625pt x 326.21875pt>
 File: figures/pdf/hadronetaphi.pdf Graphic file (type pdf)
 <use figures/pdf/hadronetaphi.pdf>
 Package pdftex.def Info: figures/pdf/hadronetaphi.pdf  used on input line 108.
 (pdftex.def)             Requested size: 341.43306pt x 195.71284pt.
-<figures/pdf/timming.pdf, id=1471, 569.12625pt x 334.24875pt>
+<figures/pdf/timming.pdf, id=1469, 569.12625pt x 334.24875pt>
 File: figures/pdf/timming.pdf Graphic file (type pdf)
 <use figures/pdf/timming.pdf>
-Package pdftex.def Info: figures/pdf/timming.pdf  used on input line 128.
+Package pdftex.def Info: figures/pdf/timming.pdf  used on input line 126.
 (pdftex.def)             Requested size: 312.9803pt x 183.82207pt.
 
 
@@ -1157,120 +1152,114 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figures/pdf/Eclusfinal.pdf, id=1521, 569.12625pt x 377.41pt>
 File: figures/pdf/Eclusfinal.pdf Graphic file (type pdf)
 <use figures/pdf/Eclusfinal.pdf>
-Package pdftex.def Info: figures/pdf/Eclusfinal.pdf  used on input line 139.
+Package pdftex.def Info: figures/pdf/Eclusfinal.pdf  used on input line 137.
 (pdftex.def)             Requested size: 227.62204pt x 150.94405pt.
- [74 <./figures/pdf/timming.pdf, page is rotated 90 degrees> <./figures/pdf/Ecl
-usfinal.pdf, page is rotated 90 degrees>] [75]
-<figures/pdf/tracketa.pdf, id=1619, 569.12625pt x 364.36125pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[74 <./figures/pdf/timming.pdf, page is rotated 90 degrees>] [75 <./figures/pdf
+/Eclusfinal.pdf, page is rotated 90 degrees>]
+<figures/pdf/tracketa.pdf, id=1618, 569.12625pt x 364.36125pt>
 File: figures/pdf/tracketa.pdf Graphic file (type pdf)
 <use figures/pdf/tracketa.pdf>
-Package pdftex.def Info: figures/pdf/tracketa.pdf  used on input line 157.
+Package pdftex.def Info: figures/pdf/tracketa.pdf  used on input line 154.
 (pdftex.def)             Requested size: 234.8775pt x 150.37314pt.
-<figures/pdf/trackphi.pdf, id=1620, 569.12625pt x 364.36125pt>
+<figures/pdf/trackphi.pdf, id=1619, 569.12625pt x 364.36125pt>
 File: figures/pdf/trackphi.pdf Graphic file (type pdf)
 <use figures/pdf/trackphi.pdf>
-Package pdftex.def Info: figures/pdf/trackphi.pdf  used on input line 159.
+Package pdftex.def Info: figures/pdf/trackphi.pdf  used on input line 156.
 (pdftex.def)             Requested size: 234.8775pt x 150.37314pt.
-<figures/pdf/trackresolution.pdf, id=1624, 569.12625pt x 364.36125pt>
+<figures/pdf/trackresolution.pdf, id=1623, 569.12625pt x 364.36125pt>
 File: figures/pdf/trackresolution.pdf Graphic file (type pdf)
 <use figures/pdf/trackresolution.pdf>
 Package pdftex.def Info: figures/pdf/trackresolution.pdf  used on input line 16
-8.
+5.
 (pdftex.def)             Requested size: 227.62204pt x 145.72523pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/pdf/trackpt.pdf, id=1625, 569.12625pt x 364.36125pt>
+ [76] [77 <./figures/pdf/tracketa.pdf, page is rotated 90 degrees> <./figures/p
+df/trackphi.pdf, page is rotated 90 degrees>]
+<figures/pdf/trackpt.pdf, id=1720, 569.12625pt x 364.36125pt>
 File: figures/pdf/trackpt.pdf Graphic file (type pdf)
 <use figures/pdf/trackpt.pdf>
-Package pdftex.def Info: figures/pdf/trackpt.pdf  used on input line 175.
+Package pdftex.def Info: figures/pdf/trackpt.pdf  used on input line 172.
 (pdftex.def)             Requested size: 227.62204pt x 145.72523pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[76] [77 <./figures/pdf/tracketa.pdf, page is rotated 90 degrees> <./figures/pd
-f/trackphi.pdf, page is rotated 90 degrees>] [78 <./figures/pdf/trackresolution
-.pdf, page is rotated 90 degrees> <./figures/pdf/trackpt.pdf, page is rotated 9
-0 degrees>]
-<figures/pdf/ptleadingR02.pdf, id=1816, 569.12625pt x 336.25626pt>
-File: figures/pdf/ptleadingR02.pdf Graphic file (type pdf)
-<use figures/pdf/ptleadingR02.pdf>
-Package pdftex.def Info: figures/pdf/ptleadingR02.pdf  used on input line 208.
-(pdftex.def)             Requested size: 469.75502pt x 277.55849pt.
-<figures/pdf/JetnumcconstR02.pdf, id=1817, 569.12625pt x 336.25626pt>
-File: figures/pdf/JetnumcconstR02.pdf Graphic file (type pdf)
-<use figures/pdf/JetnumcconstR02.pdf>
-Package pdftex.def Info: figures/pdf/JetnumcconstR02.pdf  used on input line 20
-8.
-(pdftex.def)             Requested size: 469.75502pt x 277.55849pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[79 <./figures/pdf/ptleadingR02.pdf, page is rotated 90 degrees>] [80 <./figure
-s/pdf/JetnumcconstR02.pdf, page is rotated 90 degrees>]
-<figures/pdf/JetzR02.pdf, id=1913, 569.12625pt x 336.25626pt>
+ [78 <./figures/pdf/trackresolution.pdf, page is rotated 90 degrees> <./figures
+/pdf/trackpt.pdf, page is rotated 90 degrees>]
+<figures/pdf/JetzR02.pdf, id=1815, 569.12625pt x 336.25626pt>
 File: figures/pdf/JetzR02.pdf Graphic file (type pdf)
 <use figures/pdf/JetzR02.pdf>
-Package pdftex.def Info: figures/pdf/JetzR02.pdf  used on input line 214.
+Package pdftex.def Info: figures/pdf/JetzR02.pdf  used on input line 211.
 (pdftex.def)             Requested size: 284.52756pt x 168.11232pt.
- [81
-
- <./figures/pdf/JetzR02.pdf, page is rotated 90 degrees>]
-<figures/pdf/jetRejection.pdf, id=1964, 569.12625pt x 336.25626pt>
+ [79 <./figures/pdf/JetzR02.pdf, page is rotated 90 degrees>]
+<figures/pdf/ptleadingR02.pdf, id=1866, 569.12625pt x 336.25626pt>
+File: figures/pdf/ptleadingR02.pdf Graphic file (type pdf)
+<use figures/pdf/ptleadingR02.pdf>
+Package pdftex.def Info: figures/pdf/ptleadingR02.pdf  used on input line 218.
+(pdftex.def)             Requested size: 469.75502pt x 277.55849pt.
+<figures/pdf/JetnumcconstR02.pdf, id=1867, 569.12625pt x 336.25626pt>
+File: figures/pdf/JetnumcconstR02.pdf Graphic file (type pdf)
+<use figures/pdf/JetnumcconstR02.pdf>
+Package pdftex.def Info: figures/pdf/JetnumcconstR02.pdf  used on input line 21
+8.
+(pdftex.def)             Requested size: 469.75502pt x 277.55849pt.
+ [80 <./figures/pdf/ptleadingR02.pdf, page is rotated 90 degrees> <./figures/pd
+f/JetnumcconstR02.pdf, page is rotated 90 degrees>]
+<figures/pdf/jetRejection.pdf, id=1959, 569.12625pt x 336.25626pt>
 File: figures/pdf/jetRejection.pdf Graphic file (type pdf)
 <use figures/pdf/jetRejection.pdf>
-Package pdftex.def Info: figures/pdf/jetRejection.pdf  used on input line 235.
+Package pdftex.def Info: figures/pdf/jetRejection.pdf  used on input line 230.
 (pdftex.def)             Requested size: 341.43306pt x 201.73479pt.
- [82 <./figures/pdf/jetRejection.pdf, page is rotated 90 degrees>]
-<figures/pdf/NEFR02.pdf, id=2015, 569.12625pt x 336.25626pt>
+ [81
+
+ <./figures/pdf/jetRejection.pdf, page is rotated 90 degrees>]
+<figures/pdf/NEFR02.pdf, id=2010, 569.12625pt x 336.25626pt>
 File: figures/pdf/NEFR02.pdf Graphic file (type pdf)
 <use figures/pdf/NEFR02.pdf>
-Package pdftex.def Info: figures/pdf/NEFR02.pdf  used on input line 249.
+Package pdftex.def Info: figures/pdf/NEFR02.pdf  used on input line 244.
 (pdftex.def)             Requested size: 369.88582pt x 218.54858pt.
-) [83 <./figures/pdf/NEFR02.pdf, page is rotated 90 degrees>]
+)
+[82 <./figures/pdf/NEFR02.pdf, page is rotated 90 degrees>]
 :<-
 :<+ chapters/chapter-6.tex
 \openout2 = `chapters/chapter-6.aux'.
 
 (./chapters/chapter-6.tex
 Chapter 6.
-[84
+[83
 
 
 
 
-] [85]
-<figures/pdf/RawR02JetSpectra.png, id=2079, 1084.05pt x 722.7pt>
+] [84]
+<figures/pdf/RawR02JetSpectra.png, id=2073, 1084.05pt x 722.7pt>
 File: figures/pdf/RawR02JetSpectra.png Graphic file (type png)
 <use figures/pdf/RawR02JetSpectra.png>
 Package pdftex.def Info: figures/pdf/RawR02JetSpectra.png  used on input line 5
 5.
 (pdftex.def)             Requested size: 469.75502pt x 313.16995pt.
-<figures/pdf/RawR03JetSpectra.png, id=2080, 1084.05pt x 722.7pt>
+<figures/pdf/RawR03JetSpectra.png, id=2074, 1084.05pt x 722.7pt>
 File: figures/pdf/RawR03JetSpectra.png Graphic file (type png)
 <use figures/pdf/RawR03JetSpectra.png>
 Package pdftex.def Info: figures/pdf/RawR03JetSpectra.png  used on input line 5
 5.
 (pdftex.def)             Requested size: 469.75502pt x 313.16995pt.
-<figures/pdf/RawR04JetSpectra.png, id=2081, 1084.05pt x 722.7pt>
+<figures/pdf/RawR04JetSpectra.png, id=2075, 1084.05pt x 722.7pt>
 File: figures/pdf/RawR04JetSpectra.png Graphic file (type png)
 <use figures/pdf/RawR04JetSpectra.png>
 Package pdftex.def Info: figures/pdf/RawR04JetSpectra.png  used on input line 5
 5.
 (pdftex.def)             Requested size: 469.75502pt x 313.16995pt.
- [86 <./figures/pdf/RawR02JetSpectra.png>] [87 <./figures/pdf/RawR03JetSpectra.
-png>] [88 <./figures/pdf/RawR04JetSpectra.png>] [89
+ [85 <./figures/pdf/RawR02JetSpectra.png>] [86 <./figures/pdf/RawR03JetSpectra.
+png>] [87 <./figures/pdf/RawR04JetSpectra.png>] [88
 
-] [90]
-<figures/pdf/DistanceJetEJER02.pdf, id=2109, 569.12625pt x 385.44pt>
+] [89]
+<figures/pdf/DistanceJetEJER02.pdf, id=2104, 569.12625pt x 385.44pt>
 File: figures/pdf/DistanceJetEJER02.pdf Graphic file (type pdf)
 <use figures/pdf/DistanceJetEJER02.pdf>
 Package pdftex.def Info: figures/pdf/DistanceJetEJER02.pdf  used on input line 
 102.
 (pdftex.def)             Requested size: 284.52756pt x 192.70187pt.
-<figures/pdf/DistanceJetEGAR02.pdf, id=2110, 569.12625pt x 385.44pt>
+<figures/pdf/DistanceJetEGAR02.pdf, id=2105, 569.12625pt x 385.44pt>
 File: figures/pdf/DistanceJetEGAR02.pdf Graphic file (type pdf)
 <use figures/pdf/DistanceJetEGAR02.pdf>
 Package pdftex.def Info: figures/pdf/DistanceJetEGAR02.pdf  used on input line 
@@ -1280,20 +1269,20 @@ Package pdftex.def Info: figures/pdf/DistanceJetEGAR02.pdf  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[91 <./figures/pdf/DistanceJetEJER02.pdf, page is rotated 90 degrees>]
-<figures/pdf/R02TriggerYields.png, id=2165, 1405.25pt x 1023.825pt>
+[90 <./figures/pdf/DistanceJetEJER02.pdf, page is rotated 90 degrees>]
+<figures/pdf/R02TriggerYields.png, id=2159, 1405.25pt x 1023.825pt>
 File: figures/pdf/R02TriggerYields.png Graphic file (type png)
 <use figures/pdf/R02TriggerYields.png>
 Package pdftex.def Info: figures/pdf/R02TriggerYields.png  used on input line 1
 23.
 (pdftex.def)             Requested size: 234.8775pt x 171.11095pt.
-<figures/pdf/R03TriggerYields.png, id=2166, 1405.25pt x 1023.825pt>
+<figures/pdf/R03TriggerYields.png, id=2160, 1405.25pt x 1023.825pt>
 File: figures/pdf/R03TriggerYields.png Graphic file (type png)
 <use figures/pdf/R03TriggerYields.png>
 Package pdftex.def Info: figures/pdf/R03TriggerYields.png  used on input line 1
 24.
 (pdftex.def)             Requested size: 234.8775pt x 171.11095pt.
-<figures/pdf/R04TriggerYields.png, id=2167, 1405.25pt x 1023.825pt>
+<figures/pdf/R04TriggerYields.png, id=2161, 1405.25pt x 1023.825pt>
 File: figures/pdf/R04TriggerYields.png Graphic file (type png)
 <use figures/pdf/R04TriggerYields.png>
 Package pdftex.def Info: figures/pdf/R04TriggerYields.png  used on input line 1
@@ -1304,20 +1293,20 @@ Overfull \hbox (19.99998pt too wide) in paragraph at lines 122--127
 []$[]$ 
  []
 
-[92 <./figures/pdf/DistanceJetEGAR02.pdf, page is rotated 90 degrees>] [93 <./f
+[91 <./figures/pdf/DistanceJetEGAR02.pdf, page is rotated 90 degrees>] [92 <./f
 igures/pdf/R02TriggerYields.png> <./figures/pdf/R03TriggerYields.png> <./figure
-s/pdf/R04TriggerYields.png>] [94]
-<figures/pdf/responseR02.png, id=2224, 2087.8pt x 1224.575pt>
+s/pdf/R04TriggerYields.png>] [93]
+<figures/pdf/responseR02.png, id=2219, 2087.8pt x 1224.575pt>
 File: figures/pdf/responseR02.png Graphic file (type png)
 <use figures/pdf/responseR02.png>
 Package pdftex.def Info: figures/pdf/responseR02.png  used on input line 154.
 (pdftex.def)             Requested size: 234.8775pt x 137.74939pt.
-<figures/pdf/responseR03.png, id=2225, 2087.8pt x 1224.575pt>
+<figures/pdf/responseR03.png, id=2220, 2087.8pt x 1224.575pt>
 File: figures/pdf/responseR03.png Graphic file (type png)
 <use figures/pdf/responseR03.png>
 Package pdftex.def Info: figures/pdf/responseR03.png  used on input line 155.
 (pdftex.def)             Requested size: 234.8775pt x 137.74939pt.
-<figures/pdf/responseR04.png, id=2226, 2087.8pt x 1224.575pt>
+<figures/pdf/responseR04.png, id=2221, 2087.8pt x 1224.575pt>
 File: figures/pdf/responseR04.png Graphic file (type png)
 <use figures/pdf/responseR04.png>
 Package pdftex.def Info: figures/pdf/responseR04.png  used on input line 156.
@@ -1327,60 +1316,60 @@ Overfull \hbox (19.99998pt too wide) in paragraph at lines 153--158
 []$[]$ 
  []
 
-[95 <./figures/pdf/responseR02.png> <./figures/pdf/responseR03.png> <./figures/
-pdf/responseR04.png>] [96] [97]
-<figures/pdf/UnfoldedR02MinBias.png, id=2255, 1405.25pt x 1023.825pt>
+[94 <./figures/pdf/responseR02.png> <./figures/pdf/responseR03.png> <./figures/
+pdf/responseR04.png>] [95] [96]
+<figures/pdf/UnfoldedR02MinBias.png, id=2249, 1405.25pt x 1023.825pt>
 File: figures/pdf/UnfoldedR02MinBias.png Graphic file (type png)
 <use figures/pdf/UnfoldedR02MinBias.png>
 Package pdftex.def Info: figures/pdf/UnfoldedR02MinBias.png  used on input line
  243.
 (pdftex.def)             Requested size: 469.75502pt x 342.25316pt.
-<figures/pdf/UnfoldedR03MinBias.png, id=2256, 1405.25pt x 1023.825pt>
+<figures/pdf/UnfoldedR03MinBias.png, id=2250, 1405.25pt x 1023.825pt>
 File: figures/pdf/UnfoldedR03MinBias.png Graphic file (type png)
 <use figures/pdf/UnfoldedR03MinBias.png>
 Package pdftex.def Info: figures/pdf/UnfoldedR03MinBias.png  used on input line
  243.
 (pdftex.def)             Requested size: 469.75502pt x 342.25316pt.
-<figures/pdf/UnfoldedR04MinBias.png, id=2257, 1405.25pt x 1023.825pt>
+<figures/pdf/UnfoldedR04MinBias.png, id=2251, 1405.25pt x 1023.825pt>
 File: figures/pdf/UnfoldedR04MinBias.png Graphic file (type png)
 <use figures/pdf/UnfoldedR04MinBias.png>
 Package pdftex.def Info: figures/pdf/UnfoldedR04MinBias.png  used on input line
  243.
 (pdftex.def)             Requested size: 469.75502pt x 342.25316pt.
- [98 <./figures/pdf/UnfoldedR02MinBias.png>]
-[99 <./figures/pdf/UnfoldedR03MinBias.png>] [100 <./figures/pdf/UnfoldedR04MinB
-ias.png>]
-<figures/pdf/UnfoldedR02EGAtrigger.png, id=2270, 1405.25pt x 1023.825pt>
+ [97 <./figures/pdf/UnfoldedR02MinBias.png>]
+[98 <./figures/pdf/UnfoldedR03MinBias.png>] [99 <./figures/pdf/UnfoldedR04MinBi
+as.png>]
+<figures/pdf/UnfoldedR02EGAtrigger.png, id=2265, 1405.25pt x 1023.825pt>
 File: figures/pdf/UnfoldedR02EGAtrigger.png Graphic file (type png)
 <use figures/pdf/UnfoldedR02EGAtrigger.png>
 Package pdftex.def Info: figures/pdf/UnfoldedR02EGAtrigger.png  used on input l
 ine 243.
 (pdftex.def)             Requested size: 469.75502pt x 342.25316pt.
-<figures/pdf/UnfoldedR03EGAtrigger.png, id=2271, 1405.25pt x 1023.825pt>
+<figures/pdf/UnfoldedR03EGAtrigger.png, id=2266, 1405.25pt x 1023.825pt>
 File: figures/pdf/UnfoldedR03EGAtrigger.png Graphic file (type png)
 <use figures/pdf/UnfoldedR03EGAtrigger.png>
 Package pdftex.def Info: figures/pdf/UnfoldedR03EGAtrigger.png  used on input l
 ine 243.
 (pdftex.def)             Requested size: 469.75502pt x 342.25316pt.
-<figures/pdf/UnfoldedR04EGAtrigger.png, id=2272, 1405.25pt x 1023.825pt>
+<figures/pdf/UnfoldedR04EGAtrigger.png, id=2267, 1405.25pt x 1023.825pt>
 File: figures/pdf/UnfoldedR04EGAtrigger.png Graphic file (type png)
 <use figures/pdf/UnfoldedR04EGAtrigger.png>
 Package pdftex.def Info: figures/pdf/UnfoldedR04EGAtrigger.png  used on input l
 ine 243.
 (pdftex.def)             Requested size: 469.75502pt x 342.25316pt.
- [101 <./figures/pdf/UnfoldedR02EGAtrigger.png>] [102 <./figures/pdf/UnfoldedR0
-3EGAtrigger.png>] [103 <./figures/pdf/UnfoldedR04EGAtrigger.png>]
-<figures/pdf/Ematch_R02.png, id=2288, 1405.25pt x 1023.825pt>
+ [100 <./figures/pdf/UnfoldedR02EGAtrigger.png>] [101 <./figures/pdf/UnfoldedR0
+3EGAtrigger.png>] [102 <./figures/pdf/UnfoldedR04EGAtrigger.png>]
+<figures/pdf/Ematch_R02.png, id=2282, 1405.25pt x 1023.825pt>
 File: figures/pdf/Ematch_R02.png Graphic file (type png)
 <use figures/pdf/Ematch_R02.png>
 Package pdftex.def Info: figures/pdf/Ematch_R02.png  used on input line 260.
 (pdftex.def)             Requested size: 234.8775pt x 171.11095pt.
-<figures/pdf/Ematch_R03.png, id=2289, 1405.25pt x 1023.825pt>
+<figures/pdf/Ematch_R03.png, id=2283, 1405.25pt x 1023.825pt>
 File: figures/pdf/Ematch_R03.png Graphic file (type png)
 <use figures/pdf/Ematch_R03.png>
 Package pdftex.def Info: figures/pdf/Ematch_R03.png  used on input line 261.
 (pdftex.def)             Requested size: 234.8775pt x 171.11095pt.
-<figures/pdf/Ematch_R04.png, id=2290, 1405.25pt x 1023.825pt>
+<figures/pdf/Ematch_R04.png, id=2284, 1405.25pt x 1023.825pt>
 File: figures/pdf/Ematch_R04.png Graphic file (type png)
 <use figures/pdf/Ematch_R04.png>
 Package pdftex.def Info: figures/pdf/Ematch_R04.png  used on input line 262.
@@ -1390,17 +1379,17 @@ Overfull \hbox (19.99998pt too wide) in paragraph at lines 259--264
 []$[]$ 
  []
 
-<figures/pdf/Ereco_R02.png, id=2291, 1405.25pt x 1023.825pt>
+<figures/pdf/Ereco_R02.png, id=2285, 1405.25pt x 1023.825pt>
 File: figures/pdf/Ereco_R02.png Graphic file (type png)
 <use figures/pdf/Ereco_R02.png>
 Package pdftex.def Info: figures/pdf/Ereco_R02.png  used on input line 269.
 (pdftex.def)             Requested size: 234.8775pt x 171.11095pt.
-<figures/pdf/Ereco_R03.png, id=2292, 1405.25pt x 1084.05pt>
+<figures/pdf/Ereco_R03.png, id=2286, 1405.25pt x 1084.05pt>
 File: figures/pdf/Ereco_R03.png Graphic file (type png)
 <use figures/pdf/Ereco_R03.png>
 Package pdftex.def Info: figures/pdf/Ereco_R03.png  used on input line 270.
 (pdftex.def)             Requested size: 234.8775pt x 181.1763pt.
-<figures/pdf/Ereco_R04.png, id=2293, 1405.25pt x 1023.825pt>
+<figures/pdf/Ereco_R04.png, id=2287, 1405.25pt x 1023.825pt>
 File: figures/pdf/Ereco_R04.png Graphic file (type png)
 <use figures/pdf/Ereco_R04.png>
 Package pdftex.def Info: figures/pdf/Ereco_R04.png  used on input line 271.
@@ -1410,59 +1399,59 @@ Overfull \hbox (19.99998pt too wide) in paragraph at lines 268--273
 []$[]$ 
  []
 
-[104
+[103
 
 
-] [105 <./figures/pdf/Ematch_R02.png> <./figures/pdf/Ematch_R03.png> <./figures
-/pdf/Ematch_R04.png>] [106 <./figures/pdf/Ereco_R02.png> <./figures/pdf/Ereco_R
+] [104 <./figures/pdf/Ematch_R02.png> <./figures/pdf/Ematch_R03.png> <./figures
+/pdf/Ematch_R04.png>] [105 <./figures/pdf/Ereco_R02.png> <./figures/pdf/Ereco_R
 03.png> <./figures/pdf/Ereco_R04.png>]
-<figures/pdf/SysR02_TrkEff.png, id=2310, 698.61pt x 473.77pt>
+<figures/pdf/SysR02_TrkEff.png, id=2305, 698.61pt x 473.77pt>
 File: figures/pdf/SysR02_TrkEff.png Graphic file (type png)
 <use figures/pdf/SysR02_TrkEff.png>
 Package pdftex.def Info: figures/pdf/SysR02_TrkEff.png  used on input line 295.
 
 (pdftex.def)             Requested size: 187.89914pt x 127.42802pt.
-<figures/pdf/SysR03_TrkEff.png, id=2311, 698.61pt x 473.77pt>
+<figures/pdf/SysR03_TrkEff.png, id=2306, 698.61pt x 473.77pt>
 File: figures/pdf/SysR03_TrkEff.png Graphic file (type png)
 <use figures/pdf/SysR03_TrkEff.png>
 Package pdftex.def Info: figures/pdf/SysR03_TrkEff.png  used on input line 296.
 
 (pdftex.def)             Requested size: 187.89914pt x 127.42802pt.
-<figures/pdf/SysR04_TrkEff.png, id=2312, 698.61pt x 473.77pt>
+<figures/pdf/SysR04_TrkEff.png, id=2307, 698.61pt x 473.77pt>
 File: figures/pdf/SysR04_TrkEff.png Graphic file (type png)
 <use figures/pdf/SysR04_TrkEff.png>
 Package pdftex.def Info: figures/pdf/SysR04_TrkEff.png  used on input line 297.
 
 (pdftex.def)             Requested size: 187.89914pt x 127.42802pt.
-<figures/pdf/SysR02_F07.png, id=2314, 698.61pt x 473.77pt>
+<figures/pdf/SysR02_F07.png, id=2309, 698.61pt x 473.77pt>
 File: figures/pdf/SysR02_F07.png Graphic file (type png)
 <use figures/pdf/SysR02_F07.png>
 Package pdftex.def Info: figures/pdf/SysR02_F07.png  used on input line 309.
 (pdftex.def)             Requested size: 187.89914pt x 127.42802pt.
-<figures/pdf/SysR03_F07.png, id=2315, 698.61pt x 473.77pt>
+<figures/pdf/SysR03_F07.png, id=2310, 698.61pt x 473.77pt>
 File: figures/pdf/SysR03_F07.png Graphic file (type png)
 <use figures/pdf/SysR03_F07.png>
 Package pdftex.def Info: figures/pdf/SysR03_F07.png  used on input line 310.
 (pdftex.def)             Requested size: 187.89914pt x 127.42802pt.
-<figures/pdf/SysR04_F07.png, id=2316, 698.61pt x 473.77pt>
+<figures/pdf/SysR04_F07.png, id=2311, 698.61pt x 473.77pt>
 File: figures/pdf/SysR04_F07.png Graphic file (type png)
 <use figures/pdf/SysR04_F07.png>
 Package pdftex.def Info: figures/pdf/SysR04_F07.png  used on input line 311.
 (pdftex.def)             Requested size: 187.89914pt x 127.42802pt.
- [107]
+ [106]
 
-LaTeX Warning: Text page 108 contains only floats.
+LaTeX Warning: Text page 107 contains only floats.
 
-[108 <./figures/pdf/SysR02_TrkEff.png> <./figures/pdf/SysR03_TrkEff.png> <./fig
+[107 <./figures/pdf/SysR02_TrkEff.png> <./figures/pdf/SysR03_TrkEff.png> <./fig
 ures/pdf/SysR04_TrkEff.png> <./figures/pdf/SysR02_F07.png> <./figures/pdf/SysR0
 3_F07.png> <./figures/pdf/SysR04_F07.png>]
-<figures/pdf/SysR02_v1Clusterization.png, id=2332, 698.61pt x 473.77pt>
+<figures/pdf/SysR02_v1Clusterization.png, id=2327, 698.61pt x 473.77pt>
 File: figures/pdf/SysR02_v1Clusterization.png Graphic file (type png)
 <use figures/pdf/SysR02_v1Clusterization.png>
 Package pdftex.def Info: figures/pdf/SysR02_v1Clusterization.png  used on input
  line 323.
 (pdftex.def)             Requested size: 187.89914pt x 127.42802pt.
-<figures/pdf/SysR03_v1Clusterization.png, id=2333, 698.61pt x 473.77pt>
+<figures/pdf/SysR03_v1Clusterization.png, id=2328, 698.61pt x 473.77pt>
 File: figures/pdf/SysR03_v1Clusterization.png Graphic file (type png)
 <use figures/pdf/SysR03_v1Clusterization.png>
 Package pdftex.def Info: figures/pdf/SysR03_v1Clusterization.png  used on input
@@ -1473,59 +1462,59 @@ File: figures/pdf/SysR02_v1Clusterization.png Graphic file (type png)
 Package pdftex.def Info: figures/pdf/SysR02_v1Clusterization.png  used on input
  line 325.
 (pdftex.def)             Requested size: 187.89914pt x 127.42802pt.
- [109 <./figures/pdf/SysR02_v1Clusterization.png> <./figures/pdf/SysR03_v1Clust
+ [108 <./figures/pdf/SysR02_v1Clusterization.png> <./figures/pdf/SysR03_v1Clust
 erization.png>]
-<figures/pdf/trackcovmatrix.pdf, id=2341, 569.12625pt x 336.25626pt>
+<figures/pdf/trackcovmatrix.pdf, id=2335, 569.12625pt x 336.25626pt>
 File: figures/pdf/trackcovmatrix.pdf Graphic file (type pdf)
 <use figures/pdf/trackcovmatrix.pdf>
 Package pdftex.def Info: figures/pdf/trackcovmatrix.pdf  used on input line 339
 .
 (pdftex.def)             Requested size: 227.62204pt x 134.48473pt.
-<figures/pdf/SysR02_PtReso.png, id=2342, 698.61pt x 473.77pt>
+<figures/pdf/SysR02_PtReso.png, id=2336, 698.61pt x 473.77pt>
 File: figures/pdf/SysR02_PtReso.png Graphic file (type png)
 <use figures/pdf/SysR02_PtReso.png>
 Package pdftex.def Info: figures/pdf/SysR02_PtReso.png  used on input line 347.
 
 (pdftex.def)             Requested size: 187.89914pt x 127.42802pt.
-<figures/pdf/SysR03_PtReso.png, id=2343, 698.61pt x 473.77pt>
+<figures/pdf/SysR03_PtReso.png, id=2337, 698.61pt x 473.77pt>
 File: figures/pdf/SysR03_PtReso.png Graphic file (type png)
 <use figures/pdf/SysR03_PtReso.png>
 Package pdftex.def Info: figures/pdf/SysR03_PtReso.png  used on input line 348.
 
 (pdftex.def)             Requested size: 187.89914pt x 127.42802pt.
-<figures/pdf/SysR04_PtReso.png, id=2344, 698.61pt x 473.77pt>
+<figures/pdf/SysR04_PtReso.png, id=2338, 698.61pt x 473.77pt>
 File: figures/pdf/SysR04_PtReso.png Graphic file (type png)
 <use figures/pdf/SysR04_PtReso.png>
 Package pdftex.def Info: figures/pdf/SysR04_PtReso.png  used on input line 349.
 
 (pdftex.def)             Requested size: 187.89914pt x 127.42802pt.
-<figures/pdf/SysR02_EReso.png, id=2348, 698.61pt x 473.77pt>
+<figures/pdf/SysR02_EReso.png, id=2342, 698.61pt x 473.77pt>
 File: figures/pdf/SysR02_EReso.png Graphic file (type png)
 <use figures/pdf/SysR02_EReso.png>
 Package pdftex.def Info: figures/pdf/SysR02_EReso.png  used on input line 361.
 (pdftex.def)             Requested size: 187.89914pt x 127.42802pt.
-<figures/pdf/SysR03_EReso.png, id=2349, 698.61pt x 473.77pt>
+<figures/pdf/SysR03_EReso.png, id=2343, 698.61pt x 473.77pt>
 File: figures/pdf/SysR03_EReso.png Graphic file (type png)
 <use figures/pdf/SysR03_EReso.png>
 Package pdftex.def Info: figures/pdf/SysR03_EReso.png  used on input line 362.
 (pdftex.def)             Requested size: 187.89914pt x 127.42802pt.
-<figures/pdf/SysR04_EReso.png, id=2350, 698.61pt x 473.77pt>
+<figures/pdf/SysR04_EReso.png, id=2344, 698.61pt x 473.77pt>
 File: figures/pdf/SysR04_EReso.png Graphic file (type png)
 <use figures/pdf/SysR04_EReso.png>
 Package pdftex.def Info: figures/pdf/SysR04_EReso.png  used on input line 363.
 (pdftex.def)             Requested size: 187.89914pt x 127.42802pt.
- [110 <./figures/pdf/trackcovmatrix.pdf, page is rotated 90 degrees>]
+ [109 <./figures/pdf/trackcovmatrix.pdf, page is rotated 90 degrees>]
 
-LaTeX Warning: Text page 111 contains only floats.
+LaTeX Warning: Text page 110 contains only floats.
 
-[111 <./figures/pdf/SysR02_PtReso.png> <./figures/pdf/SysR03_PtReso.png> <./fig
+[110 <./figures/pdf/SysR02_PtReso.png> <./figures/pdf/SysR03_PtReso.png> <./fig
 ures/pdf/SysR04_PtReso.png> <./figures/pdf/SysR02_EReso.png> <./figures/pdf/Sys
 R03_EReso.png> <./figures/pdf/SysR04_EReso.png>]
 
-LaTeX Warning: Reference `ch:analysis' on page 112 undefined on input line 382.
+LaTeX Warning: Reference `ch:analysis' on page 111 undefined on input line 382.
 
 
-[112]
+[111]
 Underfull \hbox (badness 10000) in paragraph at lines 396--398
 
  []
@@ -1535,59 +1524,59 @@ Underfull \hbox (badness 7963) in paragraph at lines 408--408
 []\OT1/cmr/m/n/12 Clusterization (be-low 40
  []
 
-) [113]
+) [112]
 :<-
 :<+ chapters/chapter-7.tex
 \openout2 = `chapters/chapter-7.aux'.
 
 (./chapters/chapter-7.tex
 Chapter 7.
-[114
+[113
 
 
 
 
 ]
-<figures/pdf/XSecR02.png, id=2431, 2107.875pt x 1606.0pt>
+<figures/pdf/XSecR02.png, id=2426, 2107.875pt x 1606.0pt>
 File: figures/pdf/XSecR02.png Graphic file (type png)
 <use figures/pdf/XSecR02.png>
 Package pdftex.def Info: figures/pdf/XSecR02.png  used on input line 37.
 (pdftex.def)             Requested size: 469.75502pt x 357.90364pt.
-<figures/pdf/XSecR03.png, id=2432, 2107.875pt x 1606.0pt>
+<figures/pdf/XSecR03.png, id=2427, 2107.875pt x 1606.0pt>
 File: figures/pdf/XSecR03.png Graphic file (type png)
 <use figures/pdf/XSecR03.png>
 Package pdftex.def Info: figures/pdf/XSecR03.png  used on input line 37.
 (pdftex.def)             Requested size: 469.75502pt x 357.90364pt.
-<figures/pdf/XSecR04.png, id=2433, 2107.875pt x 1606.0pt>
+<figures/pdf/XSecR04.png, id=2428, 2107.875pt x 1606.0pt>
 File: figures/pdf/XSecR04.png Graphic file (type png)
 <use figures/pdf/XSecR04.png>
 Package pdftex.def Info: figures/pdf/XSecR04.png  used on input line 37.
 (pdftex.def)             Requested size: 469.75502pt x 357.90364pt.
- [115 <./figures/pdf/XSecR02.png>] [116 <./figures/pdf/XSecR03.png>]
-[117 <./figures/pdf/XSecR04.png>] [118
+ [114 <./figures/pdf/XSecR02.png>] [115 <./figures/pdf/XSecR03.png>]
+[116 <./figures/pdf/XSecR04.png>] [117
 
-] [119]
-<figures/pdf/XSecRatioR02.png, id=2468, 2188.175pt x 1405.25pt>
+] [118]
+<figures/pdf/XSecRatioR02.png, id=2463, 2188.175pt x 1405.25pt>
 File: figures/pdf/XSecRatioR02.png Graphic file (type png)
 <use figures/pdf/XSecRatioR02.png>
 Package pdftex.def Info: figures/pdf/XSecRatioR02.png  used on input line 87.
 (pdftex.def)             Requested size: 469.75502pt x 301.67258pt.
-<figures/pdf/XSecRatioR03.png, id=2469, 2188.175pt x 1405.25pt>
+<figures/pdf/XSecRatioR03.png, id=2464, 2188.175pt x 1405.25pt>
 File: figures/pdf/XSecRatioR03.png Graphic file (type png)
 <use figures/pdf/XSecRatioR03.png>
 Package pdftex.def Info: figures/pdf/XSecRatioR03.png  used on input line 87.
 (pdftex.def)             Requested size: 469.75502pt x 301.67258pt.
-<figures/pdf/XSecRatioR023.png, id=2470, 2188.175pt x 1405.25pt>
+<figures/pdf/XSecRatioR023.png, id=2465, 2188.175pt x 1405.25pt>
 File: figures/pdf/XSecRatioR023.png Graphic file (type png)
 <use figures/pdf/XSecRatioR023.png>
 Package pdftex.def Info: figures/pdf/XSecRatioR023.png  used on input line 87.
 (pdftex.def)             Requested size: 469.75502pt x 301.67258pt.
- [120 <./figures/pdf/XSecRatioR02.png>] [121 <./figures/pdf/XSecRatioR03.png>] 
-[122 <./figures/pdf/XSecRatioR023.png>] [123
+ [119 <./figures/pdf/XSecRatioR02.png>] [120 <./figures/pdf/XSecRatioR03.png>] 
+[121 <./figures/pdf/XSecRatioR023.png>] [122
 
-]) [124] [125]
+] [123]) [124]
 :<-
-[126
+[125
 
 
 
@@ -1597,21 +1586,21 @@ Package pdftex.def Info: figures/pdf/XSecRatioR023.png  used on input line 87.
 \tf@brf=\write7
 \openout7 = `my-dissertation.brf'.
 
- [127] [128]
+ [126] [127]
 Underfull \hbox (badness 2635) in paragraph at lines 149--149
 []\OT1/cmr/m/n/12 Purba Bhat-tacharya, Be-dan-gadas Mo-hanty, Supratik Mukhopad
 -hyay, Nayana
  []
 
-[129]
+[128]
 Underfull \hbox (badness 1430) in paragraph at lines 191--191
 \OT1/cmr/m/n/12 Closed Lep-ton Loops.  \OT1/cmr/m/it/12 Phys. Rev.\OT1/cmr/m/n/
 12 , D91(3):033006, 2015.  [Er-ra-tum: Phys.
  []
 
-[130] [131] [132] [133] [134] [135] [136] [137] [138] [139] [140])
+[129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139])
 :<-
-[141] [142
+[140] [141
 
 
 ]
@@ -1619,32 +1608,32 @@ Underfull \hbox (badness 1430) in paragraph at lines 191--191
 \openout2 = `back-matter/appendix-1.aux'.
 
 (./back-matter/appendix-1.tex
-<figures/pdf/bethe.png, id=2734, 1168.365pt x 735.74875pt>
+<figures/pdf/bethe.png, id=2729, 1168.365pt x 735.74875pt>
 File: figures/pdf/bethe.png Graphic file (type png)
 <use figures/pdf/bethe.png>
 Package pdftex.def Info: figures/pdf/bethe.png  used on input line 13.
 (pdftex.def)             Requested size: 227.62204pt x 143.3301pt.
- [143
+ [142
 
 
  <./figures/pdf/bethe.png (PNG copy)>]
-<figures/pdf/ALICEITSPID.png, id=2744, 342.27875pt x 232.87pt>
+<figures/pdf/ALICEITSPID.png, id=2739, 342.27875pt x 232.87pt>
 File: figures/pdf/ALICEITSPID.png Graphic file (type png)
 <use figures/pdf/ALICEITSPID.png>
 Package pdftex.def Info: figures/pdf/ALICEITSPID.png  used on input line 26.
 (pdftex.def)             Requested size: 216.81pt x 147.5119pt.
-<figures/pdf/TPC_PID2.png, id=2745, 343.2825pt x 247.92625pt>
+<figures/pdf/TPC_PID2.png, id=2740, 343.2825pt x 247.92625pt>
 File: figures/pdf/TPC_PID2.png Graphic file (type png)
 <use figures/pdf/TPC_PID2.png>
 Package pdftex.def Info: figures/pdf/TPC_PID2.png  used on input line 28.
 (pdftex.def)             Requested size: 216.81pt x 156.58401pt.
 )
-[144 <./figures/pdf/ALICEITSPID.png> <./figures/pdf/TPC_PID2.png>]
+[143 <./figures/pdf/ALICEITSPID.png> <./figures/pdf/TPC_PID2.png>]
 :<-
 :<+ back-matter/vita.tex
 \openout2 = `back-matter/vita.aux'.
 
-(./back-matter/vita.tex) [145
+(./back-matter/vita.tex) [144
 
 
 
@@ -1664,17 +1653,11 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 159.
 (./back-matter/appendix-1.aux) (./back-matter/vita.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 159.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 159.
-
-
-Package rerunfilecheck Warning: File `my-dissertation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `my-dissertation.out':
-(rerunfilecheck)             Before: A6BC9B06A9FC61C53C3ADCE166076CDA;2804
-(rerunfilecheck)             After:  8DAA2855E1344866045943DDF12F06A5;2792.
+Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
+(rerunfilecheck)             Checksum: 8DAA2855E1344866045943DDF12F06A5;2792.
 Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
-(rerunfilecheck)             Checksum: 1585FD25A5B819271EF9D1CBC380F6A6;9458.
+(rerunfilecheck)             Checksum: 3A6577D93AE3BC0A15F2370C60D6EE66;9458.
+
 
 LaTeX Warning: There were undefined references.
 
@@ -1684,9 +1667,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 159.
  ) 
 Here is how much of TeX's memory you used:
- 13812 strings out of 492616
- 234985 string characters out of 6129482
- 356077 words of memory out of 5000000
+ 13811 strings out of 492616
+ 234977 string characters out of 6129482
+ 355077 words of memory out of 5000000
  16799 multiletter control sequences out of 15000+600000
  17523 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1713,10 +1696,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2019/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2019/texmf-di
 st/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on my-dissertation.pdf (163 pages, 13171227 bytes).
+Output written on my-dissertation.pdf (162 pages, 13170991 bytes).
 PDF statistics:
- 2949 PDF objects out of 2984 (max. 8388607)
- 2142 compressed objects within 22 object streams
- 530 named destinations out of 1000 (max. 500000)
+ 2943 PDF objects out of 2984 (max. 8388607)
+ 2137 compressed objects within 22 object streams
+ 529 named destinations out of 1000 (max. 500000)
  847 words of extra memory for PDF output out of 10000 (max. 10000000)
 
