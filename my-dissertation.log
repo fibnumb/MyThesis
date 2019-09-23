@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  22 SEP 2019 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  22 SEP 2019 19:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1549,20 +1549,20 @@ Package pdftex.def Info: figures/pdf/XSecR04.png  used on input line 37.
 [116 <./figures/pdf/XSecR04.png>] [117
 
 ] [118]
-<figures/pdf/XSecRatioR02.png, id=2460, 2188.175pt x 1405.25pt>
+<figures/pdf/XSecRatioR02.png, id=2456, 2188.175pt x 1405.25pt>
 File: figures/pdf/XSecRatioR02.png Graphic file (type png)
 <use figures/pdf/XSecRatioR02.png>
-Package pdftex.def Info: figures/pdf/XSecRatioR02.png  used on input line 87.
+Package pdftex.def Info: figures/pdf/XSecRatioR02.png  used on input line 91.
 (pdftex.def)             Requested size: 469.75502pt x 301.67258pt.
-<figures/pdf/XSecRatioR03.png, id=2461, 2188.175pt x 1405.25pt>
+<figures/pdf/XSecRatioR03.png, id=2457, 2188.175pt x 1405.25pt>
 File: figures/pdf/XSecRatioR03.png Graphic file (type png)
 <use figures/pdf/XSecRatioR03.png>
-Package pdftex.def Info: figures/pdf/XSecRatioR03.png  used on input line 87.
+Package pdftex.def Info: figures/pdf/XSecRatioR03.png  used on input line 91.
 (pdftex.def)             Requested size: 469.75502pt x 301.67258pt.
-<figures/pdf/XSecRatioR023.png, id=2462, 2188.175pt x 1405.25pt>
+<figures/pdf/XSecRatioR023.png, id=2458, 2188.175pt x 1405.25pt>
 File: figures/pdf/XSecRatioR023.png Graphic file (type png)
 <use figures/pdf/XSecRatioR023.png>
-Package pdftex.def Info: figures/pdf/XSecRatioR023.png  used on input line 87.
+Package pdftex.def Info: figures/pdf/XSecRatioR023.png  used on input line 91.
 (pdftex.def)             Requested size: 469.75502pt x 301.67258pt.
  [119 <./figures/pdf/XSecRatioR02.png>] [120 <./figures/pdf/XSecRatioR03.png>] 
 [121 <./figures/pdf/XSecRatioR023.png>] [122
@@ -1647,9 +1647,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 159.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 159.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 159.
 Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 3787E5076F843D1CBB9B2D031099EC88;2792.
+(rerunfilecheck)             Checksum: 61FEC16A76FA6F9C7A253CC0D9F2AE90;2786.
 Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
-(rerunfilecheck)             Checksum: DA7A9D71E10078492E0A7A57439E01BF;9574.
+(rerunfilecheck)             Checksum: C1430EBBBC231810F5500F18B3B9D228;9578.
 
 
 LaTeX Warning: There were undefined references.
@@ -1666,7 +1666,7 @@ Here is how much of TeX's memory you used:
  16802 multiletter control sequences out of 15000+600000
  17523 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,100p,2017b,881s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,12n,100p,1858b,881s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -1689,7 +1689,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2019/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2019/texmf-di
 st/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on my-dissertation.pdf (161 pages, 13116328 bytes).
+Output written on my-dissertation.pdf (161 pages, 13116547 bytes).
 PDF statistics:
  2942 PDF objects out of 2984 (max. 8388607)
  2139 compressed objects within 22 object streams

@@ -53,7 +53,7 @@
 \contentsline {subsubsection}{Event Selection Criteria}{69}{section*.86}% 
 \contentsline {section}{\numberline {5.2}EMCal Clusters}{71}{section.5.2}% 
 \contentsline {section}{\numberline {5.3}TPC Tracks}{75}{section.5.3}% 
-\contentsline {section}{\numberline {5.4}Raw Jet Reconstruction}{78}{section.5.4}% 
+\contentsline {section}{\numberline {5.4}Jet Requirements}{78}{section.5.4}% 
 \contentsline {chapter}{\numberline {6}Corrections and Systematic Uncertainties}{83}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}Raw Jet Spectra}{84}{section.6.1}% 
 \contentsline {section}{\numberline {6.2}Acceptance Correction}{88}{section.6.2}% 
@@ -78,7 +78,7 @@
 \contentsline {section}{\numberline {7.1}8 TeV Inclusive Jet Results and Discussion}{113}{section.7.1}% 
 \contentsline {subsubsection}{Differential Jet Cross-Section}{113}{section*.137}% 
 \contentsline {subsubsection}{Jet Cross-Section Ratios}{118}{section*.141}% 
-\contentsline {section}{\numberline {7.2}Summary and Conclusion}{122}{section.7.2}% 
+\contentsline {section}{\numberline {7.2}Summary and Conclusion}{123}{section.7.2}% 
 \contentsline {chapter}{Bibliography}{125}{section*.145}% 
 \contentsline {chapter}{Appendix}{141}{section*.146}% 
 \contentsline {section}{\numberline {A}Particle Identification via Bethe-Bloch}{142}{section.Alph0.1}% 
