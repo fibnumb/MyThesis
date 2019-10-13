@@ -1,0 +1,45 @@
+\BOOKMARK [0][-]{rootNode.0}{Front Matter}{}% 1
+\BOOKMARK [1][-]{a.1}{Title}{rootNode.0}% 2
+\BOOKMARK [1][-]{b.1}{Dedication}{rootNode.0}% 3
+\BOOKMARK [1][-]{c.1}{Acknowledgments}{rootNode.0}% 4
+\BOOKMARK [1][-]{e.1}{Abstract}{rootNode.0}% 5
+\BOOKMARK [0][-]{f.0}{Table of Contents}{}% 6
+\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 7
+\BOOKMARK [0][-]{chapter.2}{2 Quantum Chromodynamics}{}% 8
+\BOOKMARK [1][-]{section.2.1}{2.1 The QCD Lagrangian}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{2.2 Jets}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{2.3 Jet Finding Algorithms}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{2.4 Monte-Carlo Generators}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.5}{2.5 The Quark-Gluon Plasma}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{3 The LHC and ALICE}{}% 14
+\BOOKMARK [1][-]{section.3.1}{3.1 Overview of the LHC}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{3.2 The ALICE Experiment}{chapter.3}% 16
+\BOOKMARK [0][-]{chapter.4}{4 The ALICE TPC Upgrade}{}% 17
+\BOOKMARK [1][-]{section.4.1}{4.1 Physics Motivation}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.2}{4.2 Gaseous Electron Multiplier Foils}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.3}{4.3 Research and Development}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.4}{4.4 Production of the Inner Readout Chambers in the U.S.}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.5}{4.5 GEM and Chamber Quality Assurance}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.6}{4.6 Outlook}{chapter.4}% 23
+\BOOKMARK [0][-]{chapter.5}{5 Analysis Methods and Corrections}{}% 24
+\BOOKMARK [1][-]{section.5.1}{5.1 Raw Jet Spectra}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.2}{5.2 8 TeV Data Sample}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.3}{5.3 Jet Selection}{chapter.5}% 27
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 zleading cut}{section.5.3}% 28
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Jet Area Cut}{section.5.3}% 29
+\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 NEF cut}{section.5.3}% 30
+\BOOKMARK [1][-]{section.5.4}{5.4 EMCal Triggered Data}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.5}{5.5 Acceptance Correction}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.6}{5.6 Unfolding}{chapter.5}% 33
+\BOOKMARK [2][-]{subsection.5.6.1}{5.6.1 Response Matrix}{section.5.6}% 34
+\BOOKMARK [2][-]{subsection.5.6.2}{5.6.2 Corrections to Particle Level}{section.5.6}% 35
+\BOOKMARK [0][-]{chapter.6}{6 Conclusion and Outlook}{}% 36
+\BOOKMARK [1][-]{section.6.1}{6.1 Systematic Uncertainties}{chapter.6}% 37
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 Systematic Uncertainty to Jet Energy Scale}{section.6.1}% 38
+\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 Systematic Uncertainty to Jet Yield}{section.6.1}% 39
+\BOOKMARK [1][-]{section.6.2}{6.2 8 TeV Inclusive Jet Results from CMS and ATLAS}{chapter.6}% 40
+\BOOKMARK [1][-]{section.6.3}{6.3 Inclusive Jet Spectra and Cross Section Ratios at 2.76 TeV}{chapter.6}% 41
+\BOOKMARK [0][-]{section*.140}{Bibliography}{}% 42
+\BOOKMARK [0][-]{section*.141}{Appendices}{}% 43
+\BOOKMARK [1][-]{section.Alph0.1}{A Particle Identification via Bethe-Bloch}{section*.141}% 44
+\BOOKMARK [0][-]{section*.144}{Vita}{}% 45

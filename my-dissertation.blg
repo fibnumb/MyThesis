@@ -18,9 +18,9 @@ A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-dissertation.bib
 Warning--entry type for "JetPic" isn't style-file defined
---line 481 of file references-dissertation.bib
+--line 532 of file references-dissertation.bib
 Warning--entry type for "Santimaria:1690550" isn't style-file defined
---line 1504 of file references-dissertation.bib
+--line 1555 of file references-dissertation.bib
 Warning--empty journal in Mobs:2197559
 Warning--empty journal in Abeysekara:2010ze
 Warning--empty booktitle in Dick2017QM
@@ -40,45 +40,45 @@ Warning--empty institution in Buncic:2011297
 Warning--empty author in ALICE-PUBLIC-2017-002
 Warning--empty journal in ALICE-PUBLIC-2017-002
 Warning--empty journal in CMS:2013kda
-You've used 116 entries,
+You've used 118 entries,
             1791 wiz_defined-function locations,
-            1207 strings with 24724 characters,
-and the built_in function-call counts, 25657 in all, are:
-= -- 2226
-> -- 1039
-< -- 15
-+ -- 400
-- -- 284
-* -- 1744
-:= -- 4119
-add.period$ -- 359
-call.type$ -- 116
-change.case$ -- 114
+            1221 strings with 25216 characters,
+and the built_in function-call counts, 26238 in all, are:
+= -- 2279
+> -- 1057
+< -- 16
++ -- 407
+- -- 289
+* -- 1778
+:= -- 4200
+add.period$ -- 365
+call.type$ -- 118
+change.case$ -- 116
 chr.to.int$ -- 0
-cite$ -- 135
-duplicate$ -- 1127
-empty$ -- 2617
-format.name$ -- 284
-if$ -- 5740
+cite$ -- 137
+duplicate$ -- 1157
+empty$ -- 2678
+format.name$ -- 289
+if$ -- 5881
 int.to.chr$ -- 0
-int.to.str$ -- 116
-missing$ -- 109
-newline$ -- 591
-num.names$ -- 111
-pop$ -- 238
+int.to.str$ -- 118
+missing$ -- 111
+newline$ -- 601
+num.names$ -- 113
+pop$ -- 245
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 482
+skip$ -- 501
 stack$ -- 0
-substring$ -- 1854
-swap$ -- 191
-text.length$ -- 15
+substring$ -- 1903
+swap$ -- 203
+text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 19
-while$ -- 219
-width$ -- 119
-write$ -- 1273
+while$ -- 224
+width$ -- 121
+write$ -- 1295
 (There were 21 warnings)

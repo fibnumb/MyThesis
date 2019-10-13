@@ -265,6 +265,11 @@ J~E Huth, N~Wainer, K~Meier, N~J Hadley, F~Aversa, Mario Greco, P~Chiappetta,
 \newblock {Toward a standardization of jet definitions}.
 \newblock (FERMILAB-CONF-90-249-E):7 p, Dec 1990.
 
+\bibitem{Salam:2009jx}
+Gavin~P. Salam.
+\newblock {Towards Jetography}.
+\newblock {\em Eur. Phys. J.}, C67:637--686, 2010.
+
 \bibitem{Cacciari:2011ma}
 Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
 \newblock {FastJet User Manual}.
@@ -663,6 +668,13 @@ CMS Collaboration.
 \newblock {Measurement of the double-differential inclusive jet cross section
   at sqrt(s) = 8 TeV with the CMS detector}.
 \newblock 2013.
+
+\bibitem{Bahr:2009ek}
+Manuel Bahr, Jonathan~M. Butterworth, Stefan Gieseke, and Michael~H. Seymour.
+\newblock {Soft interactions in Herwig++}.
+\newblock In {\em {Proceedings, 1st International Workshop on Multiple Partonic
+  Interactions at the LHC (MPI08): Perugia, Italy, October 27-31, 2008}}, pages
+  239--248, 2009.
 
 \bibitem{SOYEZ201159}
 Gregory Soyez.

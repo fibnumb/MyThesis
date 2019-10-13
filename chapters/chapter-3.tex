@@ -121,9 +121,9 @@ Figure \ref{fig:EMCal} shows the layout of the EMCal.  The smallest element of t
 
 
 \subsubsection{EMCal Performance}
-As particles enter the EMCal they initiate an electromagnetic shower.  The shower of electromagnetic particles spans several neighboring towers, these towers are grouped together into `clusters' and the Analog-To-Digital Conversion signal from the clusters corresponds to the energy deposited by the particle.  The EMCal was designed so that photons and electrons will fully shower inside of the tower region and thus fully deposit their energy.  Hadrons on the other hand will usually punch through the EMCal and only deposit a small fraction of their energy. 
+As particles enter the EMCal they initiate an electromagnetic shower.  The shower of electromagnetic particles spans several neighboring towers, these towers are grouped together into `clusters' and the Analog-to-Digital Conversion signal from the clusters corresponds to the energy deposited by the particle.  The EMCal was designed so that photons and electrons will fully shower inside of the tower region and thus fully deposit their energy.  Hadrons on the other hand will usually punch through the EMCal and only deposit a small fraction of their energy. 
 
- PID can be performed using the EMCal via track-cluster matching from the TPC.  TPC tracks are geometrically matched to the centroid of a cluster and if no track is matched, the cluster originated from a photon. If a track is matched, then the ratio of E/P, the energy of a matched cluster to the momentum of a TPC track, can be used to separate electrons from hadrons.
+ PID can be performed using the EMCal via track-cluster matching from the TPC.  TPC tracks are geometrically matched to the centroid of a cluster and if no track is matched, the cluster is assumed to originate from a photon. If a track is matched, then the ratio of E/P, the energy of a matched cluster to the momentum of a TPC track, can be used to separate electrons from hadrons.
 
 The energy resolution of the EMCal follows the form seen in Equation \ref{eq:emcalres}
 
