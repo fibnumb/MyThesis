@@ -65,10 +65,10 @@ A(p_{T}) = \frac{(1.4 - 2R) \times (1.745 - 2R)}{2 \pi}.
 \label{eq:acceptance}
 \end{equation}
 
-For jets between R = 0.1 through R = 0.5 the following jet acceptance corrections are given in Table 5.2.
+For jets between R = 0.1 through R = 0.5 the following jet acceptance corrections are given in Table \ref{tab:AcceptanceFactor}.
 
 \begin{table}[hb]
-\label{tab:AcceptanceFactor}
+
 \begin{center}
 \caption{EMCal jet acceptance for radii 0.1 - 0.5.}
 \begin{tabular}[b]{|c|c|c|}
@@ -80,6 +80,7 @@ For jets between R = 0.1 through R = 0.5 the following jet acceptance correction
 	0.4 & 0.091\\ \hline
 	0.5 & 0.048\\ \hline
 \end{tabular}
+\label{tab:AcceptanceFactor}
 \end{center}
 
 \end{table}
@@ -99,14 +100,14 @@ The triggered data also need to be corrected by reconstructing the jet that fire
 \label{eq:triggermatch}
 \end{equation}
 
-\begin{figure}[h]
+\begin{figure}[b!]
 \includegraphics[width=\linewidth]{JEpatchetaphi}
 \centering
 \caption{Distance to closest reconstructed jet patch to R = 0.2 jet with the EMCal triggered data.}
 \label{fig:DisJetEJE}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[t!]
 \includegraphics[width=\linewidth]{jetgammaetaphi}
 \centering
 \caption{Distance to closest reconstructed gamma patch to R = 0.2 jet with EMCal triggered data.}
@@ -150,7 +151,7 @@ In order to correct the jet spectrum, it is necessary to generate a response mat
 The output from the PYTHIA portion of the simulation contains all the final state hadrons, regardless of whether or not they would be detected in the experiment.  This is known as the particle-level.  The particle-level jets are constructed from the PYTHIA final state hadrons.  After the particle-level jet passes through the simulation of ALICE the detector-level jets with the detector effects are obtained.
 The response matrix is constructed by geometrically matching particle-level jets to detector-level.  The particle-level jet centroid ($\phi_{part}$,$\eta_{part}$) is matched to the detector-level jet centroid ($\phi_{det}$,$\eta_{det}$) via a constraint on the displaced distance between the two jet centroids.  This distance was constrained to: $\Delta  R = \sqrt{(\phi_{part} - \phi_{det})^{2} + (\eta_{part} - \eta_{det})^{2}} \leq 0.25 \; $.  The response matrix is constructed by averaging over the simulated jets.
 
-\begin{figure}[h]
+\begin{figure}[b!]
 \includegraphics[width=\linewidth]{RMRR}
 \centering
 \caption{Response Matrix for R = 0.2 jets.}
@@ -181,21 +182,21 @@ At low-$p_{T}$ it was observed that the Monte Carlo corrections increased the yi
 \begin{figure}
 \includegraphics[width=\linewidth]{UnfoldedR02MinBias}
 \centering
-\caption{R = 0.2 bin-by-bin corrected Min Bias jet spectra.}
+\caption{R = 0.2 bin-by-bin corrected Min Bias jet spectra as a function of jet $p_{T}$.}
 \label{fig:JetSpecCorrR02}
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=\linewidth]{UnfoldedR03MinBias}
 \centering
-\caption{R = 0.3 bin-by-bin corrected Min Bias jet spectra.}
+\caption{R = 0.3 bin-by-bin corrected Min Bias jet spectra as a function of jet $p_{T}$.}
 \label{fig:JetSpecCorrR03}
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=\linewidth]{UnfoldedR04MinBias}
 \centering
-\caption{R = 0.4 bin-by-bin corrected Min Bias jet spectra.}
+\caption{R = 0.4 bin-by-bin corrected Min Bias jet spectra as a function of jet $p_{T}$.}
 \label{fig:JetSpecCorrR04}
 \end{figure}
 
@@ -205,34 +206,7 @@ At low-$p_{T}$ it was observed that the Monte Carlo corrections increased the yi
 
 
 \subsubsection{Corrected EMCal Triggered Spectra}
-The bin-by-bin correction was repeated again for the EMCal triggered jet spectra.  The response matrix from the Min Bias sample was used for the bin-by-bin correction of the triggered data.  The detector-level and particle-level jets were configured in the same manner as above and the output from the corrected triggered spectra are reported over the same kinematic range as the Min Bias spectra, as seen in Figures \ref{fig:JetSpecCorrEMCR02}, \ref{fig:JetSpecCorrEMCR03}, and \ref{fig:JetSpecCorrEMCR04}.
-
-
-\afterpage{%
-
-\begin{figure}
-\includegraphics[width=\linewidth]{UnfoldedR02EGAtrigger}
-\centering
-\caption{R = 0.2 bin-by-bin corrected EMCal triggered jet spectra.}
-\label{fig:JetSpecCorrEMCR02}
-\end{figure}
-
-\begin{figure}
-\includegraphics[width=\linewidth]{UnfoldedR03EGAtrigger}
-\centering
-\caption{R = 0.3 bin-by-bin corrected EMCal triggered jet spectra.}
-\label{fig:JetSpecCorrEMCR03}
-\end{figure}
-
-\begin{figure}
-\includegraphics[width=\linewidth]{UnfoldedR04EGAtrigger}
-\centering
-\caption{R = 0.4 bin-by-bin corrected EMCAL triggered jet spectra.}
-\label{fig:JetSpecCorrEMCR04}
-\end{figure}
-
-\clearpage
-}
+The bin-by-bin correction was repeated again for the EMCal triggered jet spectra.  The response matrix from the Min Bias sample was used for the bin-by-bin correction of the triggered data.  The detector-level and particle-level jets were configured in the same manner as above and the output from the corrected triggered spectra are reported over the same kinematic range as the Min Bias spectra, as seen in Appendix \ref{ap:EMCUn}.
 
 Due to the limitations of the response matrix, the bin-by-bin corrections of the EMCal triggered data were used to 120 GeV.  Again, it should be noted that the bumps in the EMCal jet spectra is due to the firing threshold of the trigger.
 
@@ -282,7 +256,7 @@ $\begin{array}{rl}
 
 The systematic uncertainties may be broken into two categories: uncertainties in the jet energy scale (JES) which shift the momentum spectra along the momentum axis, and uncertainties in the jet yield, which shift the spectra along the spectra/cross-section axis.  The total systematic uncertainty on the jet cross-section is obtained by adding the JES and yield uncertainties together in quadrature.  The systematic and statistical uncertainties presented in this analysis will be reported as uncertainties on the spectra.  
 
-In general the systematic uncertainties were obtained by using small variations to the parameters used in the analysis..  A feature in some of the following uncertainties is the wide statistical fluctuations seen at the highest jet $p_{T}$ bins.  A small change in a input parameter can cause a relatively large flow into and out of a high granularity bin, which does not represent a systematic uncertainty.  In order to obtain the systematic uncertainty at the highest jet $p_{T}$ bins it was necessary to extrapolate the uncertainty from the low $p_{T}$ range.  Some systematic uncertainties were assigned conservative values due to high statistical fluctuations in the highest $p_{T}$ bins.  
+In general the systematic uncertainties were obtained by using small variations to the parameters used in the analysis..  A feature in some of the following uncertainties is the wide statistical fluctuations seen at the highest jet $p_{T}$ bins.  A small change in a input parameter can cause a relatively large flow into and out of a high granularity bin, which does not represent a systematic uncertainty.  In order to obtain the systematic uncertainty at the highest jet $p_{T}$ bins it was necessary to extrapolate the uncertainty from the low $p_{T}$ range.  Some systematic uncertainties were assigned conservative values due to high statistical fluctuations in the highest $p_{T}$ bins.  Plots conveying the systematic uncertainties for R = 0.3 and R = 0.4 jets will be in Appendix \ref{ap:SysUnc}.
 
 \subsubsection{Systematic Uncertainty in the Jet Energy Scale}
 
@@ -292,44 +266,41 @@ The following sections present and discuss the uncertainties caused by shifts to
 Only a fraction of charged tracks generated by the hard scattering of two protons will be detected in the TPC due to its finite track reconstruction efficiency.  Uncertainties in the efficiency of the TPC were studied and found to be 5\% for single track reconstruction\cite{Abelev:2013ala}.  In order to obtain the uncertainty on the JES due to the tracking efficiency, this analysis was repeated while throwing out 5\% of the tracks from each event and remeasuring the jet spectra.  Once this new jet spectrum was generated, it was corrected using the bin-by-bin corrections and the ratio of this new spectra were taken with the original spectra to gauge the uncertainty from the tracking efficiency.
 
 
-\begin{figure*}[t!]
-$\begin{array}{rl}
-    \includegraphics[width=0.40\textwidth]{SysR02_TrkEff} &
-    \includegraphics[width=0.40\textwidth]{SysR03_TrkEff}\\
-    \multicolumn{2}{c}{\includegraphics[width=0.40\textwidth]{SysR04_TrkEff}}
-\end{array}$
-\caption[Systematic due to TPC tracking efficiency.]{\label{fig:trkeff}Systematic uncertainty due to TPC tracking efficiency; R = 0.2 \textit{(top left)}, R = 0.3 \textit{(top right)}, R = 0.4 \textit{(bottom)}.}
-\end{figure*}
+\begin{figure}[t!]
+\includegraphics[width=13cm]{SysR02_TrkEff}
+\centering
+\caption{Systematic uncertainty due to TPC tracking efficiency for R = 0.2 jets.}
+\label{fig:trkbodysys}
+\end{figure}
 
 
-Figure \ref{fig:trkeff} shows the systematic uncertainties for R = 0.2, R = 0.3, and R = 0.4 jets.  Based on the analysis a 10\% systematic was assigned to R = 0.2 and R = 0.3 jets, while a 15\% systematic uncertainty was given to R = 0.4 jets for this analysis.
+Figure \ref{fig:trkbodysys} shows the tracking efficiency systematic uncertainties for R = 0.2 jets.  Based on the analysis a 10\% systematic was assigned to R = 0.2 and R = 0.3 jets, while a 15\% systematic uncertainty was given to R = 0.4 jets for this analysis.
 
 \subsubsection{Hadronic Correction}
 
-\begin{figure*}[t!]
-$\begin{array}{rl}
-    \includegraphics[width=0.40\textwidth]{SysR02_F07} &
-    \includegraphics[width=0.40\textwidth]{SysR03_F07}\\
-    \multicolumn{2}{c}{\includegraphics[width=0.40\textwidth]{SysR04_F07}}
-\end{array}$
-\caption[Systematic due to Hadronic correction.]{\label{fig:hadeff}Systematic uncertainty due to hadronic correction efficiency; R = 0.2 \textit{(top left)}, R = 0.3 \textit{(top right)}, R = 0.4 \textit{(bottom)}.}
-\end{figure*}
 
-The uncertainty in the JES due to the hadronic correction applied to EMCal clusters was measured by changing the nominal value of $f_{sub} = 1$ in equation \ref{eq:HadCorr} to 0.7 and the analysis chain is repeated.  Figure \ref{fig:hadeff} shows the ratio of the new spectra with the original, and the uncertainty due to the hadronic correction was around 5\% for all jet radii.
+
+The uncertainty in the JES due to the hadronic correction applied to EMCal clusters was measured by changing the nominal value of $f_{sub} = 1$ in equation \ref{eq:HadCorr} to 0.7 and the analysis chain is repeated.  Figure \ref{fig:hadeff} shows the ratio of the new spectra with the original, and the uncertainty due to the hadronic correction was around 5\% for R = 0.2 jets.
+
+\begin{figure}[t!]
+\includegraphics[width=13cm]{SysR02_F07}
+\centering
+\caption{Systematic uncertainty due to the hadronic correction for R = 0.2 jets.}
+\label{fig:hadeff}
+\end{figure}
 
 \subsubsection{Sensitivity to EMCal Clusterization Algorithm}
 The clusterization algorithm, discussed in Chapter \ref{ch:data}, limits the number of EMCal towers in a cluster to a maximum of nine.  In principle jets should not be sensitive to the clustering algorithm because of jet finder clusters these objects into jet candidates. In practice there is some sensitivity.  In order to test the sensitivity the JES has to the clusterization algorithm, a different algorithm was chosen and a new spectra were generated.  The new algorithm is similar to the original algorithm with the exception that the total size of the cluster is forced to be smaller than nine towers.  Similar to the other systematic uncertainties presented, we see large fluctuations at high-$p_{T}$ due to sparsely filled bins in the histograms.  
 
-\begin{figure*}[t!]
-$\begin{array}{rl}
-    \includegraphics[width=0.40\textwidth]{SysR02_v1Clusterization} &
-    \includegraphics[width=0.40\textwidth]{SysR03_v1Clusterization}\\
-    \multicolumn{2}{c}{\includegraphics[width=0.40\textwidth]{SysR02_v1Clusterization}}
-\end{array}$
-\caption[Systematic due to clusterization algorithm.]{\label{fig:cluseff}Systematic uncertainty due to EMCal clusterization algorithm; R = 0.2 \textit{(top left)}, R = 0.3 \textit{(top right)}, R = 0.4 \textit{(bottom)}.}
-\end{figure*}
+\begin{figure}[t!]
+\includegraphics[width=13cm]{SysR02_v1Clusterization}
+\centering
+\caption{Systematic uncertainty due to the EMCal clusterization algorithm for R = 0.2 jets.}
+\label{fig:cluseff}
+\end{figure}
 
-Figure \ref{fig:cluseff} shows the systematic uncertainty due to the clusterization for each of the jet radii.  At low-$p_{T}$ I assigned an uncertainty of between 1\% and 3\% for a given jet radii.  At high-$p_{T}$ I assigned a 5\% for R = 0.2 and 10\% uncertainty for R = 0.3 and R=0.4 jets to account for the statistical fluctuations.
+
+Figure \ref{fig:cluseff} shows the systematic uncertainty due to the clusterization for R = 0.2 jets.  At low-$p_{T}$ I assigned an uncertainty of between 1\% and 3\% for a given jet radii.  At high-$p_{T}$ I assigned a 5\% for R = 0.2 and 10\% uncertainty for R = 0.3 and R=0.4 jets to account for the statistical fluctuations.
 
 \subsubsection{Systematic Uncertainty on the Jet Yield}
 
@@ -338,30 +309,28 @@ The following sections discuss the systematic uncertainties affecting the jet yi
 \subsubsection{Track $p_{T}$ Resolution}
 
 
-\begin{figure*}[t!]
-$\begin{array}{rl}
-    \includegraphics[width=0.40\textwidth]{SysR02_PtReso} &
-    \includegraphics[width=0.40\textwidth]{SysR03_PtReso}\\
-    \multicolumn{2}{c}{\includegraphics[width=0.40\textwidth]{SysR04_PtReso}}
-\end{array}$
-\caption[Systematic due to $P_{T}$ resolution.]{\label{fig:pTeff}$P_{T}$ resolution systematic uncertainty; R = 0.2 \textit{(top left)}, R = 0.3 \textit{(top right)}, R = 0.4 \textit{(bottom)}.}
-\end{figure*}
 
-\noindent
+
 The momentum resolution of the TPC is estimated using the covariance matrix generated from the Kalman filtering\cite{Fruhwirth:1987fm}.  Figure \ref{fig:trackresolution} shows that for the vast majority of the $p_{T}$ range in this analysis the  momentum resolution is below 3\%.  To estimate the systematic uncertainty due to the $p_{T}$ resolution, tracks are smeared by 3\% in $p_{T}$ and the variation between the new and original spectra are used to estimate the uncertainty.  From the generated plots seen in Figure \ref{fig:pTeff} the uncertainties were below 5\% for all jet radii.
+
+\begin{figure}[h!]
+\includegraphics[width=13cm]{SysR02_PtReso}
+\centering
+\caption{Systematic uncertainty due to the track momentum resolution for R = 0.2 jets.}
+\label{fig:pTeff}
+\end{figure}
 
 \subsubsection{Cluster Energy Resolution}
 
-\begin{figure*}[t!]
-$\begin{array}{rl}
-    \includegraphics[width=0.40\textwidth]{SysR02_EReso} &
-    \includegraphics[width=0.40\textwidth]{SysR03_EReso}\\
-    \multicolumn{2}{c}{\includegraphics[width=0.40\textwidth]{SysR04_EReso}}
-\end{array}$
-\caption[Systematic due to energy resolution.]{\label{fig:Eeff}Systematic uncertainty due to the energy resolution; R = 0.2 \textit{(top left)}, R = 0.3 \textit{(top right)}, R = 0.4 \textit{(bottom)}.}
-\end{figure*}
-
 Similar to the $p_{T}$ resolution, the uncertainty due to the EMCal energy resolution is done by smearing the energy of the clusters.  The smearing is based on the energy resolution measured from the test beam, and seen in Figure \ref{fig:EMCalres}.  The ratio of the smeared spectra to the original spectra are show in Figure \ref{fig:Eeff}. The uncertainties for the R = 0.2 and R = 0.3 jets are well defined and around 1\% - 2\%.  The large variation with R = 0.4 jet energy resolution is due to large statistical fluctuations and a conservative 5\% uncertainty was assigned to this radii.
+
+\begin{figure}[t!]
+\includegraphics[width=13cm]{SysR02_EReso}
+\centering
+\caption{Systematic uncertainty due to the cluster energy resolution for R = 0.2 jets.}
+\label{fig:Eeff}
+\end{figure}
+
 
 \subsubsection{Luminosity Uncertainty}
 

@@ -14,8 +14,8 @@
 % 3. all options provided by the report class
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %First, is this a thesis or dissertation? Choose one by commenting out the one you don't need:
-%\documentclass[thesis,letterpaper,12pt]{utthesis} % thesis
-\documentclass[dissertation,letterpaper,12pt]{utthesis} %dissertation
+\documentclass[thesis,letterpaper,12pt]{utthesis} % thesis
+%\documentclass[dissertation,letterpaper,12pt]{utthesis} %dissertation
 % some alternatives are:
 %\documentclass[thesis,monochrome,letterpaper,12pt]{utthesis} %thesis, monochrome text
 \renewcommand{\baselinestretch}{2.0} 	 % line Spacing
@@ -55,6 +55,12 @@
 \usepackage{cleveref}
 \usepackage{float}
 \usepackage{afterpage}
+\usepackage{chngcntr}
+
+%
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This section formats landscape pages properly with the correct page number.
@@ -98,7 +104,7 @@
     \include{front-matter/dedication} % include the dedication
 
     \addToPDFBookmarks{1}{Acknowledgments}{c} % add a pdf bookmark to the acknowledgments page
-   \include{front-matter/acknowledgments} % include the acknowledgments
+   \include{front-matter/acknowledgments} % i                                                           nclude the acknowledgments
     
     \addToPDFBookmarks{1}{Abstract}{e} % add a pdf bookmark to the abstract page
     \include{front-matter/abstract} % your abstract
@@ -148,10 +154,14 @@
     % APPENDIX - OPTIONAL - COMMENT OUT IF NOT NEEDED
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
-    \makeAppendixPage{1}   % Input the number of appendices
-    \appendix    
+    \makeAppendixPage{3}   % Input the number of appendices
+    \appendix
+    \setcounter{figure}{0}
+    \counterwithin{figure}{section}    
+   % \renewcommand\thefigure{\thesection.\arabic{figure}}  
     \include{back-matter/appendix-1}
-    %\include{back-matter/appendix-2}
+    \include{back-matter/appendix-2}
+    \include{back-matter/appendix-3}
      %  \bibliography{references/references} 
 
     \addToTOC{Vita}

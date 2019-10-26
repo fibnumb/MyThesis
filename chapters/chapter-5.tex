@@ -2,7 +2,7 @@
 
 Beginning in March of 2012, the LHC began seven months of pp collisions at $\sqrt{s} = \,$ 8 TeV. During the seven months of taking data, the LHC spent 60\% of the time in a state of stable beams as seen in Figure \ref{fig:RunEffer}.
 
-\begin{figure}[h]
+\begin{figure}[b!]
 \includegraphics[width=17cm]{8TeVRunefficency}
 \centering
 \caption{LHC state during the 8 TeV run. }
@@ -16,10 +16,10 @@ ALICE is a state-of-the-art experiment with excellent tracking and particle iden
 
 \section{Min Bias and EMCal Triggered Events}
 
-During the 8 TeV data collection period, approximately 180 million Min Bias events were recorded, as summarized in table 5.1.  The 8 TeV data set was separated into periods, which are unique from one another.  Periods can differ from one another in terms of types of detector configuration, collision parameters, trigger requirements, etc.  The 8 TeV data has 7 periods which were used for this analysis.  Periods are further parsed into runs.  Runs represent an uninterrupted time of data acquisition with ALICE. A run can be as short as 5 minutes or as long as 10 hours.  Runs were separated into `good' runs when both the TPC and EMCal were fully operational, `semi-good' runs when a sector of the TPC was turned off but not in the region below the EMCal, and `bad' runs when a portion of the TPC was turned off directly below the EMCal or something else could make jet measurements difficult.  This analysis only incorporated good and semi-good runs.
+During the 8 TeV data collection period, approximately 180 million Min Bias events were recorded, as summarized in Table 5.1.  The 8 TeV data set was separated into periods, which are unique from one another.  Periods can differ from one another in terms of types of detector configuration, collision parameters, trigger requirements, etc.  The 8 TeV data has 7 periods which were used for this analysis.  Periods are further parsed into runs.  Runs represent an uninterrupted time of data acquisition with ALICE. A run can be as short as 5 minutes or as long as 10 hours.  Runs were separated into `good' runs when both the TPC and EMCal were fully operational, `semi-good' runs when a sector of the TPC was turned off but not in the region below the EMCal, and `bad' runs when a portion of the TPC was turned off directly below the EMCal or something else could make jet measurements difficult.  This analysis only incorporated good and semi-good runs.
 
-\begin{table}[hb]
-\label{tab:RunSummary}
+\begin{table}[t!]
+
 \begin{center}
 \caption{2012 8 TeV data taking period.}
 \begin{tabular}[b]{|c|c|c|}
@@ -36,7 +36,7 @@ During the 8 TeV data collection period, approximately 180 million Min Bias even
 
 \end{tabular}
 \end{center}
-
+\label{tab:RunSummary}
 \end{table}
 
 Approximately 15\% of the data sampled were unusable due to issues with TPC chambers, EMCal super modules, or the electronics of the EMCal or TPC.  The LHC12f and LHC12g EMCal triggered data are not used in this analysis due to a different trigger condition in the EMCal from the other periods.  Besides the bad runs excluded from each of the periods due to QA, the rest of the 8 TeV data were used in this thesis.  ALICE reported the integrated luminosity as $\mathscr{L}_{int} = 8.95 \, pb^{-1}$ for the 8 TeV data\cite{ALICE-PUBLIC-2017-002}.
@@ -57,22 +57,26 @@ Due to inefficiencies with ALICE, a data set will inevitably contain `bad' event
 
 A summary of the rejection reasons for an event are shown in Figure \ref{fig:eventqa}.  Most of the rejected events were excluded due to the event not satisfying the vertex requirements.  The vertex rejection does not impose a bias on my final results because these events are low multiplicity and low momentum transfer which have a low probability for jet production.
 
-\begin{figure}[h]
+Figure \ref{fig:vertrec} shows the reconstructed vertex for the accepted Min Bias events.  The vertex distribution peaks at the primary interaction point as expected. 
+
+\afterpage{%
+\begin{figure}
 \includegraphics[width=\linewidth]{eventRejection}
 \centering
 \caption{Min Bias event rejection summary.}
 \label{fig:eventqa}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}
 \includegraphics[width=\linewidth]{zVertex}
 \centering
 \caption{Vertex displacement from primary interaction point for accepted Min Bias events.}
 \label{fig:vertrec}
 \end{figure}
 
+\clearpage
+}
 
-Figure \ref{fig:vertrec} shows the reconstructed vertex for the accepted Min Bias events.  The vertex distribution peaks at the primary interaction point as expected. 
 
  In addition to the vertex requirements the 8 TeV data set was investigated for the presence of LED events.  The EMCal uses a system of LEDs for calibrations.  Previous ALICE data sets had events contaminated by the LED misfiring.  The presence of LED events within the 8 TeV data was investigated by measuring the EMCal cell multiplicity per super-module for each event.  No LED events were found within the 8 TeV data set.  The EMCal triggered data used similar event criteria to the Min Bias.  Similar to the Min Bias sample, the rejected EMCal triggered events were mostly due to problems with the vertex.
 
@@ -82,7 +86,7 @@ Figure \ref{fig:vertrec} shows the reconstructed vertex for the accepted Min Bia
 
 Corrections were applied to cells including the removal of hot and dead towers (bad channels) based on the average occupancy and energy of the towers, calibrations to cell timing caused by the physical layout of the EMCal (such as differences in cabling length), and an energy calibration based on the $\pi^{0}$ mass.   Figure \ref{fig:badchannel} shows a bad channel map after removing the hot and dead towers from a typical run.  The segmentation between the super-modules is visible in the $\phi$ distribution.   Two 1/3 size EMCal super-modules were installed in the EMCal before 2012 8 TeV proton-proton collisons.  The data from the two 1/3 super-modules were not included because they were still being commissioning at the time.
 
-\begin{figure}[h]
+\begin{figure}[t!]
 \includegraphics[width=14cm]{clusetaphi}
 \centering
 \caption{EMCal cell occupancy after bad channels removed.}
@@ -101,7 +105,7 @@ where $E_{cross}$ is the sum of the four cells sharing a full edge with the lead
 
 The EMCal is optimized to measure neutral particles, photons and electrons as they fully shower inside of the sub-detector.  Hadrons are detected by the EMCal, but will only shower a fraction of their intrinsic energy.  A hadronic correction was performed in order to avoid double counting as charged hadrons will deposit energy in both the TPC and EMCal.  To identify charged hadrons, charged tracks from the outer layer of the TPC were propagated to the EMCal by fitting the trajectory of the track to a curve, and fitting the tracks and clusters geometrically.  Figure \ref{fig:EMChadetaphi} shows the distance between the centroid of a cluster in the EMCal and the nearest track propagated from the TPC.  Hadrons are identified by requiring the matched distance to be $\sqrt{ \Delta\phi^{2} + \Delta\eta^{2} } \leq \,$ 0.015, which is within one EMCal tower distance.
 
-\begin{figure}[h]
+\begin{figure}[b!]
 \includegraphics[width=12cm]{clusteretaphiR02}
 \centering
 \caption{Matched track-cluster distance.}
@@ -119,7 +123,7 @@ E_{corr} = E_{clust} - f_{sub} \times \sum p
 \noindent
 where $\sum p$ is the magnitude of the 3-momentum of the hadron and $f_{sub} = 1$ is the nominal value for the weight.
 
-\begin{figure}[!h]
+\begin{figure}[b!]
 \includegraphics[width=\linewidth]{EMCaltimmeingNew}
 \centering
 \caption{EMCal cluster time distribution before cuts.}
@@ -130,7 +134,7 @@ A final cut was performed on the cluster timing, obtained from the T0.  The time
 
 Figure \ref{fig:EMCalfinal} shows the final cluster energy distribution with all the cuts and corrections.  The same cuts and corrections were applied to the EMCal triggered data.  Clusters with an energy greater than 300 MeV were used for the jet finding due to the uncertainty in the energy response of the EMCal below this range.
 
-\begin{figure}[h]
+\begin{figure}[t!]
 \includegraphics[width=\linewidth]{clusteryieldall}
 \centering
 \caption{Cluster energy distribution.}
@@ -144,35 +148,42 @@ Tracks were reconstructed in the TPC using a Kalman filter, which helps alleviat
 
 Tracks can have a number of inefficiencies and non-uniformities present in them.  In order to use high quality tracks we combined two track sets in this analysis.  The first is all tracks with at least one hit in the SPD (Global), and the second set is all tracks that can be constrained to the primary vertex (Complimentary).  These two sets combined are known as `hybrid' tracks.  Hybrid tracks ensure good jet $p_{T}$ measurements and acceptance because the tracks traversed a large portion of the TPC.  
 
-The reconstruction of a signal from the ITS and TPC form good tracks if the $\chi^{2}$ per degrees of freedom is required to be less than 4 in the TPC and $\chi^{2}$ is required to be less than 36 in the ITS. For this analysis, the minimal $p_{T, track}$ was 150 MeV/c and the track was within the TPC acceptance: - 0.9 $\leq \eta \leq$ 0.9 and 0 $\leq \phi \leq$ 2$\pi$, as shown in Figure \ref{fig:Hybridtracketaphi}. Tracks were further constrained by forcing them to have a distance of closest approach to the primary vertex of less than 2.5 cm in the plane transverse to the beam line and less than 3.0 cm along the beam axis.  The spatial distributions of the hybrid tracks remain relatively flat as expected in the 8 TeV data set for good and semi-good runs.
+The reconstruction of a signal from the ITS and TPC form good tracks if the $\chi^{2}$ per degrees of freedom is required to be less than 4 in the TPC and $\chi^{2}$ is required to be less than 36 in the ITS. For this analysis, the minimal $p_{T, track}$ was 150 MeV/c and the track was within the TPC acceptance: - 0.9 $\leq \eta \leq$ 0.9 and 0 $\leq \phi \leq$ 2$\pi$, as shown in Figures \ref{fig:tracketa} and \ref{fig:trackphi}. Tracks were further constrained by forcing them to have a distance of closest approach to the primary vertex of less than 2.5 cm in the plane transverse to the beam line and less than 3.0 cm along the beam axis.  The spatial distributions of the hybrid tracks remain relatively flat as expected in the 8 TeV data set for good and semi-good runs.
 
-\begin{figure}%
-    \centering
-    \subfloat[Hybrid track $\eta$.]{{\includegraphics[width=10cm]{tracketaall} }}%
-    \qquad
-    \subfloat[Hybrid track $\phi$.]{{\includegraphics[width=10cm]{trackphiall} }}%
-    \caption{Hybrid track $\eta$ and $\phi$ distribution.}%
-    \label{fig:Hybridtracketaphi}%
+\afterpage{%
+\begin{figure}
+\includegraphics[width=\linewidth]{tracketaall}
+\centering
+\caption{Hybrid track $\eta$ distribution.}
+\label{fig:tracketa}
 \end{figure}
 
-
-
-
-An important parameter of the hybrid track is the track $p_{T}$ resolution which determines how well the track momentum was measured.  The jet $p_{T}$ resolution, which comes from the Kalman filter, was maintained by only accepting tracks into the jet finder with a resolution below 5\% as seen in Figure \ref{fig:trackresolution}.  The accepted complimentary track $p_{T}$ distribution may be seen in Figure \ref{fig:hybtrackpt}.  Tracks should travel in a smooth curve unless they decay in the detector.  Tracks in the TPC may exhibit a kink due to the particle decays or misreconstructions.  Tracks with a kink were excluded from this analysis.  The track quality control used in this thesis followed previous ALICE jet measurements\cite{Acharya:2018eat}.  The cuts and quality control were used uniformally for tracks from Min Bias events and from the EMCal triggered data.
+\begin{figure}
+\includegraphics[width=\linewidth]{trackphiall}
+\centering
+\caption{Hybrid track $\phi$ distribution.}
+\label{fig:trackphi}
+\end{figure}
 
 \begin{figure}
-\includegraphics[width=13cm]{trackpTresoluyion}
+\includegraphics[width=\linewidth]{trackpTresoluyion}
 \centering
 \caption{Accepted hybrid track resolution.}
 \label{fig:trackresolution}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=13cm]{trackyieldall}
+\includegraphics[width=\linewidth]{trackyieldall}
 \centering
 \caption{Accepted $p_{T}$ track distribution.}
 \label{fig:hybtrackpt}
 \end{figure}
+\clearpage
+}
+
+
+An important parameter of the hybrid track is the track $p_{T}$ resolution which determines how well the track momentum was measured.  The jet $p_{T}$ resolution, which comes from the Kalman filter, was maintained by only accepting tracks into the jet finder with a resolution below 5\% as seen in Figure \ref{fig:trackresolution}.  The accepted complimentary track $p_{T}$ distribution may be seen in Figure \ref{fig:hybtrackpt}.  Tracks should travel in a smooth curve unless they decay in the detector.  Tracks in the TPC may exhibit a kink due to the particle decays or misreconstructions.  Tracks with a kink were excluded from this analysis.  The track quality control used in this thesis followed previous ALICE jet measurements\cite{Acharya:2018eat}.  The cuts and quality control were used uniformally for tracks from Min Bias events and from the EMCal triggered data.
+
 
 
 \section{Jet Requirements}
@@ -180,7 +191,7 @@ An important parameter of the hybrid track is the track $p_{T}$ resolution which
 TPC tracks and EMCal clusters that passed the QA requirements were used for jet reconstruction. Jet reconstruction was done using the anti-$k_{T}$ algorithm in FASTJET.  A minimum threshold of 5 GeV was used to reconstruct a jet in this analysis because of ambiguities in the QCD definition of jets below this range.  This analysis used the p-scheme recombination method discussed in Chapter 2. No tracks above 100 GeV/\textit{c} were used in the jet finding due to the tracking resolution, Figure \ref{fig:JetPt} shows the distribution of the track momenta for a given jet momentum.  In addition a cut was applied that a jet must be composed of at least two constituents, as shown in Figure \ref{fig:JetConst}.
 
 
-\begin{figure}
+\begin{figure}[b!]
 \includegraphics[width=13cm]{JetPtlead}
 \centering
 \caption{R = 0.2 leading track $p_{T}$ per jet $p_{T}$.}
@@ -195,7 +206,7 @@ TPC tracks and EMCal clusters that passed the QA requirements were used for jet 
 \end{figure}
 
 
-The projection of the the most energetic hadron's momentum in a jet onto the jet axis, $z_{leading}$, is defined as,
+The projection of the most energetic hadron's momentum in a jet onto the jet axis, $z_{leading}$, is defined as,
 
 \begin{equation}
 z_{leading} = \frac{ p_{leading, proj} }{ p_{jet} }.
@@ -205,14 +216,13 @@ z_{leading} = \frac{ p_{leading, proj} }{ p_{jet} }.
 \noindent
 $z_{leading}$ may be artificially high due to misidentifying secondary decay particles as primary vertex tracks and assigning them a much larger $p_{T}$.  Additionally, fake clusters, such as exotics, may skew the $z_{leading}$ quantity.  
 
-\begin{figure}[h]
+The $z_{leading}$ was investigated during this analysis. Figure \ref{fig:Jetz} shows the $z_{leading}$ for a given jet $p_{T}$.  We observed an excess of jets, especially at low jet $p_{T}$, of $z_{leading}$ values close to 1 or zero.  Previous jet results from ALICE removed these jets with a cut on $ z_{leading} \geq 0.03$ and $z_{leading} \leq 0.97$ in order to exclude tracks created from low energy daughter decays and noisy towers from the EMCal.  However, a $z_{leading} \sim 1$ corresponds to a jet dominated by a singular high-$p_{T}$ particle.  This is allowed by QCD and thus no $z_{leading}$ cut was implemented in this analysis.  In between .03 and .97 we see the $z_{leading}$ is continuous and uniform as expected.  
+\begin{figure}[t!]
 \includegraphics[width=13cm]{Jetzleading}
 \centering
 \caption{R = 0.2 $z_{leading}$ from the Min Bias data sample.}
 \label{fig:Jetz}
 \end{figure}
-
-The $z_{leading}$ was investigated during this analysis. Figure \ref{fig:Jetz} shows the $z_{leading}$ for a given jet $p_{T}$.  We observed an excess of jets, especially at low jet $p_{T}$, of $z_{leading}$ values close to 1 or zero.  Previous jet results from ALICE removed these jets with a cut on $ z_{leading} \geq 0.03$ and $z_{leading} \leq 0.97$ in order to exclude tracks created from low energy daughter decays and noisy towers from the EMCal.  However, a $z_{leading} \sim 1$ corresponds to a jet dominated by a singular high-$p_{T}$ particle.  This is allowed by QCD and thus no $z_{leading}$ cut was implemented in this analysis.  In between .03 and .97 we see the $z_{leading}$ is continuous and uniform as expected.  
 
 A jet area $A_{jet}$ cut was imposed on accepted jets.
 
@@ -224,15 +234,14 @@ A_{jet} \geq 0.6 \pi R_{jet}^{2}
 \noindent
 The area is estimated in FASTJET using `ghost' particles.  As jet reconstruction is being performed, fake particles with infinitesimal $p_{T}$ are placed randomly throughout the event.  The number of ghost particles captured in a jet is proportional to the jet area, thus the precision of the jet area is sensitive to the reconstruction of soft particles.  Jet area cuts are atypical in a proton-proton analysis.  In heavy-ion collisons a cut on the jet area helps to suppress the background while retaining the signal.  A jet area cut is implemented in this thesis so that the final jet cross-sections can serve as a baseline measurement for heavy-ion jet measurements.  Figure \ref{fig:jetRejection} shows the rejection reason for a jet from the 8 TeV data.  The dominate reason for cutting a jet was due to the area criteria.  This cut skewed towards low-$p_{T}$ jets. 
 
-\begin{figure}[h]
-\includegraphics[width=13cm]{jetrejectionreason}
+\begin{figure}[t!]
+\includegraphics[width=18cm]{jetrejectionreason}
 \centering
 \caption{Jet rejection reason.}
 \label{fig:jetRejection}
 \end{figure}
 
-
-The Neutral Energy Fraction (NEF) is the total jet energy carried by the neutral components of the jet, i.e. EMCal clusters.  Figure \ref{fig:JetNEF} shows the NEF for R = 0.2 jets from the Min Bias sample.
+The fraction of the total jet energy carried by the neutral components, i.e. EMCal clusters, is known as the Neutral Energy Fraction (NEF).  Figure \ref{fig:JetNEF} shows the NEF for R = 0.2 jets from the Min Bias sample.
 
 The 8 TeV data were investigated and we observed an excess of jets at low-$p_{T}$ with NEF values around zero or one, similar to what was seen with the $z_{leading}$ distribution.  The maximum NEF was not restricted.  Previous ALICE jet results cut the low and high range of the of the NEF, but from the QCD standpoint these jets are allowed.
 

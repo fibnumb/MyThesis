@@ -20,7 +20,7 @@ The typical operating year at the LHC allows for any repairs or upgrades on the 
 From 2014 until early 2015 the LHC was shutdown for major renovations and upgrades to the accelerator and a number of sub-detectors on each experiment. This was known as long shutdown 1 (LS1).  Since the end of 2018, the LHC has been in another long shutdown (LS2), which aims at upgrading the accelerator to a high luminosity, Hi-Lumi.  This will be discussed in detail along with the upgrades to ALICE in Chapter \ref{ch:tpcu}.
 
 \subsubsection{LHC Accelerator Complex}\label{sec:LHCop}
-The LHC accelerator complex is a succession of particle accelerators that increase the energy of particles before they are injected into the next accelerator.  Hydrogen atoms are first passed through a high voltage environment that strips any electrons from around the proton.  Once the protons are stripped of their electrons, they are injected into the linear accelerator (LINAC).  The LINAC uses radio frequency cavities to accelerate particles to 50 MeV before they enter the first circular accelerator the Proton Synchrotron (PS).  The PS begins to focus the protons into bunches and further accelerates them to 1.4 GeV before the the beam enters the Super Proton Synchrotron (SPS).  The SPS accelerates the particles to 450 GeV.  The beam is then injected into the LHC and accelerated to the final collision energy.  Afterwards the beam gets `squeezed', or tightly focused, with a series of quadrupole magnets.  The final step is to `adjust'  the beam to overlap with the counter-rotating beam at the four interaction point (IP) were the main LHC experiments are located.  Once the adjust phase is completed, collisions will occur at each experiment and data  collection begins.  This entire process from stripping the electrons to collisions in each IP takes 20 minutes.
+The LHC accelerator complex is a succession of particle accelerators that increase the energy of particles before they are injected into the next accelerator.  Hydrogen atoms are first passed through a high voltage environment that strips any electrons from around the proton.  Once the protons are stripped of their electrons, they are injected into the linear accelerator (LINAC).  The LINAC uses radio frequency cavities to accelerate particles to 50 MeV before they enter the first circular accelerator the Proton Synchrotron (PS).  The PS begins to focus the protons into bunches and further accelerates them to 1.4 GeV before the beam enters the Super Proton Synchrotron (SPS).  The SPS accelerates the particles to 450 GeV.  The beam is then injected into the LHC and accelerated to the final collision energy.  Afterwards the beam gets `squeezed', or tightly focused, with a series of quadrupole magnets.  The final step is to `adjust'  the beam to overlap with the counter-rotating beam at the four interaction point (IP) were the main LHC experiments are located.  Once the adjust phase is completed, collisions will occur at each experiment and data  collection begins.  This entire process from stripping the electrons to collisions in each IP takes 20 minutes.
 
 In order for the beam parameters to be maintained in the LHC, numerous dipole and quadrupole magnets are used to accelerate, focus, and bend the particle beams.  The magnets use a superconducting niobium-titanium alloy that is maintained at an operating temperature of 1.9 K using helium-4.  Upgrading these magnets is one of the major goals during LS2 as part of the Hi-Lumi upgrade of the LHC\cite{Fabjan:2011jb}.
 
@@ -63,7 +63,7 @@ The Inner Tracking System (ITS)\cite{BEOLE20121062} is six layers of solid state
 
 \subsubsection{Time Projection Chamber}\label{sec:tpc}
 
-\begin{figure}[h]
+\begin{figure}[b!]
 \includegraphics[width=12.0cm]{alice-tpc-schematic}
 \centering
 \caption{The ALICE Time Projection Chamber\cite{2010NIMPA.622..316A}.}
@@ -74,7 +74,7 @@ The Time Projection Chamber (TPC)\cite{2010NIMPA.622..316A} is a gaseous charged
 
 \subsubsection{The TPC Readout}\label{sec:tpcread}
 
-\begin{figure}[h]
+\begin{figure}[b!]
 \includegraphics[width=9.0cm]{Wirereadout_eng}
 \centering
 \caption{The TPC readout region\cite{diener}.}
@@ -89,7 +89,7 @@ Amplification using MWPCs has the disadvantage of creating thousands of ions kno
 
 In order to reconstruct the trajectory of a particle, an iterative process known as a Kalman filter approach is used.  The x, y coordinates, which are perpendicular to the beamline, are determined via the signal induced on the copper pads.  The z component, which is parallel to the beamline, is reconstructed using the timing information from the T0.  
 
-\begin{figure}[h]
+\begin{figure}[b!]
    \centering
       \subfloat[TPC momentum resolution]{\label{fig:figure-TPCb}\includegraphics[width=3.0in]
      {PTresolution_vs_1Pt_pPb_2013_PerfPaper-8441}}
@@ -153,11 +153,11 @@ As seen in Figure \ref{fig:EMCalres}, excellent agreement exits between the meas
 
 Due to the high luminosity in the LHC, only a small fraction of events may be recorded to disk for later analysis.  ALICE employs a variety of triggers to record events that have the highest value for performing quality physics analysis.  The EMCal can trigger on events in order to increase the effective sample size for high-$p_{T}$ jets, photons, and electrons.  The two main triggers\cite{bourrion2010level}\cite{bourrion2013alice} for the EMCal are a jet trigger and a gamma trigger.  The gamma trigger is comprised of a 4x4 patch of EMCal towers, while the jet trigger is a 16x16 patch of towers.  Once the gamma trigger has surpassed a minimum energy threshold of 5 GeV\cite{Kral2012261} the event is tagged as a gamma event and the patch location is recorded.  EMCal jet triggered events have an energy threshold of 20 GeV and are similarly tagged and recorded.  The 5 GeV and 20 GeV thresholds used to fire the EMCal triggers are not fixed and the values quoted are specific to the 2012 8 TeV data set. 
 
-\begin{figure}[h]
+\begin{figure}[b!]
 \includegraphics[width=12.0cm]{2017-Jul-05-Ecluster_emcal_alice_style}
 \centering
 \caption{Cluster Spectra from the ALICE EMCal.  MinBias is shown in black while the red and blue points show the spectra using the gamma trigger at two energy thresholds\cite{Jahnke:2018mrq}.}
 \label{fig:EMCalSpectra}
 \end{figure}
 
-Figure \ref{fig:EMCalSpectra} shows the spectra from clusters measured in the EMCal using MinBias data in black and the gamma trigger from the EMCal set to two thresholds, 5 GeV and 7 GeV.  Recording the events that satisfy the EMCal triggers introduces a bias towards high-$p_{T}$ processes.  By using events that had an EMCal trigger, we can extend the kinematic range of an inclusive jet measurement, as seen in Figure \ref{fig:EMCalSpectra}.  In order to account for this bias it is necessary to calculate a trigger efficiency by comparing spectra from inclusive jets recorded using the MinBias trigger to the spectra generated from the EMCal triggers in the 8 TeV data set.  The calculation of the trigger efficiency will be discussed in depth in Chapter \ref{ch:analysis}.
+Figure \ref{fig:EMCalSpectra} shows the spectra from clusters measured in the EMCal using MinBias data in black and the gamma trigger from the EMCal set to two thresholds, 5 GeV and 7 GeV.  Recording the events that satisfy the EMCal triggers introduces a bias towards high-$p_{T}$ processes.  By using events that had an EMCal trigger, we can extend the kinematic range of an inclusive jet measurement, as seen in Figure \ref{fig:EMCalSpectra}.  In order to account for this bias it is necessary to calculate a trigger efficiency by comparing spectra from inclusive jets recorded using the MinBias trigger to the spectra generated from the EMCal triggers in the 8 TeV data set.  The calculation of the trigger efficiency will be discussed in depth in Chapter \ref{ch:error}.
