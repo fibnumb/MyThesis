@@ -117,7 +117,9 @@ The triggered data also need to be corrected by reconstructing the jet that fire
 \noindent
 If a match between the gamma patch and a jet is made, the jet is flagged as triggering the event.  Figures \ref{fig:DisJetEJE} and \ref{fig:DisJetEGA} show the distance between a reconstructed jet and its closest reconstructed EMCal trigger patch for R = 0.2 jets using the triggered data.  Since a trigger patch may be fired if two or more jets are within the geometric area of the trigger patch this could lead to double counting.  In order to correct for this, the jet spectra from the triggered data is scaled by the number of triggers, $N_{trig}$, fired that fell within the jet.  
 
-Once this correction was implemented, the triggered data were then downscaled in order to combine it with the Min Bias data.  The downscale factors, shown in Figure \ref{fig:EMCalDownScale}, were obtained by taking the ratio of the EMCal jet spectra to the Min Bias jet spectra and fitting the plateau region to a line.  The approximate scale factors are 6566 $\pm$ 326 for R = 0.2, 4383 $\pm$ 242 for R = 0.3, and 4287 $\pm$ 246 for R = 0.4.  Below $\sim$40 GeV/\textit{c}, the efficiency in the triggered data is changing rapidly and hard to determine.  The Min Bias data are sufficient for measuring the low momentum range of the jet spectrum.  The downscaled EMCal data are used at 40 GeV/\textit{c} and above.  The scale factors seen in Figure \ref{fig:EMCalDownScale} were obtained after the Bin-by-Bin corrections were applied to the data.
+Once this correction was implemented, the triggered data were then downscaled in order to combine it with the Min Bias data.  The downscale factors, shown in Figure \ref{fig:EMCalDownScale}, were obtained by taking the ratio of the EMCal jet spectra to the Min Bias jet spectra and fitting the plateau region to a line.  The approximate scale factors are 6566 $\pm$ 326 for R = 0.2, 4383 $\pm$ 242 for R = 0.3, and 4287 $\pm$ 246 for R = 0.4.  From the fit to the plateau region in the trigger efficiency along with the relative uncertainties to those fits a systematic uncertainty of 5.0\% for R = 0.2, 5.5\% for R = 0.3, and 5.7\% for R = 0.4 is assigned to the jet cross-sections above 40 GeV/c
+
+Below $\sim$40 GeV/\textit{c}, the efficiency in the triggered data is changing rapidly and hard to determine.  The Min Bias data are sufficient for measuring the low momentum range of the jet spectrum.  The downscaled EMCal data are used at 40 GeV/\textit{c} and above.  The scale factors seen in Figure \ref{fig:EMCalDownScale} were obtained after the Bin-by-Bin corrections were applied to the data.
 
 
 \begin{figure*}[t!]
@@ -363,18 +365,18 @@ A summary of the total systematic uncertainties used in the final analysis is gi
  Systematic &R = 0.2 Jets & R = 0.3 Jets& R = 0.4 Jets\\
  \hline
 Clusterization (below 40 GeV/\textit{c}) & 1.0\%    &1.0\%&  3.0\%\\
- (above 40 GeV/\textit{c})           &  5.0\%  & 10.0\%   &  10.0\%\\
+ (above 40 GeV/\textit{c})           &  5.0\%  & 8.0\%   &  12.0\%\\
 Hadronic &   5.0\% & 4.0\% & 5.0\%\\
-Track Eff (below 40 GeV/\textit{c})&20.0\% & 15.0\% & 15.0\%\\
- (above 40 GeV/\textit{c})            &  25.0\%  & 20.0\%   &  25.0\%\\
-Unfolding & 6.0\% & 6.0\%&  6.0\%\\
-$p_{T}$ Resolution & 2.0\% & 1.0\% & 4.0\%\\
-E Resolution& 2.0\%   &1.0\% & 5.0\%\\
+Track Eff (below 40 GeV/\textit{c})&15.0\% & 15.0\% & 15.0\%\\
+ (above 40 GeV/\textit{c})            &  25.0\%  & 25.0\%   &  25.0\%\\
+Trigger Scaling & 5.0\% & 5.5\%&  5.7\%\\
+$p_{T}$ Resolution & 2.0\% & 2.0\% & 4.0\%\\
+E Resolution& 2.0\%   &2.0\% & 5.0\%\\
 Luminosity & 2.2\%  & 2.2 \% & 2.2\%\\
  \hline
  \hline
-Total Sys (low-$p_{T}$) & 8.9\%  & 6.6\% & 10.9\%\\
-(high-$p_{T}$) & 10.3\%  & 9.1 \% & 14.5\%\\
+Total Sys (low-$p_{T}$) & 17.9\%  & 16.9\% & 18.4\%\\
+(high-$p_{T}$) & 26.7\%  & 27.4\% & 29.6\%\\
 \hline
 \end{tabular}
 

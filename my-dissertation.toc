@@ -59,29 +59,29 @@
 \contentsline {section}{\numberline {6.2}Acceptance Correction}{89}{section.6.2}% 
 \contentsline {section}{\numberline {6.3}EMCal Triggered Data}{90}{section.6.3}% 
 \contentsline {section}{\numberline {6.4}Particle Level Corrections}{93}{section.6.4}% 
-\contentsline {subsubsection}{Response Matrix}{94}{section*.109}% 
+\contentsline {subsubsection}{Response Matrix}{95}{section*.109}% 
 \contentsline {subsubsection}{Corrections to particle-level}{96}{section*.111}% 
-\contentsline {subsubsection}{Corrected Jet Spectra}{96}{section*.112}% 
-\contentsline {subsubsection}{Corrected EMCal Triggered Spectra}{100}{section*.113}% 
-\contentsline {section}{\numberline {6.5}Jet Reconstruction and Matching Correction}{100}{section.6.5}% 
-\contentsline {section}{\numberline {6.6}Systematic Uncertainties}{101}{section.6.6}% 
+\contentsline {subsubsection}{Corrected Jet Spectra}{97}{section*.112}% 
+\contentsline {subsubsection}{Corrected EMCal Triggered Spectra}{97}{section*.113}% 
+\contentsline {section}{\numberline {6.5}Jet Reconstruction and Matching Correction}{101}{section.6.5}% 
+\contentsline {section}{\numberline {6.6}Systematic Uncertainties}{104}{section.6.6}% 
 \contentsline {subsubsection}{Systematic Uncertainty in the Jet Energy Scale}{104}{section*.119}% 
-\contentsline {subsubsection}{Tracking Efficiency Sensitivity}{104}{section*.120}% 
-\contentsline {subsubsection}{Hadronic Correction}{105}{section*.122}% 
-\contentsline {subsubsection}{Sensitivity to EMCal Clusterization Algorithm}{105}{section*.124}% 
-\contentsline {subsubsection}{Systematic Uncertainty on the Jet Yield}{106}{section*.126}% 
-\contentsline {subsubsection}{Track $p_{T}$ Resolution}{107}{section*.127}% 
-\contentsline {subsubsection}{Cluster Energy Resolution}{107}{section*.129}% 
-\contentsline {subsubsection}{Luminosity Uncertainty}{108}{section*.131}% 
+\contentsline {subsubsection}{Tracking Efficiency Sensitivity}{105}{section*.120}% 
+\contentsline {subsubsection}{Hadronic Correction}{106}{section*.122}% 
+\contentsline {subsubsection}{Sensitivity to EMCal Clusterization Algorithm}{106}{section*.124}% 
+\contentsline {subsubsection}{Systematic Uncertainty on the Jet Yield}{107}{section*.126}% 
+\contentsline {subsubsection}{Track $p_{T}$ Resolution}{108}{section*.127}% 
+\contentsline {subsubsection}{Cluster Energy Resolution}{108}{section*.129}% 
+\contentsline {subsubsection}{Luminosity Uncertainty}{109}{section*.131}% 
 \contentsline {subsubsection}{Total Uncertainty}{110}{section*.132}% 
-\contentsline {chapter}{\numberline {7}Jet Results and Outlook}{111}{chapter.7}% 
-\contentsline {section}{\numberline {7.1}8 TeV Inclusive Jet Results and Discussion}{111}{section.7.1}% 
-\contentsline {subsubsection}{Differential Jet Cross-Section}{111}{section*.134}% 
-\contentsline {subsubsection}{Jet Cross-Section Ratios}{115}{section*.138}% 
-\contentsline {section}{\numberline {7.2}Summary and Conclusion}{119}{section.7.2}% 
-\contentsline {chapter}{Bibliography}{121}{section*.142}% 
-\contentsline {chapter}{Appendices}{137}{section*.143}% 
-\contentsline {section}{\numberline {A}Particle Identification and the Bethe-Bloch Equation.}{138}{section.Alph0.1}% 
-\contentsline {section}{\numberline {B}Bin-by-bin Corrected EMCal Triggered Jet Spectra.}{140}{section.Alph0.2}% 
-\contentsline {section}{\numberline {C}Systematic Uncertainties for R = 0.3 and R = 0.4 Jet Radii.}{143}{section.Alph0.3}% 
-\contentsline {chapter}{Vita}{153}{section*.159}% 
+\contentsline {chapter}{\numberline {7}Jet Results and Outlook}{112}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}8 TeV Inclusive Jet Results and Discussion}{112}{section.7.1}% 
+\contentsline {subsubsection}{Differential Jet Cross-Section}{112}{section*.134}% 
+\contentsline {subsubsection}{Jet Cross-Section Ratios}{117}{section*.138}% 
+\contentsline {section}{\numberline {7.2}Summary and Conclusion}{121}{section.7.2}% 
+\contentsline {chapter}{Bibliography}{123}{section*.142}% 
+\contentsline {chapter}{Appendices}{139}{section*.143}% 
+\contentsline {section}{\numberline {A}Particle Identification and the Bethe-Bloch Equation.}{140}{section.Alph0.1}% 
+\contentsline {section}{\numberline {B}Bin-by-bin Corrected EMCal Triggered Jet Spectra.}{142}{section.Alph0.2}% 
+\contentsline {section}{\numberline {C}Systematic Uncertainties for R = 0.3 and R = 0.4 Jet Radii.}{145}{section.Alph0.3}% 
+\contentsline {chapter}{Vita}{155}{section*.159}% 

@@ -67,9 +67,9 @@
 \contentsline {figure}{\numberline {6.5}{\ignorespaces Distance to closest reconstructed gamma patch to R = 0.2 jet with EMCal triggered data.\relax }}{92}{figure.caption.107}% 
 \contentsline {figure}{\numberline {6.6}{\ignorespaces EMCal triggered data correction factors for R=0.2, R=0.3, and R=0.4 jets.}}{93}{figure.caption.108}% 
 \contentsline {figure}{\numberline {6.7}{\ignorespaces Response Matrix for R = 0.2 jets.\relax }}{95}{figure.caption.110}% 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces R = 0.2 bin-by-bin corrected Min Bias jet spectra as a function of jet $p_{T}$.\relax }}{97}{figure.caption.114}% 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces R = 0.3 bin-by-bin corrected Min Bias jet spectra as a function of jet $p_{T}$.\relax }}{98}{figure.caption.115}% 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces R = 0.4 bin-by-bin corrected Min Bias jet spectra as a function of jet $p_{T}$.\relax }}{99}{figure.caption.116}% 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces R = 0.2 bin-by-bin corrected Min Bias jet spectra as a function of jet $p_{T}$.\relax }}{98}{figure.caption.114}% 
+\contentsline {figure}{\numberline {6.9}{\ignorespaces R = 0.3 bin-by-bin corrected Min Bias jet spectra as a function of jet $p_{T}$.\relax }}{99}{figure.caption.115}% 
+\contentsline {figure}{\numberline {6.10}{\ignorespaces R = 0.4 bin-by-bin corrected Min Bias jet spectra as a function of jet $p_{T}$.\relax }}{100}{figure.caption.116}% 
 \contentsline {figure}{\numberline {6.11}{\ignorespaces Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4. }}{102}{figure.caption.117}% 
 \contentsline {figure}{\numberline {6.12}{\ignorespaces Jet reconstruction efficiency for jets between R = 0.2 and R = 0.4.}}{103}{figure.caption.118}% 
 \contentsline {figure}{\numberline {6.13}{\ignorespaces Systematic uncertainty due to TPC tracking efficiency for R = 0.2 jets.\relax }}{105}{figure.caption.121}% 
@@ -78,26 +78,26 @@
 \contentsline {figure}{\numberline {6.16}{\ignorespaces Systematic uncertainty due to the track momentum resolution for R = 0.2 jets.\relax }}{108}{figure.caption.128}% 
 \contentsline {figure}{\numberline {6.17}{\ignorespaces Systematic uncertainty due to the cluster energy resolution for R = 0.2 jets.\relax }}{109}{figure.caption.130}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces 8 TeV inclusive jet differential cross-section for R = 0.2.\relax }}{112}{figure.caption.135}% 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces 8 TeV inclusive jet differential cross-section for R = 0.3.\relax }}{113}{figure.caption.136}% 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces 8 TeV inclusive jet differential cross-section for R = 0.4.\relax }}{113}{figure.caption.137}% 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Ratio of the jet cross-sections R = 0.2 to R = 0.4.\relax }}{116}{figure.caption.139}% 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Ratio of the jet cross-sections R = 0.3 to R = 0.4.\relax }}{117}{figure.caption.140}% 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Ratio of the jet cross-sections R = 0.2 to R = 0.3.\relax }}{118}{figure.caption.141}% 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Energy loss of a muon traversing a copper medium between 0.1 MeV to 100 TeV \cite {Patrignani:2016xqp}.\relax }}{138}{figure.caption.144}% 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Specific energy loss for the ITS\textit {(left)} and the TPC\textit {(right)} with Bethe-Bloch fits from different particle species traversing each detector\cite {Noferini:2016lcw}.\relax }}{139}{figure.caption.145}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALICE ITS(pp $\sqrt {s} = 13$ TeV )}}}{139}{subfigure.2.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ALICE TPC (PbPb $\sqrt {s_{NN}} = 5.02$ TeV )}}}{139}{subfigure.2.2}% 
-\contentsline {figure}{\numberline {B.1}{\ignorespaces R = 0.2 bin-by-bin corrected EMCal triggered jet spectra.\relax }}{140}{figure.caption.146}% 
-\contentsline {figure}{\numberline {B.2}{\ignorespaces R = 0.3 bin-by-bin corrected EMCal triggered jet spectra.\relax }}{141}{figure.caption.147}% 
-\contentsline {figure}{\numberline {B.3}{\ignorespaces R = 0.4 bin-by-bin corrected EMCAL triggered jet spectra.\relax }}{142}{figure.caption.148}% 
-\contentsline {figure}{\numberline {C.1}{\ignorespaces R = 0.3 jet tracking efficiency uncertainty.\relax }}{143}{figure.caption.149}% 
-\contentsline {figure}{\numberline {C.2}{\ignorespaces R = 0.4 jet tracking efficiency systematic uncertainty.\relax }}{144}{figure.caption.150}% 
-\contentsline {figure}{\numberline {C.3}{\ignorespaces R = 0.3 hadronic correction systematic uncertainty.\relax }}{145}{figure.caption.151}% 
-\contentsline {figure}{\numberline {C.4}{\ignorespaces R = 0.4 hadronic correction systematic uncertainty.\relax }}{146}{figure.caption.152}% 
-\contentsline {figure}{\numberline {C.5}{\ignorespaces R = 0.3 jet clusterization algorithm uncertainty.\relax }}{147}{figure.caption.153}% 
-\contentsline {figure}{\numberline {C.6}{\ignorespaces R = 0.4 jet clusterization algorithm uncertainty.\relax }}{148}{figure.caption.154}% 
-\contentsline {figure}{\numberline {C.7}{\ignorespaces R = 0.3 jet momentum resolution systematic uncertainty.\relax }}{149}{figure.caption.155}% 
-\contentsline {figure}{\numberline {C.8}{\ignorespaces R = 0.4 jet momentum resolution systematic uncertainty.\relax }}{150}{figure.caption.156}% 
-\contentsline {figure}{\numberline {C.9}{\ignorespaces R = 0.3 jet energy resolution systematic uncertainty.\relax }}{151}{figure.caption.157}% 
-\contentsline {figure}{\numberline {C.10}{\ignorespaces R = 0.4 jet energy resolution systematic uncertainty.\relax }}{152}{figure.caption.158}% 
+\contentsline {figure}{\numberline {7.1}{\ignorespaces 8 TeV inclusive jet differential cross-section for R = 0.2.\relax }}{113}{figure.caption.135}% 
+\contentsline {figure}{\numberline {7.2}{\ignorespaces 8 TeV inclusive jet differential cross-section for R = 0.3.\relax }}{114}{figure.caption.136}% 
+\contentsline {figure}{\numberline {7.3}{\ignorespaces 8 TeV inclusive jet differential cross-section for R = 0.4.\relax }}{115}{figure.caption.137}% 
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Ratio of the jet cross-sections R = 0.2 to R = 0.4.\relax }}{118}{figure.caption.139}% 
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Ratio of the jet cross-sections R = 0.3 to R = 0.4.\relax }}{119}{figure.caption.140}% 
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Ratio of the jet cross-sections R = 0.2 to R = 0.3.\relax }}{120}{figure.caption.141}% 
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Energy loss of a muon traversing a copper medium between 0.1 MeV to 100 TeV \cite {Patrignani:2016xqp}.\relax }}{140}{figure.caption.144}% 
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Specific energy loss for the ITS\textit {(left)} and the TPC\textit {(right)} with Bethe-Bloch fits from different particle species traversing each detector\cite {Noferini:2016lcw}.\relax }}{141}{figure.caption.145}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ALICE ITS(pp $\sqrt {s} = 13$ TeV )}}}{141}{subfigure.2.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ALICE TPC (PbPb $\sqrt {s_{NN}} = 5.02$ TeV )}}}{141}{subfigure.2.2}% 
+\contentsline {figure}{\numberline {B.1}{\ignorespaces R = 0.2 bin-by-bin corrected EMCal triggered jet spectra.\relax }}{142}{figure.caption.146}% 
+\contentsline {figure}{\numberline {B.2}{\ignorespaces R = 0.3 bin-by-bin corrected EMCal triggered jet spectra.\relax }}{143}{figure.caption.147}% 
+\contentsline {figure}{\numberline {B.3}{\ignorespaces R = 0.4 bin-by-bin corrected EMCAL triggered jet spectra.\relax }}{144}{figure.caption.148}% 
+\contentsline {figure}{\numberline {C.1}{\ignorespaces R = 0.3 jet tracking efficiency uncertainty.\relax }}{145}{figure.caption.149}% 
+\contentsline {figure}{\numberline {C.2}{\ignorespaces R = 0.4 jet tracking efficiency systematic uncertainty.\relax }}{146}{figure.caption.150}% 
+\contentsline {figure}{\numberline {C.3}{\ignorespaces R = 0.3 hadronic correction systematic uncertainty.\relax }}{147}{figure.caption.151}% 
+\contentsline {figure}{\numberline {C.4}{\ignorespaces R = 0.4 hadronic correction systematic uncertainty.\relax }}{148}{figure.caption.152}% 
+\contentsline {figure}{\numberline {C.5}{\ignorespaces R = 0.3 jet clusterization algorithm uncertainty.\relax }}{149}{figure.caption.153}% 
+\contentsline {figure}{\numberline {C.6}{\ignorespaces R = 0.4 jet clusterization algorithm uncertainty.\relax }}{150}{figure.caption.154}% 
+\contentsline {figure}{\numberline {C.7}{\ignorespaces R = 0.3 jet momentum resolution systematic uncertainty.\relax }}{151}{figure.caption.155}% 
+\contentsline {figure}{\numberline {C.8}{\ignorespaces R = 0.4 jet momentum resolution systematic uncertainty.\relax }}{152}{figure.caption.156}% 
+\contentsline {figure}{\numberline {C.9}{\ignorespaces R = 0.3 jet energy resolution systematic uncertainty.\relax }}{153}{figure.caption.157}% 
+\contentsline {figure}{\numberline {C.10}{\ignorespaces R = 0.4 jet energy resolution systematic uncertainty.\relax }}{154}{figure.caption.158}% 
