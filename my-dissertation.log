@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  12 NOV 2019 19:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  13 NOV 2019 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1216,13 +1216,8 @@ File: figures/pdf/jetrejectionreason.pdf Graphic file (type pdf)
 <use figures/pdf/jetrejectionreason.pdf>
 Package pdftex.def Info: figures/pdf/jetrejectionreason.pdf  used on input line
  238.
-(pdftex.def)             Requested size: 512.1496pt x 249.32497pt.
-
-Overfull \hbox (42.39458pt too wide) in paragraph at lines 238--240
- [][] 
- []
-
-[82 <./figures/pdf/Jetzleading.pdf, page is rotated 90 degrees>]
+(pdftex.def)             Requested size: 469.75502pt x 228.67505pt.
+ [82 <./figures/pdf/Jetzleading.pdf, page is rotated 90 degrees>]
 <figures/pdf/JetNEF.pdf, id=1970, 569.12625pt x 277.035pt>
 File: figures/pdf/JetNEF.pdf Graphic file (type pdf)
 <use figures/pdf/JetNEF.pdf>
@@ -1518,131 +1513,134 @@ Underfull \hbox (badness 1430) in paragraph at lines 191--191
 File: figures/pdf/bethe.png Graphic file (type png)
 <use figures/pdf/bethe.png>
 Package pdftex.def Info: figures/pdf/bethe.png  used on input line 13.
-(pdftex.def)             Requested size: 227.62204pt x 143.3301pt.
- [140
-
-
- <./figures/pdf/bethe.png (PNG copy)>]
-<figures/pdf/ALICEITSPID.png, id=2729, 342.27875pt x 232.87pt>
+(pdftex.def)             Requested size: 469.75502pt x 295.8211pt.
+<figures/pdf/ALICEITSPID.png, id=2724, 342.27875pt x 232.87pt>
 File: figures/pdf/ALICEITSPID.png Graphic file (type png)
 <use figures/pdf/ALICEITSPID.png>
 Package pdftex.def Info: figures/pdf/ALICEITSPID.png  used on input line 26.
 (pdftex.def)             Requested size: 216.81pt x 147.5119pt.
-<figures/pdf/TPC_PID2.png, id=2730, 343.2825pt x 247.92625pt>
+<figures/pdf/TPC_PID2.png, id=2725, 343.2825pt x 247.92625pt>
 File: figures/pdf/TPC_PID2.png Graphic file (type png)
 <use figures/pdf/TPC_PID2.png>
 Package pdftex.def Info: figures/pdf/TPC_PID2.png  used on input line 28.
 (pdftex.def)             Requested size: 216.81pt x 156.58401pt.
-)
-[141 <./figures/pdf/ALICEITSPID.png> <./figures/pdf/TPC_PID2.png>]
+ [140
+
+
+]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [141 <./figures/pdf/bethe.png (PNG copy)>] [142 <./figures/pdf/ALICEITSPID.pn
+g> <./figures/pdf/TPC_PID2.png>]
 :<-
 :<+ back-matter/appendix-2.tex
 \openout2 = `back-matter/appendix-2.aux'.
 
 (./back-matter/appendix-2.tex
-<figures/pdf/UnfoldedR02EGAtrigger.png, id=2741, 1405.25pt x 1023.825pt>
+<figures/pdf/UnfoldedR02EGAtrigger.png, id=2745, 1405.25pt x 1023.825pt>
 File: figures/pdf/UnfoldedR02EGAtrigger.png Graphic file (type png)
 <use figures/pdf/UnfoldedR02EGAtrigger.png>
 Package pdftex.def Info: figures/pdf/UnfoldedR02EGAtrigger.png  used on input l
 ine 6.
 (pdftex.def)             Requested size: 469.75502pt x 342.25316pt.
-) [142
+) [143
 
 
 
  <./figures/pdf/UnfoldedR02EGAtrigger.png>]
-<figures/pdf/UnfoldedR03EGAtrigger.png, id=2746, 1405.25pt x 1023.825pt>
+<figures/pdf/UnfoldedR03EGAtrigger.png, id=2750, 1405.25pt x 1023.825pt>
 File: figures/pdf/UnfoldedR03EGAtrigger.png Graphic file (type png)
 <use figures/pdf/UnfoldedR03EGAtrigger.png>
 Package pdftex.def Info: figures/pdf/UnfoldedR03EGAtrigger.png  used on input l
 ine 163.
 (pdftex.def)             Requested size: 469.75502pt x 342.25316pt.
-<figures/pdf/UnfoldedR04EGAtrigger.png, id=2747, 1405.25pt x 1023.825pt>
+<figures/pdf/UnfoldedR04EGAtrigger.png, id=2751, 1405.25pt x 1023.825pt>
 File: figures/pdf/UnfoldedR04EGAtrigger.png Graphic file (type png)
 <use figures/pdf/UnfoldedR04EGAtrigger.png>
 Package pdftex.def Info: figures/pdf/UnfoldedR04EGAtrigger.png  used on input l
 ine 163.
 (pdftex.def)             Requested size: 469.75502pt x 342.25316pt.
 
-[143 <./figures/pdf/UnfoldedR03EGAtrigger.png>] [144 <./figures/pdf/UnfoldedR04
+[144 <./figures/pdf/UnfoldedR03EGAtrigger.png>] [145 <./figures/pdf/UnfoldedR04
 EGAtrigger.png>]
 :<-
 :<+ back-matter/appendix-3.tex
 \openout2 = `back-matter/appendix-3.aux'.
 
 (./back-matter/appendix-3.tex
-<figures/pdf/SysR03_TrkEff.png, id=2756, 698.61pt x 473.77pt>
+<figures/pdf/SysR03_TrkEff.png, id=2760, 698.61pt x 473.77pt>
 File: figures/pdf/SysR03_TrkEff.png Graphic file (type png)
 <use figures/pdf/SysR03_TrkEff.png>
 Package pdftex.def Info: figures/pdf/SysR03_TrkEff.png  used on input line 6.
 (pdftex.def)             Requested size: 469.75502pt x 318.57368pt.
-) [145
+) [146
 
 
 
 
  <./figures/pdf/SysR03_TrkEff.png>]
-<figures/pdf/SysR04_TrkEff.png, id=2761, 698.61pt x 473.77pt>
+<figures/pdf/SysR04_TrkEff.png, id=2766, 698.61pt x 473.77pt>
 File: figures/pdf/SysR04_TrkEff.png Graphic file (type png)
 <use figures/pdf/SysR04_TrkEff.png>
 Package pdftex.def Info: figures/pdf/SysR04_TrkEff.png  used on input line 164.
 
 (pdftex.def)             Requested size: 469.75502pt x 318.57368pt.
-<figures/pdf/SysR03_F07.png, id=2762, 698.61pt x 473.77pt>
+<figures/pdf/SysR03_F07.png, id=2767, 698.61pt x 473.77pt>
 File: figures/pdf/SysR03_F07.png Graphic file (type png)
 <use figures/pdf/SysR03_F07.png>
 Package pdftex.def Info: figures/pdf/SysR03_F07.png  used on input line 164.
 (pdftex.def)             Requested size: 469.75502pt x 318.57368pt.
-<figures/pdf/SysR04_F07.png, id=2763, 698.61pt x 473.77pt>
+<figures/pdf/SysR04_F07.png, id=2768, 698.61pt x 473.77pt>
 File: figures/pdf/SysR04_F07.png Graphic file (type png)
 <use figures/pdf/SysR04_F07.png>
 Package pdftex.def Info: figures/pdf/SysR04_F07.png  used on input line 164.
 (pdftex.def)             Requested size: 469.75502pt x 318.57368pt.
-<figures/pdf/SysR03_v1Clusterization.png, id=2764, 698.61pt x 473.77pt>
+<figures/pdf/SysR03_v1Clusterization.png, id=2769, 698.61pt x 473.77pt>
 File: figures/pdf/SysR03_v1Clusterization.png Graphic file (type png)
 <use figures/pdf/SysR03_v1Clusterization.png>
 Package pdftex.def Info: figures/pdf/SysR03_v1Clusterization.png  used on input
  line 164.
 (pdftex.def)             Requested size: 469.75502pt x 318.57368pt.
-<figures/pdf/SysR04_v1Clusterization.png, id=2765, 698.61pt x 473.77pt>
+<figures/pdf/SysR04_v1Clusterization.png, id=2770, 698.61pt x 473.77pt>
 File: figures/pdf/SysR04_v1Clusterization.png Graphic file (type png)
 <use figures/pdf/SysR04_v1Clusterization.png>
 Package pdftex.def Info: figures/pdf/SysR04_v1Clusterization.png  used on input
  line 164.
 (pdftex.def)             Requested size: 469.75502pt x 318.57368pt.
-<figures/pdf/SysR03_PtReso.png, id=2766, 698.61pt x 473.77pt>
+<figures/pdf/SysR03_PtReso.png, id=2771, 698.61pt x 473.77pt>
 File: figures/pdf/SysR03_PtReso.png Graphic file (type png)
 <use figures/pdf/SysR03_PtReso.png>
 Package pdftex.def Info: figures/pdf/SysR03_PtReso.png  used on input line 164.
 
 (pdftex.def)             Requested size: 469.75502pt x 318.57368pt.
-<figures/pdf/SysR04_PtReso.png, id=2767, 698.61pt x 473.77pt>
+<figures/pdf/SysR04_PtReso.png, id=2772, 698.61pt x 473.77pt>
 File: figures/pdf/SysR04_PtReso.png Graphic file (type png)
 <use figures/pdf/SysR04_PtReso.png>
 Package pdftex.def Info: figures/pdf/SysR04_PtReso.png  used on input line 164.
 
 (pdftex.def)             Requested size: 469.75502pt x 318.57368pt.
-<figures/pdf/SysR03_EReso.png, id=2768, 698.61pt x 473.77pt>
+<figures/pdf/SysR03_EReso.png, id=2773, 698.61pt x 473.77pt>
 File: figures/pdf/SysR03_EReso.png Graphic file (type png)
 <use figures/pdf/SysR03_EReso.png>
 Package pdftex.def Info: figures/pdf/SysR03_EReso.png  used on input line 164.
 (pdftex.def)             Requested size: 469.75502pt x 318.57368pt.
-<figures/pdf/SysR04_EReso.png, id=2769, 698.61pt x 473.77pt>
+<figures/pdf/SysR04_EReso.png, id=2774, 698.61pt x 473.77pt>
 File: figures/pdf/SysR04_EReso.png Graphic file (type png)
 <use figures/pdf/SysR04_EReso.png>
 Package pdftex.def Info: figures/pdf/SysR04_EReso.png  used on input line 164.
 (pdftex.def)             Requested size: 469.75502pt x 318.57368pt.
- [146 <./figures/pdf/SysR04_TrkEff.png>] [147 <./figures/pdf/SysR03_F07.png>] [
-148 <./figures/pdf/SysR04_F07.png>] [149 <./figures/pdf/SysR03_v1Clusterization
+ [147 <./figures/pdf/SysR04_TrkEff.png>] [148 <./figures/pdf/SysR03_F07.png>] [
+149 <./figures/pdf/SysR04_F07.png>] [150 <./figures/pdf/SysR03_v1Clusterization
 .png>]
-[150 <./figures/pdf/SysR04_v1Clusterization.png>] [151 <./figures/pdf/SysR03_Pt
-Reso.png>] [152 <./figures/pdf/SysR04_PtReso.png>] [153 <./figures/pdf/SysR03_E
-Reso.png>] [154 <./figures/pdf/SysR04_EReso.png>]
+[151 <./figures/pdf/SysR04_v1Clusterization.png>] [152 <./figures/pdf/SysR03_Pt
+Reso.png>] [153 <./figures/pdf/SysR04_PtReso.png>] [154 <./figures/pdf/SysR03_E
+Reso.png>] [155 <./figures/pdf/SysR04_EReso.png>]
 :<-
 :<+ back-matter/vita.tex
 \openout2 = `back-matter/vita.aux'.
 
-(./back-matter/vita.tex) [155
+(./back-matter/vita.tex) [156
 
 
 
@@ -1667,12 +1665,12 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
 Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: 69D06D20170FA48B9F84BB6D767A1B87;3030.
 Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
-(rerunfilecheck)             Checksum: 06C3946F8E6725EC1B5760F4C31A7C6F;9722.
+(rerunfilecheck)             Checksum: 9650F3F36955561FA0AE934C0A3D961B;9722.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 169.
  ) 
 Here is how much of TeX's memory you used:
- 13992 strings out of 492616
- 238489 string characters out of 6129482
+ 13993 strings out of 492616
+ 238497 string characters out of 6129482
  356053 words of memory out of 5000000
  16935 multiletter control sequences out of 15000+600000
  17523 words of font info for 67 fonts, out of 8000000 for 9000
@@ -1748,10 +1746,10 @@ dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2019/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2019/texmf-dist
 /fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on my-dissertation.pdf (172 pages, 13354529 bytes).
+Output written on my-dissertation.pdf (173 pages, 13354814 bytes).
 PDF statistics:
- 3006 PDF objects out of 3580 (max. 8388607)
- 2213 compressed objects within 23 object streams
- 554 named destinations out of 1000 (max. 500000)
+ 3010 PDF objects out of 3580 (max. 8388607)
+ 2216 compressed objects within 23 object streams
+ 555 named destinations out of 1000 (max. 500000)
  853 words of extra memory for PDF output out of 10000 (max. 10000000)
 

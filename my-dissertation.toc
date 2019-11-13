@@ -82,6 +82,6 @@
 \contentsline {chapter}{Bibliography}{123}{section*.142}% 
 \contentsline {chapter}{Appendices}{139}{section*.143}% 
 \contentsline {section}{\numberline {A}Particle Identification and the Bethe-Bloch Equation.}{140}{section.Alph0.1}% 
-\contentsline {section}{\numberline {B}Bin-by-bin Corrected EMCal Triggered Jet Spectra.}{142}{section.Alph0.2}% 
-\contentsline {section}{\numberline {C}Systematic Uncertainties for R = 0.3 and R = 0.4 Jet Radii.}{145}{section.Alph0.3}% 
-\contentsline {chapter}{Vita}{155}{section*.159}% 
+\contentsline {section}{\numberline {B}Bin-by-bin Corrected EMCal Triggered Jet Spectra.}{143}{section.Alph0.2}% 
+\contentsline {section}{\numberline {C}Systematic Uncertainties for R = 0.3 and R = 0.4 Jet Radii.}{146}{section.Alph0.3}% 
+\contentsline {chapter}{Vita}{156}{section*.159}% 
