@@ -87,7 +87,7 @@
 \backcite {CAO2018255}{{30}{2.5}{figure.caption.43}}
 \backcite {Miller:2007ri}{{30}{2.5}{equation.2.5.22}}
 \backcite {Aaboud:2018twu}{{30}{2.5}{equation.2.5.22}}
-\backcite {Klochkov_2017}{{30}{4}{Hfootnote.4}}
+\backcite {Klochkov_2017}{{30}{4}{equation.2.5.22}}
 \backcite {Aaboud:2018twu}{{31}{2.14}{figure.caption.44}}
 \backcite {Nagle:2018nvi}{{32}{2.5}{equation.2.5.24}}
 \backcite {ZHAO2018495}{{32}{2.5}{equation.2.5.24}}
@@ -110,9 +110,9 @@
 \backcite {BEOLE20121062}{{39}{3.2}{section*.53}}
 \backcite {Adam:2016acv}{{39}{3.2}{section*.53}}
 \backcite {2010NIMPA.622..316A}{{40}{3.2}{figure.caption.55}}
-\backcite {Field:2011iq}{{40}{1}{Hfootnote.6}}
-\backcite {Loizides:2016djv}{{40}{3}{Hfootnote.8}}
 \backcite {2010NIMPA.622..316A}{{40}{3.4}{figure.caption.55}}
+\backcite {Field:2011iq}{{40}{1}{section*.50}}
+\backcite {Loizides:2016djv}{{40}{3}{section*.50}}
 \backcite {diener}{{41}{3.5}{figure.caption.57}}
 \backcite {Tangwancharoen:2016dqs}{{42}{3.2}{figure.caption.57}}
 \backcite {LIPPMANN2012434}{{43}{3.2}{figure.caption.59}}
@@ -165,8 +165,8 @@
 \backcite {Abelev:2013ala}{{105}{6.6}{section*.120}}
 \backcite {Fruhwirth:1987fm}{{108}{6.6}{section*.127}}
 \backcite {ALICE-PUBLIC-2017-002}{{110}{6.6}{equation.6.6.8}}
-\backcite {Aaboud:2017dvo}{{116}{7.1}{section*.134}}
-\backcite {CMS:2013kda}{{116}{7.1}{section*.134}}
+\backcite {Aaboud:2017dvo}{{116}{7.1}{figure.caption.137}}
+\backcite {CMS:2013kda}{{116}{7.1}{figure.caption.137}}
 \backcite {Bahr:2009ek}{{116}{7.1}{figure.caption.137}}
 \backcite {SOYEZ201159}{{117}{7.1}{equation.7.1.1}}
 \backcite {MA2013319}{{117}{7.1}{equation.7.1.1}}

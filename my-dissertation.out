@@ -1,0 +1,44 @@
+\BOOKMARK [0][-]{rootNode.0}{Front Matter}{}% 1
+\BOOKMARK [1][-]{a.1}{Title}{rootNode.0}% 2
+\BOOKMARK [1][-]{b.1}{Dedication}{rootNode.0}% 3
+\BOOKMARK [1][-]{c.1}{Acknowledgments}{rootNode.0}% 4
+\BOOKMARK [1][-]{e.1}{Abstract}{rootNode.0}% 5
+\BOOKMARK [0][-]{f.0}{Table of Contents}{}% 6
+\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 7
+\BOOKMARK [0][-]{chapter.2}{2 Quantum Chromodynamics}{}% 8
+\BOOKMARK [1][-]{section.2.1}{2.1 The QCD Lagrangian}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{2.2 Jets}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{2.3 Jet Finding Algorithms}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{2.4 Monte-Carlo Generators}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.5}{2.5 The Quark-Gluon Plasma}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{3 The LHC and ALICE}{}% 14
+\BOOKMARK [1][-]{section.3.1}{3.1 Overview of The LHC}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{3.2 The ALICE Experiment}{chapter.3}% 16
+\BOOKMARK [0][-]{chapter.4}{4 The ALICE TPC Upgrade}{}% 17
+\BOOKMARK [1][-]{section.4.1}{4.1 Physics Motivation}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.2}{4.2 Gaseous Electron Multiplier Foils}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.3}{4.3 Research and Development}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.4}{4.4 Production of The Inner Readout Chambers}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.5}{4.5 GEM and Chamber Quality Assurance}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.6}{4.6 Outlook}{chapter.4}% 23
+\BOOKMARK [0][-]{chapter.5}{5 8 TeV Data Selection}{}% 24
+\BOOKMARK [1][-]{section.5.1}{5.1 Min Bias and EMCal Triggered Events}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.2}{5.2 EMCal Clusters}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.3}{5.3 TPC Tracks}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.4}{5.4 Jet Requirements}{chapter.5}% 28
+\BOOKMARK [0][-]{chapter.6}{6 Corrections and Systematic Uncertainties}{}% 29
+\BOOKMARK [1][-]{section.6.1}{6.1 Uncorrected Jet Spectra}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.2}{6.2 Acceptance Correction}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.3}{6.3 EMCal Triggered Data}{chapter.6}% 32
+\BOOKMARK [1][-]{section.6.4}{6.4 Particle Level Corrections}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.5}{6.5 Jet Reconstruction and Matching Correction}{chapter.6}% 34
+\BOOKMARK [1][-]{section.6.6}{6.6 Systematic Uncertainties}{chapter.6}% 35
+\BOOKMARK [0][-]{chapter.7}{7 Jet Results and Outlook}{}% 36
+\BOOKMARK [1][-]{section.7.1}{7.1 8 TeV Inclusive Jet Results and Discussion}{chapter.7}% 37
+\BOOKMARK [1][-]{section.7.2}{7.2 Summary and Conclusion}{chapter.7}% 38
+\BOOKMARK [0][-]{section*.142}{Bibliography}{}% 39
+\BOOKMARK [0][-]{section*.143}{Appendices}{}% 40
+\BOOKMARK [1][-]{section.Alph0.1}{A Particle Identification and the Bethe-Bloch Equation.}{section*.143}% 41
+\BOOKMARK [1][-]{section.Alph0.2}{B Bin-by-bin Corrected EMCal Triggered Jet Spectra.}{section*.143}% 42
+\BOOKMARK [1][-]{section.Alph0.3}{C Systematic Uncertainties for R = 0.3 and R = 0.4 Jet Radii.}{section*.143}% 43
+\BOOKMARK [0][-]{section*.159}{Vita}{}% 44
